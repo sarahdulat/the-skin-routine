@@ -11,6 +11,9 @@ h1 {
   font-weight: 500;
   font-family: Jost, Arial, Helvetica, sans-serif;
 }
+h1:hover .glyph {
+  color: #F16544;
+}
 
 .glyph {
   font-family: "Noto Sans Symbols 2";
