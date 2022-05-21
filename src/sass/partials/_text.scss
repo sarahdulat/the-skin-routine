@@ -1,6 +1,11 @@
 h1 {
   font-weight: 500;
   font-family: Jost, Arial, Helvetica, sans-serif;
+  &:hover {
+    .glyph {
+      color: #F16544;
+    }
+  }
 }
 
 .glyph {
