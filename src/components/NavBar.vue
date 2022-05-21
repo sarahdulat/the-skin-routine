@@ -3,7 +3,7 @@
     <div class="container">
       <h1>
         <router-link to="/">
-          The Skin Routine <span class="glyph">🩸</span>
+          The Skin Routine<span class="glyph">🩸</span>
         </router-link>
       </h1>
       <div class="d-flex">
@@ -13,3 +13,9 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.container {
+  border-bottom: 1px solid #101518;
+}
+</style>
