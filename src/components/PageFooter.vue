@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   border-top: 1px solid #101518;
 }

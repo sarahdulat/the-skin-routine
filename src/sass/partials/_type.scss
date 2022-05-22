@@ -6,7 +6,7 @@ h1 {
     text-decoration: none;
 
     &:hover {
-      color: #101518;
+      color: $body-color;
       .glyph {
         color: $primary;
       }
@@ -15,7 +15,7 @@ h1 {
 }
 
 a {
-  color: #101518;
+  color: $body-color;
   &:hover {
     color: $primary;
   }
@@ -36,7 +36,7 @@ p {
 }
 
 p:first-of-type:first-letter {
-  color: #101518;
+  color: $body-color;
   float: left;
   font-family: Jost, Arial, Helvetica, sans-serif;
   font-size: 75px;

@@ -14,7 +14,7 @@
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   border-bottom: 1px solid #101518;
 }
