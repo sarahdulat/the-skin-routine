@@ -1,13 +1,48 @@
 h1 {
   font-weight: 500;
   font-family: Jost, Arial, Helvetica, sans-serif;
+
   &:hover {
+    color: #101518;
+
     .glyph {
       color: #F16544;
     }
   }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+a {
+  color: #101518;
+
+  &:hover {
+    color: #F16544;
+  }
+}
+
+p {
+  font-size: 20px;
 }
 
 .glyph {
   font-family: 'Noto Sans Symbols 2';
+}
+
+.caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+}
+
+p:first-of-type:first-letter {
+  color: #101518;
+  float: left;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  font-size: 75px;
+  line-height: 50px;
+  padding-top: 4px;
+  padding-right: 4px;
 }
