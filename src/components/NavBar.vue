@@ -15,6 +15,9 @@
 </template>
 
 <style lang="scss" scoped>
+.navbar {
+  background-color: #FBFAF4;
+}
 .container {
   border-bottom: 1px solid #101518;
 }

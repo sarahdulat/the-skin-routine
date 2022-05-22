@@ -1,5 +1,5 @@
 <template>
-  <div class="container fixed-bottom">
+  <div class="container sticky-bottom">
     <div class="row align-items-start m-4">
       <div class="col d-flex flex-column">
         <router-link to="/disclaimer">Disclaimer</router-link>
@@ -26,6 +26,7 @@
 
 <style lang="scss" scoped>
 .container {
+  background-color: #FBFAF4;
   border-top: 1px solid #101518;
 }
 </style>

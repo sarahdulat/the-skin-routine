@@ -1,9 +1,11 @@
 <template>
-  <NavBar />
-  <div class="container">
-    <router-view />
+  <div class="wrapper">
+    <NavBar />
+    <div class="container flex-fill">
+      <router-view />
+    </div>
+    <PageFooter />
   </div>
-  <PageFooter />
 </template>
 
 <script>
@@ -18,3 +20,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+</style>

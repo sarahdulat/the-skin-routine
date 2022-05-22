@@ -22,7 +22,7 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: $font-size-lg;
 }
 
 .glyph {
@@ -30,7 +30,7 @@ p {
 }
 
 .caption {
-  font-size: 0.8rem;
+  font-size: $font-size-sm;
   font-style: italic;
   text-align: right;
 }
