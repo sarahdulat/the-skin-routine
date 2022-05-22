@@ -11,3 +11,12 @@
     <p>I am aware that my perspective is very one-sided (as a cis white woman of 100% European descent) but I will do my best to do my research and add routines that work for all types of skin. <span class="glyph fs-5">🫂</span> Keep coming back to see more routines being added!</p>
   </div>
 </template>
+
+<style scoped>
+.image {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  max-width: 375px;
+}
+</style>

@@ -1,62 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Symbols+2&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body {
-  font-family: Roboto Slab, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #101518;
-  background-color: #FBFAF4;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @import "../../node_modules/bootstrap/scss/functions";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/sass/partials/_overrides.scss 4:9  @import
+ *   src/sass/main.scss 4:9                 root stylesheet */
 
-.image {
-  float: left;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  max-width: 375px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"../../node_modules/bootstrap/scss/functions\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/sass/partials/_overrides.scss 4:9  @import\a   src/sass/main.scss 4:9                 root stylesheet";
 }
-
-h1 {
-  font-weight: 500;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-}
-h1 a {
-  text-decoration: none;
-}
-h1 a:hover {
-  color: #101518;
-}
-h1 a:hover .glyph {
-  color: #F16544;
-}
-
-a {
-  color: #101518;
-}
-a:hover {
-  color: #F16544;
-}
-
-p {
-  font-size: 20px;
-}
-
-.glyph {
-  font-family: "Noto Sans Symbols 2";
-}
-
-.caption {
-  font-size: 0.8rem;
-  font-style: italic;
-  text-align: right;
-}
-
-p:first-of-type:first-letter {
-  color: #101518;
-  float: left;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-  font-size: 75px;
-  line-height: 50px;
-  padding-top: 4px;
-  padding-right: 4px;
-}
-
-/*# sourceMappingURL=main.css.map */
