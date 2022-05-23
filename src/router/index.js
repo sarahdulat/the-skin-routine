@@ -4,6 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import BlogView from "../views/BlogView.vue";
 import DisclaimerView from "../views/DisclaimerView.vue";
 import FAQView from "../views/FAQView.vue";
+import PostView from "../views/PostView.vue";
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: "/faq",
     name: "faq",
     component: FAQView,
+  },
+  {
+    path: "/post/:slug",
+    name: "post",
+    component: PostView,
   },
 ];
 

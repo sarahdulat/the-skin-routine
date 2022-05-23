@@ -1,10 +1,9 @@
 h1 {
   font-weight: 500;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-
+  
   a {
     text-decoration: none;
-
+    
     &:hover {
       color: $body-color;
       .glyph {
@@ -14,10 +13,19 @@ h1 {
   }
 }
 
+h1, h2, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
+}
+
 a {
   color: $body-color;
+  text-decoration: none;
+
   &:hover {
     color: $primary;
+  }
+  &.router-link-active.page-link {
+    text-decoration: overline;
   }
 }
 
