@@ -1,30 +1,36 @@
 h1 {
   font-weight: 500;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-
-  &:hover {
-    color: #101518;
-
-    .glyph {
-      color: #F16544;
-    }
-  }
   
   a {
     text-decoration: none;
+    
+    &:hover {
+      color: $body-color;
+      .glyph {
+        color: $primary;
+      }
+    }
   }
 }
 
+h1, h2, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
+}
+
 a {
-  color: #101518;
+  color: $body-color;
+  text-decoration: none;
 
   &:hover {
-    color: #F16544;
+    color: $primary;
+  }
+  &.router-link-active.page-link {
+    text-decoration: overline;
   }
 }
 
 p {
-  font-size: 20px;
+  font-size: $font-size-lg;
 }
 
 .glyph {
@@ -32,13 +38,13 @@ p {
 }
 
 .caption {
-  font-size: 0.8rem;
+  font-size: $font-size-sm;
   font-style: italic;
   text-align: right;
 }
 
 p:first-of-type:first-letter {
-  color: #101518;
+  color: $body-color;
   float: left;
   font-family: Jost, Arial, Helvetica, sans-serif;
   font-size: 75px;

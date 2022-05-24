@@ -21,7 +21,7 @@
 
 <style lang="scss" scoped>
 .container {
-  background-color: #fbfaf4;
+  background-color: #FBFAF4;
   border-top: 1px solid #101518;
 }
 </style>
