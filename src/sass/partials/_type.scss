@@ -1,15 +1,16 @@
 h1 {
   font-weight: 500;
   
+  &:hover {
+    color: $body-color;
+    cursor: default;
+    .glyph {
+      color: $primary;
+    }
+  }
+
   a {
     text-decoration: none;
-    
-    &:hover {
-      color: $body-color;
-      .glyph {
-        color: $primary;
-      }
-    }
   }
 }
 
