@@ -1,15 +1,8 @@
 <template>
   <div class="container sticky-bottom">
-    <div class="row align-items-start m-4">
-      <div class="col d-flex flex-column">
-        <router-link to="/disclaimer">Disclaimer</router-link>
-        <router-link to="/faq">FAQs</router-link>
-      </div>
-      <div class="col d-flex flex-column">
-        <router-link to="/disclaimer">Disclaimer</router-link>
-        <router-link to="/faq">FAQs</router-link>
-      </div>
-      <div class="col d-flex justify-content-end">
+    <div class="d-flex flex-wrap justify-content-between m-4">
+      <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
+      <div class="text-nowrap">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank">
           <i class="bi bi-instagram fs-4" alt="instagram"></i>
         </a>
