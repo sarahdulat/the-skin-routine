@@ -20,15 +20,26 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+  components: {},
   props: {
-    post: {
-      type: Object,
+    id: {
+      type: Number,
       required: true
     },
     slug: {
       type: String,
       required: true
+    }
+  },
+  computed: {
+    ...mapGetters ({
+      getPost: 'getPost',
+    }),
+    post () {
+      return this.getPost(this.slug);
     }
   }
 }

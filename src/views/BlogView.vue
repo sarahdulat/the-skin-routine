@@ -4,7 +4,7 @@
       class="post col"
       v-for="post in posts"
       :key="post.id">
-      <router-link :to="{name: 'post', params: { post: post } }">
+      <router-link :to="{name: 'post', params: { id: post.id, slug: post.slug } }">
         <img
           :src="post.image"
           class="img-fluid"
@@ -16,7 +16,7 @@
         class="d-inline text-uppercase me-2 mt-4">
         {{ tag }}
       </h6>
-      <router-link :to="{name: 'post', params: { slug: post.slug, post: post } }">
+      <router-link :to="{name: 'post', params: { id: post.id, slug: post.slug } }">
         <h3 class="mt-4">{{ post.title }}</h3>
       </router-link>
       <div class="mt-4">{{ post.summary }}</div>

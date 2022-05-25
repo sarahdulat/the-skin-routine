@@ -23,6 +23,13 @@
   </div>
 </template>
 
+<script>
+export default {
+  components: {},
+}
+</script>
+
+
 <style scoped>
 .image {
   margin-bottom: 1rem;
