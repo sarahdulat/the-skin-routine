@@ -36,6 +36,7 @@ const routes = [
     path: "/post/:slug",
     name: "post",
     component: PostView,
+    props: true
   },
 ];
 
