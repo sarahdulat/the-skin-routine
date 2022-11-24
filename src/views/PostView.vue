@@ -14,7 +14,7 @@
         {{ tag.name }}
       </h6>
       <h1 class="mt-5">{{ post.data.title }}</h1>
-      <h6 class="mt-5">{{ post.data.published }}</h6>
+      <h6 class="mt-5">{{ formattedDate(post.data.published) }}</h6>
     </div>
     <p class="mt-5" v-html="post.data.body"></p>
   </div>
@@ -22,6 +22,7 @@
 
 <script>
 import { butter } from '@/buttercms'
+import moment from 'moment';
 
 export default {
   name: 'blog-post',
@@ -29,6 +30,9 @@ export default {
     return {
       post: {}
     }
+  },
+  created() {
+    this.getPost()
   },
   methods: {
     getPost() {
@@ -38,10 +42,10 @@ export default {
         }).catch(res => {
           console.log(res)
         })
+    },
+    formattedDate (date) {
+      return moment(date).format("dddd, MMMM Do YYYY");
     }
-  },
-  created() {
-    this.getPost()
   }
 }
 </script>
