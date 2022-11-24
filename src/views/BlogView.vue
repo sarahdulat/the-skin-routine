@@ -2,11 +2,11 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
     <div
       class="post col"
-      v-for="post in posts"
-      :key="post.id">
-      <router-link :to="{name: 'post', params: { id: post.id, slug: post.slug } }">
+      v-for="(post,index) in posts"
+      :key="post.slug + '_' + index">
+      <router-link :to="'/blog/' + post.slug">
         <img
-          :src="post.image"
+          :src="post.featured_image"
           class="img-fluid"
           :alt="post.alt" />
       </router-link>
@@ -14,9 +14,9 @@
         v-for="tag in post.tags"
         :key="tag.key"
         class="d-inline text-uppercase me-2 mt-4">
-        {{ tag }}
+        {{ tag.name }}
       </h6>
-      <router-link :to="{name: 'post', params: { id: post.id, slug: post.slug } }">
+      <router-link :to="'/blog/' + post.slug">
         <h3 class="mt-4">{{ post.title }}</h3>
       </router-link>
       <div class="mt-4">{{ post.summary }}</div>
@@ -25,14 +25,28 @@
 </template>
 
 <script>
-import sourceData from '@/data.json';
+import { butter } from '@/buttercms'
 
 export default {
   data () {
     return {
-      posts: sourceData.posts,
+      page_title: 'Blog',
+      posts: [],
     };
   },
+  methods: {
+    getPosts() {
+      butter.post.list({
+        page: 1,
+        page_size: 10
+      }).then(res => {
+        this.posts = res.data.data
+      })
+    }
+  },
+  created () {
+    this.getPosts()
+  }
 }
 </script>
 

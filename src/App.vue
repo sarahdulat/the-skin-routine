@@ -17,7 +17,7 @@ export default {
   components: {
     PageFooter,
     NavBar,
-  },
+  }
 };
 </script>
 

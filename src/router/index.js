@@ -18,9 +18,14 @@ const routes = [
     component: AboutView,
   },
   {
-    path: "/blog",
+    path: "/blog/",
     name: "blog",
     component: BlogView,
+  },
+  {
+    path: "/blog/:slug",
+    name: "blog-post",
+    component: PostView,
   },
   {
     path: "/disclaimer",
@@ -31,12 +36,6 @@ const routes = [
     path: "/faq",
     name: "faq",
     component: FAQView,
-  },
-  {
-    path: "/post/:slug",
-    name: "post",
-    component: PostView,
-    props: true
   },
 ];
 

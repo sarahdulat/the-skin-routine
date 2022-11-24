@@ -1,46 +1,47 @@
 <template>
   <div class="row">
-    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="cover-img">
+    <img
+      :src="post.data.featured_image"
+      class="cover-img"
+      :alt="post.data.featured_image_alt">
   </div>
   <div class="col-xs-12 col-md-8 offset-md-2">
     <div class="text-center">
-      <h6 class="mt-5">BEAUTY</h6>
-      <h1 class="mt-5">{{ post.title }}</h1>
-      <h6 class="mt-5">September 13, 2021</h6>
+      <h6
+        v-for="tag in post.data.tags"
+        :key="tag.key"
+        class="mt-5 text-uppercase">
+        {{ tag.name }}
+      </h6>
+      <h1 class="mt-5">{{ post.data.title }}</h1>
+      <h6 class="mt-5">{{ post.data.published }}</h6>
     </div>
-    <p class="mt-5">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-      accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
-      tellus mollis orci, sed rhoncus sapien nunc eget.
-    </p>
+    <p class="mt-5" v-html="post.data.body"></p>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { butter } from '@/buttercms'
 
 export default {
-  components: {},
-  props: {
-    id: {
-      type: Number,
-      required: true
-    },
-    slug: {
-      type: String,
-      required: true
+  name: 'blog-post',
+  data() {
+    return {
+      post: {}
     }
   },
-  computed: {
-    ...mapGetters ({
-      getPost: 'getPost',
-    }),
-    post () {
-      return this.getPost(this.slug);
+  methods: {
+    getPost() {
+      butter.post.retrieve(this.$route.params.slug)
+        .then(res => {
+          this.post = res.data
+        }).catch(res => {
+          console.log(res)
+        })
     }
+  },
+  created() {
+    this.getPost()
   }
 }
 </script>

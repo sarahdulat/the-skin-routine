@@ -1,20 +1,20 @@
 import { createStore } from "vuex";
 import posts from "./posts";
+import db from "../db";
 
 export default createStore({
   state: {
     posts: posts
   },
   getters: {
-    getPost: (state) => (slug) => {
-      console.log('hi')
-      return state.posts.find(c => Number(c.slug) === Number(slug));
-    },
-    getPosts: (state) => {
-      return state.posts;
+  },
+  mutations: {
+    setPosts(state) {
+      db.read()
+      db.data.posts = state.posts
     }
   },
-  mutations: {},
-  actions: {},
+  actions: {
+  },
   modules: {},
 });
