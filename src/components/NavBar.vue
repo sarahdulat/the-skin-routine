@@ -7,8 +7,8 @@
         </router-link>
       </h1>
       <div class="d-flex">
-        <router-link to="/about" class="page-link ms-2">About</router-link>
-        <router-link to="/blog" class="page-link ms-2">Blog</router-link>
+        <router-link to="/about" class="page-link ms-3">About</router-link>
+        <router-link to="/blog" class="page-link ms-3">Blog</router-link>
       </div>
     </div>
   </nav>
