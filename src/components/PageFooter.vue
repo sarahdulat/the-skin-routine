@@ -1,7 +1,9 @@
 <template>
   <div class="container sticky-bottom">
-    <div class="d-flex flex-wrap justify-content-between m-4">
-      <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
+    <div class="d-flex flex-wrap w-100 m-4">
+      <div class="me-auto">
+        <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
+      </div>
       <div class="text-nowrap">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank">
           <i class="bi bi-instagram fs-4" alt="instagram"></i>
