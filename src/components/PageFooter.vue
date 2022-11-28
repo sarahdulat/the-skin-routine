@@ -1,7 +1,7 @@
 <template>
   <div class="container sticky-bottom">
     <div class="d-flex flex-wrap w-100 m-4">
-      <div class="me-auto">
+      <div class="me-auto pe-4">
         <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
       </div>
       <div class="text-nowrap">

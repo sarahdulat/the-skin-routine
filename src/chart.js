@@ -28,10 +28,6 @@ const money = {
   max: 10000,
 };
 
-// number of data points
-// create an array of data points leveraging the utility functions
-const data = Array(routines);
-
 // VIZ
 // in the #chart container include an SVG element following the margin convention
 const margin = {
@@ -227,7 +223,7 @@ const dataGroup = group
 
 const dataPointsGroup = dataGroup
   .selectAll('g.data-point')
-  .data(data)
+  .data(routines)
   .enter()
   .append('g')
   .attr('class', 'data-point')
@@ -252,162 +248,3 @@ dataPointsGroup
   .style('font-size', '0.55rem')
   .style('letter-spacing', '0.05rem')
   .style('pointer-events', 'none');
-
-
-// on hover highlight the data point
-// dataPointsGroup
-//   .on('mouseenter', function (d) {
-//     // slightly translate the text to the left and change the fill color
-//     const text = d3
-//       .select(this)
-//       .select('text.name')
-
-//     text
-//       .transition()
-//       .attr('transform', 'translate(12 0)')
-//       .style('color', 'hsl(230, 29%, 19%)')
-//       .style('text-shadow', 'none');
-
-//     /* as the first child of the group add another group in which to gather the elements making up the tooltip
-//     - rectangle faking the text's background
-//     - circle highlighting the selected data point
-//     - path elements connecting the circle to the values on the axes
-//     - rectangles faking the background for the labels on the axes
-//     - text elements making up the labels on the axes
-//     */
-//     const tooltip = d3
-//       .select(this)
-//       .insert('g', ':first-child')
-//       .attr('class', 'tooltip')
-//       .attr('opacity', 0)
-//       .style('pointer-events', 'none');
-
-
-//     // for the rectangle retrieve the width and height of the text elements to have the rectangle match in size
-//     const textElement = text['_groups'][0][0];
-//     const { x, y, width: textWidth, height: textHeight } = textElement.getBBox();
-
-//     tooltip
-//       .append('rect')
-//       .attr('x', x - 3)
-//       .attr('y', y - 1.5)
-//       .attr('width', textWidth + 6)
-//       .attr('height', textHeight + 3)
-//       .attr('fill', 'hsl(227, 9%, 81%)')
-//       .attr('rx', '2')
-//       .transition()
-//       // transition the rectangle to match the text translation
-//       .attr('transform', 'translate(12 0)');
-
-
-//     // include the two dotted lines in a group to centralize their common properties
-//     const dashedLines = tooltip
-//       .append('g')
-//       .attr('fill', 'none')
-//       .attr('stroke', 'hsl(227, 9%, 81%)')
-//       .attr('stroke-width', 2)
-//       // have the animation move the path with a stroke-dashoffset considering the cumulative value of a dash and an empty space
-//       .attr('stroke-dasharray', '7 4')
-//       // animate the path elements to perennially move toward the axes
-//       .style('animation', 'dashOffset 1.5s linear infinite');
-
-
-//     dashedLines
-//       .append('path')
-//       .attr('d', ({ money }) => `M 0 0 v ${moneyScale(money.max - money)}`);
-
-//     dashedLines
-//       .append('path')
-//       .attr('d', ({ time }) => `M 0 0 h -${timeScale(time)}`);
-
-//     // include two labels centered on the axes, highlighting the matching values
-//     const labels = tooltip
-//       .append('g')
-//       .attr('font-size', '0.6rem')
-//       .attr('fill', 'hsl(227, 9%, 81%)');
-
-//     const labelTime = labels
-//       .append('g')
-//       .attr('transform', ({ money }) => `translate(0 ${moneyScale(money.max - money)})`);
-
-//     const textTime = labelTime
-//       .append('text')
-//       .attr('x', 0)
-//       .attr('y', 0)
-//       .attr('text-anchor', 'middle')
-//       .attr('dominant-baseline', 'middle')
-//       .style('color', 'hsl(230, 29%, 19%)')
-//       .text(({ time }) => time);
-
-//     const labelMoney = labels
-//       .append('g')
-//       .attr('transform', ({ time }) => `translate(-${timeScale(time)} 0)`);
-
-//     const textMoney = labelMoney
-//       .append('text')
-//       .attr('x', 0)
-//       .attr('y', 0)
-//       .attr('text-anchor', 'middle')
-//       .attr('dominant-baseline', 'middle')
-//       .style('color', 'hsl(230, 29%, 19%)')
-//       .text(({ money }) => `$${money}`);
-
-//     // behind the labels include two rectangles, replicating the faux background specified for the original text element
-//     const { width: timeWidth, height: timeHeight } = textTime['_groups'][0][0].getBBox();
-//     const { width: moneyWidth, height: moneyHeight } = textMoney['_groups'][0][0].getBBox();
-
-//     labelTime
-//       .insert('rect', ':first-child')
-//       .attr('x', -timeWidth / 2 - 4)
-//       .attr('y', -timeHeight / 2 - 2)
-//       .attr('width', timeWidth + 8)
-//       .attr('height', timeHeight + 4)
-//       .attr('rx', 3);
-
-//     labelMoney
-//       .insert('rect', ':first-child')
-//       .attr('x', -moneyWidth / 2 - 4)
-//       .attr('y', -moneyHeight / 2 - 2)
-//       .attr('width', moneyWidth + 8)
-//       .attr('height', moneyHeight + 4)
-//       .attr('rx', 3);
-
-
-//     // detail a circle, with a darker fill and a larger radius
-//     tooltip
-//       .append('circle')
-//       .attr('cx', 0)
-//       .attr('cy', 0)
-//       .attr('fill', 'hsl(0, 0%, 0%)')
-//       .attr('stroke', 'hsl(227, 9%, 81%)')
-//       .attr('stroke-width', 2)
-//       .attr('r', 0)
-//       // transition the circle its full radius
-//       .transition()
-//       .attr('r', 9.5);
-
-//     // transition the tooltip to be fully opaque
-//     tooltip
-//       .transition()
-//       .attr('opacity', 1);
-
-//   })
-  // when exiting the hover state reset the appearance of the data point and remove the tooltip
-  // .on('mouseout', function (d) {
-  //   d3
-  //     .select(this)
-  //     .select('text.name')
-  //     .transition()
-  //     .delay(100)
-  //     .attr('transform', 'translate(0 0)')
-  //     .style('color', 'inherit')
-  //     .style('text-shadow', 'inherit');
-
-  //   // remove the tooltip after rendering it fully transparent
-  //   d3
-  //     .select(this)
-  //     .select('g.tooltip')
-  //     .transition()
-  //     .attr('opacity', 0)
-  //     .remove();
-  // });
