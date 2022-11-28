@@ -1,5 +1,16 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <RoutineChart />
   </div>
 </template>
+
+<script>
+import RoutineChart from "../components/RoutineChart.vue";
+
+export default {
+  name: "App",
+  components: {
+    RoutineChart
+  }
+};
+</script>
