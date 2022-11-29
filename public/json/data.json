@@ -1,0 +1,37 @@
+[
+  {
+    "question": "Routine One",
+    "time": 5,
+    "money": 1
+  },
+  {
+    "question": "Routine Two",
+    "time": 4,
+    "money": 1
+  },
+  {
+    "question": "Routine Three",
+    "time": 4,
+    "money": 2
+  },
+  {
+    "question": "Routine Four",
+    "time": 5,
+    "money": 4
+  },
+  {
+    "question": "Routine Five",
+    "time": 4,
+    "money": 5
+  },
+  {
+    "question": "Routine Six",
+    "time": 1,
+    "money": 1
+  },
+  {
+    "question": "Routine Seven",
+    "time": 1,
+    "money": 5
+  }
+]

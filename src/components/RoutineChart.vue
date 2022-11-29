@@ -1,85 +1,86 @@
 <template>
-  <select v-model="selected">
-    <option v-for="company in companies" :key="company" :value="company">{{ titleCase(company) }}</option>
-  </select>
-  <svg></svg>
+  <svg id="scatter" width="500" height="500"></svg>
 </template>
 
 <script>
 import * as d3 from "d3"
+import data from "../../public/json/data.json";
 
 export default {
   name: 'routine-chart',
-  props: ['axisData', 'companies', 'title'],
   data() {
     return {
-      selected: this.companies[0],
+      chartData: data
     }
   },
   computed: {
-    filteredData() {
-      return this.axisData.filter(el => el.company === this.selected)
-    },
-    maxValue() {
-      return Math.max(...this.filteredData.map(el => el.y))
-    },
+
   },
   methods: {
-    titleCase(title) {
-      return title.charAt(0).toUpperCase() + title.slice(1)
-    },
     renderChart() {
-      const height = 300
-      const roundedHeight = Math.ceil((height + 1) / 10) * 10
-      const width = 800
-      // set the ranges
-      const xScale = d3
-        .scaleBand()
-        .domain(this.filteredData.map(dataPoint => dataPoint.x))
-        .range([0, width])
-        .padding(0.2)
-      const yScale = d3
-        .scaleLinear()
-        .domain([0, this.maxValue])
-        .range([roundedHeight, 10])
-      const container = d3.select('svg')
-        .classed('chart-container', true)
-        .style('height', `${roundedHeight}px`)
-        .style('width', `${width}px`)
-      // eslint-disable-next-line no-unused-vars
-      const bar = container
-        .selectAll('.bar')
-        .data(this.filteredData)
-        .enter()
-        .append('rect')
-        .classed('bar', true)
-        .attr('width', xScale.bandwidth())
-        .attr('height', data => roundedHeight - yScale(data.y))
-        .attr('x', data => (xScale(data.x)))
-        .attr('y', data => yScale(data.y))
-      // add the x Axis
-      container.append("g")
-        .attr('transform', "translate(0," + roundedHeight + ")")
-        .call(d3.axisBottom(xScale))
-        .selectAll('text')
-        .attr('transform', "translate(-15, 15) rotate(-45)");
-      // add the y Axis
-      container.append("g")
-        .call(d3.axisLeft(yScale));
+      const svg = d3.select("#scatter"),
+        margin = { top: 20, right: 20, bottom: 30, left: 50 },
+        width = +svg.attr("width"),
+        height = +svg.attr("height"),
+        domainwidth = width - margin.left - margin.right,
+        domainheight = height - margin.top - margin.bottom;
+
+      const x = d3.scaleLinear()
+        .domain(this.padExtent([1, 5]))
+        .range(this.padExtent([0, domainwidth]));
+      const y = d3.scaleLinear()
+        .domain(this.padExtent([1, 5]))
+        .range(this.padExtent([domainheight, 0]));
+
+      const g = svg.append("g")
+        .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
+
+      g.append("rect")
+        .attr("width", width - margin.left - margin.right)
+        .attr("height", height - margin.top - margin.bottom)
+        .attr("fill", "#F6F6F6");
+
+      d3.json(this.chartData, function (error, data) {
+        if (error) throw error;
+
+        data.forEach(function (d) {
+          d.money = +d.money;
+          d.time = +d.time;
+        });
+
+        g.selectAll("circle")
+          .data(data)
+          .enter().append("circle")
+          .attr("class", "dot")
+          .attr("r", 7)
+          .attr("cx", function (d) { return x(d.time); })
+          .attr("cy", function (d) { return y(d.money); })
+          .style("fill", function (d) {
+            if (d.money >= 3 && d.time <= 3) { return "#60B19C" } // Top Left
+            else if (d.money >= 3 && d.time >= 3) { return "#8EC9DC" } // Top Right
+            else if (d.money <= 3 && d.time >= 3) { return "#D06B47" } // Bottom Left
+            else { return "#A72D73" } //Bottom Right
+          });
+
+        g.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
+          .call(d3.axisBottom(x).ticks(5));
+
+        g.append("g")
+          .attr("class", "y axis")
+          .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
+          .call(d3.axisLeft(y).ticks(5));
+      });
+    },
+    padExtent (e, p) {
+      if (p === undefined) p = 1;
+      return ([e[0] - p, e[1] + p]);
     }
   },
   mounted() {
     this.renderChart()
-  },
-  updated() {
-    this.renderChart()
-  },
-  beforeUpdate() {
-    var svg = d3.select("svg")
-    svg
-      .selectAll('*')
-      .remove()
-  },
+  }
 }
 </script>
 
