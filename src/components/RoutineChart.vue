@@ -82,22 +82,17 @@ export default {
           .attr("r", 7)
           .attr("cx", function (d) { return x(d.time); })
           .attr("cy", function (d) { return y(d.money); })
-          .style("fill", function (d) {
-            if (d.money >= 3 && d.time <= 3) { return "#60B19C" } // Top Left
-            else if (d.money >= 3 && d.time >= 3) { return "#8EC9DC" } // Top Right
-            else if (d.money <= 3 && d.time >= 3) { return "#D06B47" } // Bottom Left
-            else { return "#A72D73" } //Bottom Right
-          });
+          .style("fill", "#000000");
 
         g.append("g")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
-          .call(d3.axisBottom(x).ticks(5));
+          .call(d3.axisBottom(x).ticks(0));
 
         g.append("g")
           .attr("class", "y axis")
           .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
-          .call(d3.axisLeft(y).ticks(5));
+          .call(d3.axisLeft(y).ticks(0));
     },
     padExtent (e, p) {
       if (p === undefined) p = 1;
@@ -110,16 +105,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .chart-container {
   border: 1px solid navy;
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
-}
-
-.bar {
-  fill: rgb(255, 0, 212);
 }
 
 text {
