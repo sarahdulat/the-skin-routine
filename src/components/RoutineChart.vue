@@ -4,13 +4,48 @@
 
 <script>
 import * as d3 from "d3"
-import data from "../../public/json/data.json";
 
 export default {
   name: 'routine-chart',
   data() {
     return {
-      chartData: data
+      chartData: [
+        {
+          "question": "Routine One",
+          "time": 5,
+          "money": 1
+        },
+        {
+          "question": "Routine Two",
+          "time": 4,
+          "money": 1
+        },
+        {
+          "question": "Routine Three",
+          "time": 4,
+          "money": 2
+        },
+        {
+          "question": "Routine Four",
+          "time": 5,
+          "money": 4
+        },
+        {
+          "question": "Routine Five",
+          "time": 4,
+          "money": 5
+        },
+        {
+          "question": "Routine Six",
+          "time": 1,
+          "money": 1
+        },
+        {
+          "question": "Routine Seven",
+          "time": 1,
+          "money": 5
+        }
+      ]
     }
   },
   computed: {
@@ -40,16 +75,8 @@ export default {
         .attr("height", height - margin.top - margin.bottom)
         .attr("fill", "#F6F6F6");
 
-      d3.json(this.chartData, function (error, data) {
-        if (error) throw error;
-
-        data.forEach(function (d) {
-          d.money = +d.money;
-          d.time = +d.time;
-        });
-
         g.selectAll("circle")
-          .data(data)
+          .data(this.chartData)
           .enter().append("circle")
           .attr("class", "dot")
           .attr("r", 7)
@@ -71,7 +98,6 @@ export default {
           .attr("class", "y axis")
           .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
           .call(d3.axisLeft(y).ticks(5));
-      });
     },
     padExtent (e, p) {
       if (p === undefined) p = 1;
