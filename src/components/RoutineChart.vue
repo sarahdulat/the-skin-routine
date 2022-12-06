@@ -1,5 +1,7 @@
 <template>
-  <svg id="scatter" width="500" height="500"></svg>
+  <div class="col-xs-12 col-sm-8">
+    <svg id="scatter" width="500" height="500"></svg>
+  </div>
 </template>
 
 <script>
@@ -7,7 +9,7 @@ import * as d3 from "d3"
 
 export default {
   name: 'routine-chart',
-  data() {
+  data () {
     return {
       chartData: [
         {
@@ -52,7 +54,7 @@ export default {
 
   },
   methods: {
-    renderChart() {
+    renderChart () {
       const svg = d3.select("#scatter"),
         margin = { top: 20, right: 20, bottom: 30, left: 50 },
         width = +svg.attr("width"),
@@ -82,7 +84,7 @@ export default {
           .attr("r", 7)
           .attr("cx", function (d) { return x(d.time); })
           .attr("cy", function (d) { return y(d.money); })
-          .style("fill", "#000000");
+          .style("fill", "#343A40");
 
         g.append("g")
           .attr("class", "x axis")
@@ -106,23 +108,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.chart-container {
-  border: 1px solid navy;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: visible;
-}
 
-text {
-  fill: navy;
-  font-size: smaller;
-}
-
-path.domain {
-  stroke: transparent;
-}
-
-select {
-  margin-bottom: 20px;
-}
 </style>

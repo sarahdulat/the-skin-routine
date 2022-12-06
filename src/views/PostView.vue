@@ -1,22 +1,24 @@
 <template>
-  <div class="row">
-    <img
-      :src="post.data.featured_image"
-      class="cover-img"
-      :alt="post.data.featured_image_alt">
-  </div>
-  <div class="col-xs-12 col-md-8 offset-md-2">
-    <div class="text-center">
-      <h6
-        v-for="tag in post.data.tags"
-        :key="tag.key"
-        class="mt-5 text-uppercase">
-        {{ tag.name }}
-      </h6>
-      <h1 class="mt-5">{{ post.data.title }}</h1>
-      <h6 class="mt-5">{{ formattedDate(post.data.published) }}</h6>
+  <div id="blog">
+    <div class="row">
+      <img
+        :src="post.data.featured_image"
+        class="cover-img"
+        :alt="post.data.featured_image_alt">
     </div>
-    <p class="mt-5" v-html="post.data.body"></p>
+    <div class="col-xs-12 col-md-8 offset-md-2">
+      <div class="text-center">
+        <h6
+          v-for="tag in post.data.tags"
+          :key="tag.key"
+          class="mt-5 text-uppercase">
+          {{ tag.name }}
+        </h6>
+        <h1 class="mt-5">{{ post.data.title }}</h1>
+        <h6 class="mt-5">{{ formattedDate(post.data.published) }}</h6>
+      </div>
+      <p class="mt-5" v-html="post.data.body"></p>
+    </div>
   </div>
 </template>
 

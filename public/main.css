@@ -89,17 +89,13 @@ h1, h2, h4, h5, h6 {
 
 a {
   color: #343a40;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #F16544;
 }
 a.router-link-active.page-link {
   text-decoration: overline;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 .glyph {
@@ -112,7 +108,7 @@ p {
   text-align: right;
 }
 
-p:first-of-type:first-letter {
+#about p:first-of-type:first-letter, #blog p:first-of-type:first-letter {
   color: #343a40;
   float: left;
   font-family: Jost, Arial, Helvetica, sans-serif;
@@ -120,6 +116,9 @@ p:first-of-type:first-letter {
   line-height: 50px;
   padding-top: 4px;
   padding-right: 4px;
+}
+#about p, #blog p {
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,22 +1,19 @@
 <template>
-  <div class="home">
+  <div class="container">
     <RoutineChart />
+    <RoutineSidebar />
   </div>
 </template>
 
 <script>
 import RoutineChart from "../components/RoutineChart.vue";
+import RoutineSidebar from "../components/RoutineSidebar.vue";
 
 export default {
   name: "App",
   components: {
-    RoutineChart
-  },
-  data () {
-    return {
-    };
-  },
-  computed: {
+    RoutineChart,
+    RoutineSidebar
   }
 };
 </script>

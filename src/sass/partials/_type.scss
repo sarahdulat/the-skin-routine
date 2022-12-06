@@ -1,9 +1,9 @@
 h1 {
   font-weight: 500;
-  
+
   a {
     text-decoration: none;
-    
+
     &:hover {
       color: $body-color;
       .glyph {
@@ -19,7 +19,7 @@ h1, h2, h4, h5, h6 {
 
 a {
   color: $body-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: $primary;
@@ -27,10 +27,6 @@ a {
   &.router-link-active.page-link {
     text-decoration: overline;
   }
-}
-
-p {
-  font-size: $font-size-lg;
 }
 
 .glyph {
@@ -43,12 +39,17 @@ p {
   text-align: right;
 }
 
-p:first-of-type:first-letter {
-  color: $body-color;
-  float: left;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-  font-size: 75px;
-  line-height: 50px;
-  padding-top: 4px;
-  padding-right: 4px;
+#about, #blog {
+  p:first-of-type:first-letter {
+    color: $body-color;
+    float: left;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    line-height: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+  p {
+    font-size: $font-size-lg;
+  }
 }
