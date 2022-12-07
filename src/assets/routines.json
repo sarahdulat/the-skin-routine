@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Sarah's Routine",
+    "id": 1,
+    "time": 5,
+    "money": 1,
+    "steps":
+      {
+        "step_1": {
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Tatcha The Deep Cleanse",
+          "link": "https://amzn.to/3J1myuv",
+          "description": "<p>No reason to wash your face in the morning even if you use a retinol at night, UNLESS you get super greasy overnight or work out in the am. But if you want to start clean, any gentle non-stripping cleanser works.</p><p>If you wear make up, sometimes a gentle exfoliant is good in the am to smooth your palette. I love this chemical exfoliant by Tatcha since it has a small amount of grit to make you feel clean.</p><p>Fun fact: Many people use cleansers with chemical exfoliants wrong, work it in on a damp face and let it sit for a minute or two. Then gently start to massage in while rinsing. I used to think expensive cleansers were a scam until I realized this.</p>"
+        },
+        "step_2": {
+          "order": "02. ",
+          "title": "Tone",
+          "product": "THAYERS Alcohol-Free Witch Hazel Toner",
+          "link": "https://amzn.to/3vUykmO",
+          "description": "<p>Swipe your face with a cotton pad and toner if you wash your face in the am. I like micellar water or Thayers non-alcoholic toner. No need to if you did not cleanse, skip to step 3.</p>"
+        },
+        "step_3": {
+          "order": "03. ",
+          "title": "Mist",
+          "product": "Mario Baduscu Rose Water",
+          "link": "https://amzn.to/3tGcpx6",
+          "description": "<p>Products penetrate better on moist skin plus, it feels so luxurious. Obviously optional but there are a lot of benefits of rose water.</p>"
+        },
+        "step_4": {
+          "order": "04. ",
+          "title": "Serum",
+          "product": "Ordinary Copper Peptides",
+          "link": "https://deciem.com/en-us/theordinary/mas-rdn-buffet-copper-peptides-1pct.html?dwvar_mas-rdn-buffet-copper-peptides-1pct_size=30ml&quantity=1",
+          "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
+        },
+        "step_5": {
+          "order": "05. ",
+          "title": "NuFace Gel",
+          "product": "NuFACE Hydrating Aqua Gel Activator",
+          "link": "https://amzn.to/3Y29Mnx",
+          "description": "<p>This is for use with the NuFace, it comes with a gel that I am not a fan of, but colloidal silver gel is an incredible skin saver on its own. Don't have to rinse it off, I just wipe most of it off with moist hands and move on.</p><p>Another budget option that is also easier to get anywhere is aloe vera gel.</p>"
+        }
+      }
+  }
+]

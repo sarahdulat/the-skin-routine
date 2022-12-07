@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <RoutineChart />
-    <RoutineSidebar />
+    <RoutineChart :routines="routines" />
+    <RoutineSidebar :routines="routines" />
   </div>
 </template>
 
@@ -9,11 +9,18 @@
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 
+import routines from '../assets/routines.json'
+
 export default {
   name: "App",
   components: {
     RoutineChart,
     RoutineSidebar
-  }
+  },
+  data() {
+    return {
+      routines: routines,
+    };
+  },
 };
 </script>
