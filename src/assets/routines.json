@@ -4,8 +4,8 @@
     "id": 1,
     "time": 5,
     "money": 1,
-    "steps":
-      {
+    "steps": {
+      "am": {
         "step_1": {
           "order": "01. ",
           "title": "Cleanse",
@@ -30,8 +30,8 @@
         "step_4": {
           "order": "04. ",
           "title": "Serum",
-          "product": "Ordinary Copper Peptides",
-          "link": "https://deciem.com/en-us/theordinary/mas-rdn-buffet-copper-peptides-1pct.html?dwvar_mas-rdn-buffet-copper-peptides-1pct_size=30ml&quantity=1",
+          "product": "Ordinary Buffet + Copper Peptides 1%",
+          "link": "https://amzn.to/3UXO6WP",
           "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
         },
         "step_5": {
@@ -39,8 +39,123 @@
           "title": "NuFace Gel",
           "product": "NuFACE Hydrating Aqua Gel Activator",
           "link": "https://amzn.to/3Y29Mnx",
-          "description": "<p>This is for use with the NuFace, it comes with a gel that I am not a fan of, but colloidal silver gel is an incredible skin saver on its own. Don't have to rinse it off, I just wipe most of it off with moist hands and move on.</p><p>Another budget option that is also easier to get anywhere is aloe vera gel.</p>"
+          "description": "<p>Nuface reformulated this gel with their new line of devices. The old gel burned my skin and was overpriced, but this new gel makes my skin feel so plump and basically doubles as a hyaluronic acid serum that doesn't need to be rinsed off and saves me a step.</p><p>If this is out of your price range I used to use a <a href=\"https://amzn.to/3tLHwXQ\" target=\"_blank\">collodial silver gel</a> which has a lot of it's own skin benefits. Another budget option that is also easier to get anywhere is aloe vera gel.</p>"
+        },
+        "step_6": {
+          "order": "06. ",
+          "title": "NuFace",
+          "product": "NuFACE Mini",
+          "link": "https://amzn.to/3JeeGpT",
+          "description": "<p>If you have the ability to commit to this DAILY, this is my holy grail, the one thing I would take with me to a deserted island. I use the mini, videos on how to use are online.</p><p>It works by sending painless microcurrent into your muscles to stimulate collagen production. It does everything it promises, irons out wrinkles, lifts and tones your face, a miracle.</p><p>If you feel you don't have time to do this in the am, pm is fine, BUT it does have an instant lifting effect which would be a waste on your pillow.</p>"
+        },
+        "step_7": {
+          "order": "07. ",
+          "title": "SPF",
+          "product": "Josie Maran SPF 47",
+          "link": "https://amzn.to/3HWlSp8",
+          "description": "<p>I love the Josie Maran SPF, it is argan oil based though so if your face does not tolerate oil, then find any other SPF that is 30+ to use on a daily basis.</p><p>It doesn't matter if it's winter and you don't leave the house, you are being exposed to UV (unless you are also in a windowless room).</p><p>I'm also partial to mineral sunscreens because, less chemicals. Another reason I love the Josie Maran one because it doesn't leave that white cast like other mineral sunscreens.</p>"
+        },
+        "step_8": {
+          "order": "08. ",
+          "title": "Face Oil",
+          "product": "Ordinary Rosehip Seed Oil",
+          "link": "https://amzn.to/3hkFNqx",
+          "description": "<p>I have a favorite oil, but it's currently not on sale, so I have been using a basic rose-hip oil. Again if your skin does not like oil, you can skip, but depending on why your skin doesn't tolerate oils, there may be an oil for your skin type (for ex: acne prone skin can use jojoba oil). Oil acts as a sealant to work allllll those previous steps in and provide moisture to prevent wrinkles.</p>"
+        },
+        "step_9": {
+          "order": "09. ",
+          "title": "Gua Sha",
+          "product": "Jade Gua Sha Stone",
+          "link": "https://amzn.to/3HVksen",
+          "description": "<p>A gua sha stone is a flat piece of jade used for a lymphatic drainage face massage. Jade rollers kind of push things around your face, but the gua sha is to be used in gentle upward and out strokes to your neck/hairline to get fluids and toxins to flush out of your system (great for those who wake up puffy!). You will need some sort of oil to create slip. There are a lot of tutorials online for different skin concerns.</p>"
+        },
+        "step_10": {
+          "order": "10. ",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop SPF 40 Eye Cream",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Many neglect to put SPF on/around their eyes (slash, it burns). So I found a great eye cream with SPF and brightening properties by Supergoop.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "La Roche-Posay Toleriane Purifying Foaming Facial Cleanser",
+          "link": "https://amzn.to/3PnPsJv",
+          "description": "<p>Any gentle non-stripping cleanser is good to wash off the day. If you wear make up, make sure to double wash with an <a href=\"https://amzn.to/3FzQjCq\" target=\"_blank\">oil-based cleanser</a> first then a gentle one. If you feel like you need an exfoliant, find a good gentle one like <a href=\"https://amzn.to/3J1myuv\" target=\"_blank\">Tatcha the Deep Cleanse</a>.</p>"
+        },
+        "step_2": {
+          "order": "02. ",
+          "title": "Tone",
+          "product": "THAYERS Alcohol-Free Witch Hazel Toner",
+          "link": "https://amzn.to/3vUykmO",
+          "description": "<p>Swipe your face with a cotton pad and toner if you wash your face in the am. I like micellar water or Thayers non-alcoholic toner. No need to if you did not cleanse, skip to step 3.</p>"
+        },
+        "step_3": {
+          "order": "03. ",
+          "title": "Mist",
+          "product": "Mario Baduscu Rose Water",
+          "link": "https://amzn.to/3tGcpx6",
+          "description": "<p>Products penetrate better on moist skin plus, it feels so luxurious. Obviously optional but there are a lot of benefits of rose water.</p>"
+        },
+        "step_4": {
+          "order": "04. ",
+          "title": "Hyaluronic Acid",
+          "product": "Ordinary Hyaluronic Acid",
+          "link": "https://amzn.to/3WklsjE",
+          "description": "<p>HA is a tiny molecule that really penetrates to moisturize your skin, not just sit on top like most moisturizers. It will not feel hydrating, but it is and moisture is the key to preventing wrinkles! I can skip this step in the am thanks to the <a href=\"https://amzn.to/3Y29Mnx\" target=\"_blank\">NuFace Gel</a>.</p>"
+        },
+        "step_5": {
+          "order": "05. ",
+          "title": "Actives",
+          "product": "Topicals Faded Serum for Dark Spots & Discoloration",
+          "link": "https://amzn.to/3W9SCCU",
+          "description": "<p>I have been using this serum in the evening for dark spots, though the active ingredients in it are also good for anti-aging. I did have to work my way up to a nightly use just like with most actives.</p><p>If you have never used an active like retinol or had bad experiences before, get the smallest concentration and use nightly. If you have any redness/peeling/flaking, go every other night until your skin gets accustomed to it. Then work your way up to stronger concentrations.</p><p>Retinol encourages cell turnover so it helps with wrinkles and acne. I use a retinol cream from a derm, if you have a derm I recommend getting retinol Rx because it is cheaper and you know the dosage. If not, <a href=\"https://amzn.to/3FQsaZj\" target=\"_blank\">The Ordinary</a> has a great variety of retinols to help you ease into it.</p>"
+        },
+        "step_6": {
+          "order": "06. ",
+          "title": "Moisturizer",
+          "product": "The Ordinary Natural Moisturizing Factors + HA Surface Hydration",
+          "link": "https://amzn.to/3Wf0Fy7",
+          "description": "<p>I'm not too picky with evening moisturizers, as long as it isn't too fragranced and does the job I'm a fan. I tend to switch it up in different seasons and choose something more lightweight in the summer like the <a href=\"https://amzn.to/3hsheb8\" target=\"_blank\">Glow Recipe Watermelon Glow Pink Juice Face Moisturizer</a></p>"
+        },
+        "step_7": {
+          "order": "07. ",
+          "title": "Face Oil",
+          "product": "Ordinary Rosehip Seed Oil",
+          "link": "https://amzn.to/3hkFNqx",
+          "description": "<p>I have a favorite oil, but it's currently not on sale, so I have been using a basic rose-hip oil. Again if your skin does not like oil, you can skip, but depending on why your skin doesn't tolerate oils, there may be an oil for your skin type (for ex: acne prone skin can use jojoba oil). Oil acts as a sealant to work allllll those previous steps in and provide moisture to prevent wrinkles.</p>"
+        },
+        "step_8": {
+          "order": "08. ",
+          "title": "Gua Sha",
+          "product": "Jade Gua Sha Stone",
+          "link": "https://amzn.to/3HVksen",
+          "description": "<p>A gua sha stone is a flat piece of jade used for a lymphatic drainage face massage. Jade rollers kind of push things around your face, but the gua sha is to be used in gentle upward and out strokes to your neck/hairline to get fluids and toxins to flush out of your system (great for those who wake up puffy!). You will need some sort of oil to create slip. There are a lot of tutorials online for different skin concerns.</p>"
+        },
+        "step_9": {
+          "order": "09. ",
+          "title": "Eye Cream",
+          "product": "Glow Recipe Avocado Melt Retinol Eye Sleeping Mask",
+          "link": "https://amzn.to/3hUiwIy",
+          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p>"
+        },
+        "step_10": {
+          "order": "10. ",
+          "title": "Sleeping Mask",
+          "product": "Egyptian Magic",
+          "link": "https://amzn.to/3MC7oy7",
+          "description": "<p>Some call this \"slugging\" which you can do with regular vaseline, but I try to stay away from products with petrolatum. Slugging is when you put a thick mask on your face to help seal in products overnight.</p><p>I love Egyptian Magic and recently, <a href=\"https://amzn.to/3hTynY0\" target=\"_blank\">Pomada De La Campana</a> (yes it has petrolatum) which has brightening qualities in the zinc.</p>"
+        },
+        "step_11": {
+          "order": "11. ",
+          "title": "Lip Mask",
+          "product": "Laneige Lip Sleeping Mask",
+          "link": "https://amzn.to/3w9qLsL",
+          "description": "<p>Lips get dry from all that mouth breathing overnight, the Laneige lip mask is still moist when I wake up.</p>"
         }
       }
+    }
   }
 ]
