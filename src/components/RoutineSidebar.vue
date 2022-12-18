@@ -4,9 +4,21 @@
       v-for="routine in routines"
       :key="routine.id"
       class="scroll-container overflow-scroll">
-      <h2 class="text-decoration-underline mt-3">{{ routine.name }}</h2>
+      <h2 class="text-decoration-underline mt-3">{{ routine.name }} {{ routineTime }}</h2>
+      <div class="button-group">
+        <button
+          class="btn btn-primary"
+          @click="$store.dispatch('setRoutineTime', 'am')">
+            a
+        </button>
+        <button
+          class="btn btn-primary"
+          @click="$store.dispatch('setRoutineTime', 'pm')">
+            p
+        </button>
+      </div>
       <div
-        v-for="step in routine.steps"
+        v-for="step in routine.steps.routineTime"
         :key="step.key"
         class="border-bottom mb-3">
         <h3 class="d-inline">{{ step.order }}</h3>
@@ -22,8 +34,15 @@
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex'
+const { mapActions, mapState } = createNamespacedHelpers('routines')
+
 export default {
   name: "App",
+  data () {
+    return {
+    }
+  },
   props: {
     routines: {
       default () {
@@ -32,10 +51,15 @@ export default {
       type: Array
     },
   },
+  computed: {
+    ...mapState([
+      'routineTime'
+    ])
+  },
   methods: {
-    showDescription () {
-
-    }
+    ...mapActions([
+      setRoutineTime
+    ])
   }
 };
 </script>
