@@ -5,37 +5,47 @@
       :key="routine.id"
       class="scroll-container overflow-scroll">
       <h2 class="text-decoration-underline mt-3">{{ routine.name }}</h2>
-      <div class="button-group">
-        <button
-          class="btn btn-primary"
-          @click="$store.dispatch('setRoutineTime', 'am')">
-            am <span class="glyph">☀</span>
-        </button>
-        <button
-          class="btn btn-primary"
-          @click="$store.dispatch('setRoutineTime', 'pm')">
-            pm <span class="glyph">⏾</span>
-        </button>
+      <div class="btn-group w-100" role="group">
+        <input
+          @click="$store.dispatch('setRoutineTime', 'am')"
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="am"
+          autocomplete="off"
+          checked>
+        <label class="btn btn-lg btn-outline-primary" for="am">am <span class="glyph">☀</span></label>
+        <input
+          @click="$store.dispatch('setRoutineTime', 'pm')"
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="pm"
+          autocomplete="off">
+        <label class="btn btn-lg btn-outline-primary" for="pm">pm <span class="glyph">⏾</span></label>
       </div>
+
       <div
         v-for="step in getSteps(routine)"
         :key="step.key"
-        class="border-bottom mb-3">
+        class="border-bottom mb-3 pb-3">
         <h3 class="d-inline">{{ step.order }}</h3>
         <h4 class="d-inline">{{ step.title }}
         <span
           data-bs-toggle="collapse"
           :data-bs-target="`#${step.title}`"
-          class="glyph collapsed">
+          class="glyph hand collapsed">
             🖙
         </span>
         </h4>
+        <div>
+          <a
+            :href="step.link"
+            target="_blank">{{ step.product }}</a>
+        </div>
         <div
           class="collapse multi-collapse mt-1"
           :id="`${step.title}`">
-          <div>
-            <a :href="step.link" target="_blank">{{ step.product }}</a>
-          </div>
           <div v-html="step.description"></div>
         </div>
       </div>
@@ -81,8 +91,14 @@ export default {
 .scroll-container {
   max-height: calc(100vh - 155px);
 }
-
-.glyph {
+.toggle-group {
+  border: 1px solid black;
+  border-radius: 0;
+  &:hover {
+    border-radius: 0;
+  }
+}
+.hand {
   display: inline-block;
   transition: all .1s linear;
   cursor: pointer;
