@@ -9,12 +9,12 @@
         <button
           class="btn btn-primary"
           @click="$store.dispatch('setRoutineTime', 'am')">
-            am
+            am <span class="glyph">☀</span>
         </button>
         <button
           class="btn btn-primary"
           @click="$store.dispatch('setRoutineTime', 'pm')">
-            pm
+            pm <span class="glyph">⏾</span>
         </button>
       </div>
       <div
@@ -22,11 +22,21 @@
         :key="step.key"
         class="border-bottom mb-3">
         <h3 class="d-inline">{{ step.order }}</h3>
-        <h4 class="d-inline">{{ step.title }} <span class="glyph">🖟</span></h4>
-        <div>
-          <a :href="step.link" target="_blank">{{ step.product }}</a>
-        </div>
-        <div v-html="step.description">
+        <h4 class="d-inline">{{ step.title }}
+        <span
+          data-bs-toggle="collapse"
+          :data-bs-target="`#${step.title}`"
+          class="glyph collapsed">
+            🖙
+        </span>
+        </h4>
+        <div
+          class="collapse multi-collapse mt-1"
+          :id="`${step.title}`">
+          <div>
+            <a :href="step.link" target="_blank">{{ step.product }}</a>
+          </div>
+          <div v-html="step.description"></div>
         </div>
       </div>
     </div>
@@ -39,7 +49,7 @@ export default {
   name: "App",
   data () {
     return {
-
+      showStep: false
     }
   },
   props: {
@@ -70,5 +80,14 @@ export default {
 <style lang="scss" scoped>
 .scroll-container {
   max-height: calc(100vh - 155px);
+}
+
+.glyph {
+  display: inline-block;
+  transition: all .1s linear;
+  cursor: pointer;
+  &:not(.collapsed) {
+    transform: rotate(90deg);
+  }
 }
 </style>
