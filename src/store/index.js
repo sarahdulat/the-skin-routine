@@ -1,9 +1,4 @@
 import { createStore } from 'vuex'
-import routinesModule from './modules/routines'
-
-const modules = {
-  routines: routinesModule
-}
 
 export default createStore({
   state: {
