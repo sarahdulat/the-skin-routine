@@ -8,15 +8,14 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import PageFooter from "./components/PageFooter.vue";
 import NavBar from "./components/NavBar.vue";
-
 export default {
   name: "App",
   components: {
     PageFooter,
-    NavBar
+    NavBar,
   }
 };
 </script>
@@ -27,10 +26,12 @@ export default {
   flex-direction: column;
   min-height: 100vh;
 }
+
 .container {
   display: flex;
   flex-direction: row;
 }
+
 main {
   -webkit-flex: 3;
   flex: 3;

@@ -3,35 +3,30 @@
   "version": "4.46.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0-beta1",
-    "buttercms": "^1.2.9",
-    "core-js": "^3.8.3",
-    "d3": "^7.6.1",
-    "lowdb": "^3.0.0",
+    "@popperjs/core": "^2.11.8",
+    "buttercms": "^1.2.15",
+    "d3": "^7.8.5",
+    "lowdb": "^6.1.1",
     "moment": "^2.29.4",
-    "node-polyfill-webpack-plugin": "^1.1.4",
-    "path-browserify": "^1.0.1",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vue": "^3.3.9",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "sass": "^1.52.1",
-    "sass-loader": "^10.2.1"
+    "@testing-library/vue": "^8.0.1",
+    "@types/d3": "^7.4.3",
+    "@vitejs/plugin-vue": "^4.5.1",
+    "eslint": "^8.0.3",
+    "eslint-plugin-vue": "^9.19.2",
+    "jsdom": "^23.0.1",
+    "sass": "^1.69.5",
+    "vite": "^5.0.4",
+    "vitest": "^0.34.6"
   }
 }

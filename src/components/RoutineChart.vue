@@ -4,12 +4,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import * as d3 from "d3"
 
 export default {
   name: 'routine-chart',
-  data () {
+  data() {
     return {
       chartData: [
         {
@@ -54,7 +54,7 @@ export default {
 
   },
   methods: {
-    renderChart () {
+    renderChart() {
       const svg = d3.select("#scatter"),
         margin = { top: 20, right: 20, bottom: 30, left: 50 },
         width = +svg.attr("width"),
@@ -77,27 +77,26 @@ export default {
         .attr("height", height - margin.top - margin.bottom)
         .attr("fill", "#F6F6F6");
 
-        g.selectAll("circle")
-          .data(this.chartData)
-          .enter().append("circle")
-          .attr("class", "dot")
-          .attr("r", 7)
-          .attr("cx", function (d) { return x(d.time); })
-          .attr("cy", function (d) { return y(d.money); })
-          .style("fill", "#343A40");
+      g.selectAll("circle")
+        .data(this.chartData)
+        .enter().append("circle")
+        .attr("class", "dot")
+        .attr("r", 7)
+        .attr("cx", function (d) { return x(d.time); })
+        .attr("cy", function (d) { return y(d.money); })
+        .style("fill", "#343A40");
 
-        g.append("g")
-          .attr("class", "x axis")
-          .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
-          .call(d3.axisBottom(x).ticks(0));
+      g.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
+        .call(d3.axisBottom(x).ticks(0));
 
-        g.append("g")
-          .attr("class", "y axis")
-          .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
-          .call(d3.axisLeft(y).ticks(0));
+      g.append("g")
+        .attr("class", "y axis")
+        .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
+        .call(d3.axisLeft(y).ticks(0));
     },
-    padExtent (e, p) {
-      if (p === undefined) p = 1;
+    padExtent(e: [number, number], p = 1) {
       return ([e[0] - p, e[1] + p]);
     }
   },
@@ -107,6 +106,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

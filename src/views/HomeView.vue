@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 
