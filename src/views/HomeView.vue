@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <main>
     <RoutineChart :routines="routines" />
     <RoutineSidebar :routines="routines" />
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -24,3 +24,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 1rem;
+}
+</style>

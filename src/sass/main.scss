@@ -1,0 +1,66 @@
+@font-face {
+  font-display: block;
+  font-family: "Jost Italic";
+  src: url(../fonts/Jost-Italic-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-display: block;
+  font-family: "Jost";
+  src: url(../fonts/Jost-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-display: block;
+  font-family: "Noto Sans Symbols 2";
+  src: url(../fonts/NotoSansSymbols2-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-display: block;
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-VariableFont_wght.ttf) format("truetype");
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css");
+
+// Partials
+@import "partials/variables";
+@import "partials/utilities";
+
+body {
+  font-family: var(--font-family-serif);
+  background-color: var(--color-body);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-family-sans-serif)
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+  &.router-link-active.page-link {
+    text-decoration: overline;
+  }
+}
+
+.glyph {
+  font-family: 'Noto Sans Symbols 2';
+}
+
+#about, #blog {
+  p:first-of-type:first-letter {
+    color: var(--color-text);
+    float: left;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    line-height: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+  p {
+    font-size: var(--font-size-l);
+  }
+}

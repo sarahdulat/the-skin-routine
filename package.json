@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "sass": "sass --watch src/sass/main.scss public/main.css"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",

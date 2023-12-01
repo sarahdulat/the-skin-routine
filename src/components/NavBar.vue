@@ -1,27 +1,64 @@
 <template>
-  <nav class="navbar navbar-expand-lg sticky-top pb-0">
-    <div class="container">
+  <nav class="pb-0">
+    <div class="navbar">
       <h1>
         <router-link to="/">
           The Skin Routine<span class="glyph">🩸</span>
         </router-link>
       </h1>
-      <div class="d-flex">
-        <router-link to="/about" class="page-link ms-3">About</router-link>
-        <router-link to="/blog" class="page-link ms-3">Blog</router-link>
+      <div class="nav-links">
+        <h6>
+          <router-link to="/about">About</router-link>
+        </h6>
+        <h6>
+          <router-link to="/blog">Blog</router-link>
+        </h6>
       </div>
     </div>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-.navbar {
-  background-color: #FBFAF4;
-  a.page-link {
-    font-size: 1.25rem;
+nav {
+  position: sticky;
+  top: 0;
+  margin: 0 var(--space-lg);
+  background-color: var(--color-body);
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-lg);
+    border-bottom: 1px solid var(--color-text);
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: var(--space-md);
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: var(--color-text);
+
+          .glyph {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      h6 {
+        font-weight: 400;
+        margin-bottom: var(--space-sm);
+        margin-left: var(--space-lg);
+      }
+    }
   }
-}
-.container {
-  border-bottom: 1px solid #101518;
 }
 </style>

@@ -68,4 +68,10 @@ export default {
   margin-bottom: 1rem;
   max-width: 375px;
 }
+
+.caption {
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: right;
+}
 </style>

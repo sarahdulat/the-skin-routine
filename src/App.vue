@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <NavBar />
-    <div class="container flex-fill">
+    <div class="container">
       <router-view />
     </div>
     <PageFooter />
@@ -30,10 +30,5 @@ export default {
 .container {
   display: flex;
   flex-direction: row;
-}
-
-main {
-  -webkit-flex: 3;
-  flex: 3;
 }
 </style>

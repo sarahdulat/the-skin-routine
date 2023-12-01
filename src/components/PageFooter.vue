@@ -1,27 +1,40 @@
 <template>
-  <div class="container sticky-bottom">
-    <div class="d-flex flex-wrap w-100 m-4">
+  <footer>
+    <div>
       <div class="me-auto">
         <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
       </div>
       <div class="text-nowrap">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank">
-          <i class="bi bi-instagram fs-4" alt="instagram"></i>
+          <i class="bi bi-instagram" alt="instagram"></i>
         </a>
-        <a href="http://www.twitter.com/the_skinroutine" target="_blank">
-          <i class="bi bi-twitter fs-4 ms-4" alt="twitter"></i>
+        <a href="http://www.x.com/the_skinroutine" target="_blank">
+          <i class="bi bi-twitter-x ms-lg" alt="x"></i>
         </a>
         <a href="http://www.pinterest.com/the_skinroutine" target="_blank">
-          <i class="bi bi-pinterest fs-4 ms-4" alt="pinterest"></i>
+          <i class="bi bi-pinterest ms-lg" alt="pinterest"></i>
         </a>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
-.container {
-  background-color: #FBFAF4;
-  border-top: 1px solid #101518;
+footer {
+  background-color: var(--color-body);
+  border-top: 1px solid var(--color-text);
+  margin: var(--space-lg);
+  position: sticky;
+  bottom: 0;
+
+  >div {
+    display: flex;
+    align-items: center;
+    padding: var(--space-xl);
+  }
+
+  i {
+    font-size: var(--fontSize-xl);
+  }
 }
 </style>
