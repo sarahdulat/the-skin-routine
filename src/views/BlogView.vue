@@ -1,18 +1,18 @@
 <template>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-    <div class="post col" v-for="(post, index) in posts" :key="post.slug + '_' + index">
+  <main>
+    <div class="post" v-for="(post, index) in posts" :key="post.slug + '_' + index">
       <router-link :to="'/blog/' + post.slug">
-        <img :src="post.featured_image" class="img-fluid" :alt="post.alt" />
+        <img :src="post.featured_image" :alt="post.alt" />
       </router-link>
-      <h6 v-for="tag in post.tags" :key="tag.key" class="d-inline text-uppercase me-2 mt-4">
+      <h6 v-for="tag in post.tags" :key="tag.key" class="me-md mt-xl">
         {{ tag.name }}
       </h6>
       <router-link :to="'/blog/' + post.slug">
-        <h3 class="mt-4">{{ post.title }}</h3>
+        <h3 class="mt-xl">{{ post.title }}</h3>
       </router-link>
-      <div class="mt-4">{{ post.summary }}</div>
+      <div class="mt-xl">{{ post.summary }}</div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -42,9 +42,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  margin-right: calc(-1 * var(--bs-gutter-x));
-  margin-left: calc(-1 * var(--bs-gutter-x));
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 
 .post {
@@ -54,5 +55,9 @@ export default {
     object-fit: cover;
     margin-bottom: 1rem;
   }
+}
+
+h6 {
+  text-transform: uppercase;
 }
 </style>

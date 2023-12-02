@@ -11,7 +11,7 @@
           <router-link to="/about">About</router-link>
         </h6>
         <h6>
-          <router-link to="/blog">Blog</router-link>
+          <router-link to="/blog">Reviews</router-link>
         </h6>
       </div>
     </div>

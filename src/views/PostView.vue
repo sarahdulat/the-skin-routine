@@ -1,19 +1,19 @@
 <template>
-  <div id="blog">
-    <div class="row">
+  <main>
+    <div>
       <img :src="post.data.featured_image" class="cover-img" :alt="post.data.featured_image_alt">
     </div>
-    <div class="col-xs-12 col-md-8 offset-md-2">
-      <div class="text-center">
-        <h6 v-for="tag in post.data.tags" :key="tag.key" class="mt-5 text-uppercase">
+    <div>
+      <div class="head">
+        <h6 v-for="tag in post.data.tags" :key="tag.key" class="mt-xl">
           {{ tag.name }}
         </h6>
-        <h1 class="mt-5">{{ post.data.title }}</h1>
-        <h6 class="mt-5">{{ formattedDate(post.data.published) }}</h6>
+        <h1 class="mt-xl">{{ post.data.title }}</h1>
+        <h6 class="mt-xl">{{ formattedDate(post.data.published) }}</h6>
       </div>
-      <p class="mt-5" v-html="post.data.body"></p>
+      <p class="mt-xl" v-html="post.data.body"></p>
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -47,10 +47,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+main {
+  width: 100%;
+}
+
 .cover-img {
   width: 100%;
   height: 300px;
   padding: 0;
   object-fit: cover;
+}
+
+.head {
+  text-align: center;
+
+  >h6 {
+    text-transform: uppercase;
+  }
+}
+
+p {
+  font-size: var(--font-size-l);
+
+  &:first-of-type:first-letter {
+    color: var(--color-text);
+    float: left;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    line-height: 50px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
 }
 </style>

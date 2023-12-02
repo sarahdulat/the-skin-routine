@@ -49,18 +49,3 @@ a {
 .glyph {
   font-family: 'Noto Sans Symbols 2';
 }
-
-#about, #blog {
-  p:first-of-type:first-letter {
-    color: var(--color-text);
-    float: left;
-    font-family: Jost, Arial, Helvetica, sans-serif;
-    font-size: 75px;
-    line-height: 50px;
-    padding-top: 4px;
-    padding-right: 4px;
-  }
-  p {
-    font-size: var(--font-size-l);
-  }
-}

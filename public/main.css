@@ -579,17 +579,4 @@ a.router-link-active.page-link {
   font-family: "Noto Sans Symbols 2";
 }
 
-#about p:first-of-type:first-letter, #blog p:first-of-type:first-letter {
-  color: var(--color-text);
-  float: left;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-  font-size: 75px;
-  line-height: 50px;
-  padding-top: 4px;
-  padding-right: 4px;
-}
-#about p, #blog p {
-  font-size: var(--font-size-l);
-}
-
 /*# sourceMappingURL=main.css.map */
