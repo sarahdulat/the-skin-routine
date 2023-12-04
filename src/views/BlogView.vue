@@ -15,30 +15,10 @@
   </main>
 </template>
 
-<script lang="ts">
-import { butter } from '../buttercms'
+<script lang="ts" setup>
+import { getPosts } from '../posts'
 
-export default {
-  data() {
-    return {
-      page_title: 'Blog',
-      posts: [],
-    };
-  },
-  methods: {
-    getPosts() {
-      butter.post.list({
-        page: 1,
-        page_size: 10
-      }).then(res => {
-        this.posts = res.data.data
-      })
-    }
-  },
-  created() {
-    this.getPosts()
-  }
-}
+const posts = getPosts()
 </script>
 
 <style lang="scss" scoped>

@@ -5,24 +5,11 @@
   </main>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
-
 import routines from '../assets/routines.json'
 
-export default {
-  name: "App",
-  components: {
-    RoutineChart,
-    RoutineSidebar
-  },
-  data() {
-    return {
-      routines: routines,
-    };
-  },
-};
 </script>
 
 <style lang="scss" scoped>

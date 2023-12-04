@@ -1,17 +1,17 @@
 <template>
   <aside>
-    <div v-for="routine in routines" :key="routine.id" class="scroll-container">
-      <h2 class="mt-lg">{{ routine.name }}</h2>
+    <div class="scroll-container">
+      <h2 class="mt-lg">{{ store.state.currentRoutine.name }}</h2>
       <input type="checkbox" id="toggle" />
       <label for="toggle" class='toggleContainer'>
         <div @click="$store.dispatch('setRoutineTime', 'am')">am <span class="glyph">☀</span></div>
         <div @click="$store.dispatch('setRoutineTime', 'pm')">pm <span class="glyph">⏾</span></div>
       </label>
 
-      <div v-for="step in getSteps(routine)" :key="step.key" class="step mb-lg pb-lg">
+      <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>{{ step.title }}
-          <span data-bs-toggle="collapse" :data-bs-target="`#${step.title}`" class="glyph hand collapsed">
+          <span class="glyph hand collapsed">
             🖙
           </span>
         </h4>
@@ -26,38 +26,13 @@
   </aside>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
+import { computed } from 'vue';
+import { useStore } from '../store'
 
-export default {
-  name: "App",
-  data() {
-    return {
-      showStep: false
-    }
-  },
-  props: {
-    routines: {
-      default() {
-        return []
-      },
-      type: Array
-    },
-  },
-  computed: {
-    routineTime() {
-      return this.$store.state.routineTime
-    },
-  },
-  methods: {
-    getSteps(routine) {
-      if (this.routineTime === "am") {
-        return routine.steps.am
-      } else {
-        return routine.steps.pm
-      }
-    }
-  }
-};
+const store = useStore()
+const routineTime = computed(() => store.state.routineTime);
+const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]);
 </script>
 
 <style lang="scss" scoped>
@@ -99,7 +74,6 @@ h4 {
   width: fit-content;
   border: 1px solid var(--color-text);
   border-radius: var(--radius-sm);
-  background: var(--color-text);
   font-weight: bold;
   color: var(--color-text);
   cursor: pointer;
@@ -114,7 +88,7 @@ h4 {
   height: 100%;
   left: 0%;
   border-radius: 0;
-  background: var(--color-body);
+  background: var(--color-text);
   transition: all 0.3s;
 }
 
@@ -133,25 +107,25 @@ input {
 }
 
 input:checked+.toggleContainer div:first-child {
-  color: var(--color-body);
+  color: var(--color-text);
   transition: color 0.3s;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 input:checked+.toggleContainer div:last-child {
-  color: var(--color-text);
+  color: var(--color-body);
   transition: color 0.3s;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 input+.toggleContainer div:first-child {
-  color: var(--color-text);
+  color: var(--color-body);
   transition: color 0.3s;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 input+.toggleContainer div:last-child {
-  color: var(--color-body);
+  color: var(--color-text);
   transition: color 0.3s;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }

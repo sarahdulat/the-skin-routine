@@ -4,105 +4,68 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import * as d3 from "d3"
+import { onMounted } from 'vue'
+import { useStore } from '../store'
+import routines from '../assets/routines.json'
 
-export default {
-  name: 'routine-chart',
-  data() {
-    return {
-      chartData: [
-        {
-          "question": "Routine One",
-          "time": 5,
-          "money": 1
-        },
-        {
-          "question": "Routine Two",
-          "time": 4,
-          "money": 1
-        },
-        {
-          "question": "Routine Three",
-          "time": 4,
-          "money": 2
-        },
-        {
-          "question": "Routine Four",
-          "time": 5,
-          "money": 4
-        },
-        {
-          "question": "Routine Five",
-          "time": 4,
-          "money": 5
-        },
-        {
-          "question": "Routine Six",
-          "time": 1,
-          "money": 1
-        },
-        {
-          "question": "Routine Seven",
-          "time": 1,
-          "money": 5
-        }
-      ]
-    }
-  },
-  computed: {
+export type Routine = typeof routines
 
-  },
-  methods: {
-    renderChart() {
-      const svg = d3.select("#scatter"),
-        margin = { top: 20, right: 20, bottom: 30, left: 50 },
-        width = +svg.attr("width"),
-        height = +svg.attr("height"),
-        domainwidth = width - margin.left - margin.right,
-        domainheight = height - margin.top - margin.bottom;
+const store = useStore()
+const props = defineProps<{
+  routines: Routine
+}>();
 
-      const x = d3.scaleLinear()
-        .domain(this.padExtent([1, 5]))
-        .range(this.padExtent([0, domainwidth]));
-      const y = d3.scaleLinear()
-        .domain(this.padExtent([1, 5]))
-        .range(this.padExtent([domainheight, 0]));
+onMounted(() => { renderChart() })
 
-      const g = svg.append("g")
-        .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
+function renderChart() {
+  const svg = d3.select("#scatter"),
+    margin = { top: 20, right: 20, bottom: 30, left: 50 },
+    width = +svg.attr("width"),
+    height = +svg.attr("height"),
+    domainwidth = width - margin.left - margin.right,
+    domainheight = height - margin.top - margin.bottom;
 
-      g.append("rect")
-        .attr("width", width - margin.left - margin.right)
-        .attr("height", height - margin.top - margin.bottom)
-        .attr("fill", "#F6F6F6");
+  const x = d3.scaleLinear()
+    .domain(padExtent([1, 5]))
+    .range(padExtent([0, domainwidth]));
+  const y = d3.scaleLinear()
+    .domain(padExtent([1, 5]))
+    .range(padExtent([domainheight, 0]));
 
-      g.selectAll("circle")
-        .data(this.chartData)
-        .enter().append("circle")
-        .attr("class", "dot")
-        .attr("r", 7)
-        .attr("cx", function (d) { return x(d.time); })
-        .attr("cy", function (d) { return y(d.money); })
-        .style("fill", "#343A40");
+  const g = svg.append("g")
+    .attr("transform", "translate(" + margin.top + "," + margin.top + ")");
 
-      g.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
-        .call(d3.axisBottom(x).ticks(0));
+  g.append("rect")
+    .attr("width", width - margin.left - margin.right)
+    .attr("height", height - margin.top - margin.bottom)
+    .attr("fill", "#F6F6F6");
 
-      g.append("g")
-        .attr("class", "y axis")
-        .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
-        .call(d3.axisLeft(y).ticks(0));
-    },
-    padExtent(e: [number, number], p = 1) {
-      return ([e[0] - p, e[1] + p]);
-    }
-  },
-  mounted() {
-    this.renderChart()
-  }
+  g.selectAll("circle")
+    .data(props.routines)
+    .enter().append("circle")
+    .attr("class", "dot")
+    .attr("r", 7)
+    .attr("cx", (d) => x(d.time))
+    .attr("cy", (d) => y(d.money))
+    .style("fill", "#343A40")
+    .on("click", (event, d) => { store.dispatch('setCurrentRoutine', d); })
+    .append('title')
+    .text((d) => `${d.name} in ${d.time} minutes for $${d.money}`);
+
+  g.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + y.range()[0] / 2 + ")")
+    .call(d3.axisBottom(x).ticks(0));
+
+  g.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + x.range()[1] / 2 + ", 0)")
+    .call(d3.axisLeft(y).ticks(0));
+}
+function padExtent(e: [number, number], p = 1) {
+  return ([e[0] - p, e[1] + p]);
 }
 </script>
 
