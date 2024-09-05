@@ -5,20 +5,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, watch } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import * as d3 from 'd3';
 
 export default defineComponent({
-  name: 'ResponsiveQuadrantGridChart',
+  name: 'SquareResponsiveQuadrantGridChart',
   setup() {
     const graph = ref<HTMLDivElement | null>(null);
-    const svgRef = ref<SVGSVGElement | null>(null);
 
     // Function to create the quadrant graph with grid lines
     const createGraph = () => {
       const margin = { top: 60, right: 60, bottom: 40, left: 0 };
-      // Calculate width and height based on the container size
-      const containerSize = Math.min(graph.value!.clientWidth, graph.value!.clientHeight);
+
+      // Calculate dimensions based on the container size
+      const containerHeight = graph.value!.clientHeight;
+      const containerSize = containerHeight; // Ensure it's square, using height as the limiting factor
       const width = containerSize - margin.left - margin.right;
       const height = containerSize - margin.top - margin.bottom;
 
@@ -29,6 +30,8 @@ export default defineComponent({
         .select(graph.value)
         .append('svg')
         .attr('viewBox', `0 0 ${containerSize} ${containerSize}`)
+        .attr('preserveAspectRatio', 'xMinYMin meet') // Preserve aspect ratio
+        .style('height', '100%')
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top / 2})`);
 
@@ -102,17 +105,16 @@ export default defineComponent({
         .attr("x", width / 2)
         .attr("y", -margin.top / 5) // Position above the X-axis
         .attr("text-anchor", "middle")
-        .style("font-size", "12px")
-        .text("X Axis Label (Top)");
+        .style("font-size", "16px")
+        .text("Time");
 
       // Add Y-axis label on the right
       svg.append("text")
-        .attr("transform", "rotate(90)") // Rotate text for Y-axis label on the right
-        .attr("x", height / 2)
-        .attr("y", width + margin.right / 2) // Position to the right of the Y-axis
-        .attr("text-anchor", "middle")
-        .style("font-size", "12px")
-        .text("Y Axis Label (Right)");
+        .attr("x", width + margin.right / 5) // Position to the right of the Y-axis
+        .attr("y", height / 2)
+        .attr("text-anchor", "start")
+        .style("font-size", "16px")
+        .text("Cost");
     };
 
     // Fetch data and create the graph on component mount
@@ -130,7 +132,6 @@ export default defineComponent({
 
     return {
       graph,
-      svgRef,
     };
   },
 });
@@ -144,7 +145,7 @@ export default defineComponent({
   /* Set full height */
   position: relative;
   /* Ensure positioning works for children */
-  max-height: calc(100vh - 240px);
+  max-height: calc(100% - 135px);
   /* Set a maximum height for the container */
 }
 
