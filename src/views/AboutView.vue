@@ -15,7 +15,8 @@
         11-step routine they get a little glassy-eyed. "You're going to have to write this down for me." or "I'm going
         to watch you do your morning routine." 🙅‍♀️ After many of these conversations, I offered to put everything into
         a <a href="https://docs.google.com/spreadsheets/d/1PH3FHGTuFaOUuOaTCJxuLhv4Ril-zrSTL4Kd0aI74UA/edit?usp=sharing"
-          target="_blank">Google Sheet</a> with the order, instructions, links, and alternatives for other skin
+          target="_blank" rel="noopener noreferrer">Google Sheet</a> with the order, instructions, links, and alternatives
+        for other skin
         types/concerns, but I almost immediately got feedback on the sheet. "What if I'm not as dedicated as you?" or,
         "What if I have a smaller budget?". It was then that I decided to create a more interactive medium for not only
         my routine but also for alternatives based on variables like budget and time.</p>

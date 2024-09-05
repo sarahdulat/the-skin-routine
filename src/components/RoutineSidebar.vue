@@ -16,7 +16,7 @@
           </span>
         </h4>
         <div>
-          <a :href="step.link" target="_blank">{{ step.product }}</a>
+          <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
         </div>
         <div class="collapse multi-collapse mt-sm" :id="`${step.title}`">
           <div v-html="step.description"></div>
@@ -37,7 +37,7 @@ const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]
 
 <style lang="scss" scoped>
 .scroll-container {
-  max-height: calc(100vh - 155px);
+  max-height: calc(100vh - 180px);
   overflow: scroll;
 }
 
