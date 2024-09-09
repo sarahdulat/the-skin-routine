@@ -15,13 +15,14 @@ export default defineComponent({
 
     // Function to create the quadrant graph with grid lines
     const createGraph = () => {
-      const margin = { top: 60, right: 60, bottom: 40, left: 0 };
+      const margin = { top: 60, right: 60, bottom: 0, left: 0 };
 
-      // Calculate dimensions based on the container size
+      // Get the width and height of the parent container dynamically
+      const containerWidth = graph.value!.clientWidth;
       const containerHeight = graph.value!.clientHeight;
-      const containerSize = containerHeight; // Ensure it's square, using height as the limiting factor
-      const width = containerSize - margin.left - margin.right;
-      const height = containerSize - margin.top - margin.bottom;
+
+      const width = containerWidth - margin.left - margin.right;
+      const height = containerHeight - margin.top - margin.bottom;
 
       // Remove existing SVG if present
       d3.select(graph.value).selectAll("*").remove();
@@ -29,14 +30,13 @@ export default defineComponent({
       const svg = d3
         .select(graph.value)
         .append('svg')
-        .attr('viewBox', `0 0 ${containerSize} ${containerSize}`)
-        .attr('preserveAspectRatio', 'xMinYMin meet') // Preserve aspect ratio
-        .style('height', '100%')
+        .attr('width', containerWidth) // Set width to match parent
+        .attr('height', containerHeight) // Set height to match parent
         .append('g')
-        .attr('transform', `translate(${margin.left},${margin.top / 2})`);
+        .attr('transform', `translate(${margin.left},${margin.top})`);
 
       // Generate random data points for the scatter plot
-      const data = Array.from({ length: 20 }, () => ({
+      const data = Array.from({ length: 10 }, () => ({
         x: Math.random() * 100,
         y: Math.random() * 100,
       }));
@@ -52,8 +52,8 @@ export default defineComponent({
           .attr('x2', width)
           .attr('y1', yScale(i))
           .attr('y2', yScale(i))
-          .attr('stroke', '#ccc') // Light gray for grid lines
-          .attr('stroke-width', 1);
+          .attr('stroke', '#343A40') // Light gray for grid lines
+          .attr('stroke-width', 0.5);
       }
 
       // Draw vertical grid lines
@@ -63,8 +63,8 @@ export default defineComponent({
           .attr('x2', xScale(i))
           .attr('y1', 0)
           .attr('y2', height)
-          .attr('stroke', '#ccc') // Light gray for grid lines
-          .attr('stroke-width', 1);
+          .attr('stroke', '#343A40') // Light gray for grid lines
+          .attr('stroke-width', 0.5);
       }
 
       // Draw the quadrants (horizontal and vertical lines)
@@ -110,8 +110,8 @@ export default defineComponent({
 
       // Add Y-axis label on the right
       svg.append("text")
-        .attr("x", width + margin.right / 5) // Position to the right of the Y-axis
-        .attr("y", height / 2)
+        .attr("x", width + 5) // Position to the right of the Y-axis
+        .attr("y", height / 2 + 5)
         .attr("text-anchor", "start")
         .style("font-size", "16px")
         .text("Cost");
@@ -145,8 +145,7 @@ export default defineComponent({
   /* Set full height */
   position: relative;
   /* Ensure positioning works for children */
-  max-height: calc(100% - 135px);
-  /* Set a maximum height for the container */
+  max-height: 100%;
 }
 
 .quadrant-line {

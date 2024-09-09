@@ -25,10 +25,15 @@
 @import "partials/variables";
 @import "partials/utilities";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-family-serif);
   background-color: var(--color-body);
-  height: 100vh;
+  height: 100dvh;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 {

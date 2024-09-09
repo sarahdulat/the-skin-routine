@@ -37,7 +37,7 @@ const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]
 
 <style lang="scss" scoped>
 .scroll-container {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 185px);
   overflow: scroll;
 }
 

@@ -23,7 +23,8 @@
 footer {
   background-color: var(--color-body);
   border-top: 1px solid var(--color-text);
-  margin: var(--space-lg);
+  margin-left: var(--space-lg);
+  margin-right: var(--space-lg);
   position: sticky;
   bottom: 0;
 
