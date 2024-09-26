@@ -27,6 +27,7 @@
 }
 
 :root {
+  --fontSize-xs: 0.75rem; /* 12px */
   --fontSize-sm: 1rem; /* 16px */
   --fontSize-md: 1.125rem; /* 18px */
   --fontSize-lg: 1.25rem; /* 20px */
@@ -34,9 +35,11 @@
   --fontSize-2xl: 1.75rem; /* 28px */
   --fontSize-3xl: 1.875rem; /* 30px */
   --fontSize-4xl: 2.25rem; /* 36px */
+  --fontSize-5xl: 4rem; /* 64px */
 }
 
 :root {
+  --lineHeight-xs: 1rem; /* 18px */
   --lineHeight-sm: 1.375rem; /* 22px */
   --lineHeight-md: 1.5rem; /* 24px */
   --lineHeight-lg: 1.625rem; /* 26px */
@@ -44,9 +47,11 @@
   --lineHeight-2xl: 2rem; /* 32px */
   --lineHeight-3xl: 2.25rem; /* 36px */
   --lineHeight-4xl: 2.5625rem; /* 41px */
+  --lineHeight-5xl: 4.813rem; /* 77px */
 }
 
 :root {
+  --letterSpacing-xs: 0px;
   --letterSpacing-sm: 0px;
   --letterSpacing-md: -0.15px;
   --letterSpacing-lg: -0.3px;
@@ -54,6 +59,7 @@
   --letterSpacing-2xl: -0.6px;
   --letterSpacing-3xl: -0.75px;
   --letterSpacing-4xl: -0.9px;
+  --letterSpacing-5xl: -0.9px;
 }
 
 :root {
@@ -64,6 +70,7 @@
 
 :root {
   --color-primary: #f16544;
+  --color-link: #C85238;
   --color-body: #fbfaf4;
   --color-text: #343A40;
 }
@@ -373,10 +380,16 @@
   gap: var(--space-xl);
 }
 
+.small {
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+  letter-spacing: var(--letterSpacing-xs);
+}
+
 p {
   font-size: var(--fontSize-sm);
-  line-height: var(--lineHeight-s);
-  letter-spacing: var(--letterSpacing-s);
+  line-height: var(--lineHeight-sm);
+  letter-spacing: var(--letterSpacing-sm);
 }
 
 h6 {
@@ -413,6 +426,12 @@ h1 {
   font-size: var(--fontSize-4xl);
   line-height: var(--lineHeight-4xl);
   letter-spacing: var(--letterSpacing-4xl);
+}
+
+.h0 {
+  font-size: var(--fontSize-5xl);
+  line-height: var(--lineHeight-5xl);
+  letter-spacing: var(--letterSpacing-5xl);
 }
 
 .radius-sm {
@@ -543,6 +562,10 @@ h1 {
   color: var(--color-primary);
 }
 
+.color-link {
+  color: var(--color-link);
+}
+
 .bg-primary {
   background-color: var(--color-primary);
 }
@@ -561,13 +584,19 @@ h1 {
 
 body {
   font-family: var(--font-family-serif);
+  color: var(--color-text);
   background-color: var(--color-body);
   height: 100dvh;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+.h0, h1, h2, h3, h4, h6 {
   font-family: var(--font-family-sans-serif);
+  font-weight: 400;
+}
+
+.h0, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 a {

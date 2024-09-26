@@ -5,6 +5,7 @@
   --space-xl: 1.875rem; /* 30px */
 }
 :root {
+  --fontSize-xs: 0.75rem; /* 12px */
   --fontSize-sm: 1rem; /* 16px */
   --fontSize-md: 1.125rem; /* 18px */
   --fontSize-lg: 1.25rem; /* 20px */
@@ -12,8 +13,10 @@
   --fontSize-2xl: 1.75rem; /* 28px */
   --fontSize-3xl: 1.875rem; /* 30px */
   --fontSize-4xl: 2.25rem; /* 36px */
+  --fontSize-5xl: 4rem; /* 64px */
 }
 :root {
+  --lineHeight-xs: 1rem; /* 18px */
   --lineHeight-sm: 1.375rem; /* 22px */
   --lineHeight-md: 1.5rem; /* 24px */
   --lineHeight-lg: 1.625rem; /* 26px */
@@ -21,8 +24,10 @@
   --lineHeight-2xl: 2rem; /* 32px */
   --lineHeight-3xl: 2.25rem; /* 36px */
   --lineHeight-4xl: 2.5625rem; /* 41px */
+  --lineHeight-5xl: 4.813rem; /* 77px */
 }
 :root {
+  --letterSpacing-xs: 0px;
   --letterSpacing-sm: 0px;
   --letterSpacing-md: -0.15px;
   --letterSpacing-lg: -0.3px;
@@ -30,6 +35,7 @@
   --letterSpacing-2xl: -0.6px;
   --letterSpacing-3xl: -0.75px;
   --letterSpacing-4xl: -0.9px;
+  --letterSpacing-5xl: -0.9px;
 }
 :root {
   --radius-sm: 0.25rem; /* 4px */
@@ -38,6 +44,7 @@
 }
 :root {
   --color-primary: #f16544;
+  --color-link: #C85238;
   --color-body: #fbfaf4;
   --color-text: #343A40;
 }

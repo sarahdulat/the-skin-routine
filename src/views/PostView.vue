@@ -8,7 +8,7 @@
         <h6 v-for="tag in post.data.tags" :key="tag.key" class="mt-xl">
           {{ tag.name }}
         </h6>
-        <h1 class="mt-xl">{{ post.data.title }}</h1>
+        <span class="h0 mt-xl">{{ post.data.title }}</span>
         <h6 class="mt-xl">{{ formattedDate(post.data.published) }}</h6>
       </div>
       <p class="mt-xl" v-html="post.data.body"></p>

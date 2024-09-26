@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <div ref="graph" class="chart-container"></div>
-  </div>
+  <div ref="graph" class="chart-container"></div>
 </template>
 
 <script lang="ts">
@@ -145,7 +143,7 @@ export default defineComponent({
   /* Set full height */
   position: relative;
   /* Ensure positioning works for children */
-  max-height: 100%;
+  max-height: calc(100% - 70px);
 }
 
 .quadrant-line {

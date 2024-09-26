@@ -7,12 +7,12 @@
         </router-link>
       </h1>
       <div class="nav-links">
-        <h6>
+        <h5>
           <router-link to="/about">About</router-link>
-        </h6>
-        <h6>
+        </h5>
+        <h5>
           <router-link to="/blog">Reviews</router-link>
-        </h6>
+        </h5>
       </div>
     </div>
   </nav>
@@ -22,14 +22,13 @@
 nav {
   position: sticky;
   top: 0;
-  margin: 0 var(--space-lg);
   background-color: var(--color-body);
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--space-lg);
+    padding: 0 var(--space-xl);
     border-bottom: 1px solid var(--color-text);
 
     h1 {
@@ -53,8 +52,7 @@ nav {
       display: flex;
       align-items: center;
 
-      h6 {
-        font-weight: 400;
+      h5 {
         margin-bottom: var(--space-sm);
         margin-left: var(--space-lg);
       }

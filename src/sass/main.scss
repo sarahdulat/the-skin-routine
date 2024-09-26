@@ -31,13 +31,19 @@
 
 body {
   font-family: var(--font-family-serif);
+  color: var(--color-text);
   background-color: var(--color-body);
   height: 100dvh;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: var(--font-family-sans-serif)
+.h0, h1, h2, h3, h4, h6 {
+  font-family: var(--font-family-sans-serif);
+  font-weight: 400;
+}
+
+.h0, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 a {

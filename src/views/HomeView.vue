@@ -1,6 +1,9 @@
 <template>
   <main>
-    <RoutineChart :routines="routines" />
+    <div class="chart">
+      <FilterBar />
+      <RoutineChart :routines="routines" />
+    </div>
     <RoutineSidebar :routines="routines" />
   </main>
 </template>
@@ -9,6 +12,7 @@
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 import routines from '../assets/routines.json'
+import FilterBar from "../components/FilterBar.vue";
 
 </script>
 
@@ -16,6 +20,5 @@ import routines from '../assets/routines.json'
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 0 1rem;
 }
 </style>

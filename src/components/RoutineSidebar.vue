@@ -36,20 +36,24 @@ const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]
 </script>
 
 <style lang="scss" scoped>
-.scroll-container {
-  max-height: calc(100vh - 185px);
-  overflow: scroll;
+aside {
+  border-left: var(--color-text) solid 1px;
+  padding: 0 var(--space-xl);
 }
 
-h2 {
-  text-decoration: underline;
-  font-weight: 400;
+.scroll-container {
+  max-height: calc(100vh - 145px);
+  overflow: scroll;
 }
 
 h3,
 h4 {
   display: inline;
   font-weight: 500;
+}
+
+a {
+  color: var(--color-link);
 }
 
 .hand {
@@ -78,7 +82,8 @@ h4 {
   color: var(--color-text);
   cursor: pointer;
   width: 90%;
-  margin-bottom: var(--space-xl)
+  margin-bottom: var(--space-xl);
+  box-shadow: 1px 3px 0px var(--color-text);
 }
 
 .toggleContainer::before {

@@ -23,15 +23,13 @@
 footer {
   background-color: var(--color-body);
   border-top: 1px solid var(--color-text);
-  margin-left: var(--space-lg);
-  margin-right: var(--space-lg);
   position: sticky;
   bottom: 0;
 
   >div {
     display: flex;
     align-items: center;
-    padding: var(--space-xl);
+    padding: var(--space-lg) var(--space-xl);
   }
 
   i {

@@ -76,10 +76,15 @@
 .gap-lg {gap: var(--space-lg)}
 .gap-xl {gap: var(--space-xl)}
 
+.small {
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+  letter-spacing: var(--letterSpacing-xs);
+}
 p {
   font-size: var(--fontSize-sm);
-  line-height: var(--lineHeight-s);
-  letter-spacing: var(--letterSpacing-s);
+  line-height: var(--lineHeight-sm);
+  letter-spacing: var(--letterSpacing-sm);
 }
 h6 {
   font-size: var(--fontSize-md);
@@ -110,6 +115,12 @@ h1 {
   font-size: var(--fontSize-4xl);
   line-height: var(--lineHeight-4xl);
   letter-spacing: var(--letterSpacing-4xl);
+}
+
+.h0 {
+  font-size: var(--fontSize-5xl);
+  line-height: var(--lineHeight-5xl);
+  letter-spacing: var(--letterSpacing-5xl);
 }
 
 .radius-sm {border-radius: var(--radius-s)}
@@ -146,6 +157,8 @@ h1 {
 .border-x-4 {border-inline: 4px solid}
 
 .color-primary {color: var(--color-primary)}
+
+.color-link {color: var(--color-link)}
 
 .bg-primary {background-color: var(--color-primary)}
 
