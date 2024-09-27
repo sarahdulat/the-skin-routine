@@ -60,6 +60,7 @@ a {
   display: inline-block;
   transition: all .1s linear;
   cursor: pointer;
+  display: inline-block;
 
   &:not(.collapsed) {
     transform: rotate(90deg);

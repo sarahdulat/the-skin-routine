@@ -8,6 +8,8 @@
 .me-0 {margin-right: 0;}
 .mb-0 {margin-bottom: 0;}
 .ms-0 {margin-left: 0;}
+.my-0 {margin-top: 0; margin-bottom: 0;}
+.mx-0 {margin-left: 0; margin-right: 0;}
 .m-sm {margin: var(--space-sm)}
 .mt-sm {margin-top: var(--space-sm)}
 .me-sm {margin-right: var(--space-sm)}
@@ -107,9 +109,10 @@ h3 {
   letter-spacing: var(--letterSpacing-2xl);
 }
 h2 {
-  font-size: var(--fontSize-3xl);
+  // font-size: var(--fontSize-3xl);
   line-height: var(--lineHeight-3xl);
   letter-spacing: var(--letterSpacing-3xl);
+  font-size: clamp(var(--fontSize-2xl), var(--fontSize-3xl), var(--fontSize-3xl));
 }
 h1 {
   font-size: var(--fontSize-4xl);
@@ -165,3 +168,5 @@ h1 {
 .border-primary {border-color: var(--color-primary)}
 
 .text-nowrap {white-space: nowrap}
+
+.text-uppercase {text-transform: uppercase;}

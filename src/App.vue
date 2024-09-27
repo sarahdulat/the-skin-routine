@@ -26,9 +26,4 @@ export default {
   flex-direction: column;
   max-height: 100vh;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
 </style>

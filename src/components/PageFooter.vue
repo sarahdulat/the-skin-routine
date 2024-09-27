@@ -25,11 +25,11 @@ footer {
   border-top: 1px solid var(--color-text);
   position: sticky;
   bottom: 0;
+  padding: var(--space-lg) var(--space-xl);
 
   >div {
     display: flex;
     align-items: center;
-    padding: var(--space-lg) var(--space-xl);
   }
 
   i {
