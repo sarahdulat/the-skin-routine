@@ -1,15 +1,40 @@
 <template>
-  <div ref="graph" class="chart-container"></div>
+  <div ref="graph" class="chart-container" @click="closePopover">
+    <Popover v-if="popoverVisible" :visible="popoverVisible" :position="popoverPosition" @click.stop>
+      <div>
+        <p class="small">{{ popoverContent.title }}</p>
+        <p class="small font-sans">{{ popoverContent.description }}</p>
+      </div>
+    </Popover>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
 import * as d3 from 'd3';
+import Popover from './Popover.vue';
 
 export default defineComponent({
   name: 'SquareResponsiveQuadrantGridChart',
+  components: {
+    Popover,
+  },
   setup() {
     const graph = ref<HTMLDivElement | null>(null);
+    const popoverVisible = ref(false);
+    const popoverContent = ref({ title: "", description: "" });
+    const popoverPosition = ref({ x: 0, y: 0 });
+
+    const closePopover = () => {
+      popoverVisible.value = false;
+    };
+
+    const showPopover = (content: { title: string; description: string }, position: { x: number; y: number }) => {
+      popoverContent.value = content;
+      popoverPosition.value = position;
+      popoverVisible.value = true;
+    };
+
 
     // Function to create the quadrant graph with grid lines
     const createGraph = () => {
@@ -25,6 +50,8 @@ export default defineComponent({
       // Remove existing SVG if present
       d3.select(graph.value).selectAll("*").remove();
 
+      if (!graph.value) return;
+
       const svg = d3
         .select(graph.value)
         .append('svg')
@@ -33,11 +60,10 @@ export default defineComponent({
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
-      // Generate random data points for the scatter plot
-      const data = Array.from({ length: 10 }, () => ({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-      }));
+      const data = [
+        { x: 1, y: 4, title: "Point 1", description: "Details about Point 1" },
+        { x: 14, y: 24, title: "Point 2", description: "Details about Point 2" },
+      ];
 
       // Create scales for the x and y axes
       const xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
@@ -96,7 +122,28 @@ export default defineComponent({
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 5)
-        .attr('fill', '#f16544');
+        .attr('fill', '#f16544')
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("fill", "blue");
+
+          const [mouseX, mouseY] = d3.pointer(event);
+          d3.select(this)
+            .append("title")
+            .text(`${d.title}`);
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("fill", "#f16544");
+        })
+        .on("mouseover", function (event, d) {
+          event.stopPropagation();
+          const [mouseX, mouseY] = d3.pointer(event);
+
+          // Show popover on hover with dynamic content
+          showPopover(
+            { title: d.title, description: d.description },
+            { x: mouseX, y: mouseY }
+          );
+        });
 
       // Add X-axis label at the top
       svg.append("text")
@@ -130,6 +177,10 @@ export default defineComponent({
 
     return {
       graph,
+      popoverVisible,
+      popoverContent,
+      popoverPosition,
+      closePopover,
     };
   },
 });
