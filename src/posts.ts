@@ -1,5 +1,4 @@
 import { ref } from "vue";
-import { butter } from "./buttercms";
 
 export type Post = {
   slug: string;
@@ -26,5 +25,5 @@ export function getPosts() {
 }
 
 export function getPost() {
-  
+
 }

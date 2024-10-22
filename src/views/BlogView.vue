@@ -5,7 +5,7 @@
       <div class="posts scroll-container">
         <div class="post" v-for="(post, index) in posts" :key="post.slug + '_' + index">
           <router-link :to="'/blog/' + post.slug">
-            <img :src="post.featured_image" :alt="post.alt" />
+            <img :src="post.data.product_image.url" :alt="post.alt" />
           </router-link>
           <!-- // title -->
           <router-link :to="'/blog/' + post.slug">
@@ -27,12 +27,34 @@
   </main>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
 import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
-import { getPosts } from '../posts'
 
-const posts = getPosts()
+export default {
+  name: 'App',
+  components: {
+    FilterBar,
+    PageSidebar
+  },
+  data() {
+    return {
+      posts: []
+    }
+  },
+  methods: {
+    async getContent() {
+      console.log(this.$prismic)
+      // Query the API and assign the response to "response"
+      this.posts = await this.$prismic.client.getAllByType('review')
+      console.log(this.posts)
+    }
+  },
+  created() {
+    // Call the API query method
+    this.getContent()
+  }
+}
 </script>
 
 <style lang="scss" scoped>
