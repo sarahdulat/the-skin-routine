@@ -2,8 +2,6 @@
   <main>
     <div>
       <ReviewBar />
-      <pre id="app" v-html="JSON.stringify(response, null, 2)"></pre>
-
       <!-- <div class="scroll-container">
         <div>
           <img :src="post.data.featured_image" class="cover-img" :alt="post.data.featured_image_alt">
@@ -28,7 +26,6 @@
 </template>
 
 <script lang="ts">
-import moment from 'moment';
 import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
 
@@ -40,14 +37,14 @@ export default {
   },
   data() {
     return {
-      post: {}
+      posts: []
     }
   },
   methods: {
     async getContent() {
       // Query the API and assign the response to "response"
-      const response = await this.$prismic.client.query('')
-      this.post = response
+      this.posts = await this.$prismic.client.getAllByType(this.$route.params.slug)
+      console.log(this.posts)
     }
   },
   created() {

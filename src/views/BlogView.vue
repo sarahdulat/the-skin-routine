@@ -3,23 +3,23 @@
     <div>
       <FilterBar />
       <div class="posts scroll-container">
-        <div class="post" v-for="(post, index) in posts" :key="post.slug + '_' + index">
-          <router-link :to="'/blog/' + post.slug">
-            <img :src="post.data.product_image.url" :alt="post.alt" />
+        <div class="post" v-for="(post, index) in posts" :key="post.slugs[0] + '_' + index">
+          <router-link :to="'/blog/' + post.slugs[0]">
+            <img :src="post.data.product_image.url" :alt="post.data.product_image.alt" />
           </router-link>
           <!-- // title -->
-          <router-link :to="'/blog/' + post.slug">
-            <h3 class="mt-md mb-lg">{{ post.title }}</h3>
+          <router-link :to="'/blog/' + post.slugs[0]">
+            <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
           </router-link>
           <!-- // date -->
-          <p class="m-0">September 13, 2024</p>
+          <p class="m-0">{{ post.data.date }}</p>
           <!-- // tags -->
-          <h6 v-for="tag in post.tags" :key="tag.key" class="me-md my-0">
-            <router-link class="text-uppercase" :to="'/blog/tag/' + tag.name">
-              #{{ tag.name }}
+          <span v-for="tag in post.tags" :key="tag.key" class="me-md my-0">
+            <router-link class="text-uppercase font-sans" :to="'/blog/tag/' + tag">
+              #{{ tag }}
             </router-link>
-          </h6>
-          <h6 class="mt-lg">{{ post.summary }}</h6>
+          </span>
+          <p class="mt-lg font-sans">{{ post.data.summary[0].text }}</p>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
 
 export default {
-  name: 'App',
+  name: 'blog',
   components: {
     FilterBar,
     PageSidebar
@@ -44,7 +44,6 @@ export default {
   },
   methods: {
     async getContent() {
-      console.log(this.$prismic)
       // Query the API and assign the response to "response"
       this.posts = await this.$prismic.client.getAllByType('review')
       console.log(this.posts)

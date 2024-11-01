@@ -15,7 +15,8 @@
         11-step routine they get a little glassy-eyed. "You're going to have to write this down for me." or "I'm going
         to watch you do your morning routine." 🙅‍♀️ After many of these conversations, I offered to put everything into
         a <a href="https://docs.google.com/spreadsheets/d/1PH3FHGTuFaOUuOaTCJxuLhv4Ril-zrSTL4Kd0aI74UA/edit?usp=sharing"
-          target="_blank" rel="noopener noreferrer">Google Sheet</a> with the order, instructions, links, and alternatives
+          target="_blank" rel="noopener noreferrer">Google Sheet</a> with the order, instructions, links, and
+        alternatives
         for other skin
         types/concerns, but I almost immediately got feedback on the sheet. "What if I'm not as dedicated as you?" or,
         "What if I have a smaller budget?". It was then that I decided to create a more interactive medium for not only
@@ -49,13 +50,15 @@
 </template>
 
 <script lang="ts">
-import moment from 'moment';
+import { formatDistanceToNow } from "date-fns";
 
 export default {
   components: {},
   computed: {
     currentAge() {
-      return moment("19860913", "YYYYMMDD").fromNow(true);
+      return formatDistanceToNow(
+        new Date(1986, 9, 13)
+      )
     }
   }
 }
