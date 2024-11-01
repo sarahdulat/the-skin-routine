@@ -12,9 +12,9 @@
             <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
           </router-link>
           <!-- // date -->
-          <p class="m-0">{{ post.data.date }}</p>
+          <p class="m-0">{{ formatDate(post) }}</p>
           <!-- // tags -->
-          <span v-for="tag in post.tags" :key="tag.key" class="me-md my-0">
+          <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
             <router-link class="text-uppercase font-sans" :to="'/blog/tag/' + tag">
               #{{ tag }}
             </router-link>
@@ -31,6 +31,9 @@
 import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
 
+import { format } from "date-fns";
+import { Post } from '../types';
+
 export default {
   name: 'blog',
   components: {
@@ -39,18 +42,19 @@ export default {
   },
   data() {
     return {
-      posts: []
+      posts: [] as Array<Post>
     }
   },
   methods: {
     async getContent() {
-      // Query the API and assign the response to "response"
-      this.posts = await this.$prismic.client.getAllByType('review')
+      this.posts = await this.$prismic.client.getAllByType('review') as Array<Post>
       console.log(this.posts)
+    },
+    formatDate(post: Post) {
+      return format(new Date(post.first_publication_date), 'MMMM do, y')
     }
   },
   created() {
-    // Call the API query method
     this.getContent()
   }
 }

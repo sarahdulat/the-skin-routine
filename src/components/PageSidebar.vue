@@ -21,6 +21,19 @@ export default defineComponent({
   components: {
     BlogArchiveTree,
   },
+  data() {
+    return {
+      posts: []
+    }
+  },
+  methods: {
+    async getContent() {
+      this.posts = await this.$prismic.client.getAllByType('review')
+    }
+  },
+  created() {
+    this.getContent()
+  },
   setup() {
     const archiveData = ref<BlogArchiveNode[]>([
       {

@@ -1,25 +1,29 @@
 <template>
   <main>
     <div>
-      <ReviewBar />
-      <!-- <div class="scroll-container">
-        <div>
-          <img :src="post.data.featured_image" class="cover-img" :alt="post.data.featured_image_alt">
+      <ReviewBar v-if="prevPost || nextPost" :prevPost="prevPost" :nextPost="nextPost" />
+      <div class="scroll-container">
+        <div v-if="post">
+          <div>
+            <img :src="post.data.product_image.url" class="cover-img" :alt="post.data.product_image.alt">
+          </div>
+          <section>
+            <aside>
+              <p class="mt-xl">{{ formatDate(post.first_publication_date) }}</p>
+              <p v-if="post.last_publication_date">Updated: {{ formatDate(post.last_publication_date) }}</p>
+              <p v-for="tag in post.tags" :key="tag" class="mt-xl text-uppercase font-sans">
+                #{{ tag }}
+              </p>
+            </aside>
+            <div class="content">
+              <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
+              <h5>Subtitle</h5>
+              <p v-for="paragraph in post.data.body" class="mt-xl font-serif" v-html="paragraph.text"></p>
+            </div>
+          </section>
         </div>
-        <section>
-          <div class="head">
-            <span class="mt-xl">{{ post.data.published }}</span>
-            <p v-for="tag in post.data.tags" :key="tag.key" class="mt-xl text-uppercase font-sans">
-              #{{ tag.name }}
-            </p>
-          </div>
-          <div class="content">
-            <span class="h0 mt-xl">{{ post.data.title }}</span>
-            <h5>Subtitle</h5>
-            <p class="mt-xl font-serif" v-html="post.data.body"></p>
-          </div>
-        </section>
-      </div> -->
+        <div v-else>404</div>
+      </div>
     </div>
     <PageSidebar />
   </main>
@@ -29,6 +33,10 @@
 import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
 
+import { format } from "date-fns";
+import { useRoute } from "vue-router";
+import { Post } from "../types";
+
 export default {
   name: 'blog-post',
   components: {
@@ -37,19 +45,53 @@ export default {
   },
   data() {
     return {
-      posts: []
+      post: null as Post | null,
+      prevPost: null as Post | null,
+      nextPost: null as Post | null
     }
   },
   methods: {
     async getContent() {
-      // Query the API and assign the response to "response"
-      this.posts = await this.$prismic.client.getAllByType(this.$route.params.slug)
-      console.log(this.posts)
+      const route = useRoute();
+      const slug = route.params.slug as string;
+
+      this.post = await this.$prismic.client.getByUID("review", slug) as Post;
+
+      this.prevPost = (await this.$prismic.client.get({
+        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
+      })).results[0]
+      console.log(this.prevPost)
+
+      this.nextPost = (await this.$prismic.client.get({
+        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
+      })).results[0]
+      console.log(this.nextPost)
+
+    },
+    formatDate(date: string) {
+      return format(new Date(date), 'MMMM do, y')
     }
   },
   created() {
-    // Call the API query method
     this.getContent()
+  },
+  watch: {
+    async '$route'(to, from) {
+      this.getContent()
+
+      this.post = await this.$prismic.client.getByUID("review", to.params.slug) as Post;
+
+      this.prevPost = (await this.$prismic.client.get({
+        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
+      })).results[0]
+      console.log(this.prevPost)
+
+      this.nextPost = (await this.$prismic.client.get({
+        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
+      })).results[0]
+      console.log(this.nextPost)
+      console.log(to, from)
+    }
   }
 }
 </script>
@@ -75,10 +117,6 @@ section {
   height: 200px;
   padding: 0;
   object-fit: cover;
-}
-
-.head {
-  text-align: center;
 }
 
 .content {
