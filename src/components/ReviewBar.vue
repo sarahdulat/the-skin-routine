@@ -1,10 +1,12 @@
 <template>
   <div class="toolbar">
-    <router-link :to="'/blog/' + prevPost?.slugs[0]" class="font-sans"><span class="glyph">⬅</span>
-      Previous Review
+    <router-link v-if="prevPost" :to="'/blog/' + prevPost?.slugs[0]"> <span class="glyph">⬅ </span>{{
+      prevPost?.data.title[0].text }}
     </router-link>
-    <router-link :to="'/blog/' + nextPost?.slugs[0]" class="font-sans">Next Review <span
-        class="glyph">⮕</span></router-link>
+    <router-link v-if="nextPost" :to="'/blog/' + nextPost?.slugs[0]" class="ms-auto">{{
+      nextPost.data.title[0].text
+      }}
+      <span class="glyph">⮕ </span></router-link>
   </div>
 </template>
 
@@ -35,10 +37,10 @@ export default {
   border-bottom: 1px solid var(--color-text);
   background-color: var(--color-body);
   display: flex;
-  justify-content: space-between;
 
   a {
     text-decoration: none;
+    font-family: var(--font-family-sans-serif);
   }
 }
 </style>
