@@ -1,7 +1,7 @@
 <template>
   <main>
     <div>
-      <FilterBar />
+      <FilterBar :posts="posts" />
       <div class="posts scroll-container">
         <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
           <router-link :to="'/blog/' + post.uid">
@@ -48,7 +48,6 @@ export default {
   methods: {
     async getContent() {
       this.posts = await this.$prismic.client.getAllByType('review') as Array<Post>
-      console.log(this.posts)
     },
     formatDate(post: Post) {
       return format(new Date(post.first_publication_date), 'MMMM do, y')

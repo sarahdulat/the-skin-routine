@@ -1,7 +1,8 @@
 <template>
   <div class="dropdown-container">
     <!-- Accessible styled select dropdown -->
-    <select id="dropdown" class="dropdown-select" v-model="selectedItem" @change="emitSelection">
+    <select id="dropdown" v-model="selectedItem" @change="emitSelection">
+      <option value="" selected>{{ defaultValue }}</option>
       <option v-for="(item, index) in items" :key="index" :value="item">
         {{ item }}
       </option>
@@ -18,12 +19,16 @@ export default defineComponent({
     modelValue: {
       type: String,
       required: false,
-      default: null,
+      default: "",
     },
     items: {
       type: Array as PropType<string[]>,
       required: true,
     },
+    defaultValue: {
+      type: String,
+      required: true
+    }
   },
   emits: ["update:modelValue"],
   setup(props, { emit }) {
@@ -49,7 +54,8 @@ export default defineComponent({
 }
 
 /* Styled select dropdown */
-.dropdown-select {
+select {
+  width: 120px;
   appearance: none;
   /* Remove native dropdown arrow */
   padding: var(--space-md);
@@ -61,12 +67,12 @@ export default defineComponent({
   box-shadow: 1px 3px 0 var(--color-text);
 }
 
-.dropdown-select:hover {
+select:hover {
   background-color: rgba(241, 101, 68, 0.05)
 }
 
 /* Add a custom arrow */
-.dropdown-select::after {
+select::after {
   content: "▼";
   position: absolute;
   right: var(--space-md);
@@ -74,14 +80,14 @@ export default defineComponent({
 }
 
 /* Dropdown arrow custom styling */
-.dropdown-select {
+select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' d='M0 0h20v20H0z'/%3E%3Cpath fill='%343A40' d='M5.5 7.5l5 5 5-5'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right var(--space-sm) center;
   background-size: var(--space-lg);
 }
 
-.dropdown-select:focus {
+select:focus {
   outline: none;
 }
 </style>

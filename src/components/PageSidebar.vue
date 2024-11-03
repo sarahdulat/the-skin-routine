@@ -13,11 +13,6 @@ import BlogArchiveTree from "./BlogArchiveTree.vue";
 import { Post } from "../types";
 import { format } from "date-fns";
 
-interface BlogArchiveNode {
-  name: string;
-  children?: BlogArchiveNode[];
-}
-
 export default defineComponent({
   components: {
     BlogArchiveTree,

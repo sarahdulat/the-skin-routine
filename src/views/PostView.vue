@@ -61,12 +61,10 @@ export default {
       this.prevPost = (await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
       })).results[0]
-      console.log(this.prevPost)
 
       this.nextPost = (await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
       })).results[0]
-      console.log(this.nextPost)
 
     },
     formatDate(date: string) {
@@ -85,13 +83,10 @@ export default {
       this.prevPost = (await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
       })).results[0]
-      console.log(this.prevPost)
 
       this.nextPost = (await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
       })).results[0]
-      console.log(this.nextPost)
-      console.log(to, from)
     }
   }
 }

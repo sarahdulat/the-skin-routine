@@ -9,6 +9,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import TreeNode from "./TreeNode.vue"; // Import the recursive tree node component
+import { BlogArchiveNode } from "../types";
 
 export default defineComponent({
   name: "BlogArchiveTree",

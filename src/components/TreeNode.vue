@@ -15,11 +15,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-
-interface BlogArchiveNode {
-  name: string;
-  children?: BlogArchiveNode[];
-}
+import { BlogArchiveNode } from "../types";
 
 export default defineComponent({
   name: "TreeNode",

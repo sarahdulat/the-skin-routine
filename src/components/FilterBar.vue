@@ -1,26 +1,33 @@
 <template>
   <div class="filter">
     <h6>Filters:</h6>
-    <Dropdown v-model="selectedOption" :items="dropdownItems" />
-    <Dropdown v-model="selectedOption" :items="dropdownItems" />
+    <Dropdown :defaultValue="'Brands'" :items="brands" />
+    <Dropdown :defaultValue="'Product Type'" :items="product_type" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, PropType } from "vue";
 import Dropdown from './Dropdown.vue';
+import { Post } from "../types";
 
 export default defineComponent({
   components: { Dropdown },
-  setup() {
-    const selectedOption = ref<string>("All"); // Default value for the dropdown
-    const dropdownItems = ref(["All", "Option 1", "Option 2", "Option 3"]); // Dropdown options
-
-    return {
-      selectedOption,
-      dropdownItems,
-    };
+  props: {
+    posts: {
+      type: Array as PropType<Post[] | null>,
+      required: false,
+      default: null,
+    }
   },
+  computed: {
+    brands() {
+      return this.posts?.map?.((post: Post) => post.data.brand);
+    },
+    product_type() {
+      return this.posts?.map?.((post: Post) => post.data.product_type);
+    }
+  }
 });
 </script>
 

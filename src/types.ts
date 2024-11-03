@@ -1,4 +1,5 @@
-interface BlogArchiveNode {
+export type BlogArchiveNode = {
+  uid?: string;
   name: string;
   children?: BlogArchiveNode[];
 }
@@ -40,7 +41,15 @@ export type Post = {
       direction: string
     }>
     date: string
+    brand: string
+    product_type: string
     summary: Array<{
+      type: string
+      text: string
+      spans: Array<any>
+      direction: string
+    }>
+    subtitle: Array<{
       type: string
       text: string
       spans: Array<any>
