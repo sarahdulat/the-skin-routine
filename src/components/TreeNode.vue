@@ -1,8 +1,9 @@
 <template>
   <li>
     <div class="tree-node" @click="toggleExpand">
-      <span v-if="node.children" :class="{ expanded: isExpanded }" class="glyph hand">🖙</span>
-      <span v-else class="glyph">🩸</span> {{ node.name }}
+      <span v-if="node.children"><span :class="{ expanded: isExpanded }" class="glyph hand">🖙</span>{{ node.name
+        }}</span>
+      <router-link v-else :to="'/blog/' + node.uid"><span class="glyph">🩸</span>{{ node.name }}</router-link>
     </div>
 
     <!-- Recursively display child nodes -->

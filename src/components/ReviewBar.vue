@@ -1,11 +1,11 @@
 <template>
   <div class="toolbar">
-    <router-link v-if="prevPost" :to="'/blog/' + prevPost?.slugs[0]"> <span class="glyph">⬅ </span>{{
+    <router-link v-if="prevPost" :to="'/blog/' + prevPost?.uid"> <span class="glyph">⬅ </span>{{
       prevPost?.data.title[0].text }}
     </router-link>
-    <router-link v-if="nextPost" :to="'/blog/' + nextPost?.slugs[0]" class="ms-auto">{{
+    <router-link v-if="nextPost" :to="'/blog/' + nextPost?.uid" class="ms-auto">{{
       nextPost.data.title[0].text
-      }}
+    }}
       <span class="glyph">⮕ </span></router-link>
   </div>
 </template>

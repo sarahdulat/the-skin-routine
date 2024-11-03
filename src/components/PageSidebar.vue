@@ -2,15 +2,16 @@
   <aside class="row">
     <div class="scroll-container">
       <h2 class="mt-lg mb-0 text-nowrap">Review Archive</h2>
-      <BlogArchiveTree :nodes="archiveData" />
-
+      <BlogArchiveTree :nodes="postsArchive" />
     </div>
   </aside>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import BlogArchiveTree from "./BlogArchiveTree.vue"; // Import your BlogArchiveTree component
+import BlogArchiveTree from "./BlogArchiveTree.vue";
+import { Post } from "../types";
+import { format } from "date-fns";
 
 interface BlogArchiveNode {
   name: string;
@@ -23,101 +24,43 @@ export default defineComponent({
   },
   data() {
     return {
-      posts: []
+      posts: [] as Array<Post>
     }
   },
   methods: {
     async getContent() {
-      this.posts = await this.$prismic.client.getAllByType('review')
+      this.posts = await this.$prismic.client.getAllByType('review') as Array<Post>
+    }
+  },
+  computed: {
+    postsArchive() {
+      let archive = []
+      for (let post of this.posts) {
+        let year = new Date(post.first_publication_date).getFullYear()
+        let month = format(new Date(post.first_publication_date), 'MMMM')
+
+        if (archive.length === 0) {
+          archive.push({ name: year, children: [{ name: month, children: [{ name: post.data.title[0].text, uid: post.uid }] }] })
+        } else {
+          let matchingYearNode = archive.find(node => node.name === year)
+
+          if (matchingYearNode) {
+            let matchingMonthNode = matchingYearNode.children.find(node => node.name === month)
+            if (matchingMonthNode) {
+              matchingMonthNode.children.push({ name: post.data.title[0].text, uid: post.uid })
+            } else {
+              matchingYearNode.children.push({ name: month, children: [{ name: post.data.title[0].text, uid: post.uid }] })
+            }
+          } else {
+            archive.push({ name: year, children: [{ name: month, children: [{ name: post.data.title[0].text, uid: post.uid }] }] })
+          }
+        }
+      }
+      return archive
     }
   },
   created() {
     this.getContent()
-  },
-  setup() {
-    const archiveData = ref<BlogArchiveNode[]>([
-      {
-        name: "2024",
-        children: [
-          {
-            name: "September",
-            children: [
-              { name: "How to Build a Vue Tree List" },
-              { name: "Vue 3 Refs Explained" },
-            ],
-          },
-          {
-            name: "August",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "July",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "June",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "May",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "April",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "March",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "February",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-          {
-            name: "January",
-            children: [
-              { name: "TypeScript in Vue 3" },
-              { name: "Building Components with Vue" },
-            ],
-          },
-        ],
-      },
-      {
-        name: "2023",
-        children: [
-          {
-            name: "December",
-            children: [{ name: "Year in Review: Vue 2022" }],
-          },
-        ],
-      },
-    ]);
-
-    return {
-      archiveData,
-    };
   },
 });
 </script>

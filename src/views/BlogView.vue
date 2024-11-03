@@ -3,12 +3,12 @@
     <div>
       <FilterBar />
       <div class="posts scroll-container">
-        <div class="post" v-for="(post, index) in posts" :key="post.slugs[0] + '_' + index">
-          <router-link :to="'/blog/' + post.slugs[0]">
+        <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
+          <router-link :to="'/blog/' + post.uid">
             <img :src="post.data.product_image.url" :alt="post.data.product_image.alt" />
           </router-link>
           <!-- // title -->
-          <router-link :to="'/blog/' + post.slugs[0]">
+          <router-link :to="'/blog/' + post.uid">
             <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
           </router-link>
           <!-- // date -->

@@ -10,7 +10,8 @@
           <section>
             <aside>
               <p class="mt-xl">{{ formatDate(post.first_publication_date) }}</p>
-              <p v-if="post.last_publication_date">Updated: {{ formatDate(post.last_publication_date) }}</p>
+              <p v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)">Updated: {{
+                formatDate(post.last_publication_date) }}</p>
               <p v-for="tag in post.tags" :key="tag" class="mt-xl text-uppercase font-sans">
                 #{{ tag }}
               </p>
