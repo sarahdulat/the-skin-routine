@@ -13,17 +13,40 @@
               <p v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)">Updated: {{
                 formatDate(post.last_publication_date) }}</p>
               <p v-for="tag in post.tags" :key="tag" class="mt-xl text-uppercase font-sans">
-                #{{ tag }}
+                <router-link to="">#{{ tag }}</router-link>
               </p>
             </aside>
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
-              <h5>Subtitle</h5>
-              <p v-for="paragraph in post.data.body" class="mt-xl font-serif" v-html="paragraph.text"></p>
+              <h5>{{ post.data.subtitle[0].text }}</h5>
+              <p v-for="paragraph in post.data.body" :key="paragraph" class="mt-xl font-serif" v-html="paragraph.text">
+              </p>
             </div>
           </section>
         </div>
-        <div v-else>404</div>
+        <!-- Loading State -->
+        <div v-else>
+          <div>
+            <div class="placeholder placeholder-wave cover-img"></div>
+          </div>
+          <section>
+            <aside>
+              <p class="mt-xl placeholder placeholder-wave placeholder-sm w-100"></p>
+              <p class="placeholder placeholder-wave placeholder-sm w-100"
+                v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)"></p>
+              <p v-for="tag in post.tags" :key="tag" class="mt-xl">
+                <span class="placeholder placeholder-wave placeholder-sm w-100"></span>
+              </p>
+            </aside>
+            <div class="content">
+              <span class="mt-xl placeholder placeholder-wave placeholder-xl w-100"></span>
+              <span class="mt-xl placeholder placeholder-wave placeholder-lg w-100"></span>
+              <p v-for="paragraph in post.data.body" :key="paragraph" class="mt-xl">
+                <span class="mt-xl placeholder placeholder-wave placeholder-body w-100"></span>
+              </p>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
     <PageSidebar />
@@ -106,6 +129,10 @@ main {
 section {
   display: grid;
   grid-template-columns: 1fr 3fr;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .cover-img {
@@ -115,7 +142,13 @@ section {
   object-fit: cover;
 }
 
+aside {
+  padding: var(--space-xl);
+}
+
 .content {
+  padding: var(--space-xl);
+
   p {
     font-size: var(--font-size-l);
 

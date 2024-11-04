@@ -14,7 +14,7 @@
 import { defineComponent, ref, PropType } from "vue";
 
 export default defineComponent({
-  name: "AccessibleDropdown",
+  name: "Dropdown",
   props: {
     modelValue: {
       type: String,
@@ -55,10 +55,10 @@ export default defineComponent({
 
 /* Styled select dropdown */
 select {
-  width: 120px;
+  min-width: 120px;
   appearance: none;
   /* Remove native dropdown arrow */
-  padding: var(--space-md);
+  padding: var(--space-md) var(--space-xl) var(--space-md) var(--space-md);
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-text);
   background-color: var(--color-body);

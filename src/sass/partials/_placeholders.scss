@@ -1,0 +1,59 @@
+.placeholder {
+  display: inline-block;
+  min-height: 1em;
+  vertical-align: middle;
+  cursor: wait;
+  background-color: currentcolor;
+  opacity: .3;
+
+  &button::before {
+    display: inline-block;
+    content: "";
+  }
+}
+
+// Sizing
+.placeholder-xs {
+  min-height: .6em;
+}
+
+.placeholder-sm {
+  min-height: .8em;
+}
+
+.placeholder-lg {
+  min-height: 1.2em;
+}
+
+.placeholder-xl {
+  min-height: 5em;
+}
+
+.placeholder-body {
+  min-height: 20em;
+}
+
+// Animation
+.placeholder-glow {
+  .placeholder {
+    animation: placeholder-glow 2s ease-in-out infinite;
+  }
+}
+
+@keyframes placeholder-glow {
+  50% {
+    opacity: .9;
+  }
+}
+
+.placeholder-wave {
+  mask-image: linear-gradient(130deg, var(--color-text) 50%, rgba(0, 0, 0, (1 - .3)) 75%, var(--color-text) 100%);
+  mask-size: 200% 100%;
+  animation: placeholder-wave 2s linear infinite;
+}
+
+@keyframes placeholder-wave {
+  100% {
+    mask-position: -200% 0%;
+  }
+}

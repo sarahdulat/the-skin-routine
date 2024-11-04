@@ -596,6 +596,75 @@ h1 {
   font-family: var(--font-family-sans-serif);
 }
 
+.d-flex {
+  display: flex;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.placeholder {
+  display: inline-block;
+  min-height: 1em;
+  vertical-align: middle;
+  cursor: wait;
+  background-color: currentcolor;
+  opacity: 0.3;
+}
+.placeholderbutton::before {
+  display: inline-block;
+  content: "";
+}
+
+.placeholder-xs {
+  min-height: 0.6em;
+}
+
+.placeholder-sm {
+  min-height: 0.8em;
+}
+
+.placeholder-lg {
+  min-height: 1.2em;
+}
+
+.placeholder-xl {
+  min-height: 5em;
+}
+
+.placeholder-body {
+  min-height: 20em;
+}
+
+.placeholder-glow .placeholder {
+  animation: placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes placeholder-glow {
+  50% {
+    opacity: 0.9;
+  }
+}
+.placeholder-wave {
+  mask-image: linear-gradient(130deg, var(--color-text) 50%, rgba(0, 0, 0, 0.7) 75%, var(--color-text) 100%);
+  mask-size: 200% 100%;
+  animation: placeholder-wave 2s linear infinite;
+}
+
+@keyframes placeholder-wave {
+  100% {
+    mask-position: -200% 0%;
+  }
+}
 * {
   box-sizing: border-box;
 }
