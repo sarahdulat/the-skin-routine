@@ -8,14 +8,16 @@
             <img :src="post.data.product_image.url" class="cover-img" :alt="post.data.product_image.alt">
           </div>
           <section>
-            <aside>
+            <div class="px-xl">
               <p class="mt-xl">{{ formatDate(post.first_publication_date) }}</p>
               <p v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)">Updated: {{
                 formatDate(post.last_publication_date) }}</p>
-              <p v-for="tag in post.tags" :key="tag" class="mt-xl text-uppercase font-sans">
-                <router-link to="">#{{ tag }}</router-link>
-              </p>
-            </aside>
+              <div class="mt-lg">
+                <span v-for="tag in post.tags" :key="tag" class="text-uppercase font-sans me-md">
+                  <router-link class="" to="">#{{ tag }}</router-link>
+                </span>
+              </div>
+            </div>
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
               <h5>{{ post.data.subtitle[0].text }}</h5>
@@ -30,14 +32,14 @@
             <div class="placeholder placeholder-wave cover-img"></div>
           </div>
           <section>
-            <aside>
+            <div class="px-xl">
               <p class="mt-xl placeholder placeholder-wave placeholder-sm w-100"></p>
               <p class="placeholder placeholder-wave placeholder-sm w-100"
                 v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)"></p>
               <p v-for="tag in post.tags" :key="tag" class="mt-xl">
                 <span class="placeholder placeholder-wave placeholder-sm w-100"></span>
               </p>
-            </aside>
+            </div>
             <div class="content">
               <span class="mt-xl placeholder placeholder-wave placeholder-xl w-100"></span>
               <span class="mt-xl placeholder placeholder-wave placeholder-lg w-100"></span>
@@ -140,10 +142,6 @@ section {
   height: 200px;
   padding: 0;
   object-fit: cover;
-}
-
-aside {
-  padding: var(--space-xl);
 }
 
 .content {
