@@ -45,6 +45,8 @@ export default defineComponent({
   cursor: pointer;
   user-select: none;
   padding: var(--space-sm) 0;
+  text-indent: -5px;
+  padding-left: 11px;
 }
 
 .tree-node span {

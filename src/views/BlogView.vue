@@ -1,7 +1,7 @@
 <template>
   <main>
     <div>
-      <FilterBar :posts="posts" />
+      <FilterBar :dropdowns="[brands, product_type]" />
       <div class="posts scroll-container">
         <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
           <div v-if="posts">
@@ -67,6 +67,14 @@ export default {
   },
   created() {
     this.getContent()
+  },
+  computed: {
+    brands() {
+      return { defaultValue: 'Brands', items: this.posts?.map?.((post: Post) => post.data.brand) };
+    },
+    product_type() {
+      return { defaultValue: 'Product Type', items: this.posts?.map?.((post: Post) => post.data.product_type) };
+    }
   }
 }
 </script>
