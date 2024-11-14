@@ -26,7 +26,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .tree-list ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: var(--space-lg);
+  padding-top: var(--space-lg);
   margin: 0;
 }
 </style>

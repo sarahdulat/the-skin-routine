@@ -600,6 +600,10 @@ h1 {
   display: flex;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 .w-30 {
   width: 30%;
 }
@@ -686,14 +690,11 @@ body {
 }
 
 a {
-  color: var(--color-text);
+  color: inherit;
   text-decoration: underline;
 }
 a:hover {
-  color: var(--color-primary);
-}
-a.router-link-active.page-link {
-  text-decoration: overline;
+  color: var(--color-link);
 }
 
 .glyph {

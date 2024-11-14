@@ -42,6 +42,7 @@
 <script lang="ts">
 import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
+import { useRoute } from "vue-router";
 
 import { format } from "date-fns";
 import { Post } from '../types';
@@ -54,26 +55,45 @@ export default {
   },
   data() {
     return {
-      posts: [] as Array<Post>
+      posts: [] as Array<Post>,
+      allPosts: [] as Array<Post>,
+      filters: [] as any
     }
   },
+  watch: {
+    // Keep `filter` in sync with query parameter changes
+    "$route.query"(newQuery) {
+      this.getContent(newQuery)
+    },
+  },
   methods: {
-    async getContent() {
-      this.posts = await this.$prismic.client.getAllByType('review') as Array<Post>
+    async getContent(query: { 'Brands': string, 'Product Types': string }) {
+      this.allPosts = await this.$prismic.client.getAllByType('review') as Array<Post>
+
+      const brand = this.getFilterParams('my.review.brand', this.brands.items, query['Brands'])
+      const product_type = this.getFilterParams('my.review.product_type', this.product_type.items, query['Product Types'])
+
+      this.posts = await this.$prismic.client.getAllByType('review', { filters: [brand, product_type] }) as Array<Post>
+    },
+    getFilterParams(filterType: string, allItems: Array<string>, query?: string) {
+      if (query === 'all' || query == null) {
+        return this.$prismic.filter.any(filterType, allItems)
+      }
+      return this.$prismic.filter.at(filterType, query)
     },
     formatDate(post: Post) {
       return format(new Date(post.first_publication_date), 'MMMM do, y')
     }
   },
   created() {
-    this.getContent()
+    this.getContent(this.$route.query)
   },
   computed: {
     brands() {
-      return { defaultValue: 'Brands', items: this.posts?.map?.((post: Post) => post.data.brand) };
+      return { defaultValue: 'Brands', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.brand))] };
     },
     product_type() {
-      return { defaultValue: 'Product Type', items: this.posts?.map?.((post: Post) => post.data.product_type) };
+      return { defaultValue: 'Product Types', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.product_type))] };
     }
   }
 }

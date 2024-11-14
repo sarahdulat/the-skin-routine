@@ -17,6 +17,7 @@
         </h4>
         <div>
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
+          <button class="px-sm ms-md">Buy</button>
         </div>
         <div class="collapse multi-collapse mt-sm" :id="`${step.title}`">
           <div v-html="step.description"></div>
@@ -54,6 +55,16 @@ h4 {
 
 a {
   color: var(--color-link);
+}
+
+button {
+  background-color: transparent;
+  border-radius: var(--space-sm);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(241, 101, 68, 0.05);
+  }
 }
 
 .hand {

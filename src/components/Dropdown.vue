@@ -1,8 +1,8 @@
 <template>
   <div class="dropdown-container">
-    <!-- Accessible styled select dropdown -->
-    <select id="dropdown" v-model="selectedItem" @change="emitSelection">
-      <option value="" selected>{{ defaultValue }}</option>
+    <select id="dropdown" v-model="selectedOption" @change="updateQueryParam">
+      <option :value="defaultValue" disabled selected>{{ defaultValue }}</option>
+      <option value="all">All {{ defaultValue }}</option>
       <option v-for="(item, index) in items" :key="index" :value="item">
         {{ item }}
       </option>
@@ -15,6 +15,11 @@ import { defineComponent, ref, PropType } from "vue";
 
 export default defineComponent({
   name: "Dropdown",
+  data() {
+    return {
+      selectedOption: this.$route.query?.filter ?? this.$props.defaultValue,
+    };
+  },
   props: {
     modelValue: {
       type: String,
@@ -30,19 +35,14 @@ export default defineComponent({
       required: true
     }
   },
-  emits: ["update:modelValue"],
-  setup(props, { emit }) {
-    const selectedItem = ref<string | null>(props.modelValue);
-
-    const emitSelection = () => {
-      emit("update:modelValue", selectedItem.value);
-    };
-
-    return {
-      selectedItem,
-      emitSelection,
-    };
+  methods: {
+    updateQueryParam() {
+      this.$router.push({ query: { ...this.$route.query, [this.defaultValue]: this.selectedOption } });
+    },
   },
+  mounted() {
+    this.selectedOption = this.$route.query[this.defaultValue] || this.defaultValue;
+  }
 });
 </script>
 

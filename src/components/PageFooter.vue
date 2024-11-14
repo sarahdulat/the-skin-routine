@@ -4,7 +4,8 @@
       <div class="me-auto">
         <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
       </div>
-      <div class="text-nowrap">
+      <div><router-link to="/disclaimer">Affiliate Disclosure</router-link></div>
+      <div class="ms-auto text-nowrap">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-instagram" alt="instagram"></i>
         </a>

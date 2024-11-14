@@ -45,7 +45,7 @@ export default defineComponent({
   cursor: pointer;
   user-select: none;
   padding: var(--space-sm) 0;
-  text-indent: -5px;
+  text-indent: -11px;
   padding-left: 11px;
 }
 
@@ -55,6 +55,7 @@ export default defineComponent({
 
 .glyph {
   display: inline-block;
+  line-height: 0;
 
   /* Rotate the arrow when expanded */
   &.expanded {
