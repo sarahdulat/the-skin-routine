@@ -1,6 +1,6 @@
 <template>
   <div class="dropdown-container">
-    <select id="dropdown" v-model="selectedOption" @change="updateQueryParam">
+    <select v-model="selectedOption" @change="updateQueryParam" :aria-labelledby="defaultValue">
       <option :value="defaultValue" disabled selected>{{ defaultValue }}</option>
       <option value="all">All {{ defaultValue }}</option>
       <option v-for="(item, index) in items" :key="index" :value="item">

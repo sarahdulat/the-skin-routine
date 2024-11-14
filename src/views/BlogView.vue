@@ -7,8 +7,6 @@
           <div v-if="posts">
             <router-link :to="'/blog/' + post.uid">
               <img :src="post.data.product_image.url" :alt="post.data.product_image.alt" />
-            </router-link>
-            <router-link :to="'/blog/' + post.uid">
               <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
