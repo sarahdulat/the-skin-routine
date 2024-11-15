@@ -93,7 +93,7 @@ p {
   font-size: var(--font-size-l);
 
   &:first-of-type:first-letter {
-    color: var(--color-text);
+    color: var(--color-dark);
     float: left;
     font-family: Jost, Arial, Helvetica, sans-serif;
     font-size: 75px;

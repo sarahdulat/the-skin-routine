@@ -22,14 +22,14 @@
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--color-body);
+  background-color: var(--color-light);
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--space-xl);
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-dark);
 
     h1 {
       font-weight: 500;
@@ -39,7 +39,7 @@ nav {
         text-decoration: none;
 
         &:hover {
-          color: var(--color-text);
+          color: var(--color-dark);
 
           .glyph {
             color: var(--color-primary);

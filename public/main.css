@@ -69,10 +69,9 @@
 }
 
 :root {
-  --color-primary: #f16544;
-  --color-link: #C85238;
-  --color-body: #fbfaf4;
-  --color-text: #343A40;
+  --color-primary: #C85238;
+  --color-light: #fbfaf4;
+  --color-dark: #343A40;
 }
 
 :root {
@@ -572,10 +571,6 @@ h1 {
   color: var(--color-primary);
 }
 
-.color-link {
-  color: var(--color-link);
-}
-
 .bg-primary {
   background-color: var(--color-primary);
 }
@@ -659,7 +654,7 @@ h1 {
   }
 }
 .placeholder-wave {
-  mask-image: linear-gradient(130deg, var(--color-text) 50%, rgba(0, 0, 0, 0.7) 75%, var(--color-text) 100%);
+  mask-image: linear-gradient(130deg, var(--color-dark) 50%, rgba(0, 0, 0, 0.7) 75%, var(--color-dark) 100%);
   mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
@@ -675,8 +670,8 @@ h1 {
 
 body {
   font-family: var(--font-family-serif);
-  color: var(--color-text);
-  background-color: var(--color-body);
+  color: var(--color-dark);
+  background-color: var(--color-light);
   height: 100dvh;
   margin: 0;
 }
@@ -694,7 +689,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: var(--color-link);
+  color: var(--color-primary);
 }
 
 .glyph {

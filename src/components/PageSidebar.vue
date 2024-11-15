@@ -66,7 +66,7 @@ aside {
   flex: 1;
   height: 100vh;
   max-width: 300px;
-  border-left: var(--color-text) solid 1px;
+  border-left: var(--color-dark) solid 1px;
   padding: 0 var(--space-lg);
 }
 

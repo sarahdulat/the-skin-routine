@@ -88,8 +88,8 @@ export default defineComponent({
 .popover {
   position: absolute;
   padding: var(--space-lg);
-  color: var(--color-body);
-  background-color: var(--color-text);
+  color: var(--color-light);
+  background-color: var(--color-dark);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: var(--space-sm);
   z-index: 10;

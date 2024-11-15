@@ -54,8 +54,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .filter {
   padding: var(--space-lg) var(--space-xl);
-  border-bottom: 1px solid var(--color-text);
-  background-color: var(--color-body);
+  border-bottom: 1px solid var(--color-dark);
+  background-color: var(--color-light);
   display: flex;
 
   h6 {

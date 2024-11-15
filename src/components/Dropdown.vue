@@ -35,6 +35,11 @@ export default defineComponent({
       required: true
     }
   },
+  watch: {
+    "$route.query.filter"(newFilter) {
+      this.selectedOption = newFilter || "all";
+    },
+  },
   methods: {
     updateQueryParam() {
       this.$router.push({ query: { ...this.$route.query, [this.defaultValue]: this.selectedOption } });
@@ -60,11 +65,11 @@ select {
   /* Remove native dropdown arrow */
   padding: var(--space-md) var(--space-xl) var(--space-md) var(--space-md);
   border-radius: var(--radius-sm);
-  border: 1px solid var(--color-text);
-  background-color: var(--color-body);
+  border: 1px solid var(--color-dark);
+  background-color: var(--color-light);
   cursor: pointer;
   position: relative;
-  box-shadow: 1px 3px 0 var(--color-text);
+  box-shadow: 1px 3px 0 var(--color-dark);
 }
 
 select:hover {

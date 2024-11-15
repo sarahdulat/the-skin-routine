@@ -43,9 +43,9 @@ export default defineComponent({
 <style scoped>
 .popover {
   position: absolute;
-  color: var(--color-body);
-  background: var(--color-text);
-  border: 1px solid #ccc;
+  color: var(--color-light);
+  background: var(--color-dark);
+  border: 1px solid var(--color-dark);
   padding: var(--space-md);
   border-radius: var(--radius-sm);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -32,8 +32,8 @@
 
 body {
   font-family: var(--font-family-serif);
-  color: var(--color-text);
-  background-color: var(--color-body);
+  color: var(--color-dark);
+  background-color: var(--color-light);
   height: 100dvh;
   margin: 0;
 }
@@ -51,7 +51,7 @@ a {
   text-decoration: underline;
 
   &:hover {
-    color: var(--color-link);
+    color: var(--color-primary);
   }
 }
 

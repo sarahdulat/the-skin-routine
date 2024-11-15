@@ -151,7 +151,7 @@ section {
     font-size: var(--font-size-l);
 
     &:first-of-type:first-letter {
-      color: var(--color-text);
+      color: var(--color-dark);
       float: left;
       font-size: 75px;
       line-height: 50px;

@@ -11,7 +11,7 @@
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
-              <router-link class="text-uppercase font-sans" :to="'/blog/tag/' + tag">
+              <router-link class="text-uppercase font-sans" to="#">
                 #{{ tag }}
               </router-link>
             </span>
@@ -40,7 +40,6 @@
 <script lang="ts">
 import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
-import { useRoute } from "vue-router";
 
 import { format } from "date-fns";
 import { Post } from '../types';
@@ -59,10 +58,9 @@ export default {
     }
   },
   watch: {
-    // Keep `filter` in sync with query parameter changes
     "$route.query"(newQuery) {
       this.getContent(newQuery)
-    },
+    }
   },
   methods: {
     async getContent(query: { 'Brands': string, 'Product Types': string }) {

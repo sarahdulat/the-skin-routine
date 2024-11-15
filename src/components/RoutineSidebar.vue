@@ -38,7 +38,7 @@ const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]
 
 <style lang="scss" scoped>
 aside {
-  border-left: var(--color-text) solid 1px;
+  border-left: var(--color-dark) solid 1px;
   padding: 0 var(--space-xl);
 }
 
@@ -54,7 +54,7 @@ h4 {
 }
 
 a {
-  color: var(--color-link);
+  color: var(--color-primary);
 }
 
 button {
@@ -79,7 +79,7 @@ button {
 }
 
 .step:not(:last-child) {
-  border-bottom: 0.5px solid var(--color-text);
+  border-bottom: 0.5px solid var(--color-dark);
   padding-bottom: var(--space-md);
 }
 
@@ -88,14 +88,14 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-dark);
   border-radius: var(--radius-sm);
   font-weight: bold;
-  color: var(--color-text);
+  color: var(--color-dark);
   cursor: pointer;
   width: 90%;
   margin-bottom: var(--space-xl);
-  box-shadow: 1px 3px 0px var(--color-text);
+  box-shadow: 1px 3px 0px var(--color-dark);
 }
 
 .toggleContainer::before {
@@ -105,7 +105,7 @@ button {
   height: 100%;
   left: 0%;
   border-radius: 0;
-  background: var(--color-text);
+  background: var(--color-dark);
   transition: all 0.3s;
 }
 
@@ -124,25 +124,25 @@ input {
 }
 
 input:checked+.toggleContainer div:first-child {
-  color: var(--color-text);
+  color: var(--color-dark);
   transition: color 0.3s;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 input:checked+.toggleContainer div:last-child {
-  color: var(--color-body);
+  color: var(--color-light);
   transition: color 0.3s;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 input+.toggleContainer div:first-child {
-  color: var(--color-body);
+  color: var(--color-light);
   transition: color 0.3s;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 input+.toggleContainer div:last-child {
-  color: var(--color-text);
+  color: var(--color-dark);
   transition: color 0.3s;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }

@@ -22,8 +22,8 @@
 
 <style lang="scss" scoped>
 footer {
-  background-color: var(--color-body);
-  border-top: 1px solid var(--color-text);
+  background-color: var(--color-light);
+  border-top: 1px solid var(--color-dark);
   position: sticky;
   bottom: 0;
   padding: var(--space-lg) var(--space-xl);

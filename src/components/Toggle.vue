@@ -52,13 +52,13 @@ export default defineComponent({
 }
 
 .toggle-switch.toggle-on {
-  background-color: var(--color-link);
+  background-color: var(--color-primary);
 }
 
 .toggle-knob {
   width: 15px;
   height: 15px;
-  background-color: var(--color-body);
+  background-color: var(--color-light);
   border-radius: 50%;
   position: absolute;
   left: 2px;

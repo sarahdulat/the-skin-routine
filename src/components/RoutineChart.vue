@@ -76,7 +76,7 @@ export default defineComponent({
           .attr('x2', width)
           .attr('y1', yScale(i))
           .attr('y2', yScale(i))
-          .attr('stroke', '#343A40') // Light gray for grid lines
+          .attr('stroke', '#343A40')
           .attr('stroke-width', 0.5);
       }
 
@@ -87,7 +87,7 @@ export default defineComponent({
           .attr('x2', xScale(i))
           .attr('y1', 0)
           .attr('y2', height)
-          .attr('stroke', '#343A40') // Light gray for grid lines
+          .attr('stroke', '#343A40')
           .attr('stroke-width', 0.5);
       }
 
@@ -122,7 +122,7 @@ export default defineComponent({
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 5)
-        .attr('fill', '#f16544')
+        .attr('fill', '#C85238')
         .on("mouseover", function (event, d) {
           d3.select(this).attr("fill", "blue");
 
@@ -132,7 +132,7 @@ export default defineComponent({
             .text(`${d.title}`);
         })
         .on("mouseout", function () {
-          d3.select(this).attr("fill", "#f16544");
+          d3.select(this).attr("fill", "#C85238");
         })
         .on("mouseover", function (event, d) {
           event.stopPropagation();
