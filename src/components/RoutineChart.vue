@@ -121,7 +121,7 @@ export default defineComponent({
         .attr('class', 'dot')
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
-        .attr('r', 5)
+        .attr('r', 10)
         .attr('fill', '#C85238')
         .on("mouseover", function (event, d) {
           d3.select(this).attr("fill", "blue");

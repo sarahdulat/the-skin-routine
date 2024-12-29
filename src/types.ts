@@ -5,61 +5,73 @@ export type BlogArchiveNode = {
 }
 
 export type Post = {
-  id: string
-  uid: string
-  url: any
-  type: string
-  href: string
-  tags: Array<string>
-  first_publication_date: string
-  last_publication_date: string
-  slugs: Array<string>
-  linked_documents: Array<any>
-  lang: string
   alternate_languages: Array<any>
   data: {
-    product_image: {
-      dimensions: {
-        width: number
-        height: number
-      }
-      alt: any
-      copyright: any
-      url: string
-      id: string
-      edit: {
-        x: number
-        y: number
-        zoom: number
-        background: string
-      }
-    }
-    title: Array<{
-      type: string
-      text: string
-      spans: Array<any>
-      direction: string
-    }>
-    date: string
-    brand: string
-    product_type: string
-    summary: Array<{
-      type: string
-      text: string
-      spans: Array<any>
-      direction: string
-    }>
-    subtitle: Array<{
-      type: string
-      text: string
-      spans: Array<any>
-      direction: string
-    }>
     body: Array<{
       type: string
       text: string
       spans: Array<any>
       direction: string
     }>
+    brands: Array<{
+      brand: string
+    }>
+    date: string
+    image: {
+      alt: string
+      copyright: string | null
+      dimensions: {
+        width: number
+        height: number
+      }
+      edit: {
+        x: number
+        y: number
+        zoom: number
+        background: string
+      }
+      id: string
+      url: string
+    }
+    product_types: Array<{
+      product_type: string
+    }>
+    products: Array<{
+      product: {
+        first_publication_date: string
+        id: string
+        isBroken: boolean
+        key: string
+        lang: string
+        last_publication_date: string
+        link_type: string
+        slug: string
+        tags: Array<string>
+        type: string
+      }
+    }>
+    summary: Array<{
+      type: string
+      text: string
+      spans: Array<any>
+      direction: string
+    }>
+    title: Array<{
+      type: string
+      text: string
+      spans: Array<any>
+      direction: string
+    }>
   }
+  first_publication_date: string
+  href: string
+  id: string
+  lang: string
+  last_publication_date: string
+  linked_documents: Array<any>
+  slugs: Array<string>
+  tags: Array<string>
+  type: string
+  uid: string
+  url: string | null
 }

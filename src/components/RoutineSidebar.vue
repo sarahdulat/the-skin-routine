@@ -60,6 +60,7 @@ a {
 button {
   background-color: transparent;
   border-radius: var(--space-sm);
+  border: 1px solid black;
   cursor: pointer;
 
   &:hover {
@@ -90,7 +91,7 @@ button {
   width: fit-content;
   border: 1px solid var(--color-dark);
   border-radius: var(--radius-sm);
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-dark);
   cursor: pointer;
   width: 90%;

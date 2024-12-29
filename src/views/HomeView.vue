@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      routines: routines,
+      routines,
       age_range: { defaultValue: 'Age Range', items: ['20s', '30s', '40s', '50s', '60s', '70s'] },
       skin_concern: { defaultValue: 'Skin Concern', items: ['Acne Prone', 'Fine Lines & Wrinkles', 'Dry Skin', 'Sensitive'] }
     }

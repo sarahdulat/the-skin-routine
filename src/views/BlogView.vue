@@ -6,8 +6,8 @@
         <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
           <div v-if="posts">
             <router-link :to="'/blog/' + post.uid">
-              <img :src="post.data.product_image.url" :alt="post.data.product_image.alt" />
-              <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
+              <img :src="post.data.image.url" :alt="post.data.image.alt" />
+              <!-- <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3> -->
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
@@ -54,7 +54,8 @@ export default {
     return {
       posts: [] as Array<Post>,
       allPosts: [] as Array<Post>,
-      filters: [] as any
+      filters: [] as any,
+      routine: [] as any
     }
   },
   watch: {
@@ -66,10 +67,10 @@ export default {
     async getContent(query: { 'Brands': string, 'Product Types': string }) {
       this.allPosts = await this.$prismic.client.getAllByType('review') as Array<Post>
 
-      const brand = this.getFilterParams('my.review.brand', this.brands.items, query['Brands'])
-      const product_type = this.getFilterParams('my.review.product_type', this.product_type.items, query['Product Types'])
+      const brands = this.getFilterParams('my.review.brands.brand', this.brands.items, query['Brands'])
+      const product_types = this.getFilterParams('my.review.product_types.product_type', this.product_type.items, query['Product Types'])
 
-      this.posts = await this.$prismic.client.getAllByType('review', { filters: [brand, product_type] }) as Array<Post>
+      this.posts = await this.$prismic.client.getAllByType('review', { filters: [brands, product_types] }) as Array<Post>
     },
     getFilterParams(filterType: string, allItems: Array<string>, query?: string) {
       if (query === 'all' || query == null) {
@@ -86,10 +87,10 @@ export default {
   },
   computed: {
     brands() {
-      return { defaultValue: 'Brands', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.brand))] };
+      return { defaultValue: 'Brands', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.brands.map(b => b.brand)))].flat() };
     },
     product_type() {
-      return { defaultValue: 'Product Types', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.product_type))] };
+      return { defaultValue: 'Product Types', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.product_types.map(p => p.product_type)))].flat() };
     }
   }
 }

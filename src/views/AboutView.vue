@@ -37,8 +37,8 @@
         (except Botox for my TMJ). I don't get any regular facials or aesthetic services (but would certainly consider
         all of the above in the future). Thanks to my skincare routine I was able to stop using face makeup, and only
         use some eye makeup when I feel like it. I have struggled in the past with hormonal cystic acne which was caused
-        by high testosterone levels, but I was able to get it under control using birth control and Spironolactone. (I
-        know, don't @ me. It works and I don't want to poke the bear.) It is at this point that I often hear people
+        by high testosterone levels, but I was able to get it under control using birth control and Spironolactone. It
+        is at this point that I often hear people
         attribute my good skin to genetics, which might help, but I know what my skin was starting to look like at 31
         and that I now appear to be on average 27 (based on my very scientific game of "guess my age", the lowest I've
         gotten was 24 😱). My results today are from my skincare routine to which I stay incredibly consistent, even
@@ -70,7 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 var(--space-xl);
+  margin: 0 15%;
 }
 
 .image {
