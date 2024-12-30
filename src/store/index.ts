@@ -1,5 +1,4 @@
-import { InjectionKey } from 'vue';
-import { Store, createStore, useStore as baseUseStore } from 'vuex'
+import { reactive } from 'vue';
 import routines from '../assets/routines.json'
 
 interface State {
@@ -8,32 +7,17 @@ interface State {
   currentRoutine: typeof routines[0];
 }
 
-export const key: InjectionKey<Store<State>> = Symbol()
+export const store = reactive({
+  // state
+  routines,
+  currentRoutine: routines[0],
+  routineTime: 'am',
 
-export default createStore({
-  state: {
-    routines,
-    currentRoutine: routines[0],
-    routineTime: 'am',
+  // actions
+  setRoutineTime(time: "am" | "pm") {
+    this.routineTime = time
   },
-  mutations: {
-    setRoutineTime(state, time) {
-      state.routineTime = time
-    },
-    setCurrentRoutine(state, currentRoutine) {
-      state.currentRoutine = currentRoutine
-    }
-  },
-  actions: {
-    setRoutineTime(context, time) {
-      context.commit('setRoutineTime', time)
-    },
-    setCurrentRoutine(context, currentRoutine) {
-      context.commit('setCurrentRoutine', currentRoutine)
-    } 
+  setCurrentRoutine(currentRoutine: typeof routines[0]) {
+    currentRoutine = currentRoutine
   }
 })
-
-export function useStore () {
-  return baseUseStore(key)
-}

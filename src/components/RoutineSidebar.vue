@@ -1,11 +1,11 @@
 <template>
   <aside>
     <div class="scroll-container">
-      <h2 class="mt-lg">{{ store.state.currentRoutine.name }}</h2>
+      <h2 class="mt-lg">{{ store.currentRoutine.name }}</h2>
       <input type="checkbox" id="toggle" />
       <label for="toggle" class='toggleContainer'>
-        <div @click="$store.dispatch('setRoutineTime', 'am')">am <span class="glyph">☀</span></div>
-        <div @click="$store.dispatch('setRoutineTime', 'pm')">pm <span class="glyph">⏾</span></div>
+        <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
+        <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
       </label>
 
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
@@ -29,11 +29,10 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue';
-import { useStore } from '../store'
+import { store } from '../store'
 
-const store = useStore()
-const routineTime = computed(() => store.state.routineTime);
-const steps = computed(() => store.state.currentRoutine.steps[routineTime.value]);
+const routineTime = computed(() => store.routineTime);
+const steps = computed(() => store.currentRoutine.steps[routineTime.value]);
 </script>
 
 <style lang="scss" scoped>
