@@ -4,6 +4,8 @@
     "id": 0,
     "time": 5,
     "money": 1,
+    "point_title": "Sarah's Routine",
+    "point_desc": "An involved anti-aging routine.",
     "steps": {
       "am": {
         "step_1": {
@@ -184,6 +186,8 @@
     "id": 1,
     "time": 0,
     "money": 1,
+    "point_title": "Sami's Routine",
+    "point_desc": "A light men's routine.",
     "steps": {
       "am": {
         "step_1": {
