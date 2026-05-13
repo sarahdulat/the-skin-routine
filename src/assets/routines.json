@@ -6,6 +6,8 @@
     "money": 10,
     "point_title": "Sarah's Routine",
     "point_description": "An involved anti-aging routine.",
+    "age_range": ["30s", "40s"],
+    "skin_concern": ["fine_lines_and_wrinkles"],
     "steps": {
       "am": {
         "step_1": {
@@ -188,6 +190,8 @@
     "money": 4,
     "point_title": "Sami's Routine",
     "point_description": "A light men's routine.",
+    "age_range": ["30s", "40s"],
+    "skin_concern": ["sensitive"],
     "steps": {
       "am": {
         "step_1": {

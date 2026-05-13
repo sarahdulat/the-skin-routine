@@ -1,7 +1,7 @@
 <template>
   <main>
     <div>
-      <ReviewBar v-if="prevPost || nextPost" :prevPost="prevPost" :nextPost="nextPost" />
+      <ReviewBar :prevPost="prevPost" :nextPost="nextPost" :isLoading="isReviewBarLoading" />
       <div class="scroll-container">
         <div v-if="post">
           <div>
@@ -14,7 +14,7 @@
                 formatDate(post.last_publication_date) }}</p>
               <div class="mt-lg">
                 <span v-for="tag in post.tags" :key="tag" class="text-uppercase font-sans me-md">
-                  <router-link class="" to="">#{{ tag }}</router-link>
+                  #{{ tag }}
                 </span>
               </div>
               <div class="mt-xl">
@@ -67,7 +67,6 @@ import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
 
 import { format } from "date-fns";
-import { useRoute } from "vue-router";
 import { Post } from "../types";
 
 export default {
@@ -80,47 +79,47 @@ export default {
     return {
       post: null as Post | null,
       prevPost: null as Post | null,
-      nextPost: null as Post | null
+      nextPost: null as Post | null,
+      isReviewBarLoading: false,
     }
   },
   methods: {
-    async getContent() {
-      const route = useRoute();
-      const slug = route.params.slug as string;
+    async getContent(slug: string) {
+      if (!slug) return;
 
-      this.post = await this.$prismic.client.getByUID("review", slug) as Post;
+      this.prevPost = null;
+      this.nextPost = null;
+      this.isReviewBarLoading = true;
 
-      console.log(this.post)
+      const post = await this.$prismic.client.getByUID("review", slug) as Post;
+      this.post = post;
 
-      this.prevPost = ((await this.$prismic.client.get({
-        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
-      })).results[0] as unknown as Post | undefined) ?? null
+      try {
+        const [prevResponse, nextResponse] = await Promise.all([
+          this.$prismic.client.getByType("review", {
+            pageSize: 1, after: post.id, orderings: { field: 'document.first_publication_date desc' }
+          }),
+          this.$prismic.client.getByType("review", {
+            pageSize: 1, after: post.id, orderings: { field: 'document.first_publication_date' }
+          }),
+        ]);
 
-      this.nextPost = ((await this.$prismic.client.get({
-        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
-      })).results[0] as unknown as Post | undefined) ?? null
-
+        this.prevPost = (prevResponse.results[0] as unknown as Post | undefined) ?? null
+        this.nextPost = (nextResponse.results[0] as unknown as Post | undefined) ?? null
+      } finally {
+        this.isReviewBarLoading = false;
+      }
     },
     formatDate(date: string) {
       return format(new Date(date), 'MMMM do, y')
     }
   },
   created() {
-    this.getContent()
+    this.getContent(this.$route.params.slug as string)
   },
   watch: {
-    async '$route'(to) {
-      this.getContent()
-
-      this.post = await this.$prismic.client.getByUID("review", to.params.slug) as Post;
-
-      this.prevPost = ((await this.$prismic.client.get({
-        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
-      })).results[0] as unknown as Post | undefined) ?? null
-
-      this.nextPost = ((await this.$prismic.client.get({
-        pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
-      })).results[0] as unknown as Post | undefined) ?? null
+    '$route.params.slug'(slug) {
+      this.getContent(slug as string)
     }
   }
 }

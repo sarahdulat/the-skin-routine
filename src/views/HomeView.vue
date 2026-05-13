@@ -2,19 +2,37 @@
   <main>
     <div class="chart">
       <FilterBar :dropdowns="[age_range, skin_concern]" />
-      <RoutineChart :routines="routines" />
+      <RoutineChart :routines="filteredRoutines" />
     </div>
     <RoutineSidebar :routines="routines" />
   </main>
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
+import type { LocationQueryValue } from "vue-router";
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 import routines from '../assets/routines.json'
 import FilterBar from "../components/FilterBar.vue";
+import { store, Routine } from "../store";
 
-export default {
+const skinConcernValueByLabel: Record<string, string> = {
+  "Acne Prone": "acne_prone",
+  "Fine Lines & Wrinkles": "fine_lines_and_wrinkles",
+  "Dry Skin": "dry_skin",
+  "Sensitive": "sensitive",
+};
+
+const getSelectedQueryValue = (value: LocationQueryValue | LocationQueryValue[]) => {
+  return Array.isArray(value) ? value[0] : value;
+};
+
+const matchesFilter = (routineValues: string[], selectedValue: string | null | undefined) => {
+  return selectedValue == null || selectedValue === "all" || routineValues.includes(selectedValue);
+};
+
+export default defineComponent({
   name: 'home',
   components: {
     FilterBar,
@@ -27,8 +45,30 @@ export default {
       age_range: { defaultValue: 'Age Range', items: ['20s', '30s', '40s', '50s', '60s', '70s'] },
       skin_concern: { defaultValue: 'Skin Concern', items: ['Acne Prone', 'Fine Lines & Wrinkles', 'Dry Skin', 'Sensitive'] }
     }
+  },
+  computed: {
+    filteredRoutines(): Routine[] {
+      const selectedAgeRange = getSelectedQueryValue(this.$route.query["Age Range"]);
+      const selectedSkinConcernLabel = getSelectedQueryValue(this.$route.query["Skin Concern"]);
+      const selectedSkinConcern = selectedSkinConcernLabel ? skinConcernValueByLabel[selectedSkinConcernLabel] : null;
+
+      return this.routines.filter((routine) => {
+        return matchesFilter(routine.age_range, selectedAgeRange)
+          && matchesFilter(routine.skin_concern, selectedSkinConcern);
+      });
+    },
+  },
+  watch: {
+    filteredRoutines: {
+      handler(filteredRoutines: Routine[]) {
+        if (filteredRoutines.length > 0 && !filteredRoutines.some((routine) => routine.id === store.currentRoutine.id)) {
+          store.setCurrentRoutine(filteredRoutines[0]);
+        }
+      },
+      immediate: true,
+    },
   }
-}
+});
 
 </script>
 
