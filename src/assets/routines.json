@@ -2,10 +2,10 @@
   {
     "name": "Sarah's Routine",
     "id": 0,
-    "time": 5,
-    "money": 1,
+    "time": 15,
+    "money": 10,
     "point_title": "Sarah's Routine",
-    "point_desc": "An involved anti-aging routine.",
+    "point_description": "An involved anti-aging routine.",
     "steps": {
       "am": {
         "step_1": {
@@ -184,10 +184,10 @@
   {
     "name": "Sami's Routine",
     "id": 1,
-    "time": 0,
-    "money": 1,
+    "time": 2,
+    "money": 4,
     "point_title": "Sami's Routine",
-    "point_desc": "A light men's routine.",
+    "point_description": "A light men's routine.",
     "steps": {
       "am": {
         "step_1": {

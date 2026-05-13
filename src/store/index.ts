@@ -1,7 +1,7 @@
 import { reactive } from 'vue';
 import routines from '../assets/routines.json'
 
-type Routine = typeof routines[number];
+export type Routine = typeof routines[number];
 
 interface State {
   routines: typeof routines;

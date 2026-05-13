@@ -2,27 +2,42 @@
   <div ref="graph" class="chart-container" @click="closePopover">
     <Popover v-if="popoverVisible" :visible="popoverVisible" :position="popoverPosition" @click.stop>
       <div>
-        <p class="small">{{ popoverContent.title }}</p>
-        <p class="small font-sans">{{ popoverContent.description }}</p>
+        <p class="small">{{ popoverContent.point_title }}</p>
+        <p class="small font-sans">{{ popoverContent.point_description }}</p>
       </div>
     </Popover>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted, ref } from 'vue';
+import { defineComponent, onMounted, onUnmounted, PropType, ref, watch } from 'vue';
 import * as d3 from 'd3';
 import Popover from './Popover.vue';
+import { store, Routine } from '../store';
+
+type RoutinePoint = {
+  x: number;
+  y: number;
+  point_title: string;
+  point_description: string;
+  routine: Routine;
+};
 
 export default defineComponent({
   name: 'SquareResponsiveQuadrantGridChart',
   components: {
     Popover,
   },
-  setup() {
+  props: {
+    routines: {
+      type: Array as PropType<Routine[]>,
+      required: true,
+    },
+  },
+  setup(props) {
     const graph = ref<HTMLDivElement | null>(null);
     const popoverVisible = ref(false);
-    const popoverContent = ref({ title: "", description: "" });
+    const popoverContent = ref({ point_title: "", point_description: "" });
     const popoverPosition = ref({ x: 0, y: 0 });
     let resizeObserver: ResizeObserver | null = null;
 
@@ -30,7 +45,7 @@ export default defineComponent({
       popoverVisible.value = false;
     };
 
-    const showPopover = (content: { title: string; description: string }, position: { x: number; y: number }) => {
+    const showPopover = (content: { point_title: string; point_description: string }, position: { x: number; y: number }) => {
       popoverContent.value = content;
       popoverPosition.value = position;
       popoverVisible.value = true;
@@ -70,10 +85,13 @@ export default defineComponent({
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
-      const data = [
-        { x: 1, y: 4, title: "Point 1", description: "Details about Point 1" },
-        { x: 14, y: 24, title: "Point 2", description: "Details about Point 2" },
-      ];
+      const data: RoutinePoint[] = props.routines.map((routine) => ({
+        x: routine.time,
+        y: routine.money,
+        point_title: routine.point_title,
+        point_description: routine.point_description,
+        routine,
+      }));
 
       // Create scales for the x and y axes
       const xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
@@ -132,19 +150,26 @@ export default defineComponent({
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 10)
-        .attr('fill', '#C85238')
+        .attr('fill', (d) => d.routine.id === store.currentRoutine.id ? '#343A40' : '#C85238')
+        .style('cursor', 'pointer')
         .on("mouseover", function (event, d) {
-          d3.select(this).attr("fill", "blue");
+          d3.select(this).attr("fill", "#343A40");
           event.stopPropagation();
-          const [mouseX, mouseY] = d3.pointer(event, graph.value);
-
           showPopover(
-            { title: d.title, description: d.description },
-            { x: mouseX, y: mouseY }
+            { point_title: d.point_title, point_description: d.point_description },
+            { x: event.clientX, y: event.clientY }
           );
         })
-        .on("mouseout", function () {
-          d3.select(this).attr("fill", "#C85238");
+        .on("mouseout", function (_event, d) {
+          d3.select(this).attr("fill", d.routine.id === store.currentRoutine.id ? '#343A40' : '#C85238');
+        })
+        .on("click", function (event, d) {
+          event.stopPropagation();
+          store.setCurrentRoutine(d.routine);
+
+          d3.select(graph.value)
+            .selectAll<SVGCircleElement, RoutinePoint>('.dot')
+            .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
         });
 
       // Add X-axis label at the top
@@ -178,6 +203,8 @@ export default defineComponent({
         resizeObserver.disconnect();
       }
     });
+
+    watch(() => props.routines, createGraph, { deep: true });
 
     return {
       graph,

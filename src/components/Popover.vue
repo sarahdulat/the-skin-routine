@@ -1,12 +1,12 @@
 <!-- Popover.vue -->
 <template>
-  <div v-if="visible" class="popover" :style="popoverStyle" @click.stop>
+  <div v-if="visible" ref="popover" class="popover" :style="popoverStyle" @click.stop>
     <slot /> <!-- You can pass custom content to the popover -->
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch, PropType } from "vue";
+import { defineComponent, nextTick, ref, watch, PropType } from "vue";
 
 export default defineComponent({
   name: "Popover",
@@ -21,19 +21,37 @@ export default defineComponent({
     },
   },
   setup(props) {
+    const popover = ref<HTMLElement | null>(null);
     const popoverStyle = ref({
-      left: `${props.position.x}px`,
-      top: `${props.position.y}px`,
+      left: "0px",
+      top: "0px",
     });
 
-    watch(() => props.position, (newPos) => {
+    const updatePosition = async () => {
+      await nextTick();
+
+      if (!popover.value) return;
+
+      const offset = 12;
+      const viewportPadding = 8;
+      const { width, height } = popover.value.getBoundingClientRect();
+      const availableRight = window.innerWidth - width - viewportPadding;
+      const availableBottom = window.innerHeight - height - viewportPadding;
+      const preferredLeft = props.position.x + offset;
+      const preferredTop = props.position.y + offset;
+      const left = Math.min(Math.max(preferredLeft, viewportPadding), Math.max(availableRight, viewportPadding));
+      const top = Math.min(Math.max(preferredTop, viewportPadding), Math.max(availableBottom, viewportPadding));
+
       popoverStyle.value = {
-        left: `${newPos.x}px`,
-        top: `${newPos.y}px`,
+        left: `${left}px`,
+        top: `${top}px`,
       };
-    });
+    };
+
+    watch(() => [props.position.x, props.position.y, props.visible], updatePosition, { immediate: true });
 
     return {
+      popover,
       popoverStyle,
     };
   },
@@ -42,7 +60,7 @@ export default defineComponent({
 
 <style scoped>
 .popover {
-  position: absolute;
+  position: fixed;
   color: var(--color-light);
   background: var(--color-dark);
   border: 1px solid var(--color-dark);
@@ -50,5 +68,6 @@ export default defineComponent({
   border-radius: var(--radius-sm);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  max-width: min(320px, calc(100vw - 16px));
 }
 </style>
