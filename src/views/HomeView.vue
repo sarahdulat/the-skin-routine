@@ -36,5 +36,16 @@ export default {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.chart {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 </style>

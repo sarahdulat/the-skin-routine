@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, onMounted, onUnmounted, ref } from 'vue';
 import * as d3 from 'd3';
 import Popover from './Popover.vue';
 
@@ -24,6 +24,7 @@ export default defineComponent({
     const popoverVisible = ref(false);
     const popoverContent = ref({ title: "", description: "" });
     const popoverPosition = ref({ x: 0, y: 0 });
+    let resizeObserver: ResizeObserver | null = null;
 
     const closePopover = () => {
       popoverVisible.value = false;
@@ -36,27 +37,36 @@ export default defineComponent({
     };
 
 
-    // Function to create the quadrant graph with grid lines
     const createGraph = () => {
-      const margin = { top: 60, right: 60, bottom: 0, left: 0 };
-
-      // Get the width and height of the parent container dynamically
-      const containerWidth = graph.value!.clientWidth;
-      const containerHeight = graph.value!.clientHeight;
-
-      const width = containerWidth - margin.left - margin.right;
-      const height = containerHeight - margin.top - margin.bottom;
-
-      // Remove existing SVG if present
-      d3.select(graph.value).selectAll("*").remove();
-
       if (!graph.value) return;
 
-      const svg = d3
+      const { width: rawWidth, height: rawHeight } = graph.value.getBoundingClientRect();
+      const containerWidth = Math.floor(rawWidth);
+      const containerHeight = Math.floor(rawHeight);
+
+      d3.select(graph.value).selectAll("svg").remove();
+
+      if (containerWidth <= 0 || containerHeight <= 0) return;
+
+      const margin = {
+        top: Math.min(48, containerHeight * 0.14),
+        right: Math.min(64, containerWidth * 0.18),
+        bottom: 12,
+        left: 12,
+      };
+
+      const width = Math.max(containerWidth - margin.left - margin.right, 0);
+      const height = Math.max(containerHeight - margin.top - margin.bottom, 0);
+
+      const svgRoot = d3
         .select(graph.value)
         .append('svg')
-        .attr('width', containerWidth) // Set width to match parent
-        .attr('height', containerHeight) // Set height to match parent
+        .attr('width', '100%')
+        .attr('height', '100%')
+        .attr('viewBox', `0 0 ${containerWidth} ${containerHeight}`)
+        .attr('preserveAspectRatio', 'none');
+
+      const svg = svgRoot
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -125,24 +135,16 @@ export default defineComponent({
         .attr('fill', '#C85238')
         .on("mouseover", function (event, d) {
           d3.select(this).attr("fill", "blue");
-
-          const [mouseX, mouseY] = d3.pointer(event);
-          d3.select(this)
-            .append("title")
-            .text(`${d.title}`);
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("fill", "#C85238");
-        })
-        .on("mouseover", function (event, d) {
           event.stopPropagation();
-          const [mouseX, mouseY] = d3.pointer(event);
+          const [mouseX, mouseY] = d3.pointer(event, graph.value);
 
-          // Show popover on hover with dynamic content
           showPopover(
             { title: d.title, description: d.description },
             { x: mouseX, y: mouseY }
           );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("fill", "#C85238");
         });
 
       // Add X-axis label at the top
@@ -165,14 +167,16 @@ export default defineComponent({
     // Fetch data and create the graph on component mount
     onMounted(() => {
       createGraph();
-      window.addEventListener('resize', createGraph); // Redraw the graph on resize
+      resizeObserver = new ResizeObserver(() => {
+        createGraph();
+      });
+      resizeObserver.observe(graph.value!);
     });
 
-    // Cleanup listener on component unmount
-    onMounted(() => {
-      return () => {
-        window.removeEventListener('resize', createGraph);
-      };
+    onUnmounted(() => {
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+      }
     });
 
     return {
@@ -189,12 +193,15 @@ export default defineComponent({
 <style scoped>
 .chart-container {
   width: 100%;
-  /* Set full width */
   height: 100%;
-  /* Set full height */
+  min-height: 0;
   position: relative;
-  /* Ensure positioning works for children */
-  max-height: calc(100% - 70px);
+  overflow: hidden;
+}
+
+.chart-container :deep(svg) {
+  display: block;
+  overflow: hidden;
 }
 
 .quadrant-line {

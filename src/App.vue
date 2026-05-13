@@ -24,6 +24,13 @@ export default {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.container {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 </style>
