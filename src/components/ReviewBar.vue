@@ -23,7 +23,7 @@ export default {
       default: null,
     },
     nextPost: {
-      type: Object as PropType<Post>,
+      type: Object as PropType<Post | null>,
       required: false,
       default: null,
     }

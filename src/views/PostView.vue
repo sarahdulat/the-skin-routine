@@ -29,7 +29,7 @@
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
               <h5>{{ post.data.summary[0].text }}</h5>
-              <p v-for="paragraph in post.data.body" :key="paragraph" class="mt-xl font-serif" v-html="paragraph.text">
+              <p v-for="paragraph in post.data.body" :key="paragraph.text" class="mt-xl font-serif" v-html="paragraph.text">
               </p>
             </div>
           </section>
@@ -92,13 +92,13 @@ export default {
 
       console.log(this.post)
 
-      this.prevPost = (await this.$prismic.client.get({
+      this.prevPost = ((await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
-      })).results[0]
+      })).results[0] as unknown as Post | undefined) ?? null
 
-      this.nextPost = (await this.$prismic.client.get({
+      this.nextPost = ((await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
-      })).results[0]
+      })).results[0] as unknown as Post | undefined) ?? null
 
     },
     formatDate(date: string) {
@@ -109,18 +109,18 @@ export default {
     this.getContent()
   },
   watch: {
-    async '$route'(to, from) {
+    async '$route'(to) {
       this.getContent()
 
       this.post = await this.$prismic.client.getByUID("review", to.params.slug) as Post;
 
-      this.prevPost = (await this.$prismic.client.get({
+      this.prevPost = ((await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }
-      })).results[0]
+      })).results[0] as unknown as Post | undefined) ?? null
 
-      this.nextPost = (await this.$prismic.client.get({
+      this.nextPost = ((await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date' }
-      })).results[0]
+      })).results[0] as unknown as Post | undefined) ?? null
     }
   }
 }

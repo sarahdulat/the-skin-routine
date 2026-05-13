@@ -13,7 +13,8 @@ export default defineComponent({
   props: {
     modelValue: {
       type: Boolean,
-      required: true,
+      required: false,
+      default: false,
     },
   },
   data() {

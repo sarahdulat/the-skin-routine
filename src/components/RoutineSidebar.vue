@@ -11,7 +11,7 @@
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>{{ step.title }}
-          <span :class="{ expanded: isExpanded }" class="glyph hand me-md">🖙</span>
+          <span class="glyph hand me-md">🖙</span>
         </h4>
         <div>
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
@@ -30,7 +30,7 @@ import { computed } from 'vue';
 import { store } from '../store'
 
 const routineTime = computed(() => store.routineTime);
-const steps = computed(() => store.currentRoutine.steps[routineTime.value]);
+const steps = computed(() => Object.values(store.currentRoutine.steps[routineTime.value]));
 </script>
 
 <style lang="scss" scoped>
