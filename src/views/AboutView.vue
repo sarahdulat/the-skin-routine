@@ -4,7 +4,7 @@
       <img src="/images/Sarah.JPG?url" alt="Photo of Sarah">
       <div class="caption">Golden Hour, June 2021</div>
     </div>
-    <div>
+    <div class="content">
       <h3 class="pt-md">✨ a lot of you have been asking about my skincare routine ✨</h3>
       <p>Hello, my name is Sarah and I am {{ currentAge }} old. Most people have a few questions upon hearing this, the
         first one is usually, "What?!" followed by, "What is your skincare routine?". This is when I have to admit that
@@ -70,6 +70,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content {
   margin: 0 15%;
 }
 

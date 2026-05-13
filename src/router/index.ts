@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import BlogView from "../views/BlogView.vue";
-import DisclaimerView from "../views/DisclaimerView.vue";
 import FAQView from "../views/FAQView.vue";
 import PostView from "../views/PostView.vue";
 
@@ -30,7 +29,7 @@ const routes = [
   {
     path: "/disclaimer",
     name: "disclaimer",
-    component: DisclaimerView,
+    redirect: "/",
   },
   {
     path: "/faq",
