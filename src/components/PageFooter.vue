@@ -9,6 +9,9 @@
         <a href="http://www.instagram.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-instagram" alt="instagram"></i>
         </a>
+        <a href="http://www.xthreads.com/@the_skinroutine" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-threads ms-lg" alt="x"></i>
+        </a>
         <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter-x ms-lg" alt="x"></i>
         </a>

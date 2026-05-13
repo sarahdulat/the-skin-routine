@@ -11,13 +11,15 @@
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>{{ step.title }}
-          <span class="glyph hand me-md">🖙</span>
+          <button class="glyph hand me-md" type="button" :class="{ expanded: isStepExpanded(step.order) }"
+            :aria-expanded="isStepExpanded(step.order)" :aria-controls="`step-description-${step.order}`"
+            @click="toggleStep(step.order)">🖙</button>
         </h4>
-        <div>
+        <div class="pt-md">
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
           <button class="px-sm ms-md">Buy</button>
         </div>
-        <div class="collapse multi-collapse mt-sm" :id="`${step.title}`">
+        <div v-show="isStepExpanded(step.order)" class="mt-sm" :id="`step-description-${step.order}`">
           <div v-html="step.description"></div>
         </div>
       </div>
@@ -26,11 +28,32 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { store } from '../store'
 
 const routineTime = computed(() => store.routineTime);
 const steps = computed(() => Object.values(store.currentRoutine.steps[routineTime.value]));
+const expandedSteps = ref(new Set<string>());
+
+const resetExpandedSteps = () => {
+  expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
+};
+
+const isStepExpanded = (order: string) => expandedSteps.value.has(order);
+
+const toggleStep = (order: string) => {
+  const nextExpandedSteps = new Set(expandedSteps.value);
+
+  if (nextExpandedSteps.has(order)) {
+    nextExpandedSteps.delete(order);
+  } else {
+    nextExpandedSteps.add(order);
+  }
+
+  expandedSteps.value = nextExpandedSteps;
+};
+
+watch(steps, resetExpandedSteps, { immediate: true });
 </script>
 
 <style lang="scss" scoped>
@@ -66,13 +89,17 @@ button {
 }
 
 .hand {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
   display: inline-block;
-  transition: all .1s linear;
   cursor: pointer;
-  display: inline-block;
+  padding: 0;
   line-height: 0;
+  transition: transform .1s linear;
+  font-size: var(--fontSize-xl);
 
-  /* Rotate the arrow when expanded */
   &.expanded {
     transform: rotate(90deg);
   }
