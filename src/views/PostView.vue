@@ -5,7 +5,7 @@
       <div class="scroll-container">
         <div v-if="post">
           <div>
-            <img :src="post.data.product_image.url" class="cover-img" :alt="post.data.product_image.alt">
+            <img :src="post.data.image.url" class="cover-img" :alt="post.data.image.alt">
           </div>
           <section>
             <div class="px-xl">
@@ -17,10 +17,18 @@
                   <router-link class="" to="">#{{ tag }}</router-link>
                 </span>
               </div>
+              <div class="mt-xl">
+                <p>Featured Products</p>
+                <span v-for="product in post.data.products" :key="product.product.id">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><span class="glyph me-md">🩸</span>Product
+                    Name</a>
+                  <button class="px-sm ms-lg">Buy</button>
+                </span>
+              </div>
             </div>
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
-              <h5>{{ post.data.subtitle[0].text }}</h5>
+              <h5>{{ post.data.summary[0].text }}</h5>
               <p v-for="paragraph in post.data.body" :key="paragraph" class="mt-xl font-serif" v-html="paragraph.text">
               </p>
             </div>
@@ -34,16 +42,15 @@
           <section>
             <div class="px-xl">
               <p class="mt-xl placeholder placeholder-wave placeholder-sm w-100"></p>
-              <p class="placeholder placeholder-wave placeholder-sm w-100"
-                v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)"></p>
-              <p v-for="tag in post.tags" :key="tag" class="mt-xl">
+              <p class="placeholder placeholder-wave placeholder-sm w-100"></p>
+              <p class="mt-xl">
                 <span class="placeholder placeholder-wave placeholder-sm w-100"></span>
               </p>
             </div>
             <div class="content">
               <span class="mt-xl placeholder placeholder-wave placeholder-xl w-100"></span>
               <span class="mt-xl placeholder placeholder-wave placeholder-lg w-100"></span>
-              <p v-for="paragraph in post.data.body" :key="paragraph" class="mt-xl">
+              <p class="mt-xl">
                 <span class="mt-xl placeholder placeholder-wave placeholder-body w-100"></span>
               </p>
             </div>
@@ -82,6 +89,8 @@ export default {
       const slug = route.params.slug as string;
 
       this.post = await this.$prismic.client.getByUID("review", slug) as Post;
+
+      console.log(this.post)
 
       this.prevPost = (await this.$prismic.client.get({
         pageSize: 1, after: this.post.id, orderings: { field: 'document.first_publication_date desc' }

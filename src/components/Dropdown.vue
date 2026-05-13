@@ -60,7 +60,6 @@ export default defineComponent({
 
 /* Styled select dropdown */
 select {
-  min-width: 120px;
   appearance: none;
   /* Remove native dropdown arrow */
   padding: var(--space-md) var(--space-xl) var(--space-md) var(--space-md);

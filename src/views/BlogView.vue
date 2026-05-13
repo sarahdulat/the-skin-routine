@@ -2,12 +2,12 @@
   <main>
     <div>
       <FilterBar :dropdowns="[brands, product_type]" />
-      <div class="posts scroll-container">
-        <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
-          <div v-if="posts">
+      <div v-if="posts">
+        <div class="posts scroll-container">
+          <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
             <router-link :to="'/blog/' + post.uid">
               <img :src="post.data.image.url" :alt="post.data.image.alt" />
-              <!-- <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3> -->
+              <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
@@ -18,18 +18,18 @@
             <p class="mt-lg font-sans">{{ post.data.summary[0].text }}</p>
           </div>
           <!-- Loading State -->
-          <div v-else>
-            <div>
-              <img class="placeholder placeholder-wave" />
-              <h3 class="mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h3>
-              <p class="m-0 placeholder placeholder-wave placeholder-sm w-50"></p>
-              <span class="d-flex gap-lg">
-                <span v-for="tag in post.tags" :key="tag" class="placeholder placeholder-wave placeholder-sm w-30 my-0">
-                </span>
-              </span>
-              <p class="mt-lg placeholder placeholder-wave placeholder-sm w-100"></p>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div v-else>
+        <div>
+          <img class="placeholder placeholder-wave" />
+          <h3 class="mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h3>
+          <p class="m-0 placeholder placeholder-wave placeholder-sm w-50"></p>
+          <span class="d-flex gap-lg">
+            <span class="placeholder placeholder-wave placeholder-sm w-30 my-0">
+            </span>
+          </span>
+          <p class="mt-lg placeholder placeholder-wave placeholder-sm w-100"></p>
         </div>
       </div>
     </div>

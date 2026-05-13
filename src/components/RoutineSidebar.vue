@@ -11,9 +11,7 @@
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>{{ step.title }}
-          <span class="glyph hand collapsed">
-            🖙
-          </span>
+          <span :class="{ expanded: isExpanded }" class="glyph hand me-md">🖙</span>
         </h4>
         <div>
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
@@ -42,7 +40,7 @@ aside {
 }
 
 .scroll-container {
-  max-height: calc(100vh - 145px);
+  max-height: calc(100vh - 150px);
   overflow: scroll;
 }
 
@@ -72,8 +70,10 @@ button {
   transition: all .1s linear;
   cursor: pointer;
   display: inline-block;
+  line-height: 0;
 
-  &:not(.collapsed) {
+  /* Rotate the arrow when expanded */
+  &.expanded {
     transform: rotate(90deg);
   }
 }

@@ -17,7 +17,7 @@ export const store = reactive({
   setRoutineTime(time: "am" | "pm") {
     this.routineTime = time
   },
-  setCurrentRoutine(currentRoutine: typeof routines[0]) {
+  setCurrentRoutine(currentRoutine: typeof routines) {
     currentRoutine = currentRoutine
   }
 })
