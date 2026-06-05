@@ -12,6 +12,7 @@ import { defineComponent } from "vue";
 import BlogArchiveTree from "./BlogArchiveTree.vue";
 import { BlogArchiveNode, Post } from "../types";
 import { format } from "date-fns";
+import { getAllPosts } from "../posts";
 
 export default defineComponent({
   components: {
@@ -24,7 +25,7 @@ export default defineComponent({
   },
   methods: {
     async getContent() {
-      this.posts = await this.$prismic.client.getAllByType('review') as Array<Post>
+      this.posts = getAllPosts()
     }
   },
   computed: {

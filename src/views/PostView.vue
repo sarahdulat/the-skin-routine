@@ -29,8 +29,9 @@
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
               <h5>{{ post.data.summary[0].text }}</h5>
-              <p v-for="paragraph in post.data.body" :key="paragraph.text" class="mt-xl font-serif" v-html="paragraph.text">
-              </p>
+              <component v-for="paragraph in post.data.body" :key="paragraph.text" :is="bodyTag(paragraph.type)"
+                class="mt-xl font-serif" v-html="paragraph.text">
+              </component>
             </div>
           </section>
         </div>
@@ -68,6 +69,7 @@ import PageSidebar from '../components/PageSidebar.vue';
 
 import { format } from "date-fns";
 import { Post } from "../types";
+import { getAdjacentPosts, getPostByUID } from "../posts";
 
 export default {
   name: 'blog-post',
@@ -91,24 +93,21 @@ export default {
       this.nextPost = null;
       this.isReviewBarLoading = true;
 
-      const post = await this.$prismic.client.getByUID("review", slug) as Post;
+      const post = getPostByUID(slug);
       this.post = post;
 
-      try {
-        const [prevResponse, nextResponse] = await Promise.all([
-          this.$prismic.client.getByType("review", {
-            pageSize: 1, after: post.id, orderings: { field: 'document.first_publication_date desc' }
-          }),
-          this.$prismic.client.getByType("review", {
-            pageSize: 1, after: post.id, orderings: { field: 'document.first_publication_date' }
-          }),
-        ]);
-
-        this.prevPost = (prevResponse.results[0] as unknown as Post | undefined) ?? null
-        this.nextPost = (nextResponse.results[0] as unknown as Post | undefined) ?? null
-      } finally {
+      if (!post) {
         this.isReviewBarLoading = false;
+        return;
       }
+
+      const { prevPost, nextPost } = getAdjacentPosts(slug);
+      this.prevPost = prevPost;
+      this.nextPost = nextPost;
+      this.isReviewBarLoading = false;
+    },
+    bodyTag(type: string) {
+      return /^heading[1-6]$/.test(type) ? `h${type.replace('heading', '')}` : 'p';
     },
     formatDate(date: string) {
       return format(new Date(date), 'MMMM do, y')

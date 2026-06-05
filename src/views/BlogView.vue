@@ -47,6 +47,7 @@ import FilterBar from '../components/FilterBar.vue';
 import { format } from "date-fns";
 import type { LocationQuery } from "vue-router";
 import { Post } from '../types';
+import { getAllPosts, getPostsByFilters } from '../posts';
 
 export default {
   name: 'blog',
@@ -73,23 +74,18 @@ export default {
       this.isLoading = true;
 
       try {
-        this.allPosts = await this.$prismic.client.getAllByType('review') as Array<Post>
-
-        const brands = this.getFilterParams('my.review.brands.brand', this.brands.items, query['Brands'])
-        const product_types = this.getFilterParams('my.review.product_types.product_type', this.product_type.items, query['Product Types'])
-
-        this.posts = await this.$prismic.client.getAllByType('review', { filters: [brands, product_types] }) as Array<Post>
+        this.allPosts = getAllPosts()
+        this.posts = getPostsByFilters({
+          brands: this.getFilterParam(query['Brands']),
+          productTypes: this.getFilterParam(query['Product Types']),
+        })
       } finally {
         this.isLoading = false;
       }
     },
-    getFilterParams(filterType: string, allItems: Array<string>, query?: LocationQuery[string]) {
+    getFilterParam(query?: LocationQuery[string]) {
       const selected = Array.isArray(query) ? query[0] : query;
-
-      if (selected === 'all' || selected == null) {
-        return this.$prismic.filter.any(filterType, allItems)
-      }
-      return this.$prismic.filter.at(filterType, selected)
+      return selected ?? undefined;
     },
     formatDate(post: Post) {
       return format(new Date(post.first_publication_date), 'MMMM do, y')

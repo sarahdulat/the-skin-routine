@@ -85,20 +85,57 @@ export default defineComponent({
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
+      const axisMax = 12;
       const data: RoutinePoint[] = props.routines.map((routine) => ({
-        x: routine.time,
-        y: routine.money,
+        x: Math.min(Math.max(routine.time, 0), axisMax),
+        y: Math.min(Math.max(routine.money, 0), axisMax),
         point_title: routine.point_title,
         point_description: routine.point_description,
         routine,
       }));
 
       // Create scales for the x and y axes
-      const xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
-      const yScale = d3.scaleLinear().domain([0, 100]).range([height, 0]);
+      const xScale = d3.scaleLinear().domain([0, axisMax]).range([0, width]);
+      const yScale = d3.scaleLinear().domain([0, axisMax]).range([height, 0]);
+
+      const costBands = [
+        { label: "Minimal", min: 0, max: 3, opacity: 0 },
+        { label: "Moderate", min: 3, max: 6, opacity: 0.05 },
+        { label: "Elevated", min: 6, max: 9, opacity: 0.1 },
+        { label: "Luxury", min: 9, max: 12, opacity: 0.15 },
+      ];
+
+      svg
+        .selectAll('.cost-band')
+        .data(costBands)
+        .enter()
+        .append('rect')
+        .attr('class', 'cost-band')
+        .attr('x', 0)
+        .attr('y', (d) => yScale(d.max))
+        .attr('width', width)
+        .attr('height', (d) => yScale(d.min) - yScale(d.max))
+        .attr('fill', '#C85238')
+        .attr('opacity', (d) => d.opacity);
+
+      svg
+        .selectAll('.cost-band-label')
+        .data(costBands)
+        .enter()
+        .append('text')
+        .attr('class', 'cost-band-label')
+        .attr('x', width - 8)
+        .attr('y', (d) => yScale((d.min + d.max) / 2))
+        .attr('dy', '0.35em')
+        .attr('text-anchor', 'end')
+        .style('font-size', '12px')
+        .style('font-family', 'var(--font-family-sans-serif)')
+        .style('fill', '#343A40')
+        .style('opacity', 0.7)
+        .text((d) => d.label);
 
       // Draw horizontal grid lines
-      for (let i = 10; i < 100; i += 10) {
+      for (let i = 1; i < axisMax; i += 1) {
         svg.append('line')
           .attr('x1', 0)
           .attr('x2', width)
@@ -109,7 +146,7 @@ export default defineComponent({
       }
 
       // Draw vertical grid lines
-      for (let i = 10; i < 100; i += 10) {
+      for (let i = 1; i < axisMax; i += 1) {
         svg.append('line')
           .attr('x1', xScale(i))
           .attr('x2', xScale(i))
@@ -172,19 +209,21 @@ export default defineComponent({
             .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
         });
 
-      // Add X-axis label at the top
+      // Add X-axis label
       svg.append("text")
         .attr("x", width / 2)
-        .attr("y", -margin.top / 5) // Position above the X-axis
+        .attr("y", -margin.top / 5)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
         .text("Time");
 
-      // Add Y-axis label on the right
+      // Add Y-axis label
       svg.append("text")
-        .attr("x", width + 5) // Position to the right of the Y-axis
-        .attr("y", height / 2 + 5)
-        .attr("text-anchor", "start")
+        .attr("x", width + margin.right / 2)
+        .attr("y", height / 2)
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "middle")
+        .attr("transform", `${width + margin.right / 2}, ${height / 2})`)
         .style("font-size", "16px")
         .text("Cost");
     };

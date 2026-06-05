@@ -97,7 +97,7 @@ footer {
   background: var(--color-light);
   border: 1px solid var(--color-dark);
   border-radius: var(--radius-sm);
-  box-shadow: 4px 6px 0 var(--color-dark);
+  box-shadow: 1px 3px 0 var(--color-dark);
   padding: var(--space-xl);
 }
 
