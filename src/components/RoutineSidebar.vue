@@ -1,7 +1,40 @@
 <template>
   <aside>
     <div class="scroll-container">
-      <h2 class="mt-lg">{{ store.currentRoutine.name }}</h2>
+      <div class="routine-header my-lg">
+        <h2>{{ store.currentRoutine.name }}</h2>
+        <div v-if="sources.length" class="sources" aria-label="Routine sources">
+          <a v-if="sources.length === 1" class="source-pill" :href="sources[0].link" target="_blank"
+            rel="noopener noreferrer">
+            <img v-if="sources[0].favicon" :src="sources[0].favicon"
+              :alt="`${sources[0].site || sources[0].label} icon`" />
+            <span>Sources</span>
+          </a>
+          <div v-if="sources.length > 1" class="source-overflow">
+            <button class="source-pill" type="button" :aria-label="`${sources.length} routine sources`">
+              <img v-if="sources[0].favicon" :src="sources[0].favicon"
+                :alt="`${sources[0].site || sources[0].label} icon`" />
+              <span>Sources</span>
+              <span class="source-count">+{{ sources.length - 1 }}</span>
+            </button>
+            <div class="source-popover" role="tooltip">
+              <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
+                rel="noopener noreferrer">
+                <img v-if="source.image" class="source-image" :src="source.image"
+                  :alt="source.headline || source.label" />
+                <span class="source-card-content">
+                  <span class="source-site">
+                    <img v-if="source.favicon" :src="source.favicon" :alt="`${source.site || source.label} icon`" />
+                    <span>{{ source.site || source.label }}</span>
+                  </span>
+                  <span class="source-headline">{{ source.headline || source.label }}</span>
+                  <span v-if="source.summary" class="source-summary">{{ source.summary }}</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <input type="checkbox" id="toggle" />
       <label for="toggle" class='toggleContainer'>
         <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
@@ -10,8 +43,9 @@
 
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
-        <h4>{{ step.title }}
-          <button class="glyph hand me-md" type="button" :class="{ expanded: isStepExpanded(step.order) }"
+        <h4>
+          <span>{{ step.title }}</span>
+          <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(step.order) }"
             :aria-expanded="isStepExpanded(step.order)" :aria-controls="`step-description-${step.order}`"
             @click="toggleStep(step.order)">🖙</button>
         </h4>
@@ -33,6 +67,9 @@ import { store } from '../store'
 
 const routineTime = computed(() => store.routineTime);
 const steps = computed(() => Object.values(store.currentRoutine.steps[routineTime.value]));
+const sources = computed(() => {
+  return 'sources' in store.currentRoutine ? store.currentRoutine.sources : [];
+});
 const expandedSteps = ref(new Set<string>());
 
 const resetExpandedSteps = () => {
@@ -73,6 +110,187 @@ h4 {
   font-weight: 500;
 }
 
+.routine-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.sources {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+}
+
+.source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 1.75rem;
+  padding: 0 var(--space-md);
+  border: 1px solid var(--color-dark);
+  border-radius: 999px;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+  text-decoration: none;
+  white-space: nowrap;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+}
+
+.source-count {
+  padding-left: var(--space-sm);
+  border-left: 1px solid currentColor;
+}
+
+.source-overflow {
+  position: relative;
+}
+
+.source-popover {
+  position: absolute;
+  right: 0;
+  top: calc(100% + var(--space-sm));
+  display: none;
+  width: min(24rem, calc(100vw - 2rem));
+  padding: var(--space-sm);
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-light);
+  color: var(--color-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.source-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4.75rem;
+  gap: var(--space-md);
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  color: var(--color-dark);
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(200, 82, 56, 0.08);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid rgba(52, 58, 64, 0.18);
+  }
+}
+
+.source-image {
+  grid-column: 2;
+  grid-row: 1;
+  width: 4.75rem;
+  height: 4.75rem;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.source-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.source-site {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-dark);
+  opacity: 0.75;
+
+  img {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+  }
+}
+
+.source-headline {
+  font-weight: 500;
+  line-height: var(--lineHeight-sm);
+}
+
+.source-summary {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: var(--lineHeight-xs);
+  color: var(--color-dark);
+  opacity: 0.82;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.source-overflow:hover .source-popover,
+.source-overflow:focus-within .source-popover {
+  display: block;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: var(--space-md);
+  align-items: start;
+
+  >div {
+    grid-column: 1 / -1;
+  }
+
+  h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+
+    &::after {
+      content: "";
+      flex: 1;
+      border-bottom: 0.5px solid var(--color-dark);
+      order: 1;
+    }
+
+    span {
+      min-width: 0;
+    }
+
+    .hand {
+      order: 2;
+    }
+  }
+
+  h3 {
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+  }
+}
+
 a {
   color: var(--color-primary);
 }
@@ -106,7 +324,7 @@ button {
 }
 
 .step:not(:last-child) {
-  border-bottom: 0.5px solid var(--color-dark);
+  // border-bottom: 0.5px solid var(--color-dark);
   padding-bottom: var(--space-md);
 }
 
@@ -120,7 +338,7 @@ button {
   font-weight: 500;
   color: var(--color-dark);
   cursor: pointer;
-  width: 90%;
+  width: 99%;
   margin-bottom: var(--space-xl);
   box-shadow: 1px 3px 0px var(--color-dark);
 }

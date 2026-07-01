@@ -27,7 +27,7 @@
         </template>
       </PopoverComponent>
       <h6 class="px-sm">Pregnancy Safe:</h6>
-      <Toggle />
+      <Toggle :model-value="pregnancySafeOnly" @update:model-value="$emit('update:pregnancySafeOnly', $event)" />
     </span>
   </div>
 </template>
@@ -45,8 +45,14 @@ export default defineComponent({
       type: Array as PropType<{ defaultValue: string, items: Array<string> }[]>,
       required: false,
       default: null,
+    },
+    pregnancySafeOnly: {
+      type: Boolean,
+      required: false,
+      default: false,
     }
-  }
+  },
+  emits: ["update:pregnancySafeOnly"],
 });
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="chart">
-      <FilterBar :dropdowns="[age_range, skin_concern]" />
+      <FilterBar :dropdowns="[age_range, skin_concern]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <RoutineChart :routines="filteredRoutines" />
     </div>
     <RoutineSidebar :routines="routines" />
@@ -42,6 +42,7 @@ export default defineComponent({
   data() {
     return {
       routines,
+      pregnancySafeOnly: false,
       age_range: { defaultValue: 'Age Range', items: ['20s', '30s', '40s', '50s', '60s', '70s'] },
       skin_concern: { defaultValue: 'Skin Concern', items: ['Acne Prone', 'Fine Lines & Wrinkles', 'Dry Skin', 'Sensitive'] }
     }
@@ -54,7 +55,8 @@ export default defineComponent({
 
       return this.routines.filter((routine) => {
         return matchesFilter(routine.age_range, selectedAgeRange)
-          && matchesFilter(routine.skin_concern, selectedSkinConcern);
+          && matchesFilter(routine.skin_concern, selectedSkinConcern)
+          && (!this.pregnancySafeOnly || routine.pregnancy_safe);
       });
     },
   },

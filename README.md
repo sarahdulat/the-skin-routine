@@ -26,6 +26,7 @@ last_publication_date: "2024-01-01T00:00:00+0000"
 tags: ["cleanser"]
 brands: ["Example Brand"]
 product_types: ["Cleanser"]
+pregnancy_safe: true
 image: "/images/reviews/example-review.jpg"
 image_alt: "Example product"
 ---

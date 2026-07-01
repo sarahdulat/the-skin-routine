@@ -10,6 +10,7 @@ type ReviewFrontmatter = {
   tags: string[];
   brands: string[];
   product_types: string[];
+  pregnancy_safe: boolean;
   image: string;
   image_alt: string;
 };
@@ -121,6 +122,7 @@ function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
         url: frontmatter.image,
       },
       product_types: frontmatter.product_types.map((product_type) => ({ product_type })),
+      pregnancy_safe: frontmatter.pregnancy_safe,
       products: [],
       summary: [
         {
@@ -164,12 +166,13 @@ export function getAllPosts() {
   return posts;
 }
 
-export function getPostsByFilters(filters: { brands?: string; productTypes?: string }) {
+export function getPostsByFilters(filters: { brands?: string; productTypes?: string; pregnancySafeOnly?: boolean }) {
   return posts.filter((post) => {
     const brandMatch = matchesFilter(filters.brands, post.data.brands.map((item) => item.brand));
     const productTypeMatch = matchesFilter(filters.productTypes, post.data.product_types.map((item) => item.product_type));
+    const pregnancySafeMatch = !filters.pregnancySafeOnly || post.data.pregnancy_safe;
 
-    return brandMatch && productTypeMatch;
+    return brandMatch && productTypeMatch && pregnancySafeMatch;
   });
 }
 

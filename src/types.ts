@@ -36,6 +36,7 @@ export type Post = {
     product_types: Array<{
       product_type: string
     }>
+    pregnancy_safe: boolean
     products: Array<{
       product: {
         first_publication_date: string

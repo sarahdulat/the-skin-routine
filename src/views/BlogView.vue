@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="blog-content">
-      <FilterBar :dropdowns="[brands, product_type]" />
+      <FilterBar :dropdowns="[brands, product_type]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <div v-if="!isLoading" class="scroll-container">
         <div class="posts">
           <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
@@ -62,11 +62,15 @@ export default {
       filters: [] as any,
       routine: [] as any,
       isLoading: false,
+      pregnancySafeOnly: false,
     }
   },
   watch: {
     "$route.query"(newQuery) {
       this.getContent(newQuery)
+    },
+    pregnancySafeOnly() {
+      this.getContent(this.$route.query)
     }
   },
   methods: {
@@ -78,6 +82,7 @@ export default {
         this.posts = getPostsByFilters({
           brands: this.getFilterParam(query['Brands']),
           productTypes: this.getFilterParam(query['Product Types']),
+          pregnancySafeOnly: this.pregnancySafeOnly,
         })
       } finally {
         this.isLoading = false;

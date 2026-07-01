@@ -6,6 +6,7 @@
     "money": 10,
     "point_title": "Sarah's Routine",
     "point_description": "An involved anti-aging routine.",
+    "pregnancy_safe": false,
     "age_range": ["30s", "40s"],
     "skin_concern": ["fine_lines_and_wrinkles"],
     "steps": {
@@ -61,34 +62,34 @@
         "step_7": {
           "time": "am",
           "order": "07. ",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop SPF 40 Eye Cream",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Many neglect to put SPF on/around their eyes (slash, it burns). So I found a great eye cream with SPF and brightening properties by Supergoop.</p>"
+        },
+        "step_8": {
+          "time": "am",
+          "order": "08. ",
           "title": "SPF",
           "product": "Josie Maran SPF 47",
           "link": "https://amzn.to/3HWlSp8",
           "description": "<p>I love the Josie Maran SPF, it is argan oil based though so if your face does not tolerate oil, then find any other SPF that is 30+ to use on a daily basis.</p><p>It doesn't matter if it's winter and you don't leave the house, you are being exposed to UV (unless you are also in a windowless room).</p><p>I'm also partial to mineral sunscreens because, less chemicals. Another reason I love the Josie Maran one because it doesn't leave that white cast like other mineral sunscreens.</p>"
         },
-        "step_8": {
+        "step_9": {
           "time": "am",
-          "order": "08. ",
+          "order": "09. ",
           "title": "Face Oil",
           "product": "Ordinary Rosehip Seed Oil",
           "link": "https://amzn.to/3hkFNqx",
           "description": "<p>I have a favorite oil, but it's currently not on sale, so I have been using a basic rose-hip oil. Again if your skin does not like oil, you can skip, but depending on why your skin doesn't tolerate oils, there may be an oil for your skin type (for ex: acne prone skin can use jojoba oil). Oil acts as a sealant to work allllll those previous steps in and provide moisture to prevent wrinkles.</p>"
         },
-        "step_9": {
+        "step_10": {
           "time": "am",
-          "order": "09. ",
+          "order": "10. ",
           "title": "Gua Sha",
           "product": "Jade Gua Sha Stone",
           "link": "https://amzn.to/3HVksen",
           "description": "<p>A gua sha stone is a flat piece of jade used for a lymphatic drainage face massage. Jade rollers kind of push things around your face, but the gua sha is to be used in gentle upward and out strokes to your neck/hairline to get fluids and toxins to flush out of your system (great for those who wake up puffy!). You will need some sort of oil to create slip. There are a lot of tutorials online for different skin concerns.</p>"
-        },
-        "step_10": {
-          "time": "am",
-          "order": "10. ",
-          "title": "SPF Eye Cream",
-          "product": "Supergoop SPF 40 Eye Cream",
-          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
-          "description": "<p>Many neglect to put SPF on/around their eyes (slash, it burns). So I found a great eye cream with SPF and brightening properties by Supergoop.</p>"
         }
       },
       "pm": {
@@ -135,34 +136,34 @@
         "step_6": {
           "time": "pm",
           "order": "06. ",
+          "title": "Eye Cream",
+          "product": "Glow Recipe Avocado Melt Retinol Eye Sleeping Mask",
+          "link": "https://amzn.to/3hUiwIy",
+          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p>"
+        },
+        "step_7": {
+          "time": "pm",
+          "order": "07. ",
           "title": "Moisturizer",
           "product": "The Ordinary Natural Moisturizing Factors + HA Surface Hydration",
           "link": "https://amzn.to/3Wf0Fy7",
           "description": "<p>I'm not too picky with evening moisturizers, as long as it isn't too fragranced and does the job I'm a fan. I tend to switch it up in different seasons and choose something more lightweight in the summer like the <a href=\"https://amzn.to/3hsheb8\" target=\"_blank\">Glow Recipe Watermelon Glow Pink Juice Face Moisturizer</a></p>"
         },
-        "step_7": {
+        "step_8": {
           "time": "pm",
-          "order": "07. ",
+          "order": "08. ",
           "title": "Face Oil",
           "product": "Ordinary Rosehip Seed Oil",
           "link": "https://amzn.to/3hkFNqx",
           "description": "<p>I have a favorite oil, but it's currently not on sale, so I have been using a basic rose-hip oil. Again if your skin does not like oil, you can skip, but depending on why your skin doesn't tolerate oils, there may be an oil for your skin type (for ex: acne prone skin can use jojoba oil). Oil acts as a sealant to work allllll those previous steps in and provide moisture to prevent wrinkles.</p>"
         },
-        "step_8": {
+        "step_9": {
           "time": "pm",
-          "order": "08. ",
+          "order": "09. ",
           "title": "Gua Sha",
           "product": "Jade Gua Sha Stone",
           "link": "https://amzn.to/3HVksen",
           "description": "<p>A gua sha stone is a flat piece of jade used for a lymphatic drainage face massage. Jade rollers kind of push things around your face, but the gua sha is to be used in gentle upward and out strokes to your neck/hairline to get fluids and toxins to flush out of your system (great for those who wake up puffy!). You will need some sort of oil to create slip. There are a lot of tutorials online for different skin concerns.</p>"
-        },
-        "step_9": {
-          "time": "pm",
-          "order": "09. ",
-          "title": "Eye Cream",
-          "product": "Glow Recipe Avocado Melt Retinol Eye Sleeping Mask",
-          "link": "https://amzn.to/3hUiwIy",
-          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p>"
         },
         "step_10": {
           "time": "pm",
@@ -190,6 +191,7 @@
     "money": 4,
     "point_title": "Sami's Routine",
     "point_description": "A light men's routine.",
+    "pregnancy_safe": true,
     "age_range": ["30s", "40s"],
     "skin_concern": ["sensitive"],
     "steps": {
@@ -363,6 +365,180 @@
           "product": "Laneige Lip Sleeping Mask",
           "link": "https://amzn.to/3w9qLsL",
           "description": "<p>Lips get dry from all that mouth breathing overnight, the Laneige lip mask is still moist when I wake up.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Hailey Bieber's Routine",
+    "id": 2,
+    "time": 6,
+    "money": 9,
+    "point_title": "Hailey Bieber's Routine",
+    "point_description": "A hydration-heavy glazed-skin routine focused on gentle cleansing, barrier support, and SPF.",
+    "pregnancy_safe": false,
+    "age_range": ["20s", "30s"],
+    "skin_concern": ["dry_skin", "sensitive"],
+    "sources": [
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/hailey-bieber-beauty-secrets",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/685da6dddcf136e0658c025c/3%3A4/w_748%2Cc_limit/Summer%2520Skin_Slides_0000_image26.jpg",
+        "headline": "Hailey Bieber's Streamlined Beauty Routine Is Only 8 Steps",
+        "summary": "Her newer routine focuses on a water rinse, Rhode Glazing Mist, Glazing Milk, milky SPF, and a simpler mom-friendly approach."
+      },
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-hailey-bieber",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/62a8af36459db19bced93b47/3%3A4/w_748%2Cc_limit/slide_12.jpg",
+        "headline": "Hailey Bieber on Dewy Skin Care, Date-Night Makeup, and the Launch of Her Beauty Brand",
+        "summary": "This Rhode launch-era routine highlights her dry, sensitive skin, peptide-focused products, and lip treatment."
+      },
+      {
+        "label": "Allure 2021",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/hailey-bieber-nighttime-skin-care-routine-aquaphor-ointment",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/5eb419a87e9438000802ffe2/16%3A9/w_2560%2Cc_limit/hailey%2520bieber.jpg",
+        "headline": "Hailey Bieber Revealed Her Full Nightly Skin-Care Routine",
+        "summary": "A 2021 nighttime recap covering her cleansers, peptide serum, barrier cream, oils, eye cream, and Aquaphor lip step."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Rinse",
+          "product": "Water",
+          "link": "https://www.vogue.com/article/hailey-bieber-beauty-secrets",
+          "description": "<p>In her streamlined morning routine, Hailey starts with the basics: a splash of water to rinse away the remnants of her nighttime skin care. This keeps the morning cleanse gentle, which makes sense for the dry, sensitive skin she has described.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Mist",
+          "product": "Rhode Glazing Mist",
+          "link": "https://www.rhodeskin.com/products/glazing-mist",
+          "description": "<p>Use this as the first hydrating step after rinsing. Hailey said that when she is really busy in the morning, she can literally spray her face with this and walk out the door.</p><p>Rhode describes it as a hydrating face spray that can be used after cleansing, after moisturizer, or whenever skin needs a refresh.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Essence",
+          "product": "Rhode Glazing Milk",
+          "link": "https://www.rhodeskin.com/products/glazing-milk",
+          "description": "<p>Press a generous amount onto the face, neck, and decollete. Hailey calls Glazing Milk one of her staple products and says she uses it in the morning, at night, and as skin prep.</p><p>Rhode recommends applying it after morning or evening cleansing, before Peptide Glazing Fluid and moisturizer.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Peptide Serum",
+          "product": "Rhode Peptide Glazing Fluid",
+          "link": "https://www.rhodeskin.com/products/peptide-glazing-fluid",
+          "description": "<p>Apply 2-3 pumps to the face, neck, and decollete. Hailey's 2022 Vogue routine centered on hydration because she has dry, sensitive skin, and this peptide serum was part of that routine.</p><p>Rhode recommends following this step with Barrier Restore Cream or Barrier Butter for best results.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Moisturizer",
+          "product": "Rhode Barrier Restore Cream",
+          "link": "https://www.rhodeskin.com/products/barrier-restore-cream",
+          "description": "<p>Apply as the barrier-supporting moisturizer step. Rhode recommends using about a half finger-length amount on the face, neck, and decollete.</p><p>This fits the Hailey routine logic: keep skin hydrated, comfortable, and supported before SPF.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "SPF",
+          "product": "ISDIN Fusion Water Magic SPF 50",
+          "link": "https://www.isdin.com/en-US/sun-care/face-sunscreen/fusion-water-magic-spf-50",
+          "description": "<p>Use generously as the final morning skin-care step. Hailey says sunscreen is non-negotiable, and Vogue noted that she likes milky SPF formulas and fell in love with ISDIN Fusion Water Magic SPF on a trip to Paris.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "Lip Treatment",
+          "product": "Rhode Peptide Lip Treatment",
+          "link": "https://www.rhodeskin.com/products/peptide-lip-treatment",
+          "description": "<p>Glaze lips during the day and reapply whenever they need hydration. In her Vogue routine, Hailey said she does not leave the house without a lip product, morning or night.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Oil Cleanse",
+          "product": "MARA Chia + Moringa Algae Enzyme Cleansing Oil",
+          "link": "https://www.sephora.com/search?keyword=MARA%20Chia%20Moringa%20Algae%20Enzyme%20Cleansing%20Oil",
+          "description": "<p>Massage onto dry skin to break down SPF and makeup, then rinse. In her nighttime routine, Hailey said oil cleansing was a newer addition that made a big difference, and she prefers it over makeup wipes.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Hydrating Cleanse",
+          "product": "HoliFrog Tashmoo Water Lily Milky Wash",
+          "link": "https://www.amazon.com/s?k=HoliFrog+Tashmoo+Water+Lily+Milky+Wash",
+          "description": "<p>Follow the oil cleanse with a gentle, hydrating cleanser. Hailey said she does not love a super-foaming cleanser and prefers a richer option that does not leave dry, sensitive skin feeling stripped.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Essence",
+          "product": "Rhode Glazing Milk",
+          "link": "https://www.rhodeskin.com/products/glazing-milk",
+          "description": "<p>Press into clean skin before serum. Hailey says she uses Glazing Milk at night too, and Vogue noted that she likes it even when using stronger nighttime products because it helps buffer irritation and support hydration.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Peptide Serum",
+          "product": "Rhode Peptide Glazing Fluid",
+          "link": "https://www.rhodeskin.com/products/peptide-glazing-fluid",
+          "description": "<p>Apply 2-3 pumps and press it in gently. Hailey's newer Rhode-era routines center this peptide serum as a hydrating, barrier-supporting step.</p><p>In her earlier 2021 nighttime routine, she also mentioned using <a href=\"https://www.bibalosangeles.com/\" target=\"_blank\">Biba Los Angeles Plant Stem Cell Peptide Serum</a> and emphasized that she is a big fan of peptides.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Rich Moisturizer",
+          "product": "Rhode Barrier Restore Cream",
+          "link": "https://www.rhodeskin.com/products/barrier-restore-cream",
+          "description": "<p>Use a richer moisturizer layer at night. Hailey's famous rule is that if she is not getting into bed looking like a glazed donut, then she is not doing the right thing.</p><p>In her earlier 2021 nighttime routine, she also mentioned using <a href=\"https://www.bibalosangeles.com/\" target=\"_blank\">Biba Los Angeles Cream Barrier</a>.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Face Oil",
+          "product": "Furtuna Skin Due Alberi Biphase Moisturizing Oil",
+          "link": "https://www.furtunaskin.com/",
+          "description": "<p>Use only if skin is very dry. Hailey layered a thin amount of face oil for extra glow and hydration, but she also noted that she avoids heavier oils when she is actively breaking out.</p>"
+        },
+        "step_7": {
+          "time": "pm",
+          "order": "07. ",
+          "title": "Pimple Patches",
+          "product": "Starface Hydro-Stars",
+          "link": "https://www.amazon.com/s?k=Starface+Hydro-Stars",
+          "description": "<p>Use on active pimples only. Hailey said she likes sleeping in these when she is breaking out because they help a pimple heal faster, and she also likes that they look cute.</p>"
+        },
+        "step_8": {
+          "time": "pm",
+          "order": "08. ",
+          "title": "Eye Cream",
+          "product": "BareMinerals Ageless Phyto-Retinol Eye Cream",
+          "link": "https://www.amazon.com/s?k=BareMinerals+Ageless+Phyto-Retinol+Eye+Cream",
+          "description": "<p>Tap gently around the eye area as one of the last skin-care steps. Hailey included eye cream in her nighttime routine after treating and moisturizing her face.</p><p>This product contains a retinol alternative, but because eye treatments can still be irritating, introduce slowly if your eye area is sensitive.</p>"
+        },
+        "step_9": {
+          "time": "pm",
+          "order": "09. ",
+          "title": "Lip Occlusive",
+          "product": "Aquaphor Healing Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment",
+          "description": "<p>Finish with Aquaphor on the lips. Hailey said she legitimately cannot go to bed without lip balm because she hates chapped, dry lips, and Aquaphor is her go-to.</p><p>She also uses a little extra Aquaphor on flaky dry patches when needed.</p>"
         }
       }
     }
