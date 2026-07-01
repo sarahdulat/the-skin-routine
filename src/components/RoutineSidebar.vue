@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <div class="scroll-container">
+    <div class="sidebar-header">
       <div class="routine-header my-lg">
         <h2>{{ store.currentRoutine.name }}</h2>
         <div v-if="firstSource" class="sources" aria-label="Routine sources">
@@ -22,6 +22,7 @@
                 rel="noopener noreferrer">
                 <img v-if="source.image" class="source-image" :src="source.image"
                   :alt="source.headline || source.label" />
+                <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
                 <span class="source-card-content">
                   <span class="source-site">
                     <img v-if="source.favicon" :src="source.favicon" :alt="`${source.site || source.label} icon`" />
@@ -40,7 +41,8 @@
         <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
         <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
       </label>
-
+    </div>
+    <div class="scroll-container">
       <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>
@@ -114,11 +116,23 @@ watch(steps, resetExpandedSteps, { immediate: true });
 aside {
   border-left: var(--color-dark) solid 1px;
   padding: 0 var(--space-xl);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .scroll-container {
-  max-height: calc(100vh - 150px);
-  overflow: scroll;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.sidebar-header {
+  flex: none;
+  position: relative;
+  z-index: 3;
 }
 
 h3,
@@ -193,7 +207,7 @@ h4 {
   background: var(--color-light);
   color: var(--color-dark);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 5;
+  z-index: 20;
 }
 
 .source-card {
@@ -220,6 +234,15 @@ h4 {
   height: 4.75rem;
   border-radius: var(--radius-sm);
   object-fit: cover;
+}
+
+.source-image-fallback {
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(52, 58, 64, 0.18);
+  background: rgba(200, 82, 56, 0.08);
+  color: var(--color-primary);
+  font-size: var(--fontSize-2xl);
 }
 
 .source-card-content {

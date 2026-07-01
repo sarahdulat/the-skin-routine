@@ -39,9 +39,9 @@
           "time": "am",
           "order": "04. ",
           "title": "Serum",
-          "product": "Ordinary Buffet + Copper Peptides 1%",
+          "product": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum",
           "link": "https://amzn.to/3UXO6WP",
-          "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
+          "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>This product was previously sold as The Ordinary Buffet + Copper Peptides 1% and is now sold under the Multi-Peptide + Copper Peptides 1% Serum name.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
         },
         "step_5": {
           "time": "am",
@@ -137,9 +137,9 @@
           "time": "pm",
           "order": "06. ",
           "title": "Eye Cream",
-          "product": "Glow Recipe Avocado Melt Retinol Eye Sleeping Mask",
+          "product": "Glow Recipe Avocado Melt Retinol Eye Cream",
           "link": "https://amzn.to/3hUiwIy",
-          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p>"
+          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p><p>The older product name in this routine was Glow Recipe Avocado Melt Retinol Eye Sleeping Mask; current references list the similar/renamed product as Glow Recipe Avocado Melt Retinol Eye Cream.</p>"
         },
         "step_7": {
           "time": "pm",
@@ -191,7 +191,7 @@
     "money": 4,
     "point_title": "Sami's Routine",
     "point_description": "A light men's routine.",
-    "pregnancy_safe": true,
+    "pregnancy_safe": false,
     "age_range": ["30s", "40s"],
     "skin_concern": ["sensitive"],
     "steps": {
@@ -224,9 +224,9 @@
           "time": "am",
           "order": "04. ",
           "title": "Serum",
-          "product": "Ordinary Buffet + Copper Peptides 1%",
+          "product": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum",
           "link": "https://amzn.to/3UXO6WP",
-          "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
+          "description": "<p>The copper peptide serum is great to use with the NuFace, but you can use any water-based serum. The NuFace will help anything you put on at this step penetrate deeper, do not use any AHAs or oil-based serums as it will block the microcurrent.</p><p>This product was previously sold as The Ordinary Buffet + Copper Peptides 1% and is now sold under the Multi-Peptide + Copper Peptides 1% Serum name.</p><p>If you won't be using the NuFace, this is a good time to use a vitamin C serum. Then skip to Step 7.</p>"
         },
         "step_5": {
           "time": "am",
@@ -346,9 +346,9 @@
           "time": "pm",
           "order": "09. ",
           "title": "Eye Cream",
-          "product": "Glow Recipe Avocado Melt Retinol Eye Sleeping Mask",
+          "product": "Glow Recipe Avocado Melt Retinol Eye Cream",
           "link": "https://amzn.to/3hUiwIy",
-          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p>"
+          "description": "<p>Use any moisturizing eye cream of your choice. If wrinkles/crows feet around the eyes are a concern for you, use a retinol eye cream. I love the retinol eye mask by Glow Recipe.</p><p>The older product name in this routine was Glow Recipe Avocado Melt Retinol Eye Sleeping Mask; current references list the similar/renamed product as Glow Recipe Avocado Melt Retinol Eye Cream.</p>"
         },
         "step_10": {
           "time": "pm",
@@ -528,9 +528,9 @@
           "time": "pm",
           "order": "08. ",
           "title": "Eye Cream",
-          "product": "BareMinerals Ageless Phyto-Retinol Eye Cream",
-          "link": "https://www.amazon.com/s?k=BareMinerals+Ageless+Phyto-Retinol+Eye+Cream",
-          "description": "<p>Tap gently around the eye area as one of the last skin-care steps. Hailey included eye cream in her nighttime routine after treating and moisturizing her face.</p><p>This product contains a retinol alternative, but because eye treatments can still be irritating, introduce slowly if your eye area is sensitive.</p>"
+          "product": "Ilia Bright Start Activated Eye Cream",
+          "link": "https://www.sephora.com/search?keyword=Ilia%20Bright%20Start%20Activated%20Eye%20Cream",
+          "description": "<p>Tap gently around the eye area as one of the last skin-care steps. Hailey included eye cream in her nighttime routine after treating and moisturizing her face.</p><p>Her original routine used BareMinerals Ageless Phyto-Retinol Eye Cream, but that exact eye cream is no longer reliably available. Ilia Bright Start Activated Eye Cream is a similar available retinol-alternative eye cream.</p>"
         },
         "step_9": {
           "time": "pm",
@@ -539,6 +539,348 @@
           "product": "Aquaphor Healing Ointment",
           "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment",
           "description": "<p>Finish with Aquaphor on the lips. Hailey said she legitimately cannot go to bed without lip balm because she hates chapped, dry lips, and Aquaphor is her go-to.</p><p>She also uses a little extra Aquaphor on flaky dry patches when needed.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Dua Lipa's Routine",
+    "id": 3,
+    "time": 6,
+    "money": 8,
+    "point_title": "Dua Lipa's Routine",
+    "point_description": "A performance-proof routine built around cleansing, lightweight repair, glow, barrier support, and daily SPF.",
+    "pregnancy_safe": false,
+    "age_range": ["20s", "30s", "40s"],
+    "skin_concern": ["acne_prone", "sensitive", "dry_skin"],
+    "sources": [
+      {
+        "label": "Harper's Bazaar 2025",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/skin-care/a69264923/dua-lipa-augustinus-bader-skincare-interview/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/1104-duabeauty-00-690b8bed9edf8.gif?crop=0.507xw%3A0.903xh%3B0%2C0&resize=640%3A%2A",
+        "headline": "Dua Lipa Just Reinvented the Celebrity Beauty Brand",
+        "summary": "Dua talks about her three-piece DUA by Augustinus Bader line, cleansing before bed, restoring skin while traveling, and her favorite Supercharged Glow Complex."
+      },
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-dua-lipa",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/69092ac6853d350cb3f7b34f/3%3A4/w_748%2Cc_limit/2.jpg",
+        "headline": "The Beauty Secrets Dua Lipa Learned Working at a Club",
+        "summary": "Dua shares her current Beauty Secrets routine, including Bioderma, DUA by Augustinus Bader, iS Clinical, and her tour-tested glow step."
+      },
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/dua-lipa-beauty-products",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/684b0eb8b209374a1ec9d16c/master/w_2560%2Cc_limit/GettyImages-2216950973.jpg",
+        "headline": "The Exact Beauty Products Dua Lipa Uses to Get Her Glow",
+        "summary": "A Vogue product roundup naming earlier favorites like EltaMD SPF, Pai cleansing oil, Caudalie mist, Augustinus Bader creams, Medik8, Sarah Chapman, Tatcha, and Glossier."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "DUA by Augustinus Bader Balancing Cream Cleanser",
+          "link": "https://duabyab.com/products/balancing-cream-cleanser",
+          "description": "<p>Start with a gentle cleanse. In her newest Vogue Beauty Secrets routine, Dua says cleansing is her first step, and she introduces her Balancing Cream Cleanser from DUA by Augustinus Bader.</p><p>Harper's Bazaar also notes that cleansing and restoring the skin are central to her approach, especially after shows or travel.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Vitamin Serum",
+          "product": "iS Clinical Pro-Heal Serum Advance+",
+          "link": "https://isclinical.com/pro-heal-serum-advance-plus.html",
+          "description": "<p>Layer this before the glow complex. In Vogue, Dua uses iS Clinical's Pro-Heal Serum Advance+ before applying her DUA Supercharged Glow Complex.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Glow Serum",
+          "product": "DUA by Augustinus Bader Supercharged Glow Complex",
+          "link": "https://duabyab.com/products/supercharged-glow-complex",
+          "description": "<p>Use a couple of pumps after serum. Dua says this has passed the real test for her: seeing how her skin reacts on tour.</p><p>In Harper's Bazaar, she calls Supercharged Glow Complex her favorite from the line and says it gives skin an effervescent, dewy feeling.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Moisturizer",
+          "product": "DUA by Augustinus Bader Renewal Cream",
+          "link": "https://duabyab.com/products/renewal-cream",
+          "description": "<p>Apply after Supercharged Glow Complex. DUA says Renewal Cream can be used morning and night on the face, neck, and chest.</p><p>In Vogue, Dua points out the cream's natural pink tone from vitamin B12, which she says helps protect the skin barrier.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "SPF",
+          "product": "EltaMD UV Clear Broad-Spectrum SPF 46",
+          "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+          "description": "<p>Finish morning skin care with sunscreen. Vogue's earlier Dua product roundup says sunscreen is non-negotiable for her and names EltaMD UV Clear Broad-Spectrum SPF 46 as her product of choice.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://us.caudalie.com/p/329/beauty-elixir-329.html",
+          "description": "<p>Use as a hydrating refresh during the day. Vogue's product roundup says Dua relies on Caudalie Beauty Elixir to keep her complexion hydrated and soothed throughout the day.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "Lip Treatment",
+          "product": "Tatcha The Kissu Lip Mask",
+          "link": "https://www.tatcha.com/product/kissu-lip-mask/CK02010T.html",
+          "description": "<p>Keep this handy when lips need richer conditioning. Vogue names Tatcha's jelly-textured Kissu Lip Mask first among Dua's lip products.</p><p>For a lighter, more affordable option from the same product roundup, she has also used <a href=\"https://www.glossier.com/products/balm-dotcom\" target=\"_blank\">Glossier Balm Dotcom</a>.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Remove Makeup",
+          "product": "Bioderma Sensibio H2O Micellar Water",
+          "link": "https://www.bioderma.us/all-products/sensibio/h2o-micellar-water",
+          "description": "<p>Use on a cotton pad to remove makeup and reset the skin. In Vogue, Dua compares a swipe of Bioderma Micellar Water to pressing the reset button on a laptop.</p><p>In an earlier Vogue product roundup, she was also reported to use <a href=\"https://www.paiskincare.us/products/light-work-rosehip-cleansing-oil\" target=\"_blank\">Pai Light Work Rosehip Cleansing Oil</a> to remove makeup, pollution, and SPF.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "DUA by Augustinus Bader Balancing Cream Cleanser",
+          "link": "https://duabyab.com/products/balancing-cream-cleanser",
+          "description": "<p>Follow makeup removal with the Balancing Cream Cleanser. Dua told Harper's Bazaar her one skincare rule is that she always removes makeup and cleanses before bed.</p><p>She also says that cleansing and restoring skin is even more important after a show or after traveling.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Vitamin Serum",
+          "product": "iS Clinical Pro-Heal Serum Advance+",
+          "link": "https://isclinical.com/pro-heal-serum-advance-plus.html",
+          "description": "<p>Apply before the glow step if your skin tolerates using it twice daily. In the Vogue Beauty Secrets routine, Dua layers iS Clinical's Pro-Heal Serum Advance+ before Supercharged Glow Complex.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Glow Serum",
+          "product": "DUA by Augustinus Bader Supercharged Glow Complex",
+          "link": "https://duabyab.com/products/supercharged-glow-complex",
+          "description": "<p>Use this as the lightweight glow and treatment layer. Dua says it gives a clean-girl highlight effect, and Harper's Bazaar quotes her calling it her can-not-live-without product from the line.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Moisturizer",
+          "product": "DUA by Augustinus Bader Renewal Cream",
+          "link": "https://duabyab.com/products/renewal-cream",
+          "description": "<p>Use as the final daily moisturizer step, over Supercharged Glow Complex. DUA recommends Renewal Cream morning and night.</p><p>Before launching DUA, Vogue reported that Dua also used <a href=\"https://augustinusbader.com/us/en/the-rich-cream\" target=\"_blank\">Augustinus Bader The Rich Cream</a> and <a href=\"https://us.medik8.com/products/advanced-night-restore\" target=\"_blank\">Medik8 Advanced Night Restore</a> as a nighttime cream.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Eye Cream",
+          "product": "Augustinus Bader The Rich Eye Cream",
+          "link": "https://augustinusbader.com/us/en/the-rich-eye-cream",
+          "description": "<p>Use around the eye area if you want a dedicated eye step. Vogue's earlier product roundup says Dua used Augustinus Bader's The Rich Eye Cream and was also loyal to the brand's eye patches for travel puffiness.</p>"
+        },
+        "step_7": {
+          "time": "pm",
+          "order": "07. ",
+          "title": "Hydrating Mask",
+          "product": "Sarah Chapman 3D Moisture Infusion Mask",
+          "link": "https://www.sarahchapman.com/products/3d-moisture-infusion",
+          "description": "<p>Use occasionally when skin feels dehydrated, before night cream. Vogue says to make like Dua and use Sarah Chapman Skinesis 3D Moisture Infusion Mask when skin is feeling the dehydrating effects of sun exposure or daily grind.</p>"
+        },
+        "step_8": {
+          "time": "pm",
+          "order": "08. ",
+          "title": "Lip Mask",
+          "product": "Tatcha The Kissu Lip Mask",
+          "link": "https://www.tatcha.com/product/kissu-lip-mask/CK02010T.html",
+          "description": "<p>Finish with a richer lip mask at night. Vogue says Dua keeps conditioning lip products on hand and names Tatcha's jelly-textured Kissu Lip Mask first.</p><p>For a lighter option she has also used <a href=\"https://www.glossier.com/products/balm-dotcom\" target=\"_blank\">Glossier Balm Dotcom</a>.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Selena Gomez's Routine",
+    "id": 4,
+    "time": 7,
+    "money": 10,
+    "point_title": "Selena Gomez's Routine",
+    "point_description": "A luxe, acne-conscious routine centered on gentle makeup removal, hydration, sun protection, and lupus-sensitive skin.",
+    "pregnancy_safe": false,
+    "age_range": ["20s", "30s"],
+    "skin_concern": ["acne_prone", "sensitive", "dry_skin"],
+    "sources": [
+      {
+        "label": "Page Six 2023",
+        "site": "Page Six",
+        "link": "https://pagesix.com/article/selena-gomez-favorite-makeup-beauty-hair-skincare-products/",
+        "favicon": "https://pagesix.com/favicon.ico",
+        "image": "https://pagesix.com/wp-content/uploads/sites/3/2023/04/NYPICHPDPICT000009453972.jpg?quality=75&strip=all&w=1024",
+        "headline": "The Ultimate Guide to All of Selena Gomez's Favorite Beauty Products",
+        "summary": "A product roundup naming Gomez-used skincare including La Mer, Dermalogica, Bioderma, Laneige, Tatcha, Drunk Elephant, Mario Badescu, and iS Clinical."
+      },
+      {
+        "label": "Allure 2023",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/selena-gomez-shuts-down-tiktoker-over-lupus-hand-tremors",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/63d7dfb5fb231ceb7853b4fe/16:9/w_1280,c_limit/1149239562",
+        "headline": "Selena Gomez Shut Down a TikTok User Who Made Fun of Her Lupus-Related Hand Tremors",
+        "summary": "Allure covers Gomez's TikTok skincare routine, noting La Mer, Laneige, Dermalogica, Tatcha, micellar water, and her serum makeup-removal tip."
+      },
+      {
+        "label": "Teen Vogue 2022",
+        "site": "Teen Vogue",
+        "link": "https://www.teenvogue.com/story/selena-gomez-skin-care-routine-tiktok",
+        "favicon": "https://www.teenvogue.com/favicon.ico",
+        "image": "https://assets.teenvogue.com/photos/627d15024ccd5219cb07560b/16:9/w_1280,c_limit/1384951426",
+        "headline": "Selena Gomez Casually Dropped Her Skin Care Routine on TikTok",
+        "summary": "Teen Vogue recaps a luxe TikTok routine with Evian mist, La Mer cleanser and cream, Dior serum and eye serum, Peter Thomas Roth eye patches, and eos lip balm."
+      },
+      {
+        "label": "Vogue 2021",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/selena-gomez-beauty-secrets-diy",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/61376d29baeca5960e91f350/16:9/w_1280,c_limit/vogue_selena-gomez-beauty-secrets-diy.jpeg",
+        "headline": "Watch Selena Gomez Do Her Going-Out Makeup Routine",
+        "summary": "Her second Beauty Secrets video starts with cucumber eye patches and Tatcha The Dewy Serum before the Rare Beauty makeup steps."
+      },
+      {
+        "label": "Vogue 2020",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/selena-gomez-beauty-secrets-skincare-makeup",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/5f51264081ebc6b119bcd0ae/16:9/w_1280,c_limit/VO_Beauty_Secrets_Selena_Gomez.jpg",
+        "headline": "Selena Gomez on Acne, Mental Health, and Her Day-to-Night Makeup Strategy",
+        "summary": "Gomez discusses acne, skin care as self-care, Tatcha Dewy Skin Moisturizer, and Drunk Elephant sunscreen for lupus-sensitive sun exposure."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://www.dermstore.com/p/is-clinical-cleansing-complex-180ml/11291956/",
+          "description": "<p>Start with a gentle cleanse. Page Six's 2023 roundup says iS Clinical Cleansing Complex appeared in Selena's pre-flight TikTok routine, so it gets priority here as the newer source-backed cleanser.</p><p>In her 2022 TikTok routine, Teen Vogue says she used <a href=\"https://www.cremedelamer.com/product/5812/25117/skincare/cleansers-toners/the-cleansing-foam/cleanser-for-clear-skin\" target=\"_blank\">La Mer The Cleansing Foam</a>, applying a small amount and wetting it down with Evian spray.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Tone",
+          "product": "Dermalogica Multi-Active Toner",
+          "link": "https://www.dermalogica.com/products/multi-active-toner",
+          "description": "<p>Mist or press on after cleansing. Page Six names Dermalogica Multi-Active Toner among Selena's must-haves.</p><p>She has also spritzed <a href=\"https://www.mariobadescu.com/products/facial-spray-with-aloe-herbs-and-rosewater\" target=\"_blank\">Mario Badescu Facial Spray with Aloe, Herbs and Rosewater</a> in a pre-flight morning routine, and Teen Vogue notes she used Evian facial spray in her 2022 TikTok skincare routine.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Serum",
+          "product": "Dermalogica Smart Response Serum",
+          "link": "https://www.dermalogica.com/products/smart-response-serum",
+          "description": "<p>Apply after toner as a daytime serum step. Page Six's 2023 roundup names Dermalogica Smart Response Serum as one of Selena's used products.</p><p>In her older 2022 TikTok skincare routine, Teen Vogue says she used <a href=\"https://www.dior.com/en_us/beauty/products/capture-totale-super-potent-serum-Y0996427.html\" target=\"_blank\">Dior Capture Totale Super Potent Age-Defying Intense Serum</a>.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Moisturizer",
+          "product": "Laneige Radian-C Cream",
+          "link": "https://www.amazon.com/s?k=Laneige+Radian-C+Cream",
+          "description": "<p>Use as the daytime moisturizer step. Page Six says Selena reached for Laneige Radian-C Cream in a January 2023 TikTok, so this takes priority over older moisturizer mentions.</p><p>She has also used <a href=\"https://www.tatcha.com/product/dewy-skin-cream-replenishing-plumping-moisturizer/CA06110T.html\" target=\"_blank\">Tatcha The Dewy Skin Cream</a>, which she called thick and yummy in Vogue, and <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/the-moisturizing-soft-cream\" target=\"_blank\">La Mer The Moisturizing Soft Cream</a> in her 2022 TikTok routine.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "SPF",
+          "product": "Drunk Elephant Umbra Sheer Physical Daily Defense SPF 30",
+          "link": "https://www.drunkelephant.com/collections/sunscreen/umbra-sheer-physical-daily-defense-spf-30-999DE00000104.html",
+          "description": "<p>Use as the final morning skincare step. In Vogue, Selena says she likes putting on sunscreen because it keeps skin looking fresh and because lupus makes sun exposure difficult for her.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Lip Balm",
+          "product": "eos Lip Balm",
+          "link": "https://www.amazon.com/s?k=eos+lip+balm",
+          "description": "<p>Finish with lip balm. Teen Vogue says Selena ended her 2022 TikTok skincare routine with eos Lip Balm, though the exact flavor was not confirmed.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Remove Makeup",
+          "product": "La Mer The Concentrate Serum",
+          "link": "https://www.cremedelamer.com/product/5834/11643/skincare/serums/the-concentrate",
+          "description": "<p>Massage over makeup before cleansing. Allure quotes Selena's TikTok caption saying to use any serum to take off makeup because it breaks it up nicely, and Page Six identifies La Mer The Concentrate Serum as the luxe serum she used in that routine.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Micellar Water",
+          "product": "Bioderma Sensibio H2O Micellar Water",
+          "link": "https://www.bioderma.us/all-products/sensibio/h2o-micellar-water",
+          "description": "<p>Use on a cotton pad or sponge after the serum step. Allure notes that Selena used micellar water in her TikTok routine, and Page Six identifies the product as Bioderma Sensibio H2O Micellar Water.</p><p>Selena also said to use a sponge to wipe the eyes so the eye area is treated delicately when removing makeup.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Cleanse",
+          "product": "La Mer The Cleansing Foam",
+          "link": "https://www.cremedelamer.com/product/5812/25117/skincare/cleansers-toners/the-cleansing-foam/cleanser-for-clear-skin",
+          "description": "<p>Follow makeup removal with cleanser. In her exact 2022 TikTok routine, Teen Vogue says Selena used La Mer The Cleansing Foam, wetting the cleanser further with Evian facial spray.</p><p>For a newer morning or travel cleanse, Page Six later noted that iS Clinical Cleansing Complex appeared in her pre-flight TikTok routine.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Retinol Serum",
+          "product": "Dermalogica Dynamic Skin Retinol Serum",
+          "link": "https://www.dermalogica.com/products/dynamic-skin-retinol-serum",
+          "description": "<p>Use at night only, and introduce slowly. Page Six names Dermalogica Dynamic Skin Retinol Serum among Selena's used Dermalogica products.</p><p>This is one of the reasons the routine is marked pregnancy_safe false under your ingredient rules.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Serum",
+          "product": "Dior Capture Totale Super Potent Age-Defying Intense Serum",
+          "link": "https://www.dior.com/en_us/beauty/products/capture-totale-super-potent-serum-Y0996427.html",
+          "description": "<p>On non-retinol nights, or if skipping the retinol step, use a hydrating serum. Teen Vogue says Selena used Dior Capture Totale Super Potent Age-Defying Intense Serum in her 2022 TikTok skincare routine.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Eye Treatment",
+          "product": "Peter Thomas Roth 24K Gold Pure Luxury Lift & Firm Hydra-Gel Eye Patches",
+          "link": "https://www.sephora.com/product/24k-gold-pure-luxury-lift-firm-hydra-gel-eye-patches-P406104",
+          "description": "<p>Use when you want a more pampering eye step. Teen Vogue says Selena finished her 2022 TikTok routine with Peter Thomas Roth 24K Gold Hydra-Gel Eye Patches, leaving them on briefly before removing them.</p><p>Earlier in that same routine, she also used <a href=\"https://www.dior.com/en_us/beauty/products/capture-totale-super-potent-eye-serum-Y0996428.html\" target=\"_blank\">Dior Capture Totale Super Potent Eye Serum</a>.</p>"
+        },
+        "step_7": {
+          "time": "pm",
+          "order": "07. ",
+          "title": "Moisturizer",
+          "product": "La Mer The Moisturizing Soft Cream",
+          "link": "https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/the-moisturizing-soft-cream",
+          "description": "<p>Seal everything in with moisturizer. Teen Vogue says Selena applied La Mer The Moisturizing Soft Cream to her face and neck in her 2022 TikTok routine.</p><p>For a newer Selena-used moisturizer from 2023, she has also reached for <a href=\"https://www.amazon.com/s?k=Laneige+Radian-C+Cream\" target=\"_blank\">Laneige Radian-C Cream</a>.</p>"
+        },
+        "step_8": {
+          "time": "pm",
+          "order": "08. ",
+          "title": "Lip Balm",
+          "product": "eos Lip Balm",
+          "link": "https://www.amazon.com/s?k=eos+lip+balm",
+          "description": "<p>Finish with lip balm. Teen Vogue says Selena completed her 2022 TikTok routine with eos Lip Balm, though the exact flavor was not confirmed.</p>"
         }
       }
     }
