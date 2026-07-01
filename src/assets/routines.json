@@ -884,5 +884,149 @@
         }
       }
     }
+  },
+  {
+    "name": "Zendaya's Routine",
+    "id": 5,
+    "time": 5,
+    "money": 6,
+    "point_title": "Zendaya's Routine",
+    "point_description": "A light, less-is-more routine built around gentle cleansing, moisturizer, SPF, lip repair, and occasional masks.",
+    "pregnancy_safe": false,
+    "age_range": ["20s", "30s"],
+    "skin_concern": ["sensitive", "dry_skin", "acne_prone"],
+    "sources": [
+      {
+        "label": "The Sun 2024",
+        "site": "The Sun",
+        "link": "https://www.the-sun.com/lifestyle/11948374/zendaya-esthetician-steps-skincare-routine-prime-day/",
+        "favicon": "https://www.the-sun.com/favicon.ico",
+        "image": "https://www.the-sun.com/wp-content/uploads/sites/6/2024/07/AC-ZENDAYA-SKINCARE-OP_46d8f9.jpg?quality=90&strip=all&w=1920&h=1080&crop=1",
+        "headline": "Zendaya's esthetician reveals 3 'core steps' in her skincare routine",
+        "summary": "A 2024 routine source citing Zendaya's esthetician Vanessa Marc, with core steps of cleanser, moisturizer, SPF, plus toner, lip repair, and masks."
+      },
+      {
+        "label": "Glamour 2020",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/zendaya-big-beauty-questions",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "image": "https://media.glamour.com/photos/5fc7bfdbd76aba78f9dbe773/16:9/w_1280,c_limit/118917369_339129113802602_643819474311177396_n.jpg",
+        "headline": "Zendaya Swears By This New Mascara for Insanely Long Lashes",
+        "summary": "Zendaya tells Glamour SPF is her nonnegotiable, naming Lancôme UV Expert Aqua Gel SPF 50 and Aquaphor as products she keeps with her."
+      },
+      {
+        "label": "Teen Vogue 2020",
+        "site": "Teen Vogue",
+        "link": "https://www.teenvogue.com/story/zendaya-go-to-beauty-products",
+        "favicon": "https://www.teenvogue.com/favicon.ico",
+        "image": "https://assets.teenvogue.com/photos/5f7f219e82a932d8a630c668/16:9/w_1280,c_limit/GettyImages-1199160320.jpg",
+        "headline": "Zendaya's 3 Go-To Beauty Products Are All Under $40",
+        "summary": "Teen Vogue recaps Zendaya's Glamour interview, emphasizing her SPF-first rule and her always-with-her Aquaphor."
+      },
+      {
+        "label": "Allure 2016",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/zendaya-skin-care-tip",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/584711357e15634b47da5355/16:9/w_1280,c_limit/GettyImages-621664102.jpg",
+        "headline": "The Skin-Care Product Zendaya Uses for Just About Everything",
+        "summary": "Allure highlights Zendaya's Aquaphor tip for chapped lips and dry heels before bed."
+      },
+      {
+        "label": "Teen Vogue 2016",
+        "site": "Teen Vogue",
+        "link": "https://www.teenvogue.com/story/zendaya-skincare-routine-review",
+        "favicon": "https://www.teenvogue.com/favicon.ico",
+        "image": "https://assets.teenvogue.com/photos/582b6cfdc1bb0f0a131182a3/16:9/w_1280,c_limit/Zendaya_FB.jpg",
+        "headline": "Zendaya's Skincare Routine Review",
+        "summary": "Teen Vogue reports Zendaya's earlier three-step, less-is-more routine: makeup-removing wipes, Clinique moisturizing gel, and Carmex lip balm."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "SheaMoisture African Black Soap Cleansing Bar",
+          "link": "https://www.amazon.com/s?k=SheaMoisture+African+Black+Soap+Cleansing+Bar",
+          "description": "<p>Start with a gentle cleanse. The 2024 source says Zendaya's esthetician advises a cleanser that does not further dry out the skin, and names SheaMoisture African Black Soap Cleansing Bar as one of her favorites.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Tone",
+          "product": "Thayers Alcohol-Free Rose Petal Witch Hazel Facial Toner",
+          "link": "https://www.amazon.com/s?k=Thayers+Alcohol-Free+Rose+Petal+Witch+Hazel+Facial+Toner",
+          "description": "<p>Use after cleansing. The 2024 source says toner can be a good addition after cleanser and names Thayers Witch Hazel Rose Petal Toner as one of Zendaya's top picks.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "Mario Badescu Oil Free Moisturizer",
+          "link": "https://www.mariobadescu.com/products/oil-free-moisturizer",
+          "description": "<p>Apply over slightly damp skin. The 2024 source says Zendaya prioritizes moisturizing because she has sensitive skin, and her esthetician suggests moisturizing over damp skin to improve efficacy.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF",
+          "product": "Lancôme UV Expert Aquagel Defense Primer & Moisturizer SPF 50",
+          "link": "https://www.sephora.com/search?keyword=Lancome%20UV%20Expert%20Aquagel%20Defense%20Primer%20%26%20Moisturizer%20SPF%2050",
+          "description": "<p>Finish morning skin care with sunscreen. Zendaya told Glamour that SPF is her ultimate nonnegotiable and that Lancôme UV Expert Aqua Gel SPF 50 is great on its own and under makeup.</p><p>The 2024 source also names this SPF and says she consistently applies sunscreen; it mentions <a href=\"https://www.cerave.com/skincare/moisturizers/am-facial-moisturizing-lotion-with-sunscreen\" target=\"_blank\">CeraVe AM Facial Moisturizing Lotion SPF 30</a> as a more affordable moisturizer-with-SPF option.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Lip Repair",
+          "product": "Aquaphor Lip Repair Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Lip+Repair+Ointment",
+          "description": "<p>Use whenever lips feel dry. The 2024 source says Zendaya's esthetician shared that she likes to have Aquaphor Lip Repair Ointment on hand whenever needed.</p><p>Zendaya also told Glamour she carries a tube of Aquaphor with her at all times.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Remove Makeup",
+          "product": "SheaMoisture African Black Soap Clarifying Facial Wipes",
+          "link": "https://www.amazon.com/s?k=SheaMoisture+African+Black+Soap+Clarifying+Facial+Wipes",
+          "description": "<p>Use as a quick first pass when wearing makeup. The 2024 source names SheaMoisture African Black Soap Clarifying Facial Wipes alongside the cleansing bar.</p><p>Teen Vogue reported Zendaya's older three-step routine used Aveeno Ultra-Calming Makeup Removing Wipes, but that exact product is not reliably available now.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "SheaMoisture African Black Soap Cleansing Bar",
+          "link": "https://www.amazon.com/s?k=SheaMoisture+African+Black+Soap+Cleansing+Bar",
+          "description": "<p>Cleanse after makeup removal, keeping the routine simple. The 2024 source frames cleanser, moisturizer, and SPF as the core steps in Zendaya's routine and says she prefers a less-is-more approach.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "Mario Badescu Oil Free Moisturizer",
+          "link": "https://www.mariobadescu.com/products/oil-free-moisturizer",
+          "description": "<p>Moisturize after cleansing, ideally while skin is still a little damp. The 2024 source says Zendaya prefers more natural-feeling options like Mario Badescu Oil Free Moisturizer with green tea extract and aloe vera.</p><p>Her older Teen Vogue routine used <a href=\"https://www.clinique.com/product/1687/5047/skincare/moisturizers/dramatically-different-moisturizing-gel\" target=\"_blank\">Clinique Dramatically Different Moisturizing Gel</a> as the moisturizer step.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Mask",
+          "product": "La Mer The Intensive Revitalizing Mask",
+          "link": "https://www.cremedelamer.com/product/5834/20171/skincare/masks/the-intensive-revitalizing-mask",
+          "description": "<p>Use occasionally, not nightly. The 2024 source says cleanser, moisturizer, and SPF are the core routine, then names masks among the extra products Zendaya may use.</p><p>That source also names <a href=\"https://www.sephora.com/search?keyword=Origins%20Clear%20Improvement%20Active%20Charcoal%20Mask\" target=\"_blank\">Origins Clear Improvement Active Charcoal Mask</a> and Lancôme Advanced Génifique Hydrogel Melting Mask as mask options.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Lip & Dry Spots",
+          "product": "Aquaphor Healing Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment",
+          "description": "<p>Finish with Aquaphor on lips or dry areas. Allure says Zendaya uses Aquaphor before bed on dry heels and chapped lips, saying it keeps her lips moisturized and looks like clear gloss.</p><p>Her older Teen Vogue routine named Carmex Moisturizing Lip Balm, but newer sources point to Aquaphor.</p>"
+        }
+      }
+    }
   }
 ]
