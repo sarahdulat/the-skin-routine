@@ -3,19 +3,19 @@
     <div class="scroll-container">
       <div class="routine-header my-lg">
         <h2>{{ store.currentRoutine.name }}</h2>
-        <div v-if="sources.length" class="sources" aria-label="Routine sources">
-          <a v-if="sources.length === 1" class="source-pill" :href="sources[0].link" target="_blank"
+        <div v-if="firstSource" class="sources" aria-label="Routine sources">
+          <a v-if="!hasMultipleSources" class="source-pill" :href="firstSource.link" target="_blank"
             rel="noopener noreferrer">
-            <img v-if="sources[0].favicon" :src="sources[0].favicon"
-              :alt="`${sources[0].site || sources[0].label} icon`" />
+            <img v-if="firstSource.favicon" :src="firstSource.favicon"
+              :alt="`${firstSource.site || firstSource.label} icon`" />
             <span>Sources</span>
           </a>
-          <div v-if="sources.length > 1" class="source-overflow">
+          <div v-if="hasMultipleSources" class="source-overflow">
             <button class="source-pill" type="button" :aria-label="`${sources.length} routine sources`">
-              <img v-if="sources[0].favicon" :src="sources[0].favicon"
-                :alt="`${sources[0].site || sources[0].label} icon`" />
+              <img v-if="firstSource.favicon" :src="firstSource.favicon"
+                :alt="`${firstSource.site || firstSource.label} icon`" />
               <span>Sources</span>
-              <span class="source-count">+{{ sources.length - 1 }}</span>
+              <span class="source-count">+{{ additionalSourceCount }}</span>
             </button>
             <div class="source-popover" role="tooltip">
               <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
@@ -65,11 +65,28 @@
 import { computed, ref, watch } from 'vue';
 import { store } from '../store'
 
+type RoutineSource = {
+  label: string;
+  link: string;
+  site?: string;
+  favicon?: string;
+  image?: string;
+  headline?: string;
+  summary?: string;
+};
+
+type RoutineWithSources = typeof store.currentRoutine & {
+  sources?: RoutineSource[];
+};
+
 const routineTime = computed(() => store.routineTime);
 const steps = computed(() => Object.values(store.currentRoutine.steps[routineTime.value]));
 const sources = computed(() => {
-  return 'sources' in store.currentRoutine ? store.currentRoutine.sources : [];
+  return (store.currentRoutine as RoutineWithSources).sources ?? [];
 });
+const firstSource = computed(() => sources.value[0] ?? null);
+const hasMultipleSources = computed(() => sources.value.length > 1);
+const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 0));
 const expandedSteps = ref(new Set<string>());
 
 const resetExpandedSteps = () => {
@@ -170,7 +187,7 @@ h4 {
   top: calc(100% + var(--space-sm));
   display: none;
   width: min(24rem, calc(100vw - 2rem));
-  padding: var(--space-sm);
+  overflow: hidden;
   border: 1px solid var(--color-dark);
   border-radius: var(--radius-sm);
   background: var(--color-light);
@@ -183,8 +200,7 @@ h4 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 4.75rem;
   gap: var(--space-md);
-  padding: var(--space-sm);
-  border-radius: var(--radius-sm);
+  padding: var(--space-md);
   color: var(--color-dark);
   text-decoration: none;
 
@@ -193,8 +209,6 @@ h4 {
   }
 
   &:not(:last-child) {
-    margin-bottom: var(--space-md);
-    padding-bottom: var(--space-md);
     border-bottom: 1px solid rgba(52, 58, 64, 0.18);
   }
 }
