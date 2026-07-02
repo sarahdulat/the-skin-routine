@@ -22,6 +22,7 @@ const skinConcernValueByLabel: Record<string, string> = {
   "Fine Lines & Wrinkles": "fine_lines_and_wrinkles",
   "Dry Skin": "dry_skin",
   "Sensitive": "sensitive",
+  "Dark Spots & Sun Damage": "dark_spots_and_sun_damage",
 };
 
 const getSelectedQueryValue = (value: LocationQueryValue | LocationQueryValue[]) => {
@@ -43,8 +44,8 @@ export default defineComponent({
     return {
       routines,
       pregnancySafeOnly: false,
-      age_range: { defaultValue: 'Age Range', items: ['20s', '30s', '40s', '50s', '60s', '70s'] },
-      skin_concern: { defaultValue: 'Skin Concern', items: ['Acne Prone', 'Fine Lines & Wrinkles', 'Dry Skin', 'Sensitive'] }
+      age_range: { defaultValue: 'Age Range', items: ['20s', '30s', '40s', '50s', '60s', '70s', '80s'] },
+      skin_concern: { defaultValue: 'Skin Concern', items: ['Acne Prone', 'Fine Lines & Wrinkles', 'Dry Skin', 'Sensitive', 'Dark Spots & Sun Damage'] }
     }
   },
   computed: {

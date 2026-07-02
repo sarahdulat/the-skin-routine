@@ -199,10 +199,12 @@ export default defineComponent({
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).attr("fill", d.routine.id === store.currentRoutine.id ? '#343A40' : '#C85238');
+          closePopover();
         })
         .on("click", function (event, d) {
           event.stopPropagation();
           store.setCurrentRoutine(d.routine);
+          closePopover();
 
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.dot')
@@ -215,7 +217,7 @@ export default defineComponent({
         .attr("y", -margin.top / 5)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
-        .text("Time");
+        .text("Cost");
 
       // Add Y-axis label
       svg.append("text")
@@ -225,7 +227,7 @@ export default defineComponent({
         .attr("dominant-baseline", "middle")
         .attr("transform", `${width + margin.right / 2}, ${height / 2})`)
         .style("font-size", "16px")
-        .text("Cost");
+        .text("Time");
     };
 
     // Fetch data and create the graph on component mount

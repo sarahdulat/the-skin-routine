@@ -2,13 +2,13 @@
   {
     "name": "Sarah's Routine",
     "id": 0,
-    "time": 15,
-    "money": 10,
+    "time": 11,
+    "money": 6.1,
     "point_title": "Sarah's Routine",
     "point_description": "An involved anti-aging routine.",
     "pregnancy_safe": false,
     "age_range": ["30s", "40s"],
-    "skin_concern": ["fine_lines_and_wrinkles"],
+    "skin_concern": ["fine_lines_and_wrinkles", "dark_spots_and_sun_damage"],
     "steps": {
       "am": {
         "step_1": {
@@ -187,8 +187,8 @@
   {
     "name": "Sami's Routine",
     "id": 1,
-    "time": 2,
-    "money": 4,
+    "time": 11,
+    "money": 5.6,
     "point_title": "Sami's Routine",
     "point_description": "A light men's routine.",
     "pregnancy_safe": false,
@@ -372,8 +372,8 @@
   {
     "name": "Hailey Bieber's Routine",
     "id": 2,
-    "time": 6,
-    "money": 9,
+    "time": 7.4,
+    "money": 7.4,
     "point_title": "Hailey Bieber's Routine",
     "point_description": "A hydration-heavy glazed-skin routine focused on gentle cleansing, barrier support, and SPF.",
     "pregnancy_safe": false,
@@ -530,7 +530,7 @@
           "title": "Eye Cream",
           "product": "Ilia Bright Start Activated Eye Cream",
           "link": "https://www.sephora.com/search?keyword=Ilia%20Bright%20Start%20Activated%20Eye%20Cream",
-          "description": "<p>Tap gently around the eye area as one of the last skin-care steps. Hailey included eye cream in her nighttime routine after treating and moisturizing her face.</p><p>Her original routine used BareMinerals Ageless Phyto-Retinol Eye Cream, but that exact eye cream is no longer reliably available. Ilia Bright Start Activated Eye Cream is a similar available retinol-alternative eye cream.</p>"
+          "description": "<p>Tap gently around the eye area as one of the last skin-care steps. Hailey included eye cream in her nighttime routine after treating and moisturizing her face.</p><p>Her original routine used BareMinerals Ageless Phyto-Retinol Eye Cream, but that exact eye cream is no longer available. Ilia Bright Start Activated Eye Cream is a similar available retinol-alternative eye cream.</p>"
         },
         "step_9": {
           "time": "pm",
@@ -546,8 +546,8 @@
   {
     "name": "Dua Lipa's Routine",
     "id": 3,
-    "time": 6,
-    "money": 8,
+    "time": 7.2,
+    "money": 11.2,
     "point_title": "Dua Lipa's Routine",
     "point_description": "A performance-proof routine built around cleansing, lightweight repair, glow, barrier support, and daily SPF.",
     "pregnancy_safe": false,
@@ -712,8 +712,8 @@
   {
     "name": "Selena Gomez's Routine",
     "id": 4,
-    "time": 7,
-    "money": 10,
+    "time": 6.3,
+    "money": 9.2,
     "point_title": "Selena Gomez's Routine",
     "point_description": "A luxe, acne-conscious routine centered on gentle makeup removal, hydration, sun protection, and lupus-sensitive skin.",
     "pregnancy_safe": false,
@@ -848,7 +848,7 @@
           "title": "Retinol Serum",
           "product": "Dermalogica Dynamic Skin Retinol Serum",
           "link": "https://www.dermalogica.com/products/dynamic-skin-retinol-serum",
-          "description": "<p>Use at night only, and introduce slowly. Page Six names Dermalogica Dynamic Skin Retinol Serum among Selena's used Dermalogica products.</p><p>This is one of the reasons the routine is marked pregnancy_safe false under your ingredient rules.</p>"
+          "description": "<p>Use at night only, and introduce slowly. Page Six names Dermalogica Dynamic Skin Retinol Serum among Selena's used Dermalogica products.</p>"
         },
         "step_5": {
           "time": "pm",
@@ -888,8 +888,8 @@
   {
     "name": "Zendaya's Routine",
     "id": 5,
-    "time": 5,
-    "money": 6,
+    "time": 4.2,
+    "money": 6.7,
     "point_title": "Zendaya's Routine",
     "point_description": "A light, less-is-more routine built around gentle cleansing, moisturizer, SPF, lip repair, and occasional masks.",
     "pregnancy_safe": false,
@@ -992,7 +992,7 @@
           "title": "Remove Makeup",
           "product": "SheaMoisture African Black Soap Clarifying Facial Wipes",
           "link": "https://www.amazon.com/s?k=SheaMoisture+African+Black+Soap+Clarifying+Facial+Wipes",
-          "description": "<p>Use as a quick first pass when wearing makeup. The 2024 source names SheaMoisture African Black Soap Clarifying Facial Wipes alongside the cleansing bar.</p><p>Teen Vogue reported Zendaya's older three-step routine used Aveeno Ultra-Calming Makeup Removing Wipes, but that exact product is not reliably available now.</p>"
+          "description": "<p>Use as a quick first pass when wearing makeup. The 2024 source names SheaMoisture African Black Soap Clarifying Facial Wipes alongside the cleansing bar.</p><p>Teen Vogue reported Zendaya's older three-step routine used Aveeno Ultra-Calming Makeup Removing Wipes, but that exact product is not available now.</p>"
         },
         "step_2": {
           "time": "pm",
@@ -1025,6 +1025,317 @@
           "product": "Aquaphor Healing Ointment",
           "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment",
           "description": "<p>Finish with Aquaphor on lips or dry areas. Allure says Zendaya uses Aquaphor before bed on dry heels and chapped lips, saying it keeps her lips moisturized and looks like clear gloss.</p><p>Her older Teen Vogue routine named Carmex Moisturizing Lip Balm, but newer sources point to Aquaphor.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Kate Moss's Routine",
+    "id": 6,
+    "time": 5.7,
+    "money": 7.3,
+    "point_title": "Kate Moss's Routine",
+    "point_description": "A restorative routine built around ice, rose water, rich moisture, gua sha, sunscreen, and lip care.",
+    "pregnancy_safe": false,
+    "age_range": ["40s", "50s"],
+    "skin_concern": ["dry_skin", "sensitive", "fine_lines_and_wrinkles"],
+    "sources": [
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-kate-moss",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/630ec0c38e0c1404123ba624/16:9/w_1280,c_limit/vogue_beauty-secrets-kate-moss.jpg",
+        "headline": "Kate Moss's Guide to Restorative Wellness and Cool-Girl Beauty",
+        "summary": "Moss shares her Beauty Secrets routine: cleanser, rose water, Cosmoss Face Cream, gua sha, sunscreen, Laneige lip mask, and Golden Nectar."
+      },
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/kate-moss-wellness-cosmoss",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/630cc8ef2c2d813c809877e0/16:9/w_1280,c_limit/VO0922_KateMoss_01.jpg",
+        "headline": "Kate Moss Opens Up About Her New Wellness Brand and the Concept of Compassionate Self-Care",
+        "summary": "A deeper Cosmoss profile naming the foaming cleanser, face cream, pink clay, bakuchiol, CBD, and Golden Nectar oil."
+      },
+      {
+        "label": "Woman & Home 2025",
+        "site": "Woman & Home",
+        "link": "https://www.womanandhome.com/beauty/skincare/kate-moss-sunscreen/",
+        "favicon": "https://www.womanandhome.com/favicon.ico",
+        "image": "https://cdn.mos.cms.futurecdn.net/yq9EfZYgaACa65yMmi7AVh-1920-80.jpg",
+        "headline": "What sunscreen does Kate Moss rely on for her protected, healthy-looking complexion?",
+        "summary": "Identifies Moss's Vogue Beauty Secrets SPF as La Roche-Posay Anthelios Ultra-Light Invisible Fluid SPF 30 and notes her rose water and Laneige lip mask."
+      },
+      {
+        "label": "SELF 2016",
+        "site": "SELF",
+        "link": "https://www.self.com/story/kate-moss-beauty-trick-ice",
+        "favicon": "https://www.self.com/favicon.ico",
+        "image": "https://media.self.com/photos/57d88d7ad3276fe232946517/2:1/w_1280,c_limit/Kate-Moss-Beauty-Secret.jpg",
+        "headline": "Kate Moss Reveals Her 'Insane' Beauty Trick For Perfect Morning Skin",
+        "summary": "Covers Moss's W magazine ice-and-cucumber face dunk, which she says wakes skin up by bringing blood to the surface."
+      },
+      {
+        "label": "The Scottish Sun 2025",
+        "site": "The Scottish Sun",
+        "link": "https://www.thescottishsun.co.uk/tvandshowbiz/14993010/kate-moss-wellness-cosmoss-debt/",
+        "favicon": "https://www.thescottishsun.co.uk/favicon.ico",
+        "image": "https://www.thescottishsun.co.uk/wp-content/uploads/sites/2/2025/06/crop-35571779.jpg?quality=90&strip=all&w=1384&h=921&crop=1",
+        "headline": "Kate Moss' wellness firm Cosmoss goes BUST with staggering 7-figure debt",
+        "summary": "Reports Cosmoss has gone into liquidation and the site is no longer taking orders, so the routine links current similar products for discontinued Cosmoss items."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Ice Facial",
+          "product": "Ice Water & Cucumber",
+          "link": "https://www.self.com/story/kate-moss-beauty-trick-ice",
+          "description": "<p>On mornings when skin needs waking up, use a bowl of ice water with cucumber slices and briefly dunk the face. SELF reports that Moss learned the old-school trick from <em>Mommie Dearest</em> and says it works because it brings blood to the surface.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "La Roche-Posay Toleriane Hydrating Gentle Cleanser",
+          "link": "https://www.laroche-posay.us/our-products/face/face-wash/toleriane-hydrating-gentle-cleanser-3337875545778.html",
+          "description": "<p>Cleanse before toning. In Vogue, Moss follows her morning tea with cleanser; the Cosmoss profile says the original Cosmoss cleanser was a foaming cleanser with pink clay and bakuchiol.</p><p>Cosmoss is no longer available, so this links a similar gentle current cleanser from La Roche-Posay, a brand Moss is source-linked to through her sunscreen.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Tone",
+          "product": "Officina Profumo-Farmaceutica di Santa Maria Novella Acqua di Rose",
+          "link": "https://us.smnovella.com/search?q=Acqua%20di%20Rose",
+          "description": "<p>Use after cleansing. Vogue says Moss follows cleanser with rose water toner, and Woman & Home identifies the toner as Officina Profumo-Farmaceutica di Santa Maria Novella Acqua di Rose.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Moisturizer",
+          "product": "La Roche-Posay Lipikar AP+M Triple Repair Moisturizing Cream",
+          "link": "https://www.laroche-posay.us/our-products/body/body-lotion/lipikar-ap-m-triple-repair-moisturizing-cream-3337872418570.html",
+          "description": "<p>Massage moisturizer into the skin. In Vogue, Moss used Cosmoss Face Cream and described it as very healing; the article says it was infused with oat moss and CBD and delicate enough that friends with eczema could use it.</p><p>Because Cosmoss is no longer available, this links a similar current rich cream from La Roche-Posay, a brand Moss is source-linked to through her sunscreen, while preserving the original product Moss used.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Gua Sha",
+          "product": "Gua Sha Facial Tool",
+          "link": "https://www.sephora.com/search?keyword=gua%20sha%20tool",
+          "description": "<p>Glide a gua sha tool across the face after moisturizer or oil. Vogue says Moss uses gua sha for lymphatic drainage and notes it is a sculpting technique she learned on the job.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "SPF",
+          "product": "La Roche-Posay Anthelios Ultra Light Fluid Facial Sunscreen SPF 60",
+          "link": "https://www.laroche-posay.us/our-products/sun/face-sunscreen/anthelios-ultra-light-fluid-facial-sunscreen-spf-60-883140012993.html",
+          "description": "<p>Finish morning skin care with sunscreen. Vogue says sunscreen was a newer addition to Moss's routine because her daughter Lila tells her to wear it, and Woman & Home identifies the product in the video as La Roche-Posay Anthelios Ultra-Light Invisible Fluid SPF 30.</p><p>The linked product is the similar current U.S. Anthelios Ultra Light Fluid SPF 60.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "Lip Mask",
+          "product": "Laneige Lip Sleeping Mask",
+          "link": "https://www.sephora.com/product/lip-sleeping-mask-P420652",
+          "description": "<p>Use on lips as the final skin-care step. Vogue says Moss applied the Laneige lip mask at her daughter Lila's recommendation, and Woman & Home notes she called it good while hydrating her lips.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "La Roche-Posay Toleriane Hydrating Gentle Cleanser",
+          "link": "https://www.laroche-posay.us/our-products/face/face-wash/toleriane-hydrating-gentle-cleanser-3337875545778.html",
+          "description": "<p>Cleanse gently at night, especially after makeup. In the Cosmoss profile, Moss says she is obsessed with washing her face, likely from years in the makeup chair.</p><p>Her original Cosmoss foaming cleanser is no longer available, so this links a similar gentle current cleanser from La Roche-Posay, a brand Moss is source-linked to through her sunscreen.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Tone",
+          "product": "Officina Profumo-Farmaceutica di Santa Maria Novella Acqua di Rose",
+          "link": "https://us.smnovella.com/search?q=Acqua%20di%20Rose",
+          "description": "<p>Press or sweep on after cleansing. Vogue places rose water toner directly after cleansing in Moss's routine.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "La Roche-Posay Lipikar AP+M Triple Repair Moisturizing Cream",
+          "link": "https://www.laroche-posay.us/our-products/body/body-lotion/lipikar-ap-m-triple-repair-moisturizing-cream-3337872418570.html",
+          "description": "<p>Use a rich moisturizer after toner. Moss's source-used Cosmoss Face Cream is no longer available; Vogue described it as healing, delicate in scent, and infused with oat moss and CBD.</p><p>This linked cream is a current similar option from La Roche-Posay, a brand Moss is source-linked to through her sunscreen, while the description preserves the original product Moss used.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Face Oil",
+          "product": "Pai Rosehip Bioregenerate Face Oil",
+          "link": "https://www.sephora.com/search?keyword=Pai%20Rosehip%20Bioregenerate%20Face%20Oil",
+          "description": "<p>Use a few drops as an optional oil step after cream or instead of cream when skin feels dry. Vogue says Moss used Cosmoss Golden Nectar as a tincture and praised its anti-inflammatory, stress-relieving feel, whether ingested or applied topically as a serum.</p><p>Cosmoss Golden Nectar is no longer available and included CBD, so this links a similar current facial oil while noting the original.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Lip Mask",
+          "product": "Laneige Lip Sleeping Mask",
+          "link": "https://www.sephora.com/product/lip-sleeping-mask-P420652",
+          "description": "<p>Finish with the Laneige lip mask. Moss used it in her Vogue routine after sunscreen and said it came recommended by Lila; it also fits as a night lip step because it is a sleeping mask.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Martha Stewart's Routine",
+    "id": 7,
+    "time": 5.5,
+    "money": 7.5,
+    "point_title": "Martha Stewart's Routine",
+    "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, and rich night care.",
+    "pregnancy_safe": false,
+    "age_range": ["60s", "70s", "80s"],
+    "skin_concern": ["fine_lines_and_wrinkles", "dry_skin", "sensitive", "dark_spots_and_sun_damage"],
+    "sources": [
+      {
+        "label": "Vogue 2026",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-martha-stewart",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/696fa0c7986b1bae8fb8ada2/16:9/w_1280,c_limit/vogue_beauty-secrets-martha-stew%20(1).jpg",
+        "headline": "Martha Stewart Breaks Beauty Rules Because She Likes to Glow",
+        "summary": "Her Beauty Secrets routine names Mario Badescu A.H.A. Botanical Body Soap, Elm A30 Elemental Night Cream, Alastin HydraTint, and her glow-first philosophy."
+      },
+      {
+        "label": "Vogue 2024",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/martha-stewart-skincare-routine",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/66ae3673a56aa1ac590b6eef/16:9/w_1280,c_limit/Snapinsta.app_413391874_900144441425982_1334793312089349090_n_1080.jpg",
+        "headline": "Martha Stewart's Skin-Care Routine, According to Her Dermatologists",
+        "summary": "Her dermatologist-backed regimen includes a morning sheet mask, Clé de Peau eye cream, Alastin sunscreen, Mario Badescu facial spray, and a bespoke serum."
+      },
+      {
+        "label": "Page Six 2024",
+        "site": "Page Six",
+        "link": "https://pagesix.com/2024/09/03/style/martha-stewart-mario-badescu-spray-is-on-sale-for-6/",
+        "favicon": "https://pagesix.com/favicon.ico",
+        "image": "https://pagesix.com/wp-content/uploads/sites/3/2024/09/88851789.jpg?quality=75&strip=all&w=1024",
+        "headline": "Martha Stewart says this skincare spray is so refreshing",
+        "summary": "A focused source for her Mario Badescu Facial Spray with Aloe, Herbs and Rosewater, which she called refreshing on hot summer days."
+      },
+      {
+        "label": "Allure 2013",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/martha-stewart-beauty-routine-tips",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/5771947d8d432b9e20f900ab/16:9/w_1280,c_limit/beauty-trends-blogs-daily-beauty-reporter-2013-03-20-martha-stewart.jpg",
+        "headline": "Martha Stewart's Beauty Routine, Revealed!",
+        "summary": "An older detailed routine naming Yon-Ka Gommage, Mario Badescu A.H.A. Botanical Body Soap, Crème de la Mer, Clé de Peau La Crème, and her hot-cloth night cleanse."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Warm Towel",
+          "product": "Warm Face Cloth",
+          "link": "https://www.vogue.com/article/beauty-secrets-martha-stewart",
+          "description": "<p>Start with a warm towel. In her Vogue Beauty Secrets routine, Stewart begins with a hot face towel before cleansing, then follows later with a cold towel to make skin feel fresh.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "Mario Badescu A.H.A. Botanical Body Soap",
+          "link": "https://www.mariobadescu.com/products/a-h-a-botanical-body-soap",
+          "description": "<p>Use a small amount as the cleanse step. In Vogue, Stewart says this is the soap she uses on her face, even though it is sold as a body soap.</p><p>Allure also reported that she used Mario Badescu A.H.A. Botanical Body Soap in her routine, alongside other soaps.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Sheet Mask",
+          "product": "Daily Morning Sheet Mask",
+          "link": "https://www.vogue.com/article/martha-stewart-skincare-routine",
+          "description": "<p>Use a hydrating morning sheet mask when available. Vogue says Stewart's daily routine includes a morning sheet mask, with some custom-made and formulated for her by Dr. Dhaval Bhanusali.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Eye Cream",
+          "product": "Clé de Peau Beauté Eye Contour Cream Supreme",
+          "link": "https://www.nordstrom.com/sr?keyword=Cl%C3%A9%20de%20Peau%20Eye%20Contour%20Cream%20Supreme",
+          "description": "<p>Tap around the eye area after mask or serum. Vogue's dermatologist-backed routine names Clé de Peau's Intensive Eye Contour Cream as part of Stewart's daily regimen.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Moisturizer",
+          "product": "Elm Biosciences A30 Elemental Night Cream",
+          "link": "https://elmbiosciences.com/products/a30-elemental-night-cream",
+          "description": "<p>Apply to face, neck, and décolleté. In her Vogue Beauty Secrets routine, Stewart uses her Elm Bioscience A30 Elemental Night Cream in the morning before sunscreen.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "SPF",
+          "product": "Alastin HydraTint Pro Mineral Broad Spectrum Sunscreen SPF 36",
+          "link": "https://alastin.com/products/hydratint-pro-mineral-sunscreen-spf-36",
+          "description": "<p>Apply generously to face, neck, décolleté, and any exposed skin. Vogue says Stewart mixes Alastin HydraTint Pro Mineral Broad Spectrum Sunscreen SPF 36 with moisturizer, and her dermatologist emphasizes her disciplined sun protection.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "Facial Mist",
+          "product": "Mario Badescu Facial Spray with Aloe, Herbs and Rosewater",
+          "link": "https://www.mariobadescu.com/products/facial-spray-with-aloe-herbs-and-rosewater",
+          "description": "<p>Mist throughout the day when skin needs calming or refreshment. Vogue says Stewart uses Mario Badescu Facial Spray throughout the day to calm the skin, and Page Six reports she called the rosewater spray refreshing on a hot summer day.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Steam Cleanse",
+          "product": "Warm Steamy Face Cloth",
+          "link": "https://www.allure.com/story/martha-stewart-beauty-routine-tips",
+          "description": "<p>Before bed, loosen makeup and sunscreen with a hot, steamy face cloth. Allure says Stewart uses this before washing her face very well.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "Mario Badescu A.H.A. Botanical Body Soap",
+          "link": "https://www.mariobadescu.com/products/a-h-a-botanical-body-soap",
+          "description": "<p>Follow the steamy cloth with cleanser. Allure says Stewart washes with silicone soap or a cleanser before bed; her newer Vogue routine specifically shows Mario Badescu A.H.A. Botanical Body Soap as the soap she uses on her face.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Serum",
+          "product": "Elm Biosciences A30 Elemental Serum",
+          "link": "https://elmbiosciences.com/products/a30-elemental-serum",
+          "description": "<p>Use a targeted serum step before cream. Vogue says Stewart's dermatologist creates a bespoke serum based on Visia-CR Skin Analysis, with hydrating, nourishing, and antioxidant-focused ingredients because sun protection is her main concern.</p><p>Her own Elm Biosciences A30 Elemental Serum is the closest source-backed current serum from Stewart's skincare line.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Night Cream",
+          "product": "Elm Biosciences A30 Elemental Night Cream",
+          "link": "https://elmbiosciences.com/products/a30-elemental-night-cream",
+          "description": "<p>Apply as the main night cream. Stewart uses the A30 Elemental Night Cream in her Vogue routine, and Allure says her bedtime routine ends with slathering on moisturizer and remembering arms, legs, and hands.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Rich Cream",
+          "product": "Clé de Peau Beauté La Crème",
+          "link": "https://www.cledepeaubeaute.com/la-creme/0729238114284.html",
+          "description": "<p>Use a richer cream when skin feels chapped or dry. Allure says Stewart used either Crème de la Mer or Clé de Peau Beauté La Crème, and that she was not opposed to using face creams on the body.</p><p>She has also mentioned <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/creme-de-la-mer/ultra-rich-cream-moisturizer\" target=\"_blank\">Crème de la Mer</a> as another rich moisturizer option.</p>"
         }
       }
     }
