@@ -8,13 +8,13 @@
             rel="noopener noreferrer">
             <img v-if="firstSource.favicon" :src="firstSource.favicon"
               :alt="`${firstSource.site || firstSource.label} icon`" />
-            <span>Sources</span>
+            <span>{{ firstSourceName }}</span>
           </a>
           <div v-if="hasMultipleSources" class="source-overflow">
             <button class="source-pill" type="button" :aria-label="`${sources.length} routine sources`">
               <img v-if="firstSource.favicon" :src="firstSource.favicon"
                 :alt="`${firstSource.site || firstSource.label} icon`" />
-              <span>Sources</span>
+              <span>{{ firstSourceName }}</span>
               <span class="source-count">+{{ additionalSourceCount }}</span>
             </button>
             <div class="source-popover" role="tooltip">
@@ -87,6 +87,7 @@ const sources = computed(() => {
   return (store.currentRoutine as RoutineWithSources).sources ?? [];
 });
 const firstSource = computed(() => sources.value[0] ?? null);
+const firstSourceName = computed(() => firstSource.value?.site || firstSource.value?.label || 'Sources');
 const hasMultipleSources = computed(() => sources.value.length > 1);
 const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 0));
 const expandedSteps = ref(new Set<string>());

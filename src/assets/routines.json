@@ -1339,5 +1339,414 @@
         }
       }
     }
+  },
+  {
+    "name": "Scarlett Johansson's Routine",
+    "id": 8,
+    "time": 4.8,
+    "money": 8.6,
+    "point_title": "Scarlett Johansson's Routine",
+    "point_description": "A sensitive-skin routine built around The Outset cleanser, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
+    "pregnancy_safe": false,
+    "age_range": ["40s"],
+    "skin_concern": ["sensitive", "acne_prone", "dry_skin", "fine_lines_and_wrinkles", "dark_spots_and_sun_damage"],
+    "sources": [
+      {
+        "label": "Daily Beast 2026",
+        "site": "The Daily Beast",
+        "link": "https://www.thedailybeast.com/scarlett-johansson-41-shares-makeup-free-video/",
+        "favicon": "https://www.thedailybeast.com/favicon.ico",
+        "image": "https://media.thedailybeast.com/resizer/v2/BESVBE6HEBF7RG36EXMYTSYBAQ.jpg?auth=7d199edb25a7cfbc25454f1d4417206b82a9074cf8907bcc3eb307448cc80ecb&width=1200&height=630&focal=1246%2C701",
+        "headline": "Scarlett Johansson, 41, Ditches Her Usual Makeup for Bare-Faced Video",
+        "summary": "A current summer routine source showing Johansson applying The Outset Hydrasheer SPF 30 and Lip Oasis Glossy Treatment."
+      },
+      {
+        "label": "Page Six 2025",
+        "site": "Page Six",
+        "link": "https://pagesix.com/2025/06/13/style/score-an-exclusive-deal-on-scarlett-johansson-the-outset-x-jurassic-world-rebirth-skincare-set/",
+        "favicon": "https://pagesix.com/favicon.ico",
+        "image": "https://pagesix.com/wp-content/uploads/sites/3/2025/06/106436762.jpg?quality=75&strip=all&w=1024",
+        "headline": "Score an exclusive deal on Scarlett Johansson's The Outset x Jurassic World Rebirth skincare set",
+        "summary": "Covers Johansson's on-set skincare trio: Gentle Micellar Antioxidant Cleanser, Firming Vegan Collagen Prep Serum, and Nourishing Squalane Daily Moisturizer."
+      },
+      {
+        "label": "NYT 2024",
+        "site": "The New York Times",
+        "link": "https://www.nytimes.com/2024/05/09/t-magazine/scarlett-johansson-beauty-skin-care-makeup.html",
+        "favicon": "https://www.nytimes.com/favicon.ico",
+        "headline": "Scarlett Johansson on Beauty, Skin Care and Makeup",
+        "summary": "Johansson describes her morning The Outset cleanser, prep serum, moisturizer, sunscreen, nighttime cleanser and night cream, plus Bi-Facil makeup remover and Tweezerman dermaplaning."
+      },
+      {
+        "label": "Allure 2023",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/scarlett-johansson-entire-beauty-routine",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/652d4792e0a10758c009f0f0/16:9/w_1280,c_limit/scarlett%20johansson%20beauty%20routine.jpg",
+        "headline": "Scarlett Johansson's Entire Beauty Routine, From Head to Toe",
+        "summary": "The core routine source: morning Daily Essentials Regimen, night cleanser and night cream, occasional oil, Barrier Balm, SPF, melasma, acne history, and sensitivity."
+      },
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/scarlett-johansson-beauty-the-outset",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/6216897ccba99619d0c54886/16:9/w_1280,c_limit/SHOT_01_078_V2A_QC.jpg",
+        "headline": "Scarlett Johansson Secured Her Superhero Status by Taking on the Hollywood Machine. Her Next Feat? A Clean Skin-Care Line",
+        "summary": "A launch profile explaining The Outset's less-is-more philosophy, cleanser, prep serum, moisturizer, night cream, eye cream, lip treatment, and sensitive-skin focus."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "The Outset Gentle Micellar Antioxidant Cleanser",
+          "link": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
+          "description": "<p>Start with cleanser. In the New York Times, Johansson says that in the morning she washes her face with The Outset's Gentle Micellar Antioxidant Cleanser.</p><p>Allure also says she uses The Outset's three-step Daily Essentials Regimen in the morning, and Page Six identifies this cleanser as part of her on-set Skin Survival Kit.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Prep Serum",
+          "product": "The Outset Firming Vegan Collagen Prep Serum",
+          "link": "https://theoutset.com/products/firming-vegan-collagen-prep-serum",
+          "description": "<p>Apply after cleansing. In the New York Times, Johansson says she follows cleanser with The Outset Firming Vegan Collagen Prep Serum.</p><p>Allure says she uses the Prep Serum in the morning, and again in the middle of the day if she showers or washes her skin. Page Six also names this as one of the trio she used while filming.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "The Outset Nourishing Squalane Daily Moisturizer",
+          "link": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer",
+          "description": "<p>Use as the day cream step. In the New York Times, Johansson says she applies The Outset Nourishing Squalane Daily Moisturizer after the prep serum.</p><p>Allure says she finishes her morning three-step regimen with day cream, and Page Six says this moisturizer was part of her on-set trio.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF",
+          "product": "The Outset Hydrasheer 100% Mineral Sunscreen SPF 30",
+          "link": "https://theoutset.com/products/hydrasheer-100-mineral-sunscreen-spf-30",
+          "description": "<p>Apply generously as the final daytime skin-care step. In the New York Times, Johansson says her last morning step is The Outset's sunscreen, calling it super hydrating because it gives both protection and skin-care benefits.</p><p>The Daily Beast later identifies her sunscreen as The Outset Hydrasheer 100% Mineral Sunscreen SPF 30 in a summer routine video. Allure also notes that she uses SPF daily because she has melasma.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Lip Treatment",
+          "product": "The Outset Lip Oasis Glossy Treatment",
+          "link": "https://theoutset.com/products/lip-oasis-glossy-treatment",
+          "description": "<p>Use after sunscreen or whenever lips need gloss and care. The Daily Beast says Johansson applied Lip Oasis Glossy Treatment in the Skinny Dip shade in her summer routine video.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Makeup Remove",
+          "product": "Lancôme Bi-Facil Double-Action Eye Makeup Remover",
+          "link": "https://www.sephora.com/product/bi-facil-double-action-eye-makeup-remover-P54419",
+          "description": "<p>Use when removing filming or long-wear makeup before cleansing. In the New York Times, Johansson says she has used Lancôme Bi-Facil Double Action Makeup Remover forever because her skin is very sensitive and it does not burn while removing all of her makeup after filming.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "The Outset Gentle Micellar Antioxidant Cleanser",
+          "link": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
+          "description": "<p>Wash the face at night. In the New York Times, Johansson says that at night she uses The Outset cleanser before night cream.</p><p>Allure also says she washes with this cleanser before her night cream, and describes herself as a creature of habit.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Night Cream",
+          "product": "The Outset Restorative Niacinamide Night Cream",
+          "link": "https://theoutset.com/products/restorative-niacinamide-night-cream",
+          "description": "<p>Apply after cleansing as the usual night moisturizer. In the New York Times, Johansson says she uses The Outset Restorative Niacinamide Night Cream at night.</p><p>Allure also says she usually uses The Outset Night Cream at night.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Dermaplane",
+          "product": "Tweezerman Facial Razor",
+          "link": "https://tweezerman.com/products/facial-razor",
+          "description": "<p>Use occasionally, not nightly, on clean skin with a careful light touch. In the New York Times, Johansson says she wishes she knew about dermaplaning sooner and uses a Tweezerman Facial Razor because her skin feels so soft afterward.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Face Oil",
+          "product": "The Outset Ultralight Moisture-Boosting Botanical Oil",
+          "link": "https://theoutset.com/products/ultralight-moisture-boosting-botanical-oil",
+          "description": "<p>Use occasionally instead of, or alongside, night cream when skin wants oil. Allure says Johansson sometimes uses just The Outset Moisture-Boosting Oil at night.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Barrier Balm",
+          "product": "The Outset Botanical Barrier Rescue Balm",
+          "link": "https://theoutset.com/products/botanical-barrier-rescue-balm",
+          "description": "<p>Use on lips, cuticles, knuckles, elbows, flyaways, or anywhere dry. In the New York Times, Johansson says The Outset Botanical Barrier Rescue Balm started as a lip balm, but she used it on cuticles and flyaways, and in summer uses it as a moisturizer, lip balm, and everything balm.</p><p>Allure also says the Barrier Balm started as a lip balm and became an everywhere balm.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Dr. Sam Ellis's Routine",
+    "id": 9,
+    "time": 6.7,
+    "money": 8.8,
+    "point_title": "Dr. Sam Ellis's Routine",
+    "point_description": "A dermatologist-style routine with hydrating layers, peptides, eye cream, sunscreen, double cleansing, LED, prescription treatment, and overnight repair.",
+    "pregnancy_safe": false,
+    "age_range": ["40s"],
+    "skin_concern": ["fine_lines_and_wrinkles", "dry_skin", "acne_prone", "dark_spots_and_sun_damage"],
+    "sources": [
+      {
+        "label": "YouTube 2025",
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=4eF_RFAz6nQ",
+        "favicon": "https://www.youtube.com/s/desktop/1daead2b/img/favicon_32x32.png",
+        "image": "https://i.ytimg.com/vi/4eF_RFAz6nQ/hqdefault.jpg",
+        "headline": "My Real Routine: What I Tell Patients vs. What I Do Myself | Dr. Sam Ellis",
+        "summary": "Ellis's most recent personal-routine source, covering real-life hydration, peptide serum, sun protection, retinoids, exfoliation, eye cream, and devices."
+      },
+      {
+        "label": "YouTube 2023 PM",
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=-c5W-D96L08",
+        "favicon": "https://www.youtube.com/s/desktop/1daead2b/img/favicon_32x32.png",
+        "image": "https://i.ytimg.com/vi/-c5W-D96L08/hqdefault.jpg",
+        "headline": "Get Ready for Bed with Me! Dermatologist's Nighttime Skincare Routine | Dr. Sam Ellis",
+        "summary": "Ellis walks through her nighttime routine: cleansing balm, second cleanser, red-light mask, prescription step, eye cream, and overnight moisturizer."
+      },
+      {
+        "label": "YouTube 2023 AM",
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=rZzLemjD0XU",
+        "favicon": "https://www.youtube.com/s/desktop/1daead2b/img/favicon_32x32.png",
+        "image": "https://i.ytimg.com/vi/rZzLemjD0XU/hqdefault.jpg",
+        "headline": "Dermatologist Explains How to Layer Products in Your Morning Skincare Routine | Dr. Sam Ellis",
+        "summary": "Ellis explains her morning layering order with cleanser, exfoliant, vitamin C, peptides, azelaic acid, eye cream, moisturizer, sunscreen, and SPF lip balm."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "SkinMedica AHA/BHA Exfoliating Cleanser",
+          "link": "https://go.shopmy.us/p-22958375",
+          "description": "<p>Use as the cleanse or exfoliating-cleanse step when skin can tolerate acids. In her 2025 real-routine video, Ellis discusses exfoliation and includes SkinMedica AHA/BHA Exfoliating Cleanser.</p><p>In her earlier morning layering video, she used <a href=\"https://go.shopmy.us/p-1211430\" target=\"_blank\">Cetaphil Hydrating Foaming Cream Face Cleanser</a> as the gentler cleanser option.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Toner",
+          "product": "medicube Age-R Glutathione Glow Toner",
+          "link": "https://go.shopmy.us/p-24304931",
+          "description": "<p>Pat on after cleansing as a light hydrating or brightening layer. In her 2025 real-routine video, Ellis includes medicube Age-R Glutathione Glow Toner.</p><p>She also mentions <a href=\"https://go.shopmy.us/p-30678326\" target=\"_blank\">I'm From Rice Toner</a> in the same video.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Hydrating Serum",
+          "product": "PREQUEL Multi-Quench Plumping Hydrating Serum",
+          "link": "https://prequelskin.com/products/multi-quench",
+          "description": "<p>Layer this before richer serums or cream for hydration. In her 2025 real-routine video, Ellis includes Prequel Multi-Quench in the hydration portion of her routine.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Peptide Serum",
+          "product": "Medik8 Liquid Peptides Advanced MP",
+          "link": "https://go.shopmy.us/p-22070737",
+          "description": "<p>Apply after hydrating layers and before moisturizer. In her 2025 real-routine video, Ellis includes Medik8 Liquid Peptides Advanced MP while discussing peptide serum benefits.</p><p>She also mentions <a href=\"https://go.shopmy.us/p-30678962\" target=\"_blank\">MAELOVE Peptide Squad</a> in the same video.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Eye Cream",
+          "product": "NEOCUTIS Lumière Firm Riche Illuminating & Tightening Eye Cream",
+          "link": "https://go.shopmy.us/p-14174898",
+          "description": "<p>Tap a small amount around the eye area before moisturizer or sunscreen. In her 2025 real-routine video, Ellis includes NEOCUTIS Lumière Firm Riche; in her morning layering video, she treats eye cream as its own step.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Moisturizer",
+          "product": "Skinbetter Trio Rebalancing Moisture Treatment",
+          "link": "https://go.shopmy.us/p-1211443",
+          "description": "<p>Use moisturizer after serum layers to support the barrier before sunscreen. In her morning layering video, Ellis places moisturizer after eye cream and before sunscreen.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "SPF",
+          "product": "PURITO Daily Soft Touch Sunscreen SPF 50+ PA++++",
+          "link": "https://go.shopmy.us/p-1211445",
+          "description": "<p>Apply as the final face step in the morning. In her morning layering video, Ellis uses this sunscreen after moisturizer; in her 2025 real-routine video, she also discusses sun protection strategy.</p>"
+        },
+        "step_8": {
+          "time": "am",
+          "order": "08. ",
+          "title": "Lip SPF",
+          "product": "O'Keeffe's Lip Repair SPF 35 Lip Balm",
+          "link": "https://go.shopmy.us/p-1211449",
+          "description": "<p>Finish with SPF on the lips. In her morning layering video, Ellis includes O'Keeffe's Lip Repair SPF 35 Lip Balm as the SPF lip step.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "First Cleanse",
+          "product": "Elemis Pro-Collagen Cleansing Balm",
+          "link": "https://go.shopmy.us/p-1391704",
+          "description": "<p>Use as the first cleanse to break down makeup and sunscreen. In her nighttime routine video, Ellis shares how she removes makeup and includes Elemis Pro-Collagen Cleansing Balm.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://go.shopmy.us/p-1391705",
+          "description": "<p>Follow with a second cleanse. In her nighttime routine video, Ellis uses iS Clinical Cleansing Complex after the cleansing balm.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "LED Mask",
+          "product": "Omnilux Contour Face LED Mask",
+          "link": "https://go.shopmy.us/p-1391709",
+          "description": "<p>Use on clean, dry skin before leave-on treatments. In her nighttime routine video, Ellis uses the Omnilux Contour Face LED Mask before the rest of her leave-on skin care.</p><p>In her newer 2025 real-routine video, she also mentions a <a href=\"https://go.shopmy.us/p-30681485\" target=\"_blank\">CurrentBody LED Red Light Therapy Face Mask</a> as another device she discussed later.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Prescription",
+          "product": "Apostrophe Prescription Skincare",
+          "link": "https://bit.ly/3vViU0y",
+          "description": "<p>Apply the prescribed treatment as directed by the prescribing clinician. In her nighttime routine video, Ellis uses an Apostrophe prescription step; in her 2025 real-routine video, she also discusses retinoids for anti-aging.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Eye Cream",
+          "product": "NEOCUTIS Lumière Firm Riche Illuminating & Tightening Eye Cream",
+          "link": "https://go.shopmy.us/p-1391711",
+          "description": "<p>Tap around the orbital area after prescription treatment or before moisturizer, depending on tolerance. In her nighttime routine video, Ellis uses NEOCUTIS Lumière Firm as her eye cream step.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Moisturizer",
+          "product": "Tatcha Indigo Overnight Repair Serum in Cream Treatment",
+          "link": "https://go.shopmy.us/p-1391712",
+          "description": "<p>Use as the final moisturizer at night. In her nighttime routine video, Ellis finishes with Tatcha Indigo Overnight Repair Serum in Cream Treatment as her moisturizer step.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Tyla's Routine",
+    "id": 10,
+    "time": 3.4,
+    "money": 5.5,
+    "point_title": "Tyla's Routine",
+    "point_description": "A simple glow-focused routine built around cleanser, face mist, rich moisturizer, sunscreen, petroleum jelly, and a lip sleeping mask.",
+    "pregnancy_safe": false,
+    "age_range": ["20s"],
+    "skin_concern": ["acne_prone", "dry_skin"],
+    "sources": [
+      {
+        "label": "Vogue 2024",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-tyla",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/660d6622c51c36c3607fa198/16:9/w_1280,c_limit/vogue_beauty-secrets-tyla.jpg",
+        "headline": "Tyla's All-in-One Wellness, Skin Care, and Makeup Routine",
+        "summary": "Tyla shares her wellness, skin-care, and makeup routine, including Youth To The People cleanser, Caudalie mist, Weleda Skin Food, Black Girl Sunscreen, Vaseline, and Laneige Lip Sleeping Mask."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Youth To The People Superfood Gentle Antioxidant Cleanser",
+          "link": "https://www.sephora.com/product/kale-spinach-green-tea-age-prevention-cleanser-P411387",
+          "description": "<p>Start with cleanser. In Vogue, Tyla uses Youth To The People's Superfood Gentle Antioxidant Cleanser while pointing out a blemish on her forehead.</p><p>She says TikTok is where she finds her skin-care tips, so this is a simple cleanse-first routine rather than a highly technical one.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Face Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://www.sephora.com/product/beauty-elixir-P4815",
+          "description": "<p>Mist after cleansing for a refreshing layer before moisturizer. Vogue says Tyla uses a Caudalie face mist as part of the skin-care section of her routine.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "Weleda Skin Food Original Ultra-Rich Cream",
+          "link": "https://www.amazon.com/Weleda-Ultra-Rich-Cream-2-5-Fluid/dp/B000ORV3NC",
+          "description": "<p>Press on a small amount where skin needs richness or extra cushion. Vogue says Tyla uses Weleda Skin Food while tending to her skin, including the blemish she calls out at the start of the routine.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF",
+          "product": "Black Girl Sunscreen Moisturizing Sunscreen Lotion SPF 30",
+          "link": "https://www.ulta.com/p/moisturizing-sunscreen-lotion-spf-30-pimprod2021097",
+          "description": "<p>Use as the final daytime face step. Vogue's product lineup for Tyla's Beauty Secrets routine includes Black Girl Sunscreen Moisturizing Sunscreen Lotion SPF 30.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Lip Balm",
+          "product": "Vaseline 100% Pure Petroleum Jelly",
+          "link": "https://www.amazon.com/Vaseline-Petroleum-Jelly-Original-13oz/dp/B001ECQ4L2",
+          "description": "<p>Use a tiny amount on lips or dry spots. Vogue notes that Tyla's lip balm is drugstore Vaseline, even though her personal pot is decorated with sparkle.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Youth To The People Superfood Gentle Antioxidant Cleanser",
+          "link": "https://www.sephora.com/product/kale-spinach-green-tea-age-prevention-cleanser-P411387",
+          "description": "<p>Use again at night to remove the day before moisturizer. Vogue does not split Tyla's routine into AM and PM, so this repeats her source-used cleanser as the sensible evening cleanse step.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Face Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://www.sephora.com/product/beauty-elixir-P4815",
+          "description": "<p>Mist after cleansing if skin wants a refreshed, dewy layer. Vogue shows Tyla using Caudalie face mist in the skin-care portion of her routine.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "Weleda Skin Food Original Ultra-Rich Cream",
+          "link": "https://www.amazon.com/Weleda-Ultra-Rich-Cream-2-5-Fluid/dp/B000ORV3NC",
+          "description": "<p>Use as the richer night moisturizer or spot-moisturizer on dry areas. Vogue says Tyla reaches for Weleda Skin Food in her skin-care routine.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Lip Mask",
+          "product": "Laneige Lip Sleeping Mask",
+          "link": "https://www.sephora.com/product/lip-sleeping-mask-P420652",
+          "description": "<p>Finish by coating lips before bed or whenever they need a cushiony seal. Vogue says Tyla seals her lip color with Laneige Lip Sleeping Mask; as a skincare-only routine, it fits best as the PM lip-care step.</p>"
+        }
+      }
+    }
   }
 ]
