@@ -1748,5 +1748,540 @@
         }
       }
     }
+  },
+  {
+    "name": "Mila Kunis's Routine",
+    "id": 11,
+    "time": 3.7,
+    "money": 9.2,
+    "point_title": "Mila Kunis's Routine",
+    "point_description": "A streamlined breakout-conscious routine with clarifying mist, peel-and-glow serum, optional hydration, rich SPF, and LED mask support.",
+    "pregnancy_safe": false,
+    "age_range": ["40s"],
+    "skin_concern": ["acne_prone", "dry_skin", "fine_lines_and_wrinkles"],
+    "sources": [
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/mila-kunis-beauty-secrets",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/6931d84dc88a1bde09bfdfb2/16:9/w_1280,c_limit/vogue_beauty-secrets-mila-kunis.jpg",
+        "headline": "Mila Kunis's Secret to Quick, Super-Snatched Glam",
+        "summary": "Kunis shares her morning beauty routine with a clarifying mist, Keren Bartov Booster Peel & Glow Serum, Advanced Skin Serum, Triple Active Cream SPF 50, and her Shark CryoGlow LED mask."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Face Mist",
+          "product": "Tower 28 SOS Daily Rescue Facial Spray",
+          "link": "https://www.sephora.com/product/sos-save-our-skin-daily-rescue-facial-spray-P448852",
+          "description": "<p>Start by misting the face. Vogue says Kunis puts her hair into what she calls a serious bun, then spritzes with a clarifying face mist before serum.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Peel Serum",
+          "product": "Keren Bartov Booster Peel & Glow Serum",
+          "link": "https://kerenbartov.co.uk/products/booster-peel-glow",
+          "description": "<p>Apply after misting. Vogue says Kunis uses Keren Bartov Booster Peel & Glow Serum morning and night and credits it with helping keep tiny blemishes away.</p><p>She tells Vogue she has always been breakout-prone and only became religious about skin care in her early twenties.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Hydrating Serum",
+          "product": "Keren Bartov Advanced Skin Serum",
+          "link": "https://kerenbartov.co.uk/products/advanced-skin-repair-serum",
+          "description": "<p>Use when skin feels dry or needs extra nourishment. Vogue says Kunis reaches for Keren Bartov Advanced Skin Serum when she is feeling particularly dry before layering on SPF.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF Cream",
+          "product": "Keren Bartov Triple Active Cream + SPF 50",
+          "link": "https://kerenbartov.co.uk/products/triple-active-cream-spf50",
+          "description": "<p>Finish daytime skin care with SPF. Vogue says Kunis layers on Keren Bartov's super moisturizing SPF Triple Active Cream, and that sunblock is nonnegotiable for both her and her children.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Face Mist",
+          "product": "Tower 28 SOS Daily Rescue Facial Spray",
+          "link": "https://www.sephora.com/product/sos-save-our-skin-daily-rescue-facial-spray-P448852",
+          "description": "<p>Mist first if repeating the same prep sequence at night. Vogue shows Kunis starting her skin-care prep with a clarifying mist before applying her treatment serum.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Peel Serum",
+          "product": "Keren Bartov Booster Peel & Glow Serum",
+          "link": "https://kerenbartov.co.uk/products/booster-peel-glow",
+          "description": "<p>Apply as the recurring night treatment. Vogue specifically says Kunis wears Keren Bartov Booster Peel & Glow Serum morning and night.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Hydrating Serum",
+          "product": "Keren Bartov Advanced Skin Serum",
+          "link": "https://kerenbartov.co.uk/products/advanced-skin-repair-serum",
+          "description": "<p>Use when skin feels dry. Vogue says Kunis employs Keren Bartov Advanced Skin Serum when she needs nourishment, so this can sit after the peel serum on dry-skin nights.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "LED Mask",
+          "product": "Shark CryoGlow LED Face Mask",
+          "link": "https://www.ulta.com/p/cryoglow-led-face-mask-pimprod2049609",
+          "description": "<p>Use as an occasional device step on clean skin, following the device instructions. Vogue says Kunis is committed to her Shark CryoGlow LED Face Mask and uses red and blue lights, plus the under-eye cooling function, to depuff and brighten the eye area.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "John Mayer's Routine",
+    "id": 12,
+    "time": 2.3,
+    "money": 11.3,
+    "point_title": "John Mayer's Routine",
+    "point_description": "A PM-only, luxury-heavy routine from Mayer's Snapchat era: acne cleanser, Natura Bisse serum, eye treatment, rich cream, and mist.",
+    "pregnancy_safe": false,
+    "age_range": ["40s"],
+    "skin_concern": ["acne_prone", "fine_lines_and_wrinkles"],
+    "sources": [
+      {
+        "label": "Vogue 2016",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/john-mayer-snapchat-skin-care-secrets-beauty-vlog",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/5891dc437edfa70512d6729c/16:9/w_1280,c_limit/00-square-john-mayer.gif",
+        "headline": "John Mayer Is the Best Beauty Vlogger on the Internet",
+        "summary": "Vogue recaps Mayer's Snapchat routine, including a Proactiv cleanse, Natura Bisse nighttime products, direct application, eye concentrate as face moisturizer, and a hydrosol mist."
+      },
+      {
+        "label": "GQ 2016",
+        "site": "GQ",
+        "link": "https://www.gq.com/story/ageless-skin-guide-john-mayer-snapchat-routine",
+        "favicon": "https://www.gq.com/favicon.ico",
+        "image": "https://media.gq.com/photos/57acb208e24316960be63812/16:9/w_1280,c_limit/john-mayer-face-snapchat.jpg",
+        "headline": "How to Get Really Good Skin Like John Mayer",
+        "summary": "GQ identifies the routine as a nighttime moisturizing routine, naming Proactiv wash and Natura Bisse products while preserving Mayer's application commentary."
+      },
+      {
+        "label": "Allure 2016",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/john-mayers-skin-care-routine",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/57ade449f496b7724cee23a0/16:9/w_1280,c_limit/John-Mayer-Beauty-Vlogger.jpg",
+        "headline": "Why Every Man Should Copy John Mayer's Flawless Skin-Care Routine",
+        "summary": "Allure confirms Mayer used Natura Bisse products and specifically mentions Diamond Life Infusion and Diamond Extreme Cream on his targeted CNZ areas."
+      }
+    ],
+    "steps": {
+      "am": {},
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Proactiv Cleanser",
+          "link": "https://proactiv.com/",
+          "description": "<p>Start with the acne cleanser step. Vogue says Mayer pushed back his hair with a folded bandana for a Proactiv cleanse, and GQ also identifies Proactiv wash as the first product in the Snapchat routine.</p><p>The original source does not name the exact Proactiv cleanser, so this links to the brand rather than inventing a specific current product.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Serum",
+          "product": "Natura Bisse Diamond Life Infusion",
+          "link": "https://www.naturabisse.com/us/en/diamond-age-defying/diamond-life-infusion/diamond-life-infusion/31D345.html",
+          "description": "<p>Apply directly to the face and massage in. Allure says Mayer dabbed Natura Bisse Diamond Life Infusion all over his face, while Vogue describes his D.A.T., or Direct Application Technique, as a way to avoid wasting product on the creases of his fingers.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Eye Treatment",
+          "product": "Natura Bisse Diamond Extreme Eye",
+          "link": "https://www.naturabisse.com/us/en/diamond-age-defying/diamond-extreme/diamond-extreme-eye/31A300.html",
+          "description": "<p>Use around the eyes or, in Mayer's playful version, as an extra-rich face moisturizer. Vogue says he treated eye concentrate as superior facial moisturizer, and GQ notes the Natura Bisse eye product he used was the luxury version of that move.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Vitamin C Treatment",
+          "product": "Natura Bisse C+C Vitamin 20% Antiox Solution",
+          "link": "https://www.naturabisse.com/us/en/c-c-vitamin-line/c-c-vitamin-20-antiox-solution/31D365.html",
+          "description": "<p>Use as the antioxidant treatment step before cream. GQ says Mayer used a special vitamin C and E concentrate during his smile-line and CNZ steps; the older concentrate is not reliably available, so this links the current same-brand C+C Vitamin antioxidant solution.</p><p>Vogue says he called one of the expression-line moves The Offset Smiley.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Moisturizer",
+          "product": "Natura Bisse Diamond Extreme Cream - Rich Texture",
+          "link": "https://www.naturabisse.com/us/en/diamond-age-defying/diamond-extreme/diamond-extreme-cream---rich-texture/31A139.html",
+          "description": "<p>Apply to targeted dry or expression-prone areas. Allure says Mayer applied Natura Bisse Diamond Extreme Cream only on his CNZs, or Crucial Necessity Zones.</p><p>GQ also describes him working cream into the skin with a Q-tip, which is faithful to the Snapchat bit but best treated as optional.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Face Mist",
+          "product": "Natura Bisse Diamond Extreme Mist",
+          "link": "https://www.naturabisse.com/us/en/diamond-age-defying/diamond-extreme/diamond-extreme-mist/31C325.html",
+          "description": "<p>Finish by misting to seal the routine. GQ says Mayer ends by locking in the creams with a Natura Bisse mist, and Vogue describes his gentler method as head-butting a hydrosol cloud rather than taking the spray straight to the face.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Alicia Vikander's Routine",
+    "id": 13,
+    "time": 3.1,
+    "money": 7.5,
+    "point_title": "Alicia Vikander's Routine",
+    "point_description": "A minimalist dry-skin routine with weekly sauna time, FaceGym Pro skin prep with Collagen Infusion Serum, Augustinus Bader The Rich Cream, Hudsalva, and a quick cleansing-wipe reset.",
+    "pregnancy_safe": false,
+    "age_range": ["30s"],
+    "skin_concern": ["dry_skin"],
+    "sources": [
+      {
+        "label": "ELLE UK 2024",
+        "site": "ELLE",
+        "link": "https://www.elle.com/uk/beauty/a61738107/alicia-vikander-beauty-routine/",
+        "favicon": "https://www.elle.com/favicon.ico",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/alicia-vikander-66a8fc2fb47cd.jpeg",
+        "headline": "Alicia Vikander On The Three Beauty Products That Never Leave Her Handbag",
+        "summary": "Vikander tells ELLE she has dry skin, uses Augustinus Bader The Rich Cream morning and evening, keeps Hudsalva in her bag for dry skin and lips, and now carries wet wipes."
+      },
+      {
+        "label": "British Vogue 2026",
+        "site": "British Vogue",
+        "link": "https://www.vogue.co.uk/article/alicia-vikander-louis-vuitton-cruise-2027",
+        "favicon": "https://www.vogue.co.uk/favicon.ico",
+        "image": "https://media.vogue.co.uk/photos/6a1037d872c734ec7254a635/16:9/w_1280,c_limit/260520_0010_LV_BV_ALICIA-VIKANDER_108-WEB_sRGB-BY_CHRISTIAN_HOGSTEDT.jpg",
+        "headline": "Alicia Vikander Talks Saunas, Skincare And Sequins At The Louis Vuitton Cruise 2027 Show",
+        "summary": "British Vogue describes Vikander's skin-prep habits, including frequent saunas, facial exercises, FaceGym Pro use, and professional facial massage."
+      },
+      {
+        "label": "Allure 2015",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/alicia-vikander-beauty-tips",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "image": "https://media.allure.com/photos/5771a3f33b5256713da4b4b3/16:9/w_1280,c_limit/beauty-trends-blogs-daily-beauty-reporter-2015-05-04-vikander-beauty-tips.jpg",
+        "headline": "Alicia Vikander on How to Achieve the Minimal Swedish-Beauty Look",
+        "summary": "Vikander describes her pared-down daily beauty approach, naming Charlotte Tilbury Magic Cream and her longtime Swedish Hudsalva ointment for skin and lips."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Weekly Sauna",
+          "product": "Weekly Sauna",
+          "link": "https://www.vogue.co.uk/article/alicia-vikander-louis-vuitton-cruise-2027",
+          "description": "<p>Add sauna as a weekly skin-prep ritual rather than a daily product step. British Vogue says Vikander has a strict five-saunas-a-week routine and calls it very hot before moving on to skin prep.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Device Serum",
+          "product": "FACEGYM Collagen Infusion Serum",
+          "link": "https://facegym.com/products/facegym-pro",
+          "description": "<p>Apply before using the FaceGym Pro so the device can glide and conduct properly. FaceGym's Pro instructions say to apply Collagen Infusion Serum to the face and during every use, and note that the serum was made to be used with the device.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Face Device",
+          "product": "FACEGYM Pro - Edition",
+          "link": "https://facegym.com/products/facegym-pro",
+          "description": "<p>Use as a morning or travel skin-prep step after applying the compatible serum. British Vogue says Vikander rolled FaceGym Pro's Electric Muscle Stimulation Device over her jaw and cheeks on a flight.</p><p>The same article says she also does face exercises at home and believes keeping facial muscles strong helps the foundation of the skin follow.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Moisturizer",
+          "product": "Augustinus Bader The Rich Cream",
+          "link": "https://www.sephora.com/product/the-rich-cream-P441167",
+          "description": "<p>Smooth on moisturizer as the main face step. Vikander tells ELLE she tends to have dry skin and now uses Augustinus Bader The Rich Cream morning and evening.</p><p>She previously told Allure she swore by <a href=\"https://www.charlottetilbury.com/us/product/charlottes-magic-cream\" target=\"_blank\">Charlotte Tilbury Charlotte's Magic Cream</a>, so this is the newer source-backed moisturizer mention.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Skin & Lip Salve",
+          "product": "Försvarets Hudsalva Original",
+          "link": "https://www.apoteket.se/produkt/forsvarets-hudsalva-original-23-ml-252510/",
+          "description": "<p>Use on lips or dry areas that need a protective balm. Vikander tells ELLE she always has Hudsalva in her bag and says it is perfect for dry lips; Allure also says she has used the Swedish salve since she was a kid.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Quick Cleanse",
+          "product": "Burt's Bees Sensitive Facial Cleansing Towelettes",
+          "link": "https://www.sephora.co.uk/p/Burts-Bees-Sensitive-Facial-Cleansing-Towelettes-with-Cotton-Extract-30-Pack",
+          "description": "<p>Use a wipe as a quick evening reset when a full cleanse is not realistic. ELLE says Vikander now always carries wet wipes as a mum, and its product card identifies Burt's Bees Sensitive Facial Cleansing Wipes.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Moisturizer",
+          "product": "Augustinus Bader The Rich Cream",
+          "link": "https://www.sephora.com/product/the-rich-cream-P441167",
+          "description": "<p>Apply again at night as her main moisture step. Vikander specifically tells ELLE that after finding The Rich Cream, she now uses it morning and evening for her dry skin.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Skin & Lip Salve",
+          "product": "Försvarets Hudsalva Original",
+          "link": "https://www.apoteket.se/produkt/forsvarets-hudsalva-original-23-ml-252510/",
+          "description": "<p>Finish with a thin layer on lips or dry patches. Vikander tells ELLE Hudsalva is something she usually finds in Sweden, can be applied when skin is dry, and is perfect for dry lips.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Iris Apatow's Routine",
+    "id": 14,
+    "time": 6.6,
+    "money": 7.8,
+    "point_title": "Iris Apatow's Routine",
+    "point_description": "A beauty-lover routine for hormonal acne and hydration, with Avène cleanser, Dr. Barbara Sturm serum, Klairs moisturizer, mineral SPF, and a few calming extras.",
+    "pregnancy_safe": false,
+    "age_range": ["20s"],
+    "skin_concern": ["acne_prone", "dry_skin"],
+    "sources": [
+      {
+        "label": "Vogue 2026",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-iris-apatow",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "image": "https://assets.vogue.com/photos/69ab2f259a0efbe96edb2b03/16:9/w_1280,c_limit/vogue_beauty-secrets-iris-apatow.jpg",
+        "headline": "Iris Apatow Did Her Own Eyeliner for Pretty Lethal",
+        "summary": "Apatow walks through her Beauty Secrets routine, including Dr. Hauschka toner, Dr. Barbara Sturm Hyaluronic Serum, Klairs cream, Supergoop SPF, Drunk Elephant oil, Caudalie mist, The Outset lip treatment, and Personal Day spray."
+      },
+      {
+        "label": "Who What Wear 2026",
+        "site": "Who What Wear",
+        "link": "https://www.whowhatwear.com/beauty/makeup/iris-apatow-cbk-tatcha-oscars-2026-after-party-beauty",
+        "favicon": "https://www.whowhatwear.com/favicon.ico",
+        "image": "https://cdn.mos.cms.futurecdn.net/hi9Jirm96QhM2FmTvS4Rbn-2000-80.jpg",
+        "headline": "Iris Apatow's CBK-Coded Oscars Afterparty Beauty",
+        "summary": "Apatow's makeup artist describes red-carpet skin prep built around a radiant, hydrated base, with Tatcha mist, Dewy Skin Cream, and Kissu Lip Mask."
+      },
+      {
+        "label": "Glamour 2023",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/what-iris-apatow-is-buying-now",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "image": "https://media.glamour.com/photos/65567b98074272498557cefe/16:9/w_1280,c_limit/GL_11.16_Faves'-Faves-for-Iris-Apatow.jpg",
+        "headline": "What Iris Apatow Is Buying Now: Aerie Leggings, Frye Boots, and Liquid Blush",
+        "summary": "Apatow names Avène as her favorite skin care for hormonal acne and says its foaming cleanser cleared her acne."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Avène Cleansing Foam",
+          "link": "https://www.aveneusa.com/cleansing-foam",
+          "description": "<p>Start with a gentle foaming cleanse. In Glamour, Apatow says she has horrible hormonal acne, calls Avène her favorite skin care, and specifically recommends the foaming cleanser because it cleared her acne.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Tone",
+          "product": "Dr. Hauschka Clarifying Toner",
+          "link": "https://www.amazon.com/s?k=Dr.+Hauschka+Clarifying+Toner",
+          "description": "<p>Mist or press toner onto clean skin before serum. Vogue lists Dr. Hauschka Clarifying Toner in Apatow's Beauty Secrets routine, which fits her acne-conscious routine before hydrating layers.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Hydrating Serum",
+          "product": "Dr. Barbara Sturm Hyaluronic Serum",
+          "link": "https://www.sephora.com/product/hyaluronic-serum-P448716",
+          "description": "<p>Apply a few drops before moisturizer. Vogue says Apatow has a curated routine with Dr. Barbara Sturm Hyaluronic Serum and notes she has upgraded a long way from using hand soap to remove makeup in high school.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Moisturizer",
+          "product": "Dear Klairs Rich Moist Soothing Cream",
+          "link": "https://www.amazon.com/s?k=Dear+Klairs+Rich+Moist+Soothing+Cream",
+          "description": "<p>Smooth on as the cushiony moisturizer step. Vogue lists Dear Klairs Rich Moist Soothing Cream in Apatow's routine, supporting the hydrating side of her acne-conscious skin care.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "SPF",
+          "product": "Supergoop! Mineral Sheerscreen SPF 30",
+          "link": "https://www.ulta.com/p/mineral-sheerscreen-sunscreen-spf-30-pimprod2029932",
+          "description": "<p>Finish morning skin care with SPF. Vogue says Apatow uses plenty of SPF from Supergoop and lists Mineral Sheerscreen SPF 30 in her routine.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Lip Treatment",
+          "product": "The Outset Lip Oasis Glossy Treatment",
+          "link": "https://theoutset.com/products/lip-oasis-glossy-treatment",
+          "description": "<p>Coat lips as the final comfort step. Vogue includes The Outset Lip Oasis Glossy Treatment in Apatow's routine after her skin-care lineup.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Avène Cleansing Foam",
+          "link": "https://www.aveneusa.com/cleansing-foam",
+          "description": "<p>Use at night to wash off the day. Apatow tells Glamour that Avène's foaming cleanser cleared her hormonal acne, making it the strongest source-backed cleanser for her routine.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Calming Spray",
+          "product": "Personal Day Trust Me On This Hypochlorous Acid Spray",
+          "link": "https://www.personalday.com/products/trust-me-on-this-hypochlorous-acid-spray",
+          "description": "<p>Spritz onto clean skin and let it dry before the next step. Vogue lists Personal Day's hypochlorous acid spray in Apatow's Beauty Secrets routine, and it fits her acne-prone, calming-focused product mix.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Tone",
+          "product": "Dr. Hauschka Clarifying Toner",
+          "link": "https://www.amazon.com/s?k=Dr.+Hauschka+Clarifying+Toner",
+          "description": "<p>Use after cleansing or after the calming spray has dried. Vogue's product lineup includes Dr. Hauschka Clarifying Toner as part of Apatow's current routine.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Hydrating Serum",
+          "product": "Dr. Barbara Sturm Hyaluronic Serum",
+          "link": "https://www.sephora.com/product/hyaluronic-serum-P448716",
+          "description": "<p>Apply before cream for hydration. Vogue specifically calls out the Dr. Barbara Sturm Hyaluronic Serum in Apatow's curated skin-care routine.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Moisturizer",
+          "product": "Dear Klairs Rich Moist Soothing Cream",
+          "link": "https://www.amazon.com/s?k=Dear+Klairs+Rich+Moist+Soothing+Cream",
+          "description": "<p>Seal serum with a soothing cream. Vogue lists Dear Klairs Rich Moist Soothing Cream in Apatow's routine, so this anchors the evening moisture step.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Face Oil",
+          "product": "Drunk Elephant Virgin Marula Luxury Facial Oil",
+          "link": "https://www.sephora.com/product/virgin-marula-luxury-facial-oil-P392245",
+          "description": "<p>Press on a few drops when skin wants extra softness. Vogue includes Drunk Elephant Virgin Marula Luxury Facial Oil among Apatow's Beauty Secrets skin-care products.</p>"
+        },
+        "step_7": {
+          "time": "pm",
+          "order": "07. ",
+          "title": "Face Mist",
+          "product": "Caudalie Beauty Elixir Face Mist",
+          "link": "https://www.sephora.com/product/beauty-elixir-P4815",
+          "description": "<p>Mist when skin needs a refreshed finish. Vogue lists Caudalie Beauty Elixir Face Mist in Apatow's routine, and it can sit as a final dewy layer or a between-steps refresh.</p>"
+        },
+        "step_8": {
+          "time": "pm",
+          "order": "08. ",
+          "title": "Lip Treatment",
+          "product": "The Outset Lip Oasis Glossy Treatment",
+          "link": "https://theoutset.com/products/lip-oasis-glossy-treatment",
+          "description": "<p>Finish with lip treatment before bed. Vogue includes The Outset Lip Oasis Glossy Treatment in Apatow's product lineup.</p>"
+        }
+      }
+    }
+  },
+  {
+    "name": "Emmy Rossum's Routine",
+    "id": 15,
+    "time": 2.6,
+    "money": 9.6,
+    "point_title": "Emmy Rossum's Routine",
+    "point_description": "A skincare-obsessive daytime routine focused on hydration, firming care, neck treatment, and mineral SPF.",
+    "pregnancy_safe": false,
+    "age_range": ["30s"],
+    "skin_concern": ["dry_skin", "fine_lines_and_wrinkles", "dark_spots_and_sun_damage"],
+    "sources": [
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/emmy-rossum-beauty-secrets",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "headline": "Emmy Rossum Shares Her 28-Step Beauty Routine, From Curly Hair Care to Hydrated Skin",
+        "summary": "Rossum walks Vogue through her Beauty Secrets routine, emphasizing clear, hydrated skin and naming iS Clinical, Elizabeth Arden, Sisley Paris, and ISDIN skincare products."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Face Mist",
+          "product": "iS Clinical Copper Firming Mist",
+          "link": "https://www.isclinical.com/products/copper-firming-mist",
+          "description": "<p>Start with a hydrating face mist as the first visible skincare step from Rossum's Vogue routine. Vogue describes her as a self-professed skincare obsessive and lists iS Clinical Copper Firming Mist among the products in her Beauty Secrets lineup.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Skin Protectant",
+          "product": "Elizabeth Arden Eight Hour Cream Skin Protectant",
+          "link": "https://www.elizabetharden.com/products/eight-hour-cream-skin-protectant",
+          "description": "<p>Use sparingly on lips or dry spots that need a protective balm. Vogue includes Elizabeth Arden Eight Hour Cream Skin Protectant in Rossum's routine, and she says hydrated skin makes her feel confident.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Hydrating Serum",
+          "product": "iS Clinical Hydra-Cool Serum",
+          "link": "https://www.isclinical.com/products/hydra-cool-serum",
+          "description": "<p>Apply after misting and before richer creams. Vogue lists iS Clinical Hydra-Cool Serum as part of Rossum's hydration-focused skincare routine.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Eye Fluid",
+          "product": "Sisley Paris Black Rose Eye Contour Fluid",
+          "link": "https://www.sisley-paris.com/en-US/black-rose-eye-contour-fluid-151600.html",
+          "description": "<p>Tap around the eye area before face moisturizer. Vogue lists Sisley Paris Black Rose Eye Contour Fluid in Rossum's routine, and Rossum keeps the overall emphasis on hydrated, clear-looking skin.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Neck Cream",
+          "product": "iS Clinical NeckPerfect Complex",
+          "link": "https://www.isclinical.com/products/neckperfect-complex",
+          "description": "<p>Smooth onto the neck as its own treatment step. Vogue notes that Rossum's regimen includes a firming neck cream and identifies iS Clinical NeckPerfect Complex in the product lineup.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Moisturizing Gel",
+          "product": "Sisley Paris Double Tenseur Moisturizing Gel",
+          "link": "https://www.sisley-paris.com/en-US/double-tenseur-moisturizing-gel-126400.html",
+          "description": "<p>Layer as the moisturizing gel step before sunscreen. Vogue lists Sisley Paris Double Tenseur Moisturizing Gel among Rossum's skincare products, fitting the hydrated-skin focus she talks about in the routine.</p>"
+        },
+        "step_7": {
+          "time": "am",
+          "order": "07. ",
+          "title": "Mineral SPF",
+          "product": "ISDIN Eryfotona Actinica Daily Mineral SPF 50+ Sunscreen",
+          "link": "https://www.amazon.com/s?k=Isdin+Eryfotona+Actinica+Daily+Mineral+SPF+50+Sunscreen",
+          "description": "<p>Finish daytime skincare with sunscreen. Vogue says Rossum's routine includes always sunscreen and lists ISDIN Eryfotona Actinica Daily Mineral SPF 50+ Sunscreen as her SPF step.</p>"
+        }
+      },
+      "pm": {}
+    }
   }
 ]

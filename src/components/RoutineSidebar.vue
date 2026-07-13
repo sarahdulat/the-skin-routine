@@ -4,18 +4,13 @@
       <div class="routine-header my-lg">
         <h2>{{ store.currentRoutine.name }}</h2>
         <div v-if="firstSource" class="sources" aria-label="Routine sources">
-          <a v-if="!hasMultipleSources" class="source-pill" :href="firstSource.link" target="_blank"
-            rel="noopener noreferrer">
-            <img v-if="firstSource.favicon" :src="firstSource.favicon"
-              :alt="`${firstSource.site || firstSource.label} icon`" />
-            <span>{{ firstSourceName }}</span>
-          </a>
-          <div v-if="hasMultipleSources" class="source-overflow">
+          <div class="source-overflow">
             <button class="source-pill" type="button" :aria-label="`${sources.length} routine sources`">
-              <img v-if="firstSource.favicon" :src="firstSource.favicon"
-                :alt="`${firstSource.site || firstSource.label} icon`" />
+              <img v-if="shouldShowFavicon(firstSource)" :src="firstSource.favicon"
+                :alt="`${firstSource.site || firstSource.label} icon`" @error="markFaviconFailed(firstSource)" />
+              <span v-else class="source-favicon-fallback glyph" aria-hidden="true">🩸</span>
               <span>{{ firstSourceName }}</span>
-              <span class="source-count">+{{ additionalSourceCount }}</span>
+              <span v-if="hasMultipleSources" class="source-count">+{{ additionalSourceCount }}</span>
             </button>
             <div class="source-popover" role="tooltip">
               <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
@@ -25,7 +20,9 @@
                 <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
                 <span class="source-card-content">
                   <span class="source-site">
-                    <img v-if="source.favicon" :src="source.favicon" :alt="`${source.site || source.label} icon`" />
+                    <img v-if="shouldShowFavicon(source)" :src="source.favicon"
+                      :alt="`${source.site || source.label} icon`" @error="markFaviconFailed(source)" />
+                    <span v-else class="source-site-favicon-fallback glyph" aria-hidden="true">🩸</span>
                     <span>{{ source.site || source.label }}</span>
                   </span>
                   <span class="source-headline">{{ source.headline || source.label }}</span>
@@ -36,14 +33,17 @@
           </div>
         </div>
       </div>
-      <input type="checkbox" id="toggle" />
-      <label for="toggle" class='toggleContainer'>
+      <input type="checkbox" id="toggle" :checked="routineTime === 'pm'" />
+      <label class='toggleContainer'>
         <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
         <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
       </label>
     </div>
     <div class="scroll-container">
-      <div v-for="step in steps" :key="step.order" class="step mb-lg pb-lg">
+      <div v-if="isRoutineMissing" class="routine-alert" role="status">
+        We don't have enough information for this routine :(
+      </div>
+      <div v-for="step in steps" v-else :key="step.order" class="step mb-lg pb-lg">
         <h3>{{ step.order }}</h3>
         <h4>
           <span>{{ step.title }}</span>
@@ -82,7 +82,11 @@ type RoutineWithSources = typeof store.currentRoutine & {
 };
 
 const routineTime = computed(() => store.routineTime);
-const steps = computed(() => Object.values(store.currentRoutine.steps[routineTime.value]));
+const currentRoutineId = computed(() => store.currentRoutine.id);
+const amSteps = computed(() => Object.values(store.currentRoutine.steps.am ?? {}));
+const pmSteps = computed(() => Object.values(store.currentRoutine.steps.pm ?? {}));
+const steps = computed(() => routineTime.value === 'am' ? amSteps.value : pmSteps.value);
+const isRoutineMissing = computed(() => steps.value.length === 0);
 const sources = computed(() => {
   return (store.currentRoutine as RoutineWithSources).sources ?? [];
 });
@@ -91,6 +95,17 @@ const firstSourceName = computed(() => firstSource.value?.site || firstSource.va
 const hasMultipleSources = computed(() => sources.value.length > 1);
 const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 0));
 const expandedSteps = ref(new Set<string>());
+const failedFavicons = ref(new Set<string>());
+
+const getFaviconKey = (source: RoutineSource) => source.favicon || source.link;
+
+const shouldShowFavicon = (source: RoutineSource | null) => {
+  return Boolean(source?.favicon && !failedFavicons.value.has(getFaviconKey(source)));
+};
+
+const markFaviconFailed = (source: RoutineSource) => {
+  failedFavicons.value = new Set([...failedFavicons.value, getFaviconKey(source)]);
+};
 
 const resetExpandedSteps = () => {
   expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
@@ -110,6 +125,15 @@ const toggleStep = (order: string) => {
   expandedSteps.value = nextExpandedSteps;
 };
 
+const defaultToAvailableRoutineTime = () => {
+  if (routineTime.value === 'am' && amSteps.value.length === 0 && pmSteps.value.length > 0) {
+    store.setRoutineTime('pm');
+  } else if (routineTime.value === 'pm' && pmSteps.value.length === 0 && amSteps.value.length > 0) {
+    store.setRoutineTime('am');
+  }
+};
+
+watch(currentRoutineId, defaultToAvailableRoutineTime, { immediate: true });
 watch(steps, resetExpandedSteps, { immediate: true });
 </script>
 
@@ -128,6 +152,17 @@ aside {
   flex: 1;
   min-height: 0;
   overflow: auto;
+}
+
+.routine-alert {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-sm);
+  background: rgba(200, 82, 56, 0.08);
+  color: var(--color-dark);
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-sm);
 }
 
 .sidebar-header {
@@ -190,6 +225,19 @@ h4 {
 .source-count {
   padding-left: var(--space-sm);
   border-left: 1px solid currentColor;
+}
+
+.source-favicon-fallback,
+.source-site-favicon-fallback {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-size: var(--fontSize-xs);
+  line-height: 1;
 }
 
 .source-overflow {
@@ -266,6 +314,12 @@ h4 {
     width: 0.875rem;
     height: 0.875rem;
     border-radius: 50%;
+  }
+
+  .source-site-favicon-fallback {
+    width: 0.875rem;
+    height: 0.875rem;
+    font-size: 0.625rem;
   }
 }
 
