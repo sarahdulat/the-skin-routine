@@ -7,10 +7,10 @@
       <div><button class="footer-link" type="button" @click="showDisclaimer = true">Affiliate Disclosure</button></div>
       <div class="ms-auto text-nowrap">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram" alt="instagram"></i>
+          <i class="bi bi-instagram" alt="Instagram"></i>
         </a>
-        <a href="http://www.xthreads.com/@the_skinroutine" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-threads ms-lg" alt="x"></i>
+        <a href="http://www.threads.com/@the_skinroutine" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-threads ms-lg" alt="Threads"></i>
         </a>
         <!-- <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter-x ms-lg" alt="x"></i>
