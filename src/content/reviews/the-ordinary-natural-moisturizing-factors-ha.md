@@ -8,6 +8,7 @@ last_publication_date: "2024-12-28T19:04:34+0000"
 tags: ["moisturizer", "the ordinary"]
 brands: ["The Ordinary"]
 product_types: ["Moisturizer"]
+featured_products: [{"brand":"The Ordinary","name":"Natural Moisturizing Factors + HA","link":"https://theordinary.com/en-us/natural-moisturizing-factors-ha-moisturizer-100435.html"}]
 pregnancy_safe: true
 draft: true
 image: "/images/reviews/the-ordinary-natural-moisturizing-factors-ha.jpg"

@@ -12,12 +12,12 @@
         <a href="http://www.xthreads.com/@the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-threads ms-lg" alt="x"></i>
         </a>
-        <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
+        <!-- <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter-x ms-lg" alt="x"></i>
-        </a>
-        <a href="http://www.pinterest.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
+        </a> -->
+        <!-- <a href="http://www.pinterest.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-pinterest ms-lg" alt="pinterest"></i>
-        </a>
+        </a> -->
       </div>
     </div>
     <Teleport to="body">

@@ -8,6 +8,7 @@ last_publication_date: "2024-12-28T19:05:01+0000"
 tags: ["cleanser", "la roche posay"]
 brands: ["La Roche Posay"]
 product_types: ["Cleanser"]
+featured_products: [{"brand":"La Roche-Posay","name":"Toleriane Purifying Foaming Face Wash","link":"https://www.laroche-posay.us/our-products/face/face-wash/toleriane-purifying-foaming-facial-wash-3337875545822.html"}]
 pregnancy_safe: true
 draft: true
 image: "/images/reviews/la-roche-posay-toleriane-purifying-foaming-face-wash.webp"

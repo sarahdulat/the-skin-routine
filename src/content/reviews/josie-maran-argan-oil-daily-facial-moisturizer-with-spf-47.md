@@ -8,6 +8,7 @@ last_publication_date: "2024-12-30T06:50:23+0000"
 tags: ["spf", "josie maran"]
 brands: ["Josie Maran"]
 product_types: ["SPF"]
+featured_products: [{"brand":"Josie Maran","name":"Argan Daily Moisturizer SPF 47","link":"https://www.josiemaran.com/products/argan-daily-moisturizer-spf-47"}]
 pregnancy_safe: true
 draft: true
 image: "/images/reviews/josie-maran-argan-oil-daily-facial-moisturizer-with-spf-47.jpeg"

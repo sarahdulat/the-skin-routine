@@ -8,6 +8,7 @@ last_publication_date: "2024-12-28T19:05:16+0000"
 tags: ["spf", "supergoop!"]
 brands: ["Supergoop!"]
 product_types: ["SPF"]
+featured_products: [{"brand":"Supergoop!","name":"Glow Stick SPF 50","link":"https://supergoop.com/products/glow-stick-sunscreen"}]
 pregnancy_safe: false
 draft: true
 image: "/images/reviews/supergoop-glow-stick-spf-50.avif"

@@ -10,6 +10,11 @@ type ReviewFrontmatter = {
   tags: string[];
   brands: string[];
   product_types: string[];
+  featured_products?: Array<{
+    brand: string;
+    name: string;
+    link: string;
+  }>;
   pregnancy_safe: boolean;
   draft: boolean;
   image: string;
@@ -100,6 +105,8 @@ function escapeHtml(text: string) {
 }
 
 function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
+  const featuredProducts = frontmatter.featured_products ?? [];
+
   return {
     alternate_languages: [],
     data: {
@@ -124,7 +131,12 @@ function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
       },
       product_types: frontmatter.product_types.map((product_type) => ({ product_type })),
       pregnancy_safe: frontmatter.pregnancy_safe,
-      products: [],
+      products: featuredProducts.map((product) => ({
+        product: {
+          ...product,
+          id: `${frontmatter.uid}-${product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`,
+        },
+      })),
       summary: [
         {
           type: "paragraph",

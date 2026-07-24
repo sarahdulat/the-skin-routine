@@ -39,16 +39,19 @@ export type Post = {
     pregnancy_safe: boolean
     products: Array<{
       product: {
-        first_publication_date: string
+        brand: string
+        name: string
+        link: string
+        first_publication_date?: string
         id: string
-        isBroken: boolean
-        key: string
-        lang: string
-        last_publication_date: string
-        link_type: string
-        slug: string
-        tags: Array<string>
-        type: string
+        isBroken?: boolean
+        key?: string
+        lang?: string
+        last_publication_date?: string
+        link_type?: string
+        slug?: string
+        tags?: Array<string>
+        type?: string
       }
     }>
     summary: Array<{

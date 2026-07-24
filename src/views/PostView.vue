@@ -18,12 +18,13 @@
                   #{{ tag }}
                 </span>
               </div>
-              <div class="mt-xl">
+              <div v-if="post.data.products.length > 0" class="mt-xl">
                 <p>Featured Products</p>
                 <span v-for="product in post.data.products" :key="product.product.id">
-                  <a href="#" target="_blank" rel="noopener noreferrer"><span class="glyph me-md">🩸</span>Product
-                    Name</a>
-                  <button class="px-sm ms-lg">Buy</button>
+                  <a :href="product.product.link" target="_blank" rel="noopener noreferrer">
+                    <span class="glyph me-md">🩸</span>{{ product.product.brand }} {{ product.product.name }}
+                  </a>
+                  <a :href="product.product.link" target="_blank" rel="noopener noreferrer" class="button-link px-sm ms-lg">Buy</a>
                 </span>
               </div>
             </div>
@@ -147,6 +148,20 @@ section {
   }
 }
 
+.button-link {
+  background-color: transparent;
+  border-radius: var(--space-sm);
+  border: 1px solid black;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(241, 101, 68, 0.05);
+    color: inherit;
+  }
+}
+
 .cover-img {
   width: 100%;
   height: 200px;
@@ -157,10 +172,10 @@ section {
 .content {
   padding: var(--space-xl);
 
-  p {
+  h2 + p {
     font-size: var(--font-size-l);
 
-    &:first-of-type:first-letter {
+    &::first-letter {
       color: var(--color-dark);
       float: left;
       font-size: 75px;
