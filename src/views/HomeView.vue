@@ -55,7 +55,8 @@ export default defineComponent({
       const selectedSkinConcern = selectedSkinConcernLabel ? skinConcernValueByLabel[selectedSkinConcernLabel] : null;
 
       return this.routines.filter((routine) => {
-        return matchesFilter(routine.age_range, selectedAgeRange)
+        return !routine.draft
+          && matchesFilter(routine.age_range, selectedAgeRange)
           && matchesFilter(routine.skin_concern, selectedSkinConcern)
           && (!this.pregnancySafeOnly || routine.pregnancy_safe);
       });
