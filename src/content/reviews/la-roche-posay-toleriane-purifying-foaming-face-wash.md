@@ -9,7 +9,7 @@ tags: ["cleanser", "la roche posay"]
 brands: ["La Roche Posay"]
 product_types: ["Cleanser"]
 pregnancy_safe: true
-draft: false
+draft: true
 image: "/images/reviews/la-roche-posay-toleriane-purifying-foaming-face-wash.webp"
 image_alt: "La Roche Posay"
 ---

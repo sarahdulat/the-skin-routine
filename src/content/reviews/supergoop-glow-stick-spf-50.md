@@ -9,7 +9,7 @@ tags: ["spf", "supergoop!"]
 brands: ["Supergoop!"]
 product_types: ["SPF"]
 pregnancy_safe: false
-draft: false
+draft: true
 image: "/images/reviews/supergoop-glow-stick-spf-50.avif"
 image_alt: ""
 ---

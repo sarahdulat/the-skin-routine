@@ -7,11 +7,11 @@
         </router-link>
       </h1>
       <div class="nav-links">
-        <h5>
+        <!-- <h5>
           <router-link to="/about">About</router-link>
-        </h5>
+        </h5> -->
         <h5>
-          <router-link to="/blog">Reviews</router-link>
+          <router-link to="/blog">Blog</router-link>
         </h5>
       </div>
     </div>
