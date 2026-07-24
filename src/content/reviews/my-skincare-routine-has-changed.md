@@ -8,14 +8,7 @@ last_publication_date: "2026-07-24T12:00:00+0200"
 tags: ["skincare routine", "motherhood", "europe", "pregnancy"]
 brands: ["The Ordinary"]
 product_types: ["Routine"]
-featured_products:
-  [
-    {
-      "brand": "The Ordinary",
-      "name": "Hyaluronic Acid 2% + B5",
-      "link": "https://theordinary.com/en-us/hyaluronic-acid-2-b5-serum-with-ceramides-100637.html",
-    },
-  ]
+featured_products: [{"brand":"The Ordinary","name":"Hyaluronic Acid 2% + B5","link":"https://theordinary.com/en-us/hyaluronic-acid-2-b5-serum-with-ceramides-100637.html"}]
 pregnancy_safe: true
 draft: false
 image: "/images/Sarah.JPG"

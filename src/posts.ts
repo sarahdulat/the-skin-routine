@@ -105,7 +105,7 @@ function escapeHtml(text: string) {
 }
 
 function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
-  const featuredProducts = frontmatter.featured_products ?? [];
+  const featuredProducts = Array.isArray(frontmatter.featured_products) ? frontmatter.featured_products : [];
 
   return {
     alternate_languages: [],
