@@ -53,7 +53,7 @@
         </h4>
         <div class="pt-md">
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
-          <button class="px-sm ms-md">Buy</button>
+          <!-- <button class="px-sm ms-md">Buy</button> -->
         </div>
         <div v-show="isStepExpanded(step.order)" class="mt-sm" :id="`step-description-${step.order}`">
           <div v-html="step.description"></div>

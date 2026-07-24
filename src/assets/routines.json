@@ -2392,5 +2392,137 @@
       "pm": {}
     },
     "draft": false
+  },
+  {
+    "name": "Margot Robbie's Routine",
+    "id": 16,
+    "time": 5.7,
+    "money": 10.2,
+    "point_title": "Margot Robbie's Routine",
+    "point_description": "A simple-but-luxe routine built around deep cleansing, travel exfoliating pads, face mist, Bloc moisture, La Prairie night cream, eye care, and event masks.",
+    "pregnancy_safe": false,
+    "age_range": ["30s"],
+    "skin_concern": ["dry_skin", "fine_lines_and_wrinkles"],
+    "sources": [
+      {
+        "label": "British Vogue 2023",
+        "site": "British Vogue",
+        "link": "https://www.vogue.co.uk/article/margot-robbie-milk-thistle-tea",
+        "favicon": "https://www.vogue.co.uk/favicon.ico",
+        "headline": "The One Surprising Skin Essential Margot Robbie And Her Fellow Barbies Swore By During Filming",
+        "summary": "Skin expert Jasmina Vico describes Robbie's Barbie skin protocol, including facials, depuffing, cold laser, peels, massage, at-home top-end skincare, vitamin C, exfoliating masks, and salicylic acid with ice for blemishes."
+      },
+      {
+        "label": "Vogue 2023",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/margot-robbie-pati-dubroff-barbie-glow",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "headline": "Margot Robbie's Makeup Artist Shares the Secrets Behind Her Barbie Glow",
+        "summary": "Pati Dubroff describes Robbie's Barbie premiere skin prep beginning with Chanel N°1 de Chanel Revitalizing Serum and Sensitive Skin Cream for a plump, hydrated base."
+      },
+      {
+        "label": "ELLE Australia 2018",
+        "site": "ELLE",
+        "link": "https://www.elle.com.au/beauty/beauty-news/margot-robbie-skincare-routine-18394/",
+        "favicon": "https://www.elle.com.au/favicon.ico",
+        "headline": "Margot Robbie's Complete Skincare Routine",
+        "summary": "ELLE Australia rounds up Robbie's personal skincare products, including Lancer cleanser, Peter Thomas Roth pads, Aesop and Caudalie mists, Bloc moisturiser, La Prairie cream and eye cream, 111Skin masks, Talika patches, and lip balms."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Lancer The Method: Cleanse",
+          "link": "https://lancerskincare.com/products/cleanse",
+          "description": "<p>Start with cleanser, especially after work, travel, or a heavy makeup day. ELLE Australia says Robbie prefers to cleanse in the shower and names Lancer The Method Cleanse as her cleanser.</p><p>The same source frames her routine as simple but effective, with cleansing as the step she takes seriously.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Face Mist",
+          "product": "Aesop Immediate Moisture Facial Hydrosol",
+          "link": "https://www.aesop.com/us/p/skin/hydrators/immediate-moisture-facial-hydrosol/",
+          "description": "<p>Mist after cleansing as the toner-style hydration step. ELLE Australia says Aesop Immediate Moisture Facial Hydrosol is one of Robbie's favorites for evening out her complexion and attending to skin concerns.</p><p>She has also mentioned <a href=\"https://www.sephora.com/product/beauty-elixir-P4815\" target=\"_blank\">Caudalie Beauty Elixir</a> when she wants something lighter, saying it has the nicest smell.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Moisturizer",
+          "product": "Bloc Hydrate Your Skin Moisturiser",
+          "link": "https://blocskincare.com/products/hydrate-your-skin",
+          "description": "<p>Use as the daytime hydration step after mist. ELLE Australia says Robbie liked Bloc Cosmetics' day-night moisturiser from an Australian dermatologist's skincare line.</p><p>The original Bloc Cosmetics Citrus Moisturiser is not reliably available now, so this links Bloc's current Hydrate Your Skin Moisturiser as the same-brand current moisturiser replacement.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Eye Care",
+          "product": "La Prairie Skin Caviar Luxe Eye Cream",
+          "link": "https://www.laprairie.com/en-us/collections/lifting-and-firming-creams/products/luxe-eye-cream-95790-01435-75",
+          "description": "<p>Tap around the eye area after the first hydration layers. ELLE Australia says Robbie follows her cleanse and first round of hydration with La Prairie eye cream to help with under-eye bags or crow's feet.</p><p>Her original La Prairie Cellular Swiss Ice Crystal Eye Cream is no longer available at major retailers, so this links a current La Prairie Skin Caviar eye cream.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Lip Balm",
+          "product": "Burt's Bees Tinted Lip Balm",
+          "link": "https://www.amazon.com/s?k=Burt%27s+Bees+Tinted+Lip+Balm",
+          "description": "<p>Finish with tinted lip balm when lips need comfort and a little color. ELLE Australia says Robbie counts Burt's Bees Tinted Lip Balm as a favorite.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Lancer The Method: Cleanse",
+          "link": "https://lancerskincare.com/products/cleanse",
+          "description": "<p>Cleanse at night to remove makeup and the day. ELLE Australia says Robbie learned how important it is to clean skin before bed, and its roundup names Lancer The Method Cleanse as her cleanser.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Travel Exfoliating Pads",
+          "product": "Peter Thomas Roth Max Complexion Correction Pads",
+          "link": "https://www.peterthomasroth.com/max-complexion-correction-pads-1301156.html",
+          "description": "<p>Use as a travel or occasional exfoliating cleanse step rather than a nightly default. ELLE Australia says Robbie relies on Peter Thomas Roth complexion correction pads when she is on planes and cannot wash her face, because they leave her face feeling good.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Face Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://www.sephora.com/product/beauty-elixir-P4815",
+          "description": "<p>Mist after cleansing or after the exfoliating pad step. ELLE Australia says Robbie turns to Caudalie Beauty Elixir when she wants a lighter mist and mentions loving its scent.</p><p>Her other source-backed mist is <a href=\"https://www.aesop.com/us/p/skin/hydrators/immediate-moisture-facial-hydrosol/\" target=\"_blank\">Aesop Immediate Moisture Facial Hydrosol</a>.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Eye Patches",
+          "product": "Talika Eye Therapy Patches",
+          "link": "https://www.beautybay.com/p/talika/eye-therapy-patch/",
+          "description": "<p>Use occasionally while getting ready or when the under-eye area looks puffy. ELLE Australia says Robbie puts on Talika under-eye patches while having her hair done because they help with puffiness.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Sheet Mask",
+          "product": "111SKIN Y Theorem Bio Cellulose Facial Mask",
+          "link": "https://111skin.com/en-us/collections/masks/products/y-theorem-bio-cellulose-facial-mask",
+          "description": "<p>Use as an occasional pre-event mask, not an every-night requirement. ELLE Australia says Robbie was hooked on 111Skin-style sheet masks by makeup artist Pati Dubroff and likes them while getting ready for events.</p><p>The source named Skin111 Bio Cellulose Facial Treatment Mask; this links the current 111SKIN Y Theorem Bio Cellulose Facial Mask as the same-brand/current bio-cellulose mask.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Moisturizer",
+          "product": "La Prairie Skin Caviar Luxe Cream",
+          "link": "https://www.laprairie.com/en-us/products/luxe-cream-mv0060?nogeoip=true",
+          "description": "<p>Use as the richer evening moisturizer. ELLE Australia says Robbie taps a more decadent La Prairie moisturizer in the evening, identifying the product as La Prairie Skin Caviar.</p>"
+        }
+      }
+    },
+    "draft": false
   }
 ]

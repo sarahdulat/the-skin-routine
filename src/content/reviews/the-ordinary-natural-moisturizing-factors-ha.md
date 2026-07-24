@@ -9,6 +9,7 @@ tags: ["moisturizer", "the ordinary"]
 brands: ["The Ordinary"]
 product_types: ["Moisturizer"]
 pregnancy_safe: true
+draft: false
 image: "/images/reviews/the-ordinary-natural-moisturizing-factors-ha.jpg"
 image_alt: "The Ordinary Natural Moisturizing Factors + HA "
 ---

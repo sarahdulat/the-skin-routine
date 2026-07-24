@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "generate:rss": "node scripts/generate-rss.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
-    "prebuild": "npm run generate:sitemap",
+    "prebuild": "npm run generate:sitemap && npm run generate:rss",
     "build": "vite build",
     "serve": "vite preview",
     "test": "vitest",

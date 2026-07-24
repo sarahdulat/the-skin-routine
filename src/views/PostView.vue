@@ -1,5 +1,6 @@
 <template>
   <main>
+    <SEO :post="post" />
     <div>
       <ReviewBar :prevPost="prevPost" :nextPost="nextPost" :isLoading="isReviewBarLoading" />
       <div class="scroll-container">
@@ -66,6 +67,7 @@
 <script lang="ts">
 import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
+import SEO from "../components/SEO.vue";
 
 import { format } from "date-fns";
 import { Post } from "../types";
@@ -75,7 +77,8 @@ export default {
   name: 'blog-post',
   components: {
     ReviewBar,
-    PageSidebar
+    PageSidebar,
+    SEO
   },
   data() {
     return {

@@ -51,10 +51,12 @@ async function getReviewUrls() {
   const reviewsDir = path.join(rootDir, "src/content/reviews");
   const files = (await readdir(reviewsDir)).filter((file) => file.endsWith(".md")).sort();
 
-  return Promise.all(
+  const urls = await Promise.all(
     files.map(async (file) => {
       const source = await readFile(path.join(reviewsDir, file), "utf8");
       const frontmatter = readFrontmatter(source);
+      if (frontmatter.draft) return null;
+
       const uid = frontmatter.uid ?? file.replace(/\.md$/, "");
       const lastmod = String(frontmatter.last_publication_date ?? frontmatter.date ?? today).slice(0, 10);
 
@@ -66,6 +68,8 @@ async function getReviewUrls() {
       };
     }),
   );
+
+  return urls.filter(Boolean);
 }
 
 function toUrlEntry(entry) {

@@ -11,6 +11,7 @@ type ReviewFrontmatter = {
   brands: string[];
   product_types: string[];
   pregnancy_safe: boolean;
+  draft: boolean;
   image: string;
   image_alt: string;
 };
@@ -158,8 +159,13 @@ function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
 const posts = Object.values(reviewFiles)
   .map((source) => {
     const { frontmatter, body } = parseMarkdownFile(source);
-    return toPost(frontmatter, body);
+    return {
+      frontmatter,
+      post: toPost(frontmatter, body),
+    };
   })
+  .filter(({ frontmatter }) => !frontmatter.draft)
+  .map(({ post }) => post)
   .sort((a, b) => new Date(b.first_publication_date).getTime() - new Date(a.first_publication_date).getTime());
 
 export function getAllPosts() {
