@@ -145,13 +145,17 @@ aside {
   z-index: 2;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   min-height: 0;
+  overflow-x: hidden;
 }
 
 .scroll-container {
   flex: 1;
   min-height: 0;
-  overflow: auto;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .routine-alert {
@@ -183,9 +187,12 @@ h4 {
   justify-content: space-between;
   gap: var(--space-lg);
   flex-wrap: wrap;
+  min-width: 0;
 
   h2 {
     margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -348,9 +355,12 @@ h4 {
   grid-template-columns: auto minmax(0, 1fr);
   column-gap: var(--space-md);
   align-items: start;
+  min-width: 0;
+  overflow-wrap: anywhere;
 
   >div {
     grid-column: 1 / -1;
+    min-width: 0;
   }
 
   h4 {
@@ -385,6 +395,7 @@ h4 {
 
 a {
   color: var(--color-primary);
+  overflow-wrap: anywhere;
 }
 
 button {
