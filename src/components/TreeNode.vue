@@ -25,8 +25,8 @@ export default defineComponent({
       required: true,
     },
   },
-  setup() {
-    const isExpanded = ref(false);
+  setup(props) {
+    const isExpanded = ref(Boolean(props.node.defaultExpanded));
 
     const toggleExpand = () => {
       isExpanded.value = !isExpanded.value;

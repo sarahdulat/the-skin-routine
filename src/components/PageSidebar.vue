@@ -36,7 +36,17 @@ export default defineComponent({
         const month = format(new Date(post.first_publication_date), 'MMMM')
 
         if (archive.length === 0) {
-          archive.push({ name: year, children: [{ name: month, children: [{ name: post.data.title[0].text, uid: post.uid }] }] })
+          archive.push({
+            name: year,
+            defaultExpanded: true,
+            children: [
+              {
+                name: month,
+                defaultExpanded: true,
+                children: [{ name: post.data.title[0].text, uid: post.uid }],
+              },
+            ],
+          })
         } else {
           let matchingYearNode = archive.find(node => node.name === year)
 

@@ -1,6 +1,7 @@
 export type BlogArchiveNode = {
   uid?: string;
   name: string;
+  defaultExpanded?: boolean;
   children?: BlogArchiveNode[];
 }
 

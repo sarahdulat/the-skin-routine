@@ -24,7 +24,7 @@
                   <a :href="product.product.link" target="_blank" rel="noopener noreferrer">
                     <span class="glyph me-md">🩸</span>{{ product.product.brand }} {{ product.product.name }}
                   </a>
-                  <a :href="product.product.link" target="_blank" rel="noopener noreferrer" class="button-link px-sm ms-lg">Buy</a>
+                  <!-- <a :href="product.product.link" target="_blank" rel="noopener noreferrer" class="button-link px-sm ms-lg">Buy</a> -->
                 </span>
               </div>
             </div>
@@ -172,7 +172,7 @@ section {
 .content {
   padding: var(--space-xl);
 
-  h2 + p {
+  h2+p {
     font-size: var(--font-size-l);
 
     &::first-letter {
