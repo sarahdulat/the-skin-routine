@@ -85,4 +85,20 @@ aside {
   max-height: calc(100vh - 145px);
   overflow: scroll;
 }
+
+@media (max-width: 768px) {
+  aside {
+    flex: none;
+    height: auto;
+    max-width: none;
+    border-left: 0;
+    border-top: 1px solid var(--color-dark);
+    padding: 0 var(--space-lg) var(--space-xl);
+  }
+
+  .scroll-container {
+    max-height: none;
+    overflow: visible;
+  }
+}
 </style>

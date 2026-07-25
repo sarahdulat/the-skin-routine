@@ -65,7 +65,7 @@ export default defineComponent({
 
       const margin = {
         top: Math.min(48, containerHeight * 0.14),
-        right: Math.min(64, containerWidth * 0.18),
+        right: Math.min(34, containerWidth * 0.1),
         bottom: 12,
         left: 12,
       };
@@ -221,11 +221,11 @@ export default defineComponent({
 
       // Add Y-axis label
       svg.append("text")
-        .attr("x", width + margin.right / 2)
-        .attr("y", height / 2)
+        .attr("x", 0)
+        .attr("y", 0)
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
-        .attr("transform", `${width + margin.right / 2}, ${height / 2})`)
+        .attr("transform", `translate(${width + margin.right / 2}, ${height / 2}) rotate(90)`)
         .style("font-size", "16px")
         .text("Time");
     };

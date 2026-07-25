@@ -92,4 +92,19 @@ main {
   min-height: 0;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .chart {
+    grid-template-rows: auto 28rem;
+    min-height: auto;
+    overflow: visible;
+  }
+}
 </style>

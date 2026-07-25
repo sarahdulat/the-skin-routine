@@ -158,4 +158,30 @@ main {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  main {
+    display: block;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .blog-content {
+    display: block;
+    flex: none;
+    overflow: visible;
+  }
+
+  .scroll-container {
+    display: block;
+    overflow: visible;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+    padding: 0 var(--space-lg) var(--space-xl);
+  }
+}
 </style>

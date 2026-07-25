@@ -1,16 +1,16 @@
 <template>
   <footer>
-    <div>
-      <div class="me-auto">
+    <div class="footer-inner">
+      <div class="footer-contact">
         <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
+        <button class="footer-link" type="button" @click="showDisclaimer = true">Affiliate Disclosure</button>
       </div>
-      <div><button class="footer-link" type="button" @click="showDisclaimer = true">Affiliate Disclosure</button></div>
-      <div class="ms-auto text-nowrap">
+      <div class="footer-socials" aria-label="Social links">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-instagram" alt="Instagram"></i>
         </a>
         <a href="http://www.threads.com/@the_skinroutine" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-threads ms-lg" alt="Threads"></i>
+          <i class="bi bi-threads" alt="Threads"></i>
         </a>
         <!-- <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter-x ms-lg" alt="x"></i>
@@ -54,14 +54,32 @@ footer {
   bottom: 0;
   padding: var(--space-lg) var(--space-xl);
 
-  >div {
+  .footer-inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
   }
 
   i {
     font-size: var(--fontSize-xl);
   }
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex: none;
+  white-space: nowrap;
 }
 
 .footer-link {
@@ -120,6 +138,17 @@ footer {
 
   &:hover {
     background: rgba(241, 101, 68, 0.05);
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .footer-contact {
+    font-size: var(--fontSize-sm);
+    line-height: var(--lineHeight-sm);
   }
 }
 </style>

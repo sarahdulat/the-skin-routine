@@ -94,4 +94,19 @@ select {
 select:focus {
   outline: none;
 }
+
+@media (max-width: 768px) {
+  .dropdown-container {
+    display: block;
+    margin: 0;
+    min-width: 0;
+  }
+
+  select {
+    width: 100%;
+    max-width: 100%;
+    padding: var(--space-sm) var(--space-lg) var(--space-sm) var(--space-sm);
+    font-size: var(--fontSize-sm);
+  }
+}
 </style>

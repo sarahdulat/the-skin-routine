@@ -4,15 +4,17 @@
       <div class="routine-header my-lg">
         <h2>{{ store.currentRoutine.name }}</h2>
         <div v-if="firstSource" class="sources" aria-label="Routine sources">
-          <div class="source-overflow">
-            <button class="source-pill" type="button" :aria-label="`${sources.length} routine sources`">
+          <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
+            @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
+            <button class="source-pill" type="button" :aria-expanded="isSourcePopoverOpen"
+              :aria-label="`${sources.length} routine sources`" @click.stop="toggleSourcePopover">
               <img v-if="shouldShowFavicon(firstSource)" :src="firstSource.favicon"
                 :alt="`${firstSource.site || firstSource.label} icon`" @error="markFaviconFailed(firstSource)" />
               <span v-else class="source-favicon-fallback glyph" aria-hidden="true">🩸</span>
               <span>{{ firstSourceName }}</span>
               <span v-if="hasMultipleSources" class="source-count">+{{ additionalSourceCount }}</span>
             </button>
-            <div class="source-popover" role="tooltip">
+            <div class="source-popover" role="tooltip" :style="sourcePopoverStyle">
               <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
                 rel="noopener noreferrer">
                 <img v-if="source.image" class="source-image" :src="source.image"
@@ -64,7 +66,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, watch } from 'vue';
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 import { store } from '../store'
 
 type RoutineSource = {
@@ -96,6 +98,10 @@ const hasMultipleSources = computed(() => sources.value.length > 1);
 const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 0));
 const expandedSteps = ref(new Set<string>());
 const failedFavicons = ref(new Set<string>());
+const isSourcePopoverOpen = ref(false);
+const sourceOverflow = ref<HTMLElement | null>(null);
+const sourcePopoverStyle = ref<Record<string, string>>({});
+let sourcePopoverFrame = 0;
 
 const getFaviconKey = (source: RoutineSource) => source.favicon || source.link;
 
@@ -125,6 +131,45 @@ const toggleStep = (order: string) => {
   expandedSteps.value = nextExpandedSteps;
 };
 
+const updateSourcePopoverPosition = () => {
+  if (!sourceOverflow.value) return;
+
+  const viewportPadding = 16;
+  const popoverWidth = Math.min(384, window.innerWidth - viewportPadding * 2);
+  const pillRect = sourceOverflow.value.getBoundingClientRect();
+  const preferredLeft = pillRect.left;
+  const maxLeft = window.innerWidth - viewportPadding - popoverWidth;
+  const viewportLeft = Math.min(Math.max(preferredLeft, viewportPadding), maxLeft);
+
+  sourcePopoverStyle.value = {
+    left: `${viewportLeft}px`,
+    top: `${pillRect.bottom + 8}px`,
+    width: `${popoverWidth}px`,
+  };
+};
+
+const updateOpenSourcePopoverPosition = () => {
+  if (isSourcePopoverOpen.value) updateSourcePopoverPosition();
+};
+
+const scheduleOpenSourcePopoverPosition = () => {
+  if (!isSourcePopoverOpen.value || sourcePopoverFrame) return;
+
+  sourcePopoverFrame = window.requestAnimationFrame(() => {
+    sourcePopoverFrame = 0;
+    updateSourcePopoverPosition();
+  });
+};
+
+const toggleSourcePopover = async () => {
+  isSourcePopoverOpen.value = !isSourcePopoverOpen.value;
+
+  if (isSourcePopoverOpen.value) {
+    await nextTick();
+    updateSourcePopoverPosition();
+  }
+};
+
 const defaultToAvailableRoutineTime = () => {
   if (routineTime.value === 'am' && amSteps.value.length === 0 && pmSteps.value.length > 0) {
     store.setRoutineTime('pm');
@@ -134,7 +179,29 @@ const defaultToAvailableRoutineTime = () => {
 };
 
 watch(currentRoutineId, defaultToAvailableRoutineTime, { immediate: true });
+watch(currentRoutineId, () => {
+  isSourcePopoverOpen.value = false;
+});
+watch(isSourcePopoverOpen, async (isOpen) => {
+  if (!isOpen) return;
+  await nextTick();
+  updateSourcePopoverPosition();
+});
 watch(steps, resetExpandedSteps, { immediate: true });
+
+onMounted(() => {
+  window.addEventListener("resize", updateOpenSourcePopoverPosition);
+  window.addEventListener("scroll", scheduleOpenSourcePopoverPosition, true);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateOpenSourcePopoverPosition);
+  window.removeEventListener("scroll", scheduleOpenSourcePopoverPosition, true);
+
+  if (sourcePopoverFrame) {
+    window.cancelAnimationFrame(sourcePopoverFrame);
+  }
+});
 </script>
 
 <style lang="scss" scoped>
@@ -252,9 +319,9 @@ h4 {
 }
 
 .source-popover {
-  position: absolute;
-  right: 0;
-  top: calc(100% + var(--space-sm));
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
   display: none;
   width: min(24rem, calc(100vw - 2rem));
   overflow: hidden;
@@ -263,7 +330,7 @@ h4 {
   background: var(--color-light);
   color: var(--color-dark);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 20;
+  z-index: 1000;
 }
 
 .source-card {
@@ -346,7 +413,8 @@ h4 {
 }
 
 .source-overflow:hover .source-popover,
-.source-overflow:focus-within .source-popover {
+.source-overflow:focus-within .source-popover,
+.source-overflow.open .source-popover {
   display: block;
 }
 
@@ -493,5 +561,38 @@ input+.toggleContainer div:last-child {
   color: var(--color-dark);
   transition: color 0.3s;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+@media (max-width: 768px) {
+  aside {
+    border-left: 0;
+    border-top: 1px solid var(--color-dark);
+    padding: 0 var(--space-lg) var(--space-xl);
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .scroll-container {
+    overflow: visible;
+  }
+
+  .routine-header {
+    align-items: flex-start;
+  }
+
+  .source-popover {
+    max-width: calc(100vw - (var(--space-lg) * 2));
+    max-height: min(65dvh, 28rem);
+    overflow: auto;
+  }
+
+  .source-overflow:hover .source-popover,
+  .source-overflow:focus-within .source-popover {
+    display: none;
+  }
+
+  .source-overflow.open .source-popover {
+    display: block;
+  }
 }
 </style>
