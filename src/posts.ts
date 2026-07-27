@@ -184,13 +184,14 @@ export function getAllPosts() {
   return posts;
 }
 
-export function getPostsByFilters(filters: { brands?: string; productTypes?: string; pregnancySafeOnly?: boolean }) {
+export function getPostsByFilters(filters: { brands?: string; productTypes?: string; tag?: string; pregnancySafeOnly?: boolean }) {
   return posts.filter((post) => {
     const brandMatch = matchesFilter(filters.brands, post.data.brands.map((item) => item.brand));
     const productTypeMatch = matchesFilter(filters.productTypes, post.data.product_types.map((item) => item.product_type));
+    const tagMatch = matchesFilter(filters.tag, post.tags);
     const pregnancySafeMatch = !filters.pregnancySafeOnly || post.data.pregnancy_safe;
 
-    return brandMatch && productTypeMatch && pregnancySafeMatch;
+    return brandMatch && productTypeMatch && tagMatch && pregnancySafeMatch;
   });
 }
 

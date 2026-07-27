@@ -10,6 +10,7 @@
         <Dropdown @change="" v-for="dropdown in dropdowns" :key="dropdown.defaultValue"
           :defaultValue="dropdown.defaultValue" :items="dropdown.items" />
       </span>
+      <span v-if="activeTag" class="active-tag text-uppercase font-sans">#{{ activeTag }}</span>
       <span class="pregnancy-group ms-auto">
         <PopoverComponent triggerType="click">
           <template #trigger>
@@ -64,6 +65,11 @@ export default defineComponent({
       type: Boolean,
       required: false,
       default: false,
+    },
+    activeTag: {
+      type: String,
+      required: false,
+      default: "",
     }
   },
   emits: ["update:pregnancySafeOnly"],
@@ -102,6 +108,12 @@ export default defineComponent({
     flex-wrap: wrap;
     gap: var(--space-md);
   }
+}
+
+.active-tag {
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-sm);
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

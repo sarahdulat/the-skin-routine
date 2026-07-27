@@ -1,7 +1,8 @@
 <template>
   <main>
     <div class="blog-content">
-      <FilterBar :dropdowns="[brands, product_type]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
+      <FilterBar :dropdowns="[brands, product_type]" :active-tag="activeTag"
+        v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <div v-if="!isLoading" class="scroll-container">
         <div class="posts">
           <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
@@ -11,9 +12,9 @@
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
-              <span class="text-uppercase font-sans">
+              <router-link class="tag-link text-uppercase font-sans" :to="{ name: 'blog', query: { Tag: tag } }">
                 #{{ tag }}
-              </span>
+              </router-link>
             </span>
             <p class="mt-lg font-sans">{{ post.data.summary[0].text }}</p>
           </div>
@@ -82,6 +83,7 @@ export default {
         this.posts = getPostsByFilters({
           brands: this.getFilterParam(query['Brands']),
           productTypes: this.getFilterParam(query['Product Types']),
+          tag: this.getFilterParam(query['Tag']),
           pregnancySafeOnly: this.pregnancySafeOnly,
         })
       } finally {
@@ -105,6 +107,9 @@ export default {
     },
     product_type() {
       return { defaultValue: 'Product Types', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.product_types.map(p => p.product_type)))].flat() };
+    },
+    activeTag() {
+      return this.getFilterParam(this.$route.query['Tag']) ?? "";
     }
   }
 }
@@ -144,7 +149,7 @@ main {
   img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 1rem;
   }
 }
@@ -157,6 +162,14 @@ main {
 
 a {
   text-decoration: none;
+}
+
+.tag-link {
+  display: inline-block;
+
+  &:hover {
+    color: var(--color-primary);
+  }
 }
 
 @media (max-width: 768px) {

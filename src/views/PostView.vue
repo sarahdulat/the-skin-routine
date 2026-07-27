@@ -5,7 +5,7 @@
       <ReviewBar :prevPost="prevPost" :nextPost="nextPost" :isLoading="isReviewBarLoading" />
       <div class="scroll-container">
         <div v-if="post">
-          <div>
+          <div class="cover-media">
             <img :src="post.data.image.url" class="cover-img" :alt="post.data.image.alt">
           </div>
           <section>
@@ -14,9 +14,10 @@
               <p v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)">Updated: {{
                 formatDate(post.last_publication_date) }}</p>
               <div class="mt-lg">
-                <span v-for="tag in post.tags" :key="tag" class="text-uppercase font-sans me-md">
+                <router-link v-for="tag in post.tags" :key="tag" class="tag-link text-uppercase font-sans me-md"
+                  :to="{ name: 'blog', query: { Tag: tag } }">
                   #{{ tag }}
-                </span>
+                </router-link>
               </div>
               <div v-if="post.data.products.length > 0" class="featured-products mt-xl">
                 <p>Featured Products</p>
@@ -39,7 +40,7 @@
         </div>
         <!-- Loading State -->
         <div v-else>
-          <div>
+          <div class="cover-media">
             <div class="placeholder placeholder-wave cover-img"></div>
           </div>
           <section>
@@ -160,6 +161,15 @@ section {
   }
 }
 
+.tag-link {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
 .button-link {
   background-color: transparent;
   border-radius: var(--space-sm);
@@ -174,11 +184,25 @@ section {
   }
 }
 
+.cover-media {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  padding: var(--space-lg);
+}
+
 .cover-img {
-  width: 100%;
-  height: 200px;
-  padding: 0;
-  object-fit: cover;
+  display: block;
+  width: auto;
+  max-width: min(100%, 960px);
+  height: auto;
+  max-height: min(60vh, 400px);
+  object-fit: contain;
+}
+
+.cover-img.placeholder {
+  width: min(100%, 960px);
+  height: clamp(300px, 50vh, 560px);
 }
 
 .content {
@@ -202,6 +226,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -222,8 +247,13 @@ section {
     display: block;
   }
 
+  .cover-media {
+    min-height: 240px;
+    padding: var(--space-lg);
+  }
+
   .cover-img {
-    height: 240px;
+    max-height: 70vh;
   }
 
   .content {

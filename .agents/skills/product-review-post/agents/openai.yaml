@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Review Post"
+  short_description: "Research and draft skincare product reviews"
+  default_prompt: "Use $product-review-post to research and draft a skincare product review for The Skin Routine."
