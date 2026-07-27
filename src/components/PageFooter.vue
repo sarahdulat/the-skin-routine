@@ -3,7 +3,11 @@
     <div class="footer-inner">
       <div class="footer-contact">
         <a href="mailto:hello@theskinroutine.com">hello@theskinroutine.com</a>
+      </div>
+      <div class="footer-legal">
         <button class="footer-link" type="button" @click="showDisclaimer = true">Affiliate Disclosure</button>
+        <button class="footer-link" type="button" @click="showPrivacyPolicy = true">Privacy Policy</button>
+        <button class="footer-link" type="button" @click="openCookieSettings">Cookie Settings</button>
       </div>
       <div class="footer-socials" aria-label="Social links">
         <a href="http://www.instagram.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
@@ -28,20 +32,36 @@
         </div>
       </div>
     </Teleport>
+    <Teleport to="body">
+      <div v-if="showPrivacyPolicy" class="modal-backdrop" @click="showPrivacyPolicy = false">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-policy-title" @click.stop>
+          <button class="modal-close" type="button" aria-label="Close" @click="showPrivacyPolicy = false">x</button>
+          <PrivacyPolicyView />
+        </div>
+      </div>
+    </Teleport>
   </footer>
 </template>
 
 <script lang="ts">
 import DisclaimerView from "../views/DisclaimerView.vue";
+import PrivacyPolicyView from "../views/PrivacyPolicyView.vue";
 
 export default {
   components: {
     DisclaimerView,
+    PrivacyPolicyView,
   },
   data() {
     return {
       showDisclaimer: false,
+      showPrivacyPolicy: false,
     };
+  },
+  methods: {
+    openCookieSettings() {
+      window.dispatchEvent(new Event("open-cookie-settings"));
+    },
   },
 };
 </script>
@@ -55,9 +75,9 @@ footer {
   padding: var(--space-lg) var(--space-xl);
 
   .footer-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-    justify-content: space-between;
     gap: var(--space-lg);
   }
 
@@ -67,16 +87,25 @@ footer {
 }
 
 .footer-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-sm);
   min-width: 0;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  min-width: 0;
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+  text-align: center;
 }
 
 .footer-socials {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: var(--space-lg);
   flex: none;
   white-space: nowrap;
@@ -146,9 +175,32 @@ footer {
     padding: var(--space-md) var(--space-lg);
   }
 
+  .footer-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "contact socials"
+      "legal socials";
+    align-items: center;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-sm);
+  }
+
   .footer-contact {
+    grid-area: contact;
     font-size: var(--fontSize-sm);
     line-height: var(--lineHeight-sm);
+  }
+
+  .footer-legal {
+    grid-area: legal;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    text-align: left;
+  }
+
+  .footer-socials {
+    grid-area: socials;
   }
 }
 </style>

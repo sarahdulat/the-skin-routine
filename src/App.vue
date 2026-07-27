@@ -5,15 +5,18 @@
       <router-view />
     </div>
     <PageFooter />
+    <CookieConsentBanner />
   </div>
 </template>
 
 <script lang="ts">
+import CookieConsentBanner from "./components/CookieConsentBanner.vue";
 import PageFooter from "./components/PageFooter.vue";
 import NavBar from "./components/NavBar.vue";
 export default {
   name: "App",
   components: {
+    CookieConsentBanner,
     PageFooter,
     NavBar,
   }
