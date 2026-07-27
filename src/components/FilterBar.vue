@@ -10,7 +10,12 @@
         <Dropdown @change="" v-for="dropdown in dropdowns" :key="dropdown.defaultValue"
           :defaultValue="dropdown.defaultValue" :items="dropdown.items" />
       </span>
-      <span v-if="activeTag" class="active-tag text-uppercase font-sans">#{{ activeTag }}</span>
+      <span v-if="activeTag" class="active-tag text-uppercase font-sans">
+        #{{ activeTag }}
+        <button class="clear-tag" type="button" :aria-label="`Remove ${activeTag} tag filter`" @click="clearActiveTag">
+          <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+        </button>
+      </span>
       <span class="pregnancy-group ms-auto">
         <PopoverComponent triggerType="click">
           <template #trigger>
@@ -73,6 +78,13 @@ export default defineComponent({
     }
   },
   emits: ["update:pregnancySafeOnly"],
+  methods: {
+    clearActiveTag() {
+      const query = { ...this.$route.query };
+      delete query.Tag;
+      this.$router.push({ query });
+    },
+  },
 });
 </script>
 
@@ -111,9 +123,28 @@ export default defineComponent({
 }
 
 .active-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-size: var(--fontSize-sm);
   line-height: var(--lineHeight-sm);
   white-space: nowrap;
+}
+
+.clear-tag {
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary);
+  }
 }
 
 @media (max-width: 768px) {

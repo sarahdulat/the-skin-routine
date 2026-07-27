@@ -163,7 +163,6 @@ section {
 
 .tag-link {
   display: inline-block;
-  cursor: pointer;
 
   &:hover {
     color: var(--color-primary);
@@ -176,7 +175,6 @@ section {
   border: 1px solid black;
   color: inherit;
   display: inline-block;
-  cursor: pointer;
 
   &:hover {
     background-color: rgba(241, 101, 68, 0.05);
@@ -226,7 +224,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {

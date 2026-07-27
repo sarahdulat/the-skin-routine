@@ -20,7 +20,15 @@ type RoutinePoint = {
   y: number;
   point_title: string;
   point_description: string;
+  marker_image?: string;
   routine: Routine;
+};
+
+type RoutineWithMarkerImage = Routine & {
+  celebrity_face_image?: string;
+  sources?: Array<{
+    image?: string;
+  }>;
 };
 
 export default defineComponent({
@@ -86,13 +94,38 @@ export default defineComponent({
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
       const axisMax = 12;
-      const data: RoutinePoint[] = props.routines.map((routine) => ({
-        x: Math.min(Math.max(routine.time, 0), axisMax),
-        y: Math.min(Math.max(routine.money, 0), axisMax),
-        point_title: routine.point_title,
-        point_description: routine.point_description,
-        routine,
-      }));
+      const markerSize = 28;
+      const markerRadius = markerSize / 2;
+      const selectedStrokeWidth = 3;
+      const defaultStrokeWidth = 2;
+      const data: RoutinePoint[] = props.routines.map((routine) => {
+        const routineWithMarkerImage = routine as RoutineWithMarkerImage;
+
+        return {
+          x: Math.min(Math.max(routine.time, 0), axisMax),
+          y: Math.min(Math.max(routine.money, 0), axisMax),
+          point_title: routine.point_title,
+          point_description: routine.point_description,
+          marker_image: routineWithMarkerImage.celebrity_face_image || routineWithMarkerImage.sources?.[0]?.image,
+          routine,
+        };
+      });
+      const imagePoints = data.filter((point) => point.marker_image);
+      const standardPoints = data.filter((point) => !point.marker_image);
+      const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine.id;
+
+      const defs = svgRoot.append('defs');
+
+      defs
+        .selectAll('clipPath')
+        .data(imagePoints)
+        .enter()
+        .append('clipPath')
+        .attr('id', (d) => `routine-marker-clip-${d.routine.id}`)
+        .append('circle')
+        .attr('r', markerRadius)
+        .attr('cx', markerRadius)
+        .attr('cy', markerRadius);
 
       // Create scales for the x and y axes
       const xScale = d3.scaleLinear().domain([0, axisMax]).range([0, width]);
@@ -177,17 +210,17 @@ export default defineComponent({
         .attr('stroke', '#343A40')
         .attr('stroke-width', 2);
 
-      // Add points (scatter plot)
+      // Add standard points (scatter plot)
       svg
         .selectAll('.dot')
-        .data(data)
+        .data(standardPoints)
         .enter()
         .append('circle')
         .attr('class', 'dot')
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 10)
-        .attr('fill', (d) => d.routine.id === store.currentRoutine.id ? '#343A40' : '#C85238')
+        .attr('fill', (d) => isSelected(d) ? '#343A40' : '#C85238')
         .style('cursor', 'pointer')
         .on("mouseover", function (event, d) {
           d3.select(this).attr("fill", "#343A40");
@@ -198,7 +231,7 @@ export default defineComponent({
           );
         })
         .on("mouseout", function (_event, d) {
-          d3.select(this).attr("fill", d.routine.id === store.currentRoutine.id ? '#343A40' : '#C85238');
+          d3.select(this).attr("fill", isSelected(d) ? '#343A40' : '#C85238');
           closePopover();
         })
         .on("click", function (event, d) {
@@ -209,6 +242,79 @@ export default defineComponent({
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.dot')
             .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
+
+          d3.select(graph.value)
+            .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
+            .attr('stroke', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238')
+            .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
+        });
+
+      // Add image points for source-backed / celebrity-style routines.
+      const imageDot = svg
+        .selectAll('.image-dot')
+        .data(imagePoints)
+        .enter()
+        .append('g')
+        .attr('class', 'image-dot')
+        .attr('transform', (d) => `translate(${xScale(d.x) - markerRadius}, ${yScale(d.y) - markerRadius})`)
+        .style('cursor', 'pointer');
+
+      imageDot
+        .append('circle')
+        .attr('class', 'image-dot-background')
+        .attr('cx', markerRadius)
+        .attr('cy', markerRadius)
+        .attr('r', markerRadius)
+        .attr('fill', '#fbfaf4');
+
+      imageDot
+        .append('image')
+        .attr('href', (d) => d.marker_image ?? '')
+        .attr('width', markerSize)
+        .attr('height', markerSize)
+        .attr('clip-path', (d) => `url(#routine-marker-clip-${d.routine.id})`)
+        .attr('preserveAspectRatio', 'xMidYMid slice');
+
+      imageDot
+        .append('circle')
+        .attr('class', 'image-dot-ring')
+        .attr('cx', markerRadius)
+        .attr('cy', markerRadius)
+        .attr('r', markerRadius)
+        .attr('fill', 'none')
+        .attr('stroke', (d) => isSelected(d) ? '#343A40' : '#C85238')
+        .attr('stroke-width', (d) => isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
+
+      imageDot
+        .on("mouseover", function (event, d) {
+          d3.select(this).select('.image-dot-ring')
+            .attr('stroke', '#343A40')
+            .attr('stroke-width', selectedStrokeWidth);
+          event.stopPropagation();
+          showPopover(
+            { point_title: d.point_title, point_description: d.point_description },
+            { x: event.clientX, y: event.clientY }
+          );
+        })
+        .on("mouseout", function (_event, d) {
+          d3.select(this).select('.image-dot-ring')
+            .attr('stroke', isSelected(d) ? '#343A40' : '#C85238')
+            .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
+          closePopover();
+        })
+        .on("click", function (event, d) {
+          event.stopPropagation();
+          store.setCurrentRoutine(d.routine);
+          closePopover();
+
+          d3.select(graph.value)
+            .selectAll<SVGCircleElement, RoutinePoint>('.dot')
+            .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
+
+          d3.select(graph.value)
+            .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
+            .attr('stroke', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238')
+            .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
         });
 
       // Add X-axis label

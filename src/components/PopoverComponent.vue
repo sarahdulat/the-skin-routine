@@ -105,6 +105,7 @@ export default defineComponent({
 .popover-wrapper {
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 
 .popover {

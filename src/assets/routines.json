@@ -381,6 +381,7 @@
     "money": 7.4,
     "point_title": "Hailey Bieber's Routine",
     "point_description": "A hydration-heavy glazed-skin routine focused on gentle cleansing, barrier support, and SPF.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hailey_Bieber_at_WWD_Style_Awards_2026.jpg/330px-Hailey_Bieber_at_WWD_Style_Awards_2026.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s",
@@ -562,6 +563,7 @@
     "money": 11.2,
     "point_title": "Dua Lipa's Routine",
     "point_description": "A performance-proof routine built around cleansing, lightweight repair, glow, barrier support, and daily SPF.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dua_Lipa-69798_%28cropped%29.jpg/330px-Dua_Lipa-69798_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s",
@@ -737,6 +739,7 @@
     "money": 9.2,
     "point_title": "Selena Gomez's Routine",
     "point_description": "A luxe, acne-conscious routine centered on gentle makeup removal, hydration, sun protection, and lupus-sensitive skin.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg/330px-Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s",
@@ -921,6 +924,7 @@
     "money": 6.7,
     "point_title": "Zendaya's Routine",
     "point_description": "A light, less-is-more routine built around gentle cleansing, moisturizer, SPF, lip repair, and occasional masks.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s",
@@ -1073,6 +1077,7 @@
     "money": 7.3,
     "point_title": "Kate Moss's Routine",
     "point_description": "A restorative routine built around ice, rose water, rich moisture, gua sha, sunscreen, and lip care.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg/330px-Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "40s",
@@ -1241,6 +1246,7 @@
     "money": 7.5,
     "point_title": "Martha Stewart's Routine",
     "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, and rich night care.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Martha_Stewart_%2848926315347%29_%28cropped%29.jpg/330px-Martha_Stewart_%2848926315347%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "60s",
@@ -1402,6 +1408,7 @@
     "money": 8.6,
     "point_title": "Scarlett Johansson's Routine",
     "point_description": "A sensitive-skin routine built around The Outset cleanser, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "40s"
@@ -1728,6 +1735,7 @@
     "money": 5.5,
     "point_title": "Tyla's Routine",
     "point_description": "A simple glow-focused routine built around cleanser, face mist, rich moisturizer, sunscreen, petroleum jelly, and a lip sleeping mask.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tyla_at_Coachella_2025_01.jpg/250px-Tyla_at_Coachella_2025_01.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s"
@@ -1834,6 +1842,7 @@
     "money": 9.2,
     "point_title": "Mila Kunis's Routine",
     "point_description": "A streamlined breakout-conscious routine with clarifying mist, peel-and-glow serum, optional hydration, rich SPF, and LED mask support.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Mila_Kunis_TIFF_2025_%28cropped%29.jpg/330px-Mila_Kunis_TIFF_2025_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "40s"
@@ -1933,6 +1942,7 @@
     "money": 11.3,
     "point_title": "John Mayer's Routine",
     "point_description": "A PM-only, luxury-heavy routine from Mayer's Snapchat era: acne cleanser, Natura Bisse serum, eye treatment, rich cream, and mist.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/JohnMayer.jpg/250px-JohnMayer.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "40s"
@@ -2032,6 +2042,7 @@
     "money": 7.5,
     "point_title": "Alicia Vikander's Routine",
     "point_description": "A minimalist dry-skin routine with weekly sauna time, FaceGym Pro skin prep with Collagen Infusion Serum, Augustinus Bader The Rich Cream, Hudsalva, and a quick cleansing-wipe reset.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alicia_Vikander-7756.jpg/330px-Alicia_Vikander-7756.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "30s"
@@ -2147,6 +2158,7 @@
     "money": 7.8,
     "point_title": "Iris Apatow's Routine",
     "point_description": "A beauty-lover routine for hormonal acne and hydration, with Avène cleanser, Dr. Barbara Sturm serum, Klairs moisturizer, mineral SPF, and a few calming extras.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg/330px-Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "20s"
@@ -2311,6 +2323,7 @@
     "money": 9.6,
     "point_title": "Emmy Rossum's Routine",
     "point_description": "A skincare-obsessive daytime routine focused on hydration, firming care, neck treatment, and mineral SPF.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Emmy_Rossum_cropped.jpg/330px-Emmy_Rossum_cropped.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "30s"
@@ -2401,6 +2414,7 @@
     "money": 10.2,
     "point_title": "Margot Robbie's Routine",
     "point_description": "A simple-but-luxe routine built around deep cleansing, travel exfoliating pads, face mist, Bloc moisture, La Prairie night cream, eye care, and event masks.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg/330px-Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg",
     "pregnancy_safe": false,
     "age_range": ["30s"],
     "skin_concern": ["dry_skin", "fine_lines_and_wrinkles"],

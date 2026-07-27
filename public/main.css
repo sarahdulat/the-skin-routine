@@ -687,9 +687,44 @@ body {
 a {
   color: inherit;
   text-decoration: underline;
+  cursor: pointer;
 }
 a:hover {
   color: var(--color-primary);
+}
+
+:where(a[href],
+button:not(:disabled),
+label,
+select:not(:disabled),
+summary,
+[role=button],
+[role=switch],
+[role=tab],
+[aria-controls],
+[aria-expanded],
+[tabindex]:not([tabindex="-1"])) {
+  cursor: pointer;
+}
+
+:where(a[href],
+button:not(:disabled),
+label,
+select:not(:disabled),
+summary,
+[role=button],
+[role=switch],
+[role=tab],
+[aria-controls],
+[aria-expanded],
+[tabindex]:not([tabindex="-1"])) * {
+  cursor: inherit;
+}
+
+:where(button:disabled,
+select:disabled,
+[aria-disabled=true]) {
+  cursor: not-allowed;
 }
 
 .glyph {
