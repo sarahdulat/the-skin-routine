@@ -79,6 +79,7 @@ footer {
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     gap: var(--space-lg);
+    width: 100%;
   }
 
   i {
@@ -88,6 +89,10 @@ footer {
 
 .footer-contact {
   min-width: 0;
+
+  a {
+    overflow-wrap: anywhere;
+  }
 }
 
 .footer-legal {
@@ -175,32 +180,44 @@ footer {
     padding: var(--space-md) var(--space-lg);
   }
 
-  .footer-inner {
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas:
-      "contact socials"
-      "legal socials";
-    align-items: center;
-    column-gap: var(--space-lg);
-    row-gap: var(--space-sm);
+  footer .footer-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
   }
 
   .footer-contact {
-    grid-area: contact;
-    font-size: var(--fontSize-sm);
-    line-height: var(--lineHeight-sm);
+    flex-grow: 1;
+    font-size: var(--fontSize-xs);
+    line-height: var(--lineHeight-xs);
+    min-width: max-content;
+
+    a {
+      white-space: nowrap;
+    }
   }
 
   .footer-legal {
-    grid-area: legal;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: var(--space-sm) var(--space-md);
+    margin-inline: auto;
+    gap: var(--space-sm);
+    margin-top: 0;
     text-align: left;
+
+    .footer-link {
+      white-space: nowrap;
+    }
   }
 
   .footer-socials {
-    grid-area: socials;
+    flex: 0 0 auto;
+    margin-left: auto;
+    min-width: max-content;
+    gap: var(--space-md);
   }
+
 }
 </style>
