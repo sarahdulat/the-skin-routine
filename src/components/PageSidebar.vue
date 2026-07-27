@@ -75,15 +75,18 @@ export default defineComponent({
 aside {
   -webkit-flex: 1;
   flex: 1;
-  height: 100vh;
+  height: 100%;
+  min-height: 0;
   max-width: 300px;
   border-left: var(--color-dark) solid 1px;
   padding: 0 var(--space-lg);
 }
 
 .scroll-container {
-  max-height: calc(100vh - 145px);
-  overflow: scroll;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

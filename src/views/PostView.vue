@@ -18,7 +18,7 @@
                   #{{ tag }}
                 </span>
               </div>
-              <div v-if="post.data.products.length > 0" class="mt-xl">
+              <div v-if="post.data.products.length > 0" class="featured-products mt-xl">
                 <p>Featured Products</p>
                 <span v-for="product in post.data.products" :key="product.product.id">
                   <a :href="product.product.link" target="_blank" rel="noopener noreferrer">
@@ -132,11 +132,23 @@ export default {
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    min-width: 0;
+  }
 }
 
 .scroll-container {
-  max-height: calc(100vh - 205px);
-  overflow: scroll;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 section {
@@ -183,6 +195,53 @@ section {
       padding-top: 4px;
       padding-right: 4px;
     }
+  }
+}
+
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  main {
+    display: block;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .scroll-container {
+    max-height: none;
+    overflow: visible;
+  }
+
+  section {
+    display: block;
+  }
+
+  .cover-img {
+    height: 240px;
+  }
+
+  .content {
+    padding: var(--space-lg);
+  }
+
+  .content .h0 {
+    display: block;
+    font-size: var(--fontSize-4xl);
+    line-height: var(--lineHeight-4xl);
+  }
+
+  section>.px-xl {
+    padding-inline: var(--space-lg);
+  }
+
+  .featured-products {
+    display: none;
   }
 }
 </style>

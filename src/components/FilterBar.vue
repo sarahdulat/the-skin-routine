@@ -21,8 +21,10 @@
               Chemical
               Sunscreens,
               Retinoids, Bakuchiol, Bidens Pilosa, All Hydroxy Acids (Alpha, Beta and Poly), Glycolic Acid, Hemp/CBD,
-              Dihydroxyacetone (DHA) and Erythrulose (Sunless Tanners), Hydroquinone, Alpha Arbutin, Kojic Acid, Licorice
-              Root, Prostaglandin Analogues, Benzoyl Peroxide, Salicylates, Willow Bark, Snail Secretion, and Stem Cells.
+              Dihydroxyacetone (DHA) and Erythrulose (Sunless Tanners), Hydroquinone, Alpha Arbutin, Kojic Acid,
+              Licorice
+              Root, Prostaglandin Analogues, Benzoyl Peroxide, Salicylates, Willow Bark, Snail Secretion, and Stem
+              Cells.
             </p>
 
             <p class="small font-sans">For more information on why these ingredients are not considered pregnancy safe,
@@ -71,11 +73,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .filter {
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-xl);
   border-bottom: 1px solid var(--color-dark);
   background-color: var(--color-light);
   display: flex;
   gap: var(--space-lg);
+  height: 60px;
 
   h6 {
     display: inline;
@@ -106,7 +109,8 @@ export default defineComponent({
     align-items: flex-start;
     flex-wrap: wrap;
     gap: var(--space-sm);
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-sm) var(--space-lg);
+    height: auto;
   }
 
   .filter-toggle {
