@@ -42,7 +42,7 @@
         <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
       </label>
     </div>
-    <div class="scroll-container">
+    <div ref="stepsScrollContainer" class="scroll-container">
       <div v-if="isRoutineMissing" class="routine-alert" role="status">
         We don't have enough information for this routine :(
       </div>
@@ -105,6 +105,7 @@ const firstSourceName = computed(() => firstSource.value?.site || firstSource.va
 const hasMultipleSources = computed(() => sources.value.length > 1);
 const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 0));
 const expandedSteps = ref(new Set<string>());
+const stepsScrollContainer = ref<HTMLElement | null>(null);
 const failedFavicons = ref(new Set<string>());
 const isSourcePopoverOpen = ref(false);
 const sourceOverflow = ref<HTMLElement | null>(null);
@@ -136,6 +137,11 @@ const sourceDisplayDate = (source: RoutineSource) => {
 
 const resetExpandedSteps = () => {
   expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
+};
+
+const scrollStepsToTop = async () => {
+  await nextTick();
+  stepsScrollContainer.value?.scrollTo({ top: 0 });
 };
 
 const isStepExpanded = (order: string) => expandedSteps.value.has(order);
@@ -220,6 +226,7 @@ watch(isSourcePopoverOpen, async (isOpen) => {
   updateSourcePopoverPosition();
 });
 watch(steps, resetExpandedSteps, { immediate: true });
+watch(routineTime, scrollStepsToTop);
 
 onMounted(() => {
   window.addEventListener("resize", updateOpenSourcePopoverPosition);
