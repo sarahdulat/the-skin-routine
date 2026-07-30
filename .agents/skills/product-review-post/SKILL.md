@@ -43,6 +43,14 @@ Use level-three headings for the main sections and level-four headings for indiv
 5. Alternatives and How They Differ
 6. Frequently Asked Questions
 
+Place the affiliate disclosure immediately before the Alternatives section in every product review:
+
+```html
+<p class="affiliate-disclosure mt-md">
+  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+</p>
+```
+
 For alternatives, prioritize two or three products that solve the same problem, not merely products in the same category. When reviewing a dark-spot sunscreen, prefer alternatives with built-in pigment-correcting ingredients. Explain key ingredient, protection, finish, price, and availability differences.
 
 ## Create the watercolor cover

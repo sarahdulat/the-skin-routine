@@ -105,6 +105,33 @@ function markdownToBody(markdown: string): Post["data"]["body"] {
         };
       }
 
+      const affiliateDisclosure = block.match(/^<p\s+class=["']affiliate-disclosure mt-md["']>([\s\S]*?)<\/p>$/);
+
+      if (affiliateDisclosure) {
+        return {
+          type: "affiliate-disclosure",
+          text: renderInlineMarkdown(affiliateDisclosure[1].replace(/\s+/g, " ").trim()),
+          spans: [],
+          direction: "ltr",
+        };
+      }
+
+      if (/^[-*]\s+/.test(block)) {
+        const listItems = block
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => /^[-*]\s+/.test(line))
+          .map((line) => `<li>${renderInlineMarkdown(line.replace(/^[-*]\s+/, ""))}</li>`)
+          .join("");
+
+        return {
+          type: "unordered-list",
+          text: listItems,
+          spans: [],
+          direction: "ltr",
+        };
+      }
+
       return {
         type: "paragraph",
         text: renderInlineMarkdown(block.replace(/\n/g, "<br>")),

@@ -65,6 +65,10 @@ I will keep buying this. It protects an area that is easy to neglect, never burn
 
 I would especially recommend it to someone with sensitive eyes who finds regular facial sunscreen uncomfortable around them. Just keep the single tint in mind and patch test if your eye area is particularly reactive.
 
+<p class="affiliate-disclosure mt-md">
+  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+</p>
+
 ### Alternatives to Supergoop! Bright-Eyed 100% Mineral Eye Cream SPF 40
 
 **[DRMTLGY Luminous Eye Corrector SPF 41](https://www.drmtlgy.com/products/spf-undereye-corrector-medium)** costs $44 and is the closest alternative. It is also 100% mineral, brightening, and made specifically for the eye area, but comes in four shades. The tradeoff is size: 0.25 ounces, half the Supergoop! amount.

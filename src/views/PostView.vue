@@ -32,8 +32,12 @@
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
               <h5>{{ post.data.summary[0].text }}</h5>
+              <p class="affiliate-disclosure mt-md">
+                This post may contain affiliate links. If you buy through these links, we may earn a commission at no
+                extra cost to you.
+              </p>
               <component v-for="paragraph in post.data.body" :key="paragraph.text" :is="bodyTag(paragraph.type)"
-                class="mt-xl font-serif" v-html="paragraph.text">
+                :class="bodyClass(paragraph.type)" v-html="paragraph.text">
               </component>
             </div>
           </section>
@@ -112,7 +116,16 @@ export default {
       this.isReviewBarLoading = false;
     },
     bodyTag(type: string) {
+      if (type === "unordered-list") return "ul";
+
       return /^heading[1-6]$/.test(type) ? `h${type.replace('heading', '')}` : 'p';
+    },
+    bodyClass(type: string) {
+      return [
+        "mt-xl",
+        "font-serif",
+        type === "affiliate-disclosure" ? "affiliate-disclosure" : "",
+      ];
     },
     formatDate(date: string) {
       return format(new Date(date), 'MMMM do, y')
@@ -218,12 +231,41 @@ section {
       padding-right: 4px;
     }
   }
+
+  :deep(ul) {
+    display: grid;
+    gap: var(--space-sm);
+    list-style: none;
+    padding-left: 0;
+  }
+
+  :deep(li) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--space-sm);
+  }
+
+  :deep(li::before) {
+    color: var(--color-primary);
+    content: "🩸";
+    font-family: "Noto Sans Symbols 2";
+    line-height: inherit;
+  }
 }
 
 .featured-products {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+}
+
+.affiliate-disclosure {
+  background-color: rgba(241, 101, 68, 0.08);
+  border-left: 2px solid var(--color-primary);
+  color: var(--color-dark);
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-md);
+  padding: var(--space-sm) var(--space-md);
 }
 
 @media (max-width: 768px) {

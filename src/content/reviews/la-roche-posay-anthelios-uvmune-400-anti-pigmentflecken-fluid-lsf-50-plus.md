@@ -47,7 +47,7 @@ image_alt: "Watercolor and ink illustration of La Roche-Posay Anthelios UVMune 4
 
 ## What Is Anthelios UVMune 400 Anti-Dark Spots Fluid?
 
-La Roche-Posay's Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+ is a 50 ml facial sunscreen for people concerned about an uneven skin tone, hyperpigmentation, and dark spots. According to this [Care to Beauty US listing](https://www.caretobeauty.com/us/la-roche-posay-anthelios-uvmune-400-anti-dark-spot-fluid-spf50-50ml/), it provides very high UVA and UVB protection—including ultra-long UVA—and resists water, sweat, and sand.
+La Roche-Posay's Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+ is a 50 ml facial sunscreen for people concerned about an uneven skin tone, hyperpigmentation, and dark spots. It provides very high UVA and UVB protection—including ultra-long UVA—and resists water, sweat, and sand.
 
 The formula pairs Mexoryl 400 UV-filter technology with Melasyl, an ingredient designed to limit excess melanin formation. In other words, it promises advanced sunscreen and dark-spot prevention in one slim bottle. It should feel ultra-light, avoid a white cast, and work under makeup. On paper, daily SPF doing more than one job is exactly my type of product.
 
@@ -72,6 +72,10 @@ The internet is much more enthusiastic. La Roche-Posay's German site displayed a
 I would not buy this again. I will finish it carefully because the protection is excellent and the tingling is currently mild, but the smell, texture, and sensation make daily use less pleasant than it should be.
 
 I can still see it working beautifully for someone with normal, combination, or oily skin who loves featherweight chemical sunscreens, wants serious UVA protection, and tolerates alcohol-forward formulas. Patch test first if your skin is reactive.
+
+<p class="affiliate-disclosure mt-md">
+  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+</p>
 
 ## Alternatives to La Roche-Posay Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+
 
