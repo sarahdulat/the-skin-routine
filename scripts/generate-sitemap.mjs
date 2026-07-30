@@ -27,24 +27,49 @@ function readFrontmatter(source) {
   const match = source.match(/^---\n([\s\S]*?)\n---/);
   if (!match) return {};
 
-  return Object.fromEntries(
-    match[1]
-      .split("\n")
-      .map((line) => {
-        const separatorIndex = line.indexOf(":");
-        if (separatorIndex === -1) return null;
+  const frontmatter = {};
+  const lines = match[1].split("\n");
 
-        const key = line.slice(0, separatorIndex).trim();
-        const rawValue = line.slice(separatorIndex + 1).trim();
+  for (let index = 0; index < lines.length;) {
+    const line = lines[index];
+    const keyMatch = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
 
-        try {
-          return [key, JSON.parse(rawValue)];
-        } catch {
-          return [key, rawValue];
-        }
-      })
-      .filter(Boolean),
-  );
+    if (!keyMatch) {
+      index += 1;
+      continue;
+    }
+
+    const [, key, inlineValue] = keyMatch;
+    const valueLines = [];
+
+    if (inlineValue.trim()) {
+      valueLines.push(inlineValue.trim());
+      index += 1;
+    } else {
+      index += 1;
+
+      while (index < lines.length && !lines[index].match(/^([A-Za-z0-9_-]+):\s*(.*)$/)) {
+        valueLines.push(lines[index]);
+        index += 1;
+      }
+    }
+
+    frontmatter[key] = parseFrontmatterValue(valueLines.join("\n").trim());
+  }
+
+  return frontmatter;
+}
+
+function parseFrontmatterValue(rawValue) {
+  if (!rawValue) return "";
+
+  const jsonLikeValue = rawValue.replace(/,\s*([\]}])/g, "$1");
+
+  try {
+    return JSON.parse(jsonLikeValue);
+  } catch {
+    return rawValue;
+  }
 }
 
 async function getReviewUrls() {

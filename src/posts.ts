@@ -42,22 +42,48 @@ function parseMarkdownFile(source: string) {
 
 function parseFrontmatter(source: string): ReviewFrontmatter {
   const frontmatter: Record<string, unknown> = {};
+  const lines = source.split("\n");
 
-  for (const line of source.split("\n")) {
-    const separatorIndex = line.indexOf(":");
-    if (separatorIndex === -1) continue;
+  for (let index = 0; index < lines.length;) {
+    const line = lines[index];
+    const keyMatch = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
 
-    const key = line.slice(0, separatorIndex).trim();
-    const rawValue = line.slice(separatorIndex + 1).trim();
-
-    try {
-      frontmatter[key] = JSON.parse(rawValue);
-    } catch {
-      frontmatter[key] = rawValue;
+    if (!keyMatch) {
+      index += 1;
+      continue;
     }
+
+    const [, key, inlineValue] = keyMatch;
+    const valueLines = [];
+
+    if (inlineValue.trim()) {
+      valueLines.push(inlineValue.trim());
+      index += 1;
+    } else {
+      index += 1;
+
+      while (index < lines.length && !lines[index].match(/^([A-Za-z0-9_-]+):\s*(.*)$/)) {
+        valueLines.push(lines[index]);
+        index += 1;
+      }
+    }
+
+    frontmatter[key] = parseFrontmatterValue(valueLines.join("\n").trim());
   }
 
   return frontmatter as ReviewFrontmatter;
+}
+
+function parseFrontmatterValue(rawValue: string) {
+  if (!rawValue) return "";
+
+  const jsonLikeValue = rawValue.replace(/,\s*([\]}])/g, "$1");
+
+  try {
+    return JSON.parse(jsonLikeValue);
+  } catch {
+    return rawValue;
+  }
 }
 
 function markdownToBody(markdown: string): Post["data"]["body"] {

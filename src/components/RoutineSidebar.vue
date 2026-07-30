@@ -26,6 +26,7 @@
                       :alt="`${source.site || source.label} icon`" @error="markFaviconFailed(source)" />
                     <span v-else class="source-site-favicon-fallback glyph" aria-hidden="true">🩸</span>
                     <span>{{ source.site || source.label }}</span>
+                    <span v-if="sourceDisplayDate(source)" class="source-date">{{ sourceDisplayDate(source) }}</span>
                   </span>
                   <span class="source-headline">{{ source.headline || source.label }}</span>
                   <span v-if="source.summary" class="source-summary">{{ source.summary }}</span>
@@ -57,7 +58,8 @@
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
           <!-- <button class="px-sm ms-md">Buy</button> -->
         </div>
-        <div v-show="isStepExpanded(step.order)" class="mt-sm" :id="`step-description-${step.order}`">
+        <div v-show="isStepExpanded(step.order)" class="mt-sm" :id="`step-description-${step.order}`"
+          @click="handleDescriptionClick">
           <div v-html="step.description"></div>
         </div>
       </div>
@@ -67,6 +69,7 @@
 
 <script lang="ts" setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
 import { store } from '../store'
 
 type RoutineSource = {
@@ -77,6 +80,10 @@ type RoutineSource = {
   image?: string;
   headline?: string;
   summary?: string;
+  date?: string;
+  publishDate?: string;
+  publishedDate?: string;
+  published_at?: string;
 };
 
 type RoutineWithSources = typeof store.currentRoutine & {
@@ -84,6 +91,7 @@ type RoutineWithSources = typeof store.currentRoutine & {
 };
 
 const routineTime = computed(() => store.routineTime);
+const router = useRouter();
 const currentRoutineId = computed(() => store.currentRoutine.id);
 const amSteps = computed(() => Object.values(store.currentRoutine.steps.am ?? {}));
 const pmSteps = computed(() => Object.values(store.currentRoutine.steps.pm ?? {}));
@@ -113,6 +121,19 @@ const markFaviconFailed = (source: RoutineSource) => {
   failedFavicons.value = new Set([...failedFavicons.value, getFaviconKey(source)]);
 };
 
+const sourceDisplayDate = (source: RoutineSource) => {
+  const explicitDate = source.date || source.publishDate || source.publishedDate || source.published_at;
+
+  if (explicitDate) return explicitDate;
+
+  if (source.site && source.label.startsWith(source.site)) {
+    const labelRemainder = source.label.slice(source.site.length).trim();
+    if (labelRemainder) return labelRemainder;
+  }
+
+  return source.label.match(/\b(19|20)\d{2}\b/)?.[0] ?? "";
+};
+
 const resetExpandedSteps = () => {
   expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
 };
@@ -129,6 +150,17 @@ const toggleStep = (order: string) => {
   }
 
   expandedSteps.value = nextExpandedSteps;
+};
+
+const handleDescriptionClick = (event: MouseEvent) => {
+  const target = event.target as HTMLElement | null;
+  const link = target?.closest('a');
+  const href = link?.getAttribute('href');
+
+  if (!link || !href || link.target || !href.startsWith('/')) return;
+
+  event.preventDefault();
+  router.push(href);
 };
 
 const updateSourcePopoverPosition = () => {
@@ -394,6 +426,22 @@ h4 {
     width: 0.875rem;
     height: 0.875rem;
     font-size: 0.625rem;
+  }
+}
+
+.source-date {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0.1875rem;
+    height: 0.1875rem;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.7;
   }
 }
 

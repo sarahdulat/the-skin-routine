@@ -18,8 +18,8 @@ product_types: ["<Product Type>"]
 featured_products: [{"brand":"<Brand>","name":"<Reviewed Product Name>","link":"<current product URL>"},{"brand":"<Alternative Brand>","name":"<Alternative Product Name>","link":"<current alternative URL>"}]
 pregnancy_safe: false
 draft: true
-image: "/images/reviews/<cover-filename>"
-image_alt: "<Concise visual description>"
+image: "/images/reviews/<product-slug>-watercolor.png"
+image_alt: "Watercolor and ink illustration of <Brand> <Product Name>"
 ---
 ```
 
@@ -34,6 +34,7 @@ image_alt: "<Concise visual description>"
 - `featured_products`: include the reviewed product and every other specific product named in the body, including all alternatives. Each product must appear exactly once with its correct brand, full product name, and a market-appropriate product link. Do not include retailers, ingredients, general product-line references, or research/community sources as products.
 - `pregnancy_safe`: do not infer. Default to `false` when authoritative verification is unavailable.
 - `draft`: always `true` when creating or finishing a review.
-- `image`: use the public URL, not a filesystem path.
+- `image`: use the public URL for the generated watercolor-and-ink cover, not the raw scraped reference or a filesystem path.
+- `image_alt`: identify the artwork as a watercolor and ink illustration and name the brand and product.
 
 Before handoff, verify that `src/posts.ts` can parse the post and that the build succeeds.

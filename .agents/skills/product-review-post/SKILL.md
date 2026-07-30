@@ -1,6 +1,6 @@
 ---
 name: product-review-post
-description: Research, draft, revise, illustrate, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs a watercolor product cover, or asks to add or update a Markdown review in src/content/reviews.
+description: Research, draft, revise, illustrate, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs the standard scraped-reference watercolor product cover, or asks to add or update a Markdown review in src/content/reviews.
 ---
 
 # Product Review Post
@@ -45,16 +45,17 @@ Use level-three headings for the main sections and level-four headings for indiv
 
 For alternatives, prioritize two or three products that solve the same problem, not merely products in the same category. When reviewing a dark-spot sunscreen, prefer alternatives with built-in pigment-correcting ingredients. Explain key ingredient, protection, finish, price, and availability differences.
 
-## Create the cover when requested
+## Create the watercolor cover
 
-Use the `imagegen` skill for generated raster artwork.
+Create a watercolor-and-ink product cover for every review unless the user explicitly requests another style or asks for no generated cover. Never use the unedited official packshot as the finished cover.
 
-1. Obtain a clean official product reference, preferring English packaging for an English post.
-2. Inspect every local reference image before generation.
-3. Treat promotional badges, retailer stickers, and unrelated objects as exclusions unless the user asks to retain them.
-4. Preserve the packaging silhouette, brand hierarchy, and key English label wording while applying the requested visual style.
-5. Save the selected image non-destructively under `public/images/reviews/` with a descriptive slug and version suffix when needed.
-6. Add accurate, concise alt text. Never leave a referenced image only in a temporary or generated-images directory.
+1. Scrape or download a clean product image from the official brand page and use it as the generation reference. Prefer English packaging for an English post; use a reputable retailer only when the official page has no usable image.
+2. Save the scraped reference locally and inspect it before generation. Exclude promotional badges, retailer stickers, hands, props, and unrelated objects unless the user asks to retain them.
+3. Use the `imagegen` skill to reillustrate the product as expressive black line art with soft, translucent watercolor washes on warm-white paper. Default to a square canvas with one complete product centered, generous whitespace, and the product occupying about 65–75% of the image height so it works in both the 300px grid and post view.
+4. Preserve the packaging silhouette, color blocking, brand hierarchy, and key English label wording. Require the brand and product name to remain recognizable; do not invent extra label text.
+5. Inspect the generated result for cropping, duplicate products, malformed packaging, incorrect text, or distracting background elements. Iterate when a material problem remains.
+6. Save the selected generated image non-destructively under `public/images/reviews/` with a descriptive `-watercolor` slug and version suffix when needed. Never reference the raw scraped packshot as the final cover unless the user explicitly requests it.
+7. Update frontmatter with the generated public image URL and accurate watercolor alt text. Never leave a referenced cover only in a temporary or generated-images directory.
 
 ## Stage safely
 
@@ -71,7 +72,7 @@ Use the `imagegen` skill for generated raster artwork.
 2. Confirm the title begins with the brand and `tags` includes `review`.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
 4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link.
-5. Confirm `draft: true`, the cover exists, and every linked product is correct for the intended market.
+5. Confirm `draft: true`, the scraped product reference was transformed into the standard watercolor-and-ink style, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
 6. Run `npm run build` from the repository root.
 7. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
 

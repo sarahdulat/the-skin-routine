@@ -98,6 +98,8 @@ export default defineComponent({
       const markerRadius = markerSize / 2;
       const selectedStrokeWidth = 3;
       const defaultStrokeWidth = 2;
+      const activeColor = '#C85238';
+      const restingColor = '#343A40';
       const data: RoutinePoint[] = props.routines.map((routine) => {
         const routineWithMarkerImage = routine as RoutineWithMarkerImage;
 
@@ -220,10 +222,10 @@ export default defineComponent({
         .attr('cx', (d) => xScale(d.x))
         .attr('cy', (d) => yScale(d.y))
         .attr('r', 10)
-        .attr('fill', (d) => isSelected(d) ? '#343A40' : '#C85238')
+        .attr('fill', (d) => isSelected(d) ? activeColor : restingColor)
         .style('cursor', 'pointer')
         .on("mouseover", function (event, d) {
-          d3.select(this).attr("fill", "#343A40");
+          d3.select(this).attr("fill", activeColor);
           event.stopPropagation();
           showPopover(
             { point_title: d.point_title, point_description: d.point_description },
@@ -231,7 +233,7 @@ export default defineComponent({
           );
         })
         .on("mouseout", function (_event, d) {
-          d3.select(this).attr("fill", isSelected(d) ? '#343A40' : '#C85238');
+          d3.select(this).attr("fill", isSelected(d) ? activeColor : restingColor);
           closePopover();
         })
         .on("click", function (event, d) {
@@ -241,11 +243,11 @@ export default defineComponent({
 
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.dot')
-            .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
+            .attr('fill', (point) => point.routine.id === d.routine.id ? activeColor : restingColor);
 
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
-            .attr('stroke', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238')
+            .attr('stroke', (point) => point.routine.id === d.routine.id ? activeColor : restingColor)
             .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
         });
 
@@ -282,13 +284,13 @@ export default defineComponent({
         .attr('cy', markerRadius)
         .attr('r', markerRadius)
         .attr('fill', 'none')
-        .attr('stroke', (d) => isSelected(d) ? '#343A40' : '#C85238')
+        .attr('stroke', (d) => isSelected(d) ? activeColor : restingColor)
         .attr('stroke-width', (d) => isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
 
       imageDot
         .on("mouseover", function (event, d) {
           d3.select(this).select('.image-dot-ring')
-            .attr('stroke', '#343A40')
+            .attr('stroke', activeColor)
             .attr('stroke-width', selectedStrokeWidth);
           event.stopPropagation();
           showPopover(
@@ -298,7 +300,7 @@ export default defineComponent({
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.image-dot-ring')
-            .attr('stroke', isSelected(d) ? '#343A40' : '#C85238')
+            .attr('stroke', isSelected(d) ? activeColor : restingColor)
             .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
           closePopover();
         })
@@ -309,11 +311,11 @@ export default defineComponent({
 
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.dot')
-            .attr('fill', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238');
+            .attr('fill', (point) => point.routine.id === d.routine.id ? activeColor : restingColor);
 
           d3.select(graph.value)
             .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
-            .attr('stroke', (point) => point.routine.id === d.routine.id ? '#343A40' : '#C85238')
+            .attr('stroke', (point) => point.routine.id === d.routine.id ? activeColor : restingColor)
             .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
         });
 
