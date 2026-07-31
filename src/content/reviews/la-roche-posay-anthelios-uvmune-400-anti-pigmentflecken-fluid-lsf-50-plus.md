@@ -87,7 +87,7 @@ I can still see it working beautifully for someone with normal, combination, or 
 
 **Colorescience Even Up Clinical Pigment Perfector SPF 50** is the closest mineral alternative at $155. Its [all-mineral formula](https://www.colorescience.com/products/even-up-clinical-pigment-perfector-spf-50) combines iron oxides with the brand's LUMIRA brightening complex to immediately blur and gradually address discoloration. It is water-resistant for 40 minutes, but tinted and much less invisible.
 
-## Frequently Asked Questions
+### Frequently Asked Questions
 
 #### Does it leave a white cast?
 

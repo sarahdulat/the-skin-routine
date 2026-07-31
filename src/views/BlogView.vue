@@ -96,6 +96,20 @@ export default {
     },
     formatDate(post: Post) {
       return format(new Date(post.first_publication_date), 'MMMM do, y')
+    },
+    uniqueFilterItems(items: string[][]) {
+      const uniqueItems = new Map<string, string>();
+
+      items.flat().forEach((item) => {
+        const trimmedItem = item.trim();
+        const key = trimmedItem.toLowerCase();
+
+        if (trimmedItem && !uniqueItems.has(key)) {
+          uniqueItems.set(key, trimmedItem);
+        }
+      });
+
+      return [...uniqueItems.values()].sort((a, b) => a.localeCompare(b));
     }
   },
   created() {
@@ -103,10 +117,10 @@ export default {
   },
   computed: {
     brands() {
-      return { defaultValue: 'Brands', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.brands.map(b => b.brand)))].flat() };
+      return { defaultValue: 'Brands', items: this.uniqueFilterItems(this.allPosts.map((post: Post) => post.data.brands.map(b => b.brand))) };
     },
     product_type() {
-      return { defaultValue: 'Product Types', items: [...new Set(this.allPosts?.map?.((post: Post) => post.data.product_types.map(p => p.product_type)))].flat() };
+      return { defaultValue: 'Product Types', items: this.uniqueFilterItems(this.allPosts.map((post: Post) => post.data.product_types.map(p => p.product_type))) };
     },
     activeTag() {
       return this.getFilterParam(this.$route.query['Tag']) ?? "";

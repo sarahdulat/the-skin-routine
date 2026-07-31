@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <main ref="postMain">
     <SEO :post="post" />
     <div>
       <ReviewBar :prevPost="prevPost" :nextPost="nextPost" :isLoading="isReviewBarLoading" />
-      <div class="scroll-container">
+      <div ref="postScrollContainer" class="scroll-container">
         <div v-if="post">
           <div class="cover-media">
             <img :src="post.data.image.url" class="cover-img" :alt="post.data.image.alt">
@@ -36,8 +36,8 @@
                 This post may contain affiliate links. If you buy through these links, we may earn a commission at no
                 extra cost to you.
               </p>
-              <component v-for="paragraph in post.data.body" :key="paragraph.text" :is="bodyTag(paragraph.type)"
-                :class="bodyClass(paragraph.type)" v-html="paragraph.text">
+              <component v-for="(paragraph, index) in post.data.body" :key="paragraph.text"
+                :is="bodyTag(paragraph.type)" :class="bodyClass(paragraph.type, index)" v-html="paragraph.text">
               </component>
             </div>
           </section>
@@ -115,17 +115,55 @@ export default {
       this.nextPost = nextPost;
       this.isReviewBarLoading = false;
     },
+    scrollPostToTop() {
+      const refs = this.$refs as {
+        postMain?: HTMLElement;
+        postScrollContainer?: HTMLElement;
+      };
+      const scrollTargets = [
+        refs.postScrollContainer,
+        refs.postMain,
+        document.scrollingElement as HTMLElement | null,
+        document.documentElement,
+        document.body,
+      ];
+
+      scrollTargets.forEach((target) => {
+        if (!target) return;
+
+        target.scrollTop = 0;
+        target.scrollLeft = 0;
+      });
+
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    },
     bodyTag(type: string) {
       if (type === "unordered-list") return "ul";
 
       return /^heading[1-6]$/.test(type) ? `h${type.replace('heading', '')}` : 'p';
     },
-    bodyClass(type: string) {
+    bodyClass(type: string, index: number) {
       return [
         "mt-xl",
         "font-serif",
         type === "affiliate-disclosure" ? "affiliate-disclosure" : "",
+        this.isFaqHeading(index) ? "faq-heading" : "",
+        this.isFaqBlock(index) && !this.isFaqHeading(index) ? "faq-block" : "",
+        this.isFaqQuestion(type, index) ? "faq-question" : "",
+        this.isFaqAnswer(type, index) ? "faq-answer" : "",
       ];
+    },
+    isFaqHeading(index: number) {
+      return this.post?.data.body[index]?.text === "Frequently Asked Questions";
+    },
+    isFaqBlock(index: number) {
+      return Boolean(this.post?.data.body.slice(0, index + 1).some((paragraph) => paragraph.text === "Frequently Asked Questions"));
+    },
+    isFaqQuestion(type: string, index: number) {
+      return this.isFaqBlock(index) && /^heading[1-6]$/.test(type) && !this.isFaqHeading(index);
+    },
+    isFaqAnswer(type: string, index: number) {
+      return this.isFaqBlock(index) && type === "paragraph";
     },
     formatDate(date: string) {
       return format(new Date(date), 'MMMM do, y')
@@ -135,8 +173,12 @@ export default {
     this.getContent(this.$route.params.slug as string)
   },
   watch: {
-    '$route.params.slug'(slug) {
-      this.getContent(slug as string)
+    async '$route.params.slug'(slug) {
+      this.scrollPostToTop();
+      await this.getContent(slug as string)
+      await this.$nextTick();
+      this.scrollPostToTop();
+      requestAnimationFrame(this.scrollPostToTop);
     }
   }
 }
@@ -268,6 +310,46 @@ section {
   padding: var(--space-sm) var(--space-md);
 }
 
+.faq-heading {
+  border-top: 1px solid var(--color-dark);
+  margin-top: calc(var(--space-xl) * 2);
+  margin-bottom: 0;
+  padding: var(--space-xl) var(--space-xl) 0;
+}
+
+.faq-block {
+  margin-top: 0;
+  padding-inline: var(--space-xl);
+}
+
+.faq-question {
+  align-items: center;
+  color: var(--color-dark);
+  display: flex;
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-lg);
+  gap: var(--space-md);
+  line-height: var(--lineHeight-lg);
+  padding-top: var(--space-xl);
+
+  &::after {
+    border-bottom: 0.5px solid var(--color-dark);
+    content: "";
+    flex: 1;
+    min-width: var(--space-xl);
+  }
+}
+
+.faq-answer {
+  font-size: var(--fontSize-sm);
+  line-height: var(--lineHeight-lg);
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: var(--space-xl);
+  }
+}
+
 @media (max-width: 768px) {
   main {
     display: block;
@@ -311,6 +393,11 @@ section {
 
   .featured-products {
     display: none;
+  }
+
+  .faq-heading,
+  .faq-block {
+    padding-inline: var(--space-lg);
   }
 }
 </style>

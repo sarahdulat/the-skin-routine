@@ -132,6 +132,10 @@ export default defineComponent({
       // Create scales for the x and y axes
       const xScale = d3.scaleLinear().domain([0, axisMax]).range([0, width]);
       const yScale = d3.scaleLinear().domain([0, axisMax]).range([height, 0]);
+      const pointPosition = (point: RoutinePoint) => ({
+        x: margin.left + xScale(point.x),
+        y: margin.top + yScale(point.y),
+      });
 
       const costBands = [
         { label: "Minimal", min: 0, max: 3, opacity: 0 },
@@ -229,7 +233,7 @@ export default defineComponent({
           event.stopPropagation();
           showPopover(
             { point_title: d.point_title, point_description: d.point_description },
-            { x: event.clientX, y: event.clientY }
+            pointPosition(d)
           );
         })
         .on("mouseout", function (_event, d) {
@@ -295,7 +299,7 @@ export default defineComponent({
           event.stopPropagation();
           showPopover(
             { point_title: d.point_title, point_description: d.point_description },
-            { x: event.clientX, y: event.clientY }
+            pointPosition(d)
           );
         })
         .on("mouseout", function (_event, d) {

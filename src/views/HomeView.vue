@@ -33,6 +33,13 @@ const matchesFilter = (routineValues: string[], selectedValue: string | null | u
   return selectedValue == null || selectedValue === "all" || routineValues.includes(selectedValue);
 };
 
+const getRoutineIdFromQuery = (value: LocationQueryValue | LocationQueryValue[]) => {
+  const selectedRoutineId = getSelectedQueryValue(value);
+  const routineId = Number(selectedRoutineId);
+
+  return Number.isFinite(routineId) ? routineId : null;
+};
+
 export default defineComponent({
   name: 'home',
   components: {
@@ -65,11 +72,31 @@ export default defineComponent({
   watch: {
     filteredRoutines: {
       handler(filteredRoutines: Routine[]) {
+        const selectedRoutineId = getRoutineIdFromQuery(this.$route.query.routine);
+        const selectedRoutine = selectedRoutineId == null
+          ? null
+          : filteredRoutines.find((routine) => routine.id === selectedRoutineId);
+
+        if (selectedRoutine) {
+          store.setCurrentRoutine(selectedRoutine);
+          return;
+        }
+
         if (filteredRoutines.length > 0 && !filteredRoutines.some((routine) => routine.id === store.currentRoutine.id)) {
           store.setCurrentRoutine(filteredRoutines[0]);
         }
       },
       immediate: true,
+    },
+    "$route.query.routine"() {
+      const selectedRoutineId = getRoutineIdFromQuery(this.$route.query.routine);
+      const selectedRoutine = selectedRoutineId == null
+        ? null
+        : this.filteredRoutines.find((routine) => routine.id === selectedRoutineId);
+
+      if (selectedRoutine) {
+        store.setCurrentRoutine(selectedRoutine);
+      }
     },
   }
 });

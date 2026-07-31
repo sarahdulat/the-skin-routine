@@ -165,9 +165,18 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-inline: var(--space-lg);
+  }
+
   .content {
-    margin-right: var(--space-l);
-    margin-left: var(--space-l);
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .image {
+    max-width: min(100%, 375px);
   }
 }
 </style>

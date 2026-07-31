@@ -35,8 +35,11 @@ export default defineComponent({
       const offset = 12;
       const viewportPadding = 8;
       const { width, height } = popover.value.getBoundingClientRect();
-      const availableRight = window.innerWidth - width - viewportPadding;
-      const availableBottom = window.innerHeight - height - viewportPadding;
+      const parent = popover.value.offsetParent as HTMLElement | null;
+      const boundsWidth = parent?.clientWidth ?? window.innerWidth;
+      const boundsHeight = parent?.clientHeight ?? window.innerHeight;
+      const availableRight = boundsWidth - width - viewportPadding;
+      const availableBottom = boundsHeight - height - viewportPadding;
       const preferredLeft = props.position.x + offset;
       const preferredTop = props.position.y + offset;
       const left = Math.min(Math.max(preferredLeft, viewportPadding), Math.max(availableRight, viewportPadding));
@@ -60,7 +63,7 @@ export default defineComponent({
 
 <style scoped>
 .popover {
-  position: fixed;
+  position: absolute;
   color: var(--color-light);
   background: var(--color-dark);
   border: 1px solid var(--color-dark);
