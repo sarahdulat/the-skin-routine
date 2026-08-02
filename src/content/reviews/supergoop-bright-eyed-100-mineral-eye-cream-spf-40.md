@@ -66,7 +66,7 @@ I will keep buying this. It protects an area that is easy to neglect, never burn
 I would especially recommend it to someone with sensitive eyes who finds regular facial sunscreen uncomfortable around them. Just keep the single tint in mind and patch test if your eye area is particularly reactive.
 
 <p class="affiliate-disclosure mt-md">
-  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+  Some product links below may be affiliate links.
 </p>
 
 ### Alternatives to Supergoop! Bright-Eyed 100% Mineral Eye Cream SPF 40

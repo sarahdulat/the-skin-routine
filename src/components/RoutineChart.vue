@@ -2,7 +2,7 @@
   <div ref="graph" class="chart-container" @click="closePopover">
     <Popover v-if="popoverVisible" :visible="popoverVisible" :position="popoverPosition" @click.stop>
       <div>
-        <p class="small">{{ popoverContent.point_title }}</p>
+        <p class="small">{{ popoverContent.routine_name }}</p>
         <p class="small font-sans">{{ popoverContent.point_description }}</p>
       </div>
     </Popover>
@@ -18,7 +18,7 @@ import { store, Routine } from '../store';
 type RoutinePoint = {
   x: number;
   y: number;
-  point_title: string;
+  routine_name: string;
   point_description: string;
   marker_image?: string;
   routine: Routine;
@@ -45,7 +45,7 @@ export default defineComponent({
   setup(props) {
     const graph = ref<HTMLDivElement | null>(null);
     const popoverVisible = ref(false);
-    const popoverContent = ref({ point_title: "", point_description: "" });
+    const popoverContent = ref({ routine_name: "", point_description: "" });
     const popoverPosition = ref({ x: 0, y: 0 });
     let resizeObserver: ResizeObserver | null = null;
 
@@ -53,7 +53,7 @@ export default defineComponent({
       popoverVisible.value = false;
     };
 
-    const showPopover = (content: { point_title: string; point_description: string }, position: { x: number; y: number }) => {
+    const showPopover = (content: { routine_name: string; point_description: string }, position: { x: number; y: number }) => {
       popoverContent.value = content;
       popoverPosition.value = position;
       popoverVisible.value = true;
@@ -100,21 +100,47 @@ export default defineComponent({
       const defaultStrokeWidth = 2;
       const activeColor = '#C85238';
       const restingColor = '#343A40';
+      const isImageString = (image: string | undefined): image is string => Boolean(image);
+      const getMarkerImage = (routine: RoutineWithMarkerImage) => {
+        const sourceImage = routine.sources?.map((source) => source.image).filter(isImageString)[0];
+
+        return routine.celebrity_face_image || sourceImage;
+      };
       const data: RoutinePoint[] = props.routines.map((routine) => {
         const routineWithMarkerImage = routine as RoutineWithMarkerImage;
 
         return {
           x: Math.min(Math.max(routine.time, 0), axisMax),
           y: Math.min(Math.max(routine.money, 0), axisMax),
-          point_title: routine.point_title,
+          routine_name: routine.routine_name,
           point_description: routine.point_description,
-          marker_image: routineWithMarkerImage.celebrity_face_image || routineWithMarkerImage.sources?.[0]?.image,
+          marker_image: getMarkerImage(routineWithMarkerImage),
           routine,
         };
       });
       const imagePoints = data.filter((point) => point.marker_image);
       const standardPoints = data.filter((point) => !point.marker_image);
       const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine.id;
+      const showRoutinePopover = (point: RoutinePoint) => {
+        showPopover(
+          { routine_name: point.routine_name, point_description: point.point_description },
+          pointPosition(point)
+        );
+      };
+      const updateSelectedMarkerStyles = (routineId: number) => {
+        d3.select(graph.value)
+          .selectAll<SVGCircleElement, RoutinePoint>('.dot')
+          .attr('fill', (point) => point.routine.id === routineId ? activeColor : restingColor);
+
+        d3.select(graph.value)
+          .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
+          .attr('stroke', (point) => point.routine.id === routineId ? activeColor : restingColor)
+          .attr('stroke-width', (point) => point.routine.id === routineId ? selectedStrokeWidth : defaultStrokeWidth);
+      };
+      const selectRoutinePoint = (point: RoutinePoint) => {
+        store.setCurrentRoutine(point.routine);
+        updateSelectedMarkerStyles(point.routine.id);
+      };
 
       const defs = svgRoot.append('defs');
 
@@ -231,28 +257,23 @@ export default defineComponent({
         .on("mouseover", function (event, d) {
           d3.select(this).attr("fill", activeColor);
           event.stopPropagation();
-          showPopover(
-            { point_title: d.point_title, point_description: d.point_description },
-            pointPosition(d)
-          );
+          showRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).attr("fill", isSelected(d) ? activeColor : restingColor);
           closePopover();
         })
+        .on("pointerdown", function (event, d) {
+          if (event.pointerType === "mouse") return;
+          event.preventDefault();
+          event.stopPropagation();
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
+        })
         .on("click", function (event, d) {
           event.stopPropagation();
-          store.setCurrentRoutine(d.routine);
-          closePopover();
-
-          d3.select(graph.value)
-            .selectAll<SVGCircleElement, RoutinePoint>('.dot')
-            .attr('fill', (point) => point.routine.id === d.routine.id ? activeColor : restingColor);
-
-          d3.select(graph.value)
-            .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
-            .attr('stroke', (point) => point.routine.id === d.routine.id ? activeColor : restingColor)
-            .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
         });
 
       // Add image points for source-backed / celebrity-style routines.
@@ -297,10 +318,7 @@ export default defineComponent({
             .attr('stroke', activeColor)
             .attr('stroke-width', selectedStrokeWidth);
           event.stopPropagation();
-          showPopover(
-            { point_title: d.point_title, point_description: d.point_description },
-            pointPosition(d)
-          );
+          showRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.image-dot-ring')
@@ -308,19 +326,17 @@ export default defineComponent({
             .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
           closePopover();
         })
+        .on("pointerdown", function (event, d) {
+          if (event.pointerType === "mouse") return;
+          event.preventDefault();
+          event.stopPropagation();
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
+        })
         .on("click", function (event, d) {
           event.stopPropagation();
-          store.setCurrentRoutine(d.routine);
-          closePopover();
-
-          d3.select(graph.value)
-            .selectAll<SVGCircleElement, RoutinePoint>('.dot')
-            .attr('fill', (point) => point.routine.id === d.routine.id ? activeColor : restingColor);
-
-          d3.select(graph.value)
-            .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
-            .attr('stroke', (point) => point.routine.id === d.routine.id ? activeColor : restingColor)
-            .attr('stroke-width', (point) => point.routine.id === d.routine.id ? selectedStrokeWidth : defaultStrokeWidth);
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
         });
 
       // Add X-axis label

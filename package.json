@@ -6,6 +6,7 @@
     "dev": "vite",
     "generate:rss": "node scripts/generate-rss.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "tag:amazon": "node scripts/add-amazon-affiliate-tag.mjs",
     "prebuild": "npm run generate:sitemap && npm run generate:rss",
     "build": "vite build",
     "serve": "vite preview",

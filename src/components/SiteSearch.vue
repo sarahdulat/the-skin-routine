@@ -7,7 +7,7 @@
       <div v-if="searchResults.posts.length" class="search-group">
         <p class="search-label">Reviews</p>
         <router-link v-for="post in searchResults.posts" :key="post.id" class="search-result" :to="post.path"
-          @click="closeSearch">
+          @pointerdown="handlePostPointerDown($event, post.path)" @click.prevent="selectPost(post.path)">
           <span>{{ post.title }}</span>
           <small>{{ post.description }}</small>
         </router-link>
@@ -15,7 +15,7 @@
       <div v-if="searchResults.routines.length" class="search-group">
         <p class="search-label">Routines</p>
         <button v-for="routine in searchResults.routines" :key="routine.id" class="search-result" type="button"
-          @click="selectRoutine(routine.routine)">
+          @pointerdown="handleRoutinePointerDown($event, routine.routine)" @click="selectRoutine(routine.routine)">
           <span>{{ routine.title }}</span>
           <small>{{ routine.description }}</small>
         </button>
@@ -57,6 +57,22 @@ export default defineComponent({
       if (!nextFocusedElement || !currentTarget.contains(nextFocusedElement)) {
         this.isSearchOpen = false;
       }
+    },
+    handlePostPointerDown(event: PointerEvent, path: string) {
+      if (event.pointerType === "mouse") return;
+
+      event.preventDefault();
+      this.selectPost(path);
+    },
+    handleRoutinePointerDown(event: PointerEvent, routine: Routine) {
+      if (event.pointerType === "mouse") return;
+
+      event.preventDefault();
+      this.selectRoutine(routine);
+    },
+    selectPost(path: string) {
+      this.closeSearch();
+      this.$router.push(path);
     },
     selectRoutine(routine: Routine) {
       store.setCurrentRoutine(routine);
@@ -164,7 +180,7 @@ input {
 
 @media (max-width: 768px) {
   .search {
-    order: -1;
+    order: 1;
     width: 100%;
   }
 

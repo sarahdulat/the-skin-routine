@@ -2,7 +2,7 @@
   <aside>
     <div class="sidebar-header">
       <div class="routine-header my-lg">
-        <h2>{{ store.currentRoutine.name }}</h2>
+        <h2>{{ store.currentRoutine.routine_name }}</h2>
         <div v-if="firstSource" class="sources" aria-label="Routine sources">
           <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
             @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
@@ -97,9 +97,6 @@ const amSteps = computed(() => Object.values(store.currentRoutine.steps.am ?? {}
 const pmSteps = computed(() => Object.values(store.currentRoutine.steps.pm ?? {}));
 const steps = computed(() => routineTime.value === 'am' ? amSteps.value : pmSteps.value);
 const isRoutineMissing = computed(() => steps.value.length === 0);
-const sources = computed(() => {
-  return (store.currentRoutine as RoutineWithSources).sources ?? [];
-});
 const firstSource = computed(() => sources.value[0] ?? null);
 const firstSourceName = computed(() => firstSource.value?.site || firstSource.value?.label || 'Sources');
 const hasMultipleSources = computed(() => sources.value.length > 1);
@@ -122,7 +119,7 @@ const markFaviconFailed = (source: RoutineSource) => {
   failedFavicons.value = new Set([...failedFavicons.value, getFaviconKey(source)]);
 };
 
-const sourceDisplayDate = (source: RoutineSource) => {
+const sourceDisplayDate = (source: RoutineSource): string => {
   const explicitDate = source.date || source.publishDate || source.publishedDate || source.published_at;
 
   if (explicitDate) return explicitDate;
@@ -134,6 +131,23 @@ const sourceDisplayDate = (source: RoutineSource) => {
 
   return source.label.match(/\b(19|20)\d{2}\b/)?.[0] ?? "";
 };
+
+const sourceDateTime = (source: RoutineSource) => {
+  const displayDate = sourceDisplayDate(source);
+  const year = displayDate.match(/\b(19|20)\d{2}\b/)?.[0];
+  const date = new Date(displayDate);
+
+  if (!Number.isNaN(date.getTime())) return date.getTime();
+  if (year) return new Date(Number(year), 0, 1).getTime();
+
+  return 0;
+};
+
+const sources = computed(() => {
+  const routineSources = (store.currentRoutine as RoutineWithSources).sources ?? [];
+
+  return [...routineSources].sort((a, b) => sourceDateTime(b) - sourceDateTime(a));
+});
 
 const resetExpandedSteps = () => {
   expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
@@ -216,10 +230,14 @@ const defaultToAvailableRoutineTime = () => {
   }
 };
 
-watch(currentRoutineId, defaultToAvailableRoutineTime, { immediate: true });
-watch(currentRoutineId, () => {
+const resetRoutineTime = () => {
+  store.setRoutineTime('am');
+  defaultToAvailableRoutineTime();
   isSourcePopoverOpen.value = false;
-});
+  scrollStepsToTop();
+};
+
+watch(currentRoutineId, resetRoutineTime, { immediate: true });
 watch(isSourcePopoverOpen, async (isOpen) => {
   if (!isOpen) return;
   await nextTick();

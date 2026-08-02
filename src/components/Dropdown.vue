@@ -66,9 +66,17 @@ select {
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-dark);
   background-color: var(--color-light);
+  color: var(--color-dark);
   cursor: pointer;
+  font-family: var(--font-family-sans-serif);
   position: relative;
   box-shadow: 1px 3px 0 var(--color-dark);
+  -webkit-text-fill-color: var(--color-dark);
+}
+
+option {
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 select:hover {

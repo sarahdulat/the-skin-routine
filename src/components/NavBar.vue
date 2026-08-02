@@ -91,6 +91,7 @@ nav {
 
     .nav-links {
       align-items: flex-end;
+      flex: 1;
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: var(--space-md);

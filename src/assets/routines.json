@@ -1,10 +1,9 @@
 [
   {
-    "name": "Sarah's Routine",
+    "routine_name": "Sarah's Routine",
     "id": 0,
     "time": 10.7,
     "money": 6.8,
-    "point_title": "Sarah's Routine",
     "point_description": "Sarah's forever routine: microcurrent, vitamin C, azelaic acid, daily SPF, LED, tretinoin recovery nights, and a bedtime slugging ritual.",
     "pregnancy_safe": false,
     "age_range": [
@@ -192,11 +191,10 @@
     "draft": false
   },
   {
-    "name": "Sarah's Pregnancy Safe Routine",
+    "routine_name": "Sarah's Pregnancy Safe Routine",
     "id": 1,
     "time": 9.5,
     "money": 6.2,
-    "point_title": "Sarah's Pregnancy Safe Routine",
     "point_description": "Less actives, no microcurrent and mineral SPF only, but one surprising step remains.",
     "pregnancy_safe": true,
     "age_range": [
@@ -368,11 +366,10 @@
     "draft": false
   },
   {
-    "name": "Hailey Bieber's Routine",
+    "routine_name": "Hailey Bieber's Routine",
     "id": 2,
     "time": 7.4,
     "money": 7.4,
-    "point_title": "Hailey Bieber's Routine",
     "point_description": "A hydration-heavy glazed-skin routine focused on gentle cleansing, barrier support, and SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hailey_Bieber_at_WWD_Style_Awards_2026.jpg/330px-Hailey_Bieber_at_WWD_Style_Awards_2026.jpg",
     "pregnancy_safe": false,
@@ -550,11 +547,10 @@
     "draft": false
   },
   {
-    "name": "Dua Lipa's Routine",
+    "routine_name": "Dua Lipa's Routine",
     "id": 3,
     "time": 7.2,
     "money": 11.2,
-    "point_title": "Dua Lipa's Routine",
     "point_description": "A performance-proof routine built around cleansing, lightweight repair, glow, barrier support, and daily SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dua_Lipa-69798_%28cropped%29.jpg/330px-Dua_Lipa-69798_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -726,11 +722,10 @@
     "draft": false
   },
   {
-    "name": "Selena Gomez's Routine",
+    "routine_name": "Selena Gomez's Routine",
     "id": 4,
     "time": 6.3,
     "money": 9.2,
-    "point_title": "Selena Gomez's Routine",
     "point_description": "A luxe, acne-conscious routine centered on gentle makeup removal, hydration, sun protection, and lupus-sensitive skin.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg/330px-Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -911,11 +906,10 @@
     "draft": false
   },
   {
-    "name": "Zendaya's Routine",
+    "routine_name": "Zendaya's Routine",
     "id": 5,
     "time": 4.2,
     "money": 6.7,
-    "point_title": "Zendaya's Routine",
     "point_description": "A light, less-is-more routine built around gentle cleansing, moisturizer, SPF, lip repair, and occasional masks.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg",
     "pregnancy_safe": false,
@@ -1064,11 +1058,10 @@
     "draft": false
   },
   {
-    "name": "Kate Moss's Routine",
+    "routine_name": "Kate Moss's Routine",
     "id": 6,
     "time": 5.7,
     "money": 7.3,
-    "point_title": "Kate Moss's Routine",
     "point_description": "A restorative routine built around ice, rose water, rich moisture, gua sha, sunscreen, and lip care.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg/330px-Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg",
     "pregnancy_safe": false,
@@ -1233,11 +1226,10 @@
     "draft": false
   },
   {
-    "name": "Martha Stewart's Routine",
+    "routine_name": "Martha Stewart's Routine",
     "id": 7,
     "time": 5.5,
     "money": 7.5,
-    "point_title": "Martha Stewart's Routine",
     "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, and rich night care.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Martha_Stewart_%2848926315347%29_%28cropped%29.jpg/330px-Martha_Stewart_%2848926315347%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -1395,11 +1387,10 @@
     "draft": false
   },
   {
-    "name": "Scarlett Johansson's Routine",
+    "routine_name": "Scarlett Johansson's Routine",
     "id": 8,
     "time": 4.8,
     "money": 8.6,
-    "point_title": "Scarlett Johansson's Routine",
     "point_description": "A sensitive-skin routine built around The Outset cleanser, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
     "pregnancy_safe": false,
@@ -1556,11 +1547,10 @@
     "draft": false
   },
   {
-    "name": "Dr. Sam Ellis's Routine",
+    "routine_name": "Dr. Sam Ellis's Routine",
     "id": 9,
     "time": 6.7,
     "money": 8.8,
-    "point_title": "Dr. Sam Ellis's Routine",
     "point_description": "A dermatologist-style routine with hydrating layers, peptides, eye cream, sunscreen, double cleansing, LED, prescription treatment, and overnight repair.",
     "pregnancy_safe": false,
     "age_range": [
@@ -1722,11 +1712,10 @@
     "draft": false
   },
   {
-    "name": "Tyla's Routine",
+    "routine_name": "Tyla's Routine",
     "id": 10,
     "time": 3.4,
     "money": 5.5,
-    "point_title": "Tyla's Routine",
     "point_description": "A simple glow-focused routine built around cleanser, face mist, rich moisturizer, sunscreen, petroleum jelly, and a lip sleeping mask.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tyla_at_Coachella_2025_01.jpg/250px-Tyla_at_Coachella_2025_01.jpg",
     "pregnancy_safe": false,
@@ -1829,11 +1818,10 @@
     "draft": false
   },
   {
-    "name": "Mila Kunis's Routine",
+    "routine_name": "Mila Kunis's Routine",
     "id": 11,
     "time": 3.7,
     "money": 9.2,
-    "point_title": "Mila Kunis's Routine",
     "point_description": "A streamlined breakout-conscious routine with clarifying mist, peel-and-glow serum, optional hydration, rich SPF, and LED mask support.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Mila_Kunis_TIFF_2025_%28cropped%29.jpg/330px-Mila_Kunis_TIFF_2025_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -1929,11 +1917,10 @@
     "draft": false
   },
   {
-    "name": "John Mayer's Routine",
+    "routine_name": "John Mayer's Routine",
     "id": 12,
     "time": 2.3,
     "money": 11.3,
-    "point_title": "John Mayer's Routine",
     "point_description": "A PM-only, luxury-heavy routine from Mayer's Snapchat era: acne cleanser, Natura Bisse serum, eye treatment, rich cream, and mist.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/JohnMayer.jpg/250px-JohnMayer.jpg",
     "pregnancy_safe": false,
@@ -2029,11 +2016,10 @@
     "draft": false
   },
   {
-    "name": "Alicia Vikander's Routine",
+    "routine_name": "Alicia Vikander's Routine",
     "id": 13,
     "time": 3.1,
     "money": 7.5,
-    "point_title": "Alicia Vikander's Routine",
     "point_description": "A minimalist dry-skin routine with weekly sauna time, FaceGym Pro skin prep with Collagen Infusion Serum, Augustinus Bader The Rich Cream, Hudsalva, and a quick cleansing-wipe reset.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alicia_Vikander-7756.jpg/330px-Alicia_Vikander-7756.jpg",
     "pregnancy_safe": false,
@@ -2145,11 +2131,10 @@
     "draft": false
   },
   {
-    "name": "Iris Apatow's Routine",
+    "routine_name": "Iris Apatow's Routine",
     "id": 14,
     "time": 6.6,
     "money": 7.8,
-    "point_title": "Iris Apatow's Routine",
     "point_description": "A beauty-lover routine for hormonal acne and hydration, with Avène cleanser, Dr. Barbara Sturm serum, Klairs moisturizer, mineral SPF, and a few calming extras.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg/330px-Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -2310,11 +2295,10 @@
     "draft": false
   },
   {
-    "name": "Emmy Rossum's Routine",
+    "routine_name": "Emmy Rossum's Routine",
     "id": 15,
     "time": 2.6,
     "money": 9.6,
-    "point_title": "Emmy Rossum's Routine",
     "point_description": "A skincare-obsessive daytime routine focused on hydration, firming care, neck treatment, and mineral SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Emmy_Rossum_cropped.jpg/330px-Emmy_Rossum_cropped.jpg",
     "pregnancy_safe": false,
@@ -2401,11 +2385,10 @@
     "draft": false
   },
   {
-    "name": "Margot Robbie's Routine",
+    "routine_name": "Margot Robbie's Routine",
     "id": 16,
     "time": 5.7,
     "money": 10.2,
-    "point_title": "Margot Robbie's Routine",
     "point_description": "A simple-but-luxe routine built around deep cleansing, travel exfoliating pads, face mist, Bloc moisture, La Prairie night cream, eye care, and event masks.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg/330px-Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg",
     "pregnancy_safe": false,
@@ -2537,11 +2520,10 @@
     "draft": false
   },
   {
-    "name": "Julianne Moore's Routine",
+    "routine_name": "Julianne Moore's Routine",
     "id": 17,
     "time": 6.9,
     "money": 9.4,
-    "point_title": "Julianne Moore's Routine",
     "point_description": "A regimented skin-protective routine built around gentle cleansing, targeted serums, neck and eye care, facial massage, and daily sunscreen.",
     "pregnancy_safe": false,
     "age_range": [
@@ -2693,11 +2675,10 @@
     "draft": false
   },
   {
-    "name": "Emma Stone's Routine",
+    "routine_name": "Emma Stone's Routine",
     "id": 18,
     "time": 2.5,
     "money": 4.9,
-    "point_title": "Emma Stone's Routine",
     "point_description": "A very minimal sensitive-skin routine built around single-ingredient oils, Embryolisse moisturizer, and sunscreen.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Emma_Stone_at_the_2024_New_York_Film_Festival_1_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -2809,11 +2790,10 @@
     "draft": false
   },
   {
-    "name": "Meryl Streep's Routine",
+    "routine_name": "Meryl Streep's Routine",
     "id": 19,
     "time": 1.1,
     "money": 5.1,
-    "point_title": "Meryl Streep's Routine",
     "point_description": "A sparse, source-backed routine centered on daily sun protection, skin-type-specific hydration, Tracie Martyn Enzyme Exfoliant, and occasional red-carpet facial treatments.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Meryl_Streep_December_2018.jpg",
     "pregnancy_safe": false,
@@ -2897,11 +2877,10 @@
     "draft": false
   },
   {
-    "name": "Jennifer Garner's Routine",
+    "routine_name": "Jennifer Garner's Routine",
     "id": 20,
     "time": 4.6,
     "money": 5.6,
-    "point_title": "Jennifer Garner's Routine",
     "point_description": "A quick, practical Neutrogena-heavy routine built around cleanser, hyaluronic acid, retinol, weekly exfoliation, and serious daily SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Jennifer_Garner_2013.jpg",
     "pregnancy_safe": false,
@@ -2961,7 +2940,7 @@
           "order": "01. ",
           "title": "Cleanse",
           "product": "Neutrogena Hydro Boost Hydrating Gel Cleanser Fragrance-Free",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hydrating+Gel+Cleanser+Fragrance-Free",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hydrating+Gel+Cleanser+Fragrance-Free&tag=theskinrout07-20",
           "description": "<p>Wash quickly without stripping the skin. Vogue says Garner uses a Neutrogena cleanser after pre-cleansing, and Good Housekeeping says she likes Hydro Boost Gel Cleanser because it has no scent and starts moisturizing as it cleanses.</p>"
         },
         "step_2": {
@@ -2977,7 +2956,7 @@
           "order": "03. ",
           "title": "Hyaluronic Acid",
           "product": "Neutrogena Hydro Boost Hyaluronic Acid Serum",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hyaluronic+Acid+Serum",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hyaluronic+Acid+Serum&tag=theskinrout07-20",
           "description": "<p>Pat into the face and neck for light hydration. In Vogue, Garner says hyaluronic acid brings and locks moisture at the surface of the skin, adding what she calls a layer of poof.</p>"
         },
         "step_4": {
@@ -2985,7 +2964,7 @@
           "order": "04. ",
           "title": "Moisturizer",
           "product": "Neutrogena Hydro Boost Water Cream",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Water+Cream",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Water+Cream&tag=theskinrout07-20",
           "description": "<p>Use a lightweight moisturizer over the hydrating serum. Vogue says Garner tops her Hydro Boost serum with Neutrogena moisturizer, and Good Housekeeping names Hydro Boost Water Cream as her summer moisturizer for glow and plumpness without heaviness.</p>"
         },
         "step_5": {
@@ -2993,8 +2972,8 @@
           "order": "05. ",
           "title": "SPF",
           "product": "Neutrogena Ultra Sheer Face Liquid Mineral Sunscreen SPF 70",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Ultra+Sheer+Face+Liquid+Mineral+Sunscreen+SPF+70",
-          "description": "<p>Apply every morning after showering and before makeup. Harper's Bazaar says Garner uses Ultra Sheer face liquid mineral sunscreen SPF 70 in the morning, and Vogue quotes her saying sunscreen is mandatory and has to be layered on.</p><p>Good Housekeeping also says she likes <a href=\"https://www.amazon.com/s?k=Neutrogena+Ultra+Sheer+Moisturizing+Face+Serum+SPF+60\" target=\"_blank\">Neutrogena Ultra Sheer Moisturizing Face Serum SPF 60</a> as a moisturizer-primer-SPF multitasker.</p>"
+          "link": "https://www.amazon.com/s?k=Neutrogena+Ultra+Sheer+Face+Liquid+Mineral+Sunscreen+SPF+70&tag=theskinrout07-20",
+          "description": "<p>Apply every morning after showering and before makeup. Harper's Bazaar says Garner uses Ultra Sheer face liquid mineral sunscreen SPF 70 in the morning, and Vogue quotes her saying sunscreen is mandatory and has to be layered on.</p><p>Good Housekeeping also says she likes <a href=\"https://www.amazon.com/s?k=Neutrogena+Ultra+Sheer+Moisturizing+Face+Serum+SPF+60&tag=theskinrout07-20\" target=\"_blank\">Neutrogena Ultra Sheer Moisturizing Face Serum SPF 60</a> as a moisturizer-primer-SPF multitasker.</p>"
         }
       },
       "pm": {
@@ -3011,7 +2990,7 @@
           "order": "02. ",
           "title": "Cleanse",
           "product": "Neutrogena Hydro Boost Hydrating Gel Cleanser Fragrance-Free",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hydrating+Gel+Cleanser+Fragrance-Free",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hydrating+Gel+Cleanser+Fragrance-Free&tag=theskinrout07-20",
           "description": "<p>Follow the balm with a gentle gel cleanse. Who What Wear quotes Garner saying she always washes her face at night, even without makeup, because she likes going to bed with clean skin that can work for her while she sleeps.</p>"
         },
         "step_3": {
@@ -3019,7 +2998,7 @@
           "order": "03. ",
           "title": "Retinol Cream",
           "product": "Neutrogena Rapid Wrinkle Repair Retinol Regenerating Cream",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Rapid+Wrinkle+Repair+Retinol+Regenerating+Cream",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Rapid+Wrinkle+Repair+Retinol+Regenerating+Cream&tag=theskinrout07-20",
           "description": "<p>Use on retinol nights, not on the same night as exfoliating pads if skin is reactive. Who What Wear says Garner uses Rapid Wrinkle Repair because she trusts it and does not need to go fancy, while Allure quotes her saying you do not need to spend a billion dollars for great skin.</p>"
         },
         "step_4": {
@@ -3027,7 +3006,7 @@
           "order": "04. ",
           "title": "Retinol Eye Cream",
           "product": "Neutrogena Rapid Wrinkle Repair Anti-Wrinkle Eye Cream",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Rapid+Wrinkle+Repair+Anti-Wrinkle+Eye+Cream",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Rapid+Wrinkle+Repair+Anti-Wrinkle+Eye+Cream&tag=theskinrout07-20",
           "description": "<p>Tap around the eye area on nights skin tolerates retinol. Harper's Bazaar quotes Garner saying she uses Neutrogena's Rapid Wrinkle Repair eye cream almost every night and that it freshens the skin around her eyes without making them tear.</p>"
         },
         "step_5": {
@@ -3035,7 +3014,7 @@
           "order": "05. ",
           "title": "Hydro Boost Night",
           "product": "Neutrogena Hydro Boost Hyaluronic Acid Night Pressed Serum",
-          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hyaluronic+Acid+Night+Pressed+Serum",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Hydro+Boost+Hyaluronic+Acid+Night+Pressed+Serum&tag=theskinrout07-20",
           "description": "<p>Alternate this with retinol nights when the skin needs hydration instead of turnover. Harper's Bazaar says Garner switches back and forth between Rapid Wrinkle Repair and Hydro Boost, and Who What Wear quotes her explaining that hyaluronic acid brings moisture to the skin barrier and makes skin look dewy.</p>"
         }
       }
@@ -3043,11 +3022,10 @@
     "draft": false
   },
   {
-    "name": "Laufey's Routine",
+    "routine_name": "Laufey's Routine",
     "id": 21,
     "time": 4.8,
     "money": 5.7,
-    "point_title": "Laufey's Routine",
     "point_description": "A simple acne- and travel-aware routine built around CeraVe basics, hydration, Bioderma makeup removal, Icelandic eye patches, spot patches, and tour-friendly skin prep.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Laufey_Lin.jpg",
     "pregnancy_safe": false,
@@ -3148,7 +3126,7 @@
           "order": "06. ",
           "title": "Lip Balm",
           "product": "Blistex Medicated Lip Balm",
-          "link": "https://www.amazon.com/s?k=Blistex+Medicated+Lip+Balm",
+          "link": "https://www.amazon.com/s?k=Blistex+Medicated+Lip+Balm&tag=theskinrout07-20",
           "description": "<p>Load up while getting ready. In Allure, Laufey says she has used Blistex since high school and loves that it is minty; in Vogue, she calls a good lip balm the last step in her simple skincare routine and says the minty feeling made lip balm tolerable for her.</p>"
         }
       },
@@ -3166,7 +3144,7 @@
           "order": "02. ",
           "title": "Oil Cleanse",
           "product": "Bioderma Sensibio Micellar Cleansing Oil",
-          "link": "https://www.amazon.com/s?k=Bioderma+Sensibio+Micellar+Cleansing+Oil",
+          "link": "https://www.amazon.com/s?k=Bioderma+Sensibio+Micellar+Cleansing+Oil&tag=theskinrout07-20",
           "description": "<p>Use before regular cleanser when stage makeup is stubborn. PORTER says Laufey uses an oil-based cleanser first when she has stage makeup on, but does not name the exact oil cleanser, so this links a Bioderma option that fits the same makeup-removal routine.</p>"
         },
         "step_3": {
@@ -3198,11 +3176,10 @@
     "draft": false
   },
   {
-    "name": "Bella Hadid's Routine",
+    "routine_name": "Bella Hadid's Routine",
     "id": 22,
     "time": 3.9,
     "money": 8.8,
-    "point_title": "Bella Hadid's Routine",
     "point_description": "A dewy, high-low model skin-prep routine built around cold de-puffing, microcurrent, Biologique Recherche serums, Weleda Skin Food, Clinique SPF tint, and older Dior hydration staples.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bella_Hadid_Cannes_2018.jpg",
     "pregnancy_safe": false,
@@ -3231,7 +3208,7 @@
         "link": "https://instyle.mx/beauty/la-rutina-de-bella-hadid-aqui-los-productos-y-donde-comprarlos/",
         "favicon": "https://instyle.mx/favicon.ico",
         "date": "May 18, 2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bella_Hadid_Cannes_2018.jpg",
+        "image": "https://i0.wp.com/instyle.mx/wp-content/uploads/2025/05/donde-comprar-en-mexico-los-productos-que-usa-bella-hadid.jpg?fit=1080%2C1080&ssl=1",
         "headline": "La rutina de Bella Hadid: aquí los productos y dónde comprarlos",
         "summary": "InStyle México identifies several products from Bella's skin-prep routine, including Biologique Recherche Lotion P50W, Colostrum VG, Liposmose, and Weleda Skin Food."
       },
@@ -3293,7 +3270,7 @@
           "order": "06. ",
           "title": "Moisturizer Primer",
           "product": "Weleda Skin Food Original Ultra-Rich Cream",
-          "link": "https://www.amazon.com/s?k=Weleda+Skin+Food+Original+Ultra-Rich+Cream",
+          "link": "https://www.amazon.com/s?k=Weleda+Skin+Food+Original+Ultra-Rich+Cream&tag=theskinrout07-20",
           "description": "<p>Warm a small amount between fingers and use it where skin needs a glossy, cushioned finish. Vogue says Bella goes through many tubes of Skin Food, buys it at CVS, and treats it like her go-to dewy primer.</p>"
         },
         "step_7": {
@@ -3321,6 +3298,573 @@
           "product": "Dior Hydra Life Fresh Sorbet Creme",
           "link": "https://www.dior.com/en_us/beauty/products/dior-hydra-life-fresh-sorbet-creme-C099600951.html",
           "description": "<p>Apply a light cream after cleansing. In British Vogue, Bella says her face is always so dry and that she uses Dior Hydra Life Fresh Hydration Sorbet Creme because it is light enough for her skin.</p>"
+        }
+      }
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Jessica Alba's Routine",
+    "id": 23,
+    "time": 5.7,
+    "money": 5.1,
+    "point_description": "A clean-beauty, sensitive-skin routine centered on Honest Beauty masks, antioxidant serums, barrier balm, tinted eye care, mineral SPF tint, and optional evening add-on tools.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Alba_2024.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "40s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin",
+      "fine_lines_and_wrinkles"
+    ],
+    "sources": [
+      {
+        "label": "Who What Wear 2021",
+        "site": "Who What Wear",
+        "link": "https://www.whowhatwear.com/jessica-alba-beauty-routine-interview",
+        "favicon": "https://www.whowhatwear.com/favicon.ico",
+        "date": "2021",
+        "image": "https://cdn.mos.cms.futurecdn.net/whowhatwear/posts/291522/jessica-alba-beauty-routine-interview-291522-1612830512473-super.jpg",
+        "headline": "Jessica Alba's Clean-Beauty Routine and Skincare Must-Haves",
+        "summary": "Jessica gives a full AM and PM routine, naming Prime + Perfect Mask, Calm & Porefect Serum, Calm + Heal Melting Balm, Honestly Bright Eyes, Vitamin C Radiance Serum, Calm On Foaming Cream Cleanser, a reusable silicone mask, and an ultrasound wand."
+      },
+      {
+        "label": "Marie Claire 2021",
+        "site": "Marie Claire",
+        "link": "https://www.marieclaire.com/beauty/a35863915/jessica-alba-beauty-health-recommendations/",
+        "favicon": "https://www.marieclaire.com/favicon.ico",
+        "date": "Mar 26, 2021",
+        "image": "https://cdn.mos.cms.futurecdn.net/EGTmXtjh3ZLRKDc3KYqLAB.jpg",
+        "headline": "How Actress and Founder Jessica Alba Does Self-Care",
+        "summary": "Jessica reiterates her love of the Prime + Perfect Mask, Calm + Heal Melting Balm, Honestly Bright Eyes Tinted Eye Cream, and tinted lip balm as part of her inner/outer glow routine."
+      },
+      {
+        "label": "Women's Health 2021",
+        "site": "Women's Health",
+        "link": "https://www.womenshealthmag.com/beauty/a35406990/jessica-alba-no-makeup-nighttime-skincare-routine-instagram-video/",
+        "favicon": "https://www.womenshealthmag.com/favicon.ico",
+        "date": "Feb 3, 2021",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Alba_2024.jpg",
+        "headline": "Jessica Alba Shared Her Nighttime Skincare Routine",
+        "summary": "Women's Health recaps Jessica's no-makeup nighttime routine with Calm On Foaming Cream Cleanser, a gentle konjac sponge, Prime + Perfect Mask, focused breathing, and Calm + Heal Melting Balm."
+      },
+      {
+        "label": "W 2017",
+        "site": "W",
+        "link": "https://www.wmagazine.com/story/jessica-alba-beauty-notes",
+        "favicon": "https://www.wmagazine.com/favicon.ico",
+        "date": "Apr 28, 2017",
+        "image": "https://imgix.bustle.com/wmag/2017/01/06/586fe6feae85801066c0ae5f_Jessica-Alba-Seattle-Nordstorm-2016-1.jpg?crop=faces&dpr=2&fit=crop&h=621&w=414",
+        "headline": "Jessica Alba Shares Her Daily Beauty Routine",
+        "summary": "Jessica says good skin starts with cleansing, mentions her Braun facial cleansing brush, hydration mist, facial oil, Magic Balm, and says the best advice from her facialist is to wear sunscreen."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Morning Mask",
+          "product": "Honest Beauty Prime + Perfect Mask",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Prime+%2B+Perfect+Mask&tag=theskinrout07-20",
+          "description": "<p>Apply first thing, then let it sit while doing the usual morning multitasking. In Who What Wear, Jessica says she wakes up and throws this on before brushing her teeth, drinking coffee, and making breakfast, then removes it with a warm washcloth.</p><p>This exact mask appears to be discontinued or not reliably available now, so the link points to remaining marketplace availability rather than a current Honest product page.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Antioxidant Serum",
+          "product": "Honest Beauty Daily Green Juice Antioxidant Super Serum",
+          "link": "https://honest.com/products/daily-green-juice-antioxidant-super-serum",
+          "description": "<p>Massage over clean skin after the mask. Who What Wear says Jessica follows her morning mask with Calm & Porefect Serum; that exact serum is not currently easy to verify, so this keeps the step in the same Honest antioxidant-serum lane with a current serum.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Barrier Balm",
+          "product": "Honest Beauty Calm + Heal Melting Balm",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Calm+%2B+Heal+Melting+Balm&tag=theskinrout07-20",
+          "description": "<p>Warm a scoop between hands until it melts, then press into the face and neck. Jessica tells Who What Wear she loves rubbing it into her hands first, and Marie Claire quotes her calling it amazing for nighttime and irritated skin too.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Tinted Eye Cream",
+          "product": "Honest Beauty Honestly Bright Eyes Tinted Eye Cream",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Honestly+Bright+Eyes+Tinted+Eye+Cream&tag=theskinrout07-20",
+          "description": "<p>Tap under the eyes where you want hydration and color correction. Jessica says it has a hydrogel base with pigment and helps counter the blue from dark circles; Marie Claire also quotes her using it as a tinted, hydrating under-eye cream.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Lip Treatment",
+          "product": "Honest Beauty Tinted Lip Balm",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Tinted+Lip+Balm&tag=theskinrout07-20",
+          "description": "<p>Use as the final comfort step for lips. Jessica tells Who What Wear her Gloss-C is like a gloss and lip treatment in one, and Marie Claire says she likes the tinted lip balm because she does not want dry or cracked lips.</p>"
+        },
+        "step_6": {
+          "time": "am",
+          "order": "06. ",
+          "title": "Tinted SPF",
+          "product": "Honest Beauty CCC Clean Corrective Tinted Moisturizer SPF 30",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+CCC+Clean+Corrective+Tinted+Moisturizer+SPF+30&tag=theskinrout07-20",
+          "description": "<p>Apply as the last morning skin step. Jessica names Honest Beauty CCC Clean Corrective With Vitamin C Tinted Moisturizer in Who What Wear, and W says the best advice from her facialist is to wear sunscreen, so this keeps the SPF version of that tinted moisturizer at the end.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Honest Beauty Sensitive Skin Calming Cream Cleanser",
+          "link": "https://honest.com/products/sensitive-skin-calming-cream-cleanser",
+          "description": "<p>Massage onto damp skin, rinse, and pat dry. Who What Wear says Jessica likes washing her face at night with Calm On Foaming Cream Cleanser; Honest's current page calls this Sensitive Skin Calming Cream Cleanser and describes it as a gentle foaming formula for sensitive skin.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Gentle Sponge",
+          "product": "Honest Beauty Gentle Konjac Sponge",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Gentle+Konjac+Sponge&tag=theskinrout07-20",
+          "description": "<p>Use damp with cleanser when you want a little extra soft polishing, not harsh scrubbing. Women's Health says Jessica wets the Honest Beauty Gentle Konjac Sponge and rubs it over her skin during her nighttime routine.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Vitamin C Serum",
+          "product": "Honest Beauty Vitamin C Radiance Serum",
+          "link": "https://honest.com/products/vitamin-c-radiance-serum",
+          "description": "<p>Apply before moisturizer or balm. Who What Wear says Jessica swaps in Vitamin C Radiance Serum at night, and her older Who What Wear product edit quotes her calling it her go-to for brightening, used right before moisturizer.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Melting Balm",
+          "product": "Honest Beauty Calm + Heal Melting Balm",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Calm+%2B+Heal+Melting+Balm&tag=theskinrout07-20",
+          "description": "<p>Seal the routine with the same balm she uses in the morning. Women's Health says Jessica finishes her nighttime routine by slathering Calm + Heal Melting Balm over her cheeks and neck, and Marie Claire quotes her saying it leaves the face glowing and dewy instantly.</p>"
+        },
+        "step_5": {
+          "time": "pm",
+          "order": "05. ",
+          "title": "Silicone Mask",
+          "product": "Honest Beauty Reusable Magic Silicone Sheet Mask",
+          "link": "https://www.target.com/p/-/A-82445865",
+          "description": "<p>Use as an optional TV-time add-on over serum or balm. Who What Wear says Jessica sometimes uses the reusable silicone mask and lets it sit on her face for a while; Target's current listing says to use it over serums or moisturizers for 10 to 30 minutes.</p>"
+        },
+        "step_6": {
+          "time": "pm",
+          "order": "06. ",
+          "title": "Ultrasound Wand",
+          "product": "Conture Kinetic Skin Toning System",
+          "link": "https://camerareadycosmetics.com/search?q=Conture+Kinetic+Skin+Toning+System",
+          "description": "<p>Use as an optional ten-minute add-on with balm when there is extra time. Jessica tells Who What Wear she sometimes uses an ultrasound vibrating wand with the balm for 10 minutes; Camera Ready Cosmetics later identified the Conture Kinetic Skin Toning System as a Jessica Alba-associated skincare tool.</p>"
+        }
+      }
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Beyoncé's Routine",
+    "id": 24,
+    "time": 3.9,
+    "money": 6.6,
+    "point_description": "A conservative Beyoncé routine built from her rare personal skincare comments and Sir John's Beyoncé-connected skin-prep guidance: deep cleansing, toning mist, hydration, SPF, Rosebud Salve, and Aquaphor slugging.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beyonc%C3%A9%20-%20Tottenham%20Hotspur%20Stadium%20-%201st%20June%202023%20%2838%20of%20118%29%20%2852946363558%29%20%28face%20cropped%29.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "40s"
+    ],
+    "skin_concern": [
+      "dry_skin"
+    ],
+    "sources": [
+      {
+        "label": "Women's Health 2020",
+        "site": "Women's Health",
+        "link": "https://www.womenshealthmag.com/beauty/a33656774/beyonce-skincare/",
+        "favicon": "https://www.womenshealthmag.com/favicon.ico",
+        "date": "Aug 30, 2020",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/0820-skincare-beyonce-1597949362.jpg?crop=0.5xw%3A1xh%3Bcenter%2Ctop&resize=640%3A%2A",
+        "headline": "5 Ways Beyoncé Keeps Her Skin Glowing",
+        "summary": "Women's Health gathers Beyoncé's rare skincare comments: she sleeps in Aquaphor, uses Smith's Rosebud Salve as a multitasker, and follows Sir John's advice to remove makeup before bed."
+      },
+      {
+        "label": "Marie Claire UK 2023",
+        "site": "Marie Claire UK",
+        "link": "https://www.marieclaire.co.uk/beauty/skincare/eucerin-aquaphor",
+        "favicon": "https://www.marieclaire.co.uk/favicon.ico",
+        "date": "Oct 13, 2023",
+        "image": "https://cdn.mos.cms.futurecdn.net/Gzxsr59FogoLhDcVpz8yc6.jpg",
+        "headline": "Why Eucerin Aquaphor Is Such a Celebrity-Favourite Product",
+        "summary": "Marie Claire UK repeats Beyoncé's Elle-era Aquaphor habit, explaining that she smears it on before bed for an intentionally greasy nighttime glow."
+      },
+      {
+        "label": "W 2017",
+        "site": "W",
+        "link": "https://www.wmagazine.com/story/beyonces-makeup-artist-sir-john-tips-interview",
+        "favicon": "https://www.wmagazine.com/favicon.ico",
+        "date": "Dec 31, 2017",
+        "image": "https://imgix.bustle.com/wmag/2017/12/31/5a490e7e81a7cd57a08913b9_24331846_158772324878225_7236841343379570688_n.jpg?crop=faces&dpr=2&fit=crop&h=414&w=414",
+        "headline": "Beyoncé's Makeup Artist, Sir John, On All Things Beauty, Skincare, and His All Time Favorite Beyoncé Look",
+        "summary": "Sir John describes skincare prep for Beyoncé-level glam: a cleansing device, rose oil or rose water spray, and L'Oréal Hydra Genius moisturizer."
+      },
+      {
+        "label": "Elle 2016",
+        "site": "Elle",
+        "link": "https://www.elle.com/beauty/makeup-skin-care/a39297/beauty-secrets-from-sir-john-beyonce-makeup-artist/",
+        "favicon": "https://www.elle.com/favicon.ico",
+        "date": "Sep 16, 2016",
+        "image": "https://hips.hearstapps.com/ell.h-cdn.co/assets/16/37/2560x1703/gallery-1474048199-gettyimages-528215436.jpg?resize=640%3A%2A",
+        "headline": "6 Beauty Rules I Learned From Beyoncé's Makeup Artist",
+        "summary": "Elle interviews Sir John while he was touring with Beyoncé, covering hydration, toning, SPF moisturizer, weekly fruit-enzyme exfoliation, and always removing makeup at night."
+      }
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "PMD Clean Pro",
+          "link": "https://www.amazon.com/s?k=PMD+Clean+Pro&tag=theskinrout07-20",
+          "description": "<p>Start with a thorough cleanse when skin needs a polished canvas. In W, Beyoncé's longtime makeup artist Sir John says he loves a Clarisonic device for prepping and cleansing because it gives a deep clean; Clarisonic is discontinued, so this links a current silicone cleansing-device alternative.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Toning Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://us.caudalie.com/p/324/beauty-elixir-324.html",
+          "description": "<p>Mist after cleansing, then massage or press it in while skin is still fresh. Elle says Sir John is obsessed with toning and recommends Caudalie Beauty Elixir; W also says he likes rose oil or a DIY rose water spray in skin prep.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Hydrating Moisturizer",
+          "product": "L'Oréal Paris Hydra Genius Daily Liquid Care",
+          "link": "https://www.amazon.com/s?k=L%27Or%C3%A9al+Paris+Hydra+Genius+Daily+Liquid+Care&tag=theskinrout07-20",
+          "description": "<p>Apply a light layer and massage it in so the skin looks awake rather than coated. W says Sir John finishes skin prep with Hydra Genius for oily skin if he wants a mattifying effect or Extra Dry Skin when winter skin needs more moisture.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF Moisturizer",
+          "product": "L'Oréal Paris Bright Reveal Brightening Day Moisturizer SPF 30",
+          "link": "https://www.amazon.com/s?k=L%27Or%C3%A9al+Paris+Bright+Reveal+Brightening+Day+Moisturizer+SPF+30&tag=theskinrout07-20",
+          "description": "<p>Use SPF as the final morning skincare layer. In Elle, Sir John recommends a water-based moisturizer such as L'Oréal Paris Bright Reveal Brightening Day Moisturizer SPF 30 before a light, breathable tinted SPF if coverage is needed.</p>"
+        },
+        "step_5": {
+          "time": "am",
+          "order": "05. ",
+          "title": "Multitasker Salve",
+          "product": "Smith's Rosebud Salve",
+          "link": "https://www.ulta.com/p/smiths-lip-balm-xlsImpprod12881007",
+          "description": "<p>Use on lips or tiny dry spots. Women's Health says Beyoncé told Allure that Smith's Rosebud Salve is one of her must-have beauty products and that she uses it for everything, including with lipstick and as a lash-prime trick before curling.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Remove Makeup",
+          "product": "PMD Clean Pro",
+          "link": "https://www.amazon.com/s?k=PMD+Clean+Pro&tag=theskinrout07-20",
+          "description": "<p>Cleanse thoroughly at night, especially after performance or heavy makeup. Women's Health quotes Sir John saying he tells his clients, including Beyoncé, to always take makeup off before bed; W says a cleansing device is also good at the end of the night for removing makeup.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Weekly Peel",
+          "product": "REN Glycol Lactic Radiance Renewal Mask",
+          "link": "https://www.amazon.com/s?k=REN+Glycol+Lactic+Radiance+Renewal+Mask&tag=theskinrout07-20",
+          "description": "<p>Use only once weekly if skin tolerates exfoliation, and skip on irritated nights. Elle says Sir John recommends a fruit enzyme peel once a week and names REN's Glycol Lactic Radiance Renewal Mask as one of his quick skin-prep products.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Aquaphor Slugging",
+          "product": "Aquaphor Healing Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment&tag=theskinrout07-20",
+          "description": "<p>Apply a thin-to-generous layer as the last step at night, especially when skin feels dry. Women's Health and Marie Claire UK both cite Beyoncé saying she goes to bed looking totally greasy, and Marie Claire frames it as her bedtime Aquaphor habit.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Lip Salve",
+          "product": "Smith's Rosebud Salve",
+          "link": "https://www.ulta.com/p/smiths-lip-balm-xlsImpprod12881007",
+          "description": "<p>Finish lips with the same multitasking salve. Women's Health says Beyoncé called Rosebud Salve a must-have and said she uses it for everything, so this is the simple lip-care counterpart to her richer Aquaphor face layer.</p>"
+        }
+      }
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Drugstore Anti-Aging Routine",
+    "id": 25,
+    "time": 2.9,
+    "money": 4.6,
+    "point_description": "A low-fuss routine that puts the money where it matters: daily sunscreen, a beginner retinol, vitamin C, and enough barrier support to keep going.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "sensitive"
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>The first step is having a clean palette for the rest of the routine. A nice, boring, gentle cleanser will prepare your skin for what comes next. If your skin is dry and clean in the morning, it is also completely fine to just rinse with water.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Vitamin C",
+          "product": "CeraVe Skin Renewing Vitamin C Serum",
+          "link": "https://www.amazon.com/s?k=CeraVe+Skin+Renewing+Vitamin+C+Serum&tag=theskinrout07-20",
+          "description": "<p>Apply a thin layer to dry skin before moisturizer. This gives you a straightforward 10% vitamin C step with ceramides and panthenol, for brightening and antioxidant support.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Moisturize",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Use one to two pumps after vitamin C. It has ceramides, squalane, and hyaluronic acid, and it plays nicely with actives. This is not the glamorous step, it is the compliance step: comfortable skin is much more likely to stick with sunscreen and retinol.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF",
+          "product": "Neutrogena Invisible Daily Defense Face Serum SPF 60+",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Invisible+Daily+Defense+Face+Serum+SPF+60%2B&tag=theskinrout07-20",
+          "description": "<p>Apply generously as the final morning step to face, ears, neck, chest, and hands. This is the most important anti-aging product in the routine because prevention beats trying to undo UV damage later.</p><p>If you'd like a drugstore mineral option, try <a href=\"https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-50\" target=\"_blank\">CeraVe Hydrating Mineral Sunscreen SPF 50</a>, though untinted mineral formulas can leave a cast. For a tinted mineral option, <a href=\"https://www.neutrogena.com/products/neutrogena-purescreen-mineral-uv-tint-face-liquid-sunscreen/6806411\" target=\"_blank\">Neutrogena Purescreen+ Mineral UV Tint SPF 30</a> is more wearable and comes in multiple shades.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleansing Balm",
+          "product": "e.l.f. Holy Hydration! Makeup Melting Cleansing Balm",
+          "link": "https://www.amazon.com/s?k=e.l.f.+Holy+Hydration+Makeup+Melting+Cleansing+Balm&tag=theskinrout07-20",
+          "description": "<p>Use this first on dry skin when you wore makeup, water-resistant sunscreen, or just a lot of SPF. Massage it in until sunscreen and makeup feel loosened, then emulsify with a little water and rinse. This is the step that makes the gentle cleanser actually stand a chance without scrubbing your face like you are mad at it.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Double Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Follow the balm with a gentle water-based cleanser. This removes any leftover film and gives you clean skin before retinol without chasing that squeaky-clean feeling.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Retinol",
+          "product": "CeraVe Skin Renewing Retinol Serum",
+          "link": "https://www.amazon.com/s?k=CeraVe+Skin+Renewing+Retinol+Serum&tag=theskinrout07-20",
+          "description": "<p>Start two nights a week, using a thin layer over the face while avoiding eyelids, lip edges, and the creases beside the nose. This is a gentle drugstore retinol with ceramides and niacinamide, so it fits the point of this routine: effective enough to matter, boring enough that your skin may actually tolerate it.</p><p>If you are sensitive, sandwich it between two thin layers of moisturizer. Once tolerated every other night, a dermatologist-prescribed tretinoin is the evidence-maximizing upgrade.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Moisturize",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Finish with moisturizer. If your skin feels tight or flaky, use more moisturizer rather than adding more actives. The goal is steady use over months, not heroic peeling in week one.</p>"
+        }
+      }
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Mid-Tier Anti-Aging Routine",
+    "id": 26,
+    "time": 2.9,
+    "money": 6.9,
+    "point_description": "A mid-tier routine for someone who wants the same evidence-based bones with nicer textures: barrier care, vitamin C, SPF, and retinal.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin",
+      "sensitive"
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "Skinfix Hydrating Foaming Oil Cleanser",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Hydrating%20Foaming%20Oil%20Cleanser",
+          "description": "<p>Use as a soft morning cleanse, or skip cleanser and rinse with water if skin feels dry. This is the mid-range upgrade because the texture is more cushioning and less utilitarian than a basic drugstore cleanser.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Vitamin C",
+          "product": "Paula's Choice C15 Super Booster",
+          "link": "https://www.sephora.com/product/paula-s-choice-c15-vitamin-c-super-booster-P469506",
+          "description": "<p>Apply a few drops to dry skin in the morning. This is a 15% vitamin C serum, so it is a bit more ambitious than the drugstore tier. If it stings, use it every other morning or pause until the retinal routine is comfortable.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Barrier Cream",
+          "product": "Skinfix Triple Lipid-Peptide Cream",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
+          "description": "<p>Apply a thin layer over vitamin C. This is where the routine buys a nicer daily experience: richer barrier support, a cushier finish, and enough comfort to make actives less annoying.</p><p>For oily skin, swap to <a href=\"https://www.sephora.com/product/skinfix-barrier-skin-barrier-lightweight-pore-refining-refillable-gel-cream-with-b-l3-P481739\" target=\"_blank\">Skinfix Skin Barrier Restoring Gel Cream</a> or use a lighter layer.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "SPF",
+          "product": "Supergoop Unseen Sunscreen SPF 50",
+          "link": "https://supergoop.com/collections/unseen-sunscreen",
+          "description": "<p>Use as the final morning step. This has that clear, primer-like finish people either love or hate (I'm honestly not the biggest fan).</p><p>If you prefer a mineral option, Supergoop Mineral Mattescreen SPF 40 has a subtle neutral tint to reduce cast, but the shade still needs to work for your skin tone.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleansing Balm",
+          "product": "Farmacy Green Clean Makeup Removing Cleansing Balm",
+          "link": "https://www.sephora.com/product/green-clean-cleansing-balm-P515961",
+          "description": "<p>Use this as the first cleanse when you wore makeup, water-resistant SPF, or just need a more satisfying sunscreen removal step. Massage it onto dry skin, add water so it turns milky, then rinse before going in with your regular cleanser.</p><p>If your skin is very reactive, choose the fragrance-free version.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "Skinfix Hydrating Foaming Oil Cleanser",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Hydrating%20Foaming%20Oil%20Cleanser",
+          "description": "<p>Use this as the second cleanse after balm, or as your only cleanser if you did not wear makeup and your sunscreen was easy to remove. Keep it practical: the goal is clean skin, not a stripped face.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Retinal",
+          "product": "Medik8 Crystal Retinal 3",
+          "link": "https://us.medik8.com/products/crystal-retinal",
+          "description": "<p>Start two nights a week, then slowly build toward every other night if skin stays calm. Crystal Retinal 3 is positioned for newer vitamin A users and gives this tier a more elegant retinal step than the drugstore version.</p><p>Do not chase results by layering exfoliating acids on top. Slow and boring wins with retinoids.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Barrier Cream",
+          "product": "Skinfix Triple Lipid-Peptide Cream",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
+          "description": "<p>Finish with moisturizer, or sandwich the retinal between two thin layers if you are irritation-prone. A richer cream is not magic, but it can be the difference between quitting retinal and actually using it long enough to see results.</p><p>If your skin is oily or the cream feels heavy, use <a href=\"https://www.sephora.com/product/skinfix-barrier-skin-barrier-lightweight-pore-refining-refillable-gel-cream-with-b-l3-P481739\" target=\"_blank\">Skinfix Skin Barrier Restoring Gel Cream</a> instead.</p>"
+        }
+      }
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Luxury Anti-Aging Routine",
+    "id": 27,
+    "time": 2.9,
+    "money": 10.9,
+    "point_description": "A prestige version of the same routine: iS Clinical cleanser, the OG vitamin C, luxurious cream, tinted mineral SPF.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s",
+      "50s",
+      "60s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": {
+        "step_1": {
+          "time": "am",
+          "order": "01. ",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://www.amazon.com/s?k=iS+Clinical+Cleansing+Complex&tag=theskinrout07-20",
+          "description": "<p>Use a small amount and rinse well. This is a cult luxury cleanser with mild resurfacing energy, so treat it as the polished red-carpet version of a basic cleanse, not the reason the routine works.</p><p>If skin is sensitive or you are irritated from AlphaRet, swap this for <a href=\"https://www.sephora.com/product/augustinus-bader-the-cream-cleansing-gel-with-tfc8-gentle-cleanser-P470506\" target=\"_blank\">Augustinus Bader The Cream Cleansing Gel</a>, which feels more like a gentle luxury morning cleanse than a resurfacing cleanse.</p>"
+        },
+        "step_2": {
+          "time": "am",
+          "order": "02. ",
+          "title": "Vitamin C",
+          "product": "SkinCeuticals C E Ferulic",
+          "link": "https://www.dermstore.com/p/skinceuticals-c-e-ferulic-with-15-l-ascorbic-acid-vitamin-c-serum-30ml/11289609/",
+          "description": "<p>Apply four to five drops to dry skin in the morning. This is the luxury benchmark: 15% L-ascorbic acid with vitamin E and ferulic acid. It is expensive, iconic, and genuinely elegant, though less expensive vitamin C products still live in the same useful category.</p>"
+        },
+        "step_3": {
+          "time": "am",
+          "order": "03. ",
+          "title": "Rich Cream",
+          "product": "Augustinus Bader The Rich Cream",
+          "link": "https://augustinusbader.com/us/en/the-rich-cream-50-ml",
+          "description": "<p>Apply a thin layer over vitamin C. This is the indulgent comfort step: deeply emollient, luxury-coded, and best for normal-to-dry skin. If you are combination or oily, <a href=\"https://www.sephora.com/brand/augustinus-bader/face-creams\" target=\"_blank\">Augustinus Bader The Cream</a> is the lighter alternative.</p>"
+        },
+        "step_4": {
+          "time": "am",
+          "order": "04. ",
+          "title": "Tinted Mineral SPF",
+          "product": "ALASTIN HydraTint Pro Mineral SPF 36",
+          "link": "https://alastin.com/products/hydratint-sunscreen-spf-36",
+          "description": "<p>Use generously as the final morning step. The tint and iron oxides can add visible-light protection, which is especially useful for melasma and persistent hyperpigmentation, but the shade will not work for everyone.</p><p>Untinted alternatives: <a href=\"https://www.skinceuticals.com/skincare/sunscreens/clear-daily-soothing-uv-defense-sunscreen-spf-50/S124.html\" target=\"_blank\">SkinCeuticals Clear Daily Soothing UV Defense SPF 50</a> has a sheer hydrating finish, and <a href=\"https://www.skinbetter.com/shop-skincare/product-category/mineral-sunscreens/sunbetter-sheer-spf-70-sunscreen-lotion-M023.html\" target=\"_blank\">Skinbetter Sunbetter Sheer SPF 70</a> is an untinted mineral option, though it may leave a cast.</p>"
+        }
+      },
+      "pm": {
+        "step_1": {
+          "time": "pm",
+          "order": "01. ",
+          "title": "Cleansing Balm",
+          "product": "Tatcha The Indigo Cleansing Balm",
+          "link": "https://www.sephora.com/product/indigo-cleansing-balm-P506735",
+          "description": "<p>Use this as the first cleanse when you wore makeup, layered SPF, or anything water-resistant. Massage it onto dry skin, add water so it emulsifies, then rinse before your second cleanser.</p><p>This is the gentle luxury version of a cleansing balm: fragrance-free, cushiony, and made for sensitive or sensitized skin. Exactly the vibe you want before an AlphaRet night.</p>"
+        },
+        "step_2": {
+          "time": "pm",
+          "order": "02. ",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://www.amazon.com/s?k=iS+Clinical+Cleansing+Complex&tag=theskinrout07-20",
+          "description": "<p>Use this as the second cleanse after balm, or as your only cleanse if you did not wear makeup and your sunscreen was easy to remove. Do not scrub, especially on AlphaRet nights.</p>"
+        },
+        "step_3": {
+          "time": "pm",
+          "order": "03. ",
+          "title": "Retinoid",
+          "product": "Skinbetter Science AlphaRet Overnight Cream",
+          "link": "https://www.skinbetter.com/skin-concern/skin-concern/anti-aging/alpharet-overnight-cream-M001.html",
+          "description": "<p>Start two nights a week and build slowly. AlphaRet combines a cosmetic retinoid with an AHA, so it is doing two active jobs at once. That can be beautiful for lines, pigment, and texture, but sensitive skin should move carefully.</p><p>Because this already contains exfoliating acid, do not add a separate peel during the adjustment period.</p>"
+        },
+        "step_4": {
+          "time": "pm",
+          "order": "04. ",
+          "title": "Rich Cream",
+          "product": "Augustinus Bader The Rich Cream",
+          "link": "https://augustinusbader.com/us/en/the-rich-cream-50-ml",
+          "description": "<p>Finish with a thin layer, or use it before and after AlphaRet if skin needs buffering. This is a gorgeous experience step, but the unsexy truth remains: the results engine is still sunscreen plus retinoid consistency.</p><p>If The Rich Cream feels too heavy, swap to <a href=\"https://www.sephora.com/brand/augustinus-bader/face-creams\" target=\"_blank\">Augustinus Bader The Cream</a>, the lighter version in the same product family.</p>"
         }
       }
     },

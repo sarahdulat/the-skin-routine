@@ -47,7 +47,7 @@ Place the affiliate disclosure immediately before the Alternatives section in ev
 
 ```html
 <p class="affiliate-disclosure mt-md">
-  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+  Some product links below may be affiliate links.
 </p>
 ```
 

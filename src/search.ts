@@ -15,6 +15,12 @@ type RoutineStep = {
   description: string;
 };
 
+type SearchableRoutine = Routine & {
+  name?: string;
+  routine_name?: string;
+  point_title?: string;
+};
+
 export type BlogSearchResult = SearchResultBase & {
   type: "post";
   path: string;
@@ -81,11 +87,13 @@ const buildSearchIndex = () => {
   const routineResults: RoutineSearchResult[] = routines
     .filter((routine) => !routine.draft)
     .map((routine) => {
-      const title = routine.point_title || routine.name;
+      const searchableRoutine = routine as SearchableRoutine;
+      const routineName = searchableRoutine.name || searchableRoutine.routine_name || "";
+      const title = searchableRoutine.point_title || routineName;
       const description = routine.point_description;
       const filters = [...routine.age_range, ...routine.skin_concern].join(" ");
       const sources = (routine.sources ?? []).map((source) => `${source.label} ${source.site} ${source.headline} ${source.summary}`).join(" ");
-      const searchText = normalize(`${title} ${routine.name} ${description} ${filters} ${routineStepsToText(routine)} ${sources}`);
+      const searchText = normalize(`${title} ${routineName} ${description} ${filters} ${routineStepsToText(routine)} ${sources}`);
 
       return {
         type: "routine" as const,

@@ -74,7 +74,7 @@ I would not buy this again. I will finish it carefully because the protection is
 I can still see it working beautifully for someone with normal, combination, or oily skin who loves featherweight chemical sunscreens, wants serious UVA protection, and tolerates alcohol-forward formulas. Patch test first if your skin is reactive.
 
 <p class="affiliate-disclosure mt-md">
-  This post may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
+  Some product links below may be affiliate links.
 </p>
 
 ## Alternatives to La Roche-Posay Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+
