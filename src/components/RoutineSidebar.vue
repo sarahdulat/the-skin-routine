@@ -46,19 +46,19 @@
       <div v-if="isRoutineMissing" class="routine-alert" role="status">
         We don't have enough information for this routine :(
       </div>
-      <div v-for="step in steps" v-else :key="step.order" class="step mb-lg pb-lg">
-        <h3>{{ step.order }}</h3>
+      <div v-for="(step, index) in steps" v-else :key="stepKey(index)" class="step mb-lg pb-lg">
+        <h3>{{ formatStepOrder(index) }}</h3>
         <h4>
           <span>{{ step.title }}</span>
-          <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(step.order) }"
-            :aria-expanded="isStepExpanded(step.order)" :aria-controls="`step-description-${step.order}`"
-            @click="toggleStep(step.order)">🖙</button>
+          <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(stepKey(index)) }"
+            :aria-expanded="isStepExpanded(stepKey(index))" :aria-controls="`step-description-${stepKey(index)}`"
+            @click="toggleStep(stepKey(index))">🖙</button>
         </h4>
         <div class="pt-md">
           <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
           <!-- <button class="px-sm ms-md">Buy</button> -->
         </div>
-        <div v-show="isStepExpanded(step.order)" class="mt-sm" :id="`step-description-${step.order}`"
+        <div v-show="isStepExpanded(stepKey(index))" class="mt-sm" :id="`step-description-${stepKey(index)}`"
           @click="handleDescriptionClick">
           <div v-html="step.description"></div>
         </div>
@@ -149,8 +149,12 @@ const sources = computed(() => {
   return [...routineSources].sort((a, b) => sourceDateTime(b) - sourceDateTime(a));
 });
 
+const stepKey = (index: number) => String(index);
+
+const formatStepOrder = (index: number) => `${String(index + 1).padStart(2, '0')}. `;
+
 const resetExpandedSteps = () => {
-  expandedSteps.value = new Set(steps.value[0] ? [steps.value[0].order] : []);
+  expandedSteps.value = new Set(steps.value[0] ? [stepKey(0)] : []);
 };
 
 const scrollStepsToTop = async () => {
