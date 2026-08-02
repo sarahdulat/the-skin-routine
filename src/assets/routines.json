@@ -4,7 +4,7 @@
     "id": 0,
     "time": 10.7,
     "money": 6.8,
-    "point_description": "Sarah's forever routine: microcurrent, vitamin C, azelaic acid, daily SPF, LED, tretinoin recovery nights, and a bedtime slugging ritual.",
+    "point_description": "Sarah's forever routine: microcurrent, vitamin C, azelaic acid, daily SPF, a split double cleanse, LED, tretinoin recovery nights, and a bedtime slugging ritual.",
     "pregnancy_safe": false,
     "age_range": [
       "30s",
@@ -90,10 +90,17 @@
       "pm": [
         {
           "time": "pm",
+          "title": "Oil Cleanser",
+          "product": "SKIN1004 Madagascar Centella Light Cleansing Oil",
+          "link": "https://amzn.to/45wpoV8",
+          "description": "<p>This is the first cleanse, and it is mostly here for makeup, water-resistant sunscreen, or those nights when I know I reapplied SPF like a responsible adult. Massage it onto dry skin for at least a minute so it can break down sunscreen, mascara, and whatever city/day residue is sitting on your face, then add water to emulsify before rinsing.</p><p>I do not use this because I want my face to feel squeaky-clean. I use it so the second cleanser does not have to do all the heavy lifting. If I did not wear makeup and barely left the house, I can skip this and go straight to Tatcha.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Double Cleanse",
           "product": "Tatcha The Deep Cleanse",
           "link": "https://amzn.to/3J1myuv",
-          "description": "<p>A double cleanse with an oil cleanser is a great way to wash off makeup and sunscreen. I start with <a href=\"https://amzn.to/45wpoV8\" target=\"_blank\">SKIN1004 Madagascar Centella Light Cleansing Oil</a>, then I follow with Tatcha The Deep Cleanse.</p>"
+          "description": "<p>This is the second cleanse after the oil cleanser. It gets rid of any leftover oil, sunscreen film, and general residue so my skin is actually clean before LED or tretinoin. I only use a small amount and I do not scrub, because a cleanser should clean your face, not start a fight with your barrier.</p><p>The Deep Cleanse lives up to its name and makes my skin feel clean without that tight, over-washed feeling. If I did not wear makeup or reapply much sunscreen, this can be the only cleanse.</p>"
         },
         {
           "time": "pm",
@@ -174,7 +181,7 @@
     "id": 1,
     "time": 9.5,
     "money": 6.2,
-    "point_description": "Less actives, no microcurrent and mineral SPF only, but one surprising step remains.",
+    "point_description": "A pregnancy-safe version of Sarah's routine with fewer actives, mineral SPF, a split double cleanse, LED by personal comfort level, and the same bedtime moisture ritual.",
     "pregnancy_safe": true,
     "age_range": [
       "30s",
@@ -253,10 +260,17 @@
       "pm": [
         {
           "time": "pm",
+          "title": "Oil Cleanser",
+          "product": "SKIN1004 Madagascar Centella Light Cleansing Oil",
+          "link": "https://amzn.to/45wpoV8",
+          "description": "<p>This is the first cleanse for makeup, tinted mineral SPF, or any day when sunscreen has been layered on properly. Massage it onto dry skin first, give it time to dissolve the sunscreen film, then add water so it turns milky and rinses away.</p><p>During pregnancy I kept the routine gentler, but I still wanted sunscreen fully off my face at night. A first cleanse lets the second cleanser stay gentle instead of relying on rubbing, washcloths, or aggressive cleansing to get everything off.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Double Cleanse",
           "product": "Tatcha The Deep Cleanse",
           "link": "https://amzn.to/3J1myuv",
-          "description": "<p>A double cleanse with an oil cleanser is a great way to wash off makeup and sunscreen. I start with <a href=\"https://amzn.to/45wpoV8\" target=\"_blank\">SKIN1004 Madagascar Centella Light Cleansing Oil</a>, then I follow with Tatcha The Deep Cleanse.</p>"
+          "description": "<p>This is the second cleanse after oil cleanser, or the only cleanse on very low-key days. Use a small amount, rinse well, and stop there. The point is clean, comfortable skin before LED and hydrating layers, not a stripped face.</p><p>The Deep Cleanse lives up to its name and makes my skin feel clean without feeling tight or irritated, which is exactly the balance I want when the rest of the routine is intentionally calmer.</p>"
         },
         {
           "time": "pm",
@@ -3326,7 +3340,7 @@
   {
     "routine_name": "Drugstore Anti-Aging Routine",
     "id": 25,
-    "time": 2.9,
+    "time": 3.5,
     "money": 4.6,
     "point_description": "A low-fuss routine that puts the money where it matters: daily sunscreen, a beginner retinol, vitamin C, and enough barrier support to keep going.",
     "pregnancy_safe": false,
@@ -3355,6 +3369,13 @@
           "product": "CeraVe Skin Renewing Vitamin C Serum",
           "link": "https://www.amazon.com/s?k=CeraVe+Skin+Renewing+Vitamin+C+Serum&tag=theskinrout07-20",
           "description": "<p>Apply a thin layer to dry skin before moisturizer. This gives you a straightforward 10% vitamin C step with ceramides and panthenol, for brightening and antioxidant support.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Azelaic Acid",
+          "product": "The Ordinary Azelaic Acid Suspension 10%",
+          "link": "https://www.amazon.com/s?k=The+Ordinary+Azelaic+Acid+Suspension+10%25&tag=theskinrout07-20",
+          "description": "<p>Apply a thin layer after vitamin C and before moisturizer. Azelaic acid is the calm, useful supporting active here: nice for redness, uneven tone, and little texture issues without making the routine feel like a full exfoliation project.</p><p>If layering vitamin C and azelaic acid feels spicy, alternate mornings until your skin gets the memo.</p>"
         },
         {
           "time": "am",
@@ -3407,7 +3428,7 @@
   {
     "routine_name": "Mid-Tier Anti-Aging Routine",
     "id": 26,
-    "time": 2.9,
+    "time": 3.5,
     "money": 6.9,
     "point_description": "A mid-tier routine for someone who wants the same evidence-based bones with nicer textures: barrier care, vitamin C, SPF, and retinal.",
     "pregnancy_safe": false,
@@ -3437,6 +3458,13 @@
           "product": "Paula's Choice C15 Super Booster",
           "link": "https://www.sephora.com/product/paula-s-choice-c15-vitamin-c-super-booster-P469506",
           "description": "<p>Apply a few drops to dry skin in the morning. This is a 15% vitamin C serum, so it is a bit more ambitious than the drugstore tier. If it stings, use it every other morning or pause until the retinal routine is comfortable.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Azelaic Acid",
+          "product": "Paula's Choice 10% Azelaic Acid Booster",
+          "link": "https://www.sephora.com/product/paula-s-choice-10-azelaic-acid-booster-P469507",
+          "description": "<p>Apply a thin layer after vitamin C, or mix it into moisturizer if your skin prefers fewer separate layers. This is a good mid-tier brightening and redness-support step, especially if pigmentation and texture are part of the anti-aging concern.</p><p>Because this formula also includes salicylic acid, start a few mornings a week if your skin gets dry or easily annoyed.</p>"
         },
         {
           "time": "am",
@@ -3489,7 +3517,7 @@
   {
     "routine_name": "Luxury Anti-Aging Routine",
     "id": 27,
-    "time": 2.9,
+    "time": 3.5,
     "money": 10.9,
     "point_description": "A prestige version of the same routine: iS Clinical cleanser, the OG vitamin C, a luxurious cream, and tinted mineral SPF.",
     "pregnancy_safe": false,
@@ -3519,6 +3547,13 @@
           "product": "SkinCeuticals C E Ferulic",
           "link": "https://www.dermstore.com/p/skinceuticals-c-e-ferulic-with-15-l-ascorbic-acid-vitamin-c-serum-30ml/11289609/",
           "description": "<p>Apply four to five drops to dry skin in the morning. This is the luxury benchmark: 15% L-ascorbic acid with vitamin E and ferulic acid. It is expensive, iconic, and genuinely elegant, though less expensive vitamin C products still live in the same useful category.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Azelaic Acid",
+          "product": "SkinCeuticals Phyto A+ Brightening Treatment",
+          "link": "https://www.dermstore.com/p/skinceuticals-phyto-a-brightening-treatment-30ml/13516546/",
+          "description": "<p>Apply one to two pumps after vitamin C. This is the luxury azelaic-acid step: more elegant, more expensive, and a little more treatment-moisturizer than straightforward serum.</p><p>If your skin is dry, still follow with The Rich Cream. If your skin is oily, this may be enough moisture before SPF.</p>"
         },
         {
           "time": "am",
