@@ -1,8 +1,13 @@
 <template>
   <aside>
+    <div v-if="!currentRoutine" class="routine-empty-state" role="status">
+      <p>No routines match these filters.</p>
+      <p class="small font-sans">Adjust the filters to see routine steps.</p>
+    </div>
+    <template v-else>
     <div class="sidebar-header">
       <div class="routine-header my-lg">
-        <h2>{{ store.currentRoutine.routine_name }}</h2>
+        <h2>{{ currentRoutine.routine_name }}</h2>
         <div v-if="firstSource" class="sources" aria-label="Routine sources">
           <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
             @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
@@ -64,13 +69,14 @@
         </div>
       </div>
     </div>
+    </template>
   </aside>
 </template>
 
 <script lang="ts" setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
-import { store } from '../store'
+import { store, type Routine } from '../store'
 
 type RoutineSource = {
   label: string;
@@ -86,15 +92,16 @@ type RoutineSource = {
   published_at?: string;
 };
 
-type RoutineWithSources = typeof store.currentRoutine & {
+type RoutineWithSources = Routine & {
   sources?: RoutineSource[];
 };
 
+const currentRoutine = computed(() => store.currentRoutine);
 const routineTime = computed(() => store.routineTime);
 const router = useRouter();
-const currentRoutineId = computed(() => store.currentRoutine.id);
-const amSteps = computed(() => Object.values(store.currentRoutine.steps.am ?? {}));
-const pmSteps = computed(() => Object.values(store.currentRoutine.steps.pm ?? {}));
+const currentRoutineId = computed(() => currentRoutine.value?.id ?? null);
+const amSteps = computed(() => Object.values(currentRoutine.value?.steps.am ?? {}));
+const pmSteps = computed(() => Object.values(currentRoutine.value?.steps.pm ?? {}));
 const steps = computed(() => routineTime.value === 'am' ? amSteps.value : pmSteps.value);
 const isRoutineMissing = computed(() => steps.value.length === 0);
 const firstSource = computed(() => sources.value[0] ?? null);
@@ -144,7 +151,7 @@ const sourceDateTime = (source: RoutineSource) => {
 };
 
 const sources = computed(() => {
-  const routineSources = (store.currentRoutine as RoutineWithSources).sources ?? [];
+  const routineSources = (currentRoutine.value as RoutineWithSources | null)?.sources ?? [];
 
   return [...routineSources].sort((a, b) => sourceDateTime(b) - sourceDateTime(a));
 });
@@ -235,6 +242,13 @@ const defaultToAvailableRoutineTime = () => {
 };
 
 const resetRoutineTime = () => {
+  if (!currentRoutine.value) {
+    expandedSteps.value = new Set();
+    isSourcePopoverOpen.value = false;
+    scrollStepsToTop();
+    return;
+  }
+
   store.setRoutineTime('am');
   defaultToAvailableRoutineTime();
   isSourcePopoverOpen.value = false;
@@ -286,7 +300,8 @@ aside {
   overflow-x: hidden;
 }
 
-.routine-alert {
+.routine-alert,
+.routine-empty-state {
   padding: var(--space-lg);
   border: 1px solid var(--color-dark);
   border-radius: var(--radius-sm);
@@ -295,6 +310,14 @@ aside {
   font-family: var(--font-family-sans-serif);
   font-size: var(--fontSize-sm);
   line-height: var(--lineHeight-sm);
+}
+
+.routine-empty-state {
+  margin: var(--space-xl) 0;
+}
+
+.routine-empty-state p {
+  margin: 0;
 }
 
 .sidebar-header {

@@ -6,12 +6,12 @@ export type Routine = typeof routines[number];
 interface State {
   routines: typeof routines;
   routineTime: "am" | "pm";
-  currentRoutine: Routine;
+  currentRoutine: Routine | null;
 }
 
 export const store = reactive<State & {
   setRoutineTime(time: State["routineTime"]): void;
-  setCurrentRoutine(currentRoutine: Routine): void;
+  setCurrentRoutine(currentRoutine: Routine | null): void;
 }>({
   // state
   routines,
@@ -22,7 +22,7 @@ export const store = reactive<State & {
   setRoutineTime(time: "am" | "pm") {
     this.routineTime = time
   },
-  setCurrentRoutine(currentRoutine: Routine) {
+  setCurrentRoutine(currentRoutine: Routine | null) {
     this.currentRoutine = currentRoutine
   }
 })

@@ -82,7 +82,12 @@ export default defineComponent({
           return;
         }
 
-        if (filteredRoutines.length > 0 && !filteredRoutines.some((routine) => routine.id === store.currentRoutine.id)) {
+        if (filteredRoutines.length === 0) {
+          store.setCurrentRoutine(null);
+          return;
+        }
+
+        if (!store.currentRoutine || !filteredRoutines.some((routine) => routine.id === store.currentRoutine?.id)) {
           store.setCurrentRoutine(filteredRoutines[0]);
         }
       },

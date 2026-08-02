@@ -11,13 +11,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, PropType } from "vue";
+import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
   name: "Dropdown",
   data() {
     return {
-      selectedOption: this.$route.query?.filter ?? this.$props.defaultValue,
+      selectedOption: this.$route.query[this.defaultValue] ?? this.defaultValue,
     };
   },
   props: {
@@ -36,17 +36,26 @@ export default defineComponent({
     }
   },
   watch: {
-    "$route.query.filter"(newFilter) {
-      this.selectedOption = newFilter || "all";
+    "$route.query": {
+      handler() {
+        this.syncSelectedOption();
+      },
+      deep: true,
     },
   },
   methods: {
+    syncSelectedOption() {
+      const queryValue = this.$route.query[this.defaultValue];
+      this.selectedOption = Array.isArray(queryValue)
+        ? queryValue[0] ?? this.defaultValue
+        : queryValue ?? this.defaultValue;
+    },
     updateQueryParam() {
       this.$router.push({ query: { ...this.$route.query, [this.defaultValue]: this.selectedOption } });
     },
   },
   mounted() {
-    this.selectedOption = this.$route.query[this.defaultValue] || this.defaultValue;
+    this.syncSelectedOption();
   }
 });
 </script>

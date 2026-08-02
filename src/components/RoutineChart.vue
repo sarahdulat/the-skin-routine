@@ -1,5 +1,9 @@
 <template>
   <div ref="graph" class="chart-container" @click="closePopover">
+    <div v-if="showEmptyState" class="chart-empty-state" role="status">
+      <p>No routines match these filters.</p>
+      <p class="small font-sans">Adjust the filters to see more routines.</p>
+    </div>
     <Popover v-if="popoverVisible" :visible="popoverVisible" :position="popoverPosition" @click.stop>
       <div>
         <p class="small">{{ popoverContent.routine_name }}</p>
@@ -10,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted, PropType, ref, watch } from 'vue';
+import { computed, defineComponent, onMounted, onUnmounted, PropType, ref, watch } from 'vue';
 import * as d3 from 'd3';
 import Popover from './Popover.vue';
 import { store, Routine } from '../store';
@@ -47,6 +51,7 @@ export default defineComponent({
     const popoverVisible = ref(false);
     const popoverContent = ref({ routine_name: "", point_description: "" });
     const popoverPosition = ref({ x: 0, y: 0 });
+    const showEmptyState = computed(() => props.routines.length === 0);
     let resizeObserver: ResizeObserver | null = null;
 
     const closePopover = () => {
@@ -120,7 +125,7 @@ export default defineComponent({
       });
       const imagePoints = data.filter((point) => point.marker_image);
       const standardPoints = data.filter((point) => !point.marker_image);
-      const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine.id;
+      const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine?.id;
       const showRoutinePopover = (point: RoutinePoint) => {
         showPopover(
           { routine_name: point.routine_name, point_description: point.point_description },
@@ -380,6 +385,7 @@ export default defineComponent({
       popoverVisible,
       popoverContent,
       popoverPosition,
+      showEmptyState,
       closePopover,
     };
   },
@@ -403,5 +409,24 @@ export default defineComponent({
 .quadrant-line {
   stroke: #343A40;
   stroke-width: 2px;
+}
+
+.chart-empty-state {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 1;
+  width: min(22rem, calc(100% - var(--space-xl) * 2));
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-light);
+  box-shadow: 1px 3px 0 var(--color-dark);
+  padding: var(--space-md);
+  text-align: center;
+  pointer-events: none;
+}
+
+.chart-empty-state p {
+  margin: 0;
 }
 </style>
