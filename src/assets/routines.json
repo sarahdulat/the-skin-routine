@@ -90,7 +90,7 @@
       "pm": [
         {
           "time": "pm",
-          "title": "Oil Cleanser",
+          "title": "Cleansing Oil",
           "product": "SKIN1004 Madagascar Centella Light Cleansing Oil",
           "link": "https://amzn.to/45wpoV8",
           "description": "<p>This is the first cleanse, and it is mostly here for makeup, water-resistant sunscreen, or those nights when I know I reapplied SPF like a responsible adult. Massage it onto dry skin for at least a minute so it can break down sunscreen, mascara, and whatever city/day residue is sitting on your face, then add water to emulsify before rinsing.</p><p>I do not use this because I want my face to feel squeaky-clean. I use it so the second cleanser does not have to do all the heavy lifting. If I did not wear makeup and barely left the house, I can skip this and go straight to Tatcha.</p>"
@@ -1537,14 +1537,14 @@
       "pm": [
         {
           "time": "pm",
-          "title": "First Cleanse",
+          "title": "Cleansing Balm",
           "product": "Elemis Pro-Collagen Cleansing Balm",
           "link": "https://go.shopmy.us/p-1391704",
           "description": "<p>Use as the first cleanse to break down makeup and sunscreen. In her nighttime routine video, Ellis shares how she removes makeup and includes Elemis Pro-Collagen Cleansing Balm.</p>"
         },
         {
           "time": "pm",
-          "title": "Cleanse",
+          "title": "Double Cleanse",
           "product": "iS Clinical Cleansing Complex",
           "link": "https://go.shopmy.us/p-1391705",
           "description": "<p>Follow with a second cleanse. In her nighttime routine video, Ellis uses iS Clinical Cleansing Complex after the cleansing balm.</p>"
@@ -1865,8 +1865,8 @@
   {
     "routine_name": "Alicia Vikander's Routine",
     "id": 13,
-    "time": 3.1,
-    "money": 7.5,
+    "time": 2.6,
+    "money": 8.7,
     "point_description": "A minimalist dry-skin routine with weekly sauna time, FaceGym Pro skin prep with Collagen Infusion Serum, Augustinus Bader The Rich Cream, Hudsalva, and a quick cleansing-wipe reset.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alicia_Vikander-7756.jpg/330px-Alicia_Vikander-7756.jpg",
     "pregnancy_safe": false,
@@ -1916,17 +1916,10 @@
         },
         {
           "time": "am",
-          "title": "Device Serum",
-          "product": "FACEGYM Collagen Infusion Serum",
-          "link": "https://facegym.com/products/facegympro",
-          "description": "<p>Apply before using the FaceGym Pro so the device can glide and conduct properly. FaceGym's Pro instructions say to apply Collagen Infusion Serum to the face and during every use, and note that the serum was made to be used with the device.</p>"
-        },
-        {
-          "time": "am",
-          "title": "Face Device",
+          "title": "Muscle Stimulation",
           "product": "FACEGYM Pro - Edition",
           "link": "https://facegym.com/products/facegympro",
-          "description": "<p>Use as a morning or travel skin-prep step after applying the compatible serum. British Vogue says Vikander rolled FaceGym Pro's Electric Muscle Stimulation Device over her jaw and cheeks on a flight.</p><p>The same article says she also does face exercises at home and believes keeping facial muscles strong helps the foundation of the skin follow.</p>"
+          "description": "<p>Use as a morning or travel skin-prep step after applying the compatible serum. Apply <a href=\"https://facegym.com/products/facegympro\" target=\"_blank\">FACEGYM Collagen Infusion Serum</a> before using the FaceGym Pro so the device can glide and conduct properly. FaceGym's Pro instructions say to apply Collagen Infusion Serum to the face and during every use, and note that the serum was made to be used with the device. British Vogue says Vikander rolled FaceGym Pro's Electric Muscle Stimulation Device over her jaw and cheeks on a flight.</p><p>The same article says she also does face exercises at home and believes keeping facial muscles strong helps the foundation of the skin follow.</p>"
         },
         {
           "time": "am",
@@ -3726,14 +3719,14 @@
       "pm": [
         {
           "time": "pm",
-          "title": "First Cleanse",
+          "title": "Cleansing Oil",
           "product": "KORA Organics Milky Mushroom Gentle Cleansing Oil",
           "link": "https://us.koraorganics.com/products/milky-mushroom-gentle-cleansing-oil",
           "description": "<p>Use as the first cleanse at night, especially for makeup and sunscreen. Marie Claire says Miranda double cleanses even without makeup, starting with KORA Milky Mushroom Cleansing Oil.</p><p>Massage on dry skin, add water so it turns milky, then rinse before the foaming cleanser.</p>"
         },
         {
           "time": "pm",
-          "title": "Second Cleanse",
+          "title": "Double Cleanse",
           "product": "KORA Organics Turmeric Glow Foaming Cleanser",
           "link": "https://us.koraorganics.com/products/turmeric-glow-foaming-cleanser",
           "description": "<p>Follow the cleansing oil with this foaming cleanser. Marie Claire names Turmeric Glow Foaming Cleanser as the second step in her double cleanse, and KORA describes it as a deep clean that should not dry skin out.</p><p>Keep the pressure gentle; the double cleanse should remove the day, not strip the barrier.</p>"
@@ -3919,14 +3912,14 @@
       "pm": [
         {
           "time": "pm",
-          "title": "First Cleanse",
+          "title": "Micellar Water",
           "product": "Bioderma Sensibio H2O Micellar Water",
           "link": "https://www.amazon.com/s?k=Bioderma+Sensibio+H2O+Micellar+Water&tag=theskinrout07-20",
           "description": "<p>Use on cotton pads as the makeup-removal step when she has a full face on. Into The Gloss and Allure both describe Ashley starting her nighttime double cleanse with Bioderma.</p>"
         },
         {
           "time": "pm",
-          "title": "Second Cleanse",
+          "title": "Double Cleanse",
           "product": "SkinMedica Facial Cleanser",
           "link": "https://www.dermstore.com/p/skinmedica-facial-cleanser-6-fl.-oz/11289656/",
           "description": "<p>Lather after micellar water and rinse well. Into The Gloss says her dermatologist recommended this cleanser and Ashley calls it a nice jelly cleanser that is not too abrasive.</p><p>Allure also highlights her rule for night: no matter what kind of evening it was, at least wash your face.</p>"
@@ -3993,6 +3986,1008 @@
           "product": "Dr. Dennis Gross DRx SpectraLite FaceWare Pro",
           "link": "https://www.sephora.com/product/dr-dennis-gross-skincare-drx-spectralite-faceware-pro-P435615",
           "description": "<p>Use some nights while lying down or watching TV. Glamour says Ashley swears by Dr. Dennis Gross red-light therapy for rosacea and keeps it next to her bed.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Drugstore Sensitive-Skin Routine",
+    "id": 30,
+    "time": 2.4,
+    "money": 4.3,
+    "point_title": "Drugstore Sensitive-Skin Routine",
+    "point_description": "A fragrance-free drugstore routine built around oat, ceramides, and mineral SPF with no exfoliating acids or retinoids.",
+    "pregnancy_safe": true,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Use a small amount with lukewarm water and rinse without scrubbing. This is soap-free, fragrance-free, essential-oil-free, and boring in exactly the way sensitive skin usually appreciates.</p><p>If your face feels comfortable and clean in the morning, skip cleanser and just rinse. There is no prize for washing a calm barrier twice.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Oat Serum",
+          "product": "Aveeno Calm + Restore Triple Oat Serum",
+          "link": "https://www.amazon.com/s?k=Aveeno+Calm+Restore+Triple+Oat+Serum&tag=theskinrout07-20",
+          "description": "<p>Press two or three pumps over clean skin before moisturizer. The oat flour, extract, and oil are here for dryness, tightness, and visible reactivity rather than aggressive correction.</p><p>This is fragrance-free and tested for sensitive skin, but oat is still an ingredient someone can be allergic to. Patch test first and skip it if you know oats are a problem for you.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Moisturizer",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Apply while skin is still slightly damp. Ceramides, squalane, glycerin, and hyaluronic acid do the unglamorous barrier work without fragrance, essential oils, or a pile of botanical extracts.</p><p>Use a little more on dry areas and a little less through an oily T-zone. Sensitive skin does not need every square inch treated identically.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral SPF",
+          "product": "Blue Lizard Sensitive Face Mineral Sunscreen SPF 50+",
+          "link": "https://www.amazon.com/s?k=Blue+Lizard+Sensitive+Face+Mineral+Sunscreen+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Apply generously as the last morning step and reapply when outdoors. This is a fragrance-free mineral option, which can be a better starting point when chemical sunscreen filters sting.</p><p>The tradeoff is a possible white cast. Do not use less product to make the cast disappear; switch formulas if you cannot wear the full amount comfortably.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Massage gently over damp skin and rinse with lukewarm water. If you wore makeup or stubborn water-resistant SPF, remove that first with a fragrance-free micellar water or balm, then let this be the very gentle second cleanse.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Oat Serum",
+          "product": "Aveeno Calm + Restore Triple Oat Serum",
+          "link": "https://www.amazon.com/s?k=Aveeno+Calm+Restore+Triple+Oat+Serum&tag=theskinrout07-20",
+          "description": "<p>Repeat the oat serum when skin feels dry or reactive. This is the only treatment layer in the routine, and that restraint is deliberate: calm skin usually responds better to one soothing product than five supposedly soothing products.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Moisturizer",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Finish with a comfortable layer. On very dry nights, press a tiny amount of plain petrolatum over flaky spots after moisturizer. If skin is burning or actively flaring, strip the routine back to cleanser, moisturizer, and SPF until it settles.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Mid-Tier Sensitive-Skin Routine",
+    "id": 31,
+    "time": 2.4,
+    "money": 6.5,
+    "point_title": "Mid-Tier Sensitive-Skin Routine",
+    "point_description": "A Sephora-level barrier routine with hypochlorous acid for redness and blemishes, a lipid-rich cream, and gentle mineral SPF.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin",
+      "acne_prone"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Skinfix Hydrating Foaming Oil Cleanser",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Hydrating%20Foaming%20Oil%20Cleanser",
+          "description": "<p>Use a small amount with lukewarm water, or skip the morning cleanse when skin feels dry. This fragrance- and essential-oil-free cleanser gives you a softer, more cushioned wash without trying to exfoliate your face at the sink.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Redness + Blemish Mist",
+          "product": "Tower 28 SOS Daily Rescue Facial Spray",
+          "link": "https://www.sephora.com/product/sos-save-our-skin-daily-rescue-facial-spray-P448852",
+          "description": "<p>Mist over clean, dry skin and let it dry fully before the next step. The entire ingredient list is water, salt, and hypochlorous acid, making this the tidy treatment step for redness, post-workout irritation, and blemish-prone sensitive skin.</p><p>Do not keep spraying just because it feels refreshing. Once or twice daily is plenty unless your dermatologist tells you otherwise.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Cream",
+          "product": "Skinfix Triple Lipid-Peptide Cream",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
+          "description": "<p>Apply one or two pumps after the SOS spray has dried. Ceramides, fatty acids, sterols, glycerin, and peptides make this the plush barrier-support step, and the formula is free of fragrance and essential oils.</p><p>It is rich. Combination or oily skin can use a thinner layer or swap to the lighter <a href=\"https://www.sephora.com/product/barrier-balancing-water-cream-moisturizer-with-hyaluronic-acid-P515337\" target=\"_blank\">Skinfix Barrier Balancing Water Cream</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral SPF",
+          "product": "Paula's Choice CALM Barrier Protect Mineral Sunscreen SPF 30",
+          "link": "https://www.paulaschoice.com/calm-barrier-protect-mineral-sunscreen-spf-30/9200.html",
+          "description": "<p>Apply generously as the final step. This is a fragrance-free mineral sunscreen made for dry, redness-prone skin, with soothing allantoin and centella alongside the UV filters.</p><p>SPF 30 is the floor, not an excuse to apply a whisper-thin layer. If this stings or does not sit well, <a href=\"https://eltamd.com/collections/100-mineral-active-ingredients/products/uv-pure-broad-spectrum-spf-47\" target=\"_blank\">EltaMD UV Pure SPF 47</a> is a fragrance-free, all-mineral alternative, though it may look whiter on skin.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Skinfix Hydrating Foaming Oil Cleanser",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Hydrating%20Foaming%20Oil%20Cleanser",
+          "description": "<p>Cleanse once at night without a washcloth, brush, or hot water. Add a separate first cleanse only when makeup or water-resistant sunscreen actually requires it.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Redness + Blemish Mist",
+          "product": "Tower 28 SOS Daily Rescue Facial Spray",
+          "link": "https://www.sephora.com/product/sos-save-our-skin-daily-rescue-facial-spray-P448852",
+          "description": "<p>Mist over clean skin and give it a minute to dry. This is useful when sensitivity travels with redness or breakouts, but it is still optional on nights when skin already feels calm.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Cream",
+          "product": "Skinfix Triple Lipid-Peptide Cream",
+          "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
+          "description": "<p>Finish with one or two pumps over the face and neck. There is no retinoid, peel, or exfoliating toner hiding elsewhere in this routine; the goal is to make the barrier feel boringly reliable before considering stronger treatment.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Luxury Sensitive-Skin Routine",
+    "id": 32,
+    "time": 2.4,
+    "money": 10.8,
+    "point_title": "Luxury Sensitive-Skin Routine",
+    "point_description": "A minimalist medical-luxury routine with an eight-ingredient lipid serum, rich ceramide care, and sheer mineral SPF.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Skinbetter Science Cleansing Gel",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/facial-cleansers/cleansing-gel-M014.html",
+          "description": "<p>Use a small amount with lukewarm water, then pat rather than rub. This is a soap-, sulfate-, fragrance-, and dye-free cleanser developed for sensitive or compromised skin.</p><p>As ever, water alone is a perfectly respectable morning cleanse when your barrier is already happy.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lipid Serum",
+          "product": "Epicutis Lipid Serum",
+          "link": "https://epicutis.com/products/lipid-serum",
+          "description": "<p>Spread a pea-sized amount over clean skin. It has only eight ingredients: humectants, hyaluronic acid, a chelator, citric acid, and the brand's lipid-like TSC ingredient. This is luxury minimalism aimed at dehydration, redness, and stressed or post-procedure-feeling skin.</p><p>The ingredient list is elegant; the price is extravagant. Patch test it anyway, because expensive skin can still be sensitive skin.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Cream",
+          "product": "Epicutis Hyvia Crème",
+          "link": "https://epicutis.com/products/hyvia-creme",
+          "description": "<p>Apply a pea-sized layer after serum. Ceramide NP, glycerin, shea butter, meadowfoam oil, and fatty alcohols make this a rich barrier cream, while the formula avoids fragrance and essential oils.</p><p>Because it contains several plant oils and extracts, patch testing still matters. Use less—or skip it under SPF—if your skin is oily or congestion-prone.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral SPF",
+          "product": "Colorescience Total Protection No-Show Mineral Sunscreen SPF 50",
+          "link": "https://www.colorescience.com/products/total-protection-no-show-mineral-sunscreen-spf-50",
+          "description": "<p>Shake, apply generously, and give it a minute to set. This is an untinted, fragrance-free zinc sunscreen designed to blend more sheerly than traditional mineral formulas, with bisabolol and allantoin for added comfort.</p><p>No mineral sunscreen is visually invisible on every person. Blend in thin passes until you reach the full amount rather than stopping early to avoid cast.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Skinbetter Science Cleansing Gel",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/facial-cleansers/cleansing-gel-M014.html",
+          "description": "<p>Use as the nightly cleanse, massaging gently with fingertips and rinsing well. If makeup needs a first cleanse, choose a fragrance-free remover and keep this as the second, calming pass.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Lipid Serum",
+          "product": "Epicutis Lipid Serum",
+          "link": "https://epicutis.com/products/lipid-serum",
+          "description": "<p>Apply another pea-sized amount over the face, with a separate drop for the neck if wanted. It is doing the treatment job here without retinoids, exfoliating acids, or a high-strength brightening active.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Cream",
+          "product": "Epicutis Hyvia Crème",
+          "link": "https://epicutis.com/products/hyvia-creme",
+          "description": "<p>Finish with a comfortable layer over face and neck. This routine spends its money on texture and a very focused serum, but the underlying strategy is the same as the drugstore version: cleanse gently, hold onto water, and stop poking an already reactive barrier.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Sofia Richie Grainge's Routine",
+    "id": 33,
+    "time": 6.7,
+    "money": 7.9,
+    "point_title": "Sofia Richie Grainge's Routine",
+    "point_description": "A sensitive, acne-prone, less-is-more routine built around Vanicream cleansing, clean towels, LED cooling, Hydrinity mist, Avène Cicalfate, SkinCeuticals SPF, and a source-backed nighttime double cleanse.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sofia_Richie_by_Eric_Longden_5.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "sensitive",
+      "dark_spots_and_sun_damage",
+      "fine_lines_and_wrinkles"
+    ],
+    "sources": [
+      {
+        "label": "British Vogue 2025",
+        "site": "British Vogue",
+        "link": "https://www.vogue.co.uk/article/sofia-richie-beauty-favourites",
+        "favicon": "https://www.vogue.co.uk/favicon.ico",
+        "date": "30 July 2025",
+        "headline": "Sofia Richie Grainge Stays Loyal To This Budget Mascara",
+        "image": "https://media.vogue.co.uk/photos/6888efd6a7e7eb174e7d7022/2:3/w_2560%2Cc_limit/HC-VOGUK-290725-01.jpg",
+        "summary": "British Vogue recaps her updated Beauty Secrets routine with Shark CryoGlow, Hydrinity Hyacyn Active, Avène Cicalfate, Aquaphor, and her minimalist postpartum approach."
+      },
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/sofia-richie-grainge-beauty-secrets",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "July 25, 2025",
+        "headline": "Sofia Richie Grainge Is Loyal to This Drugstore Mascara",
+        "image": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_vogue.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1753382724/vogue_beauty-secrets-sofia-richie-grainge.jpg?_a=BACCg%20Ev",
+        "summary": "Vogue's product list and transcript name Vanicream Cleansing Bar, Clean Skin Club towels, Shark CryoGlow, Hydrinity mist, Avène Cicalfate, Aquaphor, and SkinCeuticals Physical Fusion UV Defense SPF 50."
+      },
+      {
+        "label": "Vogue 2024",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/sofia-richie-grainge-skinceuticals-interview",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "February 28, 2024",
+        "headline": "Sofia Richie Grainge on Pregnancy Breakouts and Finding Beauty Inspiration on TikTok",
+        "image": "https://assets.vogue.com/photos/65de02f4749b3ed7cb7cde61/master/w_2560%2Cc_limit/SkinCeuticals_SofiaRichieGrainge_StevieDance_1.jpg",
+        "summary": "Sofia describes pregnancy-triggered oiliness and breakouts, saying her dermatologist gave her SkinCeuticals Simply Clean and that she began washing up to three times daily."
+      },
+      {
+        "label": "Allure 2024",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/sofia-richie-pregnancy-beauty-routine-interview",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "date": "March 5, 2024",
+        "headline": "Sofia Richie Grainge's Entire Pregnancy Beauty Routine, From Her Head to Her (Sometimes Swollen) Toes",
+        "image": "https://media.allure.com/photos/65e756c10cbdc3458d39515a/16:9/w_2560%2Cc_limit/sofia%20richie%20beauty%20routine%20interview.jpg",
+        "summary": "Allure reports her pregnancy skin constants as SkinCeuticals C E Ferulic and Purifying Cleanser, plus KORA body oil and weekly lymphatic massage."
+      },
+      {
+        "label": "NewBeauty 2022",
+        "site": "NewBeauty",
+        "link": "https://www.newbeauty.com/view/sofia-richie-interview",
+        "favicon": "https://www.newbeauty.com/favicon.ico",
+        "date": "Oct. 11, 2022",
+        "headline": "Sofia Richie on Her Role as Nudestix Beauty Director and Getting a 'Nude Skin' Glow",
+        "image": "https://cdn.sanity.io/images/0vv8moc6/newbeauty/1da39ae8b34cb145de28245740d2d4cdd3893bd5-1024x576.png?auto=format&q=70&w=800",
+        "summary": "Sofia says sensitive skin keeps her routine minimalist, names Nudescreen Daily Mineral SPF 30 as her go-to, and keeps Nudestix Hydra-Peptide Lip Butter in her purse."
+      },
+      {
+        "label": "Vogue 2019",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/sofia-richie-makeup-tutorial",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "December 16, 2019",
+        "headline": "Sofia Richie on Sensitive Skin Care, Her Travel Routine, and the Beauty Lessons She's Learned From Her Dad",
+        "image": "https://assets.vogue.com/photos/5df8fabb01ba7900086d2a27/master/w_1600%2Cc_limit/slide_12.jpg",
+        "summary": "Her first Beauty Secrets routine centers sensitive-skin Lancer products, Mario Badescu rose spray, La Mer eye care, hydrating eye patches, and daily sunscreen."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Vanicream Cleansing Bar",
+          "link": "https://www.amazon.com/s?k=Vanicream+Cleansing+Bar&tag=theskinrout07-20",
+          "description": "<p>Wash with the bar cleanser in the morning. In her 2025 Vogue routine, Sofia says she uses Vanicream bar soap for her face because it is the only thing that does not break her out.</p><p>Earlier routines were different: Vogue 2019 showed <a href=\"https://www.lancerskincare.com/products/the-method-cleanse-sensitive\" target=\"_blank\">Lancer The Method: Cleanse Sensitive Skin</a>, Allure 2024 named <a href=\"https://www.skinceuticals.com/skincare/cleansers/purifying-cleanser/S157.html\" target=\"_blank\">SkinCeuticals Purifying Cleanser</a>, and Vogue 2024 named <a href=\"https://www.skinceuticals.com/skincare/cleansers-toners/simply-clean/S72.html\" target=\"_blank\">SkinCeuticals Simply Clean</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Clean Towel",
+          "product": "Clean Skin Club Clean Towels XL",
+          "link": "https://www.amazon.com/s?k=Clean+Skin+Club+Clean+Towels+XL&tag=theskinrout07-20",
+          "description": "<p>Pat dry after cleansing. In Vogue, Sofia says she uses these to dry her skin and has noticed the biggest difference when she avoids detergent residue from regular towels.</p><p>She says you can use anything, even a tissue; the idea is a clean, low-irritation dry-down.</p>"
+        },
+        {
+          "time": "am",
+          "title": "LED + Cooling Mask",
+          "product": "Shark CryoGlow LED Face Mask",
+          "link": "https://www.amazon.com/s?k=Shark+CryoGlow+LED+Face+Mask&tag=theskinrout07-20",
+          "description": "<p>Use on clean, dry skin. In Vogue, Sofia says she uses the Shark cryo mask for anti-aging, to help kill bacteria, and because the little fan keeps her cool.</p><p>This is a tool step, so it is not the five-minute rushed-mom version of the routine, but it fits her acne-and-rosacea-support logic.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Purifying Mist",
+          "product": "Hydrinity Hyacyn Active Purifying Mist",
+          "link": "https://hydrinity.com/products/hyacyn-active",
+          "description": "<p>Mist after the LED mask. In Vogue, Sofia calls Hydrinity Hyacyn Active the hand sanitizer for your face because she likes it for keeping her skin feeling clean and calm.</p><p>In her older sensitive-skin routine, she used <a href=\"https://www.mariobadescu.com/products/facial-spray-with-aloe-herbs-and-rosewater\" target=\"_blank\">Mario Badescu Facial Spray with Aloe, Herbs and Rosewater</a> after moisturizer.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Cream",
+          "product": "Avène Cicalfate+ Restorative Protective Cream",
+          "link": "https://www.amazon.com/s?k=Avene+Cicalfate+Restorative+Protective+Cream&tag=theskinrout07-20",
+          "description": "<p>Warm it between your hands first, then press it in. Sofia calls Avène Cicalfate her holy grail in Vogue and says it looks glowier and more gorgeous the more you warm it into the skin.</p><p>Older source-backed moisturizers include <a href=\"https://www.lancerskincare.com/products/the-method-nourish-sensitive\" target=\"_blank\">Lancer The Method: Nourish Sensitive Skin</a>, <a href=\"https://eltamd.com/products/eltamd-am-therapy-facial-moisturizer\" target=\"_blank\">EltaMD AM Therapy Facial Moisturizer Lotion</a>, and <a href=\"https://www.skinceuticals.com/skincare/moisturizers/triple-lipid-restore-2%3A4%3A2/S45.html\" target=\"_blank\">SkinCeuticals Triple Lipid Restore 2:4:2</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF",
+          "product": "SkinCeuticals Physical Fusion UV Defense SPF 50",
+          "link": "https://www.bluemercury.com/products/skinceuticals-physical-fusion-uv-defense-spf-50",
+          "description": "<p>Apply as the final daytime skin step. In Vogue 2025, Sofia calls this her SkinCeuticals 50 sunscreen and says it does not break her out and only does good things.</p><p>NewBeauty previously had her using <a href=\"https://www.nudestix.com/products/nudescreen-daily-mineral-veil-spf-30\" target=\"_blank\">Nudescreen Daily Mineral Veil SPF 30</a> every day, and Vogue 2019 showed a <a href=\"https://www.amazon.com/s?k=Supergoop+Glow+Stick+Sunscreen+SPF+50&tag=theskinrout07-20\" target=\"_blank\">Supergoop Glow Stick SPF</a> before makeup.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Occlusive",
+          "product": "Aquaphor Healing Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Healing+Ointment&tag=theskinrout07-20",
+          "description": "<p>Use on lips whenever they need a thick protective layer. In Vogue, Sofia calls Aquaphor her lip holy grail and says she cannot live without her enormous tub.</p><p>NewBeauty also says she keeps <a href=\"https://www.nudestix.com/products/hydra-peptide-lip-butter\" target=\"_blank\">Nudestix Hydra-Peptide Lip Butter</a> in her purse, while Marie Claire's pregnancy-product list included <a href=\"https://summerfridays.com/products/lip-butter-balm\" target=\"_blank\">Summer Fridays Lip Butter Balm</a>.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleansing Balm",
+          "product": "NUDESKIN Citrus Clean Balm & Makeup Melt",
+          "link": "https://www.sephora.com/product/nudestix-citrus-clean-balm-makeup-melt-P504306",
+          "description": "<p>Use as the makeup-melting first cleanse on nights she wore makeup or SPF. Goss.ie, citing Sofia's Byrdie routine, says she double cleanses every night so all her makeup is off.</p><p>Massage onto dry skin, rinse or remove with a damp cloth, then follow with the gel cleanser.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Double Cleanse",
+          "product": "NUDESKIN Gentle Hydra-Gel Face Cleanser",
+          "link": "https://www.ulta.com/p/nudeskin-gentle-hydra-gel-face-cleanser-pimprod2019450",
+          "description": "<p>Follow the cleansing balm with this gel cleanser. Goss.ie reports that Sofia used NUDESKIN Citrus Cleansing Balm and Makeup Melt plus Gentle Face Hydra-Gel Cleanser for a super-clean double cleanse.</p><p>Keep the cleanse gentle; her sources repeat that she has sensitive, oily, acne-prone skin and prefers a less-is-more routine.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Exfoliating Pads",
+          "product": "Christie Kidd Fresh Pads",
+          "link": "https://perfectskinchristiekidd.com/products/fresh-pads",
+          "description": "<p>Swipe over clean skin only on breakout-prone areas, and do not scrub. Allure's 2023 interview says Sofia used Christie Kidd Perfect Skin Fresh Pads in the morning, and the brand's directions say to sweep gently over blemish areas once or twice daily.</p><p>This is an acne/oil-control step rather than an every-skin, every-night requirement.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Vitamin C",
+          "product": "SkinCeuticals C E Ferulic",
+          "link": "https://www.dermstore.com/p/skinceuticals-c-e-ferulic-with-15-l-ascorbic-acid-vitamin-c-serum-30ml/11289609/",
+          "description": "<p>Use as the antioxidant-brightening serum. Allure says Sofia calls C E Ferulic one of the two constants in her morning and night regimens during pregnancy, and Vogue's SkinCeuticals feature keeps it central to her routine.</p><p>If using it twice daily is too much, make it a morning step and keep night focused on cleanse and barrier care.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Hydrating Serum",
+          "product": "SkinCeuticals H.A. Intensifier",
+          "link": "https://www.dermstore.com/p/skinceuticals-h.a.-intensifier-multi-functional-hyaluronic-acid-serum-30ml/11289637/",
+          "description": "<p>Apply before moisturizer when skin needs more cushion. Vogue's SkinCeuticals product lineup and Sofia bundle include H.A. Intensifier as the hydrating serum step, with the SkinCeuticals routine placing it morning and night.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturizer",
+          "product": "SkinCeuticals Triple Lipid Restore 2:4:2",
+          "link": "https://www.skinceuticals.com/skincare/moisturizers/triple-lipid-restore-2%3A4%3A2/S45.html",
+          "description": "<p>Use after serum as the richer night moisturizer. In the SkinCeuticals Sofia routine, Dr. Mamina recommends Triple Lipid Restore 2:4:2 to support the barrier and smooth texture.</p><p>This is the more treatment-cream version of the simpler Avène Cicalfate step she uses in her 2025 Vogue routine.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Lip Balm",
+          "product": "Nudestix Hydra-Peptide Lip Butter",
+          "link": "https://www.nudestix.com/products/hydra-peptide-lip-butter",
+          "description": "<p>Finish with lip balm. NewBeauty says Sofia never goes anywhere without Nudestix Hydra-Peptide Lip Butter to keep her lips moisturized 24/7.</p><p>For a thicker bedtime seal, her newer Vogue routine points back to <a href=\"https://www.amazon.com/s?k=Aquaphor+Healing+Ointment&tag=theskinrout07-20\" target=\"_blank\">Aquaphor Healing Ointment</a>.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Lily Aldridge's Routine",
+    "id": 34,
+    "time": 7.7,
+    "money": 9.6,
+    "point_title": "Lily Aldridge's Routine",
+    "point_description": "A natural-leaning model routine built around makeup-removal wipes, Tata Harper cleansing and essence, KORA vitamin C, rich moisturizers, masks, peel pads, and lip balm.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lily_Aldridge_in_2014_%28cropped%29.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Harper's Bazaar 2020",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/skin-care/a30391942/lily-aldridge-skin-care-routine/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "Mar. 17, 2020",
+        "headline": "Watch Lily Aldridge Share Her Nightly Skin Care Routine",
+        "image": "https://hips.hearstapps.com/vidthumb/images/2019-harpersbazaar-gotobedwithme-ep84-lilyaldridge-rd-v3-youtube-v2-1577732973.jpg?crop=1xw%3A1xh%3B0%2C0.0855xh&resize=980%3A%2A",
+        "summary": "Her Go to Bed With Me routine lists RMS wipes, Shiva Rose balm, Dr. Dennis Gross peel pads, Tatcha masks, KORA vitamin C, Dr. Barbara Sturm serum, Weleda Skin Food, Windsor Edwards lip balm, and Tata Harper eye balm."
+      },
+      {
+        "label": "Into The Gloss 2019",
+        "site": "Into The Gloss",
+        "link": "https://intothegloss.com/2019/10/lily-aldridge-beauty-routine/",
+        "favicon": "https://intothegloss.com/favicon.ico",
+        "date": "2019",
+        "headline": "Lily Aldridge, Model",
+        "image": "https://images.ctfassets.net/g8qtv9gzg47d/3JE4G1hJf0K2sp9osz3tun/83a6ce810fa4ce23e9b191c48932d22b/lily-aldridge-5.JPG?fl=progressive&fm=jpg&q=80",
+        "summary": "Aldridge describes her nursing-era quick and luxurious routines, including Burt's Bees or RMS wipes, Tata Harper cleanser and essence, KORA vitamin C, Tata Harper moisturizers, and Windsor Edwards lip balm."
+      },
+      {
+        "label": "Vogue 2018",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/supermodel-lily-aldridge-pregnancy-glow-natural-skincare-beauty-secrets-beach-waves-baby-bump-hatch-belly-sheet-mask",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "November 28, 2018",
+        "headline": "Lily Aldridge Does Her Full Pregnancy Glow Routine-Including Baby Bump Sheet Masking",
+        "image": "https://assets.vogue.com/photos/5bfecc40c8db062d58e5754d/16:9/w_1280,c_limit/HOLDING%205.jpg",
+        "summary": "Her pregnancy Beauty Secrets routine includes Fresh Lotus Rescue Mask, Hatch Belly Mask, Naturopathica Manuka Honey Cleansing Balm, ReFa roller, KORA moisturizer, Windsor Edwards balm, Kate McLeod Mama Stone, RMS concealer, and Noni Glow Face Oil."
+      },
+      {
+        "label": "Vogue 2017",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/lily-aldridge-beauty-advice-mother-daughter-moisturized-skin-la-mer",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "November 15, 2017",
+        "headline": "Victoria's Secret Angel Lily Aldridge on Motherhood, Moisturizer, and More",
+        "image": "https://assets.vogue.com/photos/5a0b6f8fe3dc8520b8a8a837/master/w_2560%2Cc_limit/00-story-image-lily-aldridge-beauty-advise.jpg",
+        "summary": "Vogue says Aldridge focuses on moisturized skin with Heritage Store rosewater mist, RMS coconut oil wipes, and La Mer as her skin-care luxury."
+      },
+      {
+        "label": "Vogue 2015",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/lily-aldridge-natural-beauty-routine-makeup-best-bath-salts",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "June 19, 2015",
+        "headline": "Lily Aldridge on Creating the Ultimate Bath and Her (Mostly) Natural Beauty Routine",
+        "image": "https://assets.vogue.com/photos/58916c94b482c0ea0e4d8288/master/w_2560%2Cc_limit/lily-aldridge-bath-slideshow-01.jpg",
+        "summary": "Aldridge discusses pregnancy-linked natural-product discoveries, coconut and jojoba body oils, Windsor Edwards lip balm, RMS Un Cover-Up, and nightly bath rituals."
+      },
+      {
+        "label": "Vogue 2014",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/lily-aldridge-morning-beauty-routine",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "2014",
+        "headline": "#IWokeUpLikeThis: Lily Aldridge Reveals the Strategies Behind Her Morning Routine",
+        "image": "https://assets.vogue.com/photos/5891a00658aa89a00d544c1c/master/w_1600%2Cc_limit/img-lilyaldridgeholding_171737851547.jpg",
+        "summary": "Her earlier morning routine included Proactiv Deep Cleansing Wash, rosewater toner, KORA Organics Day and Night Cream, La Mer The Eye Concentrate, and regular exfoliation."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Makeup Reset",
+          "product": "RMS Beauty Ultimate Makeup Remover Wipes",
+          "link": "https://www.rmsbeauty.com/products/ultimate-makeup-remover-wipe",
+          "description": "<p>Use as the first pass when there is makeup left from the night before or a rushed morning. Into The Gloss says Lily starts by taking makeup off because she is often too tired to do it at night, choosing <a href=\"https://www.amazon.com/s?k=Burt%27s+Bees+Sensitive+Facial+Cleansing+Towelettes&tag=theskinrout07-20\" target=\"_blank\">Burt's Bees wipes</a> or RMS coconut wipes when there is more makeup.</p><p>Harper's Bazaar also starts her nighttime routine with RMS Beauty wipes, so these get the more recent display spot.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Tata Harper Regenerating Cleanser",
+          "link": "https://www.tataharperskincare.com/regenerating-cleanser",
+          "description": "<p>Massage on after makeup removal and remove with a warm towel. Into The Gloss says Lily uses Tata Harper's scrubby cleanser in her more luxurious daytime routine.</p><p>In an older Vogue morning routine, she used <a href=\"https://www.amazon.com/s?k=Proactiv+Deep+Cleansing+Wash&tag=theskinrout07-20\" target=\"_blank\">Proactiv Deep Cleansing Wash</a>, but the Tata Harper cleanser is the newer source-backed skin-care routine cleanser.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Essence",
+          "product": "Tata Harper Brightening Essence",
+          "link": "https://www.tataharperskincare.com/brightening-essence",
+          "description": "<p>Swipe on with a cotton ball after cleansing. Lily tells Into The Gloss this takes off leftover dirt and makes her skin shiny.</p><p>This is the glow-and-polish step, so use less often if skin feels sensitive.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C",
+          "product": "KORA Organics Kakadu Plum Vitamin C Serum",
+          "link": "https://us.koraorganics.com/products/kakadu-plum-vitamin-c-serum",
+          "description": "<p>Apply after essence as the vitamin C step. Into The Gloss says Lily maybe uses a vitamin C serum from KORA Organics, and Harper's Bazaar later lists KORA Noni Bright Vitamin C Serum in her nighttime product lineup.</p><p>Noni Bright has since been replaced by KORA's current Kakadu Plum Vitamin C Serum, so this links the newer same-brand vitamin C.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturizer",
+          "product": "Tata Harper Repairative Moisturizer",
+          "link": "https://www.tataharperskincare.com/repairative-moisturizer",
+          "description": "<p>Use as the daytime moisturizer. Into The Gloss says Lily uses Tata Harper Repairative Moisturizer, and her older Vogue morning routine also emphasized seasonal moisturizers.</p><p>Earlier source-backed options include <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/the-moisturizing-soft-cream\" target=\"_blank\">La Mer The Moisturizing Soft Cream</a> as her big skin-care luxury and KORA Organics Day and Night Cream, which is no longer reliably available.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Balm",
+          "product": "Windsor Edwards Lip Balm",
+          "link": "https://windsoredwards.com/collections/face-care/products/lipbalm",
+          "description": "<p>Use on lips whenever they feel dry. Vogue says Windsor Edwards lip balm is addictive for her, Vogue 2018 quotes her saying she uses it pregnant or not, and Into The Gloss calls it a sustainable favorite.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Remove Makeup",
+          "product": "RMS Beauty Ultimate Makeup Remover Wipes",
+          "link": "https://www.rmsbeauty.com/products/ultimate-makeup-remover-wipe",
+          "description": "<p>Start by removing makeup. Harper's Bazaar says Lily begins her nighttime routine with RMS Beauty wipes infused with coconut oil, and Into The Gloss says she reaches for RMS coconut wipes when there is a lot of makeup.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Cleansing Balm",
+          "product": "Naturopathica Manuka Honey Cleansing Balm",
+          "link": "https://www.naturopathica.com/products/manuka-honey-cleansing-balm",
+          "description": "<p>Massage onto skin, then remove with a warm washcloth. Vogue's pregnancy routine shows Lily double cleansing off the mask with Naturopathica's Manuka Honey Cleansing Balm and saying it leaves skin shiny and supple.</p><p>Use this as the balm-cleanse option when wipes are not enough.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Glow Balm",
+          "product": "Shiva Rose Glow Face Balm",
+          "link": "https://www.amazon.com/s?k=Shiva+Rose+Glow+Face+Balm&tag=theskinrout07-20",
+          "description": "<p>Use a light layer when skin wants a glowy balm moment. Harper's Bazaar says Lily smears on Shiva Rose Glow Face Balm and jokes that anything with balm and glow in the name has her sold. (Honestly, same.)</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Peel Pads",
+          "product": "Dr. Dennis Gross Alpha Beta Universal Daily Peel",
+          "link": "https://www.amazon.com/s?k=Dr+Dennis+Gross+Alpha+Beta+Universal+Daily+Peel&tag=theskinrout07-20",
+          "description": "<p>Use only occasionally, not automatically every night. Harper's Bazaar lists Dr. Dennis Gross Alpha Beta Universal Daily Peel in her nighttime routine product lineup.</p><p>This is the exfoliating acid step, so skip it when skin is irritated or when using another active mask.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Mask",
+          "product": "Tatcha Deep Hydration Revitalizing Eye Mask",
+          "link": "https://www.amazon.com/s?k=Tatcha+Deep+Hydration+Revitalizing+Eye+Mask&tag=theskinrout07-20",
+          "description": "<p>Use when eyes look tired or travel-worn. Harper's Bazaar lists Tatcha Deep Hydration Revitalizing Eye Mask in her nighttime routine.</p><p>Vogue France also notes that she liked Shiseido eye masks for travel, but those pure-retinol eye masks are discontinued and not the priority here.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Sheet Mask",
+          "product": "Tatcha Luminous Dewy Skin Mask",
+          "link": "https://www.tatcha.com/product/luminous-dewy-skin-mask/CA06110T.html",
+          "description": "<p>Use as an occasional hydration mask when skin needs extra glow. Harper's Bazaar lists Tatcha Luminous Dewy Skin Mask in Lily's routine.</p><p>In Vogue's pregnancy routine, she used <a href=\"https://www.fresh.com/us/shop/by-collection/lotus/lotus-youth-preserve-rescue-mask-H00007012.html\" target=\"_blank\">Fresh Lotus Youth Preserve Rescue Mask</a> and joked about her daughter saying she had barnacles on her face.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Vitamin C",
+          "product": "KORA Organics Kakadu Plum Vitamin C Serum",
+          "link": "https://us.koraorganics.com/products/kakadu-plum-vitamin-c-serum",
+          "description": "<p>Apply after cleansing or masking. Harper's Bazaar lists KORA Noni Bright Vitamin C Serum in her PM routine, and Into The Gloss says she uses a KORA vitamin C serum in her more luxurious routine.</p><p>Noni Bright has been replaced by Kakadu Plum Vitamin C Serum, so this is the current same-brand vitamin C link.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Serum",
+          "product": "Dr. Barbara Sturm Super Anti-Aging Serum",
+          "link": "https://www.nordstrom.com/s/dr-barbara-sturm-super-anti-aging-serum/5009762",
+          "description": "<p>Use as the luxury serum step after vitamin C or instead of it on simpler nights. Harper's Bazaar names Dr. Barbara Sturm's Super Anti-Aging Serum as one of Lily's nighttime favorites.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Cream",
+          "product": "Weleda Skin Food Original Ultra-Rich Cream",
+          "link": "https://www.amazon.com/s?k=Weleda+Skin+Food+Original+Ultra-Rich+Cream&tag=theskinrout07-20",
+          "description": "<p>Use as the rich comfort cream when skin is dry. Harper's Bazaar lists Weleda Skin Food in her routine, while Into The Gloss says Lily uses <a href=\"https://www.tataharperskincare.com/creme-riche\" target=\"_blank\">Tata Harper's Crème Riche</a> at night and keeps it next to her bed.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Balm",
+          "product": "Tata Harper Boosted Contouring Eye Balm",
+          "link": "https://www.tataharperskincare.com/boosted-contouring-eye-balm",
+          "description": "<p>Tap around the eye area as a final targeted step. Harper's Bazaar lists Tata Harper Boosted Contouring Eye Balm in Lily's nighttime routine.</p><p>Her older Vogue morning routine also named <a href=\"https://www.cremedelamer.com/product/5834/25215/skincare/eye-treatments/the-eye-concentrate\" target=\"_blank\">La Mer The Eye Concentrate</a> as part of her routine.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Lip Balm",
+          "product": "Windsor Edwards Lip Balm",
+          "link": "https://windsoredwards.com/collections/face-care/products/lipbalm",
+          "description": "<p>Finish with the same lip balm she keeps returning to. Harper's Bazaar, Vogue, and Into The Gloss all connect Lily to Windsor Edwards Lip Balm, and she says she uses it pregnant or not.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Drugstore Starter Routine for Your 20s",
+    "id": 35,
+    "time": 2.4,
+    "money": 4.3,
+    "point_title": "Drugstore Starter Routine for Your 20s",
+    "point_description": "A forgiving first routine: one cleanser, one optional barrier serum, moisturizer, and a high-protection sunscreen you can actually wear every day.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "CeraVe Hydrating Cream-to-Foam Cleanser",
+          "link": "https://www.amazon.com/s?k=CeraVe+Hydrating+Cream-to-Foam+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Massage a small amount over damp skin and rinse with lukewarm water. It removes oil, makeup, and everyday sunscreen without making a beginner buy a separate product for every cleansing scenario.</p><p>If your face feels dry but clean when you wake up, rinse with water instead. If you are consistently very oily, the <a href=\"https://www.amazon.com/s?k=CeraVe+Foaming+Facial+Cleanser&tag=theskinrout07-20\" target=\"_blank\">CeraVe Foaming Facial Cleanser</a> is the better match.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Optional Barrier Serum",
+          "product": "The Ordinary Soothing & Barrier Support Serum",
+          "link": "https://www.amazon.com/s?k=The+Ordinary+Soothing+%26+Barrier+Support+Serum&tag=theskinrout07-20",
+          "description": "<p>Apply a few drops before moisturizer. The 2% niacinamide, ceramides, and soothing ingredients give a new routine some help with dehydration, visible redness, uneven texture, and barrier support without jumping straight to a peel or retinoid.</p><p>This step is optional. Start once daily for the first week, and skip it entirely if cleanser, moisturizer, and SPF are all your skin needs.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturize",
+          "product": "CeraVe PM Facial Moisturizing Lotion",
+          "link": "https://www.amazon.com/s?k=CeraVe+PM+Facial+Moisturizing+Lotion&tag=theskinrout07-20",
+          "description": "<p>Use one or two pumps over slightly damp skin. Despite the PM on the bottle, this lightweight, fragrance-free lotion works perfectly well morning or night; ceramides, hyaluronic acid, and niacinamide cover the basic hydration and barrier job.</p><p>If sunscreen is moisturizing enough on its own, combination or oily skin can skip this in the morning.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF",
+          "product": "Neutrogena Invisible Daily Defense Face Serum SPF 60+",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Invisible+Daily+Defense+Face+Serum+SPF+60%2B&tag=theskinrout07-20",
+          "description": "<p>Apply generously as the last morning step to the face, ears, and neck, then reapply when outdoors. This is the habit with the biggest long-term payoff: broad-spectrum SPF 60+, an invisible finish, and 80 minutes of water resistance.</p><p>If chemical filters sting, try the untinted, all-mineral <a href=\"https://www.amazon.com/s?k=Blue+Lizard+Sensitive+Face+Mineral+Sunscreen+SPF+50&tag=theskinrout07-20\" target=\"_blank\">Blue Lizard Sensitive Face Mineral Sunscreen SPF 50+</a>. It may leave more cast, so do not solve that by applying less.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "CeraVe Hydrating Cream-to-Foam Cleanser",
+          "link": "https://www.amazon.com/s?k=CeraVe+Hydrating+Cream-to-Foam+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Cleanse for about 30 to 60 seconds, then rinse well. One cleanse is enough most nights; add a separate first cleanse only when heavy makeup or water-resistant sunscreen is still hanging around.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Barrier Serum",
+          "product": "The Ordinary Soothing & Barrier Support Serum",
+          "link": "https://www.amazon.com/s?k=The+Ordinary+Soothing+%26+Barrier+Support+Serum&tag=theskinrout07-20",
+          "description": "<p>Use a few drops after cleansing if you skipped it in the morning or want more hydration. There is no need to use it twice daily just to finish the bottle faster.</p><p>If persistent acne is the real concern, this soothing serum is not an acne medication. A dermatologist can help, or consider <a href=\"https://www.amazon.com/s?k=Differin+Adapalene+Gel+0.1%25&tag=theskinrout07-20\" target=\"_blank\">Differin Adapalene Gel 0.1%</a> instead, starting only two nights a week and avoiding it during pregnancy.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturize",
+          "product": "CeraVe PM Facial Moisturizing Lotion",
+          "link": "https://www.amazon.com/s?k=CeraVe+PM+Facial+Moisturizing+Lotion&tag=theskinrout07-20",
+          "description": "<p>Finish with one or two pumps. Give the routine about a month before adding another active unless something is irritating you; consistency tells you far more than changing products every few days.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Mid-Tier Starter Routine for Your 20s",
+    "id": 36,
+    "time": 2.4,
+    "money": 6.5,
+    "point_title": "Mid-Tier Starter Routine for Your 20s",
+    "point_description": "The same beginner-friendly foundation in nicer textures, with a restrained 5% niacinamide serum for oiliness, redness, and uneven texture.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Skinfix Barrier+ Ceramide + Ectoin Hydrating Gentle Gel Cleanser",
+          "link": "https://www.sephora.com/product/skinfix-barrier-ceramide-ectoin-hydrating-gentle-gel-cleanser-P511490",
+          "description": "<p>Massage a small amount over damp skin and rinse. This is the pleasant-texture upgrade: a gentle gel designed to remove daily buildup without the tight, squeaky finish that often sends beginners scrambling for more products.</p><p>Dry skin can simply rinse with water in the morning and save the cleanser for night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Optional Niacinamide",
+          "product": "Kiehl's Ultra Pure High-Potency 5% Niacinamide Serum",
+          "link": "https://www.sephora.com/product/kiehls-ultra-pure-high-potency-5-0-niacinamide-serum-P505339",
+          "description": "<p>Apply two or three drops before moisturizer, either all over or only through oily, redness-prone areas. Five percent niacinamide is a sensible middle ground for excess oil, the look of pores, redness, and uneven texture without starting at the internet-favorite 10% or 20% end of the pool.</p><p>Begin once daily. If your skin is already happy, this is optional rather than a tax for being in your 20s.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturize",
+          "product": "Kiehl's Ultra Facial Cream",
+          "link": "https://www.sephora.com/product/P421996",
+          "description": "<p>Smooth on a light layer while skin is slightly damp. Glycerin and squalane make this a straightforward daily moisturizer with a more polished texture than the drugstore option.</p><p>If you run oily, the lighter <a href=\"https://www.sephora.com/product/barrier-balancing-water-cream-moisturizer-with-hyaluronic-acid-P515337\" target=\"_blank\">Skinfix Barrier Balancing Water Cream</a> is a better swap, or skip moisturizer under a sufficiently hydrating sunscreen.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF",
+          "product": "Supergoop Unseen Sunscreen SPF 50",
+          "link": "https://supergoop.com/products/unseen-sunscreen-spf-50",
+          "description": "<p>Apply generously as the final morning step. The clear gel disappears across skin tones and wears like a primer, which matters because the best sunscreen is the one you will use in the proper amount every day.</p><p>If you prefer an untinted mineral formula, try <a href=\"https://www.paulaschoice.com/calm-barrier-protect-mineral-sunscreen-spf-30/9200.html\" target=\"_blank\">Paula's Choice CALM Barrier Protect Mineral Sunscreen SPF 30</a>. Mineral does not automatically mean irritation-proof, so patch test whichever formula you choose.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Skinfix Barrier+ Ceramide + Ectoin Hydrating Gentle Gel Cleanser",
+          "link": "https://www.sephora.com/product/skinfix-barrier-ceramide-ectoin-hydrating-gentle-gel-cleanser-P511490",
+          "description": "<p>Massage over wet skin, rinse, and pat dry. It can remove everyday SPF and light makeup; use a separate first cleanse only when it genuinely leaves something behind.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Niacinamide",
+          "product": "Kiehl's Ultra Pure High-Potency 5% Niacinamide Serum",
+          "link": "https://www.sephora.com/product/kiehls-ultra-pure-high-potency-5-0-niacinamide-serum-P505339",
+          "description": "<p>Use two or three drops after cleansing if evening is your preferred treatment time. More is not better, and twice-daily use is unnecessary if once daily is working.</p><p>For ongoing acne, painful breakouts, or scarring, see a dermatologist rather than building an expensive tower of serums.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturize",
+          "product": "Kiehl's Ultra Facial Cream",
+          "link": "https://www.sephora.com/product/P421996",
+          "description": "<p>Finish with a comfortable layer. Keep this routine unchanged for about four weeks unless something irritates you; only then decide whether you actually need a concern-specific active.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "French Pharmacy Routine for Your 20s",
+    "id": 37,
+    "time": 2.4,
+    "money": 5.8,
+    "point_title": "French Pharmacy Routine for Your 20s",
+    "point_description": "A prevention-first French pharmacy routine with gentle cleansing, cica hydration, a practical cream, and the European UVMune 400 sunscreen worth buying in France.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Bioderma Créaline Gel Moussant",
+          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
+          "description": "<p>Use a small amount with lukewarm water, or just rinse if your face feels clean and dry in the morning. This is the French-market name for the Sensibio foaming gel: soap-free, fragrance-free, and pleasantly unexciting.</p><p>Very oily skin can swap to <a href=\"https://www.bioderma.fr/p/tous-les-produits/soin-corps-et-cheveux/gel-douche-et-nettoyant/sebium-gel-moussant\" target=\"_blank\">Bioderma Sébium Gel Moussant</a>, but there is no need to buy the acid-based Active version just because it exists.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Cica Serum",
+          "product": "Uriage Bariéderm-CICA Daily Intensive Repairing Serum",
+          "link": "https://www.uriage.fr/produits/cica-daily-serum-reparateur-intense",
+          "description": "<p>Apply a few drops before moisturizer. This is the useful extra step for dehydration, post-breakout irritation, and a barrier that gets cranky from weather, travel, or trying too many products.</p><p>It is fragrance- and alcohol-free, but still optional. In your 20s, sunscreen consistency matters more than collecting serums.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturize",
+          "product": "Embryolisse Lait-Crème Sensitive",
+          "link": "https://embryolisse.fr/products/lait-creme-sensitive",
+          "description": "<p>Use a small amount over slightly damp skin. This is the fragrance-free sibling of the cult Lait-Crème Concentré, with a comfortable satin finish that works well under sunscreen.</p><p>It contains shea butter and beeswax, so oily skin may prefer the lighter <a href=\"https://www.uriage.fr/produits/cica-daily-concentre-de-creme-reparateur\" target=\"_blank\">Uriage Bariéderm-CICA Daily Gel-Cream</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "French SPF",
+          "product": "La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF 50+",
+          "link": "https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html",
+          "description": "<p>Shake well and apply generously as the final morning step, including ears and neck. This fragrance-free European formula uses Mexoryl 400 for ultra-long UVA coverage and is one of the products genuinely worth putting on a France shopping list.</p><p>The U.S. Anthelios line uses different filters, so check that the box says UVMune 400. For more shine control, ask the pharmacist for the untinted Oil Control Fluid version; for dry skin, choose the <a href=\"https://www.laroche-posay.fr/l-edito-peau/conseils-peau-et-soleil/creme-solaire-est-elle-un-produit-anti-age--/creme-solaire-produit-anti-age.html\" target=\"_blank\">UVMune 400 Hydrating Cream</a>.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Bioderma Créaline Gel Moussant",
+          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
+          "description": "<p>Massage over wet skin and rinse well. If makeup or water-resistant SPF remains, use the iconic <a href=\"https://www.bioderma.fr/p/crealine-h2o\" target=\"_blank\">Bioderma Créaline H2O</a> first, then follow with this gel rather than rubbing harder with cotton.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Cica Serum",
+          "product": "Uriage Bariéderm-CICA Daily Intensive Repairing Serum",
+          "link": "https://www.uriage.fr/produits/cica-daily-serum-reparateur-intense",
+          "description": "<p>Repeat the serum when skin feels dehydrated or irritated. There is deliberately no automatic retinoid here; a healthy 20-something routine does not need to behave like an emergency anti-aging intervention.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturize",
+          "product": "Embryolisse Lait-Crème Sensitive",
+          "link": "https://embryolisse.fr/products/lait-creme-sensitive",
+          "description": "<p>Finish with a comfortable layer. Use more on dry areas and less through the T-zone. If active acne is the main concern, treat that separately with a dermatologist or pharmacist instead of hoping a richer French cream will fix it.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "French Pharmacy Routine for Your 30s–40s",
+    "id": 38,
+    "time": 2.4,
+    "money": 6.2,
+    "point_title": "French Pharmacy Routine for Your 30s–40s",
+    "point_description": "A brightening and early-correction routine pairing French vitamin C, retinal, barrier cream, and high-UVA European sunscreen without piling on exfoliants.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Bioderma Créaline Gel Moussant",
+          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
+          "description": "<p>Cleanse gently with lukewarm water, or rinse with water alone when skin feels dry. A stronger treatment routine needs a boring cleanser, not an exfoliating face wash competing for attention.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C",
+          "product": "SVR Ampoule [C] Anti-Ox",
+          "link": "https://fr.svr.com/collections/anti-age-correction-ciblee/products/c-anti-ox",
+          "description": "<p>Apply a small amount to dry skin before moisturizer. This French ampoule uses 20% optimized vitamin C for dullness, uneven tone, and antioxidant support.</p><p>It also contains alcohol and fragrance, so start every other morning and do not force it if it stings. Sensitive skin can choose the gentler <a href=\"https://www.uriage.fr/produits/cica-daily-serum-reparateur-intense\" target=\"_blank\">Uriage Bariéderm-CICA Daily Serum</a> instead.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Cream",
+          "product": "La Roche-Posay Toleriane Dermallergo Cream",
+          "link": "https://www.laroche-posay.fr/gammes/visage/toleriane/toleriane-dermallergo-creme-hydratante-peau-sensible-et-allergique/LRP_133.html",
+          "description": "<p>Apply a thin layer after vitamin C. This is the calm, fragrance-free buffer in the routine, keeping hydration steady while the treatment steps do their work.</p><p>If your sunscreen supplies enough moisture, combination skin can skip this in the morning and keep it for night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "French SPF",
+          "product": "La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF 50+",
+          "link": "https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html",
+          "description": "<p>Shake, apply generously, and reapply during prolonged outdoor exposure. At this age, preventing additional UVA-driven pigment and collagen damage is more useful than buying a fifth corrective serum.</p><p>This is the untinted French/EU UVMune 400 formula. A tinted version is available for people who want added visible-light protection, but the shade still needs to work for the person wearing it.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Bioderma Créaline Gel Moussant",
+          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
+          "description": "<p>Remove makeup and sunscreen without scrubbing, then cleanse once with the gel. A micellar-water first pass is useful when needed, but double cleansing is not a nightly moral obligation.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinal Night Cream",
+          "product": "Avène Hyaluron Activ B3 Multi-Intensive Night Cream",
+          "link": "https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab",
+          "description": "<p>Start one or two nights a week, using the pump dose over dry skin and avoiding eyelids, lip edges, and nose creases. The French formula combines retinal, niacinamide, and hyaluronic acid for fine lines, firmness, and uneven tone.</p><p>It contains fragrance and may tingle. Do not layer it with another retinoid or exfoliating acid, and avoid retinoids during pregnancy.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Cream",
+          "product": "La Roche-Posay Toleriane Dermallergo Cream",
+          "link": "https://www.laroche-posay.fr/gammes/visage/toleriane/toleriane-dermallergo-creme-hydratante-peau-sensible-et-allergique/LRP_133.html",
+          "description": "<p>Finish with a thin layer, or apply it before and after retinal if you need a moisturizer sandwich. On non-retinal nights, cleanser and this cream are enough.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "French Pharmacy Routine for Your 50s+",
+    "id": 39,
+    "time": 2.4,
+    "money": 6.9,
+    "point_title": "French Pharmacy Routine for Your 50s+",
+    "point_description": "A richer mature-skin routine with plumping hydration, lipid support, 0.1% retinal, and the more comfortable UVMune 400 cream format.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin",
+      "sensitive"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cream Cleanse",
+          "product": "Avène Tolérance Gelled Cleansing Lotion",
+          "link": "https://www.eau-thermale-avene.fr/p/tolerance-lotion-nettoyante-gelifiee-3282770142273-14c39aab",
+          "description": "<p>Massage a generous amount over the face and remove gently according to the label directions. This very short, fragrance-free formula cleans without asking drier mature skin to tolerate foam for the sake of feeling clean.</p><p>In the morning, water alone is also completely respectable.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Plumping Serum",
+          "product": "Vichy Liftactiv H.A. Epidermic Filler Serum",
+          "link": "https://www.vichy.fr/tous-les-produits/soins-de-la-peau/serums-pour-le-visage/signes-de-lage/liftactiv-ha-epidermic-filler-serum",
+          "description": "<p>Press a few drops over slightly damp skin. The fragrance-free formula combines hyaluronic acid with a vitamin C derivative for temporary plumping, hydration, and support around fine lines without turning the morning routine into an active obstacle course.</p><p>For skin specifically changing through peri- or post-menopause, <a href=\"https://www.vichy.fr/tous-les-produits/soins-de-la-peau/serums-pour-le-visage/menopause/neovadiol-meno5-bi-serum-peri-et-post-menopause\" target=\"_blank\">Vichy Neovadiol Meno 5 Bi-Serum</a> is the more targeted French-pharmacy alternative, but it contains exfoliating acids and fragrance.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Rich Moisturizer",
+          "product": "SVR Densitium Rich Cream",
+          "link": "https://fr.svr.com/products/densitium-creme-riche-1",
+          "description": "<p>Use a thin layer over serum, concentrating on areas that feel dry. Shea butter, babassu oil, peptides, and hyaluronic acid make this a proper comfort cream for mature skin rather than a weightless gel pretending everyone wants the same texture.</p><p>It is fragranced. If that is a problem, replace it with the simpler <a href=\"https://www.eau-thermale-avene.fr/gamme/tolerance\" target=\"_blank\">Avène Tolérance Control Balm</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Hydrating French SPF",
+          "product": "La Roche-Posay Anthelios UVMune 400 Hydrating Cream SPF 50+",
+          "link": "https://www.laroche-posay.fr/l-edito-peau/conseils-peau-et-soleil/creme-solaire-est-elle-un-produit-anti-age--/creme-solaire-produit-anti-age.html",
+          "description": "<p>Apply generously as the final morning step. The cream format is the more comfortable UVMune 400 option for dry skin while still supplying the European filter technology that makes this a worthwhile France purchase.</p><p>If it feels too rich, use the <a href=\"https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html\" target=\"_blank\">untinted Invisible Fluid</a> instead.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cream Cleanse",
+          "product": "Avène Tolérance Gelled Cleansing Lotion",
+          "link": "https://www.eau-thermale-avene.fr/p/tolerance-lotion-nettoyante-gelifiee-3282770142273-14c39aab",
+          "description": "<p>Use enough product to lift sunscreen and makeup without friction. If heavy eye makeup remains, remove that separately rather than repeatedly wiping the whole face.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "0.1% Retinal",
+          "product": "Avène Hyaluron Activ Procedure Lifting Cream 0.1% Retinal",
+          "link": "https://www.eau-thermale-avene.fr/gamme/hyaluron-activ-procedure",
+          "description": "<p>Start one night a week, then move to two nights only after skin stays comfortable. This newer French 0.1% retinal cream is the stronger correction step for established lines, uneven texture, and loss of firmness.</p><p>Do not use it on the same night as exfoliating acids, and avoid retinoids during pregnancy. If you are new to vitamin A, begin with the gentler <a href=\"https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab\" target=\"_blank\">Hyaluron Activ B3 Night Cream</a> from the 30s–40s routine.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Moisturizer",
+          "product": "SVR Densitium Rich Cream",
+          "link": "https://fr.svr.com/products/densitium-creme-riche-1",
+          "description": "<p>Finish with a comfortable layer, especially on retinal nights. If you prefer a dedicated night texture, the linked <a href=\"https://fr.svr.com/products/densitium-baume-nuit-50ml\" target=\"_blank\">SVR Densitium Night Balm</a> is the same age-focused idea in a more enveloping formula.</p>"
         }
       ]
     },
