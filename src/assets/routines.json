@@ -2937,7 +2937,7 @@
   {
     "routine_name": "Bella Hadid's Routine",
     "id": 22,
-    "time": 3.9,
+    "time": 3.6,
     "money": 8.8,
     "point_description": "A dewy, high-low model skin-prep routine built around cold de-puffing, microcurrent, Biologique Recherche serums, Weleda Skin Food, Clinique SPF tint, and older Dior hydration staples.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bella_Hadid_Cannes_2018.jpg",
@@ -3333,7 +3333,7 @@
   {
     "routine_name": "Drugstore Anti-Aging Routine",
     "id": 25,
-    "time": 3.5,
+    "time": 3.0,
     "money": 4.6,
     "point_description": "A low-fuss routine that puts the money where it matters: daily sunscreen, a beginner retinol, vitamin C, and enough barrier support to keep going.",
     "pregnancy_safe": false,
@@ -4771,10 +4771,10 @@
   {
     "routine_name": "French Pharmacy Routine for Your 20s",
     "id": 37,
-    "time": 2.4,
-    "money": 5.8,
+    "time": 3.9,
+    "money": 6.2,
     "point_title": "French Pharmacy Routine for Your 20s",
-    "point_description": "A prevention-first French pharmacy routine with gentle cleansing, cica hydration, a practical cream, and the European UVMune 400 sunscreen worth buying in France.",
+    "point_description": "A prevention-first French pharmacy routine with a mineral-water mist, cica hydration, 15% cosmetic azelaic acid, and a matte SPF for acne-prone skin.",
     "pregnancy_safe": false,
     "age_range": [
       "20s"
@@ -4796,6 +4796,13 @@
         },
         {
           "time": "am",
+          "title": "Optional Mineral-Water Mist",
+          "product": "Evian Brumisateur Facial Spray",
+          "link": "https://www.brumisateur-evian.fr/",
+          "description": "<p>Mist after cleansing when you want a fresh, slightly damp base for serum or moisturizer, then press it in and continue while skin is still damp. This is essentially beautifully packaged French mineral water, not an active treatment, but the very fine spray is genuinely nice during travel, heat, or an over-air-conditioned workday.</p><p>Do not let repeated layers of water evaporate on bare skin and expect them to moisturize on their own; follow with the next hydrating step.</p>"
+        },
+        {
+          "time": "am",
           "title": "Cica Serum",
           "product": "Uriage Bariéderm-CICA Daily Intensive Repairing Serum",
           "link": "https://www.uriage.fr/produits/cica-daily-serum-reparateur-intense",
@@ -4811,9 +4818,9 @@
         {
           "time": "am",
           "title": "French SPF",
-          "product": "La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF 50+",
-          "link": "https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html",
-          "description": "<p>Shake well and apply generously as the final morning step, including ears and neck. This fragrance-free European formula uses Mexoryl 400 for ultra-long UVA coverage and is one of the products genuinely worth putting on a France shopping list.</p><p>The U.S. Anthelios line uses different filters, so check that the box says UVMune 400. For more shine control, ask the pharmacist for the untinted Oil Control Fluid version; for dry skin, choose the <a href=\"https://www.laroche-posay.fr/l-edito-peau/conseils-peau-et-soleil/creme-solaire-est-elle-un-produit-anti-age--/creme-solaire-produit-anti-age.html\" target=\"_blank\">UVMune 400 Hydrating Cream</a>.</p>"
+          "product": "Eucerin Sun Oil Control Gel-Cream SPF 50+",
+          "link": "https://www.eucerin.fr/nos-produits/eucerin-sun-protection/sun-oil-control-gel-creme-spf-50plus",
+          "description": "<p>Apply generously as the final morning step, including ears and neck. The untinted gel-cream is the 20s pick because it is quick-drying, non-greasy, and designed for oily or acne-prone skin—the kind of texture that makes daily SPF easier to keep doing.</p><p>The <a href=\"https://www.eucerin.fr/nos-produits/eucerin-sun-protection/oil-control-teinte-medium-spf-50plus\" target=\"_blank\">Eucerin tinted Oil Control SPF 50+</a> adds pigment for visible-light protection and a little complexion evening, although its limited shade needs to match. For an untinted mineral alternative, try <a href=\"https://www.uriage.fr/produits/bariesun-creme-minerale-hydratante-spf50\" target=\"_blank\">Uriage Bariésun Mineral Cream SPF 50+</a>, with the usual warning that mineral formulas can leave a cast.</p>"
         }
       ],
       "pm": [
@@ -4823,6 +4830,13 @@
           "product": "Bioderma Créaline Gel Moussant",
           "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
           "description": "<p>Massage over wet skin and rinse well. If makeup or water-resistant SPF remains, use the iconic <a href=\"https://www.bioderma.fr/p/crealine-h2o\" target=\"_blank\">Bioderma Créaline H2O</a> first, then follow with this gel rather than rubbing harder with cotton.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "15% Azelaic Acid",
+          "product": "ACM Azéane Cream 15% Azelaic Acid",
+          "link": "https://labo-acm.com/products/azeane-creme-acide-azelaique-15",
+          "description": "<p>Use a pea-size amount two or three nights a week after cleansing, then build toward nightly use only if skin stays comfortable. This is the especially good French-pharmacy find for breakouts, post-blemish marks, uneven tone, and redness: a cosmetic formula with 15% azelaic acid, whereas U.S. non-prescription products are usually 10% and 15% medicinal azelaic acid is prescription-only there.</p><p>This is not the same as buying the French medicines Finacea 15% or Skinoren 20% without a prescription—both are prescription products in France. Azéane is the freely sold cosmetic option. It can still sting or pill, so introduce it slowly and ask the pharmacist or a dermatologist about persistent acne or rosacea.</p>"
         },
         {
           "time": "pm",
@@ -4845,8 +4859,8 @@
   {
     "routine_name": "French Pharmacy Routine for Your 30s–40s",
     "id": 38,
-    "time": 2.4,
-    "money": 6.2,
+    "time": 3.5,
+    "money": 6.8,
     "point_title": "French Pharmacy Routine for Your 30s–40s",
     "point_description": "A brightening and early-correction routine pairing French vitamin C, retinal, barrier cream, and high-UVA European sunscreen without piling on exfoliants.",
     "pregnancy_safe": false,
@@ -4864,9 +4878,9 @@
         {
           "time": "am",
           "title": "Cleanse",
-          "product": "Bioderma Créaline Gel Moussant",
-          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
-          "description": "<p>Cleanse gently with lukewarm water, or rinse with water alone when skin feels dry. A stronger treatment routine needs a boring cleanser, not an exfoliating face wash competing for attention.</p>"
+          "product": "SVR Sensifine Dermo-Cleanser",
+          "link": "https://fr.svr.com/products/sensifine-dermo-nettoyant-1",
+          "description": "<p>Massage over dry or damp skin and remove gently according to the label. A stronger treatment routine needs a boring, fragrance-free cleanser, not an exfoliating face wash competing for attention.</p>"
         },
         {
           "time": "am",
@@ -4885,18 +4899,25 @@
         {
           "time": "am",
           "title": "French SPF",
-          "product": "La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF 50+",
-          "link": "https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html",
-          "description": "<p>Shake, apply generously, and reapply during prolonged outdoor exposure. At this age, preventing additional UVA-driven pigment and collagen damage is more useful than buying a fifth corrective serum.</p><p>This is the untinted French/EU UVMune 400 formula. A tinted version is available for people who want added visible-light protection, but the shade still needs to work for the person wearing it.</p>"
+          "product": "Bioderma Photoderm SPOT-AGE SPF 50+",
+          "link": "https://www.bioderma.fr/p/photoderm-spot-age-spf50",
+          "description": "<p>Apply the full sunscreen amount as the final morning step and reapply during prolonged outdoor exposure. This invisible gel-cream is the 30s–40s pick because it combines high UVA/UVB protection with antioxidant vitamin C and E derivatives plus centella, while keeping the main job—preventing more pigment and collagen damage—clear.</p><p>It is untinted and fragranced. For pigment that is strongly triggered by visible light, <a href=\"https://www.bioderma.fr/p/photoderm-m-spf50-doree\" target=\"_blank\">Bioderma Photoderm M SPF 50+ tinted cream</a> adds iron-oxide pigments if a shade works for you. For an untinted mineral option, try <a href=\"https://www.eau-thermale-avene.fr/p/fluide-mineral-spf-50-3282770148671-14c39aab\" target=\"_blank\">Avène Mineral Fluid SPF 50+</a>.</p>"
         }
       ],
       "pm": [
         {
           "time": "pm",
           "title": "Cleanse",
-          "product": "Bioderma Créaline Gel Moussant",
-          "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
-          "description": "<p>Remove makeup and sunscreen without scrubbing, then cleanse once with the gel. A micellar-water first pass is useful when needed, but double cleansing is not a nightly moral obligation.</p>"
+          "product": "SVR Sensifine Dermo-Cleanser",
+          "link": "https://fr.svr.com/products/sensifine-dermo-nettoyant-1",
+          "description": "<p>Remove makeup and sunscreen without scrubbing, then cleanse once. A micellar-water first pass is useful when needed, but double cleansing is not a nightly moral obligation.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Beauty Mist",
+          "product": "Caudalie Beauty Elixir",
+          "link": "https://fr.caudalie.com/p/319C/eau-de-beaute-319c.html",
+          "description": "<p>On recovery nights, shake and mist after cleansing for the classic French-pharmacy ritual, then let it settle before moisturizer. I would buy this for the refreshing, sensorial experience—not because a mist is going to remodel collagen or replace a serum.</p><p>Beauty Elixir contains alcohol, fragrance, and several essential oils. Skip it if you are sensitive, rosacea-prone, pregnant, or using retinal that night; Caudalie's gentler <a href=\"https://fr.caudalie.com/p/324/eau-de-raisin-hydratante-324.html\" target=\"_blank\">Grape Water</a> is the better fragrance-free alternative.</p>"
         },
         {
           "time": "pm",
@@ -4919,10 +4940,10 @@
   {
     "routine_name": "French Pharmacy Routine for Your 50s+",
     "id": 39,
-    "time": 2.4,
-    "money": 6.9,
+    "time": 3.6,
+    "money": 7.7,
     "point_title": "French Pharmacy Routine for Your 50s+",
-    "point_description": "A richer mature-skin routine with plumping hydration, lipid support, 0.1% retinal, and the more comfortable UVMune 400 cream format.",
+    "point_description": "A richer mature-skin routine with a soothing thermal mist, plumping hydration, lipid support, 0.1% retinal, and an anti-photoaging SPF fluid.",
     "pregnancy_safe": false,
     "age_range": [
       "50s",
@@ -4947,6 +4968,13 @@
         },
         {
           "time": "am",
+          "title": "Soothing Thermal Mist",
+          "product": "Avène Thermal Spring Water Spray",
+          "link": "https://www.eau-thermale-avene.fr/gamme/eau-thermale",
+          "description": "<p>Mist after cleansing when skin feels warm, tight, or reactive, gently press away excess, and follow promptly with serum or cream. This is the soothing mist in the group and the one I would choose for drier mature skin or a barrier made touchy by travel and treatment.</p><p>It is optional comfort, not a moisturizer by itself. Sealing it in matters more than repeatedly spraying water and letting it evaporate.</p>"
+        },
+        {
+          "time": "am",
           "title": "Plumping Serum",
           "product": "Vichy Liftactiv H.A. Epidermic Filler Serum",
           "link": "https://www.vichy.fr/tous-les-produits/soins-de-la-peau/serums-pour-le-visage/signes-de-lage/liftactiv-ha-epidermic-filler-serum",
@@ -4961,10 +4989,17 @@
         },
         {
           "time": "am",
+          "title": "Optional Eye Cream",
+          "product": "Avène DermAbsolu Recontouring Eye Cream",
+          "link": "https://www.eau-thermale-avene.fr/p/dermabsolu-yeux-soin-regard-jeunesse-3282770200515-14c39aab",
+          "description": "<p>Tap a small amount around the orbital bone before sunscreen if dryness makes concealer catch or the eye area feel uncomfortable. This is a comfort and temporary smoothing step, not a required separate category; the face moisturizer can go around the eyes if it does not sting.</p>"
+        },
+        {
+          "time": "am",
           "title": "Hydrating French SPF",
-          "product": "La Roche-Posay Anthelios UVMune 400 Hydrating Cream SPF 50+",
-          "link": "https://www.laroche-posay.fr/l-edito-peau/conseils-peau-et-soleil/creme-solaire-est-elle-un-produit-anti-age--/creme-solaire-produit-anti-age.html",
-          "description": "<p>Apply generously as the final morning step. The cream format is the more comfortable UVMune 400 option for dry skin while still supplying the European filter technology that makes this a worthwhile France purchase.</p><p>If it feels too rich, use the <a href=\"https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html\" target=\"_blank\">untinted Invisible Fluid</a> instead.</p>"
+          "product": "Vichy Capital Soleil UV-Age Daily SPF 50+",
+          "link": "https://www.vichy.fr/tous-les-produits/soins-solaires/protections-solaires/protections-solaires-visage/capital-soleil-uv-age-daily",
+          "description": "<p>Apply generously as the final morning step. This untinted fluid is the 50s+ pick because the very light sunscreen film also includes niacinamide and peptides aimed at spots, dullness, and loss of firmness. A fluid can be easier to apply in the proper amount than stacking a very rich second cream over the moisturizer already here.</p><p>It contains alcohol and fragrance, so reactive skin should choose the fragrance-free <a href=\"https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-hydratante-sans-parfum/LRP_027.html\" target=\"_blank\">La Roche-Posay UVMune 400 Hydrating Cream SPF 50+</a>. The tinted UV-Age Daily is the visible-light option if its shade works; <a href=\"https://www.bioderma.fr/p/photoderm-mineral-fluide-spf50\" target=\"_blank\">Bioderma Photoderm Mineral Fluid SPF 50+</a> is the untinted mineral alternative.</p>"
         }
       ],
       "pm": [

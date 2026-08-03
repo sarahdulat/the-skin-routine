@@ -5,9 +5,16 @@
       <p class="small font-sans">Adjust the filters to see more routines.</p>
     </div>
     <Popover v-if="popoverVisible" :visible="popoverVisible" :position="popoverPosition" @click.stop>
-      <div>
-        <p class="small">{{ popoverContent.routine_name }}</p>
-        <p class="small font-sans">{{ popoverContent.point_description }}</p>
+      <div v-if="popoverContent.routines.length === 1">
+        <p class="small">{{ popoverContent.routines[0].routine_name }}</p>
+        <p class="small font-sans">{{ popoverContent.routines[0].point_description }}</p>
+      </div>
+      <div v-else class="cluster-popover">
+        <button v-for="routinePoint in popoverContent.routines" :key="routinePoint.routine.id"
+          class="cluster-option" type="button" @click="selectPopoverRoutine(routinePoint)">
+          <p class="small">{{ routinePoint.routine_name }}</p>
+          <p class="small font-sans">{{ routinePoint.point_description }}</p>
+        </button>
       </div>
     </Popover>
   </div>
@@ -26,6 +33,12 @@ type RoutinePoint = {
   point_description: string;
   marker_image?: string;
   routine: Routine;
+};
+
+type ClusterPoint = {
+  x: number;
+  y: number;
+  routines: RoutinePoint[];
 };
 
 type RoutineWithMarkerImage = Routine & {
@@ -49,7 +62,7 @@ export default defineComponent({
   setup(props) {
     const graph = ref<HTMLDivElement | null>(null);
     const popoverVisible = ref(false);
-    const popoverContent = ref({ routine_name: "", point_description: "" });
+    const popoverContent = ref<{ routines: RoutinePoint[] }>({ routines: [] });
     const popoverPosition = ref({ x: 0, y: 0 });
     const showEmptyState = computed(() => props.routines.length === 0);
     let resizeObserver: ResizeObserver | null = null;
@@ -58,10 +71,16 @@ export default defineComponent({
       popoverVisible.value = false;
     };
 
-    const showPopover = (content: { routine_name: string; point_description: string }, position: { x: number; y: number }) => {
+    const showPopover = (content: { routines: RoutinePoint[] }, position: { x: number; y: number }) => {
       popoverContent.value = content;
       popoverPosition.value = position;
       popoverVisible.value = true;
+    };
+
+    const selectPopoverRoutine = (point: RoutinePoint) => {
+      store.setCurrentRoutine(point.routine);
+      closePopover();
+      createGraph();
     };
 
 
@@ -123,13 +142,36 @@ export default defineComponent({
           routine,
         };
       });
-      const imagePoints = data.filter((point) => point.marker_image);
-      const standardPoints = data.filter((point) => !point.marker_image);
+
+      const pointsByPosition = d3.group(data, (point) => `${point.x}:${point.y}`);
+      const clusters: ClusterPoint[] = Array.from(pointsByPosition.values())
+        .filter((points) => points.length > 1)
+        .map((points) => ({
+          x: points[0].x,
+          y: points[0].y,
+          routines: points,
+        }));
+      const singlePoints = Array.from(pointsByPosition.values())
+        .filter((points) => points.length === 1)
+        .map((points) => points[0]);
+      const imagePoints = singlePoints.filter((point) => point.marker_image);
+      const standardPoints = singlePoints.filter((point) => !point.marker_image);
       const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine?.id;
+      const isClusterSelected = (cluster: ClusterPoint) => cluster.routines.some(isSelected);
       const showRoutinePopover = (point: RoutinePoint) => {
         showPopover(
-          { routine_name: point.routine_name, point_description: point.point_description },
+          { routines: [point] },
           pointPosition(point)
+        );
+      };
+      const clusterPosition = (cluster: ClusterPoint) => ({
+        x: margin.left + xScale(cluster.x),
+        y: margin.top + yScale(cluster.y),
+      });
+      const showClusterPopover = (cluster: ClusterPoint) => {
+        showPopover(
+          { routines: cluster.routines },
+          clusterPosition(cluster)
         );
       };
       const updateSelectedMarkerStyles = (routineId: number) => {
@@ -141,6 +183,10 @@ export default defineComponent({
           .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
           .attr('stroke', (point) => point.routine.id === routineId ? activeColor : restingColor)
           .attr('stroke-width', (point) => point.routine.id === routineId ? selectedStrokeWidth : defaultStrokeWidth);
+
+        d3.select(graph.value)
+          .selectAll<SVGCircleElement, ClusterPoint>('.cluster-dot')
+          .attr('fill', (cluster) => cluster.routines.some((point) => point.routine.id === routineId) ? activeColor : restingColor);
       };
       const selectRoutinePoint = (point: RoutinePoint) => {
         store.setCurrentRoutine(point.routine);
@@ -281,6 +327,53 @@ export default defineComponent({
           showRoutinePopover(d);
         });
 
+      const clusterDot = svg
+        .selectAll('.cluster-marker')
+        .data(clusters)
+        .enter()
+        .append('g')
+        .attr('class', 'cluster-marker')
+        .attr('transform', (d) => `translate(${xScale(d.x)}, ${yScale(d.y)})`)
+        .style('cursor', 'pointer');
+
+      clusterDot
+        .append('circle')
+        .attr('class', 'cluster-dot')
+        .attr('r', 13)
+        .attr('fill', (d) => isClusterSelected(d) ? activeColor : restingColor);
+
+      clusterDot
+        .append('text')
+        .attr('class', 'cluster-count')
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', '#fbfaf4')
+        .style('font-family', 'var(--font-family-sans-serif)')
+        .style('font-size', '10px')
+        .style('font-weight', '500')
+        .style('pointer-events', 'none')
+        .text((d) => `+${d.routines.length}`);
+
+      clusterDot
+        .on("mouseover", function (event, d) {
+          d3.select(this).select('.cluster-dot').attr('fill', activeColor);
+          event.stopPropagation();
+          showClusterPopover(d);
+        })
+        .on("mouseout", function (_event, d) {
+          d3.select(this).select('.cluster-dot').attr('fill', isClusterSelected(d) ? activeColor : restingColor);
+        })
+        .on("pointerdown", function (event, d) {
+          if (event.pointerType === "mouse") return;
+          event.preventDefault();
+          event.stopPropagation();
+          showClusterPopover(d);
+        })
+        .on("click", function (event, d) {
+          event.stopPropagation();
+          showClusterPopover(d);
+        });
+
       // Add image points for source-backed / celebrity-style routines.
       const imageDot = svg
         .selectAll('.image-dot')
@@ -387,6 +480,7 @@ export default defineComponent({
       popoverPosition,
       showEmptyState,
       closePopover,
+      selectPopoverRoutine,
     };
   },
 });
@@ -428,5 +522,41 @@ export default defineComponent({
 
 .chart-empty-state p {
   margin: 0;
+}
+
+.cluster-popover {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.cluster-option {
+  display: grid;
+  gap: var(--space-sm);
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  text-align: left;
+}
+
+.cluster-option:not(:first-child) {
+  border-top: 1px solid rgba(251, 250, 244, 0.35);
+  padding-top: var(--space-sm);
+}
+
+.cluster-option:hover {
+  color: var(--color-primary);
+}
+
+.cluster-option p {
+  margin: 0;
+}
+
+.cluster-option .font-sans {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 </style>
