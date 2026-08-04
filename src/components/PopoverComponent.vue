@@ -110,13 +110,14 @@ export default defineComponent({
 
 .popover {
   position: fixed;
-  padding: var(--space-lg);
   color: var(--color-light);
-  background-color: var(--color-dark);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: var(--space-sm);
-  z-index: 10;
-  width: min(500px, calc(100vw - 16px));
+  background: var(--color-dark);
+  border: 1px solid var(--color-dark);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: min(320px, calc(100vw - 16px));
   max-height: calc(100vh - 16px);
   overflow: auto;
 }

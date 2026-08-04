@@ -2,7 +2,7 @@
   <div class="dropdown-container">
     <select v-model="selectedOption" @change="updateQueryParam" :aria-labelledby="defaultValue">
       <option :value="defaultValue" disabled selected>{{ defaultValue }}</option>
-      <option value="all">All {{ defaultValue }}</option>
+      <option value="all">{{ allOptionLabel }}</option>
       <option v-for="(item, index) in items" :key="index" :value="item">
         {{ item }}
       </option>
@@ -41,6 +41,16 @@ export default defineComponent({
         this.syncSelectedOption();
       },
       deep: true,
+    },
+  },
+  computed: {
+    allOptionLabel() {
+      const labels: Record<string, string> = {
+        "Age Range": "All Age Ranges",
+        "Skin Concern": "All Skin Concerns",
+      };
+
+      return labels[this.defaultValue] ?? `All ${this.defaultValue}`;
     },
   },
   methods: {

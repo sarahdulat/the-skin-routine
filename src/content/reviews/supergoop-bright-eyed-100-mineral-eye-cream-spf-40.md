@@ -31,7 +31,7 @@ featured_products:
       "link": "https://eltamd.com/products/uv-aox-eye-broad-spectrum-spf-30",
     },
   ]
-pregnancy_safe: false
+pregnancy_safe: true
 draft: false
 image: "/images/reviews/supergoop-bright-eyed-mineral-eye-cream-spf-40-watercolor.png"
 image_alt: "Watercolor and ink illustration of Supergoop! Bright-Eyed Mineral Eye Cream SPF 40"

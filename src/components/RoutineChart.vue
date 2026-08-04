@@ -32,6 +32,7 @@ type RoutinePoint = {
   routine_name: string;
   point_description: string;
   marker_image?: string;
+  flag: 'fr' | 'kr' | null;
   routine: Routine;
 };
 
@@ -125,6 +126,14 @@ export default defineComponent({
       const activeColor = '#C85238';
       const restingColor = '#343A40';
       const isImageString = (image: string | undefined): image is string => Boolean(image);
+      const getRoutineFlag = (routine: Routine): RoutinePoint['flag'] => {
+        const routineName = routine.routine_name.toLowerCase();
+
+        if (routineName.startsWith('french pharmacy')) return 'fr';
+        if (routineName.startsWith('korean skincare')) return 'kr';
+
+        return null;
+      };
       const getMarkerImage = (routine: RoutineWithMarkerImage) => {
         const sourceImage = routine.sources?.map((source) => source.image).filter(isImageString)[0];
 
@@ -132,13 +141,15 @@ export default defineComponent({
       };
       const data: RoutinePoint[] = props.routines.map((routine) => {
         const routineWithMarkerImage = routine as RoutineWithMarkerImage;
+        const cost = 'cost' in routine ? routine.cost : (routine as Routine & { money?: number }).money;
 
         return {
           x: Math.min(Math.max(routine.time, 0), axisMax),
-          y: Math.min(Math.max(routine.money, 0), axisMax),
+          y: Math.min(Math.max(cost ?? 0, 0), axisMax),
           routine_name: routine.routine_name,
           point_description: routine.point_description,
           marker_image: getMarkerImage(routineWithMarkerImage),
+          flag: getRoutineFlag(routine),
           routine,
         };
       });
@@ -154,8 +165,9 @@ export default defineComponent({
       const singlePoints = Array.from(pointsByPosition.values())
         .filter((points) => points.length === 1)
         .map((points) => points[0]);
-      const imagePoints = singlePoints.filter((point) => point.marker_image);
-      const standardPoints = singlePoints.filter((point) => !point.marker_image);
+      const flagPoints = singlePoints.filter((point) => point.flag);
+      const imagePoints = singlePoints.filter((point) => !point.flag && point.marker_image);
+      const standardPoints = singlePoints.filter((point) => !point.flag && !point.marker_image);
       const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine?.id;
       const isClusterSelected = (cluster: ClusterPoint) => cluster.routines.some(isSelected);
       const showRoutinePopover = (point: RoutinePoint) => {
@@ -181,6 +193,11 @@ export default defineComponent({
 
         d3.select(graph.value)
           .selectAll<SVGCircleElement, RoutinePoint>('.image-dot-ring')
+          .attr('stroke', (point) => point.routine.id === routineId ? activeColor : restingColor)
+          .attr('stroke-width', (point) => point.routine.id === routineId ? selectedStrokeWidth : defaultStrokeWidth);
+
+        d3.select(graph.value)
+          .selectAll<SVGCircleElement, RoutinePoint>('.flag-dot-ring')
           .attr('stroke', (point) => point.routine.id === routineId ? activeColor : restingColor)
           .attr('stroke-width', (point) => point.routine.id === routineId ? selectedStrokeWidth : defaultStrokeWidth);
 
@@ -294,24 +311,29 @@ export default defineComponent({
         .attr('stroke-width', 2);
 
       // Add standard points (scatter plot)
-      svg
-        .selectAll('.dot')
+      const standardDot = svg
+        .selectAll('.standard-dot')
         .data(standardPoints)
         .enter()
+        .append('g')
+        .attr('class', 'standard-dot')
+        .attr('transform', (d) => `translate(${xScale(d.x)}, ${yScale(d.y)})`)
+        .style('cursor', 'pointer');
+
+      standardDot
         .append('circle')
         .attr('class', 'dot')
-        .attr('cx', (d) => xScale(d.x))
-        .attr('cy', (d) => yScale(d.y))
         .attr('r', 10)
-        .attr('fill', (d) => isSelected(d) ? activeColor : restingColor)
-        .style('cursor', 'pointer')
+        .attr('fill', (d) => isSelected(d) ? activeColor : restingColor);
+
+      standardDot
         .on("mouseover", function (event, d) {
-          d3.select(this).attr("fill", activeColor);
+          d3.select(this).select('.dot').attr("fill", activeColor);
           event.stopPropagation();
           showRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
-          d3.select(this).attr("fill", isSelected(d) ? activeColor : restingColor);
+          d3.select(this).select('.dot').attr("fill", isSelected(d) ? activeColor : restingColor);
           closePopover();
         })
         .on("pointerdown", function (event, d) {
@@ -372,6 +394,124 @@ export default defineComponent({
         .on("click", function (event, d) {
           event.stopPropagation();
           showClusterPopover(d);
+        });
+
+      const flagDot = svg
+        .selectAll('.flag-dot')
+        .data(flagPoints)
+        .enter()
+        .append('g')
+        .attr('class', 'flag-dot')
+        .attr('transform', (d) => `translate(${xScale(d.x) - markerRadius}, ${yScale(d.y) - markerRadius})`)
+        .style('cursor', 'pointer');
+
+      flagDot
+        .append('clipPath')
+        .attr('id', (d) => `routine-flag-clip-${d.routine.id}`)
+        .append('circle')
+        .attr('r', markerRadius)
+        .attr('cx', markerRadius)
+        .attr('cy', markerRadius);
+
+      const flagFill = flagDot
+        .append('g')
+        .attr('clip-path', (d) => `url(#routine-flag-clip-${d.routine.id})`);
+
+      flagFill
+        .append('rect')
+        .attr('width', markerSize)
+        .attr('height', markerSize)
+        .attr('fill', '#fbfaf4');
+
+      const frenchFlagFill = flagFill.filter((d) => d.flag === 'fr');
+
+      frenchFlagFill
+        .append('rect')
+        .attr('width', markerSize / 3)
+        .attr('height', markerSize)
+        .attr('fill', '#243A8F');
+
+      frenchFlagFill
+        .append('rect')
+        .attr('x', (markerSize / 3) * 2)
+        .attr('width', markerSize / 3)
+        .attr('height', markerSize)
+        .attr('fill', '#D13F3F');
+
+      const koreanFlagFill = flagFill.filter((d) => d.flag === 'kr');
+
+      koreanFlagFill
+        .append('path')
+        .attr('d', 'M14 7 A7 7 0 0 1 14 21 A3.5 3.5 0 0 1 14 14 A3.5 3.5 0 0 0 14 7 Z')
+        .attr('fill', '#CD2E3A');
+
+      koreanFlagFill
+        .append('path')
+        .attr('d', 'M14 21 A7 7 0 0 1 14 7 A3.5 3.5 0 0 1 14 14 A3.5 3.5 0 0 0 14 21 Z')
+        .attr('fill', '#0047A0');
+
+      const trigramBars = [
+        { x: 4.2, y: 6.2, rotation: -34 },
+        { x: 20.1, y: 6.2, rotation: 34 },
+        { x: 4.2, y: 20.5, rotation: 34 },
+        { x: 20.1, y: 20.5, rotation: -34 },
+      ];
+
+      const trigrams = koreanFlagFill
+        .selectAll('.korean-flag-trigram')
+        .data(trigramBars)
+        .enter()
+        .append('g')
+        .attr('class', 'korean-flag-trigram')
+        .attr('transform', (bar) => `translate(${bar.x}, ${bar.y}) rotate(${bar.rotation})`);
+
+      trigrams
+        .selectAll('rect')
+        .data([0, 1, 2])
+        .enter()
+        .append('rect')
+        .attr('x', -2.3)
+        .attr('y', (barIndex) => barIndex * 1.8)
+        .attr('width', 4.6)
+        .attr('height', 0.9)
+        .attr('rx', 0.2)
+        .attr('fill', '#111111');
+
+      flagDot
+        .append('circle')
+        .attr('class', 'flag-dot-ring')
+        .attr('cx', markerRadius)
+        .attr('cy', markerRadius)
+        .attr('r', markerRadius)
+        .attr('fill', 'none')
+        .attr('stroke', (d) => isSelected(d) ? activeColor : restingColor)
+        .attr('stroke-width', (d) => isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
+
+      flagDot
+        .on("mouseover", function (event, d) {
+          d3.select(this).select('.flag-dot-ring')
+            .attr('stroke', activeColor)
+            .attr('stroke-width', selectedStrokeWidth);
+          event.stopPropagation();
+          showRoutinePopover(d);
+        })
+        .on("mouseout", function (_event, d) {
+          d3.select(this).select('.flag-dot-ring')
+            .attr('stroke', isSelected(d) ? activeColor : restingColor)
+            .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
+          closePopover();
+        })
+        .on("pointerdown", function (event, d) {
+          if (event.pointerType === "mouse") return;
+          event.preventDefault();
+          event.stopPropagation();
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
+        })
+        .on("click", function (event, d) {
+          event.stopPropagation();
+          selectRoutinePoint(d);
+          showRoutinePopover(d);
         });
 
       // Add image points for source-backed / celebrity-style routines.
@@ -436,6 +576,9 @@ export default defineComponent({
           selectRoutinePoint(d);
           showRoutinePopover(d);
         });
+
+      // Keep country markers visible when nearby portrait markers overlap them.
+      flagDot.raise();
 
       // Add X-axis label
       svg.append("text")
@@ -553,10 +696,4 @@ export default defineComponent({
   margin: 0;
 }
 
-.cluster-option .font-sans {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
 </style>

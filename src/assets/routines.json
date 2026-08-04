@@ -3,7 +3,6 @@
     "routine_name": "Sarah's Routine",
     "id": 0,
     "time": 10.7,
-    "money": 6.8,
     "point_description": "Sarah's forever routine: microcurrent, vitamin C, azelaic acid, daily SPF, a split double cleanse, LED, tretinoin recovery nights, and a bedtime slugging ritual.",
     "pregnancy_safe": false,
     "age_range": [
@@ -174,13 +173,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.8
   },
   {
     "routine_name": "Sarah's Pregnancy Safe Routine",
     "id": 1,
     "time": 9.5,
-    "money": 6.2,
     "point_description": "A pregnancy-safe version of Sarah's routine with fewer actives, mineral SPF, a split double cleanse, LED by personal comfort level, and the same bedtime moisture ritual.",
     "pregnancy_safe": true,
     "age_range": [
@@ -240,7 +239,7 @@
           "title": "SPF Eye Cream",
           "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
           "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
-          "description": "<p>Tap around the eye area before face SPF. Many sunscreens sting around the eyes, but this one does not so this keeps the eye area protected without making the whole morning miserable.</p><p>Read my full glowing review on this product <a href=\"/blog/supergoop-bright-eyed-100-mineral-eye-cream-spf-40\">here</a>.</p>"
+          "description": "<p>Tap an even layer around the eye area before face SPF. The zinc-oxide eye sunscreen is a reasonable pregnancy option under current mainstream obstetric and dermatology guidance, while still giving this easily missed area dedicated protection.</p><p>The light peach tint can brighten the area but needs to work with your skin tone. As always during pregnancy, follow your own clinician's advice when it differs from general guidance.</p>"
         },
         {
           "time": "am",
@@ -337,13 +336,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.2
   },
   {
     "routine_name": "Hailey Bieber's Routine",
     "id": 2,
     "time": 7.4,
-    "money": 7.4,
     "point_description": "A hydration-heavy glazed-skin routine focused on gentle cleansing, barrier support, and SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hailey_Bieber_at_WWD_Style_Awards_2026.jpg/330px-Hailey_Bieber_at_WWD_Style_Awards_2026.jpg",
     "pregnancy_safe": false,
@@ -502,13 +501,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.4
   },
   {
     "routine_name": "Dua Lipa's Routine",
     "id": 3,
     "time": 7.2,
-    "money": 11.2,
     "point_description": "A performance-proof routine built around cleansing, lightweight repair, glow, barrier support, and daily SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dua_Lipa-69798_%28cropped%29.jpg/330px-Dua_Lipa-69798_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -662,13 +661,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 11.2
   },
   {
     "routine_name": "Selena Gomez's Routine",
     "id": 4,
     "time": 6.3,
-    "money": 9.2,
     "point_description": "A luxe, acne-conscious routine centered on gentle makeup removal, hydration, sun protection, and lupus-sensitive skin.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg/330px-Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -832,13 +831,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 9.2
   },
   {
     "routine_name": "Zendaya's Routine",
     "id": 5,
     "time": 4.2,
-    "money": 6.7,
     "point_description": "A light, less-is-more routine built around gentle cleansing, moisturizer, SPF, lip repair, and occasional masks.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg",
     "pregnancy_safe": false,
@@ -974,13 +973,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.7
   },
   {
     "routine_name": "Kate Moss's Routine",
     "id": 6,
     "time": 5.7,
-    "money": 7.3,
     "point_description": "A restorative routine built around ice, rose water, rich moisture, gua sha, sunscreen, and lip care.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg/330px-Kate_Moss_-_Decort%C3%A9_advertisement_%28cropped2%29.jpg",
     "pregnancy_safe": false,
@@ -1130,13 +1129,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.3
   },
   {
     "routine_name": "Martha Stewart's Routine",
     "id": 7,
     "time": 5.5,
-    "money": 7.5,
     "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, and rich night care.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Martha_Stewart_%2848926315347%29_%28cropped%29.jpg/330px-Martha_Stewart_%2848926315347%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -1279,13 +1278,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.5
   },
   {
     "routine_name": "Scarlett Johansson's Routine",
     "id": 8,
     "time": 4.8,
-    "money": 8.6,
     "point_description": "A sensitive-skin routine built around The Outset cleanser, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
     "pregnancy_safe": false,
@@ -1428,13 +1427,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 8.6
   },
   {
     "routine_name": "Dr. Sam Ellis's Routine",
     "id": 9,
     "time": 6.7,
-    "money": 8.8,
     "point_description": "A dermatologist-style routine with hydrating layers, peptides, eye cream, sunscreen, double cleansing, LED, prescription treatment, and overnight repair.",
     "pregnancy_safe": false,
     "age_range": [
@@ -1579,13 +1578,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 8.8
   },
   {
     "routine_name": "Tyla's Routine",
     "id": 10,
     "time": 3.4,
-    "money": 5.5,
     "point_description": "A simple glow-focused routine built around cleanser, face mist, rich moisturizer, sunscreen, petroleum jelly, and a lip sleeping mask.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Tyla_at_Coachella_2025_01.jpg/250px-Tyla_at_Coachella_2025_01.jpg",
     "pregnancy_safe": false,
@@ -1676,13 +1675,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 5.5
   },
   {
     "routine_name": "Mila Kunis's Routine",
     "id": 11,
     "time": 3.7,
-    "money": 9.2,
     "point_description": "A streamlined breakout-conscious routine with clarifying mist, peel-and-glow serum, optional hydration, rich SPF, and LED mask support.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Mila_Kunis_TIFF_2025_%28cropped%29.jpg/330px-Mila_Kunis_TIFF_2025_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -1767,13 +1766,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 9.2
   },
   {
     "routine_name": "John Mayer's Routine",
     "id": 12,
     "time": 2.3,
-    "money": 11.3,
     "point_description": "A PM-only, luxury-heavy routine from Mayer's Snapchat era: acne cleanser, Natura Bisse serum, eye treatment, rich cream, and mist.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/JohnMayer.jpg/250px-JohnMayer.jpg",
     "pregnancy_safe": false,
@@ -1860,13 +1859,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 11.3
   },
   {
     "routine_name": "Alicia Vikander's Routine",
     "id": 13,
     "time": 2.6,
-    "money": 8.7,
     "point_description": "A minimalist dry-skin routine with weekly sauna time, FaceGym Pro skin prep with Collagen Infusion Serum, Augustinus Bader The Rich Cream, Hudsalva, and a quick cleansing-wipe reset.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alicia_Vikander-7756.jpg/330px-Alicia_Vikander-7756.jpg",
     "pregnancy_safe": false,
@@ -1960,13 +1959,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 8.7
   },
   {
     "routine_name": "Iris Apatow's Routine",
     "id": 14,
     "time": 6.6,
-    "money": 7.8,
     "point_description": "A beauty-lover routine for hormonal acne and hydration, with Avène cleanser, Dr. Barbara Sturm serum, Klairs moisturizer, mineral SPF, and a few calming extras.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg/330px-Iris_Apatow_at_SXSW_Red_Carpet_premiere_of_BLOCKERS_%2839852920695%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -2110,13 +2109,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.8
   },
   {
     "routine_name": "Emmy Rossum's Routine",
     "id": 15,
     "time": 2.6,
-    "money": 9.6,
     "point_description": "A skincare-obsessive daytime routine focused on hydration, firming care, neck treatment, and mineral SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Emmy_Rossum_cropped.jpg/330px-Emmy_Rossum_cropped.jpg",
     "pregnancy_safe": false,
@@ -2193,13 +2192,13 @@
       ],
       "pm": []
     },
-    "draft": false
+    "draft": false,
+    "cost": 9.6
   },
   {
     "routine_name": "Margot Robbie's Routine",
     "id": 16,
     "time": 5.7,
-    "money": 10.2,
     "point_description": "A simple-but-luxe routine built around deep cleansing, travel exfoliating pads, face mist, Bloc moisture, La Prairie night cream, eye care, and event masks.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg/330px-Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg",
     "pregnancy_safe": false,
@@ -2322,13 +2321,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 10.2
   },
   {
     "routine_name": "Julianne Moore's Routine",
     "id": 17,
     "time": 6.9,
-    "money": 9.4,
     "point_description": "A regimented skin-protective routine built around gentle cleansing, targeted serums, neck and eye care, facial massage, and daily sunscreen.",
     "pregnancy_safe": false,
     "age_range": [
@@ -2463,13 +2462,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 9.4
   },
   {
     "routine_name": "Emma Stone's Routine",
     "id": 18,
     "time": 2.5,
-    "money": 4.9,
     "point_description": "A very minimal sensitive-skin routine built around single-ingredient oils, Embryolisse moisturizer, and sunscreen.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Emma_Stone_at_the_2024_New_York_Film_Festival_1_%28cropped%29.jpg",
     "pregnancy_safe": false,
@@ -2571,13 +2570,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 4.9
   },
   {
     "routine_name": "Meryl Streep's Routine",
     "id": 19,
     "time": 1.1,
-    "money": 5.1,
     "point_description": "A sparse, source-backed routine centered on daily sun protection, skin-type-specific hydration, Tracie Martyn Enzyme Exfoliant, and occasional red-carpet facial treatments.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Meryl_Streep_December_2018.jpg",
     "pregnancy_safe": false,
@@ -2654,13 +2653,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 5.1
   },
   {
     "routine_name": "Jennifer Garner's Routine",
     "id": 20,
     "time": 4.6,
-    "money": 5.6,
     "point_description": "A quick, practical Neutrogena-heavy routine built around cleanser, hyaluronic acid, retinol, weekly exfoliation, and serious daily SPF.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Jennifer_Garner_2013.jpg",
     "pregnancy_safe": false,
@@ -2789,13 +2788,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 5.6
   },
   {
     "routine_name": "Laufey's Routine",
     "id": 21,
     "time": 4.8,
-    "money": 5.7,
     "point_description": "A simple acne- and travel-aware routine built around CeraVe basics, hydration, Bioderma makeup removal, Icelandic eye patches, spot patches, and tour-friendly skin prep.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Laufey_Lin.jpg",
     "pregnancy_safe": false,
@@ -2932,13 +2931,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 5.7
   },
   {
     "routine_name": "Bella Hadid's Routine",
     "id": 22,
     "time": 3.6,
-    "money": 8.8,
     "point_description": "A dewy, high-low model skin-prep routine built around cold de-puffing, microcurrent, Biologique Recherche serums, Weleda Skin Food, Clinique SPF tint, and older Dior hydration staples.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bella_Hadid_Cannes_2018.jpg",
     "pregnancy_safe": false,
@@ -3051,13 +3050,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 8.8
   },
   {
     "routine_name": "Jessica Alba's Routine",
     "id": 23,
     "time": 5.7,
-    "money": 5.1,
     "point_description": "A clean-beauty, sensitive-skin routine centered on Honest Beauty masks, antioxidant serums, barrier balm, tinted eye care, mineral SPF tint, and optional evening add-on tools.",
     "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Alba_2024.jpg",
     "pregnancy_safe": false,
@@ -3201,13 +3200,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 5.1
   },
   {
     "routine_name": "Beyoncé's Routine",
     "id": 24,
     "time": 3.9,
-    "money": 6.6,
     "point_description": "A conservative Beyoncé routine built from her rare personal skincare comments and Sir John's Beyoncé-connected skin-prep guidance: deep cleansing, toning mist, hydration, SPF, Rosebud Salve, and Aquaphor slugging.",
     "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beyonc%C3%A9%20-%20Tottenham%20Hotspur%20Stadium%20-%201st%20June%202023%20%2838%20of%20118%29%20%2852946363558%29%20%28face%20cropped%29.jpg",
     "pregnancy_safe": false,
@@ -3328,13 +3327,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.6
   },
   {
     "routine_name": "Drugstore Anti-Aging Routine",
     "id": 25,
-    "time": 3.0,
-    "money": 4.6,
+    "time": 4.1,
     "point_description": "A low-fuss routine that puts the money where it matters: daily sunscreen, a beginner retinol, vitamin C, and enough barrier support to keep going.",
     "pregnancy_safe": false,
     "age_range": [
@@ -3379,6 +3378,13 @@
         },
         {
           "time": "am",
+          "title": "Eye-Area SPF",
+          "product": "Cetaphil Sheer Mineral Sunscreen Stick SPF 50",
+          "link": "https://www.amazon.com/s?k=Cetaphil+Sheer+Mineral+Sunscreen+Stick+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Glide the stick onto a clean fingertip, then tap a generous, even layer around the orbital bone and upper eye contour before face sunscreen. This fragrance-free drugstore mineral SPF 50 is specifically intended for fragile areas around the eyes, though it is an eye-area sunscreen rather than a treatment eye cream.</p><p>Keep it out of the eyes and off the lash line, reapply when outdoors, and add sunglasses. A mineral stick can leave some cast; do not solve that by applying less.</p>"
+        },
+        {
+          "time": "am",
           "title": "SPF",
           "product": "Neutrogena Invisible Daily Defense Face Serum SPF 60+",
           "link": "https://www.amazon.com/s?k=Neutrogena+Invisible+Daily+Defense+Face+Serum+SPF+60%2B&tag=theskinrout07-20",
@@ -3409,6 +3415,13 @@
         },
         {
           "time": "pm",
+          "title": "Eye Cream",
+          "product": "CeraVe Eye Repair Cream",
+          "link": "https://www.cerave.com/skincare/moisturizers/eye-repair-cream/",
+          "description": "<p>Smooth a rice-grain amount around each eye after the face treatment and before moisturizer. Ceramides, hyaluronic acid, and niacinamide add fragrance-free hydration without stacking another retinoid beside a face-retinol routine.</p><p>Keep it out of the eyes themselves. If your regular moisturizer is comfortable here, this remains the targeted step rather than proof that the eye area requires a completely separate universe.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Moisturize",
           "product": "Vanicream Daily Facial Moisturizer",
           "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
@@ -3416,13 +3429,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 4.4
   },
   {
     "routine_name": "Mid-Tier Anti-Aging Routine",
     "id": 26,
-    "time": 3.5,
-    "money": 6.9,
+    "time": 4.6,
     "point_description": "A mid-tier routine for someone who wants the same evidence-based bones with nicer textures: barrier care, vitamin C, SPF, and retinal.",
     "pregnancy_safe": false,
     "age_range": [
@@ -3468,6 +3481,13 @@
         },
         {
           "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before face sunscreen. This is a mineral SPF 40 eye cream with a peach tint, giving the delicate area dedicated protection without asking a slippery primer sunscreen to migrate right up to the lash line.</p><p>If the tint is not a match, the untinted, fragrance-free <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a> is the stronger European alternative.</p>"
+        },
+        {
+          "time": "am",
           "title": "SPF",
           "product": "Supergoop Unseen Sunscreen SPF 50",
           "link": "https://supergoop.com/collections/unseen-sunscreen",
@@ -3498,6 +3518,13 @@
         },
         {
           "time": "pm",
+          "title": "Peptide Eye Cream",
+          "product": "Biossance Squalane + Marine Algae Eye Cream",
+          "link": "https://www.biossance.com/p/squalane-plus-marine-algae-eye-cream/12766627/",
+          "description": "<p>Press a rice-grain amount around each eye after retinal and before face cream. Squalane, panthenol, hyaluronic acid, algae antioxidants, and a peptide provide cushioning without adding a second retinoid to the same evening.</p><p>Use less if rich eye creams encourage milia. More product does not make peptides work faster; it mostly makes concealer travel.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Barrier Cream",
           "product": "Skinfix Triple Lipid-Peptide Cream",
           "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
@@ -3505,13 +3532,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.3
   },
   {
     "routine_name": "Luxury Anti-Aging Routine",
     "id": 27,
-    "time": 3.5,
-    "money": 10.9,
+    "time": 4.6,
     "point_description": "A prestige version of the same routine: iS Clinical cleanser, the OG vitamin C, a luxurious cream, and tinted mineral SPF.",
     "pregnancy_safe": false,
     "age_range": [
@@ -3557,6 +3584,13 @@
         },
         {
           "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Colorescience Total Eye 3-in-1 Renewal Therapy SPF 35",
+          "link": "https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35",
+          "description": "<p>Apply around the eye contour before face SPF. This all-mineral SPF 35 eye treatment adds hydration and visible color correction, which makes sense in a luxury routine but also makes shade matching part of the purchase.</p><p>For an untinted option, use <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>. Neither product replaces UV-blocking sunglasses on a bright day.</p>"
+        },
+        {
+          "time": "am",
           "title": "Tinted Mineral SPF",
           "product": "ALASTIN HydraTint Pro Mineral SPF 36",
           "link": "https://alastin.com/products/hydratint-sunscreen-spf-36",
@@ -3587,6 +3621,13 @@
         },
         {
           "time": "pm",
+          "title": "Firming Eye Cream",
+          "product": "SkinCeuticals A.G.E. Advanced Eye",
+          "link": "https://www.skinceuticals.com/skincare/anti-aging-creams/a.g.e.-advanced-eye-for-dark-circles/S119.html",
+          "description": "<p>Press a rice-grain amount along the under-eye curve, crow's-feet, and brow bone after treatment and before cream. Peptides, Proxylane, caffeine, and optical brighteners target the look of crepiness, puffiness, and dark circles without adding another retinoid beside AlphaRet.</p><p>The formula is fragrance-free, but avoid applying it directly to the movable eyelid unless the current label advises otherwise.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Rich Cream",
           "product": "Augustinus Bader The Rich Cream",
           "link": "https://augustinusbader.com/us/en/the-rich-cream-50-ml",
@@ -3594,13 +3635,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 11.2
   },
   {
     "routine_name": "Miranda Kerr's Routine",
     "id": 28,
     "time": 7.4,
-    "money": 8.1,
     "point_title": "Miranda Kerr's Routine",
     "point_description": "A KORA-heavy ritual built around double cleansing, vitamin C for pregnancy-linked pigmentation, turmeric glow products, face oil, eye oil, facial massage, and an overnight mask.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Miranda_Kerr_-_Abbot_Kinney_2025.jpg/960px-Miranda_Kerr_-_Abbot_Kinney_2025.jpg",
@@ -3775,13 +3816,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 8.1
   },
   {
     "routine_name": "Ashley Graham's Routine",
     "id": 29,
     "time": 7.7,
-    "money": 7.9,
     "point_title": "Ashley Graham's Routine",
     "point_description": "A glow-focused Ashley Graham routine built around simple cleansing, vitamin C, rich hydration, misting, tools for puffiness and rosacea, diligent SPF, and a very thorough nighttime cleanse.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ashley_Graham_ATTN_2024.jpg",
@@ -3989,13 +4030,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.9
   },
   {
     "routine_name": "Drugstore Sensitive-Skin Routine",
     "id": 30,
-    "time": 2.4,
-    "money": 4.3,
+    "time": 3.5,
     "point_title": "Drugstore Sensitive-Skin Routine",
     "point_description": "A fragrance-free drugstore routine built around oat, ceramides, and mineral SPF with no exfoliating acids or retinoids.",
     "pregnancy_safe": true,
@@ -4037,6 +4078,13 @@
         },
         {
           "time": "am",
+          "title": "Eye-Area SPF",
+          "product": "Cetaphil Sheer Mineral Sunscreen Stick SPF 50",
+          "link": "https://www.amazon.com/s?k=Cetaphil+Sheer+Mineral+Sunscreen+Stick+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Glide the stick onto a clean fingertip, then tap a generous, even layer around the orbital bone and upper eye contour before face SPF. It is fragrance-free, mineral, made for sensitive skin, and specifically intended for fragile areas around the eyes.</p><p>This is an eye-area sunscreen rather than a treatment eye cream; the CeraVe eye cream at night handles hydration. Keep it out of the eyes and off the lash line, and stop if reactive lids sting or the eyes water.</p>"
+        },
+        {
+          "time": "am",
           "title": "Mineral SPF",
           "product": "Blue Lizard Sensitive Face Mineral Sunscreen SPF 50+",
           "link": "https://www.amazon.com/s?k=Blue+Lizard+Sensitive+Face+Mineral+Sunscreen+SPF+50&tag=theskinrout07-20",
@@ -4060,6 +4108,13 @@
         },
         {
           "time": "pm",
+          "title": "Barrier Eye Cream",
+          "product": "CeraVe Eye Repair Cream",
+          "link": "https://www.cerave.com/skincare/moisturizers/eye-repair-cream/",
+          "description": "<p>Dot a rice-grain amount around each eye and smooth gently before face moisturizer. It is fragrance-free, ophthalmologist-tested, and built around ceramides, hyaluronic acid, and niacinamide rather than an exfoliating or retinoid active.</p><p>Patch test even gentle formulas. During an eyelid flare, stop experimenting and follow your clinician's plan rather than layering more products over inflamed skin.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Barrier Moisturizer",
           "product": "Vanicream Daily Facial Moisturizer",
           "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
@@ -4067,13 +4122,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 4.3
   },
   {
     "routine_name": "Mid-Tier Sensitive-Skin Routine",
     "id": 31,
-    "time": 2.4,
-    "money": 6.5,
+    "time": 3.5,
     "point_title": "Mid-Tier Sensitive-Skin Routine",
     "point_description": "A Sephora-level barrier routine with hypochlorous acid for redness and blemishes, a lipid-rich cream, and gentle mineral SPF.",
     "pregnancy_safe": false,
@@ -4116,6 +4171,13 @@
         },
         {
           "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before face SPF. The fragrance-free mineral filters are a sensible sensitive-eye starting point, while the peach tint can visually brighten darkness but may not match every complexion.</p><p>The untinted, perfume-free <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a> is a European alternative. Patch test first and stop if either formula makes the eyes water or the lids burn.</p>"
+        },
+        {
+          "time": "am",
           "title": "Mineral SPF",
           "product": "Paula's Choice CALM Barrier Protect Mineral Sunscreen SPF 30",
           "link": "https://www.paulaschoice.com/calm-barrier-protect-mineral-sunscreen-spf-30/9200.html",
@@ -4139,6 +4201,13 @@
         },
         {
           "time": "pm",
+          "title": "Soothing Eye Cream",
+          "product": "Biossance Squalane + Marine Algae Eye Cream",
+          "link": "https://www.biossance.com/p/squalane-plus-marine-algae-eye-cream/12766627/",
+          "description": "<p>Press a rice-grain amount around each eye before face cream. Squalane, panthenol, hyaluronic acid, antioxidants, and a peptide provide a richer cushion without fragrance, essential oils, retinoids, or exfoliating acids.</p><p>If the eye area is actively irritated, use fewer products—not more—and speak with a clinician about persistent eyelid dermatitis.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Barrier Cream",
           "product": "Skinfix Triple Lipid-Peptide Cream",
           "link": "https://www.sephora.com/search?keyword=Skinfix%20Triple%20Lipid%20Peptide%20Cream",
@@ -4146,13 +4215,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.1
   },
   {
     "routine_name": "Luxury Sensitive-Skin Routine",
     "id": 32,
-    "time": 2.4,
-    "money": 10.8,
+    "time": 3.5,
     "point_title": "Luxury Sensitive-Skin Routine",
     "point_description": "A minimalist medical-luxury routine with an eight-ingredient lipid serum, rich ceramide care, and sheer mineral SPF.",
     "pregnancy_safe": false,
@@ -4194,6 +4263,13 @@
         },
         {
           "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Colorescience Total Eye 3-in-1 Renewal Therapy SPF 35",
+          "link": "https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35",
+          "description": "<p>Apply around the eye contour before face SPF. This all-mineral eye cream protects while color-correcting, hydrating, and softening the look of puffiness; the tint must genuinely match rather than being tolerated because the product is expensive.</p><p>For a fragrance-free untinted option, try <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>. Patch test either formula on reactive skin.</p>"
+        },
+        {
+          "time": "am",
           "title": "Mineral SPF",
           "product": "Colorescience Total Protection No-Show Mineral Sunscreen SPF 50",
           "link": "https://www.colorescience.com/products/total-protection-no-show-mineral-sunscreen-spf-50",
@@ -4217,6 +4293,13 @@
         },
         {
           "time": "pm",
+          "title": "Soothing Eye Cream",
+          "product": "Dr. Barbara Sturm Eye Cream",
+          "link": "https://www.drsturm.com/eye-cream/",
+          "description": "<p>Pat a rice-grain amount around each eye before face cream. Purslane, panthenol, glycerin, macadamia oil, and other lipids make this a fragrance-free luxury hydration step rather than another aggressive active.</p><p>The elegant texture is the splurge; the useful job is still straightforward moisture. Patch test it, especially if nut-derived oils have bothered you before.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Barrier Cream",
           "product": "Epicutis Hyvia Crème",
           "link": "https://epicutis.com/products/hyvia-creme",
@@ -4224,13 +4307,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 11.2
   },
   {
     "routine_name": "Sofia Richie Grainge's Routine",
     "id": 33,
     "time": 6.7,
-    "money": 7.9,
     "point_title": "Sofia Richie Grainge's Routine",
     "point_description": "A sensitive, acne-prone, less-is-more routine built around Vanicream cleansing, clean towels, LED cooling, Hydrinity mist, Avène Cicalfate, SkinCeuticals SPF, and a source-backed nighttime double cleanse.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Sofia_Richie_by_Eric_Longden_5.jpg",
@@ -4410,13 +4493,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.9
   },
   {
     "routine_name": "Lily Aldridge's Routine",
     "id": 34,
     "time": 7.7,
-    "money": 9.6,
     "point_title": "Lily Aldridge's Routine",
     "point_description": "A natural-leaning model routine built around makeup-removal wipes, Tata Harper cleansing and essence, KORA vitamin C, rich moisturizers, masks, peel pads, and lip balm.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lily_Aldridge_in_2014_%28cropped%29.jpg",
@@ -4618,13 +4701,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 9.6
   },
   {
     "routine_name": "Drugstore Starter Routine for Your 20s",
     "id": 35,
-    "time": 2.4,
-    "money": 4.3,
+    "time": 3.5,
     "point_title": "Drugstore Starter Routine for Your 20s",
     "point_description": "A forgiving first routine: one cleanser, one optional barrier serum, moisturizer, and a high-protection sunscreen you can actually wear every day.",
     "pregnancy_safe": false,
@@ -4662,6 +4745,13 @@
         },
         {
           "time": "am",
+          "title": "Eye-Area SPF",
+          "product": "Cetaphil Sheer Mineral Sunscreen Stick SPF 50",
+          "link": "https://www.amazon.com/s?k=Cetaphil+Sheer+Mineral+Sunscreen+Stick+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Glide the stick onto a clean fingertip, then tap a generous, even layer around the orbital bone and upper eye contour before face SPF. This fragrance-free drugstore mineral SPF 50 is specifically intended for use around the eyes and is easier to place precisely than a runny face sunscreen.</p><p>It is an eye-area sunscreen, not a treatment eye cream; the BYOMA eye gel at night covers the hydration step. Keep it out of the eyes and off the lash line, and expect some possible mineral cast.</p>"
+        },
+        {
+          "time": "am",
           "title": "SPF",
           "product": "Neutrogena Invisible Daily Defense Face Serum SPF 60+",
           "link": "https://www.amazon.com/s?k=Neutrogena+Invisible+Daily+Defense+Face+Serum+SPF+60%2B&tag=theskinrout07-20",
@@ -4685,6 +4775,13 @@
         },
         {
           "time": "pm",
+          "title": "Cooling Eye Gel",
+          "product": "BYOMA De-Puff + Brighten Eye Gel",
+          "link": "https://byoma.com/products/de-puff-brighten-eye-gel",
+          "description": "<p>Use one small pump across both eye contours before moisturizer. Ceramides, cholesterol, multiple forms of hyaluronic acid, and a vitamin C derivative give a beginner hydration and temporary de-puffing without introducing a retinoid.</p><p>The cooling ingredients can feel refreshing but are not mandatory. Stop if the eye area tingles or waters; a basic moisturizer is the backup plan, not a skincare failure.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Moisturize",
           "product": "CeraVe PM Facial Moisturizing Lotion",
           "link": "https://www.amazon.com/s?k=CeraVe+PM+Facial+Moisturizing+Lotion&tag=theskinrout07-20",
@@ -4692,13 +4789,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 4.3
   },
   {
     "routine_name": "Mid-Tier Starter Routine for Your 20s",
     "id": 36,
-    "time": 2.4,
-    "money": 6.5,
+    "time": 3.5,
     "point_title": "Mid-Tier Starter Routine for Your 20s",
     "point_description": "The same beginner-friendly foundation in nicer textures, with a restrained 5% niacinamide serum for oiliness, redness, and uneven texture.",
     "pregnancy_safe": false,
@@ -4736,6 +4833,13 @@
         },
         {
           "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before face sunscreen. The dedicated mineral SPF 40 formula is more controlled around the eyes than the clear face SPF, and its light peach tint can help visually brighten darkness.</p><p>If the tint does not work for you, use the untinted, fragrance-free <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>.</p>"
+        },
+        {
+          "time": "am",
           "title": "SPF",
           "product": "Supergoop Unseen Sunscreen SPF 50",
           "link": "https://supergoop.com/products/unseen-sunscreen-spf-50",
@@ -4759,6 +4863,13 @@
         },
         {
           "time": "pm",
+          "title": "Hydrating Eye Cream",
+          "product": "Kiehl's Creamy Eye Treatment with Avocado",
+          "link": "https://www.ulta.com/p/creamy-eye-treatment-with-avocado-pimprod2002975",
+          "description": "<p>Warm a rice-grain amount between fingertips, then tap it around each eye before moisturizer. The fragrance-free water-in-oil cream focuses on all-night hydration and the look of dry fine lines rather than giving a new skincare user another active to manage.</p><p>It is rich, so use very little and switch to a lighter gel if you are prone to milia.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Moisturize",
           "product": "Kiehl's Ultra Facial Cream",
           "link": "https://www.sephora.com/product/P421996",
@@ -4766,13 +4877,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 7.1
   },
   {
     "routine_name": "French Pharmacy Routine for Your 20s",
     "id": 37,
-    "time": 3.9,
-    "money": 6.2,
+    "time": 5.3,
     "point_title": "French Pharmacy Routine for Your 20s",
     "point_description": "A prevention-first French pharmacy routine with a mineral-water mist, cica hydration, 15% cosmetic azelaic acid, and a matte SPF for acne-prone skin.",
     "pregnancy_safe": false,
@@ -4817,6 +4928,13 @@
         },
         {
           "time": "am",
+          "title": "Untinted SPF Eye Cream",
+          "product": "Ultrasun Eye Protection SPF 30",
+          "link": "https://www.ultrasun.com/en/products/eye-protection-spf30/",
+          "description": "<p>Tap carefully around the lower and upper eye contour before face SPF. This Swiss pharmacy cream-gel is the honest regional choice because true French eye creams with tested SPF are unusually scarce; it is untinted, perfume-free, water-resistant, and ophthalmologist-tested.</p><p>U.S. shoppers can use the mineral, lightly peach-tinted <a href=\"https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40\" target=\"_blank\">Supergoop Bright-Eyed SPF 40</a> instead.</p>"
+        },
+        {
+          "time": "am",
           "title": "French SPF",
           "product": "Eucerin Sun Oil Control Gel-Cream SPF 50+",
           "link": "https://www.eucerin.fr/nos-produits/eucerin-sun-protection/sun-oil-control-gel-creme-spf-50plus",
@@ -4830,6 +4948,13 @@
           "product": "Bioderma Créaline Gel Moussant",
           "link": "https://www.bioderma.fr/p/crealine-gel-moussant",
           "description": "<p>Massage over wet skin and rinse well. If makeup or water-resistant SPF remains, use the iconic <a href=\"https://www.bioderma.fr/p/crealine-h2o\" target=\"_blank\">Bioderma Créaline H2O</a> first, then follow with this gel rather than rubbing harder with cotton.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Zinc Mist",
+          "product": "La Roche-Posay Serozinc",
+          "link": "https://www.laroche-posay.fr/gammes/corps/serozinc/serozinc/LRP_118.html",
+          "description": "<p>On oily, post-workout, or razor-irritated days, mist over clean skin, let it settle, and continue with the rest of the routine. The formula is wonderfully French-pharmacy simple—water, zinc sulfate, and sodium chloride—and makes a more purposeful alternative to the Evian mist when shine and superficial irritation are the issue.</p><p>This is an optional comfort step, not an acne medication. Skip it if it feels drying, and do not expect zinc water to replace the azelaic-acid treatment.</p>"
         },
         {
           "time": "pm",
@@ -4847,6 +4972,13 @@
         },
         {
           "time": "pm",
+          "title": "Sensitive-Eye Cream",
+          "product": "Bioderma Sensibio Eye+",
+          "link": "https://www.bioderma.us/en/p/all-products/new/sensibio-eye-1.html",
+          "description": "<p>Smooth a rice-grain amount around each eye before moisturizer. The fragrance-free French pharmacy formula combines barrier hydration with caffeine and a peptide for the look of puffiness, dark circles, and early fine lines without adding retinal to the 20s routine.</p><p>It is sold internationally, but France is the fun place to look for local pricing and pharmacy promotions; the formula itself is not stronger there.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Moisturize",
           "product": "Embryolisse Lait-Crème Sensitive",
           "link": "https://embryolisse.fr/products/lait-creme-sensitive",
@@ -4854,15 +4986,15 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.3
   },
   {
     "routine_name": "French Pharmacy Routine for Your 30s–40s",
     "id": 38,
-    "time": 3.5,
-    "money": 6.8,
+    "time": 4.6,
     "point_title": "French Pharmacy Routine for Your 30s–40s",
-    "point_description": "A brightening and early-correction routine pairing French vitamin C, retinal, barrier cream, and high-UVA European sunscreen without piling on exfoliants.",
+    "point_description": "A brightening and early-correction routine pairing French vitamin C, retinal, barrier cream, and the cult UVMune 400 sunscreen without piling on exfoliants.",
     "pregnancy_safe": false,
     "age_range": [
       "30s",
@@ -4898,10 +5030,17 @@
         },
         {
           "time": "am",
+          "title": "Untinted SPF Eye Cream",
+          "product": "Ultrasun Eye Protection SPF 30",
+          "link": "https://www.ultrasun.com/en/products/eye-protection-spf30/",
+          "description": "<p>Tap around the upper and lower eye contour before UVMune. The untinted, perfume-free cream-gel is ophthalmologist-tested and gives this easily missed area its own labeled broad-spectrum SPF without adding another tint.</p><p>For a U.S. mineral option, use the lightly peach-tinted <a href=\"https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40\" target=\"_blank\">Supergoop Bright-Eyed SPF 40</a>.</p>"
+        },
+        {
+          "time": "am",
           "title": "French SPF",
-          "product": "Bioderma Photoderm SPOT-AGE SPF 50+",
-          "link": "https://www.bioderma.fr/p/photoderm-spot-age-spf50",
-          "description": "<p>Apply the full sunscreen amount as the final morning step and reapply during prolonged outdoor exposure. This invisible gel-cream is the 30s–40s pick because it combines high UVA/UVB protection with antioxidant vitamin C and E derivatives plus centella, while keeping the main job—preventing more pigment and collagen damage—clear.</p><p>It is untinted and fragranced. For pigment that is strongly triggered by visible light, <a href=\"https://www.bioderma.fr/p/photoderm-m-spf50-doree\" target=\"_blank\">Bioderma Photoderm M SPF 50+ tinted cream</a> adds iron-oxide pigments if a shade works for you. For an untinted mineral option, try <a href=\"https://www.eau-thermale-avene.fr/p/fluide-mineral-spf-50-3282770148671-14c39aab\" target=\"_blank\">Avène Mineral Fluid SPF 50+</a>.</p>"
+          "product": "La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF 50+",
+          "link": "https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-sans-parfum/LRP_026.html",
+          "description": "<p>Shake well and apply generously as the final morning step, including ears and neck. This is the cult French-pharmacy sunscreen worth looking for specifically in France: the untinted, fragrance-free European formula uses Mexoryl 400 for protection through the ultra-long UVA range, which is especially relevant when the goal is preventing additional pigment and collagen damage.</p><p>The texture is very fluid and contains a substantial amount of alcohol, so dry or reactive skin may prefer <a href=\"https://www.bioderma.fr/p/photoderm-spot-age-spf50\" target=\"_blank\">Bioderma Photoderm SPOT-AGE SPF 50+</a>. The <a href=\"https://www.laroche-posay.fr/gammes/solaires/anthelios/anthelios-uvmune-400-creme-solaire-fluide-invisible-teintee/LRP_027.html\" target=\"_blank\">tinted UVMune 400 Fluid</a> adds pigment if its shade works for you; <a href=\"https://www.eau-thermale-avene.fr/p/fluide-mineral-spf-50-3282770148671-14c39aab\" target=\"_blank\">Avène Mineral Fluid SPF 50+</a> is the untinted mineral alternative.</p>"
         }
       ],
       "pm": [
@@ -4921,10 +5060,24 @@
         },
         {
           "time": "pm",
+          "title": "Post-Procedure / First-Aid Extra",
+          "product": "A-Derma Epitheliale Ultra Repair Cream",
+          "link": "https://www.aderma.fr/fr-fr/p/epitheliale-ultra-repair-creme-reparatrice-anti-marques-3282770398649-14c39aab",
+          "description": "<p>Keep this as the post-procedure or superficially damaged-skin option rather than another nightly layer. Use it on the affected area when skin is recovering from a superficial peel, laser treatment, healed tattoo, or minor irritation, following the clinician's aftercare instructions; on those nights, skip Beauty Elixir, vitamin C, and retinal.</p><p>For a small superficial burn or localized sunburn, the cult French medicine-cabinet product is <a href=\"https://base-donnees-publique.medicaments.gouv.fr/medicament/64779557/extrait\" target=\"_blank\">BiafineAct</a>. Cool a fresh burn under cool running tap water first and ask the pharmacist how to use it. Biafine is not sunscreen or a daily moisturizer. Do not self-treat an infected or bleeding lesion with it; blistering, extensive burns or burns involving the face, hands, feet, genitals, or major joints need medical assessment.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Retinal Night Cream",
           "product": "Avène Hyaluron Activ B3 Multi-Intensive Night Cream",
           "link": "https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab",
           "description": "<p>Start one or two nights a week, using the pump dose over dry skin and avoiding eyelids, lip edges, and nose creases. The French formula combines retinal, niacinamide, and hyaluronic acid for fine lines, firmness, and uneven tone.</p><p>It contains fragrance and may tingle. Do not layer it with another retinoid or exfoliating acid, and avoid retinoids during pregnancy.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Triple-Correction Eye Cream",
+          "product": "Avène Hyaluron Activ B3 Triple Action Eye Cream",
+          "link": "https://www.aveneusa.com/collections/hyaluron-activ-b3-triple-action-eye-cream",
+          "description": "<p>Tap a rice-grain amount around each eye before barrier cream. Six percent niacinamide, hyaluronic acid, dextran sulfate, and adenosine target hydration, puffiness, and early lines without adding a second retinal product beside the night cream.</p><p>The U.S. and European versions are available, while French pharmacies may offer better pricing or sets. Check the box rather than assuming every similarly named Avène eye product has the same formula.</p>"
         },
         {
           "time": "pm",
@@ -4935,13 +5088,13 @@
         }
       ]
     },
-    "draft": false
+    "draft": false,
+    "cost": 6.8
   },
   {
     "routine_name": "French Pharmacy Routine for Your 50s+",
     "id": 39,
-    "time": 3.6,
-    "money": 7.7,
+    "time": 4.7,
     "point_title": "French Pharmacy Routine for Your 50s+",
     "point_description": "A richer mature-skin routine with a soothing thermal mist, plumping hydration, lipid support, 0.1% retinal, and an anti-photoaging SPF fluid.",
     "pregnancy_safe": false,
@@ -4989,10 +5142,10 @@
         },
         {
           "time": "am",
-          "title": "Optional Eye Cream",
-          "product": "Avène DermAbsolu Recontouring Eye Cream",
-          "link": "https://www.eau-thermale-avene.fr/p/dermabsolu-yeux-soin-regard-jeunesse-3282770200515-14c39aab",
-          "description": "<p>Tap a small amount around the orbital bone before sunscreen if dryness makes concealer catch or the eye area feel uncomfortable. This is a comfort and temporary smoothing step, not a required separate category; the face moisturizer can go around the eyes if it does not sting.</p>"
+          "title": "Untinted SPF Eye Cream",
+          "product": "Ultrasun Eye Protection SPF 30",
+          "link": "https://www.ultrasun.com/en/products/eye-protection-spf30/",
+          "description": "<p>Once the treatment eye cream has settled, tap this around the lower and upper eye contour before face SPF. The untinted, perfume-free Swiss pharmacy cream-gel is ophthalmologist-tested and gives mature eye-area skin its own labeled broad-spectrum protection.</p><p>U.S. shoppers can choose the mineral, lightly peach-tinted <a href=\"https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40\" target=\"_blank\">Supergoop Bright-Eyed SPF 40</a>. If two eye layers pill, use the SPF eye cream alone in the morning and keep DermAbsolu for night.</p>"
         },
         {
           "time": "am",
@@ -5019,10 +5172,1027 @@
         },
         {
           "time": "pm",
+          "title": "Recontouring Eye Cream",
+          "product": "Avène DermAbsolu Recontouring Eye Cream",
+          "link": "https://www.eau-thermale-avene.fr/p/dermabsolu-yeux-soin-regard-jeunesse-3282770200515-14c39aab",
+          "description": "<p>Tap a rice-grain amount around each eye after the face treatment and before moisturizer. The richer eye cream supports dryness and the temporary look of smoothness without adding another retinal product beside the 0.1% face treatment.</p><p>If the eye area becomes reactive, stop the retinal near it and use only this comfort step until skin is calm.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Rich Moisturizer",
           "product": "SVR Densitium Rich Cream",
           "link": "https://fr.svr.com/products/densitium-creme-riche-1",
           "description": "<p>Finish with a comfortable layer, especially on retinal nights. If you prefer a dedicated night texture, the linked <a href=\"https://fr.svr.com/products/densitium-baume-nuit-50ml\" target=\"_blank\">SVR Densitium Night Balm</a> is the same age-focused idea in a more enveloping formula.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Lip Repair",
+          "product": "Avène Cicalfate+ Lips Repair Balm",
+          "link": "https://www.eau-thermale-avene.fr/p/cicalfate-levres-baume-reparateur-3282770399936-14c39aab",
+          "description": "<p>Finish with a thin layer on chapped, fissured, or treatment-dry lips. This is the practical choice for a mature-skin routine because it is designed for irritated lips and small localized dry areas.</p><p>For the more fun cult purchase, swap in <a href=\"https://fr.nuxe.com/products/baume-levres-au-miel\" target=\"_blank\">Nuxe Rêve de Miel Lip Balm</a> as an overnight lip mask. It contains fragrance, citrus oils, honey, propolis, and beeswax, so Cicalfate is the safer pick for reactive lips or allergies.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 7.6
+  },
+  {
+    "routine_name": "Grimes's Routine",
+    "id": 40,
+    "time": 3.4,
+    "point_title": "Grimes's Routine",
+    "point_description": "A glow-and-redness routine built from Vogue's named products plus facialist-backed iS Clinical context: cleanse, mist, vitamin C, eye cream, cooling massage, sunscreen, and tinted SPF.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grimes.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "sensitive",
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Vogue 2020",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/grimes-beauty-secrets-pregnancy-skincare-makeup",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "February 4, 2020",
+        "headline": "Watch Grimes Do Her Pregnancy Skin Care and Psychedelic Makeup Routine",
+        "image": "https://assets.vogue.com/photos/5e39a780da36d700093b3482/16:9/w_1280,c_limit/vogue_beauty-secrets-grimes-beauty-secrets-2.jpg",
+        "summary": "Vogue names Grimes's iS Clinical vitamin C serum, Shangpree eye cream, rose quartz roller, Bioré sunscreen, and NARS tinted moisturizer."
+      },
+      {
+        "label": "The L.A. Facialist 2020",
+        "site": "The L.A. Facialist",
+        "link": "https://thelafacialist.com/blogs/news/cr-fashion-book-meet-the-facialist-who-keeps-grimes-skin-glowing",
+        "favicon": "https://thelafacialist.com/favicon.ico",
+        "date": "April 13, 2020",
+        "headline": "CR Fashion Book: Meet the Facialist Who Keeps Grimes' Skin Glowing",
+        "summary": "Grimes's facialist Candace Marino says she was on a full iS Clinical regimen and describes monthly lymphatic massage, LED, oxygen dome, light lactic peels, and jelly masks."
+      },
+      {
+        "label": "Dazed 2020",
+        "site": "Dazed",
+        "link": "https://www.dazeddigital.com/beauty/article/47814/1/six-weirdest-things-we-learned-from-grimes-pregnancy-beauty-routine",
+        "favicon": "https://www.dazeddigital.com/favicon.ico",
+        "date": "February 5, 2020",
+        "headline": "The 6 weirdest things we learned from Grimes's pregnancy beauty routine",
+        "image": "https://images-prod.dazeddigital.com/900/azure/dazed-prod/1280/4/1284652.jpg",
+        "summary": "Dazed recaps the skin-care structure as cleanser, mist, Korean essence, vitamin C serum, sunscreen, and cooling massage with ice or a rose quartz roller."
+      },
+      {
+        "label": "PAPER 2020",
+        "site": "PAPER",
+        "link": "https://www.papermag.com/grimes-beauty-routine-vogue",
+        "favicon": "https://www.papermag.com/favicon.ico",
+        "date": "February 5, 2020",
+        "headline": "Grimes' Beauty Routine Is Exactly What You Think",
+        "image": "https://www.papermag.com/media-library/image.jpg?id=22660130&width=1200&height=600&coordinates=0%2C0%2C0%2C150",
+        "summary": "PAPER confirms the same core products from the Vogue routine and highlights her iS Clinical serum, Shangpree eye cream, roller, and Bioré sunscreen."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://www.isclinical.com/collections/cleansers/products/cleansing-complex",
+          "description": "<p>Start by washing the face. Vogue does not name Grimes's cleanser, but her facialist says Grimes was on a full iS Clinical regimen, so this links the brand's Cleansing Complex as the cleanser-context match rather than a product Grimes named on camera.</p><p>iS Clinical says to massage a small amount over damp face and neck, rinse thoroughly, and pat dry.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mist",
+          "product": "iS Clinical Copper Firming Mist",
+          "link": "https://www.isclinical.com/collections/shop-all/products/copper-firming-mist",
+          "description": "<p>Spritz after cleansing. In Vogue, Grimes says she usually uses a mist, but does not name the bottle; this is linked from iS Clinical because her facialist says she was on the brand's full regimen.</p><p>She also follows with an unnamed Korean essence that she says helped with redness and pregnancy skin problems. Since Vogue does not identify it, I won't assume a replacement.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C",
+          "product": "iS Clinical GeneXC Serum",
+          "link": "https://www.isclinical.com/collections/brightening-favorites/products/genexc-serum",
+          "description": "<p>Apply a thin layer after hydrating steps. Vogue identifies this as iS Clinical's brightening vitamin C serum, and Grimes says she likes vitamin C because she had heard it helps protect from the sun.</p><p>Let it settle before eye cream and sunscreen so the routine does not turn into a slippery stack.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Eye Cream",
+          "product": "Peach & Lily Pure Radiance Brightening Eye Cream",
+          "link": "https://www.peachandlily.com/products/pure-radiance-brightening-eye-cream",
+          "description": "<p>Tap a tiny amount around the eye area. Vogue says Grimes used Shangpree S-Energy Repair Eye Cream imported from Korea and said it keeps her looking fresh and youthful.</p><p>The Shangpree eye cream is not reliably available now, so this links a current Peach & Lily Korean eye cream instead.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Cool + Roll",
+          "product": "Sephora Collection Rose Quartz Facial Roller",
+          "link": "https://www.sephora.com/ca/en/product/rose-quartz-facial-massager-P439672",
+          "description": "<p>Use the roller after serum and eye cream for a quick cooling massage. Vogue shows her using a rose quartz roller, and Dazed notes that she also uses ice on her face before shoots or stage moments to calm redness.</p><p>Roll gently rather than dragging; the goal is de-puffing and chill-vibes skin, not a workout for your face.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Sunscreen",
+          "product": "Bioré UV Aqua Rich Watery Essence SPF 50",
+          "link": "https://www.amazon.com/s?k=Biore+UV+Aqua+Rich+Watery+Essence+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Apply generously as the true SPF layer. Vogue says Grimes really likes this Japanese version of this sunscreen because it has almost no texture, and she says you can never really have too much sunscreen.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted SPF",
+          "product": "NARS Pure Radiant Tinted Moisturizer SPF 30",
+          "link": "https://www.sephora.com/product/pure-radiant-tinted-moisturizer-spf-30-pa-P302923",
+          "description": "<p>Use as the sheer tint step when she wants chill daytime coverage. Vogue says she adds NARS Pure Radiant Tinted Moisturizer after the Bioré sunscreen, and in the video she describes it as the regular-day layer when she is not going harder with makeup.</p><p>Treat this as coverage with SPF, not a replacement for the dedicated sunscreen underneath.</p>"
+        }
+      ],
+      "pm": []
+    },
+    "draft": false,
+    "cost": 8.2
+  },
+  {
+    "routine_name": "Lykke Li's Routine",
+    "id": 41,
+    "time": 3.8,
+    "point_title": "Lykke Li's Routine",
+    "point_description": "A minimal natural-leaning routine built around coconut oil, Luzern Force De Vie moisturizer, homemade face oil, mineral SPF, RMS balm, and bath/scrub rituals.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lykke%20Li%203.JPG",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s"
+    ],
+    "skin_concern": [
+      "dry_skin",
+      "sensitive",
+      "fine_lines_and_wrinkles"
+    ],
+    "sources": [
+      {
+        "label": "Vogue 2026",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/lykke-li-the-afterparty-coachella-interview",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "April 10, 2026",
+        "headline": "Lykke Li Is Ready to Rage",
+        "image": "https://assets.vogue.com/photos/69d8f5436c4b5f70c5147147/master/w_2560,c_limit/CLD_LykkeLi_ARTPROCESS_102.jpeg",
+        "summary": "A current profile places Li in her 40s and frames The Afterparty around aging, motherhood, performance, and reinvention."
+      },
+      {
+        "label": "The FADER 2026",
+        "site": "The FADER",
+        "link": "https://www.thefader.com/2026/05/14/lykke-li-the-afterparty-album-interview",
+        "favicon": "https://www.thefader.com/favicon.ico",
+        "date": "May 14, 2026",
+        "headline": "Lykke Li on life, aging, and her next move",
+        "image": "https://thefader-res.cloudinary.com/private_images/w_1440,c_limit,f_auto,q_auto:best/LYKKE_LI_The_FADER___5_j2ejtb/lykke-li-the-afterparty-album-interview.jpg",
+        "summary": "The FADER interviews Li about aging, life routines, motherhood, and the latest chapter of her career."
+      },
+      {
+        "label": "Vogue 2015",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/lykke-li-pregnant-beauty-routine-natural-organic-products",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "November 30, 2015",
+        "headline": "How Lykke Li Does Pregnancy: Crime Shows, Sushi Cravings, and Her Favorite Natural Face Oil",
+        "image": "https://assets.vogue.com/photos/58913fbf97a3db337a2491ee/16:9/w_1280,c_limit/lykke-li-pregnancy-beauty-1.jpg",
+        "summary": "Li describes switching to natural products, using Luzern Force De Vie, Suntegrity mineral sunscreen, coconut oil, homemade face oils, bath rituals, and RMS balm."
+      },
+      {
+        "label": "Coveteur 2014",
+        "site": "Coveteur",
+        "link": "https://coveteur.com/2014/10/15/lykke-li-style/",
+        "favicon": "https://coveteur.com/favicon.ico",
+        "date": "October 15, 2014",
+        "headline": "Lykke Li",
+        "image": "https://assets.coveteur.com/wp-content/uploads/2014/10/25377001.jpg",
+        "summary": "Coveteur captures Li's backstage beauty essentials: Dr. Hauschka face cream, RMS balms, coconut oil as moisturizer and makeup remover, and a very simple pre-show routine."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Oil-Based Cleanse",
+          "product": "Coconut Oil",
+          "link": "https://www.amazon.com/s?k=organic+coconut+oil&tag=theskinrout07-20",
+          "description": "<p>Use as a low-maintenance oil cleanse or makeup-removing step when skin needs it. Coveteur quotes Lykke saying coconut oil is amazing: she uses it as moisturizer, in her hair, and to take off makeup.</p><p>Vogue also says she removes heavy show or event makeup with coconut oil first. If coconut oil clogs your skin, treat this as a source-backed Lykke step rather than universal advice.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturize",
+          "product": "Luzern Force De Vie Crème Luxe",
+          "link": "https://luzernlabs.com/products/creme-luxe",
+          "description": "<p>Apply after cleansing while skin is still comfortable and slightly damp. Vogue says Lykke uses Luzern Labs's Force De Vie moisturizing cream, and she dots her homemade face oil into it in the morning.</p><p>Luzern's current Force De Vie Crème Luxe is the closest current link for that moisturizer family.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Homemade Face Oil",
+          "product": "NOW Solutions Avocado Oil",
+          "link": "https://www.amazon.com/s?k=NOW+Solutions+Avocado+Oil&tag=theskinrout07-20",
+          "description": "<p>Use a few drops, either alone or mixed into moisturizer. Vogue says Lykke's homemade face oil includes avocado, grape seed, lavender, neroli, and jojoba oils, and that she had always used almond and coconut oil before experimenting with blends.</p><p>The linked avocado oil is just one accessible base oil from her recipe; other named ingredients include <a href=\"https://www.amazon.com/s?k=grape+seed+oil+skin+care&tag=theskinrout07-20\" target=\"_blank\">grape seed oil</a>, <a href=\"https://www.amazon.com/s?k=jojoba+oil+skin+care&tag=theskinrout07-20\" target=\"_blank\">jojoba oil</a>, <a href=\"https://www.amazon.com/s?k=lavender+essential+oil&tag=theskinrout07-20\" target=\"_blank\">lavender oil</a>, and <a href=\"https://www.amazon.com/s?k=neroli+essential+oil&tag=theskinrout07-20\" target=\"_blank\">neroli oil</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral SPF",
+          "product": "Suntegrity 5-in-1 Natural Moisturizing Face Sunscreen SPF 30",
+          "link": "https://www.suntegrityskincare.com/suntegrity-5-in-1-natural-moisturizing-face-sunscreen/",
+          "description": "<p>Pat on as the last daytime skin step. Vogue says Lykke uses Suntegrity mineral sunscreen with a bit of foundation, and keeps the rest of the routine very pared back.</p><p>Use a full sunscreen amount, not a whisper of tinted moisturizer. The makeup part can be minimal; the SPF part cannot.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted Balm",
+          "product": "RMS Beauty Tinted Daily Lip Balm",
+          "link": "https://www.rmsbeauty.com/products/tinted-daily-lip-balm",
+          "description": "<p>Finish with a low-key tint. Vogue says Lykke loves RMS Beauty lip balm with a natural tint, and Coveteur also says she had started using RMS balms because they are natural, coconut-based products.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Makeup Removal",
+          "product": "Coconut Oil",
+          "link": "https://www.amazon.com/s?k=organic+coconut+oil&tag=theskinrout07-20",
+          "description": "<p>Use first only when there is heavy makeup from a show or event. Vogue says that at night she does the same routine, but removes heavy makeup with coconut oil first.</p><p>Massage gently and remove thoroughly so the oil does not sit on the skin as leftover stage makeup glue.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Cream",
+          "product": "Dr. Hauschka Rose Day Cream",
+          "link": "https://www.drhauschka.com/rose-day-cream/",
+          "description": "<p>Use as a richer comfort cream when the skin needs a simple, nourishing layer. Coveteur says Lykke keeps a Dr. Hauschka face cream for stage; the exact cream is not named, so this links the brand's classic Rose Day Cream as a plausible face-cream match.</p><p>Her Vogue routine later centers Luzern Force De Vie instead, so this is the older backstage option rather than the main current display product.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Face Oil",
+          "product": "NOW Solutions Rose Hip Seed Oil",
+          "link": "https://www.amazon.com/s?k=NOW+Solutions+Rose+Hip+Seed+Oil&tag=theskinrout07-20",
+          "description": "<p>Use a few drops on face or body when skin feels dry. Vogue says Lykke adds rose hip to her face-oil recipe and rubs that on her body once a day.</p><p>Keep it light on the face if coconut oil or richer creams already make the routine feel heavy.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Bath + Scrub",
+          "product": "Korean Exfoliating Washcloths",
+          "link": "https://www.amazon.com/s?k=Korean+exfoliating+washcloth&tag=theskinrout07-20",
+          "description": "<p>Use as an occasional body-scrub ritual, not an every-night face step. Vogue says Lykke missed Korean spa scrubs during pregnancy, so she used Korean scrub gloves at home and drew baths with <a href=\"https://www.amazon.com/s?k=epsom+salt&tag=theskinrout07-20\" target=\"_blank\">Epsom salts</a> and <a href=\"https://www.amazon.com/s?k=lavender+essential+oil&tag=theskinrout07-20\" target=\"_blank\">lavender oil</a>.</p><p>Keep the scrubbing on the body and stop before skin feels raw; melancholy-pop-star bathing should still respect the barrier.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 7.2
+  },
+  {
+    "routine_name": "Pregnancy-Safe Drugstore Routine",
+    "id": 42,
+    "time": 3,
+    "point_title": "Pregnancy-Safe Drugstore Routine",
+    "point_description": "A practical pregnancy routine for dryness, breakouts, and melasma built around azelaic acid, barrier support, and tinted mineral SPF.",
+    "pregnancy_safe": true,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Massage a small amount over damp skin and rinse with lukewarm water. It is fragrance-free, soap-free, and intentionally simple, which is useful when pregnancy makes previously easygoing skin feel dry or reactive.</p><p>If your face is comfortable in the morning, a water rinse is enough. Save the full cleanse for night instead of washing away oil your skin is suddenly struggling to keep.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Moisturizer",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Apply to slightly damp skin. Squalane, glycerin, hyaluronic acid, and ceramides cover dehydration and barrier support without fragrance or essential oils.</p><p>Use a lighter layer through an acne-prone T-zone and a more generous one over dry cheeks. Pregnancy skin does not always behave like one uniform skin type.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Eye-Area SPF",
+          "product": "Cetaphil Sheer Mineral Sunscreen Stick SPF 50",
+          "link": "https://www.amazon.com/s?k=Cetaphil+Sheer+Mineral+Sunscreen+Stick+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Glide the stick onto a clean fingertip, then tap a generous, even layer around the orbital bone and upper eye contour before face SPF. Its mineral sunscreen actives, fragrance-free formula, and drugstore price make it the better fit for this pregnancy routine; the label specifically includes use around the eyes.</p><p>This is an eye-area sunscreen rather than a treatment eye cream; the CeraVe eye cream at night handles hydration. Keep it out of the eyes and off the lash line, reapply outdoors, and add sunglasses.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted Mineral SPF",
+          "product": "Neutrogena Purescreen+ Mineral UV Tint Face Liquid SPF 30",
+          "link": "https://www.neutrogena.com/products/neutrogena-purescreen-mineral-uv-tint-face-liquid-sunscreen/6806411",
+          "description": "<p>Shake well, then apply generously to the face, ears, and neck as the final morning step. The zinc oxide and titanium dioxide provide mineral broad-spectrum protection, while iron oxides in the tint add visible-light protection that is especially helpful when melasma is the concern.</p><p>Choose the closest flexible shade and reapply when outdoors. If you prefer an untinted formula, try <a href=\"https://www.amazon.com/s?k=Vanicream+Facial+Moisturizer+Mineral+SPF+30&tag=theskinrout07-20\" target=\"_blank\">Vanicream Facial Moisturizer Mineral SPF 30</a>; it may leave more cast, so do not compensate by using less.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Cleanse gently for about 30 to 60 seconds and rinse well. If the mineral sunscreen or makeup remains, repeat with the same cleanser rather than adding a fragranced oil or scrub.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Azelaic Acid",
+          "product": "The Ordinary Azelaic Acid Suspension 10%",
+          "link": "https://www.ulta.com/p/azelaic-acid-suspension-10-pimprod2007104",
+          "description": "<p>Smooth a pea-size amount over dry skin two or three nights a week, then work toward nightly use if comfortable. Azelaic acid is the multitasker here: it can help inflammatory breakouts, post-blemish marks, redness, and uneven pigment without using a retinoid or hydroquinone.</p><p>A little tingling can happen, but persistent burning is a stop sign. Applying moisturizer first can buffer the treatment if pregnancy has made your skin more sensitive.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Eye Cream",
+          "product": "CeraVe Eye Repair Cream",
+          "link": "https://www.cerave.com/skincare/moisturizers/eye-repair-cream/",
+          "description": "<p>Smooth a rice-grain amount around each eye before face moisturizer. Ceramides, hyaluronic acid, and niacinamide provide fragrance-free hydration without retinoids, bakuchiol, exfoliating acids, or a separate pigment active.</p><p>Pregnancy can make familiar skin unpredictable, so patch test and check new products with your obstetric clinician when you have individual restrictions.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Moisturizer",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Finish with a comfortable layer. On very dry nights, press a small amount of plain petrolatum over flaky areas after moisturizer; it will not treat acne or pigment, but it can make a hormonally temperamental barrier much easier to live with.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 4.3
+  },
+  {
+    "routine_name": "Pregnancy-Safe Mid-Tier Routine",
+    "id": 43,
+    "time": 3.5,
+    "point_title": "Pregnancy-Safe Mid-Tier Routine",
+    "point_description": "A polished, barrier-conscious routine pairing niacinamide and azelaic acid with a wearable mineral sunscreen for acne, dryness, redness, and melasma.",
+    "pregnancy_safe": true,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Hydrating Cleanse",
+          "product": "Prequel Gleanser Non-Drying Glycerin Cleanser",
+          "link": "https://prequelskin.com/products/gleanser-non-drying-glycerin-cleanser",
+          "description": "<p>Massage a small amount over wet skin and rinse. The high-glycerin formula cleans without the tight finish that can make pregnancy-related dryness worse, and it can also be used on the body if you want fewer bottles in the shower.</p><p>Dry skin can simply rinse in the morning and keep this for the evening.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Niacinamide Serum",
+          "product": "Kiehl's Ultra Pure High-Potency 5% Niacinamide Serum",
+          "link": "https://www.sephora.com/product/kiehls-ultra-pure-high-potency-5-0-niacinamide-serum-P505339",
+          "description": "<p>Apply two or three drops before moisturizer. Five percent niacinamide is a measured supporting active for excess oil, visible redness, uneven tone, and barrier function without turning the routine into a stack of strong treatments.</p><p>Begin every other morning. If it makes you flush or itch, skip it; the azelaic acid and sunscreen are the higher-priority concern steps.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Cream",
+          "product": "Tower 28 SOS Daily Barrier Recovery Cream",
+          "link": "https://www.tower28beauty.com/products/sos-daily-barrier-recovery-cream",
+          "description": "<p>Smooth on a light layer while skin is slightly damp. Ceramide NP, allantoin, glycerin, and hyaluronic acid support dry, sensitized skin in a fragrance-free cream that still feels reasonable under sunscreen.</p><p>Combination skin can use it only on dry areas in the morning and apply it all over at night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before face sunscreen. The zinc-oxide SPF 40 formula is a reasonable pregnancy option under current mainstream guidance and can help keep facial sunscreen from becoming the stingy part of the morning.</p><p>The light peach tint can brighten darkness but will not match everyone. If it does not suit you—or your clinician has given different instructions—bring the approved mineral face SPF carefully around the orbital bone instead.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted Mineral SPF",
+          "product": "Drunk Elephant Umbra Mineral Cream SPF 30/PA+++",
+          "link": "https://www.drunkelephant.com/learn/smoothie-glossary/butter-days-ahead-smoothie/umbra-sheer-mineral-cream-spf-30pa-812343032804.html",
+          "description": "<p>Apply a full sunscreen amount as the last step and reapply when outdoors. The formula uses zinc oxide and comes in sheer skin-compatible shades; the tint's iron oxides are a useful extra layer of visible-light protection for melasma.</p><p>If none of the shades works for you, the untinted <a href=\"https://www.amazon.com/s?k=Vanicream+Facial+Moisturizer+Mineral+SPF+30&tag=theskinrout07-20\" target=\"_blank\">Vanicream Facial Moisturizer Mineral SPF 30</a> is a simpler mineral alternative, with the usual white-cast tradeoff.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Hydrating Cleanse",
+          "product": "Prequel Gleanser Non-Drying Glycerin Cleanser",
+          "link": "https://prequelskin.com/products/gleanser-non-drying-glycerin-cleanser",
+          "description": "<p>Cleanse thoroughly but gently, then pat dry. Repeat only if makeup or water-resistant sunscreen remains; there is no automatic need for a two-product double cleanse.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Azelaic Acid",
+          "product": "The INKEY List 10% Azelaic Acid Serum",
+          "link": "https://www.theinkeylist.com/collections/cyber-monday-skincare/products/redness-relief-solution",
+          "description": "<p>Apply a thin layer to dry skin two or three nights a week, gradually increasing if your skin stays calm. Ten percent azelaic acid addresses blemishes, redness, post-acne marks, and uneven pigment in one step.</p><p>Do not chase faster results by applying more. If it stings, use it after moisturizer or reduce frequency; if acne is painful, cystic, or scarring, ask your obstetric clinician or dermatologist about prescription options.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Peptide Eye Cream",
+          "product": "Biossance Squalane + Marine Algae Eye Cream",
+          "link": "https://www.biossance.com/p/squalane-plus-marine-algae-eye-cream/12766627/",
+          "description": "<p>Press a rice-grain amount around each eye before face cream. Squalane, panthenol, hyaluronic acid, algae-derived antioxidants, and a peptide give dryness and fine lines a cushioned treatment without retinoids, bakuchiol, exfoliating acids, or fragrance.</p><p>Confirm personal pregnancy restrictions with your obstetric clinician, especially if eczema or eye-area sensitivity is new.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Cream",
+          "product": "Tower 28 SOS Daily Barrier Recovery Cream",
+          "link": "https://www.tower28beauty.com/products/sos-daily-barrier-recovery-cream",
+          "description": "<p>Finish with a generous layer, especially around the mouth and cheeks if they are dry. On nights when your skin feels hot, tight, or unusually reactive, skip azelaic acid and make this the only leave-on step.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 7.1
+  },
+  {
+    "routine_name": "Pregnancy-Safe Luxury Routine",
+    "id": 44,
+    "time": 4.1,
+    "point_title": "Pregnancy-Safe Luxury Routine",
+    "point_description": "A high-touch pregnancy routine with antioxidant protection, layered hydration, prescription-strength azelaic acid, and premium tinted mineral SPF.",
+    "pregnancy_safe": true,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage",
+      "fine_lines_and_wrinkles"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Dr. Barbara Sturm Cleanser",
+          "link": "https://en.drsturm.com/cleanser/",
+          "description": "<p>Dispense into damp hands, work into a light foam, and massage over the face before rinsing. Glycerin, panthenol, aloe, and urea make this the cushioned cleansing step; it is fragrance-free and not meant to leave skin squeaky.</p><p>If morning cleansing worsens dryness, rinse with water and use this only at night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C Antioxidant",
+          "product": "SkinCeuticals C E Ferulic",
+          "link": "https://www.skinceuticals.com/c-e-ferulic-635494263008.html",
+          "description": "<p>Press four or five drops over clean, dry skin in the morning. The 15% L-ascorbic acid, vitamin E, and ferulic acid support antioxidant defense and help with dullness and uneven tone, while sunscreen remains the essential melasma step.</p><p>Start every other morning if pregnancy has made your skin reactive. Oxidized vitamin C will not earn extra credit, so keep the bottle closed, away from heat and light, and replace it if it turns very dark brown.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Hydrating Serum",
+          "product": "Dr. Barbara Sturm Hyaluronic Serum",
+          "link": "https://en.drsturm.com/hyaluronic-serum/",
+          "description": "<p>Apply a few drops to slightly damp skin after vitamin C has settled. This is the luxury hydration layer for tightness and dehydration; it is optional on humid days or whenever the cream alone is enough.</p><p>Hyaluronic acid works best when you seal it in with moisturizer rather than leaving it as the final step on dry skin.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Rich Moisturizer",
+          "product": "Dr. Barbara Sturm Face Cream Rich",
+          "link": "https://en.drsturm.com/face-cream-rich/",
+          "description": "<p>Smooth a small amount over the face and neck. Glycerin, urea, panthenol, shea butter, and emollient oils make this the dry-skin anchor; use less through areas that are breaking out.</p><p>If it feels too rich beneath sunscreen, reserve it for night and let the hydrating serum plus SPF carry the morning.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Colorescience Total Eye 3-in-1 Renewal Therapy SPF 35",
+          "link": "https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35",
+          "description": "<p>Tap an even layer around the lower and upper eye contour before face SPF. This luxury mineral SPF 35 eye treatment adds hydration and color correction, and its tint comes in multiple shades rather than a single peach tone.</p><p>If you prefer untinted eye protection—or your obstetric clinician gives different instructions—bring the approved untinted mineral face SPF carefully around the orbital bone and add sunglasses.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted Mineral SPF",
+          "product": "ISDIN Eryfotona Ageless SPF 50",
+          "link": "https://www.isdin.com/us/p/ageless-17-fl-oz/4272",
+          "description": "<p>Shake well and apply two finger-lengths to the face and neck 15 minutes before exposure, then reapply at least every two hours outdoors. This is a 100% mineral, zinc-oxide SPF with a versatile tint; the iron oxides make it the stronger pick for melasma than an otherwise comparable untinted sunscreen.</p><p>If you dislike tint, choose the all-mineral <a href=\"https://www.isdin.com/us/c/brands/eryfotona\" target=\"_blank\">ISDIN Eryfotona Actinica SPF 50+</a>. The untinted finish gives up the tint's extra visible-light help, so a brimmed hat matters even more.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Cleanse",
+          "product": "Dr. Barbara Sturm Cleanser",
+          "link": "https://en.drsturm.com/cleanser/",
+          "description": "<p>Massage over damp skin and rinse thoroughly. If you wore makeup or reapplied water-resistant sunscreen several times, cleanse twice with the same product or use a plain, fragrance-free first cleanser.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Prescription Azelaic Acid",
+          "product": "Azelaic Acid 15% Gel",
+          "link": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=azelaic%20acid%2015%25%20gel",
+          "description": "<p>Ask your obstetric clinician or dermatologist whether prescription azelaic acid 15% is appropriate, then use it exactly as prescribed. This higher-strength option is the focused treatment for pregnancy breakouts, redness, and uneven pigment; the luxury here is a clinician-guided plan, not a more ornate bottle.</p><p>It can sting or dry the skin at first. Do not combine it with improvised peels or extra acne treatments, and contact your prescriber if irritation does not settle.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Soothing Eye Cream",
+          "product": "Dr. Barbara Sturm Eye Cream",
+          "link": "https://www.drsturm.com/eye-cream/",
+          "description": "<p>Pat a rice-grain amount around each eye before face cream. The fragrance-free formula uses purslane, panthenol, glycerin, macadamia oil, and other emollients for hydration and the look of puffiness rather than retinoids or exfoliating acids.</p><p>The brand identifies its Molecular Cosmetics collection as suitable during pregnancy, but your obstetric clinician's guidance still wins when individual sensitivities or restrictions apply.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Moisturizer",
+          "product": "Dr. Barbara Sturm Face Cream Rich",
+          "link": "https://en.drsturm.com/face-cream-rich/",
+          "description": "<p>Finish with a comfortable layer to offset dryness from treatment. If azelaic acid is irritating, apply this first as a buffer or take a recovery night with moisturizer only.</p><p>Pregnancy-safe is not the same as personally irritation-proof. New or changing pigment, severe acne, eczema, or persistent burning deserves a clinician rather than a more complicated routine.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 11.5
+  },
+  {
+    "routine_name": "Korean Skincare Routine for Your 20s",
+    "id": 45,
+    "time": 4.7,
+    "point_title": "Korean Skincare Routine for Your 20s",
+    "point_description": "A light, acne-conscious K-beauty routine with panthenol, soothing gel-cream hydration, hydrocolloid patches, and the Korean-market sunscreen worth seeking out.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Foam Cleanse",
+          "product": "ETUDE SoonJung pH 6.5 Whip Cleanser",
+          "link": "https://www.ulta.com/p/soonjung-ph-65-whip-cleanser-pimprod2049665",
+          "description": "<p>Use one or two pumps over damp skin and rinse with lukewarm water. The ready-made foam is quick, low-friction, and mild enough for a routine that is more interested in keeping the barrier calm than producing a squeaky-clean feeling.</p><p>This is readily available from Ulta in the U.S.; European shoppers can use the <a href=\"https://www.amazon.de/s?k=ETUDE+SoonJung+pH+6.5+Whip+Cleanser\" target=\"_blank\">same Korean formula through established EU importers</a>. If your skin wakes up dry, skip cleanser and rinse.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Oil-Balancing Serum",
+          "product": "numbuzin No.1 Pantothenic B5 Active Soothing Serum",
+          "link": "https://us.numbuzin.com/products/no-1-pantothenic-b5-active-soothing-serum",
+          "description": "<p>Apply two or three drops before moisturizer. Panthenol, niacinamide, zinc PCA, and several humectants make this a useful bridge between oily breakouts and dehydration—the combination that makes people over-cleanse and then wonder why everything feels worse.</p><p>It is sold directly in the U.S. and through <a href=\"https://global.oliveyoung.com/display/page/brand-page?brandNo=B00423\" target=\"_blank\">Olive Young Global</a> for many European destinations. The long botanical formula includes alpha-arbutin, licorice, and willow bark, so patch test and avoid it during pregnancy.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Soothing Gel-Cream",
+          "product": "Dr.G R.E.D Blemish Clear Soothing Cream",
+          "link": "https://dr-g.com/collections/sensitive-calming/products/dr-g-red-blemish-clear-soothing-cream",
+          "description": "<p>Smooth on a thin layer, using a little more where skin feels tight. This fragrance-free gel-cream uses glycerin, panthenol, beta-glucan, centella components, and niacinamide to calm visible redness without sitting like a heavy occlusive over acne-prone skin.</p><p>The global page links authorized U.S. purchasing; in Korea, look for the Olive Young <a href=\"https://global.oliveyoung.com/display/search?query=Dr.G%20Red%20Blemish%20Clear%20Soothing%20Cream\" target=\"_blank\">special sets or 1+1 packs</a>. The Korean product is not inherently better here—the set price and larger promotional bundles are the trip advantage.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before the Korean face sunscreen. Korea excels at elegant face SPF, but dedicated eye creams with their own tested SPF remain rare, so this mineral U.S. formula fills a real category gap.</p><p>It has a light peach tint. European shoppers who want an untinted option can choose <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>; neither is a special Seoul purchase.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Korean SPF",
+          "product": "Beauty of Joseon Relief Sun Aqua-Fresh: Rice + B5 SPF 50+ PA++++",
+          "link": "https://beautyofjoseon.com/products/relief-sun-aqua-fresh",
+          "description": "<p>Apply generously as the last morning step and reapply when outdoors. This is the lighter Relief Sun: rice seed water and panthenol give it a hydrating, non-greasy finish that suits oily or combination skin particularly well.</p><p>U.S. shoppers who want an officially domestic formula can choose <a href=\"https://beautyofjoseon.com/products/daily-relief-sunscreen\" target=\"_blank\">Beauty of Joseon Daily Relief Sunscreen SPF 40</a>. In the EU, the <a href=\"https://fr.beautyofjoseon.com/products/relief-sun-aqua-fresh\" target=\"_blank\">SPF 50+ Korean-style formula is sold through the brand's European site</a>. On a Korea trip, I would pick up the <a href=\"https://global.oliveyoung.com/product/detail?prdtNo=GA240825222\" target=\"_blank\">Aqua-Fresh SPF 50+ PA++++ Olive Young version or multipack</a>: its newer filter system, higher labeled protection, and weightless texture make it the superior buy versus the separate U.S. SPF 40 formula.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Optional Cleansing Oil",
+          "product": "Haruharu Wonder Black Rice Moisture Cleansing Oil Unscented",
+          "link": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-cleansing-oil",
+          "description": "<p>Massage one or two pumps over dry skin only when you have makeup or stubborn sunscreen to remove, add water until the oil turns milky, and rinse. The short, fragrance-free oil blend earns its place by doing a job—not because every Korean routine is legally required to double cleanse.</p><p>The same formula is available from the <a href=\"https://haruharuusa.com/products/black-rice-cleansing-oil\" target=\"_blank\">U.S. store</a> and Korean-beauty retailers serving Europe. Skip this step on bare-face days or if oil cleansing consistently triggers closed comedones.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Gentle Foam Cleanse",
+          "product": "ETUDE SoonJung pH 6.5 Whip Cleanser",
+          "link": "https://www.ulta.com/p/soonjung-ph-65-whip-cleanser-pimprod2049665",
+          "description": "<p>Follow the oil with one pump over damp skin, or use this as the only cleanse when you did not need the oil. Rinse thoroughly without cleansing brushes or hot water.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Oil-Balancing Serum",
+          "product": "numbuzin No.1 Pantothenic B5 Active Soothing Serum",
+          "link": "https://us.numbuzin.com/products/no-1-pantothenic-b5-active-soothing-serum",
+          "description": "<p>Repeat the serum once daily if evening is the easier time to stay consistent. There is no need to use it morning and night from day one; start once a day and let your skin vote.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Snail Peptide Eye Cream",
+          "product": "COSRX Advanced Snail Peptide Eye Cream",
+          "link": "https://www.cosrx.com/products/advanced-snail-peptide-eye-cream",
+          "description": "<p>Tap a rice-grain amount around each eye before moisturizer. The light Korean eye cream pairs snail secretion filtrate, niacinamide, and peptides for hydration, brightness, and the look of early fine lines without putting a retinoid into the 20s routine.</p><p>It is easy to buy through COSRX in the U.S. and established EU K-beauty retailers. Korea is mainly the place for lower prices and sets; the standard formula is the same.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Soothing Gel-Cream",
+          "product": "Dr.G R.E.D Blemish Clear Soothing Cream",
+          "link": "https://dr-g.com/collections/sensitive-calming/products/dr-g-red-blemish-clear-soothing-cream",
+          "description": "<p>Finish with a comfortable layer. If your cheeks are dry but your T-zone is oily, use a full layer on the cheeks and only what you need through the center of the face.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Pimple Patch",
+          "product": "COSRX Acne Pimple Master Patch",
+          "link": "https://www.ulta.com/p/acne-pimple-master-patch-original-care-xlsImpprod16661021",
+          "description": "<p>Place a patch on completely clean, dry skin before serum and cream, choosing one slightly larger than the blemish. The plain hydrocolloid absorbs fluid and keeps fingers away; it is best for a surfaced pimple, not a deep cyst.</p><p>The classic version is easy to find in the U.S. and EU. Korea is where to buy the <a href=\"https://global.oliveyoung.com/display/search?query=COSRX%20Acne%20Pimple%20Master%20Patch\" target=\"_blank\">larger multipacks</a>, but the actual patch is not a special superior formula.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 5.9
+  },
+  {
+    "routine_name": "Korean Skincare Routine for Your 30s–40s",
+    "id": 46,
+    "time": 5.3,
+    "point_title": "Korean Skincare Routine for Your 30s–40s",
+    "point_description": "A brightening and early-correction K-beauty routine with rice hydration, ceramide barrier support, gentle retinal, and the Korean Round Lab sunscreen formula.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin",
+      "sensitive"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Creamy Cleanse",
+          "product": "ROUND LAB 1025 Dokdo Cleanser",
+          "link": "https://roundlab.com/products/1025-dokdo-cleanser",
+          "description": "<p>Use a small amount over damp skin and rinse. The mildly acidic creamy foam removes overnight oil without creating the tight finish that makes retinal harder to tolerate later.</p><p>It is sold through Round Lab's U.S. shop and established EU K-beauty retailers. Unlike sunscreen, this cleanser does not need a special Korean-market hunt; buy the authentic version wherever the price and shipping make sense.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Milky Rice Toner",
+          "product": "I'm From Rice Toner",
+          "link": "https://www.ulta.com/p/rice-toner-pimprod2051769",
+          "description": "<p>Shake the two-layer bottle and press a thin layer over clean skin. This is the distinctly K-beauty hydration step: rice extract, emollients, and niacinamide soften the look of dehydration and create a comfortable base for treatment.</p><p>It is available through Ulta in the U.S. and <a href=\"https://www.iherb.com/pr/i-m-from-rice-toner-5-07-fl-oz-150-ml/90196\" target=\"_blank\">iHerb in many U.S. and European markets</a>. Do not keep layering it until your face is sticky just because seven-skin videos exist.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Brightening Serum",
+          "product": "numbuzin No.5+ Glutathione Vitamin Concentrated Serum",
+          "link": "https://www.ulta.com/p/no5-glutathione-vitamin-concentrated-serum-pimprod2058778",
+          "description": "<p>Apply a thin layer before moisturizer. Niacinamide, tranexamic acid, vitamin C derivatives, alpha-arbutin, and glutathione make this the concentrated pigment and post-blemish step; sunscreen still does the prevention work.</p><p>Start every other morning if you are sensitive. It is now easy to buy through Ulta in the U.S. and <a href=\"https://global.oliveyoung.com/display/page/brand-page?brandNo=B00423\" target=\"_blank\">Olive Young Global for Europe</a>, so Korea mainly offers better-value double sets rather than a better formula.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Ceramide Cream",
+          "product": "AESTURA ATOBARRIER365 Cream",
+          "link": "https://www.sephora.com/product/atobarrier365-cream-moisturizer-with-ceramides-niacinamide-for-skin-moisture-barrier-repair-P511142",
+          "description": "<p>Apply a small amount, concentrating it on drier areas. The cream's ceramide, cholesterol, fatty-acid, squalane, and humectant mix is here to make the brightening serum and retinal routine sustainable.</p><p>U.S. shoppers can buy it from Sephora; European shoppers can use <a href=\"https://global.oliveyoung.com/display/search?query=AESTURA%20ATOBARRIER365%20Cream\" target=\"_blank\">Olive Young Global</a>. In Korea, the 80 mL cream is often sold in limited bundles or with minis—worth picking up for value, but not because the standard cream is magically stronger.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the eye contour before Round Lab sunscreen. This dedicated mineral SPF 40 eye cream is a U.S. add-on rather than a Korean-market upgrade; Korean face sunscreens are excellent, but the labeled eye-SPF category is still sparse.</p><p>The product has a light peach tint. For an untinted European option, use <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Korean SPF",
+          "product": "ROUND LAB Birch Juice Moisturizing Sunscreen SPF 50+ PA++++",
+          "link": "https://global.oliveyoung.com/display/search?query=ROUND%20LAB%20Birch%20Juice%20Moisturizing%20Sunscreen",
+          "description": "<p>Apply generously as the final morning step. The Korean-market formula uses a modern multi-filter system and wears like a hydrating lotion, making it particularly good for normal, dry, or combination skin.</p><p>In the U.S., the official domestic option is the separately formulated <a href=\"https://roundlab.com/products/birch-moisturizing-uv-sunscreen\" target=\"_blank\">Birch Moisturizing UVLock SPF 45+ Broad Spectrum</a>. European shoppers can usually purchase the SPF 50+ PA++++ version through Korean importers. This is a genuine Korea-trip upgrade: seek the tube labeled SPF 50+ PA++++ at Olive Young, because its newer filters, lighter finish, and lower Korean price are preferable to the U.S.-specific UVLock formula. Do not buy from an unverified marketplace seller; the similar packaging makes counterfeits and version confusion too easy.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Optional Cleansing Oil",
+          "product": "ROUND LAB 1025 Dokdo Cleansing Oil",
+          "link": "https://www.amazon.com/s?k=ROUND+LAB+1025+Dokdo+Cleansing+Oil&tag=theskinrout07-20",
+          "description": "<p>Massage over dry skin to dissolve makeup and water-resistant sunscreen, emulsify with water, and rinse. Use it only when there is something substantial to remove.</p><p>Buy through Round Lab's official Amazon storefront or an established K-beauty retailer in Europe. Korea often has cleanser-and-toner sets, but the formula itself is not a reason to carry a heavy oil bottle home.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Double Cleanse",
+          "product": "ROUND LAB 1025 Dokdo Cleanser",
+          "link": "https://roundlab.com/products/1025-dokdo-cleanser",
+          "description": "<p>Follow with a small amount over damp skin, or use it alone when the oil was unnecessary. A calm cleanse is part of the anti-aging routine because irritation is not rejuvenation.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Milky Rice Toner",
+          "product": "I'm From Rice Toner",
+          "link": "https://www.ulta.com/p/rice-toner-pimprod2051769",
+          "description": "<p>Press on one light layer for hydration. On retinal nights, let it absorb fully before the treatment; if even a hydrating toner makes you sting, skip it and keep the routine shorter.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Gentle Face Retinal",
+          "product": "K-SECRET Seoul 1988 Serum: Retinal Liposome 2% + Black Ginseng",
+          "link": "https://us.oliveyoung.com/products/UA71652000",
+          "description": "<p>Start with a pea-size amount for the face one or two nights a week, keeping it away from the immediate eye area, lip edges, and nose creases. This is a dedicated face serum for early lines, uneven texture, and loss of elasticity. The 2% on the label refers to the encapsulated retinal-liposome complex—not 2% pure retinal—so do not read it as a prescription-strength percentage.</p><p>U.S. shoppers can buy it through Olive Young US, while European shoppers can use the authorized retailer <a href=\"https://eu.lewkin.com/pl-eu/collections/ksecret/products/seoul-1988-retinal-liposome-2-black-ginseng-serum-30ml\" target=\"_blank\">LEWKIN Europe</a>. The Korean formula is the same, so an Olive Young Seoul pickup is mainly worthwhile for local pricing or sets rather than extra strength. Do not layer it with exfoliating acids on the same night, and avoid retinoids during pregnancy.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinal Eye Cream",
+          "product": "Beauty of Joseon Revive Eye Serum: Ginseng + Retinal",
+          "link": "https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal",
+          "description": "<p>On nights when you are not using the K-SECRET face retinal, tap a rice-grain amount around both eye contours, keeping it out of the eyes and away from the lash line. Here the product is used for its intended eye-area job: ginseng hydration plus gentle retinal for the look of crow's-feet and crepiness.</p><p>Start once or twice weekly and do not stack both retinal products until you know the eye area tolerates its own schedule. The same formula is sold in the U.S. and Europe; Korea is worthwhile for lower-priced two-packs, not extra strength.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ceramide Cream",
+          "product": "AESTURA ATOBARRIER365 Cream",
+          "link": "https://www.sephora.com/product/atobarrier365-cream-moisturizer-with-ceramides-niacinamide-for-skin-moisture-barrier-repair-P511142",
+          "description": "<p>Finish with a comfortable layer, or apply it before and after retinal if you need a moisturizer sandwich. On recovery nights, toner and cream are enough; K-beauty layering works best when it stays responsive rather than ceremonial.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 6.8
+  },
+  {
+    "routine_name": "Korean Skincare Routine for Your 50s+",
+    "id": 47,
+    "time": 5.9,
+    "point_title": "Korean Skincare Routine for Your 50s+",
+    "point_description": "A luxurious mature-skin ritual built around Sulwhasoo ginseng, layered lipid-rich hydration, a carefully introduced Korean retinol, and high-protection Korean SPF.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin",
+      "sensitive"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Ginseng Cream Cleanse",
+          "product": "Sulwhasoo Concentrated Ginseng Rejuvenating Cleansing Foam",
+          "link": "https://us.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cleansing-foam",
+          "description": "<p>Work a very small amount into a creamy lather, massage over damp skin, and rinse. The point of the splurge is a softer cleansing experience for dry mature skin, not permission to wash twice as long.</p><p>Sulwhasoo sells this directly in the U.S. and through its international network in Europe. In the morning, water alone is still a perfectly good option when skin feels dry.</p>"
+        },
+        {
+          "time": "am",
+          "title": "First-Step Serum",
+          "product": "Sulwhasoo First Care Activating Serum VI",
+          "link": "https://us.sulwhasoo.com/collections/korean-skincare/products/first-care-activating-serum",
+          "description": "<p>Press two or three pumps over clean skin before the other serum. This is a Korean-style first serum rather than the final treatment: it adds hydration and slip and makes the richer layers feel more polished.</p><p>The U.S. and international versions are readily available. Korea's main advantage is access to generous gift-with-purchase sets and limited packaging; test the fragrant herbal formula before buying the suitcase-sized commitment.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Ginseng Berry Firming Serum",
+          "product": "Sulwhasoo The Ultimate S Serum",
+          "link": "https://us.sulwhasoo.com/products/the-ultimate-s-serum",
+          "description": "<p>Apply one pump after First Care. The ginseng-berry formula supplies a retinol-free firming and hydration step, so the routine can reserve retinol for the clearly scheduled IOPE treatment at night; it is still a luxury cosmetic, not a substitute for sunscreen or a prescription.</p><p>Buy it in the U.S. or Europe when there is a reliable brand promotion. Seoul department stores are better for trying textures and collecting samples, but the standard global formula does not become more effective at passport control.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Rich Ginseng Cream",
+          "product": "Sulwhasoo Concentrated Ginseng Rejuvenating Cream",
+          "link": "https://us.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cream",
+          "description": "<p>Warm a pea-size amount between fingertips and press it over the face and neck. The rich emollient texture is the 50s+ choice for lipid loss, tightness, and fine lines made more visible by dehydration.</p><p>Choose the classic or rich texture according to your skin, not your age alone. Combination skin may use it only at night and let sunscreen handle daytime moisture.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Colorescience Total Eye 3-in-1 Renewal Therapy SPF 35",
+          "link": "https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35",
+          "description": "<p>Apply around the eye contour before HERA sunscreen. This all-mineral luxury eye SPF adds hydration and color correction for darkness, but its tint has to match your skin rather than merely looking elegant on the shelf.</p><p>For an untinted European option, use <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>. Korea does not currently offer a clearly superior dedicated eye-SPF formula, so this is not a suitcase priority.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Korean SPF",
+          "product": "HERA UV Protector Multi-Defense Fresh SPF 50+ PA++++",
+          "link": "https://www.hera.com/kr/ko/products/uv-protector-multi-defense-fresh.html",
+          "description": "<p>Apply generously as the final morning step, including ears and neck. The Korean-market Fresh formula uses a modern multi-filter system in a thin, hydrating finish and is a more realistic partner for several rich skincare layers than a heavy sunscreen cream.</p><p>For a straightforward U.S. option, use <a href=\"https://us.sulwhasoo.com/collections/uv\" target=\"_blank\">Sulwhasoo's U.S. UV collection</a>; European shoppers can find the <a href=\"https://int.hera.com/products/uv-protector-multi-defense-fresh\" target=\"_blank\">international HERA SPF 50+ PA++++ formula</a> through authorized regional sellers. The Seoul pickup is worthwhile because the current Korean Fresh formula pairs high PA++++ protection and newer filters with an especially light base. It is fragranced, so very reactive skin should test before committing.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Optional Cleansing Oil",
+          "product": "Sulwhasoo Gentle Cleansing Oil",
+          "link": "https://us.sulwhasoo.com/products/gentle-cleansing-oil",
+          "description": "<p>Massage over dry skin when makeup or water-resistant SPF needs dissolving, emulsify thoroughly, and rinse. Skip it when one gentle cleanse removes everything; ritual is lovely, residue is not.</p><p>The same core product is sold in the U.S. and internationally. Korea's gift sets can make it a better-value purchase, but this is not a market-specific formula upgrade.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ginseng Cream Cleanse",
+          "product": "Sulwhasoo Concentrated Ginseng Rejuvenating Cleansing Foam",
+          "link": "https://us.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cleansing-foam",
+          "description": "<p>Follow with a small amount over damp skin and rinse, or use it alone if the oil was unnecessary. If two cleanses leave the face tight, that is useful feedback, not evidence that you need a third hydrating toner.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "First-Step Serum",
+          "product": "Sulwhasoo First Care Activating Serum VI",
+          "link": "https://us.sulwhasoo.com/collections/korean-skincare/products/first-care-activating-serum",
+          "description": "<p>Press on a light layer after cleansing. On retinol nights, keep this thin and let it absorb before treatment; skip it if fragrance becomes irritating.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Korea-Only Retinol Option",
+          "product": "IOPE Retinol Expert 0.1% Wrinkle Corrector",
+          "link": "https://www.iope.com/product/%EB%A0%88%ED%8B%B0%EB%86%80-%EC%97%91%EC%8A%A4%ED%8D%BC%ED%8A%B8-01-%EB%A7%81%ED%81%B4-%EC%BD%94%EB%A0%89%ED%84%B0/23/",
+          "description": "<p>Experienced retinoid users can start with a rice-grain amount for targeted areas one night a week, increasing very slowly. This 0.1% pure-retinol treatment is a genuine Korean-market find from a brand with a long retinol history; it is much more focused than the decorative anti-aging extras in the routine.</p><p>For easier U.S. or EU purchasing, use the gentler <a href=\"https://www.cosrx.com/products/the-retinol-0-1-cream\" target=\"_blank\">COSRX The Retinol 0.1 Cream</a> from an authorized regional retailer. Do not combine retinol with exfoliating acids on the same night, and avoid retinoids during pregnancy. More mature skin is not automatically more tolerant, so let comfort—not impatience—set the schedule.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ginseng Berry Firming Serum",
+          "product": "Sulwhasoo The Ultimate S Serum",
+          "link": "https://us.sulwhasoo.com/products/the-ultimate-s-serum",
+          "description": "<p>Press on one pump before cream. This serum does not add another retinoid, but keep the first IOPE nights simple anyway so any irritation has an obvious source; there is no need to debut the entire routine on Monday.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Ginseng Cream",
+          "product": "Sulwhasoo Concentrated Ginseng Rejuvenating Cream",
+          "link": "https://us.sulwhasoo.com/products/concentrated-ginseng-rejuvenating-cream",
+          "description": "<p>Finish with a comfortable layer, using it before and after retinol if you need a moisturizer sandwich. On recovery nights, cleanser and cream are completely sufficient.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Green Tea Eye Cream",
+          "product": "AP Beauty Time Response Eye Reserve Cream",
+          "link": "https://us.amorepacific.com/products/time-response-eye-reserve-cream",
+          "description": "<p>Tap a rice-grain amount around the orbital bone when the eye area feels dry. This retinol-free green-tea, shea-butter, niacinamide, and caffeine formula is a comfort and temporary smoothing step, not a requirement for everyone over 50; the face cream can go around the eyes if it does not sting.</p><p>It is sold directly in the U.S., while European availability varies. Department-store counters in Seoul are useful for sampling the fragranced texture and comparing local sets before making such an expensive optional purchase.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 11.4
+  },
+  {
+    "routine_name": "Sabrina Carpenter's Routine",
+    "id": 48,
+    "time": 5.7,
+    "cost": 9.4,
+    "point_title": "Sabrina Carpenter's Routine",
+    "point_description": "A Renée Rouleau-led acne-and-glow routine with deep cleansing, elderberry toner, vitamin C, daily SPF, occasional peel/mask treatments, cold depuffing, microcurrent, and luxury night cream.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sabrina%20Carpenter%20-%20O2%20Arena%202025%20-%20102%20%28portrait%29.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "sensitive",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Bustle 2024",
+        "site": "Bustle",
+        "link": "https://www.bustle.com/beauty/sabrina-carpenter-skin-care-routine",
+        "favicon": "https://www.bustle.com/favicon.ico",
+        "date": "October 22, 2024",
+        "headline": "Sabrina Carpenter's Facialist Just Revealed Her Skin Care Routine",
+        "image": "https://imgix.bustle.com/uploads/image/2024/10/21/5da46ed5/356736255_18385002490009287_2983071944184685241_n.jpg?w=1200&h=630&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.5228&fp-y=0.3376",
+        "summary": "Renée Rouleau details Carpenter's current maintenance routine for cleansing, hydrating, exfoliating, and protecting acne-prone skin."
+      },
+      {
+        "label": "NewBeauty 2024",
+        "site": "NewBeauty",
+        "link": "https://www.newbeauty.com/view/sabrina-carpenter-facial-routine",
+        "favicon": "https://www.newbeauty.com/favicon.ico",
+        "date": "November 26, 2024",
+        "headline": "Sabrina Carpenter's Facialist Breaks Down Her Go-To Skin-Care Treatments",
+        "image": "https://cdn.sanity.io/images/0vv8moc6/newbeauty/3989fe4f57a6b60e49608e29f07aab293a9c8759-1024x614.jpg?w=800&auto=format&q=70",
+        "summary": "Rouleau shares facial-room staples for Carpenter, including Triple Berry Smoothing Peel, Rapid Response Detox Masque, TheraFace Depuffing Wand, and NuFACE."
+      },
+      {
+        "label": "Glamour 2022",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/sabrina-carpenter-skin-care-routine",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "date": "October 5, 2022",
+        "headline": "Sabrina Carpenter Drops Her Skin Care Routine",
+        "image": "https://media.glamour.com/photos/633b5746584ad9bf0dd74e02/16:9/w_1280,c_limit/278912009_515953116827707_5185185746624849249_n.jpg",
+        "summary": "Carpenter personally names her Rouleau AHA/BHA cleanser and toner, 111Skin vitamin C, Supergoop Glowscreen, La Mer moisturizer, lip balms, and KORA gua sha."
+      },
+      {
+        "label": "Vogue 2020",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/sabrina-carpenter-beauty-secrets",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "August 5, 2020",
+        "headline": "Sabrina Carpenter on DIY Facials, Soap Brows, and Perfectly Precise Eyeliner",
+        "image": "https://assets.vogue.com/photos/5f2ab5b5a9fd0ea6a00d2a61/16:9/w_1280,c_limit/vogue_sabrina-carpenter-bs.jpg",
+        "summary": "Her Beauty Secrets routine includes an ice facial, Dr. Jart+ sheet mask, Rouleau cleanser, toner, vitamin C, SPF, eye balm, lip balm, rosewater, and rose quartz sculptor."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Morning Cleanse",
+          "product": "Renée Rouleau Rapid Response Detox Cleanser",
+          "link": "https://www.reneerouleau.com/products/rapid-response-detox-cleanser",
+          "description": "<p>Use as the morning cleanse when breakouts are trying to join the tour. Bustle says Carpenter uses Rapid Response Detox Cleanser in the morning to help combat acne during a busy season.</p><p>Her older steady cleanser is <a href=\"https://www.reneerouleau.com/products/aha-bha-blemish-control-cleanser\" target=\"_blank\">Renée Rouleau AHA/BHA Blemish Control Cleanser</a>, which she told Glamour had been consistent in her routine since working with Rouleau.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tone",
+          "product": "Renée Rouleau Elderberry Soothing Toner",
+          "link": "https://www.reneerouleau.com/products/elderberry-soothing-toner",
+          "description": "<p>Sweep or press on after cleansing. Bustle says this is one of Sabrina's essential quick-hydration steps, and Glamour has her personally naming it as a Rouleau product that works for her skin.</p><p>Think of it as the calm-down layer between acne-focused cleansing and treatment.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C",
+          "product": "Renée Rouleau Vitamin C&E Treatment",
+          "link": "https://www.reneerouleau.com/products/vitamin-c-e-treatment",
+          "description": "<p>Apply after toner in the daytime. Bustle says Carpenter reaches for Rouleau's Vitamin C&E Treatment during the day.</p><p>In her 2022 Glamour routine, she was using <a href=\"https://www.111skin.com/products/vitamin-c-brightening-booster\" target=\"_blank\">111Skin Vitamin C Brightening Booster</a>; the Rouleau serum gets the display spot because it is the newer facialist-reported routine.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF",
+          "product": "Renée Rouleau Weightless Protection SPF 30",
+          "link": "https://www.reneerouleau.com/products/weightless-protection-spf-30",
+          "description": "<p>Apply generously as the last skin-care step. Bustle says Sabrina has used Rouleau's Weightless Protection SPF 30 since she was 15, and Rouleau calls it breakout-friendly.</p><p>Glamour previously had her using <a href=\"https://www.sephora.com/product/supergoop-glowscreen-sunscreen-spf-40-P456218\" target=\"_blank\">Supergoop Glowscreen SPF 40</a> because it gives a little color under makeup.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Balm",
+          "product": "Aquaphor Lip Repair Ointment",
+          "link": "https://www.amazon.com/s?k=Aquaphor+Lip+Repair+Ointment&tag=theskinrout07-20",
+          "description": "<p>Keep it around for daytime dryness. In Glamour, Sabrina says classic Aquaphor is sitting next to her at all times because it is moisturizing, not sticky, and basically perfect.</p><p>She also named <a href=\"https://www.glossier.com/products/balm-dotcom\" target=\"_blank\">Glossier Balm Dotcom</a> as the other lip balm she loves.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Deep Cleanse",
+          "product": "Renée Rouleau AHA/BHA Blemish Control Cleanser",
+          "link": "https://www.reneerouleau.com/products/aha-bha-blemish-control-cleanser",
+          "description": "<p>Use after a long performance, glam day, or photo shoot. Bustle says Sabrina loves this cleanser to deep clean and unclog pores after heavy work days, and Glamour quotes her saying it is exfoliating without feeling too harsh.</p><p>Keep this as the more active cleanse rather than automatically using it every time skin feels calm.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Tone",
+          "product": "Renée Rouleau Elderberry Soothing Toner",
+          "link": "https://www.reneerouleau.com/products/elderberry-soothing-toner",
+          "description": "<p>Repeat after cleansing to bring back hydration. Bustle names it as the quick-hydration step after cleansing, and it pairs well with a routine that has exfoliating/acne-care moments elsewhere.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Occasional Peel",
+          "product": "Renée Rouleau Triple Berry Smoothing Peel",
+          "link": "https://www.reneerouleau.com/products/triple-berry-smoothing-peel",
+          "description": "<p>Use occasionally when skin needs a quick glow, not as a nightly tax. Bustle says the peel helps Sabrina get what she calls a brilliant glow, and NewBeauty says Rouleau loves it for exfoliation in Carpenter's facial routine.</p><p>Skip this on irritated nights or when skin has already had a lot of exfoliating cleanser, glam removal, or tools.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Detox Mask",
+          "product": "Renée Rouleau Rapid Response Detox Masque",
+          "link": "https://www.reneerouleau.com/products/rapid-response-detox-masque",
+          "description": "<p>Use as the breakout-control mask when pores feel congested. Bustle says this became Sabrina's go-to treatment to unclog pores and keep breakouts at bay.</p><p>NewBeauty says Rouleau also uses it as glide with the <a href=\"https://www.sephora.com/product/therabody-theraface-depuffing-wand-for-under-eye-bags-dark-circles-P513064\" target=\"_blank\">TheraFace Depuffing Wand</a> on the cold setting.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Microcurrent",
+          "product": "NuFACE Trinity+ Starter Kit",
+          "link": "https://www.dermstore.com/p/nuface-trinity-facial-toning-device-white/11287713/",
+          "description": "<p>Use with conductive gel when it is a tool night. NewBeauty says Rouleau uses NuFACE to lift and sculpt Sabrina's cheekbones.</p><p>This is a treatment-room/tool step, not something the routine needs every night to count.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturize",
+          "product": "La Mer The Moisturizing Cream",
+          "link": "https://www.sephora.com/product/creme-de-la-mer-moisturizing-cream-P416341",
+          "description": "<p>Finish with the luxury night cream step. Glamour says Sabrina uses La Mer moisturizer at night and realized she loved it even though it is a splurge, which is exactly the kind of unfortunate discovery a person makes once and remembers forever.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rose Quartz Massage",
+          "product": "KORA Organics Rose Quartz Heart Facial Sculptor",
+          "link": "https://www.sephora.com/product/rose-quartz-heart-facial-sculptor-P442522",
+          "description": "<p>Use over moisturizer when the routine has enough slip. Glamour says Sabrina uses this rose quartz crystal on her face and likes that the shape is user-friendly.</p><p>Vogue also had her using the same KORA rose quartz facial sculptor in her Beauty Secrets routine.</p>"
         }
       ]
     },

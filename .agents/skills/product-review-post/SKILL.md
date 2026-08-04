@@ -70,7 +70,7 @@ Create a watercolor-and-ink product cover for every review unless the user expli
 - Add the finished Markdown file to `src/content/reviews/<descriptive-product-slug>.md`.
 - Always set `draft: true`. Do not publish, deploy, commit, or change it to `false` without an explicit request.
 - Set `image` to the matching `/images/reviews/<filename>` public URL.
-- Do not infer pregnancy safety. Use an authoritative source or established project policy; when uncertain, set `pregnancy_safe: false` and disclose that conservative choice in the handoff.
+- Do not infer pregnancy safety. Use an authoritative source or established project policy. Treat `pregnancy_safe: true` as positively verified; when uncertain, set `pregnancy_safe: false` and describe it as unverified, never definitively unsafe, in the handoff.
 - Keep the title, featured-product name, body name, packaging language, and outbound product link consistent.
 - Add every specific product named in the post to `featured_products`, including the reviewed product and all alternatives. Do not add retailers, ingredients, product lines mentioned only as general context, or community/source links.
 

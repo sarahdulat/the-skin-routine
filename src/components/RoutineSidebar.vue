@@ -22,8 +22,8 @@
             <div class="source-popover" role="tooltip" :style="sourcePopoverStyle">
               <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
                 rel="noopener noreferrer">
-                <img v-if="source.image" class="source-image" :src="source.image"
-                  :alt="source.headline || source.label" />
+                <img v-if="sourceCardImage(source)" class="source-image" :src="sourceCardImage(source)"
+                  :alt="sourceCardImageAlt(source)" @error="markSourceImageFailed(sourceCardImage(source))" />
                 <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
                 <span class="source-card-content">
                   <span class="source-site">
@@ -94,6 +94,7 @@ type RoutineSource = {
 
 type RoutineWithSources = Routine & {
   sources?: RoutineSource[];
+  celebrity_face_image?: string;
 };
 
 const currentRoutine = computed(() => store.currentRoutine);
@@ -111,6 +112,7 @@ const additionalSourceCount = computed(() => Math.max(sources.value.length - 1, 
 const expandedSteps = ref(new Set<string>());
 const stepsScrollContainer = ref<HTMLElement | null>(null);
 const failedFavicons = ref(new Set<string>());
+const failedSourceImages = ref(new Set<string>());
 const isSourcePopoverOpen = ref(false);
 const sourceOverflow = ref<HTMLElement | null>(null);
 const sourcePopoverStyle = ref<Record<string, string>>({});
@@ -124,6 +126,28 @@ const shouldShowFavicon = (source: RoutineSource | null) => {
 
 const markFaviconFailed = (source: RoutineSource) => {
   failedFavicons.value = new Set([...failedFavicons.value, getFaviconKey(source)]);
+};
+
+const markSourceImageFailed = (imageUrl: string | undefined) => {
+  if (!imageUrl) return;
+  failedSourceImages.value = new Set([...failedSourceImages.value, imageUrl]);
+};
+
+const sourceCardImage = (source: RoutineSource): string | undefined => {
+  if (source.image && !failedSourceImages.value.has(source.image)) return source.image;
+
+  const celebrityImage = (currentRoutine.value as RoutineWithSources | null)?.celebrity_face_image;
+  if (celebrityImage && !failedSourceImages.value.has(celebrityImage)) return celebrityImage;
+
+  return undefined;
+};
+
+const sourceCardImageAlt = (source: RoutineSource) => {
+  if (source.image && !failedSourceImages.value.has(source.image)) {
+    return source.headline || source.label;
+  }
+
+  return `${currentRoutine.value?.routine_name || source.label} portrait`;
 };
 
 const sourceDisplayDate = (source: RoutineSource): string => {
