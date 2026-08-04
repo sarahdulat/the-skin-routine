@@ -5529,7 +5529,7 @@
   {
     "routine_name": "Pregnancy-Safe Mid-Tier Routine",
     "id": 43,
-    "time": 3.5,
+    "time": 4.1,
     "point_title": "Pregnancy-Safe Mid-Tier Routine",
     "point_description": "A polished, barrier-conscious routine pairing niacinamide and azelaic acid with a wearable mineral sunscreen for acne, dryness, redness, and melasma.",
     "pregnancy_safe": true,
@@ -5586,10 +5586,17 @@
       "pm": [
         {
           "time": "pm",
+          "title": "Micellar Makeup Removal",
+          "product": "Bioderma Sensibio H2O Micellar Water",
+          "link": "https://www.amazon.com/s?k=Bioderma+Sensibio+H2O+Micellar+Water&tag=theskinrout07-20",
+          "description": "<p>Saturate a soft cotton pad, hold it over eye makeup or stubborn sunscreen for a few seconds, then wipe gently without scrubbing. This unfragranced sensitive-skin classic removes makeup from the face and eyes while keeping the first cleanse light.</p><p>Use it only when you wore makeup, tinted mineral sunscreen, or several layers of SPF; it is not a mandatory nightly tax. Follow with the Gleanser so residue and loosened sunscreen are fully rinsed away.</p>"
+        },
+        {
+          "time": "pm",
           "title": "Hydrating Cleanse",
           "product": "Prequel Gleanser Non-Drying Glycerin Cleanser",
           "link": "https://prequelskin.com/products/gleanser-non-drying-glycerin-cleanser",
-          "description": "<p>Cleanse thoroughly but gently, then pat dry. Repeat only if makeup or water-resistant sunscreen remains; there is no automatic need for a two-product double cleanse.</p>"
+          "description": "<p>Massage a small amount over wet skin after micellar water, then rinse thoroughly and pat dry. On bare-skin nights, skip the micellar step and use this cleanser alone; a double cleanse is useful when there is something substantial to remove, not a nightly moral obligation.</p>"
         },
         {
           "time": "pm",
@@ -6197,5 +6204,294 @@
       ]
     },
     "draft": false
+  },
+  {
+    "routine_name": "Drugstore Acne-Prone Skin Routine",
+    "id": 49,
+    "time": 3.8,
+    "point_title": "Drugstore Acne-Prone Skin Routine",
+    "point_description": "An evidence-led drugstore routine that pairs a lower-strength benzoyl peroxide wash with adapalene, lightweight barrier care, daily SPF, and sensible spot patches.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Benzoyl Peroxide Cleanse",
+          "product": "PanOxyl Acne Creamy Wash 4% Benzoyl Peroxide",
+          "link": "https://www.amazon.com/s?k=PanOxyl+Acne+Creamy+Wash+4%25+Benzoyl+Peroxide&tag=theskinrout07-20",
+          "description": "<p>Massage over wet acne-prone skin for about 60 seconds, then rinse thoroughly. Start every other morning for the first two weeks; 4% benzoyl peroxide is plenty for a leave-on retinoid routine, and the goal is clearer skin rather than the driest face in America.</p><p>Benzoyl peroxide can bleach towels, pillowcases, and hairlines, so rinse well and use white linens. If you are mostly dealing with blackheads or the wash feels drying, use <a href=\"https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20\" target=\"_blank\">Vanicream Gentle Facial Cleanser</a> in the morning and let Differin do the heavy lifting at night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lightweight Moisturizer",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Apply one to two pumps while skin is slightly damp. Ceramides, squalane, glycerin, and hyaluronic acid keep the treatment plan tolerable without turning moisturizer into another acne active.</p><p>Use less through an oily T-zone and more over dry cheeks. Skipping moisturizer because you have acne usually buys irritation, not faster results.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Eye-Area SPF",
+          "product": "Cetaphil Sheer Mineral Sunscreen Stick SPF 50",
+          "link": "https://www.amazon.com/s?k=Cetaphil+Sheer+Mineral+Sunscreen+Stick+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Glide the stick onto a clean fingertip, then tap a generous, even layer around the orbital bone and upper eye contour. This fragrance-free drugstore mineral stick is specifically intended for fragile areas around the eyes.</p><p>It is eye-area sunscreen rather than a treatment cream; the CeraVe cream at night handles hydration. Keep it out of the eyes and off the lash line, and do not use less just to hide a possible mineral cast.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "Neutrogena Clear Face Break-Out Free Sunscreen SPF 50",
+          "link": "https://www.amazon.com/s?k=Neutrogena+Clear+Face+Break-Out+Free+Sunscreen+SPF+50&tag=theskinrout07-20",
+          "description": "<p>Apply generously to face, ears, and neck as the final morning step, then reapply when outdoors. Daily sunscreen matters even more when adapalene is in the routine, and it helps keep healing blemishes from leaving marks that hang around long after the pimple has moved out.</p><p>If this stings or you prefer mineral filters, try the untinted <a href=\"https://www.amazon.com/s?k=Vanicream+Facial+Moisturizer+Mineral+SPF+30&tag=theskinrout07-20\" target=\"_blank\">Vanicream Facial Moisturizer Mineral SPF 30</a>; expect more potential cast and do not compensate by underapplying.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Cleanse",
+          "product": "Vanicream Gentle Facial Cleanser",
+          "link": "https://www.amazon.com/s?k=Vanicream+Gentle+Facial+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Cleanse for about 30 to 60 seconds and rinse with lukewarm water. If water-resistant sunscreen or makeup remains, repeat gently rather than reaching for a scrub or a second acne cleanser.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Pimple Patch",
+          "product": "Hero Cosmetics Mighty Patch Original",
+          "link": "https://www.amazon.com/s?k=Hero+Cosmetics+Mighty+Patch+Original&tag=theskinrout07-20",
+          "description": "<p>Place a plain hydrocolloid patch on completely clean, dry skin before the rest of the routine, choosing one slightly larger than the blemish. It is best for a surfaced whitehead or a spot you keep touching; it will not flatten a deep cyst by force of personality.</p><p>Do not put adapalene or moisturizer under the patch. Route the remaining routine around it and remove after about six to eight hours.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Adapalene Treatment",
+          "product": "Differin Gel 0.1% Adapalene",
+          "link": "https://www.amazon.com/s?k=Differin+Gel+0.1%25+Adapalene&tag=theskinrout07-20",
+          "description": "<p>On completely dry skin, spread one pea-size amount over the whole acne-prone area rather than dotting it only on current pimples. Start two nights a week for two weeks, then every other night, and only work toward nightly use if skin stays comfortable.</p><p>Avoid eyelids, lips, and the corners of the nose. You can apply moisturizer first as a buffer, and you should not add another exfoliating acid while you are learning this product. Do not use adapalene during pregnancy or while trying to conceive.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Eye Cream",
+          "product": "CeraVe Eye Repair Cream",
+          "link": "https://amzn.to/4bSzDqu",
+          "description": "<p>Tap a rice-grain amount around each eye after the acne treatment, keeping Differin away from the eyelids. Ceramides and humectants make this the practical drugstore hydration step; it does not need to treat acne because acne medicine does not belong in the eye area.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturize",
+          "product": "Vanicream Daily Facial Moisturizer",
+          "link": "https://www.amazon.com/s?k=Vanicream+Daily+Facial+Moisturizer&tag=theskinrout07-20",
+          "description": "<p>Finish with a comfortable layer. If skin becomes persistently red, sore, or flaky, pause Differin and the benzoyl peroxide wash until the barrier feels normal, then restart more slowly.</p><p>Give a consistent routine about eight to twelve weeks. Painful nodules, scarring, or acne that is not improving deserves a dermatologist rather than a stronger online shopping cart.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 4.3
+  },
+  {
+    "routine_name": "Mid-Tier Acne-Prone Skin Routine",
+    "id": 50,
+    "time": 4.8,
+    "point_title": "Mid-Tier Acne-Prone Skin Routine",
+    "point_description": "A polished mid-tier routine that separates 2.5% benzoyl peroxide mornings from 2% salicylic-acid nights, with barrier-focused hydration and tier-matched eye care.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Paula's Choice CLEAR Pore Normalizing Cleanser",
+          "link": "https://www.paulaschoice.com/clear-pore-normalizing-cleanser/600-6002.html",
+          "description": "<p>Massage a small amount over damp skin for 30 to 60 seconds, then rinse. This is the supporting cleanser, not the main treatment, which leaves the routine room for effective actives without making cleansing feel punitive.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Benzoyl Peroxide Treatment",
+          "product": "Paula's Choice CLEAR Regular Strength Daily Skin Clearing Treatment 2.5% Benzoyl Peroxide",
+          "link": "https://www.paulaschoice.com/clear-regular-strength-daily-skin-clearing-treatment-with-2.5pct-benzoyl-peroxide/610.html",
+          "description": "<p>Spread a thin layer over areas that repeatedly break out, starting every other morning. The 2.5% strength is a sensible place to begin: benzoyl peroxide works without automatically choosing the highest percentage and all the dryness that can come with it.</p><p>Let it dry before moisturizer, keep it away from fabrics you care about, and cut back if skin feels tight or tender. On recovery mornings, skip straight from cleanser to moisturizer.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lightweight Moisturizer",
+          "product": "Skinfix Barrier+ Skin Barrier Restoring Gel Cream",
+          "link": "https://skinfix.com/products/restoring-gel-cream",
+          "description": "<p>Apply one to two pumps after treatment has dried. This fragrance-free gel cream uses niacinamide, zinc PCA, humectants, and barrier lipids in a lighter texture that makes sense for combination or oily acne-prone skin.</p><p>If you suspect fungal folliculitis rather than ordinary acne, get the diagnosis checked instead of assuming every non-comedogenic moisturizer will suit it.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Supergoop Bright-Eyed 100% Mineral Eye Cream SPF 40",
+          "link": "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+          "description": "<p>Tap an even layer around the upper and lower eye contour before face SPF. The mineral SPF 40 formula adds dedicated protection and a light peach tint, but the tint will not disappear equally on every complexion.</p><p>For an untinted, fragrance-free European alternative, use <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a>. Sunglasses still do useful work that no eye cream can replace.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "EltaMD UV Clear Broad-Spectrum SPF 46 Untinted",
+          "link": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+          "description": "<p>Apply generously to face, ears, and neck as the final morning step and reapply outdoors. This untinted, fragrance-free sunscreen was built for acne-prone and discoloration-prone skin, with a light texture and 5% niacinamide.</p><p>If you want mineral-only filters, choose <a href=\"https://eltamd.com/products/uv-clear-deep-tinted-broad-spectrum-spf-46\" target=\"_blank\">UV Clear Deep Tinted SPF 46</a> only if its tint suits you, or use a separate untinted mineral sunscreen you can apply at the full amount.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Micellar Makeup Removal",
+          "product": "Bioderma Sensibio H2O Micellar Water",
+          "link": "https://www.amazon.com/s?k=Bioderma+Sensibio+H2O+Micellar+Water&tag=theskinrout07-20",
+          "description": "<p>Saturate a soft cotton pad, hold it over eye makeup or stubborn sunscreen for a few seconds, then wipe gently without scrubbing. The unfragranced formula gives this routine a proper first cleanse without adding another exfoliating or acne-treatment ingredient.</p><p>Use it when you wore makeup, water-resistant sunscreen, or several SPF layers; skip it on bare-skin nights. Follow with the Paula's Choice cleanser so loosened makeup and sunscreen are fully rinsed away.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Paula's Choice CLEAR Pore Normalizing Cleanser",
+          "link": "https://www.paulaschoice.com/clear-pore-normalizing-cleanser/600-6002.html",
+          "description": "<p>Cleanse gently after micellar water and rinse well. On bare-skin nights, skip the micellar step and use this cleanser alone; double cleansing is useful when there is something substantial to remove, not because acne-prone skin needs extra washing.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Pimple Patch",
+          "product": "Peace Out Acne Healing Dots",
+          "link": "https://peaceoutskincare.com/products/peace-out-acne-dots",
+          "description": "<p>Place one on a clean, completely dry surfaced blemish before leave-on skincare and wear it overnight. These are hydrocolloid patches with salicylic acid and retinol, so they are a treatment tool rather than a decorative sticker.</p><p>Do not put the BHA solution underneath the dot. Route the rest of the routine around it, and use a plain hydrocolloid patch instead if you want the gentlest possible picking deterrent.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "BHA Treatment",
+          "product": "Paula's Choice CLEAR Regular Strength Anti-Redness Exfoliating Solution 2% Salicylic Acid",
+          "link": "https://www.paulaschoice.com/clear-regular-strength-anti-redness-exfoliating-solution-with-2pct-salicylic-acid/620.html",
+          "description": "<p>Apply a thin layer over congestion-prone areas two or three nights a week, avoiding any spot covered by a patch. Salicylic acid is the pore-unclogging step for blackheads, whiteheads, and texture; it does not become more impressive because you used it seven nights in a row.</p><p>Increase only if skin is comfortable. If benzoyl peroxide mornings plus BHA nights feel like too much, alternate full treatment days with cleanser-moisturizer-SPF recovery days.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Peptide Eye Cream",
+          "product": "Biossance Squalane + Marine Algae Eye Cream",
+          "link": "https://www.biossance.com/p/squalane-plus-marine-algae-eye-cream/12766627/",
+          "description": "<p>Tap a rice-grain amount around each eye before moisturizer, keeping acne actives off the eyelids. This is the comfortable mid-tier hydration step for dryness and the look of fine lines, not a reason to bring salicylic acid closer to the lash line.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Moisturizer",
+          "product": "Skinfix Barrier+ Skin Barrier Restoring Gel Cream",
+          "link": "https://skinfix.com/products/restoring-gel-cream",
+          "description": "<p>Finish with one to two pumps. If skin is sore or peeling, pause both leave-on treatments and use cleanser, moisturizer, and SPF until it settles.</p><p>Expect six to twelve weeks of consistency, not an overnight transformation. Deep painful acne, scars, or a pattern tied to hormonal symptoms deserves medical care; luxury-adjacent skincare cannot out-negotiate every cause of acne.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 7.5
+  },
+  {
+    "routine_name": "Luxury Acne-Prone Skin Routine",
+    "id": 51,
+    "time": 4.2,
+    "point_title": "Luxury Acne-Prone Skin Routine",
+    "point_description": "A high-end clarity routine with blemish-focused antioxidant protection, alternating retinoid and recovery nights, mineral eye SPF, and genuinely luxurious barrier care.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dark_spots_and_sun_damage",
+      "fine_lines_and_wrinkles"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "skinbetter science Cleansing Gel",
+          "link": "https://www.skinbetter.com/betterskin-regimen/cleanser/cleansing-gel-858970006337.html",
+          "description": "<p>Massage over damp skin and rinse thoroughly. This is intentionally the quiet product in the expensive routine: a mild, sulfate-free, fragrance-free cleanser gives the treatments a clean canvas without trying to exfoliate the face twice before breakfast.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Blemish-Focused Antioxidant",
+          "product": "SkinCeuticals Silymarin CF",
+          "link": "https://www.skinceuticals.com/skincare/vitamin-c-serums/silymarin-cf/S77.html",
+          "description": "<p>Apply four to five drops to dry face and neck every other morning at first. This oil-free luxury antioxidant combines 15% vitamin C, silymarin, ferulic acid, and 0.5% salicylic acid for oily, blemish-prone skin and the marks that follow breakouts.</p><p>Because it already contains salicylic acid, do not add a separate morning exfoliant. If it stings persistently, use it less often or skip it; a serum this expensive still has to earn its place.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Luxury Moisturizer",
+          "product": "skinbetter science Hydration Boosting Cream",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/moisturizers/hydration-boosting-cream-858970006139.html",
+          "description": "<p>Apply a light layer after the antioxidant settles. This is the cushioning step that makes the clarity treatments easier to live with; use less through oily areas and more wherever active treatment has created dryness.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Colorescience Total Eye 3-in-1 Renewal Therapy SPF 35",
+          "link": "https://www.colorescience.com/products/total-eye-3-in-1-renewal-therapy-spf-35",
+          "description": "<p>Tap an even layer around the lower and upper eye contour before face SPF. This all-mineral luxury eye treatment adds hydration, broad-spectrum SPF 35, and immediate color correction in four shades.</p><p>If none of the tints suit you, use the untinted <a href=\"https://www.ultrasun.com/en/products/eye-protection-spf30/\" target=\"_blank\">Ultrasun Eye Protection SPF 30</a> or bring a tolerated face sunscreen carefully around the orbital bone.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Tinted Mineral SPF",
+          "product": "skinbetter science sunbetter TONE SMART SPF 75 Sunscreen Lotion",
+          "link": "https://www.skinbetter.com/skincare-collections/sunbetter/sunbetter-tone-smart-spf-75-sunscreen-lotion-M025.html",
+          "description": "<p>Apply liberally to face, ears, neck, and chest as the final morning step, then reapply outdoors. The mineral SPF 75 has a tone-adapting tint, a primer-like finish, and no pore-clogging oils; the tint also makes this the stronger pick when post-breakout pigmentation is part of the problem.</p><p>If you prefer untinted sunscreen, choose <a href=\"https://www.skinbetter.com/shop-skincare/product-category/mineral-sunscreens/sunbetter-sheer-spf-70-sunscreen-lotion-M023.html\" target=\"_blank\">sunbetter SHEER SPF 70 Sunscreen Lotion</a>. It can look more opaque on some complexions, so test the finish before committing to a $75 bottle.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Cleanse",
+          "product": "skinbetter science Cleansing Gel",
+          "link": "https://www.skinbetter.com/betterskin-regimen/cleanser/cleansing-gel-858970006337.html",
+          "description": "<p>Cleanse for 30 to 60 seconds and rinse well. Repeat gently if heavy makeup or water-resistant sunscreen remains; luxury skin can still be over-cleansed.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinoid Clearing Treatment",
+          "product": "skinbetter science AlphaRet Clearing Serum",
+          "link": "https://www.skinbetter.com/skin-concern/skin-concern/blemish-prone/alpharet-clearing-serum-M003.html",
+          "description": "<p>Apply a thin layer to completely dry skin two nights a week, avoiding the eye area, and build toward every other night only if skin stays comfortable. AlphaRet combines a retinoid, lactic acid, and salicylic acid in one blemish-focused treatment, so this is the whole exfoliation plan on treatment nights.</p><p>Do not layer it with Silymarin CF in the same routine or use it during pregnancy. If you would rather invest in a device, <a href=\"https://omniluxled.com/collections/all-devices/products/omnilux-clear\" target=\"_blank\">Omnilux Clear</a> is an FDA-cleared blue-and-red-light option for mild to moderate inflammatory acne, but its manufacturer advises against combining it with retinol products. Choose that route with a dermatologist instead of casually adding both.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Recovery-Night Serum",
+          "product": "skinbetter science Mystro Active Balance Serum",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/serums/mystro-active-balance-serum-M031.html",
+          "description": "<p>Use this after cleansing on nights without AlphaRet. It is the luxury recovery lane for the look of redness, uneven tone, rough texture, and larger-looking pores, not another acid competing for attention.</p><p>For the first month, alternate Mystro and AlphaRet rather than layering them. If your skin is happiest with cleanser and moisturizer on recovery nights, that cheaper answer is also the correct one.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Luxury Eye Cream",
+          "product": "skinbetter science InterFuse Treatment Cream EYE",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/eye-care/interfuse-treatment-cream-eye-M011.html",
+          "description": "<p>Tap a rice-grain amount around each eye before moisturizer. Peptides, caffeine, niacinamide, and humectants target dryness, puffiness, and the look of fine lines while keeping AlphaRet where it belongs: away from the eyelids.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Barrier Moisturizer",
+          "product": "skinbetter science Hydration Boosting Cream",
+          "link": "https://www.skinbetter.com/shop-skincare/product-category/moisturizers/hydration-boosting-cream-858970006139.html",
+          "description": "<p>Finish with a comfortable layer. If AlphaRet causes persistent burning, peeling, or redness, stop it and stay with cleanser, Mystro or no serum, moisturizer, and SPF until skin is calm.</p><p>This routine is appropriate for mild to moderate acne. Deep nodules, scarring, sudden adult-onset acne, or no meaningful improvement after about twelve weeks belongs with a board-certified dermatologist; a luxury routine is not a substitute for prescription care.</p>"
+        }
+      ]
+    },
+    "draft": false,
+    "cost": 12
   }
 ]
