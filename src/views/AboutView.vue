@@ -101,6 +101,19 @@
       </p>
 
       <p>Welcome to The Skin Routine. ✨</p>
+
+      <section class="colophon">
+        <h2>Colophon</h2>
+        <p>
+          The Skin Routine is designed and built by me, Sarah Dulat, with Vue, Vite, TypeScript, D3, and Sass. The site
+          uses Jost for the interface, Roboto Slab for body copy, and Noto Sans Symbols 2 for the little glyphs.
+        </p>
+        <p>
+          Routines and reviews are hand-written and edited from my own experience, product research, and cited public
+          sources. Product links may include affiliate links, and images are either original, source-linked, or credited
+          from public reference sources where available.
+        </p>
+      </section>
     </div>
   </main>
 </template>
@@ -161,6 +174,18 @@ h2 {
     line-height: 50px;
     padding-top: 4px;
     padding-right: 4px;
+  }
+}
+
+.colophon {
+  margin-top: var(--space-xl);
+  border-top: 1px solid var(--color-dark);
+  padding-top: var(--space-lg);
+
+  p {
+    font-family: var(--font-family-sans-serif);
+    font-size: var(--fontSize-sm);
+    line-height: var(--lineHeight-sm);
   }
 }
 
