@@ -1,7 +1,7 @@
 ---
 uid: "skin1004-madagascar-centella-light-cleansing-oil"
 title: "SKIN1004 Madagascar Centella Light Cleansing Oil"
-summary: "A closer look at the lightweight Korean cleansing oil designed to dissolve sunscreen and makeup, emulsify cleanly, and make double cleansing feel less like a chore."
+summary: "A closer look at the lightweight Korean cleansing oil designed to dissolve sunscreen and makeup, emulsify cleanly, and kick off the double cleanse on a botanical note."
 date: "2026-08-09"
 first_publication_date: "2026-08-09T12:00:00+0200"
 last_publication_date: "2026-08-09T12:00:00+0200"
@@ -44,7 +44,7 @@ image_alt: "Watercolor and ink illustration of SKIN1004 Madagascar Centella Ligh
 
 [SKIN1004 Madagascar Centella Light Cleansing Oil](https://www.skin1004.com/products/skin1004-madagascar-centella-light-cleansing-oil) is a Korean cleanser made to dissolve makeup, sunscreen, excess sebum, and the general debris of existing in the world. The 200 ml bottle retails for $25 at [Ulta](https://www.ulta.com/p/madagascar-centella-light-cleansing-oil-pimprod2045884?sku=2626858).
 
-The fluid micellar oil combines centella with bergamot, sunflower, olive, jojoba, geranium, and rose oils. SKIN1004 describes it as soothing, hydrating, and non-comedogenic. No synthetic perfume is listed, but the aromatic oils create a noticeable scent, and the formula includes limonene and linalool. Sensitive skin does not care whether a lovely smell came from a perfume bottle or a botanical.
+[Centella asiatica](https://pmc.ncbi.nlm.nih.gov/articles/PMC8627341/)—also called cica or tiger grass—is a plant used in skincare for its soothing and antioxidant properties. Its compounds include madecassoside and asiaticoside, which have been studied for calming inflammation and supporting skin repair. Because this is a rinse-off cleanser, I see centella as a supporting ingredient rather than a treatment. The formula also contains bergamot, sunflower, olive, jojoba, geranium, and rose oils. No synthetic perfume is listed, but the aromatic oils plus limonene and linalool create a noticeable scent.
 
 You apply it to a dry face with dry hands, massage, then add water until the oil turns milky before rinsing.
 
@@ -52,23 +52,23 @@ You apply it to a dry face with dry hands, massage, then add water until the oil
 
 This cleansing oil is super lightweight—almost watery—and emulsifies beautifully the moment I add water. My skin feels nice and moisturized upon rinsing and ready to handle the double cleanse.
 
-I like the fresh geranium smell, and my skin is not sensitive to citrus oils. That is not universal. If essential oils or scented skincare tend to make your face unhappy, the formula deserves a closer look before you buy it.
+I like the fresh geranium smell, which is the top note for me, but I do also smell the citrus in the bergamot and limonene. My skin is not sensitive to citrus oils so I don't mind these ingredients, but if essential oils or scented skincare tend to make your face unhappy, the formula deserves a closer look before you buy it.
 
-I can massage it over my eyes without stinging or irritation. Occasionally my vision looks cloudy for a few minutes, but thorough rinsing resolves it. Burning, lasting blurred vision, or irritation would be a reason to rinse immediately and stop using it near the eyes.
+I can massage it over my eyes without stinging or irritation. My vision occasionally looks cloudy for a few minutes, but rinsing resolves it. So far, I have only tested it on non-waterproof mascara, so I cannot say how well it handles waterproof formulas. Burning, lasting blurred vision, or irritation would be a reason to rinse immediately and stop using it near the eyes.
 
-Before adding a cleansing oil, I assumed makeup removal needed its own separate step—especially eye makeup. Once I added the cleansing oil it removed a tedious step from my routine post-shower and I get to avoid the dreaded raccoon eyes.
+This is a step that has evolved in my skincare routine. I used to emerge from the shower and give myself a jump scare from the raccoon eyes my make up left behind. I'd wash my face but even the gentlest eye-safe cleansers couldn't remove everything. I would then rub coconut oil all over my lids and wipe it all away with a reusable cotton round. I don't know how I didn't get milia from all that coconut oil, but I guess my skin Before adding a cleansing oil, I assumed makeup removal needed its own separate step—especially eye makeup. Once I added the cleansing oil it removed a tedious step from my routine post-shower and I get to avoid the dreaded raccoon eyes.
 
 I always follow it with a water-based cleanser. The oil loosens sunscreen, makeup, and sebum; the second cleanse removes any residue. SKIN1004 recommends the same two-step approach.
 
 ### What the Internet Thinks about SKIN1004 Madagascar Centella Light Cleansing Oil
 
-Ulta shows a 4.5-out-of-5 rating from 981 reviews, with 94% recommending it. Praise centers on the thin texture, quick emulsification, clean rinse, and comfortable finish. Many recent reviews disclose that the product was provided in exchange for feedback, which is useful context rather than an automatic reason to dismiss them.
+Ulta shows a 4.5-out-of-5 rating from 981 reviews, with 94% recommending it. Praise centers on the thin texture, quick emulsification, clean rinse, and comfortable finish. Many recent reviews disclose receiving the product in exchange for feedback.
 
 Community opinions are more mixed. In [AsianBeauty discussions](https://www.reddit.com/r/AsianBeauty/comments/1ic381b/my_holy_grail_cleansing_oil_yall_skin_1004/), some users call it a holy grail because it feels unusually light and effective. Others report eye irritation, dislike the scent, or say it contributed to clogged pores or breakouts. A few find it less successful with stubborn eyeliner. As always, “non-comedogenic” is a useful formulation claim, not a legally binding agreement with every pore.
 
 ### Would I Recommend SKIN1004 Madagascar Centella Light Cleansing Oil?
 
-Yes. I recommend it for anyone wanting a lightweight first cleanse that handles daily sunscreen and makeup, rinses easily, and makes eye-makeup removal less tedious. It is particularly approachable for someone new to cleansing oils.
+Yes. I recommend it for anyone wanting a lightweight first cleanse that handles daily sunscreen and non-waterproof makeup, rinses easily, and makes eye-makeup removal less tedious.
 
 I would skip it if you know that bergamot, essential oils, limonene, or linalool irritate your skin. Very sensitive eyes and extremely stubborn waterproof makeup may also be better served by a fragrance-free oil or a dedicated eye-makeup remover.
 
@@ -86,7 +86,7 @@ I would skip it if you know that bergamot, essential oils, limonene, or linalool
 
 #### Can It Remove Eye Makeup?
 
-It removes my mascara and eye makeup without stinging, although it can briefly make my vision cloudy. SKIN1004 advises avoiding direct eye contact, so rinse thoroughly and stop if discomfort persists.
+It removes my non-waterproof mascara and eye makeup without stinging, although it can briefly make my vision cloudy. I have not tested it on waterproof mascara. SKIN1004 advises avoiding direct eye contact, so rinse thoroughly and stop if discomfort persists.
 
 #### Do You Need a Second Cleanser?
 
