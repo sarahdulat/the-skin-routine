@@ -8,9 +8,31 @@ last_publication_date: "2026-08-11T12:00:00+0200"
 tags: ["review", "lip mask", "lip care", "dry lips", "k-beauty", "laneige"]
 brands: ["LANEIGE"]
 product_types: ["Lip Treatment"]
-featured_products: [{"brand":"LANEIGE","name":"Lip Sleeping Mask","link":"https://us.laneige.com/products/lip-sleeping-mask"},{"brand":"e.l.f. Cosmetics","name":"Holy Hydration! Lip Mask","link":"https://www.elfcosmetics.com/products/holy-hydration-lip-mask/"},{"brand":"Care:Nel","name":"Berry Lip Night Mask","link":"https://www.iherb.com/pr/care-nel-lip-night-mask-berry-23-g/125248"},{"brand":"Tatcha","name":"The Kissu Lip Mask","link":"https://tatcha.com/products/the-kissu-lip-mask"}]
+featured_products:
+  [
+    {
+      "brand": "LANEIGE",
+      "name": "Lip Sleeping Mask",
+      "link": "https://us.laneige.com/products/lip-sleeping-mask",
+    },
+    {
+      "brand": "e.l.f. Cosmetics",
+      "name": "Holy Hydration! Lip Mask",
+      "link": "https://www.elfcosmetics.com/products/holy-hydration-lip-mask/",
+    },
+    {
+      "brand": "Care:Nel",
+      "name": "Berry Lip Night Mask",
+      "link": "https://www.iherb.com/pr/care-nel-lip-night-mask-berry-23-g/125248",
+    },
+    {
+      "brand": "Tatcha",
+      "name": "The Kissu Lip Mask",
+      "link": "https://tatcha.com/products/the-kissu-lip-mask",
+    },
+  ]
 pregnancy_safe: true
-draft: true
+draft: false
 image: "/images/reviews/laneige-lip-sleeping-mask-berry-watercolor.png"
 image_alt: "Watercolor and ink illustration of LANEIGE Lip Sleeping Mask in Berry"
 ---
