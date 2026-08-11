@@ -251,6 +251,7 @@ section {
   height: auto;
   max-height: min(60vh, 400px);
   object-fit: contain;
+  mix-blend-mode: darken;
 }
 
 .cover-img.placeholder {

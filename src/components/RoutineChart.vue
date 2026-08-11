@@ -8,12 +8,26 @@
       <div v-if="popoverContent.routines.length === 1">
         <p class="small">{{ popoverContent.routines[0].routine_name }}</p>
         <p class="small font-sans">{{ popoverContent.routines[0].point_description }}</p>
+        <p v-if="popoverContent.routines[0].image_attribution" class="image-attribution font-sans">
+          <a v-if="popoverContent.routines[0].image_attribution.href"
+            :href="popoverContent.routines[0].image_attribution.href" target="_blank" rel="noopener noreferrer">
+            {{ popoverContent.routines[0].image_attribution.text }}
+          </a>
+          <span v-else>{{ popoverContent.routines[0].image_attribution.text }}</span>
+        </p>
       </div>
       <div v-else class="cluster-popover">
         <button v-for="routinePoint in popoverContent.routines" :key="routinePoint.routine.id"
           class="cluster-option" type="button" @click="selectPopoverRoutine(routinePoint)">
           <p class="small">{{ routinePoint.routine_name }}</p>
           <p class="small font-sans">{{ routinePoint.point_description }}</p>
+          <p v-if="routinePoint.image_attribution" class="image-attribution font-sans">
+            <a v-if="routinePoint.image_attribution.href" :href="routinePoint.image_attribution.href" target="_blank"
+              rel="noopener noreferrer">
+              {{ routinePoint.image_attribution.text }}
+            </a>
+            <span v-else>{{ routinePoint.image_attribution.text }}</span>
+          </p>
         </button>
       </div>
     </Popover>
@@ -32,6 +46,10 @@ type RoutinePoint = {
   routine_name: string;
   point_description: string;
   marker_image?: string;
+  image_attribution?: {
+    text: string;
+    href?: string;
+  };
   flag: 'fr' | 'kr' | null;
   routine: Routine;
 };
@@ -44,6 +62,9 @@ type ClusterPoint = {
 
 type RoutineWithMarkerImage = Routine & {
   celebrity_face_image?: string;
+  celebrity_image_credit?: string;
+  celebrity_image_license?: string;
+  celebrity_image_source?: string;
   sources?: Array<{
     image?: string;
   }>;
@@ -126,6 +147,9 @@ export default defineComponent({
       const activeColor = '#C85238';
       const restingColor = '#343A40';
       const isImageString = (image: string | undefined): image is string => Boolean(image);
+      const isWikimediaImage = (image: string | undefined) => Boolean(
+        image && /(commons\.wikimedia\.org|upload\.wikimedia\.org|wikipedia\.org\/wiki\/Special:FilePath)/.test(image)
+      );
       const getRoutineFlag = (routine: Routine): RoutinePoint['flag'] => {
         const routineName = routine.routine_name.toLowerCase();
 
@@ -139,16 +163,32 @@ export default defineComponent({
 
         return routine.celebrity_face_image || sourceImage;
       };
+      const getImageAttribution = (routine: RoutineWithMarkerImage, markerImage: string | undefined) => {
+        if (!markerImage) return undefined;
+
+        const credit = routine.celebrity_image_credit;
+        const license = routine.celebrity_image_license;
+        const source = routine.celebrity_image_source || (isWikimediaImage(markerImage) ? markerImage : undefined);
+
+        if (!credit && !license && !source) return undefined;
+
+        return {
+          text: `Image: ${credit || 'Wikimedia Commons'}${license ? ` / ${license}` : ''}`,
+          href: source,
+        };
+      };
       const data: RoutinePoint[] = props.routines.map((routine) => {
         const routineWithMarkerImage = routine as RoutineWithMarkerImage;
         const cost = 'cost' in routine ? routine.cost : (routine as Routine & { money?: number }).money;
+        const markerImage = getMarkerImage(routineWithMarkerImage);
 
         return {
           x: Math.min(Math.max(routine.time, 0), axisMax),
           y: Math.min(Math.max(cost ?? 0, 0), axisMax),
           routine_name: routine.routine_name,
           point_description: routine.point_description,
-          marker_image: getMarkerImage(routineWithMarkerImage),
+          marker_image: markerImage,
+          image_attribution: getImageAttribution(routineWithMarkerImage, markerImage),
           flag: getRoutineFlag(routine),
           routine,
         };
@@ -694,6 +734,27 @@ export default defineComponent({
 
 .cluster-option p {
   margin: 0;
+}
+
+.image-attribution {
+  margin: var(--space-sm) 0 0;
+  padding-top: var(--space-xs);
+  border-top: 1px solid rgba(251, 250, 244, 0.35);
+  font-size: 0.68rem;
+  line-height: 1.25;
+  opacity: 0.75;
+}
+
+.image-attribution a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cluster-option .image-attribution {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 </style>

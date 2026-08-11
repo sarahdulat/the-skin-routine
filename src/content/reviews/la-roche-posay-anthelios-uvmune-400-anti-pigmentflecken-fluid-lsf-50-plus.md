@@ -47,7 +47,7 @@ image_alt: "Watercolor and ink illustration of La Roche-Posay Anthelios UVMune 4
 
 ## What Is Anthelios UVMune 400 Anti-Dark Spots Fluid?
 
-La Roche-Posay's Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+ is a 50 ml facial sunscreen for people concerned about an uneven skin tone, hyperpigmentation, and dark spots. It provides very high UVA and UVB protection—including ultra-long UVA—and resists water, sweat, and sand.
+La Roche-Posay's Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+ is a 50 ml facial sunscreen for people concerned about an uneven skin tone, hyperpigmentation, and dark spots. It provides very high UVA and UVB protection—including ultra-long UVA—and resists water, sweat, and sand. Note that this is a European formulation and is not available in the US because the active UV filter, Mexoryl 400, lacks FDA approval.
 
 The formula pairs Mexoryl 400 UV-filter technology with Melasyl, an ingredient designed to limit excess melanin formation. In other words, it promises advanced sunscreen and dark-spot prevention in one slim bottle. It should feel ultra-light, avoid a white cast, and work under makeup. On paper, daily SPF doing more than one job is exactly my type of product.
 

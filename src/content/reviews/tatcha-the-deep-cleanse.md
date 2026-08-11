@@ -47,17 +47,17 @@ Tatcha positions it for oily or combination skin, visible pores, dullness, and u
 
 I used to be a committed hater of expensive cleansers. You massage them around for a minute and then literally send them down the drain, so this always seemed like the least sensible place in a routine to spend money. Then I received a sample of The Deep Cleanse and, annoyingly, immediately understood the hype.
 
-The whole experience feels considered: the fresh scent, light foam, and just enough exfoliation to feel effective without becoming a sanding project. Once rinsed, my skin feels exceptionally clean but never dry or tight. It looks so fresh and glowy that I used this as my morning cleanser for a long time.
+The whole experience feels luxurious (as with most Tatcha products, she really is that girl): the fresh scent, light foam, and just enough exfoliation to feel effective without becoming a sanding project. Once rinsed, my skin feels exceptionally clean but never dry or tight. It looks so fresh and glowy that I used this as my morning cleanser for a long time.
 
 Eventually, I decided morning exfoliation was unnecessary and switched to a simple gentle cleanser. Now I use The Deep Cleanse after an oil cleanser in the evening. It removes the remains of sunscreen and makeup beautifully but is gentle enough for me to use actives later.
 
-I do not have especially oily or acne-prone skin, so I am not the most obvious customer. Perhaps consistent use deserves some credit for keeping congestion away; perhaps my skin simply is not very congested. Skincare causation is slippery like that. What I know is that my skin responds beautifully.
+I do not have especially oily or acne-prone skin, so I am not the most obvious customer. Perhaps consistent use deserves some credit for keeping congestion away; perhaps my skin simply is not very congested. Skincare causation is slippery like that.
 
-It is one of the rare cleansers I think earns its luxury price. I use a pea-sized amount, so one tube lasts a very long time, I think about two-years? Which is probably not great given it has a 12-month shelf-life from opening. Either way cost per cleanse is less dramatic than the checkout price suggests.
+It is one of the rare cleansers I think earns its luxury price. I use a pea-sized amount each wash, so one tube lasts a very long time, about two-years for me. Which is probably not great given it has a 6-month shelf-life from opening. Either way cost per cleanse is less dramatic than the checkout price suggests.
 
 ### What the Internet Thinks about Tatcha The Deep Cleanse
 
-The current Tatcha page has a rating close to five stars, but only a couple dozen reviews, several disclosed as complimentary. Praise is consistent: people love the light lather, gentle scrub, fresh scent, and clean-but-soft finish. Many say a little goes a long way. One practical complaint is that the tube dispenses too much too quickly.
+The current Tatcha page has a rating close to five stars, but only a couple dozen reviews, several disclosed as complimentary. Praise is consistent: people love the light lather, gentle scrub, fresh scent, and clean-but-soft finish. Many say a little goes a long way. One practical complaint is that the tube dispenses too much too quickly but I think thats a user error.
 
 Older [Reddit discussions](https://www.reddit.com/r/SkincareAddiction/comments/bkcjn6) are more mixed. Loyal users call it a repeat purchase and one of the few expensive cleansers worth buying. Others find it drying, too fragranced, or underwhelming for the price. Daily physical exfoliation may also be too much for reactive skin.
 

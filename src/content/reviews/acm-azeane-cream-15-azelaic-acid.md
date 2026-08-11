@@ -50,9 +50,9 @@ This is my first experience with azelaic acid. I bought it because I was in Fran
 
 Initially, I did not think I was the target user. I have little redness and am no longer especially acne-prone. Then I learned azelaic acid also targets dark spots, dullness, and texture—three things I noticed postpartum.
 
-Azelaic acid is difficult to formulate elegantly. Many creams and suspensions feel gritty, sandy, or inclined to roll off your face in tiny eraser shavings. Azéane feels like an actual nice cream: smooth, comfortable, and easy to layer. It does not sting or burn on me, even after vitamin C, although that tolerance is personal rather than a challenge for everyone else to copy.
+Azelaic acid is difficult to formulate elegantly. Many creams and suspensions feel gritty, sandy, or inclined to roll off your face like tiny eraser shavings. Azéane feels like a cream similar to tretinoin: smooth, comfortable, and easy to layer. It does not sting or burn on me, even after vitamin C, although that tolerance is personal rather than a challenge for everyone else to copy.
 
-Unfortunately, I made it almost impossible to determine exactly what it is doing. Around the same time, I restarted tretinoin and vitamin C. Once the postpartum glow faded, I contemplated the months of skincare I had skipped during pregnancy and breastfeeding and naturally threw the kitchen sink at my face.
+Unfortunately, I made it almost impossible to determine how this specific product is performing. Around the same time, I restarted tretinoin and added vitamin C. Once the postpartum glow faded, I contemplated the months of skincare I had skipped during pregnancy and breastfeeding and naturally threw the kitchen sink at my face.
 
 My skin tone looks brighter and more even, the texture has smoothed out, and my forehead lines seem less etched. I cannot assign those changes to Azéane alone, but it fits without irritation, pilling, or drama. The active that layers easily is the active I will consistently use.
 
@@ -68,7 +68,7 @@ In a detailed [EuroSkincare reddit discussion](https://www.reddit.com/r/EuroSkin
 
 Yes. It is a morning staple because it gives me higher-strength azelaic acid without the gritty texture I expected. I would recommend it for dark spots, dullness, texture, redness, or blemishes—especially if elegant layering matters.
 
-Introduce it gradually on dry skin if you are sensitive, and do not add it alongside several other actives if you want any hope of knowing what works. I offer this advice from the wreckage of my own experiment design.
+Introduce it gradually on dry skin if you are sensitive, and do not add it alongside several other actives if you want any hope of knowing what works. Let my folly be a lesson, add one new product at a time and give it at least three weeks to see whats working and if there is irritation, to pinpoint the culprit.
 
 <p class="affiliate-disclosure mt-md">
   Some product links below may be affiliate links.

@@ -2329,6 +2329,10 @@
     "id": 17,
     "time": 6.9,
     "point_description": "A regimented skin-protective routine built around gentle cleansing, targeted serums, neck and eye care, facial massage, and daily sunscreen.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Julianne%20Moore-60954.jpg",
+    "celebrity_image_credit": "Harald Krichel",
+    "celebrity_image_license": "CC BY-SA 4.0",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Julianne_Moore-60954.jpg",
     "pregnancy_safe": false,
     "age_range": [
       "60s"

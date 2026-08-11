@@ -165,6 +165,7 @@ main {
     height: 300px;
     object-fit: contain;
     margin-bottom: 1rem;
+    mix-blend-mode: darken;
   }
 }
 

@@ -56,7 +56,7 @@ I like the fresh geranium smell, which is the top note for me, but I do also sme
 
 I can massage it over my eyes without stinging or irritation. My vision occasionally looks cloudy for a few minutes, but rinsing resolves it. So far, I have only tested it on non-waterproof mascara, so I cannot say how well it handles waterproof formulas. Burning, lasting blurred vision, or irritation would be a reason to rinse immediately and stop using it near the eyes.
 
-This is a step that has evolved in my skincare routine. I used to emerge from the shower and give myself a jump scare from the raccoon eyes my make up left behind. I'd wash my face but even the gentlest eye-safe cleansers couldn't remove everything. I would then rub coconut oil all over my lids and wipe it all away with a reusable cotton round. I don't know how I didn't get milia from all that coconut oil, but I guess my skin Before adding a cleansing oil, I assumed makeup removal needed its own separate step—especially eye makeup. Once I added the cleansing oil it removed a tedious step from my routine post-shower and I get to avoid the dreaded raccoon eyes.
+This is a step that has evolved in my skincare routine. I used to emerge from the shower and give myself a jump scare from the raccoon eyes my make up left behind. I'd wash my face in the shower but even the gentlest eye-safe cleansers couldn't remove all eye makeup. I would then rub coconut oil all over my lids and wipe it all away with a reusable cotton round. I don't know how I didn't get milia or an eye infection from all that coconut oil, but I guess my skin is not comedone prone. This is a big improvement and much simpler to execute.
 
 I always follow it with a water-based cleanser. The oil loosens sunscreen, makeup, and sebum; the second cleanse removes any residue. SKIN1004 recommends the same two-step approach.
 
@@ -64,7 +64,7 @@ I always follow it with a water-based cleanser. The oil loosens sunscreen, makeu
 
 Ulta shows a 4.5-out-of-5 rating from 981 reviews, with 94% recommending it. Praise centers on the thin texture, quick emulsification, clean rinse, and comfortable finish. Many recent reviews disclose receiving the product in exchange for feedback.
 
-Community opinions are more mixed. In [AsianBeauty discussions](https://www.reddit.com/r/AsianBeauty/comments/1ic381b/my_holy_grail_cleansing_oil_yall_skin_1004/), some users call it a holy grail because it feels unusually light and effective. Others report eye irritation, dislike the scent, or say it contributed to clogged pores or breakouts. A few find it less successful with stubborn eyeliner. As always, “non-comedogenic” is a useful formulation claim, not a legally binding agreement with every pore.
+Community opinions are more mixed. In [AsianBeauty reddit discussions](https://www.reddit.com/r/AsianBeauty/comments/1ic381b/my_holy_grail_cleansing_oil_yall_skin_1004/), some users call it a holy grail because it feels unusually light and effective. Others report eye irritation, dislike the scent, or say it contributed to clogged pores or breakouts. A few find it less successful with stubborn eyeliner. As always, “non-comedogenic” is a useful formulation claim, not a legally binding agreement with every pore.
 
 ### Would I Recommend SKIN1004 Madagascar Centella Light Cleansing Oil?
 
