@@ -139,6 +139,7 @@ export default {
     },
     bodyTag(type: string) {
       if (type === "unordered-list") return "ul";
+      if (type === "heading2" || type === "heading3") return "h2";
 
       return /^heading[1-6]$/.test(type) ? `h${type.replace('heading', '')}` : 'p';
     },
@@ -147,11 +148,17 @@ export default {
         "mt-xl",
         "font-serif",
         type === "affiliate-disclosure" ? "affiliate-disclosure" : "",
+        this.isParagraphAfterHeading(type, index) ? "drop-cap" : "",
         this.isFaqHeading(index) ? "faq-heading" : "",
         this.isFaqBlock(index) && !this.isFaqHeading(index) ? "faq-block" : "",
         this.isFaqQuestion(type, index) ? "faq-question" : "",
         this.isFaqAnswer(type, index) ? "faq-answer" : "",
       ];
+    },
+    isParagraphAfterHeading(type: string, index: number) {
+      if (type !== "paragraph") return false;
+
+      return /^heading[1-6]$/.test(this.post?.data.body[index - 1]?.type ?? "");
     },
     isFaqHeading(index: number) {
       return this.post?.data.body[index]?.text === "Frequently Asked Questions";
@@ -262,7 +269,8 @@ section {
 .content {
   padding: var(--space-xl);
 
-  h2+p {
+  h2+p,
+  .drop-cap {
     font-size: var(--font-size-l);
 
     &::first-letter {
