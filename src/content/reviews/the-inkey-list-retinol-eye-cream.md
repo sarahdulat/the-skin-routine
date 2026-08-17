@@ -48,7 +48,7 @@ The 15 ml formula is fragrance-free, vegan, and marketed for all skin types. Alo
 
 ### My Thoughts on The INKEY List Retinol Eye Cream
 
-I bought this because my high-end eye cream habit was getting out of hand. Tatcha and Glow Recipe, I am looking at you. I wanted a sensible budget option with an anti-aging active. Unfortunately, this was a reminder that inexpensive and good value are not always the same thing.
+I bought this because my high-end eye cream habit was getting out of hand (Tatcha and Glow Recipe, I am looking at you). I wanted a sensible budget option with an anti-aging active. Unfortunately, this was a reminder that inexpensive and good value are not always the same thing.
 
 Calling it a cream feels generous. Mine was a clumpy, watery mess that appeared to have separated inside the tube. Clear liquid would emerge around little blobs of product, and no amount of shaking or massaging the tube made it feel properly mixed. It looked like something that had gone bad, except it behaved this way when brand new.
 

@@ -157,6 +157,7 @@ export default {
     },
     isParagraphAfterHeading(type: string, index: number) {
       if (type !== "paragraph") return false;
+      if (this.isFaqBlock(index)) return false;
 
       return /^heading[1-6]$/.test(this.post?.data.body[index - 1]?.type ?? "");
     },
