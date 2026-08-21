@@ -10,12 +10,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import type { LocationQueryValue } from "vue-router";
+import type { LocationQueryValue, RouteLocationNormalizedLoaded } from "vue-router";
 import RoutineChart from "../components/RoutineChart.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 import routines from '../assets/routines.json'
 import FilterBar from "../components/FilterBar.vue";
 import { store, Routine } from "../store";
+import { findRoutineBySlugOrId } from "../routines";
 
 const skinConcernValueByLabel: Record<string, string> = {
   "Acne Prone": "acne_prone",
@@ -33,11 +34,16 @@ const matchesFilter = (routineValues: string[], selectedValue: string | null | u
   return selectedValue == null || selectedValue === "all" || routineValues.includes(selectedValue);
 };
 
-const getRoutineIdFromQuery = (value: LocationQueryValue | LocationQueryValue[]) => {
-  const selectedRoutineId = getSelectedQueryValue(value);
-  const routineId = Number(selectedRoutineId);
+const getRoutineSlugFromQuery = (value: LocationQueryValue | LocationQueryValue[]) => {
+  return getSelectedQueryValue(value) ?? null;
+};
 
-  return Number.isFinite(routineId) ? routineId : null;
+const getRoutineSlugFromRoute = (route: RouteLocationNormalizedLoaded) => {
+  const routeRoutineSlug = Array.isArray(route.params.routineSlug) ? route.params.routineSlug[0] : route.params.routineSlug;
+
+  if (routeRoutineSlug) return routeRoutineSlug;
+
+  return getRoutineSlugFromQuery(route.query.routine);
 };
 
 export default defineComponent({
@@ -56,6 +62,9 @@ export default defineComponent({
     }
   },
   computed: {
+    selectedRoutineSlug(): string | null {
+      return getRoutineSlugFromRoute(this.$route);
+    },
     filteredRoutines(): Routine[] {
       const selectedAgeRange = getSelectedQueryValue(this.$route.query["Age Range"]);
       const selectedSkinConcernLabel = getSelectedQueryValue(this.$route.query["Skin Concern"]);
@@ -72,10 +81,7 @@ export default defineComponent({
   watch: {
     filteredRoutines: {
       handler(filteredRoutines: Routine[]) {
-        const selectedRoutineId = getRoutineIdFromQuery(this.$route.query.routine);
-        const selectedRoutine = selectedRoutineId == null
-          ? null
-          : filteredRoutines.find((routine) => routine.id === selectedRoutineId);
+        const selectedRoutine = findRoutineBySlugOrId(filteredRoutines, this.selectedRoutineSlug);
 
         if (selectedRoutine) {
           store.setCurrentRoutine(selectedRoutine);
@@ -93,11 +99,8 @@ export default defineComponent({
       },
       immediate: true,
     },
-    "$route.query.routine"() {
-      const selectedRoutineId = getRoutineIdFromQuery(this.$route.query.routine);
-      const selectedRoutine = selectedRoutineId == null
-        ? null
-        : this.filteredRoutines.find((routine) => routine.id === selectedRoutineId);
+    selectedRoutineSlug() {
+      const selectedRoutine = findRoutineBySlugOrId(this.filteredRoutines, this.selectedRoutineSlug);
 
       if (selectedRoutine) {
         store.setCurrentRoutine(selectedRoutine);

@@ -12,6 +12,11 @@ const routes = [
     component: HomeView,
   },
   {
+    path: "/routine/:routineSlug",
+    name: "routine",
+    component: HomeView,
+  },
+  {
     path: "/about",
     name: "about",
     component: AboutView,

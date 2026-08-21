@@ -31,6 +31,7 @@
 import { defineComponent } from "vue";
 import { searchSite } from "../search";
 import { store, type Routine } from "../store";
+import { routineSlug } from "../routines";
 
 export default defineComponent({
   name: "SiteSearch",
@@ -77,7 +78,7 @@ export default defineComponent({
     selectRoutine(routine: Routine) {
       store.setCurrentRoutine(routine);
       this.closeSearch();
-      this.$router.push({ name: "home", query: { routine: String(routine.id) } });
+      this.$router.push({ name: "routine", params: { routineSlug: routineSlug(routine) } });
     },
   },
 });

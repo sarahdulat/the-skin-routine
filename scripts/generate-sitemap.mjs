@@ -72,6 +72,17 @@ function parseFrontmatterValue(rawValue) {
   }
 }
 
+function routineSlug(routine) {
+  return routine.routine_name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/['’]/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 async function getReviewUrls() {
   const reviewsDir = path.join(rootDir, "src/content/reviews");
   const files = (await readdir(reviewsDir)).filter((file) => file.endsWith(".md")).sort();
@@ -97,6 +108,20 @@ async function getReviewUrls() {
   return urls.filter(Boolean);
 }
 
+async function getRoutineUrls() {
+  const routinesPath = path.join(rootDir, "src/assets/routines.json");
+  const routines = JSON.parse(await readFile(routinesPath, "utf8"));
+
+  return routines
+    .filter((routine) => !routine.draft)
+    .map((routine) => ({
+      path: `/routine/${routineSlug(routine)}`,
+      lastmod: today,
+      changefreq: "monthly",
+      priority: "0.6",
+    }));
+}
+
 function toUrlEntry(entry) {
   return `  <url>
     <loc>${escapeXml(`${siteUrl}${entry.path}`)}</loc>
@@ -106,7 +131,7 @@ function toUrlEntry(entry) {
   </url>`;
 }
 
-const urls = [...staticUrls, ...(await getReviewUrls())];
+const urls = [...staticUrls, ...(await getReviewUrls()), ...(await getRoutineUrls())];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map(toUrlEntry).join("\n")}

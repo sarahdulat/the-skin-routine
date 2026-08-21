@@ -36,9 +36,11 @@
 
 <script lang="ts">
 import { computed, defineComponent, onMounted, onUnmounted, PropType, ref, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import * as d3 from 'd3';
 import Popover from './Popover.vue';
 import { store, Routine } from '../store';
+import { routineSlug } from '../routines';
 
 type RoutinePoint = {
   x: number;
@@ -83,6 +85,8 @@ export default defineComponent({
   },
   setup(props) {
     const graph = ref<HTMLDivElement | null>(null);
+    const route = useRoute();
+    const router = useRouter();
     const popoverVisible = ref(false);
     const popoverContent = ref<{ routines: RoutinePoint[] }>({ routines: [] });
     const popoverPosition = ref({ x: 0, y: 0 });
@@ -99,8 +103,21 @@ export default defineComponent({
       popoverVisible.value = true;
     };
 
+    const updateRoutineUrl = (routine: Routine) => {
+      router.push({
+        name: 'routine',
+        params: { routineSlug: routineSlug(routine) },
+        query: { ...route.query, routine: undefined },
+      });
+    };
+
+    const selectRoutine = (routine: Routine) => {
+      store.setCurrentRoutine(routine);
+      updateRoutineUrl(routine);
+    };
+
     const selectPopoverRoutine = (point: RoutinePoint) => {
-      store.setCurrentRoutine(point.routine);
+      selectRoutine(point.routine);
       closePopover();
       createGraph();
     };
@@ -246,7 +263,7 @@ export default defineComponent({
           .attr('fill', (cluster) => cluster.routines.some((point) => point.routine.id === routineId) ? activeColor : restingColor);
       };
       const selectRoutinePoint = (point: RoutinePoint) => {
-        store.setCurrentRoutine(point.routine);
+        selectRoutine(point.routine);
         updateSelectedMarkerStyles(point.routine.id);
       };
 
