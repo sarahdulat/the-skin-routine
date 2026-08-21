@@ -6,6 +6,7 @@
     </div>
 
     <div class="content">
+      <h2>✨ A lot of you have been asking about my skincare routine ✨</h2>
       <p class="lede">
         Hi, I’m Sarah—the person friends and family ask when they want to talk about skincare, compare products, or
         figure out where another serum is supposed to go.

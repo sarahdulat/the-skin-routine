@@ -158,8 +158,14 @@ export default {
     isParagraphAfterHeading(type: string, index: number) {
       if (type !== "paragraph") return false;
       if (this.isFaqBlock(index)) return false;
+      if (this.isAlternativesHeading(index - 1)) return false;
 
       return /^heading[1-6]$/.test(this.post?.data.body[index - 1]?.type ?? "");
+    },
+    isAlternativesHeading(index: number) {
+      const previousBlock = this.post?.data.body[index];
+
+      return Boolean(previousBlock && /^heading[1-6]$/.test(previousBlock.type) && previousBlock.text.startsWith("Alternatives"));
     },
     isFaqHeading(index: number) {
       return this.post?.data.body[index]?.text === "Frequently Asked Questions";
@@ -270,7 +276,6 @@ section {
 .content {
   padding: var(--space-xl);
 
-  h2+p,
   .drop-cap {
     font-size: var(--font-size-l);
 
