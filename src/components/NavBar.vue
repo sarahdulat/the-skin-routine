@@ -6,13 +6,17 @@
           The Skin Routine<span class="glyph">🩸</span>
         </router-link>
       </h1>
-      <div class="nav-links">
+      <button class="menu-toggle" type="button" :aria-expanded="isMenuOpen" aria-controls="primary-navigation"
+        aria-label="Toggle navigation menu" @click="toggleMenu">
+        <i :class="isMenuOpen ? 'bi bi-x-lg' : 'bi bi-list'" aria-hidden="true"></i>
+      </button>
+      <div id="primary-navigation" class="nav-links" :class="{ open: isMenuOpen }">
         <SiteSearch />
         <h5>
-          <router-link to="/about">About</router-link>
+          <router-link to="/about" @click="closeMenu">About</router-link>
         </h5>
         <h5>
-          <router-link to="/blog">Reviews</router-link>
+          <router-link to="/blog" @click="closeMenu">Reviews</router-link>
         </h5>
       </div>
     </div>
@@ -27,6 +31,24 @@ export default defineComponent({
   name: "NavBar",
   components: {
     SiteSearch,
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    closeMenu() {
+      this.isMenuOpen = false;
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+  watch: {
+    "$route.fullPath"() {
+      this.closeMenu();
+    },
   },
 });
 </script>
@@ -78,9 +100,14 @@ nav {
   }
 }
 
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   nav .navbar {
-    align-items: flex-start;
+    position: relative;
+    align-items: center;
     gap: var(--space-md);
     padding: var(--space-md) var(--space-lg);
 
@@ -89,13 +116,45 @@ nav {
       padding-bottom: 0;
     }
 
+    .menu-toggle {
+      display: grid;
+      place-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-left: auto;
+      border: 1px solid var(--color-dark);
+      border-radius: var(--radius-sm);
+      background: var(--color-light);
+      color: var(--color-dark);
+      box-shadow: 1px 3px 0 var(--color-dark);
+      font-size: var(--fontSize-lg);
+      line-height: 1;
+      padding: 0;
+    }
+
     .nav-links {
-      align-items: flex-end;
-      flex: 1;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: var(--space-md);
-      padding-bottom: 0;
+      position: absolute;
+      top: calc(100% + 1px);
+      right: var(--space-lg);
+      left: var(--space-lg);
+      display: none;
+      align-items: stretch;
+      flex-direction: column;
+      gap: var(--space-lg);
+      border: 1px solid var(--color-dark);
+      border-top: 0;
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      background: var(--color-light);
+      box-shadow: 1px 3px 0 var(--color-dark);
+      padding: var(--space-lg);
+
+      &.open {
+        display: flex;
+      }
+
+      h5 {
+        line-height: var(--lineHeight-md);
+      }
     }
   }
 }
