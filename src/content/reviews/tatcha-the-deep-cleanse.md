@@ -1,7 +1,7 @@
 ---
 uid: "tatcha-the-deep-cleanse"
 title: "Tatcha The Deep Cleanse"
-summary: "A closer look at the luxurious exfoliating cleanser that promises a deeper clean, smoother texture, and a surprisingly comfortable finish."
+summary: "My experience with the luxurious exfoliating cleanser that promises a deeper clean, smoother texture, and a surprisingly comfortable finish."
 date: "2026-08-04"
 first_publication_date: "2026-08-04T12:00:00+0200"
 last_publication_date: "2026-08-04T12:00:00+0200"

@@ -1,7 +1,7 @@
 ---
 uid: "laneige-lip-sleeping-mask"
 title: "LANEIGE Lip Sleeping Mask"
-summary: "A closer look at the berry-scented overnight treatment that turned a simple bedside lip mask into a K-beauty cult classic."
+summary: "My experience with the berry-scented overnight treatment that turned a simple bedside lip mask into a K-beauty cult classic."
 date: "2026-08-11"
 first_publication_date: "2026-08-11T12:00:00+0200"
 last_publication_date: "2026-08-11T12:00:00+0200"
