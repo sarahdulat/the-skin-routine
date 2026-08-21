@@ -16,7 +16,7 @@ import RoutineSidebar from "../components/RoutineSidebar.vue";
 import routines from '../assets/routines.json'
 import FilterBar from "../components/FilterBar.vue";
 import { store, Routine } from "../store";
-import { findRoutineBySlugOrId } from "../routines";
+import { findRoutineBySlugOrId, newestRoutine } from "../routines";
 
 const skinConcernValueByLabel: Record<string, string> = {
   "Acne Prone": "acne_prone",
@@ -94,7 +94,7 @@ export default defineComponent({
         }
 
         if (!store.currentRoutine || !filteredRoutines.some((routine) => routine.id === store.currentRoutine?.id)) {
-          store.setCurrentRoutine(filteredRoutines[0]);
+          store.setCurrentRoutine(newestRoutine(filteredRoutines));
         }
       },
       immediate: true,

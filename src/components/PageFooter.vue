@@ -19,9 +19,9 @@
         <!-- <a href="http://www.x.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter-x ms-lg" alt="x"></i>
         </a> -->
-        <!-- <a href="http://www.pinterest.com/the_skinroutine" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-pinterest ms-lg" alt="pinterest"></i>
-        </a> -->
+        <a href="http://www.pinterest.com/the_skinroutine_" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-pinterest" alt="pinterest"></i>
+        </a>
       </div>
     </div>
     <Teleport to="body">

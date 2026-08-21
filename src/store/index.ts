@@ -1,5 +1,6 @@
 import { reactive } from 'vue';
 import routines from '../assets/routines.json'
+import { newestRoutine } from '../routines';
 
 export type Routine = typeof routines[number];
 
@@ -15,7 +16,7 @@ export const store = reactive<State & {
 }>({
   // state
   routines,
-  currentRoutine: routines[0],
+  currentRoutine: newestRoutine(routines),
   routineTime: 'am',
 
   // actions

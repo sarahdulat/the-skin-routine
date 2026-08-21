@@ -22,3 +22,7 @@ export function findRoutineBySlugOrId(routines: Routine[], slugOrId: string | nu
 
   return routines.find((routine) => routineSlug(routine) === slugOrId) ?? null;
 }
+
+export function newestRoutine(routines: Routine[]) {
+  return [...routines].reverse().find((routine) => !routine.draft) ?? null;
+}
