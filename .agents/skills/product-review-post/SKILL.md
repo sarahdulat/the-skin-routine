@@ -1,11 +1,11 @@
 ---
 name: product-review-post
-description: Research, draft, revise, illustrate, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs the standard scraped-reference watercolor product cover, or asks to add or update a Markdown review in src/content/reviews.
+description: Research, draft, revise, illustrate, cross-link, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs the standard scraped-reference watercolor product cover, asks to connect reviews to matching steps in src/assets/routines.json, or asks to add or update a Markdown review in src/content/reviews.
 ---
 
 # Product Review Post
 
-Create candid, useful product reviews in Sarah's voice and stage them safely as drafts in The Skin Routine repository.
+Create candid, useful product reviews in Sarah's voice and add them to The Skin Routine repository ready for publication.
 
 ## Establish context
 
@@ -68,11 +68,23 @@ Create a watercolor-and-ink product cover for every review unless the user expli
 ## Stage safely
 
 - Add the finished Markdown file to `src/content/reviews/<descriptive-product-slug>.md`.
-- Always set `draft: true`. Do not publish, deploy, commit, or change it to `false` without an explicit request.
+- Set `draft: false` when creating a new review post unless the user explicitly requests a draft. This frontmatter setting makes the post publishable but does not authorize deploying, committing, or pushing changes.
 - Set `image` to the matching `/images/reviews/<filename>` public URL.
 - Do not infer pregnancy safety. Use an authoritative source or established project policy. Treat `pregnancy_safe: true` as positively verified; when uncertain, set `pregnancy_safe: false` and describe it as unverified, never definitively unsafe, in the handoff.
 - Keep the title, featured-product name, body name, packaging language, and outbound product link consistent.
 - Add every specific product named in the post to `featured_products`, including the reviewed product and all alternatives. Do not add retailers, ingredients, product lines mentioned only as general context, or community/source links.
+
+## Cross-link matching routine steps
+
+After establishing the review's final `uid` and verdict, inspect every AM and PM step in `src/assets/routines.json` for the reviewed product. Check both the `product` field and linked or plain-text mentions inside `description`. Account for harmless naming, punctuation, and capitalization differences, but do not match a different product merely because it shares the same brand or product line.
+
+- Append the link as its own final HTML paragraph in every matching step; preserve the existing description.
+- Use the production-safe relative URL `/blog/<uid>`, never a hard-coded localhost or production domain.
+- Tailor the sentence to Sarah's verdict and vary the phrasing naturally. Options include “glowing review” or “rave review” for an enthusiastic favorite, “why this product won me over” for a positive discovery, “honest review” or simply “full review” for a nuanced or neutral experience, and “critical review,” “candid review,” or “not-so-glowing review” for a disappointment. These are examples, not fixed templates; choose wording that accurately represents the post without becoming clickbait.
+- Keep the chosen phrasing consistent for that product everywhere it appears unless a surrounding sentence makes a small variation read more naturally.
+- Do not duplicate a correct existing link. Repair stale or misspelled review slugs and standardize an existing inline review link as the final paragraph.
+- If there is no genuine product match, leave the routines unchanged and report that no cross-link was needed.
+- If the user explicitly requests `draft: true`, tell them that any new routine links and the review must be published together to avoid a temporarily unavailable destination.
 
 ## Validate
 
@@ -80,8 +92,9 @@ Create a watercolor-and-ink product cover for every review unless the user expli
 2. Confirm the title begins with the brand and `tags` includes `review`.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
 4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link.
-5. Confirm `draft: true`, the scraped product reference was transformed into the standard watercolor-and-ink style, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
-6. Run `npm run build` from the repository root.
-7. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
+5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
+6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>` and that unrelated products were not linked.
+7. Run `npm run build` from the repository root.
+8. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
 
 Report the post path, cover path, word count, draft state, build result, and any deliberately conservative metadata choice.
