@@ -5,10 +5,60 @@ summary: "Five minutes, three intensities, and a tool that asks for more consist
 date: "2026-08-21"
 first_publication_date: "2026-08-21T12:00:00+0200"
 last_publication_date: "2026-08-21T12:00:00+0200"
-tags: ["review", "skincare tool", "microcurrent", "firming", "facial toning", "nuface"]
+tags:
+  [
+    "review",
+    "skincare tool",
+    "microcurrent",
+    "firming",
+    "facial toning",
+    "nuface",
+  ]
 brands: ["NuFACE", "The Ordinary", "Results RNA", "ZIIP", "FaceGym"]
 product_types: ["Tool"]
-featured_products: [{"brand":"NuFACE","name":"MINI+ Starter Kit","link":"https://www.mynuface.com/products/nuface-mini-starter-kit-petite-microcurrent-facial-toning-kit"},{"brand":"The Ordinary","name":"Multi-Peptide + Copper Peptides 1%","link":"https://amzn.to/45C220H"},{"brand":"NuFACE","name":"Aqua Gel Activator","link":"https://www.mynuface.com/products/nuface-hydrating-aqua-gel"},{"brand":"Results RNA","name":"ACS 200 Silver-Glutathione Gel Extra Strength","link":"https://amzn.to/4wMNZ3n"},{"brand":"NuFACE","name":"TRINITY+ Complete Set","link":"https://www.mynuface.com/products/trinity-plus-complete-set-microcurrent-facial-toning-device-kit"},{"brand":"NuFACE","name":"NUBODY Starter Kit","link":"https://www.mynuface.com/products/nubody-skin-toning-device-microcurrent-toning-device-for-body"},{"brand":"ZIIP","name":"HALO","link":"https://ziipbeauty.com/products/ziip-halo-microcurrent-device"},{"brand":"FaceGym","name":"PureLift Pro Edition","link":"https://usa.facegym.com/products/purelift-pro"}]
+featured_products:
+  [
+    {
+      "brand": "NuFACE",
+      "name": "MINI+ Starter Kit",
+      "link": "https://sovrn.co/8lrchet",
+    },
+    {
+      "brand": "The Ordinary",
+      "name": "Multi-Peptide + Copper Peptides 1%",
+      "link": "https://amzn.to/45C220H",
+    },
+    {
+      "brand": "NuFACE",
+      "name": "Aqua Gel Activator",
+      "link": "https://www.mynuface.com/products/nuface-hydrating-aqua-gel",
+    },
+    {
+      "brand": "Results RNA",
+      "name": "ACS 200 Silver-Glutathione Gel Extra Strength",
+      "link": "https://amzn.to/4wMNZ3n",
+    },
+    {
+      "brand": "NuFACE",
+      "name": "TRINITY+ Complete Set",
+      "link": "https://www.mynuface.com/products/trinity-plus-complete-set-microcurrent-facial-toning-device-kit",
+    },
+    {
+      "brand": "NuFACE",
+      "name": "NUBODY Starter Kit",
+      "link": "https://www.mynuface.com/products/nubody-skin-toning-device-microcurrent-toning-device-for-body",
+    },
+    {
+      "brand": "ZIIP",
+      "name": "HALO",
+      "link": "https://ziipbeauty.com/products/ziip-halo-microcurrent-device",
+    },
+    {
+      "brand": "FaceGym",
+      "name": "PureLift Pro Edition",
+      "link": "https://usa.facegym.com/products/purelift-pro",
+    },
+  ]
 pregnancy_safe: false
 draft: false
 image: "/images/reviews/nuface-mini-plus-starter-kit-watercolor.png"
@@ -19,7 +69,7 @@ image_alt: "Watercolor and ink illustration of the NuFACE MINI+ and Aqua Gel Act
 
 Microcurrent uses a very gentle electrical current to stimulate the face and neck. With a layer of conductive gel on the skin, you glide the NuFACE's two metal spheres over the areas you want to lift and define. There is no heat and no needles; when I use enough gel, I barely feel it at all. The results are temporary, so this is one of those tools where consistency matters much more than an occasional enthusiastic five minutes. It is FDA-cleared for over-the-counter cosmetic stimulation—not, tragically, as a permanent facelift.
 
-The [NuFACE MINI+ Starter Kit](https://www.mynuface.com/products/nuface-mini-starter-kit-petite-microcurrent-facial-toning-kit) is the brand's $250 handheld version. It has three intensities and uses the two spheres to perform slow glides and holds over the cheeks, jawline, and forehead. The basic treatment takes five minutes, although the real commitment is repeating those five minutes often enough to see and maintain results.
+The [NuFACE MINI+ Starter Kit](https://sovrn.co/8lrchet) is the brand's $250 handheld version. It has three intensities and uses the two spheres to perform slow glides and holds over the cheeks, jawline, and forehead. The basic treatment takes five minutes, although the real commitment is repeating those five minutes often enough to see and maintain results.
 
 My experience began with the classic Mini more than five years ago; the MINI+ is its current, app-connected successor. Both offer a simpler, portable alternative to NuFACE's larger system.
 
