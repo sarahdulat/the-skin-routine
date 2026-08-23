@@ -17,7 +17,7 @@ brands: ["<Brand>"]
 product_types: ["<Product Type>"]
 featured_products: [{"brand":"<Brand>","name":"<Reviewed Product Name>","link":"<current product URL>"},{"brand":"<Alternative Brand>","name":"<Alternative Product Name>","link":"<current alternative URL>"}]
 pregnancy_safe: false
-draft: true
+draft: false
 image: "/images/reviews/<product-slug>-watercolor.png"
 image_alt: "Watercolor and ink illustration of <Brand> <Product Name>"
 ---
@@ -33,7 +33,7 @@ image_alt: "Watercolor and ink illustration of <Brand> <Product Name>"
 - `product_types`: match existing project values, such as `SPF`, `Cleanser`, `Moisturizer`, or `Serum`.
 - `featured_products`: include the reviewed product and every other specific product named in the body, including all alternatives. Each product must appear exactly once with its correct brand, full product name, and a market-appropriate product link. Do not include retailers, ingredients, general product-line references, or research/community sources as products.
 - `pregnancy_safe`: do not infer. Default to `false` when authoritative verification is unavailable.
-- `draft`: always `true` when creating or finishing a review.
+- `draft`: use `false` for a new review unless the user explicitly requests a draft.
 - `image`: use the public URL for the generated watercolor-and-ink cover, not the raw scraped reference or a filesystem path.
 - `image_alt`: identify the artwork as a watercolor and ink illustration and name the brand and product.
 

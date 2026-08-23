@@ -6,7 +6,47 @@
     <atom:link href="https://www.theskinroutine.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>Latest skincare product reviews from The Skin Routine.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2026 19:46:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 22:08:17 GMT</lastBuildDate>
+    <item>
+      <title>Egyptian Magic All-Purpose Skin Cream</title>
+      <link>https://www.theskinroutine.com/blog/egyptian-magic-all-purpose-skin-cream</link>
+      <guid isPermaLink="true">https://www.theskinroutine.com/blog/egyptian-magic-all-purpose-skin-cream</guid>
+      <description>A five-ingredient balm, a decades-old origin story, and one very shiny bedtime ritual—here is where Egyptian Magic fits into a modern routine.</description>
+      <pubDate>Mon, 24 Aug 2026 10:00:00 GMT</pubDate>
+      <lastBuildDate>Mon, 24 Aug 2026 10:00:00 GMT</lastBuildDate>
+      <enclosure url="https://www.theskinroutine.com/images/reviews/egyptian-magic-all-purpose-skin-cream-watercolor.png" type="image/png" />
+      <category>review</category>
+      <category>slugging</category>
+      <category>moisturizer</category>
+      <category>dry skin</category>
+      <category>occlusive</category>
+      <category>egyptian magic</category>
+      <category>Egyptian Magic</category>
+      <category>Ialuset</category>
+      <category>Vaseline</category>
+      <category>CeraVe</category>
+      <category>Alba Botanica</category>
+      <category>Moisturizer</category>
+    </item>
+    <item>
+      <title>Embryolisse Lait-Crème Concentré</title>
+      <link>https://www.theskinroutine.com/blog/embryolisse-lait-creme-concentre</link>
+      <guid isPermaLink="true">https://www.theskinroutine.com/blog/embryolisse-lait-creme-concentre</guid>
+      <description>One French pharmacy tube promises to moisturize, prime, cleanse, mask, and soothe—here is how its six jobs translate to a real routine.</description>
+      <pubDate>Sun, 23 Aug 2026 10:00:00 GMT</pubDate>
+      <lastBuildDate>Sun, 23 Aug 2026 10:00:00 GMT</lastBuildDate>
+      <enclosure url="https://www.theskinroutine.com/images/reviews/embryolisse-lait-creme-concentre-watercolor.png" type="image/png" />
+      <category>review</category>
+      <category>moisturizer</category>
+      <category>makeup prep</category>
+      <category>dry skin</category>
+      <category>french pharmacy</category>
+      <category>embryolisse</category>
+      <category>Embryolisse</category>
+      <category>Bobbi Brown</category>
+      <category>Weleda</category>
+      <category>Moisturizer</category>
+    </item>
     <item>
       <title>NuFACE MINI+ Starter Kit</title>
       <link>https://www.theskinroutine.com/blog/nuface-mini-plus-starter-kit</link>
@@ -144,21 +184,6 @@
       <category>la roche-posay</category>
       <category>La Roche-Posay</category>
       <category>SPF</category>
-    </item>
-    <item>
-      <title>My Skincare Routine Has Changed. My Obsession Has Not.</title>
-      <link>https://www.theskinroutine.com/blog/my-skincare-routine-has-changed</link>
-      <guid isPermaLink="true">https://www.theskinroutine.com/blog/my-skincare-routine-has-changed</guid>
-      <description>How pregnancy, motherhood, moving to Europe, and better products changed the routine I started in 2018—and why the most important parts have stayed exactly the same.</description>
-      <pubDate>Fri, 24 Jul 2026 10:00:00 GMT</pubDate>
-      <lastBuildDate>Fri, 24 Jul 2026 10:00:00 GMT</lastBuildDate>
-      <enclosure url="https://www.theskinroutine.com/images/Sarah.JPG" type="image/JPG" />
-      <category>skincare routine</category>
-      <category>motherhood</category>
-      <category>europe</category>
-      <category>pregnancy</category>
-      <category>The Ordinary</category>
-      <category>Routine</category>
     </item>
   </channel>
 </rss>
