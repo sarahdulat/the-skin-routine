@@ -31,7 +31,7 @@ featured_products:
     {
       "brand": "NuFACE",
       "name": "Aqua Gel Activator",
-      "link": "https://www.mynuface.com/products/nuface-hydrating-aqua-gel",
+      "link": "https://amzn.to/4wHHvmh",
     },
     {
       "brand": "Results RNA",
@@ -40,13 +40,13 @@ featured_products:
     },
     {
       "brand": "NuFACE",
-      "name": "TRINITY+ Complete Set",
-      "link": "https://www.mynuface.com/products/trinity-plus-complete-set-microcurrent-facial-toning-device-kit",
+      "name": "TRINITY+",
+      "link": "https://amzn.to/465q3gV",
     },
     {
       "brand": "NuFACE",
       "name": "NUBODY Starter Kit",
-      "link": "https://www.mynuface.com/products/nubody-skin-toning-device-microcurrent-toning-device-for-body",
+      "link": "https://amzn.to/3UkdfAs",
     },
     {
       "brand": "ZIIP",
@@ -116,7 +116,7 @@ Wholeheartedly, with one condition: you must be consistent. This is not a tool t
 
 ### Alternatives to the NuFACE MINI+
 
-**[NuFACE TRINITY+ Complete Set](https://www.mynuface.com/products/trinity-plus-complete-set-microcurrent-facial-toning-device-kit)** has a $595 list price and adds targeted lip-and-eye microcurrent, red-light therapy, and a boost function. I have never justified the difference because the Mini already gives me the results I want—and I do not need more attachments demanding more time.
+**[NuFACE TRINITY+](https://amzn.to/465q3gV)** has a $595 list price and adds targeted lip-and-eye microcurrent, red-light therapy, and a boost function. I have never justified the difference because the Mini already gives me the results I want—and I do not need more attachments demanding more time.
 
 **[ZIIP HALO](https://ziipbeauty.com/products/ziip-halo-microcurrent-device)** costs $399.99 and combines microcurrent with nanocurrent plus app-guided programs for concerns beyond lifting. It offers more customization, but the MINI+ is the simpler choice if your priority is a fast, repeatable five-minute sculpt.
 

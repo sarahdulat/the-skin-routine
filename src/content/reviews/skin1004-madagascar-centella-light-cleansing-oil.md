@@ -21,12 +21,12 @@ featured_products:
     {
       "brand": "SKIN1004",
       "name": "Madagascar Centella Light Cleansing Oil",
-      "link": "https://www.skin1004.com/products/skin1004-madagascar-centella-light-cleansing-oil",
+      "link": "https://tidd.ly/3Ui3liP",
     },
     {
       "brand": "Haruharu Wonder",
       "name": "Black Rice Moisture Cleansing Oil / Unscented",
-      "link": "https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-cleansing-oil",
+      "link": "https://tidd.ly/46jpIqJ",
     },
     {
       "brand": "Beauty of Joseon",
@@ -78,7 +78,7 @@ I would skip it if you know that bergamot, essential oils, limonene, or linalool
 
 ### Alternatives to SKIN1004 Madagascar Centella Light Cleansing Oil
 
-**[Haruharu Wonder Black Rice Moisture Cleansing Oil / Unscented](https://haruharuwonder.com/products/haruharuwonder-black-rice-moisture-cleansing-oil)** costs $25 for 150 ml. Its nine-ingredient formula is free from fragrance and essential oils, making it the obvious alternative for scent-sensitive skin. It is a smaller bottle for the same price, but the brand has also completed eye-irritation and non-comedogenic testing.
+**[Haruharu Wonder Black Rice Moisture Cleansing Oil / Unscented](https://tidd.ly/46jpIqJ)** costs $25 for 150 ml. Its nine-ingredient formula is free from fragrance and essential oils, making it the obvious alternative for scent-sensitive skin. It is a smaller bottle for the same price, but the brand has also completed eye-irritation and non-comedogenic testing.
 
 **[Beauty of Joseon Ginseng Cleansing Oil](https://beautyofjoseon.com/products/ginseng-cleansing-oil)** costs $20 for 210 ml. It uses soybean and ginseng seed oils, emulsifies readily, and has a subtle natural oil aroma. It offers slightly more product for less money without SKIN1004's bergamot-forward scent.
 

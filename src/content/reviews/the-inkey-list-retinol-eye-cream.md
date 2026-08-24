@@ -26,7 +26,7 @@ featured_products:
     {
       "brand": "Beauty of Joseon",
       "name": "Revive Eye Serum: Ginseng + Retinal",
-      "link": "https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal",
+      "link": "https://tidd.ly/4hO6oJn",
     },
     {
       "brand": "Versed",
@@ -74,7 +74,7 @@ I would not repurchase it. Eye cream is an optional step, so if I am adding one,
 
 ### Alternatives to The INKEY List Retinol Eye Cream
 
-**[Beauty of Joseon Revive Eye Serum: Ginseng + Retinal](https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal)** costs $17 for 30 ml—twice the product for $2 more. Retinal is another vitamin A derivative, while glycerin, ginseng, niacinamide, macadamia oil, ceramide, and a peptide give the formula a more complete hydrating base. This is what I currently use, and its smooth, refreshing texture feels far more refined.
+**[Beauty of Joseon Revive Eye Serum: Ginseng + Retinal](https://tidd.ly/4hO6oJn)** costs $17 for 30 ml—twice the product for $2 more. Retinal is another vitamin A derivative, while glycerin, ginseng, niacinamide, macadamia oil, ceramide, and a peptide give the formula a more complete hydrating base. This is what I currently use, and its smooth, refreshing texture feels far more refined.
 
 **[Versed Smooth Landing Advanced Retinoid Eye Balm](https://versedskin.com/products/smooth-landing)** costs $17.99 for 12 g. Its 1% granactive retinoid is paired with vitamin E and black currant seed oil in a waterless balm. It is the better choice when dryness is the problem and you want something richer, although the jar and heavier finish will not appeal to everyone.
 
