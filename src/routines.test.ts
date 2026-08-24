@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import routines from "./assets/routines.json";
-import { findRoutineBySlugOrId, newestRoutine, routineSlug } from "./routines";
+import { findRoutineBySlugOrId, findRoutineProductMentions, newestRoutine, routineSlug } from "./routines";
 
 describe("routine helpers", () => {
   it("creates readable routine slugs from routine names", () => {
@@ -34,5 +34,99 @@ describe("routine helpers", () => {
     }));
 
     expect(newestRoutine(draftOnlyRoutines)).toBeNull();
+  });
+
+  it("finds routines where a featured product is mentioned", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "LANEIGE",
+        name: "Lip Sleeping Mask",
+      },
+    ]);
+
+    expect(mentions.length).toBeGreaterThan(0);
+    expect(mentions.some((mention) => mention.routine.routine_name === "Kate Moss's Routine")).toBe(true);
+    expect(mentions.every((mention) => !mention.routine.draft)).toBe(true);
+  });
+
+  it("does not match generic product category wording as a product mention", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "The INKEY List",
+        name: "Retinol Eye Cream",
+      },
+    ]);
+
+    expect(mentions.map((mention) => mention.routine.routine_name)).not.toEqual(expect.arrayContaining([
+      "Hailey Bieber's Routine",
+      "Korean Skincare Routine for Your 30s–40s",
+      "Sarah's Routine",
+    ]));
+  });
+
+  it("matches a product when it is linked exactly in a routine description", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "The INKEY List",
+        name: "Retinol Eye Cream",
+        link: "https://www.theinkeylist.com/products/retinol-eye-cream",
+      },
+    ]);
+
+    expect(mentions.map((mention) => mention.routine.routine_name)).toEqual(["Sarah's Routine"]);
+  });
+
+  it("matches routines that intentionally link to the exact review", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "NuFACE",
+        name: "MINI+ Starter Kit",
+        link: "https://sovrn.co/8lrchet",
+        reviewPath: "/blog/nuface-mini-plus-starter-kit",
+      },
+    ]);
+
+    expect(mentions.map((mention) => mention.routine.routine_name)).toEqual([
+      "Bella Hadid's Routine",
+      "Sabrina Carpenter's Routine",
+      "Sarah's Routine",
+    ]);
+  });
+
+  it("matches ACM Azéane routines that intentionally link to the exact review", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "ACM",
+        name: "Azéane Cream 15% Azelaic Acid",
+        link: "https://www.caretobeauty.com/us/acm-laboratoire-azeane-cream-15-azelaic-acid-30ml/",
+        reviewPath: "/blog/acm-azeane-cream-15-azelaic-acid",
+      },
+    ]);
+
+    expect(mentions.map((mention) => mention.routine.routine_name)).toEqual([
+      "French Pharmacy Routine for Your 20s",
+      "Sarah's Pregnancy Safe Routine",
+      "Sarah's Routine",
+    ]);
+  });
+
+  it("does not show non-regional products in Korean or French themed routine mentions", () => {
+    const mentions = findRoutineProductMentions(routines, [
+      {
+        brand: "Supergoop!",
+        name: "Bright-Eyed 100% Mineral Eye Cream SPF 40",
+        link: "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
+        reviewPath: "/blog/supergoop-bright-eyed-100-mineral-eye-cream-spf-40",
+      },
+    ]);
+    const routineNames = mentions.map((mention) => mention.routine.routine_name);
+
+    expect(routineNames).not.toEqual(expect.arrayContaining([
+      "French Pharmacy Routine for Your 20s",
+      "French Pharmacy Routine for Your 30s–40s",
+      "French Pharmacy Routine for Your 50s+",
+      "Korean Skincare Routine for Your 20s",
+      "Korean Skincare Routine for Your 30s–40s",
+    ]));
   });
 });

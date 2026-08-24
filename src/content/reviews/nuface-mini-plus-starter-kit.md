@@ -1,6 +1,6 @@
 ---
 uid: "nuface-mini-plus-starter-kit"
-title: "NuFACE MINI+ Starter Kit"
+title: "NuFACE MINI+"
 summary: "Five minutes, three intensities, and a tool that asks for more consistency than most—here is how the petite microcurrent device fits into a real morning."
 date: "2026-08-21"
 first_publication_date: "2026-08-21T12:00:00+0200"

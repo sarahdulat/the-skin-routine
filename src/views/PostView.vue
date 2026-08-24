@@ -28,6 +28,13 @@
                   <!-- <a :href="product.product.link" target="_blank" rel="noopener noreferrer" class="button-link px-sm ms-lg">Buy</a> -->
                 </span>
               </div>
+              <div v-if="routineProductMentions.length > 0" class="featured-products routine-mentions mt-xl">
+                <p>Mentioned in Routines</p>
+                <router-link v-for="mention in routineProductMentions" :key="mention.routine.id"
+                  :to="{ name: 'routine', params: { routineSlug: routineSlug(mention.routine) } }">
+                  <span class="glyph me-md">🩸</span>{{ mention.routine.routine_name }}
+                </router-link>
+              </div>
             </div>
             <div class="content">
               <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
@@ -78,6 +85,8 @@ import SEO from "../components/SEO.vue";
 import { format } from "date-fns";
 import { Post } from "../types";
 import { getAdjacentPosts, getPostByUID } from "../posts";
+import routines from "../assets/routines.json";
+import { findRoutineProductMentions, routineSlug, type RoutineProductMention } from "../routines";
 
 export default {
   name: 'blog-post',
@@ -94,7 +103,23 @@ export default {
       isReviewBarLoading: false,
     }
   },
+  computed: {
+    routineProductMentions(): RoutineProductMention[] {
+      if (!this.post) return [];
+
+      return findRoutineProductMentions(
+        routines,
+        this.post.data.products.slice(0, 1).map(({ product }) => ({
+          brand: product.brand,
+          name: product.name,
+          link: product.link,
+          reviewPath: `/blog/${this.post?.uid}`,
+        })),
+      );
+    },
+  },
   methods: {
+    routineSlug,
     async getContent(slug: string) {
       if (!slug) return;
 
