@@ -7,7 +7,7 @@ first_publication_date: "2026-07-30T12:00:00+0200"
 last_publication_date: "2026-07-30T12:00:00+0200"
 tags: ["review", "spf", "eye cream", "mineral sunscreen", "supergoop!"]
 brands: ["Supergoop!"]
-product_types: ["SPF"]
+product_types: ["SPF", "Eye Cream"]
 featured_products:
   [
     {

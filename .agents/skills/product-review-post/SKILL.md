@@ -59,11 +59,12 @@ Create a watercolor-and-ink product cover for every review unless the user expli
 
 1. Scrape or download a clean product image from the official brand page and use it as the generation reference. Prefer English packaging for an English post; use a reputable retailer only when the official page has no usable image.
 2. Save the scraped reference locally and inspect it before generation. Exclude promotional badges, retailer stickers, hands, props, and unrelated objects unless the user asks to retain them.
-3. Use the `imagegen` skill to reillustrate the product as expressive black line art with soft, translucent watercolor washes on warm-white paper. Default to a square canvas with one complete product centered, generous whitespace, and the product occupying about 65–75% of the image height so it works in both the 300px grid and post view.
-4. Preserve the packaging silhouette, color blocking, brand hierarchy, and key English label wording. Require the brand and product name to remain recognizable; do not invent extra label text.
-5. Inspect the generated result for cropping, duplicate products, malformed packaging, incorrect text, or distracting background elements. Iterate when a material problem remains.
-6. Save the selected generated image non-destructively under `public/images/reviews/` with a descriptive `-watercolor` slug and version suffix when needed. Never reference the raw scraped packshot as the final cover unless the user explicitly requests it.
-7. Update frontmatter with the generated public image URL and accurate watercolor alt text. Never leave a referenced cover only in a temporary or generated-images directory.
+3. Use the `imagegen` skill to reillustrate the product as expressive black line art with soft, translucent watercolor washes. Default to a square canvas with one complete product centered, generous whitespace, and the product occupying about 65–75% of the image height so it works in both the 300px grid and post view.
+4. Set the canvas background to the exact solid color `#FBFAF4`. Keep a clean perimeter around all four sides: no watercolor wash, paper-texture tint, shadow, line work, product edge, or stray mark may touch the canvas boundary. Keep decorative washes and shadows comfortably inside this safe area so the cover blends cleanly into the site when CSS uses `mix-blend-mode: darken`.
+5. Preserve the packaging silhouette, color blocking, brand hierarchy, and photographed label wording. Require the brand and product name to remain recognizable; do not modernize, translate, rename, or invent packaging text unless the user explicitly requests it.
+6. Inspect the generated result for cropping, duplicate products, malformed packaging, incorrect text, or distracting background elements. Verify the complete outermost pixel perimeter is uniformly `#FBFAF4`; if any edge pixel differs, correct or regenerate the image before accepting it. Do not rely on the blend mode to conceal a mismatched edge.
+7. Save the selected generated image non-destructively under `public/images/reviews/` with a descriptive `-watercolor` slug and version suffix when needed. Never reference the raw scraped packshot as the final cover unless the user explicitly requests it.
+8. Update frontmatter with the generated public image URL and accurate watercolor alt text. Never leave a referenced cover only in a temporary or generated-images directory.
 
 ## Stage safely
 
@@ -92,7 +93,7 @@ After establishing the review's final `uid` and verdict, inspect every AM and PM
 2. Confirm the title begins with the brand and `tags` includes `review`.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
 4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link.
-5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
+5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the cover background is `#FBFAF4` with a uniformly clean `#FBFAF4` outer pixel perimeter, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
 6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>` and that unrelated products were not linked.
 7. Run `npm run build` from the repository root.
 8. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.

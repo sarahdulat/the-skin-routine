@@ -64,7 +64,7 @@ describe("routine helpers", () => {
     ]));
   });
 
-  it("matches a product when it is linked exactly in a routine description", () => {
+  it("matches a product when the exact product link appears in a routine description", () => {
     const mentions = findRoutineProductMentions(routines, [
       {
         brand: "The INKEY List",
@@ -76,13 +76,12 @@ describe("routine helpers", () => {
     expect(mentions.map((mention) => mention.routine.routine_name)).toEqual(["Sarah's Routine"]);
   });
 
-  it("matches routines that intentionally link to the exact review", () => {
+  it("matches NuFACE when it is the actual step product or closely mentioned in a description", () => {
     const mentions = findRoutineProductMentions(routines, [
       {
         brand: "NuFACE",
         name: "MINI+ Starter Kit",
         link: "https://sovrn.co/8lrchet",
-        reviewPath: "/blog/nuface-mini-plus-starter-kit",
       },
     ]);
 
@@ -93,13 +92,12 @@ describe("routine helpers", () => {
     ]);
   });
 
-  it("matches ACM Azéane routines that intentionally link to the exact review", () => {
+  it("matches ACM Azéane routines when the actual step product uses a close name variant", () => {
     const mentions = findRoutineProductMentions(routines, [
       {
         brand: "ACM",
         name: "Azéane Cream 15% Azelaic Acid",
         link: "https://www.caretobeauty.com/us/acm-laboratoire-azeane-cream-15-azelaic-acid-30ml/",
-        reviewPath: "/blog/acm-azeane-cream-15-azelaic-acid",
       },
     ]);
 
@@ -116,7 +114,6 @@ describe("routine helpers", () => {
         brand: "Supergoop!",
         name: "Bright-Eyed 100% Mineral Eye Cream SPF 40",
         link: "https://supergoop.com/products/bright-eyed-100-mineral-eye-cream-spf-40",
-        reviewPath: "/blog/supergoop-bright-eyed-100-mineral-eye-cream-spf-40",
       },
     ]);
     const routineNames = mentions.map((mention) => mention.routine.routine_name);

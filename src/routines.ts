@@ -4,7 +4,6 @@ type FeaturedProduct = {
   brand: string;
   name: string;
   link?: string;
-  reviewPath?: string;
 };
 
 export type RoutineProductMention = {
@@ -50,10 +49,6 @@ function normalizeProductText(text: string) {
     .trim();
 }
 
-function stripHtml(text: string) {
-  return text.replace(/<[^>]*>/g, " ");
-}
-
 function normalizeUrl(url: string | undefined) {
   if (!url) return "";
 
@@ -72,30 +67,18 @@ export function findRoutineProductMentions(routines: Routine[], products: Featur
     brand: normalizeProductText(product.brand),
     candidates: productMentionCandidates(product),
     link: normalizeUrl(product.link),
-    reviewPath: normalizeUrl(product.reviewPath),
+    nameTokens: productNameTokens(product.name),
   }));
   const mentions = new Map<number, RoutineProductMention>();
 
   routines
     .filter((routine) => !routine.draft)
     .forEach((routine) => {
-      const routineText = normalizeProductText(
-        Object.values(routine.steps)
-          .flatMap((steps) => Object.values(steps ?? {}))
-          .map((step) => `${step.product} ${stripHtml(step.description)}`)
-          .join(" "),
-      );
-      const routineRawText = Object.values(routine.steps)
-        .flatMap((steps) => Object.values(steps ?? {}))
-        .map((step) => `${step.product} ${step.description}`)
-        .join(" ")
-        .toLowerCase();
+      const routineSteps = Object.values(routine.steps).flatMap((steps) => Object.values(steps ?? {}));
       const matchedProduct = productCandidates.find((product) => {
         if (isRegionalRoutineMismatch(routine, product.brand)) return false;
 
-        return product.candidates.some((candidate) => routineText.includes(candidate))
-          || Boolean(product.link && routineRawText.includes(product.link))
-          || Boolean(product.reviewPath && routineRawText.includes(product.reviewPath));
+        return routineSteps.some((step) => stepMatchesProduct(step, product));
       });
 
       if (matchedProduct) {
@@ -107,6 +90,55 @@ export function findRoutineProductMentions(routines: Routine[], products: Featur
     });
 
   return [...mentions.values()].sort((a, b) => a.routine.routine_name.localeCompare(b.routine.routine_name));
+}
+
+const genericProductTokens = new Set(["the", "and", "for", "with", "of", "a", "an", "starter", "kit"]);
+
+function productNameTokens(productName: string) {
+  return normalizeProductText(productName)
+    .split(" ")
+    .filter((token) => token && !genericProductTokens.has(token));
+}
+
+function stepMatchesProduct(
+  step: { product: string; link?: string; description?: string },
+  product: {
+    brand: string;
+    candidates: string[];
+    link: string;
+    nameTokens: string[];
+  },
+) {
+  const stepLink = normalizeUrl(step.link);
+  const stepDescription = step.description ?? "";
+
+  if (product.link && stepLink === product.link) return true;
+  if (product.link && normalizeUrl(stepDescription).includes(product.link)) return true;
+
+  return textMatchesProduct(step.product, product) || textMatchesProduct(stepDescription, product);
+}
+
+function textMatchesProduct(
+  text: string,
+  product: {
+    brand: string;
+    candidates: string[];
+    nameTokens: string[];
+  },
+) {
+  const normalizedText = normalizeProductText(text);
+  const textTokens = new Set(normalizedText.split(" ").filter(Boolean));
+  const brandTokens = product.brand.split(" ").filter(Boolean);
+
+  if (product.candidates.some((candidate) => normalizedText.includes(candidate))) return true;
+  if (!brandTokens.every((token) => textTokens.has(token))) return false;
+
+  const matchedNameTokens = product.nameTokens.filter((token) => textTokens.has(token)).length;
+  const requiredNameTokens = product.nameTokens.length <= 2
+    ? product.nameTokens.length
+    : Math.ceil(product.nameTokens.length * 0.75);
+
+  return matchedNameTokens >= requiredNameTokens;
 }
 
 const brandRegions: Record<string, "fr" | "kr" | "us"> = {

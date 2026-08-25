@@ -113,7 +113,6 @@ export default {
           brand: product.brand,
           name: product.name,
           link: product.link,
-          reviewPath: `/blog/${this.post?.uid}`,
         })),
       );
     },
