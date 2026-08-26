@@ -19,16 +19,18 @@
               <span>{{ firstSourceName }}</span>
               <span v-if="hasMultipleSources" class="source-count">+{{ additionalSourceCount }}</span>
             </button>
-            <div class="source-popover" role="tooltip" :style="sourcePopoverStyle">
+            <div v-if="isSourcePopoverOpen" class="source-popover" role="tooltip" :style="sourcePopoverStyle">
               <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
                 rel="noopener noreferrer">
                 <img v-if="sourceCardImage(source)" class="source-image" :src="sourceCardImage(source)"
-                  :alt="sourceCardImageAlt(source)" @error="markSourceImageFailed(sourceCardImage(source))" />
+                  :alt="sourceCardImageAlt(source)" loading="lazy" decoding="async"
+                  @error="markSourceImageFailed(sourceCardImage(source))" />
                 <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
                 <span class="source-card-content">
                   <span class="source-site">
                     <img v-if="shouldShowFavicon(source)" :src="source.favicon"
-                      :alt="`${source.site || source.label} icon`" @error="markFaviconFailed(source)" />
+                      :alt="`${source.site || source.label} icon`" loading="lazy" decoding="async"
+                      @error="markFaviconFailed(source)" />
                     <span v-else class="source-site-favicon-fallback glyph" aria-hidden="true">🩸</span>
                     <span>{{ source.site || source.label }}</span>
                     <span v-if="sourceDisplayDate(source)" class="source-date">{{ sourceDisplayDate(source) }}</span>

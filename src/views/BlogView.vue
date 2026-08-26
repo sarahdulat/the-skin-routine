@@ -7,7 +7,12 @@
         <div class="posts">
           <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
             <router-link :to="'/blog/' + post.uid">
-              <img :src="post.data.image.url" :alt="post.data.image.alt" />
+              <ResponsiveImage
+                :src="post.data.image.url"
+                :alt="post.data.image.alt"
+                sizes="(max-width: 768px) calc(100vw - 2rem), 33vw"
+                loading="lazy"
+              />
               <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
@@ -44,6 +49,7 @@
 <script lang="ts">
 import PageSidebar from '../components/PageSidebar.vue';
 import FilterBar from '../components/FilterBar.vue';
+import ResponsiveImage from '../components/ResponsiveImage.vue';
 
 import { format } from "date-fns";
 import type { LocationQuery } from "vue-router";
@@ -54,7 +60,8 @@ export default {
   name: 'blog',
   components: {
     FilterBar,
-    PageSidebar
+    PageSidebar,
+    ResponsiveImage
   },
   data() {
     return {
@@ -160,7 +167,7 @@ main {
 }
 
 .post {
-  img {
+  :deep(img) {
     width: 100%;
     height: 300px;
     object-fit: contain;

@@ -41,6 +41,7 @@ import * as d3 from 'd3';
 import Popover from './Popover.vue';
 import { store, Routine } from '../store';
 import { routineSlug } from '../routines';
+import { routineMarkerImages } from '../generated/routine-marker-images';
 
 type RoutinePoint = {
   x: number;
@@ -175,10 +176,15 @@ export default defineComponent({
 
         return null;
       };
-      const getMarkerImage = (routine: RoutineWithMarkerImage) => {
+      const getOriginalMarkerImage = (routine: RoutineWithMarkerImage) => {
         const sourceImage = routine.sources?.map((source) => source.image).filter(isImageString)[0];
 
         return routine.celebrity_face_image || sourceImage;
+      };
+      const getMarkerImage = (routine: RoutineWithMarkerImage) => {
+        const markerImage = getOriginalMarkerImage(routine);
+
+        return markerImage ? routineMarkerImages[markerImage] ?? markerImage : undefined;
       };
       const getImageAttribution = (routine: RoutineWithMarkerImage, markerImage: string | undefined) => {
         if (!markerImage) return undefined;
@@ -197,6 +203,7 @@ export default defineComponent({
       const data: RoutinePoint[] = props.routines.map((routine) => {
         const routineWithMarkerImage = routine as RoutineWithMarkerImage;
         const cost = 'cost' in routine ? routine.cost : (routine as Routine & { money?: number }).money;
+        const originalMarkerImage = getOriginalMarkerImage(routineWithMarkerImage);
         const markerImage = getMarkerImage(routineWithMarkerImage);
 
         return {
@@ -205,7 +212,7 @@ export default defineComponent({
           routine_name: routine.routine_name,
           point_description: routine.point_description,
           marker_image: markerImage,
-          image_attribution: getImageAttribution(routineWithMarkerImage, markerImage),
+          image_attribution: getImageAttribution(routineWithMarkerImage, originalMarkerImage),
           flag: getRoutineFlag(routine),
           routine,
         };

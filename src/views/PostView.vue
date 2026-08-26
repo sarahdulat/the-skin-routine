@@ -6,7 +6,14 @@
       <div ref="postScrollContainer" class="scroll-container">
         <div v-if="post">
           <div class="cover-media">
-            <img :src="post.data.image.url" class="cover-img" :alt="post.data.image.alt">
+            <ResponsiveImage
+              :src="post.data.image.url"
+              :alt="post.data.image.alt"
+              img-class="cover-img"
+              sizes="(max-width: 768px) 100vw, 75vw"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
           <section>
             <div class="px-xl">
@@ -81,6 +88,7 @@
 import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
 import SEO from "../components/SEO.vue";
+import ResponsiveImage from "../components/ResponsiveImage.vue";
 
 import { format } from "date-fns";
 import { Post } from "../types";
@@ -93,7 +101,8 @@ export default {
   components: {
     ReviewBar,
     PageSidebar,
-    SEO
+    SEO,
+    ResponsiveImage
   },
   data() {
     return {
@@ -282,7 +291,8 @@ section {
   padding: var(--space-lg);
 }
 
-.cover-img {
+.cover-img,
+.cover-media :deep(.cover-img) {
   display: block;
   width: auto;
   max-width: min(100%, 960px);
@@ -412,7 +422,8 @@ section {
     padding: var(--space-lg);
   }
 
-  .cover-img {
+  .cover-img,
+  .cover-media :deep(.cover-img) {
     max-height: 70vh;
   }
 
