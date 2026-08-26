@@ -10,21 +10,33 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    meta: {
+      title: "The Skin Routine",
+    },
   },
   {
     path: "/routine/:routineSlug",
     name: "routine",
     component: HomeView,
+    meta: {
+      title: "The Skin Routine",
+    },
   },
   {
     path: "/about",
     name: "about",
     component: AboutView,
+    meta: {
+      title: "About | The Skin Routine",
+    },
   },
   {
     path: "/blog/",
     name: "blog",
     component: BlogView,
+    meta: {
+      title: "Reviews | The Skin Routine",
+    },
   },
   {
     path: "/blog/:slug",
@@ -40,12 +52,21 @@ const routes = [
     path: "/faq",
     name: "faq",
     component: FAQView,
+    meta: {
+      title: "FAQ | The Skin Routine",
+    },
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.afterEach((to) => {
+  if (to.name === "blog-post") return;
+
+  document.title = typeof to.meta.title === "string" ? to.meta.title : "The Skin Routine";
 });
 
 export default router;
