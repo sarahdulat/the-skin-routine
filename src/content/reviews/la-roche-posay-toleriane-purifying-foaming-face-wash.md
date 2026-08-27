@@ -2,6 +2,8 @@
 uid: "la-roche-posay-toleriane-purifying-foaming-face-wash"
 title: "La Roche Posay Toleriane Purifying Foaming Face Wash"
 summary: "If you need a great gentle cleanser this is the one!"
+seo_title: "La Roche-Posay Toleriane Purifying Face Wash Review"
+seo_description: "A first-hand review of La Roche-Posay Toleriane Purifying Foaming Face Wash, including cleansing power, skin feel, ingredients, and suitable skin types."
 date: "2024-10-22"
 first_publication_date: "2024-10-22T19:54:56+0000"
 last_publication_date: "2024-12-28T19:05:01+0000"

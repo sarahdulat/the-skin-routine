@@ -5,10 +5,10 @@
       <span class="toolbar-placeholder placeholder-right ms-auto"></span>
     </template>
     <template v-else>
-      <router-link v-if="prevPostTitle" :to="'/blog/' + prevPost!.uid"> <span class="glyph">⬅ </span>{{
+      <router-link v-if="prevPostTitle" :to="'/blog/' + prevPost!.uid + '/'"> <span class="glyph">⬅ </span>{{
         prevPostTitle }}
       </router-link>
-      <router-link v-if="nextPostTitle" :to="'/blog/' + nextPost!.uid" class="ms-auto">{{
+      <router-link v-if="nextPostTitle" :to="'/blog/' + nextPost!.uid + '/'" class="ms-auto">{{
         nextPostTitle
         }}
         <span class="glyph">⮕ </span></router-link>

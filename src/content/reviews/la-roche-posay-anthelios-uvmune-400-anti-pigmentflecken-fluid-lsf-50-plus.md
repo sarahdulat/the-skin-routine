@@ -2,6 +2,8 @@
 uid: "la-roche-posay-anthelios-uvmune-400-anti-dark-spots-fluid-50"
 title: "La Roche-Posay Anthelios UVMune 400 Anti-Dark Spots Fluid SPF50+"
 summary: "Everything to know about La Roche-Posay Anthelios UVMune 400 Anti-Dark Spots Fluid before importing it to the US."
+seo_title: "La Roche-Posay UVMune 400 Anti-Dark Spots SPF50+ Review"
+seo_description: "A first-hand UVMune 400 Anti-Dark Spots SPF50+ review covering protection, texture, alcohol scent, skin feel, US availability, and close alternatives."
 date: "2026-07-27"
 first_publication_date: "2026-07-27T12:00:00+0200"
 last_publication_date: "2026-07-27T12:00:00+0200"

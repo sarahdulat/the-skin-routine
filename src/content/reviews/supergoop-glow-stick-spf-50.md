@@ -2,6 +2,8 @@
 uid: "supergoop-glow-stick-spf-50"
 title: "Supergoop! Glow Stick SPF 50"
 summary: "Best portable SPF"
+seo_title: "Supergoop! Glow Stick SPF 50 Review"
+seo_description: "A first-hand Supergoop! Glow Stick SPF 50 review covering portable sunscreen application, finish, reapplication, skin feel, and who may enjoy the format."
 date: "2024-11-13"
 first_publication_date: "2024-11-13T12:24:12+0000"
 last_publication_date: "2024-12-28T19:05:16+0000"

@@ -1,9 +1,12 @@
 import type { Post } from "./types";
+import { externalLinkRel } from "./affiliate-links";
 
 type ReviewFrontmatter = {
   uid: string;
   title: string;
   summary: string;
+  seo_title?: string;
+  seo_description?: string;
   date: string;
   first_publication_date: string;
   last_publication_date: string;
@@ -143,7 +146,9 @@ function markdownToBody(markdown: string): Post["data"]["body"] {
 
 function renderInlineMarkdown(text: string) {
   return escapeHtml(text)
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_match, label, href) => (
+      `<a href="${href}" target="_blank" rel="${externalLinkRel(href)}">${label}</a>`
+    ))
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\*([^*]+)\*/g, "<em>$1</em>");
 }
@@ -198,6 +203,8 @@ function toPost(frontmatter: ReviewFrontmatter, markdown: string): Post {
           direction: "ltr",
         },
       ],
+      seo_title: frontmatter.seo_title || undefined,
+      seo_description: frontmatter.seo_description || undefined,
       title: [
         {
           type: "heading1",

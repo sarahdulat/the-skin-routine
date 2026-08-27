@@ -20,6 +20,8 @@ Each file uses frontmatter for the review metadata and Markdown for the body:
 uid: "example-review"
 title: "Example Review"
 summary: "Short description shown on the blog archive."
+seo_title: "Example Product Review"
+seo_description: "A search-focused description of what the review covers without revealing the verdict."
 date: "2024-01-01"
 first_publication_date: "2024-01-01T00:00:00+0000"
 last_publication_date: "2024-01-01T00:00:00+0000"

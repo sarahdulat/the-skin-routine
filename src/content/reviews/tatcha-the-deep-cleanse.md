@@ -2,6 +2,8 @@
 uid: "tatcha-the-deep-cleanse"
 title: "Tatcha The Deep Cleanse"
 summary: "My experience with the luxurious exfoliating cleanser that promises a deeper clean, smoother texture, and a surprisingly comfortable finish."
+seo_title: "Tatcha The Deep Cleanse Review"
+seo_description: "A long-term Tatcha The Deep Cleanse review covering its light foam, scent, luffa exfoliation, post-cleanse feel, value, routine placement, and alternatives."
 date: "2026-08-04"
 first_publication_date: "2026-08-04T12:00:00+0200"
 last_publication_date: "2026-08-04T12:00:00+0200"

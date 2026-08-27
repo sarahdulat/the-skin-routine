@@ -62,12 +62,12 @@
             @click="toggleStep(stepKey(index))">🖙</button>
         </h4>
         <div class="pt-md">
-          <a :href="step.link" target="_blank" rel="noopener noreferrer">{{ step.product }}</a>
+          <a :href="step.link" target="_blank" :rel="externalLinkRel(step.link)">{{ step.product }}</a>
           <!-- <button class="px-sm ms-md">Buy</button> -->
         </div>
         <div v-show="isStepExpanded(stepKey(index))" class="mt-sm" :id="`step-description-${stepKey(index)}`"
           @click="handleDescriptionClick">
-          <div v-html="step.description"></div>
+          <div v-html="qualifyAffiliateLinksInHtml(step.description)"></div>
         </div>
       </div>
     </div>
@@ -79,6 +79,7 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { store, type Routine } from '../store'
+import { externalLinkRel, qualifyAffiliateLinksInHtml } from '../affiliate-links';
 
 type RoutineSource = {
   label: string;

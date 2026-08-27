@@ -2,6 +2,8 @@
 uid: "ilia-bright-start-retinol-alternative-eye-cream"
 title: "ILIA Bright Start Retinol Alternative Eye Cream"
 summary: "A peach-toned morning eye cream promises instant illumination and retinol-like smoothing without using a retinoid—here is what I learned from a sample."
+seo_title: "ILIA Bright Start Retinol Alternative Eye Cream Review"
+seo_description: "A sample-based ILIA Bright Start Eye Cream review covering its peachy brightening finish, retinol alternative, daytime use, texture, and alternatives."
 date: "2026-08-26"
 first_publication_date: "2026-08-26T12:00:00+0200"
 last_publication_date: "2026-08-26T12:00:00+0200"

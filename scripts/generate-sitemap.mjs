@@ -4,14 +4,14 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
-const siteUrl = (process.env.SITE_URL ?? "https://www.theskinroutine.com").replace(/\/$/, "");
+const siteUrl = (process.env.SITE_URL ?? "https://theskinroutine.com").replace(/\/$/, "");
 const today = new Date().toISOString().slice(0, 10);
 
 const staticUrls = [
   { path: "/", lastmod: today, changefreq: "weekly", priority: "1.0" },
-  { path: "/about", lastmod: today, changefreq: "monthly", priority: "0.6" },
+  { path: "/about/", lastmod: today, changefreq: "monthly", priority: "0.6" },
   { path: "/blog/", lastmod: today, changefreq: "weekly", priority: "0.8" },
-  { path: "/faq", lastmod: today, changefreq: "monthly", priority: "0.5" },
+  { path: "/faq/", lastmod: today, changefreq: "monthly", priority: "0.5" },
 ];
 
 function escapeXml(value) {
@@ -97,7 +97,7 @@ async function getReviewUrls() {
       const lastmod = String(frontmatter.last_publication_date ?? frontmatter.date ?? today).slice(0, 10);
 
       return {
-        path: `/blog/${uid}`,
+        path: `/blog/${uid}/`,
         lastmod,
         changefreq: "monthly",
         priority: "0.7",
@@ -115,7 +115,7 @@ async function getRoutineUrls() {
   return routines
     .filter((routine) => !routine.draft)
     .map((routine) => ({
-      path: `/routine/${routineSlug(routine)}`,
+      path: `/routine/${routineSlug(routine)}/`,
       lastmod: today,
       changefreq: "monthly",
       priority: "0.6",

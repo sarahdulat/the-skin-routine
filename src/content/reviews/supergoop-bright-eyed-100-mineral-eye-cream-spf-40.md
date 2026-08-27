@@ -2,6 +2,8 @@
 uid: "supergoop-bright-eyed-100-mineral-eye-cream-spf-40"
 title: "Supergoop! Bright-Eyed 100% Mineral Eye Cream SPF 40"
 summary: "A closer look at the tinted mineral eye cream that combines daily SPF, caffeine, and a little strategic brightening in one tiny bottle."
+seo_title: "Supergoop! Bright-Eyed Mineral Eye Cream SPF 40 Review"
+seo_description: "A long-term Supergoop! Bright-Eyed review covering mineral SPF 40, eye-area comfort, tint, caffeine, brightening, skin-tone range, and alternatives."
 date: "2026-07-30"
 first_publication_date: "2026-07-30T12:00:00+0200"
 last_publication_date: "2026-07-30T12:00:00+0200"

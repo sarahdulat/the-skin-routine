@@ -2,6 +2,8 @@
 uid: "acm-azeane-cream-15-azelaic-acid"
 title: "ACM Azéane Cream 15% Azelaic Acid"
 summary: "Check out this affordable French-pharmacy cream bringing a higher-strength azelaic acid formula to dark spots, dullness, texture, and redness."
+seo_title: "ACM Azéane Cream 15% Azelaic Acid Review"
+seo_description: "A first-hand ACM Azéane Cream 15% review covering texture, morning layering, pregnancy-safe appeal, dark spots, and azelaic acid alternatives."
 date: "2026-08-05"
 first_publication_date: "2026-08-05T12:00:00+0200"
 last_publication_date: "2026-08-05T12:00:00+0200"

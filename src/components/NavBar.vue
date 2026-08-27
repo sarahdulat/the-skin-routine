@@ -13,10 +13,10 @@
       <div id="primary-navigation" class="nav-links" :class="{ open: isMenuOpen }">
         <SiteSearch />
         <h5>
-          <router-link to="/about" @click="closeMenu">About</router-link>
+          <router-link to="/about/" @click="closeMenu">About</router-link>
         </h5>
         <h5>
-          <router-link to="/blog" @click="closeMenu">Reviews</router-link>
+          <router-link to="/blog/" @click="closeMenu">Reviews</router-link>
         </h5>
       </div>
     </div>

@@ -2,6 +2,8 @@
 uid: "my-skincare-routine-has-changed"
 title: "My Skincare Routine Has Changed. My Obsession Has Not."
 summary: "How pregnancy, motherhood, moving to Europe, and better products changed the routine I started in 2018—and why the most important parts have stayed exactly the same."
+seo_title: "How My Skincare Routine Changed After Pregnancy and Moving Abroad"
+seo_description: "How pregnancy, motherhood, moving from the US to Europe, and more sophisticated formulas changed my skincare routine while a few staples remained."
 date: "2026-07-24"
 first_publication_date: "2026-07-24T12:00:00+0200"
 last_publication_date: "2026-07-24T12:00:00+0200"

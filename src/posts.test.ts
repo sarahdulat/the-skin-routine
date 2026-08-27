@@ -24,8 +24,23 @@ describe("post helpers", () => {
   });
 
   it("finds a post by uid and returns null for a missing post", () => {
-    expect(getPostByUID("laneige-lip-sleeping-mask")?.data.title[0]?.text).toBe("LANEIGE Lip Sleeping Mask");
+    const laneigePost = getPostByUID("laneige-lip-sleeping-mask");
+
+    expect(laneigePost?.data.title[0]?.text).toBe("LANEIGE Lip Sleeping Mask");
+    expect(laneigePost?.data.seo_title).toBe("LANEIGE Lip Sleeping Mask Review");
+    expect(laneigePost?.data.seo_description).toContain("overnight hydration");
     expect(getPostByUID("not-a-real-post")).toBeNull();
+  });
+
+  it("provides unique SEO titles and descriptions for every published review", () => {
+    const posts = getAllPosts();
+    const seoTitles = posts.map((post) => post.data.seo_title);
+    const seoDescriptions = posts.map((post) => post.data.seo_description);
+
+    expect(seoTitles.every(Boolean)).toBe(true);
+    expect(seoDescriptions.every(Boolean)).toBe(true);
+    expect(new Set(seoTitles).size).toBe(posts.length);
+    expect(new Set(seoDescriptions).size).toBe(posts.length);
   });
 
   it("filters posts by brand, product type, tag, and pregnancy-safe status", () => {

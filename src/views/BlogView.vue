@@ -6,7 +6,7 @@
       <div v-if="!isLoading" class="scroll-container">
         <div class="posts">
           <div class="post" v-for="(post, index) in posts" :key="post.uid + '_' + index">
-            <router-link :to="'/blog/' + post.uid">
+            <router-link :to="'/blog/' + post.uid + '/'">
               <ResponsiveImage
                 :src="post.data.image.url"
                 :alt="post.data.image.alt"

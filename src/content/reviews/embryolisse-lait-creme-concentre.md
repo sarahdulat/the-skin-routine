@@ -2,6 +2,8 @@
 uid: "embryolisse-lait-creme-concentre"
 title: "Embryolisse Lait-Crème Concentré"
 summary: "One French pharmacy tube promises to moisturize, prime, cleanse, mask, and soothe—here is how its six jobs translate to a real routine."
+seo_title: "Embryolisse Lait-Crème Concentré Review"
+seo_description: "A first-hand review of Embryolisse Lait-Crème Concentré as moisturizer and makeup base, including its texture, fragrance, six uses, and alternatives."
 date: "2026-08-23"
 first_publication_date: "2026-08-23T12:00:00+0200"
 last_publication_date: "2026-08-23T12:00:00+0200"

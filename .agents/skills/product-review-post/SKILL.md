@@ -30,6 +30,7 @@ Browse whenever a product URL, price, availability, formula, review score, or cu
 - Write 500–800 body words unless the user requests another length.
 - Prefix the title with the brand: `<Brand> <Product Name>`. Never omit or duplicate the brand.
 - Write a curiosity-driven summary that describes the review's scope without revealing Sarah's verdict.
+- Add a concise `seo_title` containing the recognizable brand and product name plus “review” where natural. Add a unique `seo_description` that describes the testing experience and decision-making details covered without revealing the verdict. Do not append the site name; the application does that automatically.
 - Use first person, precise skincare language, occasional dry humor, and transparent limitations. Do not imitate generic beauty marketing.
 - Distinguish brand claims, reviewer reports, and Sarah's experience.
 - Avoid diagnosing reactions or overstating ingredient efficacy. Recommend stopping and seeking professional advice for persistent or serious irritation.
@@ -80,7 +81,7 @@ Create a watercolor-and-ink product cover for every review unless the user expli
 After establishing the review's final `uid` and verdict, inspect every AM and PM step in `src/assets/routines.json` for the reviewed product. Check both the `product` field and linked or plain-text mentions inside `description`. Account for harmless naming, punctuation, and capitalization differences, but do not match a different product merely because it shares the same brand or product line.
 
 - Append the link as its own final HTML paragraph in every matching step; preserve the existing description.
-- Use the production-safe relative URL `/blog/<uid>`, never a hard-coded localhost or production domain.
+- Use the production-safe relative URL `/blog/<uid>/`, never a hard-coded localhost or production domain.
 - Tailor the sentence to Sarah's verdict and vary the phrasing naturally. Options include “glowing review” or “rave review” for an enthusiastic favorite, “why this product won me over” for a positive discovery, “honest review” or simply “full review” for a nuanced or neutral experience, and “critical review,” “candid review,” or “not-so-glowing review” for a disappointment. These are examples, not fixed templates; choose wording that accurately represents the post without becoming clickbait.
 - Keep the chosen phrasing consistent for that product everywhere it appears unless a surrounding sentence makes a small variation read more naturally.
 - Do not duplicate a correct existing link. Repair stale or misspelled review slugs and standardize an existing inline review link as the final paragraph.
@@ -90,11 +91,11 @@ After establishing the review's final `uid` and verdict, inspect every AM and PM
 ## Validate
 
 1. Confirm body word count is within the requested range.
-2. Confirm the title begins with the brand and `tags` includes `review`.
+2. Confirm the title begins with the brand, `tags` includes `review`, and both `seo_title` and `seo_description` are present, unique, search-focused, and verdict-neutral.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
 4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link.
 5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the cover background is `#FBFAF4` with a uniformly clean `#FBFAF4` outer pixel perimeter, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
-6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>` and that unrelated products were not linked.
+6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>/` and that unrelated products were not linked.
 7. Run `npm run build` from the repository root.
 8. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
 

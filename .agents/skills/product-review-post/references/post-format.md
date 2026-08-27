@@ -9,6 +9,8 @@ Use this template:
 uid: "<lowercase-hyphenated-slug>"
 title: "<Brand> <Product Name>"
 summary: "<Neutral, curiosity-driven summary without the verdict>"
+seo_title: "<Concise, search-focused product review title>"
+seo_description: "<Unique search description explaining what the review covers without revealing the verdict>"
 date: "<YYYY-MM-DD>"
 first_publication_date: "<YYYY-MM-DDTHH:MM:SS+ZZZZ>"
 last_publication_date: "<YYYY-MM-DDTHH:MM:SS+ZZZZ>"
@@ -28,6 +30,8 @@ image_alt: "Watercolor and ink illustration of <Brand> <Product Name>"
 - `uid`: stable, descriptive, and lowercase with hyphens.
 - `title`: always begin with the brand name.
 - `summary`: invite the reader into the review without revealing the verdict.
+- `seo_title` (optional parser field, required by this review workflow): write a concise search title that includes the brand, recognizable product name, and “review” where natural. Do not include `| The Skin Routine`; the site adds that suffix automatically. When absent, the application falls back to `title`.
+- `seo_description` (optional parser field, required by this review workflow): summarize the review's useful scope in natural language, including relevant details such as texture, finish, testing experience, skin type, or alternatives. Keep it distinct from the editorial summary and do not reveal Sarah's verdict. When absent, the application falls back to `summary`.
 - `tags`: always include `review`; add product category, concern, and normalized brand tag.
 - `brands`: use official capitalization.
 - `product_types`: match existing project values, such as `SPF`, `Cleanser`, `Moisturizer`, or `Serum`.

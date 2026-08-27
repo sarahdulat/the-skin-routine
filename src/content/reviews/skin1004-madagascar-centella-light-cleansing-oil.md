@@ -2,6 +2,8 @@
 uid: "skin1004-madagascar-centella-light-cleansing-oil"
 title: "SKIN1004 Madagascar Centella Light Cleansing Oil"
 summary: "Everything you should know about the lightweight Korean cleansing oil designed to dissolve sunscreen and makeup, emulsify cleanly, and kick off the double cleanse on a botanical note."
+seo_title: "SKIN1004 Centella Light Cleansing Oil Review"
+seo_description: "A first-hand SKIN1004 cleansing oil review covering its lightweight texture, emulsification, scent, eye-makeup removal, Centella, and unscented alternatives."
 date: "2026-08-09"
 first_publication_date: "2026-08-09T12:00:00+0200"
 last_publication_date: "2026-08-09T12:00:00+0200"

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
-const siteUrl = (process.env.SITE_URL ?? "https://www.theskinroutine.com").replace(/\/$/, "");
+const siteUrl = (process.env.SITE_URL ?? "https://theskinroutine.com").replace(/\/$/, "");
 
 function escapeXml(value) {
   return String(value)
@@ -86,7 +86,7 @@ async function getReviewItems() {
       if (frontmatter.draft) return null;
 
       const uid = frontmatter.uid ?? file.replace(/\.md$/, "");
-      const link = `${siteUrl}/blog/${uid}`;
+      const link = `${siteUrl}/blog/${uid}/`;
       const pubDate = frontmatter.first_publication_date ?? frontmatter.date ?? new Date().toISOString();
       const updatedDate = frontmatter.last_publication_date ?? pubDate;
 
@@ -134,7 +134,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Skin Routine Reviews</title>
-    <link>${escapeXml(siteUrl)}</link>
+    <link>${escapeXml(`${siteUrl}/`)}</link>
     <atom:link href="${escapeXml(`${siteUrl}/rss.xml`)}" rel="self" type="application/rss+xml" />
     <description>Latest skincare product reviews from The Skin Routine.</description>
     <language>en-us</language>

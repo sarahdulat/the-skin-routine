@@ -92,7 +92,7 @@
       <p>
         I built it to share what I’ve learned, continue learning in public, and hopefully make skincare a little easier
         to understand. You can read more about how my own routine has evolved in
-        <router-link to="/blog/my-skincare-routine-has-changed">my skincare journey</router-link>.
+        <router-link to="/blog/my-skincare-routine-has-changed/">my skincare journey</router-link>.
       </p>
 
       <p>

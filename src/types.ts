@@ -38,6 +38,8 @@ export type Post = {
       product_type: string
     }>
     pregnancy_safe: boolean
+    seo_title?: string
+    seo_description?: string
     products: Array<{
       product: {
         brand: string

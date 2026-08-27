@@ -2,6 +2,8 @@
 uid: "the-ordinary-natural-moisturizing-factors-ha"
 title: "The Ordinary Natural Moisturizing Factors + HA"
 summary: "Best bang for your buck moisturizer."
+seo_title: "The Ordinary Natural Moisturizing Factors + HA Review"
+seo_description: "A first-hand review of The Ordinary Natural Moisturizing Factors + HA, including hydration, texture, value, routine placement, and suitable skin types."
 date: "2024-11-03"
 first_publication_date: "2024-11-03T11:56:05+0000"
 last_publication_date: "2024-12-28T19:04:34+0000"

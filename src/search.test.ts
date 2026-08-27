@@ -10,7 +10,7 @@ describe("site search", () => {
     const results = searchSite("laneige lip mask");
 
     expect(results.posts[0]?.id).toBe("laneige-lip-sleeping-mask");
-    expect(results.posts[0]?.path).toBe("/blog/laneige-lip-sleeping-mask");
+    expect(results.posts[0]?.path).toBe("/blog/laneige-lip-sleeping-mask/");
   });
 
   it("finds routines by routine title and step text", () => {

@@ -1,7 +1,8 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-// import { store } from "./store/index";
 import "./sass/main.scss";
+import { createSkinRoutineApp } from "./create-app";
 
-createApp(App).use(router).mount("#app");
+const { app, router } = createSkinRoutineApp();
+
+router.isReady().then(() => {
+  app.mount("#app");
+});

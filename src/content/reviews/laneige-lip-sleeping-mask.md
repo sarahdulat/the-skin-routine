@@ -2,6 +2,8 @@
 uid: "laneige-lip-sleeping-mask"
 title: "LANEIGE Lip Sleeping Mask"
 summary: "My experience with the berry-scented overnight treatment that turned a simple bedside lip mask into a K-beauty cult classic."
+seo_title: "LANEIGE Lip Sleeping Mask Review"
+seo_description: "A long-term LANEIGE Lip Sleeping Mask review covering overnight hydration, Berry and other flavors, texture, jar longevity, ingredients, and alternatives."
 date: "2026-08-11"
 first_publication_date: "2026-08-11T12:00:00+0200"
 last_publication_date: "2026-08-11T12:00:00+0200"

@@ -29,7 +29,7 @@
               <div v-if="post.data.products.length > 0" class="featured-products mt-xl">
                 <p>Featured Products</p>
                 <span v-for="product in post.data.products" :key="product.product.id">
-                  <a :href="product.product.link" target="_blank" rel="noopener noreferrer">
+                  <a :href="product.product.link" target="_blank" :rel="externalLinkRel(product.product.link)">
                     <span class="glyph me-md">🩸</span>{{ product.product.brand }} {{ product.product.name }}
                   </a>
                   <!-- <a :href="product.product.link" target="_blank" rel="noopener noreferrer" class="button-link px-sm ms-lg">Buy</a> -->
@@ -51,7 +51,7 @@
                 extra cost to you.
               </p>
               <component v-for="(paragraph, index) in post.data.body" :key="paragraph.text"
-                :is="bodyTag(paragraph.type)" :class="bodyClass(paragraph.type, index)" v-html="paragraph.text">
+                :is="bodyTag(paragraph.type)" :class="bodyClass(paragraph.type, index)" :innerHTML="paragraph.text">
               </component>
             </div>
           </section>
@@ -95,6 +95,7 @@ import { Post } from "../types";
 import { getAdjacentPosts, getPostByUID } from "../posts";
 import routines from "../assets/routines.json";
 import { findRoutineProductMentions, routineSlug, type RoutineProductMention } from "../routines";
+import { externalLinkRel } from "../affiliate-links";
 
 export default {
   name: 'blog-post',
@@ -127,6 +128,7 @@ export default {
     },
   },
   methods: {
+    externalLinkRel,
     routineSlug,
     async getContent(slug: string) {
       if (!slug) return;

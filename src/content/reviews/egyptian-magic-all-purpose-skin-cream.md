@@ -2,6 +2,8 @@
 uid: "egyptian-magic-all-purpose-skin-cream"
 title: "Egyptian Magic All-Purpose Skin Cream"
 summary: "A five-ingredient balm, a decades-old origin story, and one very shiny bedtime ritual—here is where Egyptian Magic fits into a modern routine."
+seo_title: "Egyptian Magic All-Purpose Skin Cream Review"
+seo_description: "A first-hand Egyptian Magic review covering its five-ingredient formula, slugging performance, texture, skin types, and petroleum-free alternatives."
 date: "2026-08-24"
 first_publication_date: "2026-08-24T12:00:00+0200"
 last_publication_date: "2026-08-24T12:00:00+0200"

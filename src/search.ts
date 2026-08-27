@@ -78,7 +78,7 @@ const buildSearchIndex = () => {
       id: post.uid,
       title,
       description,
-      path: `/blog/${post.uid}`,
+      path: `/blog/${post.uid}/`,
       publicationDate: post.first_publication_date,
       searchText,
     };

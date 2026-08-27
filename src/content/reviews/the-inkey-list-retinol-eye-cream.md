@@ -2,6 +2,8 @@
 uid: "the-inkey-list-retinol-eye-cream"
 title: "The INKEY List Retinol Eye Cream"
 summary: "An honest review of the $15 slow-release retinol treatment that promises targeted fine-line care without the usual luxury eye-cream price."
+seo_title: "The INKEY List Retinol Eye Cream Review"
+seo_description: "A first-hand INKEY List Retinol Eye Cream review covering its separated texture, hydration, irritation, nighttime layering, price, and better alternatives."
 date: "2026-08-17"
 first_publication_date: "2026-08-17T12:00:00+0200"
 last_publication_date: "2026-08-17T12:00:00+0200"

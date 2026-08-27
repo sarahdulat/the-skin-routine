@@ -3,7 +3,7 @@
     <div class="tree-node" @click="toggleExpand">
       <span v-if="node.children"><span :class="{ expanded: isExpanded }" class="glyph hand me-md">🖙</span>{{ node.name
         }}</span>
-      <router-link v-else :to="'/blog/' + node.uid"><span class="glyph me-md">🩸</span>{{ node.name }}</router-link>
+      <router-link v-else :to="'/blog/' + node.uid + '/'"><span class="glyph me-md">🩸</span>{{ node.name }}</router-link>
     </div>
 
     <!-- Recursively display child nodes -->

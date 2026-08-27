@@ -4,7 +4,7 @@
 import { defineComponent, PropType, watchEffect } from "vue";
 import { Post } from "../types";
 
-const defaultSiteUrl = "https://www.theskinroutine.com";
+const defaultSiteUrl = "https://theskinroutine.com";
 const defaultTitle = "The Skin Routine";
 const defaultDescription = "Skincare routines and product reviews.";
 
@@ -15,6 +15,10 @@ function getSiteUrl() {
 function absoluteUrl(value: string) {
   if (/^https?:\/\//.test(value)) return value;
   return `${getSiteUrl()}${value.startsWith("/") ? "" : "/"}${value}`;
+}
+
+function canonicalPath(path: string) {
+  return path === "/" ? path : `${path.replace(/\/$/, "")}/`;
 }
 
 function ensureMeta(attribute: "name" | "property", key: string) {
@@ -90,13 +94,16 @@ export default defineComponent({
   },
   setup(props) {
     watchEffect(() => {
+      if (typeof document === "undefined") return;
+
       const post = props.post;
-      const title = post?.data.title?.[0]?.text ?? defaultTitle;
-      const description = post?.data.summary?.[0]?.text ?? defaultDescription;
+      const displayTitle = post?.data.title?.[0]?.text ?? defaultTitle;
+      const title = post?.data.seo_title || displayTitle;
+      const description = post?.data.seo_description || post?.data.summary?.[0]?.text || defaultDescription;
       const path = post ? `/blog/${post.uid}` : "/";
-      const canonicalUrl = absoluteUrl(path);
+      const canonicalUrl = absoluteUrl(canonicalPath(path));
       const imageUrl = post?.data.image.url ? absoluteUrl(post.data.image.url) : null;
-      const imageAlt = post?.data.image.alt ?? title;
+      const imageAlt = post?.data.image.alt ?? displayTitle;
 
       document.title = post ? `${title} | The Skin Routine` : title;
 
@@ -124,7 +131,7 @@ export default defineComponent({
         setJsonLd({
           "@context": "https://schema.org",
           "@type": "Review",
-          headline: title,
+          headline: displayTitle,
           description,
           url: canonicalUrl,
           datePublished: post.first_publication_date,

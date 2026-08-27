@@ -46,21 +46,6 @@ jobs:
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
 
-      - name: Generate static route entry files
-        run: |
-          node --input-type=module -e '
-            import { readFile, mkdir, writeFile } from "node:fs/promises";
-            const html = await readFile("dist/index.html");
-            const sitemap = await readFile("dist/sitemap.xml", "utf8");
-            for (const match of sitemap.matchAll(/<loc>https?:\/\/[^/]+(\/[^<]*)<\/loc>/g)) {
-              const route = match[1].replace(/\/$/, "");
-              if (!route) continue;
-              const directory = "dist" + route;
-              await mkdir(directory, { recursive: true });
-              await writeFile(directory + "/index.html", html);
-            }
-          '
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 

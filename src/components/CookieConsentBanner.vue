@@ -33,9 +33,11 @@ export default defineComponent({
     };
   },
   created() {
+    if (typeof window === "undefined") return;
     window.addEventListener("open-cookie-settings", this.openSettings);
   },
   beforeUnmount() {
+    if (typeof window === "undefined") return;
     window.removeEventListener("open-cookie-settings", this.openSettings);
   },
   methods: {

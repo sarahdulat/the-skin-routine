@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createMemoryHistory, createRouter, createWebHistory, type RouterHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import BlogView from "../views/BlogView.vue";
@@ -15,7 +15,7 @@ const routes = [
     },
   },
   {
-    path: "/routine/:routineSlug",
+    path: "/routine/:routineSlug/",
     name: "routine",
     component: HomeView,
     meta: {
@@ -23,7 +23,7 @@ const routes = [
     },
   },
   {
-    path: "/about",
+    path: "/about/",
     name: "about",
     component: AboutView,
     meta: {
@@ -39,7 +39,7 @@ const routes = [
     },
   },
   {
-    path: "/blog/:slug",
+    path: "/blog/:slug/",
     name: "blog-post",
     component: PostView,
   },
@@ -49,7 +49,7 @@ const routes = [
     redirect: "/",
   },
   {
-    path: "/faq",
+    path: "/faq/",
     name: "faq",
     component: FAQView,
     meta: {
@@ -58,15 +58,21 @@ const routes = [
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+export function createAppRouter(history: RouterHistory = createWebHistory()) {
+  const router = createRouter({
+    history,
+    routes,
+  });
 
-router.afterEach((to) => {
-  if (to.name === "blog-post") return;
+  router.afterEach((to) => {
+    if (typeof document === "undefined" || to.name === "blog-post") return;
 
-  document.title = typeof to.meta.title === "string" ? to.meta.title : "The Skin Routine";
-});
+    document.title = typeof to.meta.title === "string" ? to.meta.title : "The Skin Routine";
+  });
 
-export default router;
+  return router;
+}
+
+export function createServerRouter() {
+  return createAppRouter(createMemoryHistory());
+}
