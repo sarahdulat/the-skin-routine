@@ -449,5 +449,9 @@ section {
   .faq-block {
     padding-inline: var(--space-lg);
   }
+
+  .faq-question::after {
+    content: none;
+  }
 }
 </style>

@@ -133,8 +133,8 @@ export default defineComponent({
   .filter-toggle {
     display: inline-grid;
     place-items: center;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 1px solid var(--color-dark);
     border-radius: var(--radius-sm);
     background: var(--color-light);
@@ -142,6 +142,7 @@ export default defineComponent({
     box-shadow: 1px 3px 0 var(--color-dark);
     cursor: pointer;
     font-size: var(--fontSize-md);
+    margin-left: auto;
   }
 
   .filter-controls {

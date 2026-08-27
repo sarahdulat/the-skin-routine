@@ -17,8 +17,8 @@
         </p>
       </div>
       <div v-else class="cluster-popover">
-        <button v-for="routinePoint in popoverContent.routines" :key="routinePoint.routine.id"
-          class="cluster-option" type="button" @click="selectPopoverRoutine(routinePoint)">
+        <button v-for="routinePoint in popoverContent.routines" :key="routinePoint.routine.id" class="cluster-option"
+          type="button" @click="selectPopoverRoutine(routinePoint)">
           <p class="small">{{ routinePoint.routine_name }}</p>
           <p class="small font-sans">{{ routinePoint.point_description }}</p>
           <p v-if="routinePoint.image_attribution" class="image-attribution font-sans">
@@ -63,6 +63,11 @@ type ClusterPoint = {
   routines: RoutinePoint[];
 };
 
+type PointPosition = {
+  x: number;
+  y: number;
+};
+
 type RoutineWithMarkerImage = Routine & {
   celebrity_face_image?: string;
   celebrity_image_credit?: string;
@@ -72,6 +77,37 @@ type RoutineWithMarkerImage = Routine & {
     image?: string;
   }>;
 };
+
+function pointDistance(pointA: PointPosition, pointB: PointPosition) {
+  return Math.hypot(pointA.x - pointB.x, pointA.y - pointB.y);
+}
+
+function groupNearbyPoints(
+  points: RoutinePoint[],
+  position: (point: RoutinePoint) => PointPosition,
+  nearbyDistance: number,
+) {
+  const groups: RoutinePoint[][] = [];
+
+  for (const point of points) {
+    const pointPixelPosition = position(point);
+    const matchingGroup = groups.find((group) => {
+      if (nearbyDistance <= 0) {
+        return group.some((groupPoint) => groupPoint.x === point.x && groupPoint.y === point.y);
+      }
+
+      return group.some((groupPoint) => pointDistance(pointPixelPosition, position(groupPoint)) <= nearbyDistance);
+    });
+
+    if (matchingGroup) {
+      matchingGroup.push(point);
+    } else {
+      groups.push([point]);
+    }
+  }
+
+  return groups;
+}
 
 export default defineComponent({
   name: 'SquareResponsiveQuadrantGridChart',
@@ -218,15 +254,22 @@ export default defineComponent({
         };
       });
 
-      const pointsByPosition = d3.group(data, (point) => `${point.x}:${point.y}`);
-      const clusters: ClusterPoint[] = Array.from(pointsByPosition.values())
+      // Create scales for the x and y axes
+      const xScale = d3.scaleLinear().domain([0, axisMax]).range([0, width]);
+      const yScale = d3.scaleLinear().domain([0, axisMax]).range([height, 0]);
+      const pointPosition = (point: RoutinePoint) => ({
+        x: margin.left + xScale(point.x),
+        y: margin.top + yScale(point.y),
+      });
+      const clusterGroups = groupNearbyPoints(data, pointPosition, containerWidth <= 768 ? 18 : 0);
+      const clusters: ClusterPoint[] = clusterGroups
         .filter((points) => points.length > 1)
         .map((points) => ({
-          x: points[0].x,
-          y: points[0].y,
+          x: d3.mean(points, (point) => point.x) ?? points[0].x,
+          y: d3.mean(points, (point) => point.y) ?? points[0].y,
           routines: points,
         }));
-      const singlePoints = Array.from(pointsByPosition.values())
+      const singlePoints = clusterGroups
         .filter((points) => points.length === 1)
         .map((points) => points[0]);
       const flagPoints = singlePoints.filter((point) => point.flag);
@@ -286,14 +329,6 @@ export default defineComponent({
         .attr('r', markerRadius)
         .attr('cx', markerRadius)
         .attr('cy', markerRadius);
-
-      // Create scales for the x and y axes
-      const xScale = d3.scaleLinear().domain([0, axisMax]).range([0, width]);
-      const yScale = d3.scaleLinear().domain([0, axisMax]).range([height, 0]);
-      const pointPosition = (point: RoutinePoint) => ({
-        x: margin.left + xScale(point.x),
-        y: margin.top + yScale(point.y),
-      });
 
       const costBands = [
         { label: "Minimal", min: 0, max: 3, opacity: 0 },
@@ -780,5 +815,4 @@ export default defineComponent({
   padding-top: 0;
   border-top: 0;
 }
-
 </style>
