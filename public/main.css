@@ -431,13 +431,13 @@ h2 {
   font-size: clamp(var(--fontSize-2xl), var(--fontSize-3xl), var(--fontSize-3xl));
 }
 
-h1 {
+/* h1 {
   font-size: var(--fontSize-4xl);
   line-height: var(--lineHeight-4xl);
   letter-spacing: var(--letterSpacing-4xl);
-}
+} */
 
-.h0 {
+h1 {
   font-size: var(--fontSize-5xl);
   line-height: var(--lineHeight-5xl);
   letter-spacing: var(--letterSpacing-5xl);

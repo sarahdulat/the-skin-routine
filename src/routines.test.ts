@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import routines from "./assets/routines.json";
-import { findRoutineBySlugOrId, findRoutineProductMentions, newestRoutine, routineSlug } from "./routines";
+import { findRoutineBySlugOrId, findRoutineProductMentions, newestRoutine, routineSlug, withoutRoutineSelection } from "./routines";
 
 describe("routine helpers", () => {
   it("creates readable routine slugs from routine names", () => {
@@ -34,6 +34,19 @@ describe("routine helpers", () => {
     }));
 
     expect(newestRoutine(draftOnlyRoutines)).toBeNull();
+  });
+
+  it("removes a stale routine selection while preserving active filters", () => {
+    expect(withoutRoutineSelection({
+      routine: "sarahs-routine",
+      "Age Range": "30s",
+      "Skin Concern": "Dry Skin",
+      PregnancySafe: "true",
+    })).toEqual({
+      "Age Range": "30s",
+      "Skin Concern": "Dry Skin",
+      PregnancySafe: "true",
+    });
   });
 
   it("finds routines where a featured product is mentioned", () => {

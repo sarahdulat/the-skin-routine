@@ -6,14 +6,8 @@
       <div ref="postScrollContainer" class="scroll-container">
         <div v-if="post">
           <div class="cover-media">
-            <ResponsiveImage
-              :src="post.data.image.url"
-              :alt="post.data.image.alt"
-              img-class="cover-img"
-              sizes="(max-width: 768px) 100vw, 75vw"
-              loading="eager"
-              fetchpriority="high"
-            />
+            <ResponsiveImage :src="post.data.image.url" :alt="post.data.image.alt" img-class="cover-img"
+              sizes="(max-width: 768px) 100vw, 75vw" loading="eager" fetchpriority="high" />
           </div>
           <section>
             <div class="px-xl">
@@ -44,7 +38,7 @@
               </div>
             </div>
             <div class="content">
-              <span class="h0 mt-xl">{{ post.data.title[0].text }}</span>
+              <h1 class="mt-xl">{{ post.data.title[0].text }}</h1>
               <h5>{{ post.data.summary[0].text }}</h5>
               <p class="affiliate-disclosure mt-md">
                 This post may contain affiliate links. If you buy through these links, we may earn a commission at no
@@ -433,7 +427,7 @@ section {
     padding: var(--space-lg);
   }
 
-  .content .h0 {
+  .content h1 {
     display: block;
     font-size: var(--fontSize-4xl);
     line-height: var(--lineHeight-4xl);

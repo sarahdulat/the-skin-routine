@@ -38,6 +38,11 @@ export function newestRoutine(routines: Routine[]) {
   return [...routines].reverse().find((routine) => !routine.draft) ?? null;
 }
 
+export function withoutRoutineSelection<T extends Record<string, unknown>>(query: T) {
+  const { routine: _routine, ...filters } = query;
+  return filters;
+}
+
 function normalizeProductText(text: string) {
   return text
     .toLowerCase()

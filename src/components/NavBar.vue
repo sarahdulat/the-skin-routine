@@ -1,11 +1,11 @@
 <template>
   <nav>
     <div class="navbar">
-      <h1>
+      <div class="site-title">
         <router-link to="/">
           The Skin Routine<span class="glyph">🩸</span>
         </router-link>
-      </h1>
+      </div>
       <button class="menu-toggle" type="button" :aria-expanded="isMenuOpen" aria-controls="primary-navigation"
         aria-label="Toggle navigation menu" @click="toggleMenu">
         <i :class="isMenuOpen ? 'bi bi-x-lg' : 'bi bi-list'" aria-hidden="true"></i>
@@ -67,10 +67,14 @@ nav {
     padding: var(--space-md) var(--space-xl);
     border-bottom: 1px solid var(--color-dark);
 
-    h1 {
+    .site-title {
       font-weight: 500;
       margin: 0;
       padding-bottom: var(--space-sm);
+      font-size: var(--fontSize-4xl);
+      line-height: var(--lineHeight-4xl);
+      letter-spacing: var(--letterSpacing-4xl);
+      font-family: var(--font-family-sans-serif);
 
       a {
         text-decoration: none;
@@ -111,7 +115,7 @@ nav {
     gap: var(--space-md);
     padding: var(--space-md) var(--space-lg);
 
-    h1 {
+    .site-title {
       margin-top: 0;
       padding-bottom: 0;
     }
