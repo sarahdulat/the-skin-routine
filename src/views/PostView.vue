@@ -168,9 +168,14 @@ export default {
     },
     bodyTag(type: string) {
       if (type === "unordered-list") return "ul";
-      if (type === "heading2" || type === "heading3") return "h2";
+      const headingMatch = type.match(/^heading([1-6])$/);
 
-      return /^heading[1-6]$/.test(type) ? `h${type.replace('heading', '')}` : 'p';
+      if (!headingMatch) return "p";
+
+      const markdownLevel = Number(headingMatch[1]);
+      const pageHeadingLevel = Math.max(2, markdownLevel - 1);
+
+      return `h${pageHeadingLevel}`;
     },
     bodyClass(type: string, index: number) {
       return [
