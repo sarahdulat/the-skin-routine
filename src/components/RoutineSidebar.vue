@@ -5,72 +5,73 @@
       <p class="small font-sans">Adjust the filters to see routine steps.</p>
     </div>
     <template v-else>
-    <div class="sidebar-header">
-      <div class="routine-header my-lg">
-        <h2>{{ currentRoutine.routine_name }}</h2>
-        <div v-if="firstSource" class="sources" aria-label="Routine sources">
-          <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
-            @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
-            <button class="source-pill" type="button" :aria-expanded="isSourcePopoverOpen"
-              :aria-label="`${sources.length} routine sources`" @click.stop="toggleSourcePopover">
-              <img v-if="shouldShowFavicon(firstSource)" :src="firstSource.favicon"
-                :alt="`${firstSource.site || firstSource.label} icon`" @error="markFaviconFailed(firstSource)" />
-              <span v-else class="source-favicon-fallback glyph" aria-hidden="true">🩸</span>
-              <span>{{ firstSourceName }}</span>
-              <span v-if="hasMultipleSources" class="source-count">+{{ additionalSourceCount }}</span>
-            </button>
-            <div v-if="isSourcePopoverOpen" class="source-popover" role="tooltip" :style="sourcePopoverStyle">
-              <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
-                rel="noopener noreferrer">
-                <img v-if="sourceCardImage(source)" class="source-image" :src="sourceCardImage(source)"
-                  :alt="sourceCardImageAlt(source)" loading="lazy" decoding="async"
-                  @error="markSourceImageFailed(sourceCardImage(source))" />
-                <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
-                <span class="source-card-content">
-                  <span class="source-site">
-                    <img v-if="shouldShowFavicon(source)" :src="source.favicon"
-                      :alt="`${source.site || source.label} icon`" loading="lazy" decoding="async"
-                      @error="markFaviconFailed(source)" />
-                    <span v-else class="source-site-favicon-fallback glyph" aria-hidden="true">🩸</span>
-                    <span>{{ source.site || source.label }}</span>
-                    <span v-if="sourceDisplayDate(source)" class="source-date">{{ sourceDisplayDate(source) }}</span>
+      <div class="sidebar-header">
+        <div class="routine-header my-lg">
+          <h2>{{ currentRoutine.routine_name }}</h2>
+          <div v-if="firstSource" class="sources" aria-label="Routine sources">
+            <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
+              @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
+              <button class="source-pill" type="button" :aria-expanded="isSourcePopoverOpen"
+                :aria-label="`${sources.length} routine sources`" @click.stop="toggleSourcePopover">
+                <img v-if="shouldShowFavicon(firstSource)" :src="firstSource.favicon"
+                  :alt="`${firstSource.site || firstSource.label} icon`" @error="markFaviconFailed(firstSource)" />
+                <span v-else class="source-favicon-fallback glyph" aria-hidden="true">🩸</span>
+                <span>{{ firstSourceName }}</span>
+                <span v-if="hasMultipleSources" class="source-count">+{{ additionalSourceCount }}</span>
+              </button>
+              <div v-if="isSourcePopoverOpen" class="source-popover" role="tooltip" :style="sourcePopoverStyle">
+                <a v-for="source in sources" :key="source.link" class="source-card" :href="source.link" target="_blank"
+                  rel="noopener noreferrer">
+                  <img v-if="sourceCardImage(source)" class="source-image" :src="sourceCardImage(source)"
+                    :alt="sourceCardImageAlt(source)" loading="lazy" decoding="async"
+                    @error="markSourceImageFailed(sourceCardImage(source))" />
+                  <span v-else class="source-image source-image-fallback glyph" aria-hidden="true">🩸</span>
+                  <span class="source-card-content">
+                    <span class="source-site">
+                      <img v-if="shouldShowFavicon(source)" :src="source.favicon"
+                        :alt="`${source.site || source.label} icon`" loading="lazy" decoding="async"
+                        @error="markFaviconFailed(source)" />
+                      <span v-else class="source-site-favicon-fallback glyph" aria-hidden="true">🩸</span>
+                      <span>{{ source.site || source.label }}</span>
+                      <span v-if="sourceDisplayDate(source)" class="source-date">{{ sourceDisplayDate(source) }}</span>
+                    </span>
+                    <span class="source-headline">{{ source.headline || source.label }}</span>
+                    <span v-if="source.summary" class="source-summary">{{ source.summary }}</span>
                   </span>
-                  <span class="source-headline">{{ source.headline || source.label }}</span>
-                  <span v-if="source.summary" class="source-summary">{{ source.summary }}</span>
-                </span>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <input type="checkbox" id="toggle" :checked="routineTime === 'pm'" />
+        <label class='toggleContainer'>
+          <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
+          <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
+        </label>
       </div>
-      <input type="checkbox" id="toggle" :checked="routineTime === 'pm'" />
-      <label class='toggleContainer'>
-        <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
-        <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
-      </label>
-    </div>
-    <div ref="stepsScrollContainer" class="scroll-container">
-      <div v-if="isRoutineMissing" class="routine-alert" role="status">
-        We don't have enough information for this routine :(
-      </div>
-      <div v-for="(step, index) in steps" v-else :key="stepKey(index)" class="step mb-lg pb-lg">
-        <h3>{{ formatStepOrder(index) }}</h3>
-        <h4>
-          <span>{{ step.title }}</span>
-          <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(stepKey(index)) }"
-            :aria-expanded="isStepExpanded(stepKey(index))" :aria-controls="`step-description-${stepKey(index)}`"
-            @click="toggleStep(stepKey(index))">🖙</button>
-        </h4>
-        <div class="pt-md">
-          <a :href="step.link" target="_blank" :rel="externalLinkRel(step.link)">{{ step.product }}</a>
-          <!-- <button class="px-sm ms-md">Buy</button> -->
+      <div ref="stepsScrollContainer" class="scroll-container">
+        <div v-if="isRoutineMissing" class="routine-alert" role="status">
+          We don't have enough information for this routine :(
         </div>
-        <div v-show="isStepExpanded(stepKey(index))" class="mt-sm" :id="`step-description-${stepKey(index)}`"
-          @click="handleDescriptionClick">
-          <div v-html="qualifyAffiliateLinksInHtml(step.description)"></div>
+        <div v-for="(step, index) in steps" v-else :key="stepKey(index)" class="step mb-lg pb-lg">
+          <h3 class="step-heading">
+            <span class="step-order">{{ formatStepOrder(index) }}</span>
+            <span class="step-title">{{ step.title }}</span>
+            <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(stepKey(index)) }"
+              :aria-expanded="isStepExpanded(stepKey(index))" :aria-controls="`step-description-${stepKey(index)}`"
+              :aria-label="`${isStepExpanded(stepKey(index)) ? 'Hide' : 'Show'} details for ${step.title}`"
+              @click="toggleStep(stepKey(index))">🖙</button>
+          </h3>
+          <div class="pt-md">
+            <a :href="step.link" target="_blank" :rel="externalLinkRel(step.link)">{{ step.product }}</a>
+            <!-- <button class="px-sm ms-md">Buy</button> -->
+          </div>
+          <div v-show="isStepExpanded(stepKey(index))" class="mt-sm" :id="`step-description-${stepKey(index)}`"
+            @click="handleDescriptionClick">
+            <div v-html="qualifyAffiliateLinksInHtml(step.description)"></div>
+          </div>
         </div>
       </div>
-    </div>
     </template>
   </aside>
 </template>
@@ -353,12 +354,6 @@ aside {
   z-index: 3;
 }
 
-h3,
-h4 {
-  display: inline;
-  font-weight: 500;
-}
-
 .routine-header {
   display: flex;
   align-items: baseline;
@@ -546,45 +541,44 @@ h4 {
 }
 
 .step {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  column-gap: var(--space-md);
-  align-items: start;
   min-width: 0;
   overflow-wrap: anywhere;
 
-  >div {
-    grid-column: 1 / -1;
-    min-width: 0;
-  }
-
-  h4 {
-    display: flex;
+  .step-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: space-between;
     gap: var(--space-md);
+    font-weight: 500;
     margin-top: var(--space-md);
     margin-bottom: var(--space-sm);
 
-    &::after {
-      content: "";
-      flex: 1;
-      border-bottom: 0.5px solid var(--color-dark);
-      order: 1;
+
+    .step-order {
+      font-size: var(--fontSize-2xl);
+      line-height: var(--lineHeight-2xl);
     }
 
-    span {
+    .step-title {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      font-size: var(--fontSize-xl);
+      line-height: var(--lineHeight-xl);
       min-width: 0;
+
+      &::after {
+        content: "";
+        flex: 1;
+        min-width: var(--space-xl);
+        border-bottom: 0.5px solid var(--color-dark);
+      }
     }
 
     .hand {
-      order: 2;
+      grid-column: 3;
+      justify-self: end;
     }
-  }
-
-  h3 {
-    margin-top: var(--space-sm);
-    margin-bottom: var(--space-sm);
   }
 }
 

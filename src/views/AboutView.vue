@@ -153,7 +153,7 @@ img {
 }
 
 p {
-  font-size: var(--font-size-l);
+  font-size: var(--fontSize-l);
   line-height: 1.65;
 }
 
@@ -162,7 +162,7 @@ h2 {
 }
 
 .lede {
-  font-size: var(--font-size-l);
+  font-size: var(--fontSize-l);
 
   &::first-letter {
     color: var(--color-dark);
@@ -178,12 +178,6 @@ h2 {
   margin-top: var(--space-xl);
   border-top: 1px solid var(--color-dark);
   padding-top: var(--space-lg);
-
-  p {
-    font-family: var(--font-family-sans-serif);
-    font-size: var(--fontSize-sm);
-    line-height: var(--lineHeight-sm);
-  }
 }
 
 @media (max-width: 768px) {

@@ -320,7 +320,7 @@ section {
   }
 
   .drop-cap {
-    font-size: var(--font-size-l);
+    font-size: var(--fontSize-l);
 
     &::first-letter {
       color: var(--color-dark);
