@@ -7,7 +7,7 @@
     <template v-else>
       <div class="sidebar-header">
         <div class="routine-header my-lg">
-          <h2>{{ currentRoutine.routine_name }}</h2>
+          <component :is="routineHeadingTag" class="routine-title">{{ currentRoutine.routine_name }}</component>
           <div v-if="firstSource" class="sources" aria-label="Routine sources">
             <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
               @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
@@ -54,14 +54,14 @@
           We don't have enough information for this routine :(
         </div>
         <div v-for="(step, index) in steps" v-else :key="stepKey(index)" class="step mb-lg pb-lg">
-          <h3 class="step-heading">
+          <component :is="stepHeadingTag" class="step-heading">
             <span class="step-order">{{ formatStepOrder(index) }}</span>
             <span class="step-title">{{ step.title }}</span>
             <button class="glyph hand" type="button" :class="{ expanded: isStepExpanded(stepKey(index)) }"
               :aria-expanded="isStepExpanded(stepKey(index))" :aria-controls="`step-description-${stepKey(index)}`"
               :aria-label="`${isStepExpanded(stepKey(index)) ? 'Hide' : 'Show'} details for ${step.title}`"
               @click="toggleStep(stepKey(index))">🖙</button>
-          </h3>
+          </component>
           <div class="pt-md">
             <a :href="step.link" target="_blank" :rel="externalLinkRel(step.link)">{{ step.product }}</a>
             <!-- <button class="px-sm ms-md">Buy</button> -->
@@ -81,6 +81,12 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { store, type Routine } from '../store'
 import { externalLinkRel, qualifyAffiliateLinksInHtml } from '../affiliate-links';
+
+const props = withDefaults(defineProps<{
+  isRoutinePage?: boolean;
+}>(), {
+  isRoutinePage: false,
+});
 
 type RoutineSource = {
   label: string;
@@ -103,6 +109,8 @@ type RoutineWithSources = Routine & {
 
 const currentRoutine = computed(() => store.currentRoutine);
 const routineTime = computed(() => store.routineTime);
+const routineHeadingTag = computed(() => props.isRoutinePage ? "h1" : "h2");
+const stepHeadingTag = computed(() => props.isRoutinePage ? "h2" : "h3");
 const router = useRouter();
 const currentRoutineId = computed(() => currentRoutine.value?.id ?? null);
 const amSteps = computed(() => Object.values(currentRoutine.value?.steps.am ?? {}));
@@ -362,7 +370,10 @@ aside {
   flex-wrap: wrap;
   min-width: 0;
 
-  h2 {
+  .routine-title {
+    font-size: var(--fontSize-3xl);
+    line-height: var(--lineHeight-3xl);
+    letter-spacing: var(--letterSpacing-3xl);
     margin: 0;
     min-width: 0;
     overflow-wrap: anywhere;
@@ -550,6 +561,7 @@ aside {
     align-items: center;
     gap: var(--space-md);
     font-weight: 500;
+    letter-spacing: var(--letterSpacing-2xl);
     margin-top: var(--space-md);
     margin-bottom: var(--space-sm);
 

@@ -1,6 +1,7 @@
 <template>
   <main>
     <div class="blog-content">
+      <h1 class="visually-hidden">Product Reviews</h1>
       <FilterBar :dropdowns="[brands, product_type]" :active-tag="activeTag"
         v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <div v-if="!isLoading" class="scroll-container">
@@ -13,7 +14,7 @@
                 sizes="(max-width: 768px) calc(100vw - 2rem), 33vw"
                 loading="lazy"
               />
-              <h3 class="mt-md mb-lg">{{ post.data.title[0].text }}</h3>
+              <h2 class="mt-md mb-lg">{{ post.data.title[0].text }}</h2>
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
@@ -32,7 +33,7 @@
         <div class="posts">
           <div class="post" v-for="index in 2" :key="`placeholder-${index}`">
             <div class="placeholder placeholder-wave placeholder-image"></div>
-            <h3 class="mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h3>
+            <h2 class="mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h2>
             <p class="m-0 placeholder placeholder-wave placeholder-sm w-50"></p>
             <span class="d-flex gap-lg">
               <span class="placeholder placeholder-wave placeholder-sm w-30 my-0"></span>

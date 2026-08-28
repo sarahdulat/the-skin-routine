@@ -1,10 +1,11 @@
 <template>
   <main>
     <div class="chart">
+      <h1 v-if="!isRoutinePage" class="visually-hidden">Find Your Skincare Routine</h1>
       <FilterBar :dropdowns="[age_range, skin_concern]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <RoutineChart :routines="filteredRoutines" />
     </div>
-    <RoutineSidebar :routines="routines" />
+    <RoutineSidebar :is-routine-page="isRoutinePage" />
   </main>
 </template>
 
@@ -62,6 +63,9 @@ export default defineComponent({
     }
   },
   computed: {
+    isRoutinePage(): boolean {
+      return this.$route.name === "routine";
+    },
     selectedRoutineSlug(): string | null {
       return getRoutineSlugFromRoute(this.$route);
     },
