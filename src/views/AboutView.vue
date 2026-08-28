@@ -5,10 +5,10 @@
       <div class="caption">Golden Hour, June 2021</div>
     </div>
 
-    <div class="content">
+    <div class="content measure-reading">
       <h1 class="visually-hidden">About The Skin Routine</h1>
-      <h2>✨ A lot of you have been asking about my skincare routine ✨</h2>
-      <p class="lede">
+      <h2 class="type-section-title">✨ A lot of you have been asking about my skincare routine ✨</h2>
+      <p class="lede type-summary">
         Hi, I’m Sarah—the person friends and family ask when they want to talk about skincare, compare products, or
         figure out where another serum is supposed to go.
       </p>
@@ -43,7 +43,7 @@
         their suitcases.
       </p>
 
-      <h2>What You’ll Find Here</h2>
+      <h2 class="type-section-title">What You’ll Find Here</h2>
 
       <p>
         The Skin Routine is about understanding what each step is meant to accomplish—not collecting the greatest
@@ -68,7 +68,7 @@
         sometimes the best routine is simply the one you will actually follow.
       </p>
 
-      <h2>An Important Note</h2>
+      <h2 class="type-section-title">An Important Note</h2>
 
       <p>
         I am not a dermatologist or certified aesthetician, and The Skin Routine is not a substitute for medical
@@ -83,7 +83,7 @@
         please consult a dermatologist or healthcare professional.
       </p>
 
-      <h2>Welcome</h2>
+      <h2 class="type-section-title">Welcome</h2>
 
       <p>
         The Skin Routine is the project I wanted when friends first began asking me to write everything down: thoughtful
@@ -105,7 +105,7 @@
       <p>Welcome to The Skin Routine. ✨</p>
 
       <section class="colophon">
-        <h2>Colophon</h2>
+        <h2 class="type-section-title">Colophon</h2>
         <p>
           The Skin Routine is designed and built by me, Sarah Dulat, with Vue, Vite, TypeScript, D3, and Sass. The site
           uses Jost for the interface, Roboto Slab for body copy, and Noto Sans Symbols 2 for the little glyphs.
@@ -132,8 +132,8 @@ main {
 }
 
 .content {
-  margin: 0 15% var(--space-xl);
-  max-width: 900px;
+  width: calc(100% - (var(--space-xl) * 2));
+  margin: 0 auto var(--space-xl);
 }
 
 .image {
@@ -153,16 +153,19 @@ img {
 }
 
 p {
-  font-size: var(--fontSize-l);
-  line-height: 1.65;
+  font-size: var(--type-body-size);
+  line-height: 1.625;
+  margin-block: 0 var(--space-lg);
 }
 
 h2 {
-  margin-top: var(--space-xl);
+  margin: var(--space-section) 0 var(--space-lg);
 }
 
 .lede {
-  font-size: var(--fontSize-l);
+  font-size: var(--type-summary-size);
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
 
   &::first-letter {
     color: var(--color-dark);
@@ -175,9 +178,13 @@ h2 {
 }
 
 .colophon {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-section);
   border-top: 1px solid var(--color-dark);
   padding-top: var(--space-lg);
+
+  h2 {
+    margin-top: var(--space-xl);
+  }
 }
 
 @media (max-width: 768px) {

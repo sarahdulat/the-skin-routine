@@ -38,8 +38,8 @@
               </div>
             </div>
             <div class="content">
-              <h1 class="mt-xl">{{ post.data.title[0].text }}</h1>
-              <p class="review-summary">{{ post.data.summary[0].text }}</p>
+              <h1 class="review-title type-page-title">{{ post.data.title[0].text }}</h1>
+              <p class="review-summary type-summary">{{ post.data.summary[0].text }}</p>
               <p class="affiliate-disclosure mt-md">
                 This post may contain affiliate links. If you buy through these links, we may earn a commission at no
                 extra cost to you.
@@ -178,9 +178,11 @@ export default {
       return `h${pageHeadingLevel}`;
     },
     bodyClass(type: string, index: number) {
+      const headingMatch = type.match(/^heading([1-6])$/);
+      const isSectionHeading = Boolean(headingMatch && Number(headingMatch[1]) <= 3);
+
       return [
-        "mt-xl",
-        "font-serif",
+        headingMatch ? (isSectionHeading ? "type-section-title review-section-heading" : "type-subsection-title review-subsection-heading") : "type-body review-body-block",
         type === "affiliate-disclosure" ? "affiliate-disclosure" : "",
         this.isParagraphAfterHeading(type, index) ? "drop-cap" : "",
         this.isFaqHeading(index) ? "faq-heading" : "",
@@ -309,18 +311,34 @@ section {
 }
 
 .content {
+  width: 100%;
+  max-width: calc(var(--measure-reading) + (var(--space-xl) * 2));
   padding: var(--space-xl);
 
+  .review-title {
+    max-width: 22ch;
+    margin: var(--space-xl) 0 0;
+  }
+
   .review-summary {
-    font-size: var(--fontSize-lg);
     font-weight: 400;
-    letter-spacing: var(--letterSpacing-lg);
-    line-height: var(--lineHeight-lg);
-    margin-block: 1.67em;
+    margin: var(--space-lg) 0 var(--space-xl);
+  }
+
+  .review-section-heading {
+    margin: var(--space-section) 0 var(--space-lg);
+  }
+
+  .review-subsection-heading {
+    margin: var(--space-xl) 0 var(--space-md);
+  }
+
+  .review-body-block {
+    margin: 0 0 var(--space-lg);
   }
 
   .drop-cap {
-    font-size: var(--fontSize-l);
+    font-size: var(--type-body-size);
 
     &::first-letter {
       color: var(--color-dark);
@@ -370,7 +388,7 @@ section {
 
 .faq-heading {
   border-top: 1px solid var(--color-dark);
-  margin-top: calc(var(--space-xl) * 2);
+  margin-top: var(--space-section);
   margin-bottom: 0;
   padding: var(--space-xl) var(--space-xl) 0;
 }
@@ -385,10 +403,11 @@ section {
   color: var(--color-dark);
   display: flex;
   font-family: var(--font-family-sans-serif);
-  font-size: var(--fontSize-lg);
+  font-size: var(--type-subsection-title-size);
   gap: var(--space-md);
   line-height: var(--lineHeight-lg);
   padding-top: var(--space-xl);
+  margin-block: 0;
 
   &::after {
     border-bottom: 0.5px solid var(--color-dark);
@@ -399,8 +418,8 @@ section {
 }
 
 .faq-answer {
-  font-size: var(--fontSize-sm);
-  line-height: var(--lineHeight-lg);
+  font-size: var(--type-body-size);
+  line-height: 1.625;
 
   &:last-child {
     border-bottom: 0;

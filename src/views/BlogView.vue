@@ -14,7 +14,7 @@
                 sizes="(max-width: 768px) calc(100vw - 2rem), 33vw"
                 loading="lazy"
               />
-              <h2 class="mt-md mb-lg">{{ post.data.title[0].text }}</h2>
+              <h2 class="type-card-title mt-md mb-lg">{{ post.data.title[0].text }}</h2>
             </router-link>
             <p class="m-0">{{ formatDate(post) }}</p>
             <span v-for="tag in post.tags" :key="tag" class="me-md my-0">
@@ -33,7 +33,7 @@
         <div class="posts">
           <div class="post" v-for="index in 2" :key="`placeholder-${index}`">
             <div class="placeholder placeholder-wave placeholder-image"></div>
-            <h2 class="mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h2>
+            <h2 class="type-card-title mt-md mb-lg placeholder placeholder-wave placeholder-md w-100"></h2>
             <p class="m-0 placeholder placeholder-wave placeholder-sm w-50"></p>
             <span class="d-flex gap-lg">
               <span class="placeholder placeholder-wave placeholder-sm w-30 my-0"></span>
@@ -163,7 +163,8 @@ main {
 .posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  column-gap: var(--space-lg);
+  row-gap: var(--space-section);
   padding: 0 var(--space-xl) calc(var(--space-xl) + 7rem);
 }
 

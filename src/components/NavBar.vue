@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="navbar">
-      <div class="site-title">
+      <div class="site-title type-brand">
         <router-link to="/">
           The Skin Routine<span class="glyph">🩸</span>
         </router-link>
@@ -12,8 +12,8 @@
       </button>
       <div id="primary-navigation" class="nav-links" :class="{ open: isMenuOpen }">
         <SiteSearch />
-        <router-link class="nav-link" to="/about/" @click="closeMenu">About</router-link>
-        <router-link class="nav-link" to="/blog/" @click="closeMenu">Reviews</router-link>
+        <router-link class="nav-link type-ui-label" to="/about/" @click="closeMenu">About</router-link>
+        <router-link class="nav-link type-ui-label" to="/blog/" @click="closeMenu">Reviews</router-link>
       </div>
     </div>
   </nav>
@@ -67,10 +67,6 @@ nav {
       font-weight: 500;
       margin: 0;
       padding-bottom: var(--space-sm);
-      font-size: var(--fontSize-4xl);
-      line-height: var(--lineHeight-4xl);
-      letter-spacing: var(--letterSpacing-4xl);
-      font-family: var(--font-family-sans-serif);
 
       a {
         text-decoration: none;
@@ -92,10 +88,7 @@ nav {
       padding-bottom: var(--space-md);
 
       .nav-link {
-        font-size: var(--fontSize-lg);
         font-weight: 400;
-        letter-spacing: var(--letterSpacing-lg);
-        line-height: var(--lineHeight-lg);
         margin: 0;
       }
     }
@@ -114,6 +107,8 @@ nav {
     padding: var(--space-md) var(--space-lg);
 
     .site-title {
+      font-size: var(--fontSize-3xl);
+      line-height: var(--lineHeight-3xl);
       margin-top: 0;
       padding-bottom: 0;
     }

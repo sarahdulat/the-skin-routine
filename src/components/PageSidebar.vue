@@ -1,7 +1,7 @@
 <template>
   <aside class="row">
     <div class="scroll-container">
-      <h2 class="mt-md mb-0 text-nowrap">Review Archive</h2>
+      <h2 class="type-subsection-title mt-md mb-0 text-nowrap">Review Archive</h2>
       <BlogArchiveTree :nodes="postsArchive" />
     </div>
   </aside>

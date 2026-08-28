@@ -50,4 +50,16 @@
 :root {
   --font-family-sans-serif: Jost, Arial, Helvetica, sans-serif;
   --font-family-serif: Roboto Slab, serif;
+
+  /* Purpose-based typography */
+  --type-brand-size: 2.25rem;
+  --type-page-title-size: clamp(2.25rem, 1.75rem + 2vw, 4rem);
+  --type-section-title-size: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+  --type-subsection-title-size: 1.25rem;
+  --type-summary-size: 1.25rem;
+  --type-card-title-size: 1.5rem;
+  --type-body-size: 1rem;
+  --type-ui-size: 1rem;
+  --space-section: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+  --measure-reading: 72ch;
 }

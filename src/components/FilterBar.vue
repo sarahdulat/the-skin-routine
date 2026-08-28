@@ -6,7 +6,7 @@
     </button>
     <div id="filter-controls" class="filter-controls" :class="{ open: filtersOpen }">
       <span class="dropdown-group">
-        <span class="filter-label">Filters:</span>
+        <span class="filter-label type-ui-label">Filters:</span>
         <Dropdown @change="" v-for="dropdown in dropdowns" :key="dropdown.defaultValue"
           :defaultValue="dropdown.defaultValue" :items="dropdown.items" />
       </span>
@@ -76,11 +76,7 @@ export default defineComponent({
 
 .filter-label {
   display: inline;
-  font-family: var(--font-family-sans-serif);
-  font-size: var(--fontSize-md);
   font-weight: 400;
-  letter-spacing: var(--letterSpacing-md);
-  line-height: var(--lineHeight-md);
 }
 
 .filter-toggle {
