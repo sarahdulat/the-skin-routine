@@ -29,8 +29,9 @@
         </div>
       </template>
     </PopoverComponent>
-    <h6 class="px-sm">Pregnancy Safe:</h6>
-    <Toggle :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)" />
+    <span id="pregnancy-safe-label" class="pregnancy-label px-sm">Pregnancy Safe:</span>
+    <Toggle :model-value="modelValue" aria-labelledby="pregnancy-safe-label"
+      @update:model-value="$emit('update:modelValue', $event)" />
   </span>
 </template>
 
@@ -59,6 +60,14 @@ export default defineComponent({
   align-items: center;
   flex-wrap: wrap;
   gap: var(--space-md);
+}
+
+.pregnancy-label {
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-md);
+  font-weight: 400;
+  letter-spacing: var(--letterSpacing-md);
+  line-height: var(--lineHeight-md);
 }
 
 .pregnancy-popover {

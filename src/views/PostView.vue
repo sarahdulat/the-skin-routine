@@ -39,7 +39,7 @@
             </div>
             <div class="content">
               <h1 class="mt-xl">{{ post.data.title[0].text }}</h1>
-              <h5>{{ post.data.summary[0].text }}</h5>
+              <p class="review-summary">{{ post.data.summary[0].text }}</p>
               <p class="affiliate-disclosure mt-md">
                 This post may contain affiliate links. If you buy through these links, we may earn a commission at no
                 extra cost to you.
@@ -305,6 +305,14 @@ section {
 
 .content {
   padding: var(--space-xl);
+
+  .review-summary {
+    font-size: var(--fontSize-lg);
+    font-weight: 400;
+    letter-spacing: var(--letterSpacing-lg);
+    line-height: var(--lineHeight-lg);
+    margin-block: 1.67em;
+  }
 
   .drop-cap {
     font-size: var(--font-size-l);

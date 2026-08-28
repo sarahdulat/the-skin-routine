@@ -6,6 +6,7 @@
     </div>
 
     <div class="content">
+      <h1 class="visually-hidden">About The Skin Routine</h1>
       <h2>✨ A lot of you have been asking about my skincare routine ✨</h2>
       <p class="lede">
         Hi, I’m Sarah—the person friends and family ask when they want to talk about skincare, compare products, or
@@ -154,11 +155,6 @@ img {
 p {
   font-size: var(--font-size-l);
   line-height: 1.65;
-}
-
-h1 {
-  margin-bottom: var(--space-l);
-  text-align: center;
 }
 
 h2 {

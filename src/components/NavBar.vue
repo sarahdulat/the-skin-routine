@@ -12,12 +12,8 @@
       </button>
       <div id="primary-navigation" class="nav-links" :class="{ open: isMenuOpen }">
         <SiteSearch />
-        <h5>
-          <router-link to="/about/" @click="closeMenu">About</router-link>
-        </h5>
-        <h5>
-          <router-link to="/blog/" @click="closeMenu">Reviews</router-link>
-        </h5>
+        <router-link class="nav-link" to="/about/" @click="closeMenu">About</router-link>
+        <router-link class="nav-link" to="/blog/" @click="closeMenu">Reviews</router-link>
       </div>
     </div>
   </nav>
@@ -95,10 +91,12 @@ nav {
       gap: var(--space-lg);
       padding-bottom: var(--space-md);
 
-      h5 {
+      .nav-link {
+        font-size: var(--fontSize-lg);
+        font-weight: 400;
+        letter-spacing: var(--letterSpacing-lg);
         line-height: var(--lineHeight-lg);
         margin: 0;
-        margin-left: 0;
       }
     }
   }
@@ -156,7 +154,7 @@ nav {
         display: flex;
       }
 
-      h5 {
+      .nav-link {
         line-height: var(--lineHeight-md);
       }
     }
