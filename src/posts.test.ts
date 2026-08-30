@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getAdjacentPosts, getAllPosts, getPostByUID, getPostsByFilters } from "./posts";
+import { getAdjacentPosts, getAllPosts, getPostByUID, getPostsByFilters, getRelatedPosts } from "./posts";
 
 describe("post helpers", () => {
   it("returns published posts newest first", () => {
@@ -64,5 +64,16 @@ describe("post helpers", () => {
     expect(adjacentPosts.nextPost?.uid).toBe(posts[0]?.uid);
     expect(adjacentPosts.prevPost?.uid).toBe(posts[2]?.uid);
     expect(getAdjacentPosts("not-a-real-post")).toEqual({ prevPost: null, nextPost: null });
+  });
+
+  it("selects related reviews without linking a review to itself", () => {
+    const relatedPosts = getRelatedPosts("ilia-bright-start-retinol-alternative-eye-cream");
+
+    expect(relatedPosts).toHaveLength(3);
+    expect(relatedPosts.map((post) => post.uid)).not.toContain("ilia-bright-start-retinol-alternative-eye-cream");
+    expect(relatedPosts.slice(0, 2).map((post) => post.uid)).toEqual(expect.arrayContaining([
+      "the-inkey-list-retinol-eye-cream",
+      "supergoop-bright-eyed-100-mineral-eye-cream-spf-40",
+    ]));
   });
 });

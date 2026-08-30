@@ -31,6 +31,13 @@
         },
         {
           "time": "am",
+          "title": "Treatment Serum",
+          "product": "Multi-Peptide + Copper Peptides 1% Serum",
+          "link": "https://amzn.to/4gzqzbC",
+          "description": "<p>NuFace recommends using a treatment serum before applying the activating gel, and their own <a href=\"https://www.mynuface.com/products/super-booster-peptide-serum\">peptide booster</a> contains copper gluconate. I apply three drops of this all over my face and let it dry before moving on.</p><p>Read my full review of how this serum earned a place alongside my NuFACE <a href=\"/blog/the-ordinary-multi-peptide-copper-peptides-1-serum/\">here</a>.</p>"
+        },
+        {
+          "time": "am",
           "title": "Microcurrent",
           "product": "NuFACE Mini+",
           "link": "https://sovrn.co/8lrchet",
@@ -49,13 +56,6 @@
           "product": "ACM Azéane Cream 15% Azelaic Acid",
           "link": "https://www.sweetcare.com/us/acm-laboratoire-dermatologique-azeane-15-azelaic-acid-brown-spots-imperfections-redness-p-019492zl",
           "description": "<p>Azelaic acid is one of those quiet workhorse ingredients. I use this one from France at 15%, but there are easier to get alternatives in the US at lower concentrations like <a href=\"https://www.sephora.com/product/the-inkey-list-supersolutions-10-azelaic-serum-P502741\" target=\"_blank\">The INKEY List SuperSolutions 10% Azelaic Serum Redness Relief Solution</a>. In Poland they have a 20% OTC that I want to try once I'm finished with my tube of Azéane.</p><p>Use as the pigment, redness, and texture-support step after vitamin C if your skin is tolerating the combination. If skin feels reactive, use this less often or separate it from other actives. Consistency matters more than forcing it every single morning.</p><p>Read my full review on this product <a href=\"/blog/acm-azeane-cream-15-azelaic-acid\">here</a>.</p>"
-        },
-        {
-          "time": "am",
-          "title": "Moisturizer",
-          "product": "Embryolisse Lait-Crème Concentré",
-          "link": "https://www.amazon.com/dp/B007PM1A82?tag=theskinrout07-20",
-          "description": "<p>Use only if skin needs it, especially in winter or when the routine feels a little too active. This is not mandatory every morning; it is the comfort layer when your skin is asking for one.</p><p>Keep it light so SPF can still sit properly on top.</p><p>Read why this cult cream won me over <a href=\"/blog/embryolisse-lait-creme-concentre\">here</a>.</p>"
         },
         {
           "time": "am",
@@ -113,14 +113,7 @@
           "title": "Treatment",
           "product": "Tretinoin Rx",
           "link": "https://differin.com/shop/differin-gel",
-          "description": "<p>I use prescription tretinoin 0.05% on treatment nights and let it sink in for a few minutes before continuing. This is a good time to do something else, like brush your teeth, so the step has a little breathing room.</p><p>Because tretinoin is prescription-only, the link goes to Differin Gel as a popular over-the-counter retinoid option. French <a href=\"https://amzn.to/4xx6aLp\" target=\"_blank\">A313</a> is another well-known retinoid-style option. On recovery nights, skip retinoids and use <a href=\"https://amzn.to/3RBXV1d\" target=\"_blank\">The Ordinary Multi-Peptide + Copper Peptides 1% Serum</a> instead.</p>"
-        },
-        {
-          "time": "pm",
-          "title": "Rose Water Spray",
-          "product": "Mario Badescu Facial Spray with Aloe, Herbs and Rosewater",
-          "link": "https://amzn.to/3tGcpx6",
-          "description": "<p>Mist after the treatment has had a few minutes to settle. This brings back a little dampness before hydrating serum, which helps the next step spread without tugging.</p>"
+          "description": "<p>I use prescription tretinoin 0.05% on treatment nights and let it sink in for a few minutes before continuing. This is a good time to do something else, like brush your teeth, so the step has a little breathing room.</p><p>Because tretinoin is prescription-only, the link goes to Differin Gel as a popular over-the-counter retinoid option. French <a href=\"https://amzn.to/4xx6aLp\" target=\"_blank\">A313</a> is another well-known retinoid-style option. On recovery nights, skip retinoids and use <a href=\"https://amzn.to/3RBXV1d\" target=\"_blank\">The Ordinary Multi-Peptide + Copper Peptides 1% Serum</a> instead.</p><p>Read my full review of how this serum earned a place alongside my NuFACE <a href=\"/blog/the-ordinary-multi-peptide-copper-peptides-1-serum/\">here</a>.</p>"
         },
         {
           "time": "pm",
@@ -131,17 +124,17 @@
         },
         {
           "time": "pm",
-          "title": "Eye Cream",
-          "product": "Beauty of Joseon Revive Eye Serum : Ginseng + Retinal",
-          "link": "https://tidd.ly/4hO6oJn",
-          "description": "<p>I have so many favorite eye creams for evening but this is what I am currently using. As long as it has a retinoid I am willing to try it. This one is very nice and refreshing, perfect for summer since it isn't heavy. Of course, one of my favs my Glow Recipe was discontinued (the Avocado Melt Reintol Eye Cream). I've also tried the budget option by <a href=\"https://www.theinkeylist.com/products/retinol-eye-cream\" target=\"_blank\">The INKEY List Retinol Eye Cream</a>, but it is kind of lumpy and not smooth or premium feeling at all.</p><p>I wrote more about why The INKEY List version did not work for me in my critical review <a href=\"/blog/the-inkey-list-retinol-eye-cream\">here</a>.</p>"
-        },
-        {
-          "time": "pm",
           "title": "Moisturizer",
           "product": "Embryolisse Lait-Crème Concentré",
           "link": "https://www.amazon.com/dp/B007PM1A82?tag=theskinrout07-20",
           "description": "<p>Use as the main moisturizer before oil. Embryolisse gives the routine a soft, reliable buffer, especially after tretinoin or on nights when skin needs the extra comfort.</p><p>Read why this cult cream won me over <a href=\"/blog/embryolisse-lait-creme-concentre\">here</a>.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "Beauty of Joseon Revive Eye Serum : Ginseng + Retinal",
+          "link": "https://tidd.ly/4hO6oJn",
+          "description": "<p>I have so many favorite eye creams for evening but this is what I am currently using. As long as it has a retinoid I am willing to try it. This one is very nice and refreshing, perfect for summer since it isn't heavy. Of course, one of my favs my Glow Recipe was discontinued (the Avocado Melt Reintol Eye Cream). I've also tried the budget option by <a href=\"https://www.theinkeylist.com/products/retinol-eye-cream\" target=\"_blank\">The INKEY List Retinol Eye Cream</a>, but it is kind of lumpy and not smooth or premium feeling at all.</p><p>I wrote more about why The INKEY List version did not work for me in my critical review <a href=\"/blog/the-inkey-list-retinol-eye-cream\">here</a>.</p>"
         },
         {
           "time": "pm",

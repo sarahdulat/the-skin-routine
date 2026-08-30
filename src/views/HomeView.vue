@@ -5,7 +5,7 @@
       <FilterBar :dropdowns="[age_range, skin_concern]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
       <RoutineChart :routines="filteredRoutines" />
     </div>
-    <RoutineSidebar :is-routine-page="isRoutinePage" />
+    <RoutineSidebar :is-routine-page="isRoutinePage" :not-found="isInvalidRoutinePage" />
   </main>
 </template>
 
@@ -66,17 +66,24 @@ export default defineComponent({
     isRoutinePage(): boolean {
       return this.$route.name === "routine";
     },
+    publishedRoutines(): Routine[] {
+      return this.routines.filter((routine) => !routine.draft);
+    },
     selectedRoutineSlug(): string | null {
       return getRoutineSlugFromRoute(this.$route);
+    },
+    isInvalidRoutinePage(): boolean {
+      return this.isRoutinePage
+        && Boolean(this.selectedRoutineSlug)
+        && !findRoutineBySlugOrId(this.publishedRoutines, this.selectedRoutineSlug);
     },
     filteredRoutines(): Routine[] {
       const selectedAgeRange = getSelectedQueryValue(this.$route.query["Age Range"]);
       const selectedSkinConcernLabel = getSelectedQueryValue(this.$route.query["Skin Concern"]);
       const selectedSkinConcern = selectedSkinConcernLabel ? skinConcernValueByLabel[selectedSkinConcernLabel] : null;
 
-      return this.routines.filter((routine) => {
-        return !routine.draft
-          && matchesFilter(routine.age_range, selectedAgeRange)
+      return this.publishedRoutines.filter((routine) => {
+        return matchesFilter(routine.age_range, selectedAgeRange)
           && matchesFilter(routine.skin_concern, selectedSkinConcern)
           && (!this.pregnancySafeOnly || routine.pregnancy_safe);
       });
@@ -85,6 +92,11 @@ export default defineComponent({
   watch: {
     filteredRoutines: {
       handler(filteredRoutines: Routine[]) {
+        if (this.isInvalidRoutinePage) {
+          store.setCurrentRoutine(null);
+          return;
+        }
+
         const selectedRoutine = findRoutineBySlugOrId(filteredRoutines, this.selectedRoutineSlug);
 
         if (selectedRoutine) {
@@ -111,10 +123,17 @@ export default defineComponent({
       immediate: true,
     },
     selectedRoutineSlug() {
+      if (this.isInvalidRoutinePage) {
+        store.setCurrentRoutine(null);
+        return;
+      }
+
       const selectedRoutine = findRoutineBySlugOrId(this.filteredRoutines, this.selectedRoutineSlug);
 
       if (selectedRoutine) {
         store.setCurrentRoutine(selectedRoutine);
+      } else if (!store.currentRoutine && this.filteredRoutines.length > 0) {
+        store.setCurrentRoutine(newestRoutine(this.filteredRoutines));
       }
     },
   }

@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <SiteSEO />
     <NavBar />
     <div class="container">
       <router-view />
@@ -13,12 +14,14 @@
 import CookieConsentBanner from "./components/CookieConsentBanner.vue";
 import PageFooter from "./components/PageFooter.vue";
 import NavBar from "./components/NavBar.vue";
+import SiteSEO from "./components/SiteSEO.vue";
 export default {
   name: "App",
   components: {
     CookieConsentBanner,
     PageFooter,
     NavBar,
+    SiteSEO,
   }
 };
 </script>

@@ -1,6 +1,6 @@
 ---
 name: product-review-post
-description: Research, draft, revise, illustrate, cross-link, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs the standard scraped-reference watercolor product cover, asks to connect reviews to matching steps in src/assets/routines.json, or asks to add or update a Markdown review in src/content/reviews.
+description: Research, draft, revise, illustrate, affiliate-link, cross-link, and stage source-backed skincare product review posts for The Skin Routine. Use when a user provides a skincare product or product URL and asks for a review, wants product details and public opinion synthesized, requests comparable alternatives, needs Amazon or Stylevana purchase links checked, needs the standard scraped-reference watercolor product cover, asks to connect reviews to matching steps in src/assets/routines.json, or asks to add or update a Markdown review in src/content/reviews.
 ---
 
 # Product Review Post
@@ -24,6 +24,17 @@ Browse whenever a product URL, price, availability, formula, review score, or cu
 - Do not invent a consensus from X, Threads, or another source that has no usable indexed results.
 - Link claims and alternatives directly to their supporting product or discussion pages.
 - Treat prices as time-sensitive. Use the reader's market and currency; default to US availability and USD when reviewing an imported European product.
+
+## Choose purchase links
+
+Audit the reviewed product and every alternative for affiliate opportunities before finalizing `featured_products` or body links.
+
+1. Reuse a verified exact-product affiliate link already present in the project when available.
+2. Check Amazon US for the exact product, size, formulation, and regional version. Prefer a current product-detail page over search results and verify the listing title. When the ASIN is verified, use `https://www.amazon.com/dp/<ASIN>?tag=theskinrout07-20`; an existing verified `amzn.to` link is also acceptable.
+3. Check Stylevana when it is a plausible retailer. Do not invent or append Stylevana affiliate tracking. If an exact in-stock Stylevana listing is the best option, keep a non-affiliate or official link in the post and give Sarah the direct Stylevana product URL in the handoff so she can generate the affiliate link. Do not recommend an out-of-stock Stylevana page as the primary purchase link.
+4. Keep the official brand link when Amazon and Stylevana do not have a verifiable exact listing. Never substitute a different size, formula, shade, market version, bundle, or similarly named product merely to obtain an affiliate link.
+5. Treat the official brand page as the primary source for claims and directions even when the displayed purchase link is an affiliate retailer.
+6. Confirm rendered affiliate links receive `rel="sponsored"`. The project recognizes tagged Amazon URLs and approved affiliate hosts through `src/affiliate-links.ts`; do not disguise or strip their affiliate parameters.
 
 ## Draft the review
 
@@ -93,10 +104,11 @@ After establishing the review's final `uid` and verdict, inspect every AM and PM
 1. Confirm body word count is within the requested range.
 2. Confirm the title begins with the brand, `tags` includes `review`, and both `seo_title` and `seo_description` are present, unique, search-focused, and verdict-neutral.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
-4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link.
+4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link. Confirm Amazon links use a verified exact ASIN plus the project affiliate tag, and report any Stylevana URL that requires Sarah to generate an affiliate link.
 5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the cover background is `#FBFAF4` with a uniformly clean `#FBFAF4` outer pixel perimeter, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
 6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>/` and that unrelated products were not linked.
 7. Run `npm run build` from the repository root.
-8. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
+8. Inspect a prerendered review page and confirm affiliate purchase links include `rel="noopener noreferrer sponsored"`.
+9. Inspect `git status` afterward. Revert only incidental generated timestamps created by validation, and preserve all unrelated user changes.
 
 Report the post path, cover path, word count, draft state, build result, and any deliberately conservative metadata choice.

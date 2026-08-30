@@ -275,6 +275,70 @@ export function getAdjacentPosts(uid: string) {
   };
 }
 
+const genericRelatedTags = new Set(["review"]);
+const relatedTopicGroups = [
+  ["eye cream", "fine lines", "retinol", "retinol alternative", "anti-aging", "firming", "facial toning", "microcurrent"],
+  ["spf", "sunscreen", "mineral sunscreen", "hyperpigmentation", "dark spots"],
+  ["moisturizer", "dry skin", "dry lips", "occlusive", "slugging", "lip care", "lip mask", "lip treatment"],
+  ["cleanser", "cleansing oil", "double cleansing", "makeup remover", "exfoliating cleanser"],
+  ["brightening", "dullness", "dark spots", "hyperpigmentation", "azelaic acid"],
+  ["k-beauty"],
+  ["french pharmacy"],
+].map((group) => new Set(group));
+
+function normalizedValues(values: string[]) {
+  return new Set(values.map((value) => value.trim().toLowerCase()).filter(Boolean));
+}
+
+function sharedValueCount(first: Set<string>, second: Set<string>) {
+  return [...first].filter((value) => second.has(value)).length;
+}
+
+function sharedTopicCount(first: Set<string>, second: Set<string>) {
+  return relatedTopicGroups.filter((group) => (
+    [...first].some((value) => group.has(value))
+    && [...second].some((value) => group.has(value))
+  )).length;
+}
+
+function relatedPostScore(currentPost: Post, candidatePost: Post) {
+  const currentProductTypes = normalizedValues(currentPost.data.product_types.map(({ product_type }) => product_type));
+  const candidateProductTypes = normalizedValues(candidatePost.data.product_types.map(({ product_type }) => product_type));
+  const currentBrands = normalizedValues(currentPost.data.brands.map(({ brand }) => brand));
+  const candidateBrands = normalizedValues(candidatePost.data.brands.map(({ brand }) => brand));
+  const currentTags = normalizedValues(currentPost.tags.filter((tag) => !genericRelatedTags.has(tag.toLowerCase())));
+  const candidateTags = normalizedValues(candidatePost.tags.filter((tag) => !genericRelatedTags.has(tag.toLowerCase())));
+  const currentSignals = new Set([...currentProductTypes, ...currentTags]);
+  const candidateSignals = new Set([...candidateProductTypes, ...candidateTags]);
+
+  return sharedValueCount(currentProductTypes, candidateProductTypes) * 8
+    + sharedValueCount(currentTags, candidateTags) * 3
+    + sharedValueCount(currentBrands, candidateBrands) * 2
+    + sharedTopicCount(currentSignals, candidateSignals);
+}
+
+export function getRelatedPosts(uid: string, limit = 3) {
+  const currentPost = getPostByUID(uid);
+
+  if (!currentPost || limit <= 0) return [];
+
+  return posts
+    .filter((post) => post.uid !== uid)
+    .map((post) => ({
+      post,
+      score: relatedPostScore(currentPost, post),
+    }))
+    .filter(({ score }) => score > 0)
+    .sort((first, second) => {
+      if (second.score !== first.score) return second.score - first.score;
+
+      return new Date(second.post.first_publication_date).getTime()
+        - new Date(first.post.first_publication_date).getTime();
+    })
+    .slice(0, limit)
+    .map(({ post }) => post);
+}
+
 function matchesFilter(selected: string | undefined, values: string[]) {
   return selected == null || selected === "all" || values.includes(selected);
 }

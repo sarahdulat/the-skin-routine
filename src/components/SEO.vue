@@ -3,6 +3,7 @@
 <script lang="ts">
 import { defineComponent, PropType, watchEffect } from "vue";
 import { Post } from "../types";
+import { buildReviewBlogPostingSchema } from "../review-schema";
 
 const defaultSiteUrl = "https://theskinroutine.com";
 const defaultTitle = "The Skin Routine";
@@ -108,6 +109,7 @@ export default defineComponent({
       document.title = post ? `${title} | The Skin Routine` : title;
 
       setMeta("name", "description", description);
+      setMeta("name", "robots", "index,follow");
       setCanonical(canonicalUrl);
 
       setMeta("property", "og:title", title);
@@ -128,24 +130,11 @@ export default defineComponent({
         setMeta("property", "article:published_time", post.first_publication_date);
         setMeta("property", "article:modified_time", post.last_publication_date);
         addArticleTags(post.tags);
-        setJsonLd({
-          "@context": "https://schema.org",
-          "@type": "Review",
-          headline: displayTitle,
+        setJsonLd(buildReviewBlogPostingSchema(post, {
+          canonicalUrl,
           description,
-          url: canonicalUrl,
-          datePublished: post.first_publication_date,
-          dateModified: post.last_publication_date,
-          image: imageUrl ? [imageUrl] : undefined,
-          author: {
-            "@type": "Person",
-            name: "Sarah Dulat",
-          },
-          publisher: {
-            "@type": "Organization",
-            name: "The Skin Routine",
-          },
-        });
+          imageUrl,
+        }));
       } else {
         removeManagedArticleTags();
         setJsonLd({

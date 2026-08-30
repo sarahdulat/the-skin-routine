@@ -1,8 +1,9 @@
 <template>
-  <main ref="postMain">
-    <SEO :post="post" />
+  <main ref="postMain" :class="{ 'not-found-layout': !isPostLoading && !post }">
+    <SEO v-if="post" :post="post" />
     <div>
-      <ReviewBar :prevPost="prevPost" :nextPost="nextPost" :isLoading="isReviewBarLoading" />
+      <ReviewBar v-if="post || isPostLoading" :prevPost="prevPost" :nextPost="nextPost"
+        :isLoading="isReviewBarLoading" />
       <div ref="postScrollContainer" class="scroll-container">
         <div v-if="post">
           <div class="cover-media">
@@ -14,6 +15,7 @@
               <p class="mt-xl">{{ formatDate(post.first_publication_date) }}</p>
               <p v-if="formatDate(post.last_publication_date) !== formatDate(post.first_publication_date)">Updated: {{
                 formatDate(post.last_publication_date) }}</p>
+              <p class="review-byline">By <router-link to="/about/" rel="author">Sarah Dulat</router-link></p>
               <div class="mt-lg">
                 <router-link v-for="tag in post.tags" :key="tag" class="tag-link text-uppercase font-sans me-md"
                   :to="{ name: 'blog', query: { Tag: tag } }">
@@ -47,9 +49,22 @@
               <component v-for="(paragraph, index) in post.data.body" :key="paragraph.text"
                 :is="bodyTag(paragraph.type)" :class="bodyClass(paragraph.type, index)" :innerHTML="paragraph.text">
               </component>
+              <div v-if="relatedPosts.length > 0" class="related-reviews">
+                <h2 class="type-section-title review-section-heading">Related Reviews</h2>
+                <ul class="related-review-list">
+                  <li v-for="relatedPost in relatedPosts" :key="relatedPost.uid">
+                    <router-link :to="{ name: 'blog-post', params: { slug: relatedPost.uid } }">
+                      {{ relatedPost.data.title[0].text }}
+                    </router-link>
+                    <p>{{ relatedPost.data.summary[0].text }}</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
+        <NotFoundContent v-else-if="!isPostLoading" title="Review not found"
+          description="This review may have moved, or the product has not been reviewed yet." />
         <!-- Loading State -->
         <div v-else>
           <div class="cover-media">
@@ -74,7 +89,7 @@
         </div>
       </div>
     </div>
-    <PageSidebar />
+    <PageSidebar v-if="post || isPostLoading" />
   </main>
 </template>
 
@@ -83,10 +98,11 @@ import ReviewBar from "../components/ReviewBar.vue";
 import PageSidebar from '../components/PageSidebar.vue';
 import SEO from "../components/SEO.vue";
 import ResponsiveImage from "../components/ResponsiveImage.vue";
+import NotFoundContent from "../components/NotFoundContent.vue";
 
 import { format } from "date-fns";
 import { Post } from "../types";
-import { getAdjacentPosts, getPostByUID } from "../posts";
+import { getAdjacentPosts, getPostByUID, getRelatedPosts } from "../posts";
 import routines from "../assets/routines.json";
 import { findRoutineProductMentions, routineSlug, type RoutineProductMention } from "../routines";
 import { externalLinkRel } from "../affiliate-links";
@@ -97,7 +113,8 @@ export default {
     ReviewBar,
     PageSidebar,
     SEO,
-    ResponsiveImage
+    ResponsiveImage,
+    NotFoundContent,
   },
   data() {
     return {
@@ -105,6 +122,7 @@ export default {
       prevPost: null as Post | null,
       nextPost: null as Post | null,
       isReviewBarLoading: false,
+      isPostLoading: true,
     }
   },
   computed: {
@@ -120,13 +138,20 @@ export default {
         })),
       );
     },
+    relatedPosts(): Post[] {
+      return this.post ? getRelatedPosts(this.post.uid) : [];
+    },
   },
   methods: {
     externalLinkRel,
     routineSlug,
     async getContent(slug: string) {
-      if (!slug) return;
+      if (!slug) {
+        this.isPostLoading = false;
+        return;
+      }
 
+      this.isPostLoading = true;
       this.prevPost = null;
       this.nextPost = null;
       this.isReviewBarLoading = true;
@@ -136,6 +161,7 @@ export default {
 
       if (!post) {
         this.isReviewBarLoading = false;
+        this.isPostLoading = false;
         return;
       }
 
@@ -143,6 +169,7 @@ export default {
       this.prevPost = prevPost;
       this.nextPost = nextPost;
       this.isReviewBarLoading = false;
+      this.isPostLoading = false;
     },
     scrollPostToTop() {
       const refs = this.$refs as {
@@ -250,6 +277,10 @@ main {
   }
 }
 
+main.not-found-layout {
+  grid-template-columns: 1fr;
+}
+
 .scroll-container {
   flex: 1;
   min-height: 0;
@@ -259,7 +290,7 @@ main {
 
 section {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 4fr;
 
   a {
     text-decoration: none;
@@ -272,6 +303,10 @@ section {
   &:hover {
     color: var(--color-primary);
   }
+}
+
+.review-byline a {
+  color: var(--color-primary);
 }
 
 .button-link {
@@ -317,7 +352,7 @@ section {
 
   .review-title {
     max-width: 22ch;
-    margin: var(--space-xl) 0 0;
+    margin: -5px 0 0;
   }
 
   .review-summary {
@@ -368,6 +403,39 @@ section {
     content: "🩸";
     font-family: "Noto Sans Symbols 2";
     line-height: inherit;
+  }
+
+  .related-reviews {
+    margin-top: var(--space-section);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-dark);
+
+    .review-section-heading {
+      margin-top: 0;
+    }
+  }
+
+  .related-review-list {
+    gap: var(--space-lg);
+
+    li::before {
+      grid-row: 1 / 3;
+    }
+
+    a,
+    p {
+      grid-column: 2;
+    }
+
+    a {
+      color: var(--color-primary);
+      font-family: var(--font-family-sans-serif);
+      font-weight: 500;
+    }
+
+    p {
+      margin: var(--space-sm) 0 0;
+    }
   }
 }
 

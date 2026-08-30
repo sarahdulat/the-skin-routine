@@ -1,6 +1,11 @@
 <template>
   <aside>
-    <div v-if="!currentRoutine" class="routine-empty-state" role="status">
+    <div v-if="notFound" class="routine-empty-state routine-not-found" role="status">
+      <h1 class="type-section-title">Routine not found</h1>
+      <p>This routine may have moved, or the address may be incorrect.</p>
+      <p class="small font-sans">Select another routine from the chart to keep exploring.</p>
+    </div>
+    <div v-else-if="!currentRoutine" class="routine-empty-state" role="status">
       <p>No routines match these filters.</p>
       <p class="small font-sans">Adjust the filters to see routine steps.</p>
     </div>
@@ -84,8 +89,10 @@ import { externalLinkRel, qualifyAffiliateLinksInHtml } from '../affiliate-links
 
 const props = withDefaults(defineProps<{
   isRoutinePage?: boolean;
+  notFound?: boolean;
 }>(), {
   isRoutinePage: false,
+  notFound: false,
 });
 
 type RoutineSource = {
@@ -354,6 +361,14 @@ aside {
 
 .routine-empty-state p {
   margin: 0;
+}
+
+.routine-not-found h1 {
+  margin: 0 0 var(--space-md);
+}
+
+.routine-not-found p + p {
+  margin-top: var(--space-md);
 }
 
 .sidebar-header {

@@ -10,7 +10,7 @@
     "optimize:review-images": "node scripts/optimize-images.mjs --skip-remote",
     "tag:amazon": "node scripts/add-amazon-affiliate-tag.mjs",
     "prebuild": "npm run optimize:review-images && npm run generate:sitemap && npm run generate:rss",
-    "build": "vite build && vite build --ssr src/entry-server.ts --outDir .ssr && node scripts/prerender-reviews.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.ts --outDir .ssr && node scripts/prerender.mjs",
     "serve": "vite preview",
     "test": "vitest",
     "sass": "sass --watch src/sass/main.scss public/main.css"
