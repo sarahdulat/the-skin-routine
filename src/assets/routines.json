@@ -353,9 +353,19 @@
         "site": "Vogue",
         "link": "https://www.vogue.com/article/hailey-bieber-beauty-secrets",
         "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "June 26, 2025",
         "image": "https://assets.vogue.com/photos/685da6dddcf136e0658c025c/3%3A4/w_748%2Cc_limit/Summer%2520Skin_Slides_0000_image26.jpg",
         "headline": "Hailey Bieber's Streamlined Beauty Routine Is Only 8 Steps",
         "summary": "Her newer routine focuses on a water rinse, Rhode Glazing Mist, Glazing Milk, milky SPF, and a simpler mom-friendly approach."
+      },
+      {
+        "label": "Elite Daily 2026",
+        "site": "Elite Daily",
+        "link": "https://www.elitedaily.com/beauty/hailey-bieber-morning-routine-skin-makeup-review",
+        "favicon": "https://www.elitedaily.com/favicon.ico",
+        "date": "August 10, 2026",
+        "headline": "I Tried Hailey Bieber's Morning Skin & Makeup Routine",
+        "summary": "Elite Daily's review of Bieber's Vogue morning routine confirms the skincare order and notes that her European ISDIN sunscreen is not sold in the U.S., pointing to ISDIN Fusion Water Magic SPF 40 as the closest stateside match."
       },
       {
         "label": "Vogue 2022",
@@ -416,9 +426,9 @@
         {
           "time": "am",
           "title": "SPF",
-          "product": "ISDIN Fusion Water Magic SPF 50",
-          "link": "https://www.isdin.com/en-US/sun-care/face-sunscreen/fusion-water-magic-spf-50",
-          "description": "<p>Use generously as the final morning skin-care step. Hailey says sunscreen is non-negotiable, and Vogue noted that she likes milky SPF formulas and fell in love with ISDIN Fusion Water Magic SPF on a trip to Paris.</p>"
+          "product": "ISDIN Fusion Water MAGIC SPF 40",
+          "link": "https://www.isdin.com/us/p/fusion-water-magic/4750?gQT=1",
+          "description": "<p>Use generously as the final morning skin-care step. Hailey says sunscreen is non-negotiable, and Vogue noted that she likes milky SPF formulas and fell in love with ISDIN Fusion Water Magic on a trip to Paris.</p><p>Elite Daily identifies the product used in the routine as the European ISDIN Fusion Water Magic Urban SPF 30, which is not sold in the U.S.; ISDIN Fusion Water MAGIC SPF 40 is the closest current stateside version.</p>"
         },
         {
           "time": "am",
@@ -1277,8 +1287,8 @@
   {
     "routine_name": "Scarlett Johansson's Routine",
     "id": 8,
-    "time": 4.8,
-    "point_description": "A sensitive-skin routine built around The Outset cleanser, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
+    "time": 5.3,
+    "point_description": "A sensitive-skin routine built around The Outset cleanser, dark spot serum, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -1292,6 +1302,15 @@
       "dark_spots_and_sun_damage"
     ],
     "sources": [
+      {
+        "label": "Katie Couric Media 2026",
+        "site": "Katie Couric Media",
+        "link": "https://katiecouric.com/shopping/beauty/scarlett-johansson-skincare-routine-the-outset-interview/",
+        "favicon": "https://katiecouric.com/favicon.ico",
+        "date": "June 5, 2026",
+        "headline": "Scarlett Johansson's Four-Minute Routine for Sensitive Skin",
+        "summary": "Johansson says her off-set routine is cleanser, prep serum, daily moisturizer, Hydrasheer SPF, and regular rotation of Total Clarity Dark Spot Serum, with double cleansing only after full glam."
+      },
       {
         "label": "Daily Beast 2026",
         "site": "The Daily Beast",
@@ -1346,20 +1365,27 @@
           "link": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
           "description": "<p>Start with cleanser. In the New York Times, Johansson says that in the morning she washes her face with The Outset's Gentle Micellar Antioxidant Cleanser.</p><p>Allure also says she uses The Outset's three-step Daily Essentials Regimen in the morning, and Page Six identifies this cleanser as part of her on-set Skin Survival Kit.</p>"
         },
-        {
-          "time": "am",
-          "title": "Prep Serum",
-          "product": "The Outset Firming Vegan Collagen Prep Serum",
-          "link": "https://theoutset.com/products/firming-vegan-collagen-prep-serum",
-          "description": "<p>Apply after cleansing. In the New York Times, Johansson says she follows cleanser with The Outset Firming Vegan Collagen Prep Serum.</p><p>Allure says she uses the Prep Serum in the morning, and again in the middle of the day if she showers or washes her skin. Page Six also names this as one of the trio she used while filming.</p>"
-        },
-        {
-          "time": "am",
-          "title": "Moisturizer",
-          "product": "The Outset Nourishing Squalane Daily Moisturizer",
-          "link": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer",
-          "description": "<p>Use as the day cream step. In the New York Times, Johansson says she applies The Outset Nourishing Squalane Daily Moisturizer after the prep serum.</p><p>Allure says she finishes her morning three-step regimen with day cream, and Page Six says this moisturizer was part of her on-set trio.</p>"
-        },
+      {
+        "time": "am",
+        "title": "Dark Spot Serum",
+        "product": "The Outset Total Clarity Dark Spot Serum",
+        "link": "https://theoutset.com/collections/skincare/products/total-clarity-dark-spot-serum-vitamin-c-alternative",
+        "description": "<p>Use one pump after cleansing and before the prep serum, then follow with moisturizer and SPF in the morning. Katie Couric Media's 2026 interview adds that Total Clarity Dark Spot Serum is one of The Outset's newest innovations and has been in Johansson's regular rotation.</p><p>The Outset positions it as a sensitive-skin-friendly vitamin C alternative for dark spots, uneven tone, and post-acne marks. If you are pregnant, trying to conceive, or nursing, check with your clinician before using brightening or exfoliating dark-spot treatments.</p>"
+      },
+      {
+        "time": "am",
+        "title": "Prep Serum",
+        "product": "The Outset Firming Vegan Collagen Prep Serum",
+        "link": "https://theoutset.com/products/firming-vegan-collagen-prep-serum",
+        "description": "<p>Apply after the dark spot serum or directly after cleansing on simpler mornings. In the New York Times, Johansson says she follows cleanser with The Outset Firming Vegan Collagen Prep Serum.</p><p>Allure says she uses the Prep Serum in the morning, and again in the middle of the day if she showers or washes her skin. Page Six also names this as one of the trio she used while filming.</p>"
+      },
+      {
+        "time": "am",
+        "title": "Moisturizer",
+        "product": "The Outset Nourishing Squalane Daily Moisturizer",
+        "link": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer",
+        "description": "<p>Use as the day cream step after the treatment serums. In the New York Times, Johansson says she applies The Outset Nourishing Squalane Daily Moisturizer after the prep serum.</p><p>Allure says she finishes her morning three-step regimen with day cream, and Page Six says this moisturizer was part of her on-set trio.</p>"
+      },
         {
           "time": "am",
           "title": "SPF",
@@ -1376,13 +1402,13 @@
         }
       ],
       "pm": [
-        {
-          "time": "pm",
-          "title": "Makeup Remove",
-          "product": "Lancôme Bi-Facil Double-Action Eye Makeup Remover",
-          "link": "https://www.amazon.com/dp/B01GR1M1TS?tag=theskinrout07-20",
-          "description": "<p>Use when removing filming or long-wear makeup before cleansing. In the New York Times, Johansson says she has used Lancôme Bi-Facil Double Action Makeup Remover forever because her skin is very sensitive and it does not burn while removing all of her makeup after filming.</p>"
-        },
+      {
+        "time": "pm",
+        "title": "Remove Makeup",
+        "product": "Lancôme Bi-Facil Double-Action Eye Makeup Remover",
+        "link": "https://www.amazon.com/dp/B01GR1M1TS?tag=theskinrout07-20",
+        "description": "<p>Use when removing filming, full glam, or long-wear makeup before cleansing. In the New York Times, Johansson says she has used Lancôme Bi-Facil Double Action Makeup Remover forever because her skin is very sensitive and it does not burn while removing all of her makeup after filming.</p><p>Katie Couric Media's 2026 interview also says she only double cleanses at night if she has been in full glam, which keeps the everyday routine much simpler.</p>"
+      },
         {
           "time": "pm",
           "title": "Cleanse",
@@ -1404,13 +1430,13 @@
           "link": "https://www.amazon.com/dp/B0923BZ6CR?tag=theskinrout07-20",
           "description": "<p>Use occasionally, not nightly, on clean skin with a careful light touch. In the New York Times, Johansson says she wishes she knew about dermaplaning sooner and uses a Tweezerman Facial Razor because her skin feels so soft afterward.</p>"
         },
-        {
-          "time": "pm",
-          "title": "Face Oil",
-          "product": "The Outset Ultralight Moisture-Boosting Botanical Oil",
-          "link": "https://theoutset.com/collections/single-products/products/ultralight-moisture-boosting-oil",
-          "description": "<p>Use occasionally instead of, or alongside, night cream when skin wants oil. Allure says Johansson sometimes uses just The Outset Moisture-Boosting Oil at night.</p>"
-        },
+      {
+        "time": "pm",
+        "title": "Face Oil",
+        "product": "The Outset Ultralight Moisture-Boosting Botanical Oil",
+        "link": "https://theoutset.com/collections/single-products/products/ultralight-moisture-boosting-oil",
+        "description": "<p>Use occasionally instead of, or alongside, night cream when skin wants oil. Allure says Johansson sometimes uses just The Outset Moisture-Boosting Oil at night.</p><p>In Katie Couric Media's 2026 interview, she says she layers in a little more hydration at night with the boosting oil and night cream.</p>"
+      },
         {
           "time": "pm",
           "title": "Barrier Balm",
@@ -2320,8 +2346,8 @@
   {
     "routine_name": "Julianne Moore's Routine",
     "id": 17,
-    "time": 6.9,
-    "point_description": "A regimented skin-protective routine built around gentle cleansing, targeted serums, neck and eye care, facial massage, and daily sunscreen.",
+    "time": 8,
+    "point_description": "A regimented skin-protective routine built around gentle cleansing, targeted serums, red-carpet RéVive treatments, neck and eye care, facial massage, nighttime oil, and daily sunscreen.",
     "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Julianne%20Moore-60954.jpg",
     "celebrity_image_credit": "Harald Krichel",
     "celebrity_image_license": "CC BY-SA 4.0",
@@ -2336,6 +2362,16 @@
       "dark_spots_and_sun_damage"
     ],
     "sources": [
+      {
+        "label": "Harper's Bazaar 2026",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/a71547921/how-julianne-moore-gets-her-skin-red-carpet-ready/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "June 16, 2026",
+        "headline": "How Julianne Moore Gets Her Skin Red Carpet Ready",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/7238357f-ddda-4bd1-a55b-2d88b8b5b213.jpg?crop=1xw%3A0.75xh%3Bcenter%2Ctop&resize=640%3A%2A",
+        "summary": "Moore and esthetician Fabricio Ormonde describe her 2026 red-carpet skin prep with RéVive products, including Fermitif, Intensité Volumizing Serum, Lissant Neck Serum, and Renewal Rescue Elixir Oil."
+      },
       {
         "label": "Marie Claire 2023",
         "site": "Marie Claire",
@@ -2387,6 +2423,13 @@
         },
         {
           "time": "am",
+          "title": "Red-Carpet Serum",
+          "product": "RéVive Intensité Volumizing Serum",
+          "link": "https://reviveskincare.com/collections/fine-lines-wrinkles/products/new-intensite-volumizing-serum",
+          "description": "<p>Use this as the plush event-prep serum step when recreating her red-carpet routine, then follow with cream and SPF. Harper's Bazaar says Fabricio Ormonde applied RéVive's <a href=\"https://reviveskincare.com/collections/fermitif\" target=\"_blank\">Fermitif collection</a> and Intensité Volumizing Serum on the day of the gala to help her skin look lifted, hydrated, smooth, and plump.</p><p>This is not the minimalist everyday version of Julianne's routine; it is the luxury red-carpet add-on.</p>"
+        },
+        {
+          "time": "am",
           "title": "Vitamin A Cream",
           "product": "Environ Youth EssentiA Antioxidant Defence Creme",
           "link": "https://skincare.dermaconcepts.com/products/antioxidant-defence-creme",
@@ -2397,7 +2440,7 @@
           "title": "Neck Cream",
           "product": "Revision Skincare Nectifirm Advanced",
           "link": "https://www.amazon.com/dp/B0CYN2CK73?tag=theskinrout07-20",
-          "description": "<p>Smooth onto the neck before eye cream. Vogue says Moore applies Revision Skincare's firming neck cream after her serums.</p>"
+          "description": "<p>Smooth onto the neck before eye cream. Vogue says Moore applies Revision Skincare's firming neck cream after her serums.</p><p>For the newer RéVive red-carpet version, Harper's Bazaar also names <a href=\"https://reviveskincare.com/products/lissant-line-smoothing-neck-serum\" target=\"_blank\">RéVive Lissant Line-Smoothing Neck Serum</a>, a targeted neck serum used in the same event-prep product family.</p>"
         },
         {
           "time": "am",
@@ -2448,7 +2491,7 @@
           "title": "Neck Cream",
           "product": "Revision Skincare Nectifirm Advanced",
           "link": "https://www.amazon.com/dp/B0CYN2CK73?tag=theskinrout07-20",
-          "description": "<p>Smooth onto the neck after the treatment layers. Vogue says Moore applies Revision Skincare's firming neck cream before moving into eye care.</p>"
+          "description": "<p>Smooth onto the neck after the treatment layers. Vogue says Moore applies Revision Skincare's firming neck cream before moving into eye care.</p><p>Harper's Bazaar's 2026 red-carpet routine also names <a href=\"https://reviveskincare.com/products/lissant-line-smoothing-neck-serum\" target=\"_blank\">RéVive Lissant Line-Smoothing Neck Serum</a> as the newer targeted neck option in her RéVive prep.</p>"
         },
         {
           "time": "pm",
@@ -2456,11 +2499,18 @@
           "product": "Hourglass Equilibrium Intensive Hydrating Eye Balm",
           "link": "https://www.amazon.com/dp/B0CK9SMN8J?tag=theskinrout07-20",
           "description": "<p>Finish with eye balm. Marie Claire says Moore ends her PM routine with Hourglass eye balm and notes that she used to love a Kiehl's option before it was discontinued.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Night Oil",
+          "product": "RéVive Renewal Rescue Elixir Oil",
+          "link": "https://reviveskincare.com/products/renewal-rescue-elixir-oil",
+          "description": "<p>Use as the final nighttime oil step, or press on a little before going out at night when skin needs a refreshed sheen. Harper's Bazaar says Renewal Rescue Elixir Oil is Julianne's personal favorite from RéVive.</p><p>She describes the texture as starting like a gel and turning into an oil on the face, and says she sometimes uses a small amount before an evening event because it refreshes her skin.</p>"
         }
       ]
     },
     "draft": false,
-    "cost": 9.4
+    "cost": 10.3
   },
   {
     "routine_name": "Emma Stone's Routine",
@@ -2948,14 +2998,14 @@
     ],
     "sources": [
       {
-        "label": "Vogue 2025",
-        "site": "Vogue",
-        "link": "https://www.vogue.com/video/watch/best-of-beauty-secrets-2025",
-        "favicon": "https://www.vogue.com/favicon.ico",
-        "date": "Dec 16, 2025",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bella_Hadid_Cannes_2018.jpg",
-        "headline": "The Best Celebrity Beauty Secrets of 2025",
-        "summary": "Bella Hadid shares her work-morning skin prep, including a cold de-puffing bath, an electromagnetic facial device, Biologique Recherche Colostrum, Weleda Skin Food, and Clinique's SPF tint."
+        "label": "Vogue YouTube 2025",
+        "site": "Vogue YouTube",
+        "link": "https://www.youtube.com/watch?v=539npAj_I0Y",
+        "favicon": "https://www.youtube.com/favicon.ico",
+        "date": "May 13, 2025",
+        "image": "https://i.ytimg.com/vi/539npAj_I0Y/hqdefault.jpg",
+        "headline": "Bella Hadid's Favorite Beauty Routines | Beauty Secrets",
+        "summary": "Bella Hadid shares her work-morning skin prep, including a cold de-puffing bath, NuFACE Trinity+, Biologique Recherche Serum Colostrum VG, Biologique Recherche Serum Liposmose, Weleda Skin Food, and Clinique's SPF tint."
       },
       {
         "label": "InStyle México 2025",
@@ -2984,7 +3034,7 @@
           "time": "am",
           "title": "Cold De-Puff",
           "product": "Cold Water Ice Bath",
-          "link": "https://www.vogue.com/video/watch/best-of-beauty-secrets-2025",
+          "link": "https://www.youtube.com/watch?v=539npAj_I0Y",
           "description": "<p>Use cold water or an ice bath as a short de-puffing step when skin looks tired, puffy, or inflamed. In Vogue, Bella says she sometimes does this for about 30 seconds in the morning when she is not feeling well or feels like her face is flaring.</p>"
         },
         {
@@ -3053,8 +3103,8 @@
   {
     "routine_name": "Jessica Alba's Routine",
     "id": 23,
-    "time": 5.7,
-    "point_description": "A clean-beauty, sensitive-skin routine centered on Honest Beauty masks, antioxidant serums, barrier balm, tinted eye care, mineral SPF tint, and optional evening add-on tools.",
+    "time": 8.4,
+    "point_description": "A clean-beauty, sensitive-skin routine centered on Honest Beauty masks, double cleansing, eye patches, facial oil, resurfacing serum, massage tools, mineral SPF tint, and balm-heavy glow.",
     "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jessica_Alba_2024.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -3075,6 +3125,26 @@
         "image": "https://cdn.mos.cms.futurecdn.net/whowhatwear/posts/291522/jessica-alba-beauty-routine-interview-291522-1612830512473-super.jpg",
         "headline": "Jessica Alba's Clean-Beauty Routine and Skincare Must-Haves",
         "summary": "Jessica gives a full AM and PM routine, naming Prime + Perfect Mask, Calm & Porefect Serum, Calm + Heal Melting Balm, Honestly Bright Eyes, Vitamin C Radiance Serum, Calm On Foaming Cream Cleanser, a reusable silicone mask, and an ultrasound wand."
+      },
+      {
+        "label": "British Vogue YouTube 2020",
+        "site": "British Vogue YouTube",
+        "link": "https://www.youtube.com/watch?v=72r3UZt5iXs",
+        "favicon": "https://www.youtube.com/favicon.ico",
+        "date": "2020",
+        "image": "https://i.ytimg.com/vi/72r3UZt5iXs/hqdefault.jpg",
+        "headline": "Jessica Alba's Self-Care Beauty Routine",
+        "summary": "Jessica walks through an at-home self-care routine with Honest Beauty cleansing, vitamin C, facial oil, lip care, massage tools, and skin-soothing moisture."
+      },
+      {
+        "label": "Harper's Bazaar YouTube 2020",
+        "site": "Harper's Bazaar YouTube",
+        "link": "https://www.youtube.com/watch?v=H70HPDK8xeQ",
+        "favicon": "https://www.youtube.com/favicon.ico",
+        "date": "2020",
+        "image": "https://i.ytimg.com/vi/H70HPDK8xeQ/hqdefault.jpg",
+        "headline": "Jessica Alba's Nighttime Skincare Routine",
+        "summary": "Jessica's Go To Bed With Me video shows a fuller nighttime routine with a double cleanse, two masks, eye patches, facial oil, tools, resurfacing serum, hydrogel cream, and balm."
       },
       {
         "label": "Marie Claire 2021",
@@ -3155,50 +3225,99 @@
       "pm": [
         {
           "time": "pm",
-          "title": "Cleanse",
+          "title": "First Cleanse",
+          "product": "Honest Beauty Magic Gel-To-Milk Cleanser",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Magic+Gel-To-Milk+Cleanser&tag=theskinrout07-20",
+          "description": "<p>Massage onto dry skin first to break down makeup and sunscreen, then add water so it turns milky before rinsing. In the Harper's Bazaar nighttime video, Jessica starts with the Honest Beauty Magic Gel-To-Milk Cleanser as her makeup-removal cleanse.</p><p>This exact cleanser is not reliably available from Honest anymore, so the link points to marketplace availability for the source-mentioned product.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Second Cleanse",
           "product": "Honest Beauty Sensitive Skin Calming Cream Cleanser",
           "link": "https://www.amazon.com/dp/B08BX1V2J8?tag=theskinrout07-20",
-          "description": "<p>Massage onto damp skin, rinse, and pat dry. Who What Wear says Jessica likes washing her face at night with Calm On Foaming Cream Cleanser; Honest's current page calls this Sensitive Skin Calming Cream Cleanser and describes it as a gentle foaming formula for sensitive skin.</p>"
+          "description": "<p>Follow with the foaming cream cleanser on damp skin and rinse well. Harper's Bazaar shows Jessica doing a second cleanse after makeup removal, and Who What Wear says she likes washing her face at night with Calm On Foaming Cream Cleanser.</p><p>Honest's current page calls the closest current cleanser Sensitive Skin Calming Cream Cleanser and describes it as a gentle foaming formula for sensitive skin.</p>"
         },
         {
           "time": "pm",
           "title": "Gentle Sponge",
           "product": "Honest Beauty Gentle Konjac Sponge",
           "link": "https://www.amazon.com/s?k=Honest+Beauty+Gentle+Konjac+Sponge&tag=theskinrout07-20",
-          "description": "<p>Use damp with cleanser when you want a little extra soft polishing, not harsh scrubbing. Women's Health says Jessica wets the Honest Beauty Gentle Konjac Sponge and rubs it over her skin during her nighttime routine.</p>"
+          "description": "<p>Use damp with the second cleanse when you want a little extra soft polishing, not harsh scrubbing. Women's Health says Jessica wets the Honest Beauty Gentle Konjac Sponge and rubs it over her skin during her nighttime routine.</p>"
         },
         {
           "time": "pm",
-          "title": "Vitamin C Serum",
-          "product": "Honest Beauty Vitamin C Radiance Serum",
-          "link": "https://www.amazon.com/dp/B07NTPQRKV?tag=theskinrout07-20",
-          "description": "<p>Apply before moisturizer or balm. Who What Wear says Jessica swaps in Vitamin C Radiance Serum at night, and her older Who What Wear product edit quotes her calling it her go-to for brightening, used right before moisturizer.</p>"
+          "title": "Overnight Mask",
+          "product": "Honest Beauty Prime + Perfect Mask",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Prime+%2B+Perfect+Mask&tag=theskinrout07-20",
+          "description": "<p>Apply a thin layer after cleansing when skin needs the polished, getting-ready-for-bed version of her glow routine. Harper's Bazaar shows Jessica using Prime + Perfect Mask at night, while Who What Wear says she also throws it on in the morning before brushing her teeth, drinking coffee, and making breakfast.</p><p>This exact mask appears discontinued or not reliably available now, so the link points to remaining marketplace availability.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Detox Mask",
+          "product": "Honest Beauty 3-in-1 Detox Mud Mask",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+3-in-1+Detox+Mud+Mask&tag=theskinrout07-20",
+          "description": "<p>Use only where congestion is the issue, not as a punishment for having pores. Harper's Bazaar shows Jessica adding Honest Beauty 3-in-1 Detox Mud Mask to the nighttime routine, making it a source-backed occasional mask step.</p><p>This is more of a treatment-night add-on than an every-night requirement, especially if your skin is dry or sensitive.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Patches",
+          "product": "Comfort Zone Sublime Skin Eye Patch",
+          "link": "https://us.comfortzoneskin.com/products/sublime-skin-eye-patch",
+          "description": "<p>Apply under the eyes while the mask portion of the routine sits. Harper's Bazaar includes Comfort Zone Sublime Skin Eye Patches in Jessica's nighttime routine, so this is the dedicated de-puffing, tired-eye add-on.</p><p>Use them when you want the ritual, not because every bedtime routine needs a tiny undereye event.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Tinted Eye Cream",
+          "product": "Honest Beauty Honestly Bright Eyes Tinted Eye Cream",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Honestly+Bright+Eyes+Tinted+Eye+Cream&tag=theskinrout07-20",
+          "description": "<p>Tap under the eyes after patches or on simpler nights without them. Jessica says this has a hydrogel base with pigment and helps counter the blue from dark circles; Marie Claire also quotes her using it as a tinted, hydrating under-eye cream.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Facial Oil",
+          "product": "Honest Beauty Organic Beauty Facial Oil",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Organic+Beauty+Facial+Oil&tag=theskinrout07-20",
+          "description": "<p>Press a few drops into the face and neck for slip before tools or balm. Harper's Bazaar shows Jessica using Honest Beauty Organic Beauty Facial Oil in the routine, and W also mentions her love of facial oil as part of her beauty notes.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Massage Tool",
+          "product": "Nurse Jamie Eyeonix Eye Massaging Beauty Tool",
+          "link": "https://www.amazon.com/s?k=Nurse+Jamie+Eyeonix+Eye+Massaging+Beauty+Tool&tag=theskinrout07-20",
+          "description": "<p>Glide gently around the orbital bone, never dragging the eyelid. Harper's Bazaar shows Jessica using the Nurse Jamie Eyeonix tool around the eye area as part of the fuller nighttime routine.</p><p>This is optional and very tool-person-coded; skip it if it makes the routine feel like you're on an assembly line.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Face Massage Tool",
+          "product": "ReFa 4 Carat Face & Body Roller",
+          "link": "https://www.amazon.com/s?k=ReFa+4+Carat+Face+Body+Roller&tag=theskinrout07-20",
+          "description": "<p>Use gentle upward and outward passes over facial oil or balm. Harper's Bazaar includes the ReFa 4 Carat roller in Jessica's nighttime routine, and it fits the lifted, de-puffed massage portion of the video.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Resurfacing Serum",
+          "product": "Honest Beauty Beauty Sleep Resurfacing Serum",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Beauty+Sleep+Resurfacing+Serum&tag=theskinrout07-20",
+          "description": "<p>Use on treatment nights after cleansing and before moisturizer, avoiding the eye area. Harper's Bazaar includes Beauty Sleep Resurfacing Serum in Jessica's nighttime routine, making this the acid/resurfacing step that was missing before.</p><p>Because resurfacing serums can overlap with masks and exfoliation, this is not a nightly dare. Use fewer active steps if skin feels tight, shiny, or irritated.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Hydrogel Cream",
+          "product": "Honest Beauty Hydrogel Cream",
+          "link": "https://www.amazon.com/s?k=Honest+Beauty+Hydrogel+Cream&tag=theskinrout07-20",
+          "description": "<p>Smooth on after serum as the water-light moisturizer. Harper's Bazaar shows Jessica using Honest Beauty Hydrogel Cream, and the gel texture makes sense after a long routine because it gives hydration without turning every layer into a heavy balm.</p>"
         },
         {
           "time": "pm",
           "title": "Melting Balm",
           "product": "Honest Beauty Calm + Heal Melting Balm",
           "link": "https://www.amazon.com/s?k=Honest+Beauty+Calm+%2B+Heal+Melting+Balm&tag=theskinrout07-20",
-          "description": "<p>Seal the routine with the same balm she uses in the morning. Women's Health says Jessica finishes her nighttime routine by slathering Calm + Heal Melting Balm over her cheeks and neck, and Marie Claire quotes her saying it leaves the face glowing and dewy instantly.</p>"
-        },
-        {
-          "time": "pm",
-          "title": "Silicone Mask",
-          "product": "Honest Beauty Reusable Magic Silicone Sheet Mask",
-          "link": "https://www.target.com/p/-/A-82445865",
-          "description": "<p>Use as an optional TV-time add-on over serum or balm. Who What Wear says Jessica sometimes uses the reusable silicone mask and lets it sit on her face for a while; Target's current listing says to use it over serums or moisturizers for 10 to 30 minutes.</p>"
-        },
-        {
-          "time": "pm",
-          "title": "Ultrasound Wand",
-          "product": "Conture Kinetic Skin Toning System",
-          "link": "https://camerareadycosmetics.com/search?q=Conture+Kinetic+Skin+Toning+System",
-          "description": "<p>Use as an optional ten-minute add-on with balm when there is extra time. Jessica tells Who What Wear she sometimes uses an ultrasound vibrating wand with the balm for 10 minutes; Camera Ready Cosmetics later identified the Conture Kinetic Skin Toning System as a Jessica Alba-associated skincare tool.</p>"
+          "description": "<p>Use as the final comfort layer, especially on cheeks, neck, or irritated areas. Women's Health says Jessica finishes by slathering Calm + Heal Melting Balm over her cheeks and neck, and Marie Claire quotes her saying it leaves the face glowing and dewy instantly.</p><p>Who What Wear also says she sometimes layers the reusable <a href=\"https://www.target.com/p/-/A-82445865\" target=\"_blank\">Honest Beauty Reusable Magic Silicone Sheet Mask</a> over serum or moisturizer, and uses an ultrasound wand with balm when she has an extra ten minutes.</p>"
         }
       ]
     },
     "draft": false,
-    "cost": 5.1
+    "cost": 7.5
   },
   {
     "routine_name": "Beyoncé's Routine",
@@ -3638,9 +3757,9 @@
   {
     "routine_name": "Miranda Kerr's Routine",
     "id": 28,
-    "time": 7.4,
+    "time": 9.5,
     "point_title": "Miranda Kerr's Routine",
-    "point_description": "A KORA-heavy ritual built around double cleansing, vitamin C for pregnancy-linked pigmentation, turmeric glow products, face oil, eye oil, facial massage, and an overnight mask.",
+    "point_description": "A KORA-heavy ritual built around double cleansing, mist, lightweight moisturizer, vitamin C, turmeric glow products, face oil, eye oil, mineral SPF, gua sha, red light, microcurrent, and an overnight mask.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Miranda_Kerr_-_Abbot_Kinney_2025.jpg/960px-Miranda_Kerr_-_Abbot_Kinney_2025.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -3654,6 +3773,25 @@
       "sensitive"
     ],
     "sources": [
+      {
+        "label": "Breaking Beauty 2026",
+        "site": "Breaking Beauty",
+        "link": "https://www.breakingbeautypodcast.com/podcast-episodes/06/10/ep-451-miranda-kerr-kora-organics?rq=kerr",
+        "favicon": "https://www.breakingbeautypodcast.com/favicon.ico",
+        "date": "June 11, 2026",
+        "headline": "Ep 451 - Miranda Kerr's 2026 Reset: Her High-Tech Beauty Routine",
+        "image": "https://content.production.cdn.art19.com/images/ad/31/c0/aa/ad31c0aa-addf-47ca-af8a-d8e4cc352c1f/8784843c4339adf6598f8830887a6006fb1f79c77c7d2c5a198b344cd88e093b456281883109fcaa90acb71c4ac6c1f6834e6ac013535033a3e17d5c9729126e.jpeg",
+        "summary": "Kerr describes her current high-tech beauty routine as cleanse, mist, moisturize, then red light, NuFACE or Softwave depending on timing, plus Noni Glow Face Oil and rose quartz gua sha before events."
+      },
+      {
+        "label": "E! 2026",
+        "site": "E! Online",
+        "link": "https://www.eonline.com/news/1431653/miranda-kerr-met-gala-skincare-routine-for-glowing-sculpted-skin",
+        "favicon": "https://www.eonline.com/favicon.ico",
+        "date": "May 5, 2026",
+        "headline": "Miranda Kerr Revealed Her Pre-Met Gala Wellness Routine for Glowing, Sculpted Skin",
+        "summary": "Kerr shares her six-step pre-Met Gala prep, including Minty Mineral Hydration Mist, Noni Glow Face Oil, Rose Quartz Heart Facial Sculptor, and Silky Sun Drops SPF."
+      },
       {
         "label": "KORA 2024",
         "site": "KORA Organics",
@@ -3716,7 +3854,7 @@
           "title": "Mist",
           "product": "KORA Organics Active Algae Minty Mist",
           "link": "https://us.koraorganics.com/products/active-algae-minty-mist",
-          "description": "<p>Spritz after cleansing and before serum. Marie Claire says she preps with KORA's Minty Mist, and W describes her using a mist like a toner and refreshing spray throughout the day.</p><p>Keep this as the damp-skin step so the serum and moisturizer glide instead of dragging.</p>"
+          "description": "<p>Spritz after cleansing and before serum. On Breaking Beauty, Miranda says her secret sauce is cleanse, mist, moisturize; Marie Claire says she preps with KORA's Minty Mist, and W describes her using a mist like a toner and refreshing spray throughout the day.</p><p>Keep this as the damp-skin step so the serum and moisturizer glide instead of dragging.</p>"
         },
         {
           "time": "am",
@@ -3727,17 +3865,38 @@
         },
         {
           "time": "am",
+          "title": "Glow Drops",
+          "product": "KORA Organics Turmeric Glow Drops Niacinamide Alternative Serum",
+          "link": "https://us.koraorganics.com/products/turmeric-glow-drops-niacinamide-alternative-serum",
+          "description": "<p>Smooth a few drops over clean skin before moisturizer, or keep it as a lightweight glow booster under sunscreen when the routine is shorter. Breaking Beauty lists KORA's Turmeric Glow Drops with Miranda's current product lineup.</p><p>KORA positions this as a smoothing, radiance-focused serum rather than a traditional niacinamide serum, so it makes sense on mornings when she wants a bright, even base.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Red Light",
+          "product": "Solawave 4-in-1 Skincare Wand",
+          "link": "https://www.solawave.co/products/radiant-renewal-skincare-wand-with-red-light-therapy?variant=43214077395112",
+          "description": "<p>Use on clean skin before oil and sunscreen, following the device directions. On Breaking Beauty, Miranda says she uses Solawave and also has a full red light panel, and that she thinks red light helps.</p><p>This is a high-tech add-on, not the core of the routine. Keep it optional and skip it on rushed mornings.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Microcurrent",
+          "product": "NuFACE Trinity+",
+          "link": "https://amzn.to/465q3gV",
+          "description": "<p>Use with conductive gel after water-based serums and before any moisturizer, face oil, eye oil, or sunscreen. Miranda says on Breaking Beauty that she uses NuFACE and alternates it with <a href=\"https://softwavetrt.com/\" target=\"_blank\">Softwave</a>; she also notes that you are not supposed to do both together.</p><p>She started using NuFACE while breastfeeding because she could not do Softwave then, so this is the at-home sculpting option in the routine. For more on the device category and how it fits into a routine, see the <a href=\"https://theskinroutine.com/blog/nuface-mini-plus-starter-kit/\" target=\"_blank\">NuFACE MINI+ review</a>.</p>"
+        },
+        {
+          "time": "am",
           "title": "Moisturizer",
-          "product": "KORA Organics Turmeric Glow Moisturizer",
-          "link": "https://us.koraorganics.com/products/turmeric-glow-moisturizer",
-          "description": "<p>Warm a small amount in the palms and apply after serum. In Marie Claire, Miranda says she uses the newer moisturizer morning and night; in W and Vogue, she talks about mixing moisturizer with a few drops of face oil for a hydrated base.</p><p>This is the richer glow step, so oily skin may want less than the camera-ready amount.</p>"
+          "product": "KORA Organics Active Algae Lightweight Moisturizer",
+          "link": "https://us.koraorganics.com/products/active-algae-lightweight-moisturizer",
+          "description": "<p>Warm a small amount in the palms and apply after the water-based serum and device steps. Breaking Beauty's product list includes Active Algae Lightweight Moisturizer, and Miranda describes the simple core of her routine as cleanse, mist, moisturize.</p><p>She has also mentioned using <a href=\"https://us.koraorganics.com/products/turmeric-glow-moisturizer\" target=\"_blank\">Turmeric Glow Moisturizer</a> morning and night, so use that version when you want the richer KORA glow step.</p>"
         },
         {
           "time": "am",
           "title": "Face Oil",
           "product": "KORA Organics Noni Glow Face Oil",
           "link": "https://us.koraorganics.com/products/noni-glow-face-oil",
-          "description": "<p>Mix a few drops into moisturizer or press it over the top. Miranda repeatedly names Noni Glow Face Oil as a core product, and Marie Claire says she has always used it on her face.</p><p>In Vogue, she uses face oil with moisturizer before facial massage, which gives the tool enough slip.</p>"
+          "description": "<p>Mix a few drops into moisturizer or press it over the top. Miranda repeatedly names Noni Glow Face Oil as a core product, and Marie Claire says she has always used it on her face.</p><p>On Breaking Beauty, she says that if she has six minutes before an event, she applies Noni Glow Face Oil and uses her rose quartz gua sha for a quick pick-me-up.</p>"
         },
         {
           "time": "am",
@@ -3746,14 +3905,21 @@
           "link": "https://www.amazon.com/dp/B09HFKFVDR?tag=theskinrout07-20",
           "description": "<p>Roll around the eye area and anywhere small lines need extra slip. In Vogue, Miranda applies Noni Radiant Eye Oil and says she even uses it on little line-prone areas.</p><p>This is skincare plus ritual: lightweight oil, rollerball, and a little de-puffing moment.</p>"
         },
-        {
-          "time": "am",
-          "title": "Gua Sha",
-          "product": "KORA Organics Rose Quartz Heart Facial Sculptor",
-          "link": "https://www.amazon.com/dp/B09G7Y3Y46?tag=theskinrout07-20",
-          "description": "<p>Use after moisturizer and oil, with upward strokes. In Vogue, Miranda says she likes to keep her rose quartz tool in the fridge and uses it to massage in face oil and moisturizer, support lymphatic drainage, de-puff, sculpt, and work on neck tension points.</p><p>Use light pressure. The glow is the goal, not red scrape marks.</p>"
-        }
-      ],
+      {
+        "time": "am",
+        "title": "Gua Sha",
+        "product": "KORA Organics Rose Quartz Heart Facial Sculptor",
+        "link": "https://www.amazon.com/dp/B09G7Y3Y46?tag=theskinrout07-20",
+        "description": "<p>Use after moisturizer and oil, with upward strokes. In Vogue and Breaking Beauty, Miranda says she likes to keep her rose quartz tool in the fridge. On the podcast, she describes starting at the neck, then working the jaw, cheekbone, and eye area.</p><p>Use light pressure. The glow is the goal, not red scrape marks.</p>"
+      },
+      {
+        "time": "am",
+        "title": "Mineral SPF",
+        "product": "KORA Organics Silky Sun Drops 100% Mineral Sunscreen Serum SPF 30",
+        "link": "https://us.koraorganics.com/products/silky-sun-drops-mineral-sunscreen-serum",
+        "description": "<p>Shake well and apply generously as the final morning skincare step. In E!'s 2026 Met Gala prep story, Miranda says it is important to apply sunscreen and uses KORA Silky Sun Drops after mist, face oil, and gua sha.</p><p>KORA's own directions place Silky Sun Drops last in the skincare routine, before sun exposure, with reapplication at least every two hours outdoors.</p>"
+      }
+    ],
       "pm": [
         {
           "time": "pm",
@@ -3814,7 +3980,7 @@
       ]
     },
     "draft": false,
-    "cost": 8.1
+    "cost": 9.9
   },
   {
     "routine_name": "Ashley Graham's Routine",
@@ -4768,7 +4934,7 @@
           "title": "Optional Barrier Serum",
           "product": "The Ordinary Soothing & Barrier Support Serum",
           "link": "https://www.amazon.com/s?k=The+Ordinary+Soothing+%26+Barrier+Support+Serum&tag=theskinrout07-20",
-          "description": "<p>Use a few drops after cleansing if you skipped it in the morning or want more hydration. There is no need to use it twice daily just to finish the bottle faster.</p><p>If persistent acne is the real concern, this soothing serum is not an acne medication. A dermatologist can help, or consider <a href=\"https://www.amazon.com/s?k=Differin+Adapalene+Gel+0.1%25&tag=theskinrout07-20\" target=\"_blank\">Differin Adapalene Gel 0.1%</a> instead, starting only two nights a week and avoiding it during pregnancy.</p>"
+          "description": "<p>Use a few drops after cleansing if you skipped it in the morning or want more hydration. There is no need to use it twice daily just to finish the bottle faster.</p><p>If persistent acne is the real concern, this soothing serum is not an acne medication. A dermatologist can help, or consider <a href=\"https://www.amazon.com/s?k=Differin+Adapalene+Gel+0.1%25&tag=theskinrout07-20\" target=\"_blank\">Differin Adapalene Gel 0.1%</a> instead, starting only two nights a week. Skip adapalene if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise.</p>"
         },
         {
           "time": "pm",
@@ -5053,7 +5219,7 @@
           "title": "Optional Beauty Mist",
           "product": "Caudalie Beauty Elixir",
           "link": "https://www.amazon.com/dp/B000HEENHU?tag=theskinrout07-20",
-          "description": "<p>On recovery nights, shake and mist after cleansing for the classic French-pharmacy ritual, then let it settle before moisturizer. I would buy this for the refreshing, sensorial experience—not because a mist is going to remodel collagen or replace a serum.</p><p>Beauty Elixir contains alcohol, fragrance, and several essential oils. Skip it if you are sensitive, rosacea-prone, pregnant, or using retinal that night; Caudalie's gentler <a href=\"https://fr.caudalie.com/p/324/eau-de-raisin-hydratante-324.html\" target=\"_blank\">Grape Water</a> is the better fragrance-free alternative.</p>"
+          "description": "<p>On recovery nights, shake and mist after cleansing for the classic French-pharmacy ritual, then let it settle before moisturizer. I would buy this for the refreshing, sensorial experience—not because a mist is going to remodel collagen or replace a serum.</p><p>Beauty Elixir contains alcohol, fragrance, and several essential oils. Skip it if you are sensitive, rosacea-prone, or using retinal that night; Caudalie's gentler <a href=\"https://fr.caudalie.com/p/324/eau-de-raisin-hydratante-324.html\" target=\"_blank\">Grape Water</a> is the better fragrance-free alternative.</p>"
         },
         {
           "time": "pm",
@@ -5067,7 +5233,7 @@
           "title": "Retinal Night Cream",
           "product": "Avène Hyaluron Activ B3 Multi-Intensive Night Cream",
           "link": "https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab",
-          "description": "<p>Start one or two nights a week, using the pump dose over dry skin and avoiding eyelids, lip edges, and nose creases. The French formula combines retinal, niacinamide, and hyaluronic acid for fine lines, firmness, and uneven tone.</p><p>It contains fragrance and may tingle. Do not layer it with another retinoid or exfoliating acid, and avoid retinoids during pregnancy.</p>"
+          "description": "<p>Start one or two nights a week, using the pump dose over dry skin and avoiding eyelids, lip edges, and nose creases. The French formula combines retinal, niacinamide, and hyaluronic acid for fine lines, firmness, and uneven tone.</p><p>It contains fragrance and may tingle. Do not layer it with another retinoid or exfoliating acid, and skip retinal if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise.</p>"
         },
         {
           "time": "pm",
@@ -5165,7 +5331,7 @@
           "title": "0.1% Retinal",
           "product": "Avène Hyaluron Activ Procedure Lifting Cream 0.1% Retinal",
           "link": "https://www.eau-thermale-avene.fr/gamme/hyaluron-activ-procedure",
-          "description": "<p>Start one night a week, then move to two nights only after skin stays comfortable. This newer French 0.1% retinal cream is the stronger correction step for established lines, uneven texture, and loss of firmness.</p><p>Do not use it on the same night as exfoliating acids, and avoid retinoids during pregnancy. If you are new to vitamin A, begin with the gentler <a href=\"https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab\" target=\"_blank\">Hyaluron Activ B3 Night Cream</a> from the 30s–40s routine.</p>"
+          "description": "<p>Start one night a week, then move to two nights only after skin stays comfortable. This newer French 0.1% retinal cream is the stronger correction step for established lines, uneven texture, and loss of firmness.</p><p>Do not use it on the same night as exfoliating acids, and skip retinal if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise. If you are new to vitamin A, begin with the gentler <a href=\"https://www.eau-thermale-avene.fr/p/creme-multi-intensive-nuit-3282770153200-14c39aab\" target=\"_blank\">Hyaluron Activ B3 Night Cream</a> from the 30s–40s routine.</p>"
         },
         {
           "time": "pm",
@@ -5750,7 +5916,7 @@
           "title": "Oil-Balancing Serum",
           "product": "numbuzin No.1 Pantothenic B5 Active Soothing Serum",
           "link": "https://us.numbuzin.com/products/no-1-pantothenic-b5-active-soothing-serum",
-          "description": "<p>Apply two or three drops before moisturizer. Panthenol, niacinamide, zinc PCA, and several humectants make this a useful bridge between oily breakouts and dehydration—the combination that makes people over-cleanse and then wonder why everything feels worse.</p><p>It is sold directly in the U.S. and through <a href=\"https://global.oliveyoung.com/display/page/brand-page?brandNo=B00423\" target=\"_blank\">Olive Young Global</a> for many European destinations. The long botanical formula includes alpha-arbutin, licorice, and willow bark, so patch test and avoid it during pregnancy.</p>"
+          "description": "<p>Apply two or three drops before moisturizer. Panthenol, niacinamide, zinc PCA, and several humectants make this a useful bridge between oily breakouts and dehydration—the combination that makes people over-cleanse and then wonder why everything feels worse.</p><p>It is sold directly in the U.S. and through <a href=\"https://global.oliveyoung.com/display/page/brand-page?brandNo=B00423\" target=\"_blank\">Olive Young Global</a> for many European destinations. The long botanical formula includes several brightening plant extracts, so patch test if your skin is reactive and check with your clinician before using it while pregnant or nursing.</p>"
         },
         {
           "time": "am",
@@ -5911,7 +6077,7 @@
           "title": "Gentle Face Retinal",
           "product": "K-SECRET Seoul 1988 Serum: Retinal Liposome 2% + Black Ginseng",
           "link": "https://tidd.ly/4gprWJS",
-          "description": "<p>Start with a pea-size amount for the face one or two nights a week, keeping it away from the immediate eye area, lip edges, and nose creases. This is a dedicated face serum for early lines, uneven texture, and loss of elasticity. The 2% on the label refers to the encapsulated retinal-liposome complex—not 2% pure retinal—so do not read it as a prescription-strength percentage.</p><p>European shoppers can use the authorized retailer <a href=\"https://eu.lewkin.com/pl-eu/collections/ksecret/products/seoul-1988-retinal-liposome-2-black-ginseng-serum-30ml\" target=\"_blank\">LEWKIN Europe</a>. The Korean formula is the same, so an Olive Young Seoul pickup is mainly worthwhile for local pricing or sets rather than extra strength. Do not layer it with exfoliating acids on the same night, and avoid retinoids during pregnancy.</p>"
+          "description": "<p>Start with a pea-size amount for the face one or two nights a week, keeping it away from the immediate eye area, lip edges, and nose creases. This is a dedicated face serum for early lines, uneven texture, and loss of elasticity. The 2% on the label refers to the encapsulated retinal-liposome complex—not 2% pure retinal—so do not read it as a prescription-strength percentage.</p><p>European shoppers can use the authorized retailer <a href=\"https://eu.lewkin.com/pl-eu/collections/ksecret/products/seoul-1988-retinal-liposome-2-black-ginseng-serum-30ml\" target=\"_blank\">LEWKIN Europe</a>. The Korean formula is the same, so an Olive Young Seoul pickup is mainly worthwhile for local pricing or sets rather than extra strength. Do not layer it with exfoliating acids on the same night, and skip retinal if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise.</p>"
         },
         {
           "time": "pm",
@@ -6023,7 +6189,7 @@
           "title": "Korea-Only Retinol Option",
           "product": "IOPE Retinol Expert 0.1% Wrinkle Corrector",
           "link": "https://www.iope.com/product/%EB%A0%88%ED%8B%B0%EB%86%80-%EC%97%91%EC%8A%A4%ED%8D%BC%ED%8A%B8-01-%EB%A7%81%ED%81%B4-%EC%BD%94%EB%A0%89%ED%84%B0/23/",
-          "description": "<p>Experienced retinoid users can start with a rice-grain amount for targeted areas one night a week, increasing very slowly. This 0.1% pure-retinol treatment is a genuine Korean-market find from a brand with a long retinol history; it is much more focused than the decorative anti-aging extras in the routine.</p><p>For easier U.S. or EU purchasing, use the gentler <a href=\"https://www.cosrx.com/products/the-retinol-0-1-cream\" target=\"_blank\">COSRX The Retinol 0.1 Cream</a> from an authorized regional retailer. Do not combine retinol with exfoliating acids on the same night, and avoid retinoids during pregnancy. More mature skin is not automatically more tolerant, so let comfort—not impatience—set the schedule.</p>"
+          "description": "<p>Experienced retinoid users can start with a rice-grain amount for targeted areas one night a week, increasing very slowly. This 0.1% pure-retinol treatment is a genuine Korean-market find from a brand with a long retinol history; it is much more focused than the decorative anti-aging extras in the routine.</p><p>For easier U.S. or EU purchasing, use the gentler <a href=\"https://www.cosrx.com/products/the-retinol-0-1-cream\" target=\"_blank\">COSRX The Retinol 0.1 Cream</a> from an authorized regional retailer. Do not combine retinol with exfoliating acids on the same night, and skip retinol if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise. More mature skin is not automatically more tolerant, so let comfort—not impatience—set the schedule.</p>"
         },
         {
           "time": "pm",
@@ -6270,7 +6436,7 @@
           "title": "Adapalene Treatment",
           "product": "Differin Gel 0.1% Adapalene",
           "link": "https://www.amazon.com/s?k=Differin+Gel+0.1%25+Adapalene&tag=theskinrout07-20",
-          "description": "<p>On completely dry skin, spread one pea-size amount over the whole acne-prone area rather than dotting it only on current pimples. Start two nights a week for two weeks, then every other night, and only work toward nightly use if skin stays comfortable.</p><p>Avoid eyelids, lips, and the corners of the nose. You can apply moisturizer first as a buffer, and you should not add another exfoliating acid while you are learning this product. Do not use adapalene during pregnancy or while trying to conceive.</p>"
+          "description": "<p>On completely dry skin, spread one pea-size amount over the whole acne-prone area rather than dotting it only on current pimples. Start two nights a week for two weeks, then every other night, and only work toward nightly use if skin stays comfortable.</p><p>Avoid eyelids, lips, and the corners of the nose. You can apply moisturizer first as a buffer, and you should not add another exfoliating acid while you are learning this product. Skip adapalene if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise.</p>"
         },
         {
           "time": "pm",
@@ -6463,7 +6629,7 @@
           "title": "Retinoid Clearing Treatment",
           "product": "skinbetter science AlphaRet Clearing Serum",
           "link": "https://www.skinbetter.com/skin-concern/skin-concern/blemish-prone/alpharet-clearing-serum-M003.html",
-          "description": "<p>Apply a thin layer to completely dry skin two nights a week, avoiding the eye area, and build toward every other night only if skin stays comfortable. AlphaRet combines a retinoid, lactic acid, and salicylic acid in one blemish-focused treatment, so this is the whole exfoliation plan on treatment nights.</p><p>Do not layer it with Silymarin CF in the same routine or use it during pregnancy. If you would rather invest in a device, <a href=\"https://omniluxled.com/collections/all-devices/products/omnilux-clear\" target=\"_blank\">Omnilux Clear</a> is an FDA-cleared blue-and-red-light option for mild to moderate inflammatory acne, but its manufacturer advises against combining it with retinol products. Choose that route with a dermatologist instead of casually adding both.</p>"
+          "description": "<p>Apply a thin layer to completely dry skin two nights a week, avoiding the eye area, and build toward every other night only if skin stays comfortable. AlphaRet combines a retinoid, lactic acid, and salicylic acid in one blemish-focused treatment, so this is the whole exfoliation plan on treatment nights.</p><p>Do not layer it with Silymarin CF in the same routine, and skip retinoids if you are pregnant, trying to conceive, or nursing unless your clinician tells you otherwise. If you would rather invest in a device, <a href=\"https://omniluxled.com/collections/all-devices/products/omnilux-clear\" target=\"_blank\">Omnilux Clear</a> is an FDA-cleared blue-and-red-light option for mild to moderate inflammatory acne, but its manufacturer advises against combining it with retinol products. Choose that route with a dermatologist instead of casually adding both.</p>"
         },
         {
           "time": "pm",
@@ -6490,5 +6656,300 @@
     },
     "draft": false,
     "cost": 12
+  },
+  {
+    "routine_name": "Rosie Huntington-Whiteley's Routine",
+    "id": 52,
+    "time": 5.4,
+    "cost": 8.3,
+    "point_title": "Rosie Huntington-Whiteley's Routine",
+    "point_description": "A polished acne-prone routine built around rose water, Rose Inc glow staples, daily SPF, exfoliation, retinoid treatment, and facialist-favorite active serums.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Rosie_Huntington-Whiteley_2025_%28facecrop%29.jpg",
+    "celebrity_image_credit": "Harald Krichel",
+    "celebrity_image_license": "CC BY-SA 4.0",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Rosie_Huntington-Whiteley_2025_(facecrop).jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dry_skin",
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Glamour UK 2023",
+        "site": "Glamour UK",
+        "link": "https://www.glamourmagazine.co.uk/article/rosie-huntington-whitely-beauty-memo-skincare-routine",
+        "favicon": "https://www.glamourmagazine.co.uk/favicon.ico",
+        "date": "November 15, 2023",
+        "headline": "Rosie Huntington-Whiteley uses blusher on her eyelids, so now we use blusher on our eyelids",
+        "image": "https://media.glamourmagazine.co.uk/photos/6551f42453ab36627469324b/16:9/w_2560,c_limit/ROSIE%20HUNTINGTON-WHITELEY%20131123%20default-GettyImages-1711586914.jpg",
+        "summary": "Rosie describes stopping morning cleanser, using rose water, Rose Inc brightening serum and SPF, then double cleansing and exfoliating at night for acne-prone skin."
+      },
+      {
+        "label": "Marie Claire 2023",
+        "site": "Marie Claire",
+        "link": "https://www.marieclaire.com/beauty/rosie-huntington-whitely-beauty-routine/",
+        "favicon": "https://www.marieclaire.com/favicon.ico",
+        "date": "2023",
+        "headline": "Rosie Huntington-Whitely Drops Her Beauty Routine",
+        "image": "https://cdn.mos.cms.futurecdn.net/22qqqFuduDGvKbS3ZXzPZa.jpg",
+        "summary": "Her morning maintenance centers on Santa Maria Novella rose water, Rose Inc Radiant Reveal, Hydration Replenish, and Solar Power SPF."
+      },
+      {
+        "label": "Harper's Bazaar 2021",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/skin-care/a35323862/rosie-huntington-whiteley-nighttime-skincare-routine-go-to-bed-with-me/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "January 26, 2021",
+        "headline": "Rosie Huntington-Whiteley's Expert Nightly Skin Care Routine",
+        "image": "https://hips.hearstapps.com/vidthumb/images/2020-harpersbazaar-gtbwm-155-rosie-huntington-whiteley-rd-v4-fb-1611613533.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop&resize=1200%3A%2A",
+        "summary": "Her Go To Bed With Me routine features Shani Darden eye cream, an Environ tool, Medik8 r-Retinoate, and ZO Skin Health Daily Power Defense."
+      },
+      {
+        "label": "Glamour 2021",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/rosie-huntington-whiteley",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "date": "May 3, 2021",
+        "headline": "Rosie Huntington-Whiteley Drops Her Skin-Care Routine",
+        "image": "https://media.glamour.com/photos/608f4af2a3c02847c485d0f2/master/w_2560%2Cc_limit/137251463_1542089682643296_7605539388050011097_n.jpg",
+        "summary": "Rosie explains her adult-acne focus and names iS Clinical, ZO Skin Health, La Mer, Biba de Sousa, Resore, and Mario Badescu products."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Rose Water Cleanse",
+          "product": "Santa Maria Novella Acqua di Rose",
+          "link": "https://us.smnovella.com/products/7011601",
+          "description": "<p>Sweep rose water over the face with a reusable cotton round instead of doing a full morning cleanse. In both Glamour UK and Marie Claire, Rosie says she stopped washing her face in the morning and uses rose water to wake up her skin before serums.</p><p>This is the source-backed gentle morning reset: enough freshness, no unnecessary stripping.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Brightening Serum",
+          "product": "Rose Inc Radiant Reveal Brightening Serum",
+          "link": "https://www.roseinc.com/products/radiant-reveal-brightening-serum",
+          "description": "<p>Apply before moisturizer as the glow-and-primer step. Rosie calls Rose Inc Radiant Reveal one of her holy grails in Glamour UK, and Marie Claire notes she uses it when her morning skin needs brightening and hydration.</p><p>It is especially on-theme for her because she talks openly about acne-prone skin, post-pregnancy hyperpigmentation, and wanting skin to look healthy even before makeup.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Cooling Moisturizer",
+          "product": "Rose Inc Hydration Replenish Microencapsulated Moisturizer",
+          "link": "https://www.roseinc.com/products/hydration-replenish-microencapsulated-moisturizer",
+          "description": "<p>Smooth on a light layer when skin feels inflamed, tight, or in need of a cooling gel texture. Marie Claire says Rosie reaches for Rose Inc Hydration Replenish when her skin wants that calmer, lighter kind of moisture.</p><p>On days when she wants more weight, she has also mentioned <a href=\"https://www.skinceuticals.com/skincare/moisturizers/triple-lipid-restore-242/S2.html\" target=\"_blank\">SkinCeuticals Triple Lipid Restore 2:4:2</a> as the richer cream option.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF",
+          "product": "Rose Inc Solar Power Luminous SPF 30 Serum",
+          "link": "https://www.roseinc.com/products/solar-power-luminous-spf-30-serum",
+          "description": "<p>Finish with SPF as the last skincare step. In Marie Claire, Rosie says she always finishes with sunscreen and calls the Rose Inc Solar Power formula hydrating, luminous, and primer-like; Glamour UK also quotes her saying SPF is a must in your thirties.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Makeup Removal",
+          "product": "Rose Inc Micellar Makeup Remover",
+          "link": "https://www.roseinc.com/products/micellar-makeup-remover",
+          "description": "<p>Use as the first cleanse when there is makeup, tinted SPF, or a real day to remove. The Zoe Report says Rosie is serious about makeup removal and likes the Rose Inc micellar remover because she can pump it into her fingers and massage it in.</p><p>She also says she has been a longtime fan of <a href=\"https://www.amazon.com/s?k=Bioderma+Sensibio+H2O+Micellar+Water&tag=theskinrout07-20\" target=\"_blank\">Bioderma Sensibio H2O Micellar Water</a>, a classic model staple.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "iS Clinical Cleansing Complex",
+          "link": "https://www.dermstore.com/p/is-clinical-cleansing-complex-180ml/11291956/",
+          "description": "<p>Massage over damp skin and rinse thoroughly after makeup removal. Glamour UK says this is Rosie's all-time favorite cleanser because it removes impurities quickly, and Porter also places iS Clinical Cleansing Complex in her routine for managing acne-prone skin.</p><p>Glamour's earlier routine also mentions ZO Skin Health cleansing products, but iS Clinical gets priority here because she keeps coming back to it across sources.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream Barrier",
+          "product": "Shani Darden Skin Care Intensive Eye Renewal Cream",
+          "link": "https://www.sephora.com/product/shani-darden-skin-care-intensive-eye-renewal-cream-P455928",
+          "description": "<p>Tap a rice-grain amount around the eyes before stronger serums. Harper's Bazaar notes Rosie applies eye cream before actives so the area is buffered and less likely to become irritated.</p><p>The Shani Darden connection is also personal to her routine: Rosie says she has seen Darden for years and credits her with helping change her skin.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Exfoliating Toner",
+          "product": "Rose Inc Skin Resolution Exfoliating Acid Toner",
+          "link": "https://www.roseinc.com/products/skin-resolution-gentle-exfoliating-acid-toner",
+          "description": "<p>Use after cleansing on nights skin feels congested, not as a dare every single evening. Glamour UK says Rosie tries to exfoliate regularly for acne-prone skin and uses Rose Inc's AHA Clarifying Toner after rose water at night.</p><p>Because this is an acid step, keep it away from the eye area and back off if the retinoid step makes skin dry or reactive.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinoid Cream",
+          "product": "Medik8 r-Retinoate Day & Night",
+          "link": "https://us.medik8.com/products/r-retinoate-day-night",
+          "description": "<p>Apply a thin layer on dry skin, avoiding the eye area. Harper's Bazaar lists Medik8 r-Retinoate in Rosie's nighttime routine after her at-home tool step, making this the main advanced-aging and texture treatment.</p><p>Do not stack this casually with every exfoliating product in the same night. Rosie has professional guidance; normal people get to choose fewer irritation opportunities.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Blemish Serum",
+          "product": "SkinCeuticals Silymarin CF",
+          "link": "https://www.skinceuticals.com/skincare/vitamin-c-serums/silymarin-cf/S77.html",
+          "description": "<p>Use as the antioxidant and blemish-support serum when the routine is not already crowded with exfoliation and retinoid. Glamour UK says Rosie follows her evening active steps with SkinCeuticals Silymarin CF for hydration and acne-prone skin support.</p><p>If you are pregnant, trying to conceive, or nursing, check with your clinician before using a blemish serum with salicylic acid.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturizing Treatment",
+          "product": "ZO Skin Health Daily Power Defense",
+          "link": "https://zoskinhealth.com/us/daily-power-defense-gbl-full-size-969400.html",
+          "description": "<p>Finish with this when skin wants treatment more than a traditional cream. Harper's Bazaar says Rosie uses ZO Skin Health Daily Power Defense in place of moisturizer and likes that it helps manage congestion while supporting the skin barrier.</p><p>If your skin is dry or irritated, this is the point where a boring moisturizer may be smarter than copying the whole celebrity active stack.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Spot Treatment",
+          "product": "Mario Badescu Drying Lotion",
+          "link": "https://www.amazon.com/s?k=Mario+Badescu+Drying+Lotion&tag=theskinrout07-20",
+          "description": "<p>Dot only on individual whiteheads as needed and leave it alone. Glamour includes Mario Badescu Drying Lotion among the practical acne products Rosie keeps around, so it belongs as an occasional spot step rather than an all-over treatment.</p><p>If you are pregnant, trying to conceive, or nursing, ask your clinician before using salicylic-acid spot treatments.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Amanda Seyfried's Routine",
+    "id": 53,
+    "time": 4.4,
+    "cost": 8.8,
+    "point_title": "Amanda Seyfried's Routine",
+    "point_description": "A sensitive-skin, eczema-aware routine built around a simple cleanse, medicated flare care, hydrating toner, calming serum, eye cream, SPF moisturizer, and older Clé de Peau and Lancôme nighttime staples.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Amanda_Seyfried_at_Berlinale_2024.jpg?width=320",
+    "celebrity_image_credit": "Martin Kraft",
+    "celebrity_image_license": "CC BY-SA 4.0",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Amanda_Seyfried_at_Berlinale_2024.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "40s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin",
+      "fine_lines_and_wrinkles"
+    ],
+    "sources": [
+      {
+        "label": "Vogue 2025",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-amanda-seyfried",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "March 18, 2025",
+        "headline": "Amanda Seyfried Shares Her Beauty Routine and Eczema Tips",
+        "image": "https://i.ytimg.com/vi/D_6iwtpUar8/hqdefault.jpg",
+        "summary": "Vogue's companion article to her Beauty Secrets video highlights the eczema-aware skin routine and the balance between treatment, comfort, and a very low-key finish."
+      },
+      {
+        "label": "Glamour 2021",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/amanda-seyfried-big-beauty-questions",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "date": "March 22, 2021",
+        "headline": "Amanda Seyfried Doesn't Like Skin-Care Trends and Will Never Overpluck Her Brows Again",
+        "summary": "Amanda names Lancôme Génifique and Clarifique among the products she would keep forever, and talks about preferring consistent skin care over chasing trends."
+      },
+      {
+        "label": "Vogue 2014",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/amanda-seyfried-cle-de-peau-beaute-skincare-makeup-campaign",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "September 15, 2014",
+        "headline": "Amanda Seyfried on the 7 Products She Can't Live Without",
+        "image": "https://assets.vogue.com/photos/5891802efb0604bf1f5c3857/master/w_2560%2Cc_limit/amanda-seyfried-beauty.jpg",
+        "summary": "Her earlier beauty staples included Clé de Peau Beauté cleanser, La Crème, Smoothing Serum Supreme, and UV Protective Cream SPF 50."
+      },
+      {
+        "label": "Allure 2020",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/amanda-seyfried-beauty-skin-care-interview",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "date": "April 16, 2020",
+        "headline": "Amanda Seyfried Would Rather Wear Nothing Than Mascara",
+        "image": "https://media.allure.com/photos/5e94b7d6b60ec40008cb548b/16:9/w_2560,c_limit/amanda%20seyfried.png",
+        "summary": "Amanda discusses her Lancôme favorites and her low-maintenance approach, including Advanced Génifique as the serum she reaches for at night."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Simple Cleanse",
+          "product": "Jenette Cacao Herb Infused Soap Bar",
+          "link": "https://www.amazon.com/s?k=Jenette+Cacao+Herb+Infused+Soap+Bar&tag=theskinrout07-20",
+          "description": "<p>Lather gently and rinse without overworking the skin. In her Vogue Beauty Secrets routine, Amanda starts with this soap bar and frames the whole routine around skin that can flare with eczema and perioral dermatitis.</p><p>Keep this step calm and quick; the point is clean skin, not a stripped feeling.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Flare Care",
+          "product": "Prescription Medicated Cream",
+          "link": "https://www.vogue.com/article/beauty-secrets-amanda-seyfried",
+          "description": "<p>Apply only where and how your clinician tells you to. Vogue shows Amanda using a medicated cream as part of managing flare-prone skin, but the exact prescription product is not named.</p><p>This sits before cosmetic skincare because it is treatment, not a glow layer.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Milky Toner",
+          "product": "Lancôme Tonique Confort Hyaluronic Acid Toner",
+          "link": "https://www.amazon.com/s?k=Lancome+Tonique+Confort+Hyaluronic+Acid+Toner&tag=theskinrout07-20",
+          "description": "<p>Press or sweep on after treatment cream to bring back a cushioned, hydrated feel. Vogue names Lancôme Tonique Confort Hydrating Toner in Amanda's routine; the current U.S. version is the Hyaluronic Acid Toner.</p><p>For reactive skin, this is the softening step before serum rather than an exfoliating toner.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Calming Serum",
+          "product": "Tower 28 SOS Intensive Redness Relief Serum",
+          "link": "https://www.sephora.com/product/tower-28-sos-intensive-redness-relief-serum-with-hypochlorous-acid-P519533",
+          "description": "<p>Smooth on a thin layer while skin is still comfortable from toner. Vogue lists Versine Gentle Actives Clarity Crème-Serum in Amanda's 2025 routine, but that product is no longer reliably available.</p><p>Tower 28's SOS Intensive Redness Relief Serum is the linked alternative here because it is a current sensitive-skin serum for redness and irritation, which keeps the step in the same calm, eczema-aware lane.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Eye Cream",
+          "product": "Tata Harper Restorative Eye Crème",
+          "link": "https://tataharperskincare.com/products/refillable-restorative-eye-creme",
+          "description": "<p>Tap a small amount around the orbital bone before SPF. Vogue's product list names Tata Harper Boosted Contouring Eye Balm, which is no longer reliably available.</p><p>This links the current Tata Harper eye cream as the closest same-brand replacement, with the older balm preserved here because Amanda specifically used it in the video.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Moisturizer",
+          "product": "Lancôme Rénergie H.P.N. 300-Peptide Cream SPF 25",
+          "link": "https://www.amazon.com/s?k=Lancome+Renergie+HPN+300+Peptide+Cream+SPF+25&tag=theskinrout07-20",
+          "description": "<p>Use as the last face step in the morning. Amanda finishes the skincare portion of her Vogue routine with Lancôme Rénergie H.P.N. 300-Peptide Cream SPF 25, giving the routine a moisturizer, peptide, and sunscreen finish in one.</p><p>If you will be outdoors, treat this like a polished daily SPF moisturizer and still apply enough product to get meaningful coverage.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Balm",
+          "product": "Olio E Osso Balm No. 1 Clear",
+          "link": "https://www.amazon.com/s?k=Olio+E+Osso+Balm+No.+1+Clear&tag=theskinrout07-20",
+          "description": "<p>Finish with a sheer balm on the lips. Vogue's routine includes Olio E Osso's balm after the skincare steps; keep it as lip care here and skip the cheek-color side of the product if you only want skincare.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Cleanse",
+          "product": "Clé de Peau Beauté Softening Cleansing Foam",
+          "link": "https://www.amazon.com/s?k=Cle+de+Peau+Beaute+Softening+Cleansing+Foam&tag=theskinrout07-20",
+          "description": "<p>Massage over damp skin and rinse well, especially if you wore makeup or a real layer of SPF. Amanda's older Vogue routine named Clé de Peau Beauté Gentle Cleansing Foam; the linked current cleanser is the softer modern match from the same brand family.</p><p>Keep the pressure light so the cleanse does not turn into an accidental irritation step.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Night Serum",
+          "product": "Lancôme Advanced Génifique Face Serum",
+          "link": "https://www.amazon.com/s?k=Lancome+Advanced+Genifique+Face+Serum&tag=theskinrout07-20",
+          "description": "<p>Apply a thin layer after cleansing and before cream. Allure notes Amanda reaches for Lancôme Advanced Génifique at night, and Glamour later lists Génifique among the skin products she would keep forever.</p><p>This is the reliable serum step in a routine that otherwise stays pretty restrained.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Night Cream",
+          "product": "Clé de Peau Beauté La Crème",
+          "link": "https://www.amazon.com/s?k=Cle+de+Peau+Beaute+La+Creme&tag=theskinrout07-20",
+          "description": "<p>Warm a small amount between fingers and press it in as the final comfort layer. In Vogue, Amanda named Clé de Peau Beauté La Crème as one of the products she could not live without.</p><p>This is the richer nighttime anchor from her older routine history, so use it when skin feels dry or wants that expensive cushion.</p>"
+        }
+      ]
+    },
+    "draft": false
   }
 ]

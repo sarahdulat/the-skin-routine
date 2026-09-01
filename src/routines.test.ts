@@ -100,6 +100,7 @@ describe("routine helpers", () => {
 
     expect(mentions.map((mention) => mention.routine.routine_name)).toEqual([
       "Bella Hadid's Routine",
+      "Miranda Kerr's Routine",
       "Sabrina Carpenter's Routine",
       "Sarah's Routine",
     ]);
