@@ -6951,5 +6951,116 @@
       ]
     },
     "draft": false
+  },
+  {
+    "routine_name": "Rihanna's Routine",
+    "id": 54,
+    "time": 2,
+    "cost": 6.5,
+    "point_title": "Rihanna's Routine",
+    "point_description": "A streamlined Fenty Skin routine built around a makeup-removing cleanser, hand-pressed toner-serum, daily SPF moisturizer, and a simple nighttime gel-cream finish.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Rihanna_visits_U.S._Embassy_in_Barbados_2024_%28cropped%29.jpg",
+    "celebrity_image_credit": "U.S. Embassy Bridgetown",
+    "celebrity_image_license": "Public domain",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Rihanna_visits_U.S._Embassy_in_Barbados_2024_(cropped).jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s"
+    ],
+    "skin_concern": [
+      "dry_skin",
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Harper's Bazaar 2020",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/skin-care/a33509207/rihanna-skin-care-routine-fenty-skin/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "August 4, 2020",
+        "headline": "Rihanna's Nighttime Skin Care Routine Is All About Hydration",
+        "image": "https://i.ytimg.com/vi/V2OgfwMclLw/hqdefault.jpg",
+        "summary": "Rihanna walks through a three-step Fenty Skin routine with Total Cleans'r, Fat Water, and Hydra Vizor, and says the routine works for both morning and night."
+      },
+      {
+        "label": "British Vogue 2021",
+        "site": "British Vogue",
+        "link": "https://www.vogue.co.uk/news/article/rihanna-fenty-beauty-nighttime-skincare-routine",
+        "favicon": "https://www.vogue.co.uk/favicon.ico",
+        "date": "March 17, 2021",
+        "headline": "Rihanna's Nighttime Routine Features Supriya Lele Shirting, Sheer Lingerie & Fenty Beauty",
+        "image": "https://media.vogue.co.uk/photos/605217b1107e7ce55db44ac3/2:3/w_2560,c_limit/Photo%20by%20FENTY%20BEAUTY%20BY%20RIHANNA.jpg",
+        "summary": "British Vogue recaps Rihanna's stripped-back nighttime routine: Total Cleans'r, Fat Water, then Instant Reset Overnight Recovery Gel-Cream, which she calls her magic potion."
+      },
+      {
+        "label": "Vogue 2020",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/fenty-skin-rihanna-interview",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "July 31, 2020",
+        "headline": "Fenty Skin Is Finally Here-Here's Everything You Need to Know, According to Rihanna Herself",
+        "image": "https://assets.vogue.com/photos/5f2333d26208a194214f4763/master/w_1600%2Cc_limit/00_story.gif",
+        "summary": "Rihanna explains why Fenty Skin launched as a simple three-step ritual: cleanser, toner-serum, and moisturizer-sunscreen with Barbados cherry, niacinamide, and hyaluronic acid."
+      },
+      {
+        "label": "Fenty Skin",
+        "site": "Fenty Skin",
+        "link": "https://fentybeauty.com/en-gl/pages/skincare-routines",
+        "favicon": "https://fentybeauty.com/favicon.ico",
+        "date": "2026",
+        "headline": "Essential Skincare Routines",
+        "summary": "Fenty's current routine guide keeps Total Cleans'r, Fat Water, Hydra Vizor, and Instant Reset in the core AM/PM order while adding newer optional treatment products."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Cleanse",
+          "product": "Fenty Skin Total Cleans'r Remove-It-All Cleanser",
+          "link": "https://fentybeauty.com/products/total-cleansr-remove-it-all-cleanser",
+          "description": "<p>Use day and night: wet skin, lather, rinse, and pat dry. In Harper's Bazaar, Rihanna uses a quarter-sized amount and says the cleanser breaks up makeup while leaving her skin feeling soft and supple.</p><p>On the product page, Rihanna says washing your face is the most important step for good skin, especially when you have been wearing makeup, sweating, or going out.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Toner-Serum",
+          "product": "Fenty Skin Fat Water Niacinamide Pore-Refining Toner Serum with Barbados Cherry",
+          "link": "https://www.sephora.com/product/fenty-skin-fat-water-pore-refining-toner-serum-P467248",
+          "description": "<p>Apply to palms, then pat and press over clean, dry skin, letting it absorb before moisturizer. Rihanna tells Harper's Bazaar she called it Fat Water because the thicker texture sits in the hand instead of running through the fingers.</p><p>She uses it to help brighten, tone, reduce oil, and soften the look of pores without needing cotton pads.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Moisturizer",
+          "product": "Fenty Skin Hydra Vizor Refillable Invisible Face Moisturizer SPF 30 with Niacinamide",
+          "link": "https://www.sephora.com/product/fenty-skin-hydra-vizor-moisturizer-broad-spectrum-spf-30-sunscreen-P467249",
+          "description": "<p>Massage a generous amount onto skin as the final morning step, and reapply every two hours when you are outside. Rihanna tells Harper's Bazaar that Hydra Vizor works under makeup or on its own and says everyone needs daily SPF, across every skin tone.</p><p>She originally used Hydra Vizor as the final step morning and night, but the newer British Vogue nighttime routine swaps the night finish for Instant Reset.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Remove Makeup + Cleanse",
+          "product": "Fenty Skin Total Cleans'r Remove-It-All Cleanser",
+          "link": "https://fentybeauty.com/products/total-cleansr-remove-it-all-cleanser",
+          "description": "<p>Use as the first nighttime step to remove makeup, sunscreen, oil, and the day. Harper's Bazaar says Rihanna starts by cleansing with Total Cleans'r, adding water to build the lather before working it over her skin.</p><p>Rihanna also says makeup wipes are basically done for her, so this cleanser is the streamlined remove-it-all step.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Toner-Serum",
+          "product": "Fenty Skin Fat Water Niacinamide Pore-Refining Toner Serum with Barbados Cherry",
+          "link": "https://www.sephora.com/product/fenty-skin-fat-water-pore-refining-toner-serum-P467248",
+          "description": "<p>Pat and press into clean skin with your hands. British Vogue says Rihanna applies Fat Water right after cleansing in her stripped-back nighttime routine.</p><p>Keep it simple here: toner-serum, no cotton pad, then let it sink in before night cream.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Night Cream",
+          "product": "Fenty Skin Instant Reset Brightening Overnight Recovery Gel-Cream with Niacinamide + Kalahari Melon Oil",
+          "link": "https://www.sephora.com/product/fenty-skin-instant-reset-overnight-gel-cream-P467250",
+          "description": "<p>Smooth evenly over clean skin at night, avoiding the eye area. British Vogue says Rihanna finishes her nighttime routine with Instant Reset and calls it her magic potion.</p><p>This is the more current nighttime ending than using Hydra Vizor before bed: hydration, recovery, and a soft gel-cream finish instead of nighttime SPF.</p>"
+        }
+      ]
+    },
+    "draft": false
   }
 ]

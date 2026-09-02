@@ -1,5 +1,5 @@
 <template>
-  <div ref="graph" class="chart-container" @click="closePopover">
+  <div ref="graph" class="chart-container" @click="dismissPopover">
     <div v-if="showEmptyState" class="chart-empty-state" role="status">
       <p>No routines match these filters.</p>
       <p class="small font-sans">Adjust the filters to see more routines.</p>
@@ -127,11 +127,17 @@ export default defineComponent({
     const popoverVisible = ref(false);
     const popoverContent = ref<{ routines: RoutinePoint[] }>({ routines: [] });
     const popoverPosition = ref({ x: 0, y: 0 });
+    const pinnedPopoverKey = ref<string | null>(null);
     const showEmptyState = computed(() => props.routines.length === 0);
     let resizeObserver: ResizeObserver | null = null;
 
-    const closePopover = () => {
+    const hidePopover = () => {
       popoverVisible.value = false;
+    };
+
+    const dismissPopover = () => {
+      pinnedPopoverKey.value = null;
+      hidePopover();
     };
 
     const showPopover = (content: { routines: RoutinePoint[] }, position: { x: number; y: number }) => {
@@ -155,7 +161,7 @@ export default defineComponent({
 
     const selectPopoverRoutine = (point: RoutinePoint) => {
       selectRoutine(point.routine);
-      closePopover();
+      dismissPopover();
       createGraph();
     };
 
@@ -277,6 +283,11 @@ export default defineComponent({
       const standardPoints = singlePoints.filter((point) => !point.flag && !point.marker_image);
       const isSelected = (point: RoutinePoint) => point.routine.id === store.currentRoutine?.id;
       const isClusterSelected = (cluster: ClusterPoint) => cluster.routines.some(isSelected);
+      const routinePopoverKey = (point: RoutinePoint) => `routine:${point.routine.id}`;
+      const clusterPopoverKey = (cluster: ClusterPoint) => `cluster:${cluster.routines
+        .map((point) => point.routine.id)
+        .sort((idA, idB) => idA - idB)
+        .join(',')}`;
       const showRoutinePopover = (point: RoutinePoint) => {
         showPopover(
           { routines: [point] },
@@ -292,6 +303,68 @@ export default defineComponent({
           { routines: cluster.routines },
           clusterPosition(cluster)
         );
+      };
+      const showHoverRoutinePopover = (point: RoutinePoint) => {
+        if (pinnedPopoverKey.value) return;
+
+        showRoutinePopover(point);
+      };
+      const showHoverClusterPopover = (cluster: ClusterPoint) => {
+        if (pinnedPopoverKey.value) return;
+
+        showClusterPopover(cluster);
+      };
+      const hideHoverPopover = () => {
+        if (pinnedPopoverKey.value) return;
+
+        hidePopover();
+      };
+      const togglePinnedRoutinePopover = (point: RoutinePoint) => {
+        const key = routinePopoverKey(point);
+
+        if (pinnedPopoverKey.value === key) {
+          dismissPopover();
+          return;
+        }
+
+        pinnedPopoverKey.value = key;
+        selectRoutinePoint(point);
+        showRoutinePopover(point);
+      };
+      const togglePinnedClusterPopover = (cluster: ClusterPoint) => {
+        const key = clusterPopoverKey(cluster);
+
+        if (pinnedPopoverKey.value === key) {
+          dismissPopover();
+          return;
+        }
+
+        pinnedPopoverKey.value = key;
+        showClusterPopover(cluster);
+      };
+      const syncPinnedPopover = () => {
+        const key = pinnedPopoverKey.value;
+
+        if (!key) return;
+
+        if (key.startsWith('routine:')) {
+          const routineId = Number(key.replace('routine:', ''));
+          const point = data.find((routinePoint) => routinePoint.routine.id === routineId);
+
+          if (point) {
+            showRoutinePopover(point);
+            return;
+          }
+        }
+
+        const cluster = clusters.find((clusterPoint) => clusterPopoverKey(clusterPoint) === key);
+
+        if (cluster) {
+          showClusterPopover(cluster);
+          return;
+        }
+
+        dismissPopover();
       };
       const updateSelectedMarkerStyles = (routineId: number) => {
         d3.select(graph.value)
@@ -429,23 +502,21 @@ export default defineComponent({
         .on("mouseover", function (event, d) {
           d3.select(this).select('.dot').attr("fill", activeColor);
           event.stopPropagation();
-          showRoutinePopover(d);
+          showHoverRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.dot').attr("fill", isSelected(d) ? activeColor : restingColor);
-          closePopover();
+          hideHoverPopover();
         })
         .on("pointerdown", function (event, d) {
           if (event.pointerType === "mouse") return;
           event.preventDefault();
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         })
         .on("click", function (event, d) {
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         });
 
       const clusterDot = svg
@@ -479,20 +550,21 @@ export default defineComponent({
         .on("mouseover", function (event, d) {
           d3.select(this).select('.cluster-dot').attr('fill', activeColor);
           event.stopPropagation();
-          showClusterPopover(d);
+          showHoverClusterPopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.cluster-dot').attr('fill', isClusterSelected(d) ? activeColor : restingColor);
+          hideHoverPopover();
         })
         .on("pointerdown", function (event, d) {
           if (event.pointerType === "mouse") return;
           event.preventDefault();
           event.stopPropagation();
-          showClusterPopover(d);
+          togglePinnedClusterPopover(d);
         })
         .on("click", function (event, d) {
           event.stopPropagation();
-          showClusterPopover(d);
+          togglePinnedClusterPopover(d);
         });
 
       const flagDot = svg
@@ -592,25 +664,23 @@ export default defineComponent({
             .attr('stroke', activeColor)
             .attr('stroke-width', selectedStrokeWidth);
           event.stopPropagation();
-          showRoutinePopover(d);
+          showHoverRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.flag-dot-ring')
             .attr('stroke', isSelected(d) ? activeColor : restingColor)
             .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
-          closePopover();
+          hideHoverPopover();
         })
         .on("pointerdown", function (event, d) {
           if (event.pointerType === "mouse") return;
           event.preventDefault();
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         })
         .on("click", function (event, d) {
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         });
 
       // Add image points for source-backed / celebrity-style routines.
@@ -655,25 +725,23 @@ export default defineComponent({
             .attr('stroke', activeColor)
             .attr('stroke-width', selectedStrokeWidth);
           event.stopPropagation();
-          showRoutinePopover(d);
+          showHoverRoutinePopover(d);
         })
         .on("mouseout", function (_event, d) {
           d3.select(this).select('.image-dot-ring')
             .attr('stroke', isSelected(d) ? activeColor : restingColor)
             .attr('stroke-width', isSelected(d) ? selectedStrokeWidth : defaultStrokeWidth);
-          closePopover();
+          hideHoverPopover();
         })
         .on("pointerdown", function (event, d) {
           if (event.pointerType === "mouse") return;
           event.preventDefault();
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         })
         .on("click", function (event, d) {
           event.stopPropagation();
-          selectRoutinePoint(d);
-          showRoutinePopover(d);
+          togglePinnedRoutinePopover(d);
         });
 
       // Keep country markers visible when nearby portrait markers overlap them.
@@ -696,6 +764,8 @@ export default defineComponent({
         .attr("transform", `translate(${width + margin.right / 2}, ${height / 2}) rotate(90)`)
         .style("font-size", "16px")
         .text("Time");
+
+      syncPinnedPopover();
     };
 
     // Fetch data and create the graph on component mount
@@ -721,7 +791,7 @@ export default defineComponent({
       popoverContent,
       popoverPosition,
       showEmptyState,
-      closePopover,
+      dismissPopover,
       selectPopoverRoutine,
     };
   },
