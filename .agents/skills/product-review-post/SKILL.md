@@ -24,17 +24,20 @@ Browse whenever a product URL, price, availability, formula, review score, or cu
 - Do not invent a consensus from X, Threads, or another source that has no usable indexed results.
 - Link claims and alternatives directly to their supporting product or discussion pages.
 - Treat prices as time-sensitive. Use the reader's market and currency; default to US availability and USD when reviewing an imported European product.
+- Do not mention, recommend, link, or add Naturium products to review bodies, alternatives, brand metadata, or `featured_products` unless Sarah explicitly reverses this instruction. Choose an appropriate product from another brand instead.
 
 ## Choose purchase links
 
-Audit the reviewed product and every alternative for affiliate opportunities before finalizing `featured_products` or body links.
+Audit the reviewed product, every alternative, and every specifically named secondary product for affiliate opportunities before finalizing `featured_products` or body links. Check both Amazon US and Stylevana for each product, even when one retailer already has a match.
 
 1. Reuse a verified exact-product affiliate link already present in the project when available.
-2. Check Amazon US for the exact product, size, formulation, and regional version. Prefer a current product-detail page over search results and verify the listing title. When the ASIN is verified, use `https://www.amazon.com/dp/<ASIN>?tag=theskinrout07-20`; an existing verified `amzn.to` link is also acceptable.
-3. Check Stylevana when it is a plausible retailer. Do not invent or append Stylevana affiliate tracking. If an exact in-stock Stylevana listing is the best option, keep a non-affiliate or official link in the post and give Sarah the direct Stylevana product URL in the handoff so she can generate the affiliate link. Do not recommend an out-of-stock Stylevana page as the primary purchase link.
-4. Keep the official brand link when Amazon and Stylevana do not have a verifiable exact listing. Never substitute a different size, formula, shade, market version, bundle, or similarly named product merely to obtain an affiliate link.
-5. Treat the official brand page as the primary source for claims and directions even when the displayed purchase link is an affiliate retailer.
-6. Confirm rendered affiliate links receive `rel="sponsored"`. The project recognizes tagged Amazon URLs and approved affiliate hosts through `src/affiliate-links.ts`; do not disguise or strip their affiliate parameters.
+2. Verify the exact product, size, formulation, shade, and regional version on both retailers, along with current purchase availability. Prefer a current product-detail page over search results.
+3. If only Amazon US has an exact purchasable match, use `https://www.amazon.com/dp/<ASIN>?tag=theskinrout07-20`; an existing verified `amzn.to` link is also acceptable.
+4. If Stylevana has an exact purchasable match, do not invent or append affiliate tracking. Give Sarah the direct Stylevana product URL in the handoff so she can generate the affiliate link. If Stylevana is the only match, keep a non-affiliate or official link in the post until Sarah supplies the affiliate URL.
+5. If the exact product is purchasable on both Amazon US and Stylevana, do not automatically choose either retailer or add the Amazon affiliate link. Keep a stable non-affiliate or official link temporarily, give Sarah both direct product URLs, and ask her to choose after comparing commissions.
+6. Do not treat an indexed but unavailable product page as a retailer match. Keep the official brand link when neither retailer has a verifiable exact purchasable listing. Never substitute a different size, formula, shade, market version, bundle, or similarly named product merely to obtain an affiliate link.
+7. Treat the official brand page as the primary source for claims and directions even when the displayed purchase link is an affiliate retailer.
+8. Confirm rendered affiliate links receive `rel="sponsored"`. The project recognizes tagged Amazon URLs and approved affiliate hosts through `src/affiliate-links.ts`; do not disguise or strip their affiliate parameters.
 
 ## Draft the review
 
@@ -104,7 +107,7 @@ After establishing the review's final `uid` and verdict, inspect every AM and PM
 1. Confirm body word count is within the requested range.
 2. Confirm the title begins with the brand, `tags` includes `review`, and both `seo_title` and `seo_description` are present, unique, search-focused, and verdict-neutral.
 3. Confirm all frontmatter arrays and objects follow the one-line JSON requirement.
-4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link. Confirm Amazon links use a verified exact ASIN plus the project affiliate tag, and report any Stylevana URL that requires Sarah to generate an affiliate link.
+4. Compare the body against `featured_products` and confirm every specifically named product appears exactly once with the correct brand, product name, and market-appropriate link. Confirm every product was checked on both Amazon US and Stylevana. For Amazon-only matches, confirm the link uses a verified exact ASIN plus the project affiliate tag. Report every exact purchasable Stylevana match; for products available on both retailers, provide both URLs and leave the retailer decision to Sarah.
 5. Confirm a newly created review has `draft: false` unless the user explicitly requested a draft. Confirm the scraped product reference was transformed into the standard watercolor-and-ink style, the cover background is `#FBFAF4` with a uniformly clean `#FBFAF4` outer pixel perimeter, the generated cover exists in `public/images/reviews/`, and every linked product is correct for the intended market.
 6. Re-scan `src/assets/routines.json`; confirm every genuine mention of the reviewed product ends with exactly one sentiment-appropriate link to `/blog/<uid>/` and that unrelated products were not linked.
 7. Run `npm run build` from the repository root.

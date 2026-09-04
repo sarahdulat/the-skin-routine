@@ -6,7 +6,7 @@ seo_title: "The Ordinary Multi-Peptide + Copper Peptides 1% Review"
 seo_description: "A review of The Ordinary Copper Peptides serum covering texture, scent, NuFACE layering, ingredient conflicts, results, and peptide alternatives."
 date: "2026-08-30"
 first_publication_date: "2026-08-30T12:00:00+0200"
-last_publication_date: "2026-08-30T12:00:00+0200"
+last_publication_date: "2026-09-04T12:00:00+0200"
 tags:
   [
     "review",
@@ -17,7 +17,7 @@ tags:
     "fine lines",
     "the ordinary",
   ]
-brands: ["The Ordinary", "NuFACE", "Naturium"]
+brands: ["The Ordinary", "NuFACE", "Good Molecules"]
 product_types: ["Serum"]
 featured_products:
   [
@@ -32,9 +32,9 @@ featured_products:
       "link": "https://www.mynuface.com/products/super-booster-peptide-serum",
     },
     {
-      "brand": "Naturium",
-      "name": "Multi-Peptide Advanced Serum",
-      "link": "https://www.amazon.com/dp/B0CQTSM65J?tag=theskinrout07-20",
+      "brand": "Good Molecules",
+      "name": "Super Peptide Serum",
+      "link": "https://www.goodmolecules.com/products/super-peptide-serum",
     },
     {
       "brand": "The Ordinary",
@@ -84,7 +84,7 @@ I will keep buying this as long as it layers this well under my NuFACE. It is no
 
 **[NuFACE Super Peptide Booster Serum](https://www.mynuface.com/products/super-booster-peptide-serum)** costs $65 for 30ml. It combines copper gluconate, peptides, and NuFACE’s IonPlex mineral blend. It costs more than twice as much but was designed for the brand’s microcurrent routine.
 
-**[Naturium Multi-Peptide Advanced Serum](https://www.amazon.com/dp/B0CQTSM65J?tag=theskinrout07-20)** costs $25 for 30ml and combines encapsulated copper peptides with Argireline, ferulic acid, and moisturizers. It is creamier and not designed as a pre-microcurrent treatment.
+**[Good Molecules Super Peptide Serum](https://www.goodmolecules.com/products/super-peptide-serum)** costs $12 for 30ml and combines copper tripeptides with acetyl hexapeptide-8 and acetyl octapeptide-3. It is the most affordable alternative here, but it is not designed as a pre-microcurrent treatment.
 
 **[The Ordinary Multi-Peptide + HA Serum](https://www.amazon.com/dp/B0BLHW7JZM?tag=theskinrout07-20)** costs $19.90 for 30ml. It keeps the peptide-and-hyaluronic-acid concept without copper. It still has conflicts, so check the brand’s directions before layering.
 
