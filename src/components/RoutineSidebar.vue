@@ -12,7 +12,8 @@
     <template v-else>
       <div class="sidebar-header">
         <div class="routine-header my-lg">
-          <component :is="routineHeadingTag" class="routine-title type-section-title">{{ currentRoutine.routine_name }}</component>
+          <component :is="routineHeadingTag" class="routine-title type-section-title">{{ currentRoutine.routine_name }}
+          </component>
           <div v-if="firstSource" class="sources" aria-label="Routine sources">
             <div ref="sourceOverflow" class="source-overflow" :class="{ open: isSourcePopoverOpen }"
               @mouseenter="updateSourcePopoverPosition" @focusin="updateSourcePopoverPosition">
@@ -367,7 +368,7 @@ aside {
   margin: 0 0 var(--space-md);
 }
 
-.routine-not-found p + p {
+.routine-not-found p+p {
   margin-top: var(--space-md);
 }
 
@@ -555,6 +556,7 @@ aside {
   opacity: 0.82;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .source-overflow:hover .source-popover,
