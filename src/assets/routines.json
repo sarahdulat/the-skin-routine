@@ -7062,5 +7062,138 @@
       ]
     },
     "draft": false
+  },
+  {
+    "routine_name": "Jennifer Lawrence's Routine",
+    "id": 55,
+    "time": 4.4,
+    "cost": 8.7,
+    "point_title": "Jennifer Lawrence's Routine",
+    "point_description": "A melasma-conscious, redness-prone, very luxe routine built from her current Vogue routine notes: zinc-forward sun protection, tretinoin, a moisturizer sandwich, face oil, and the extremely Jennifer Lawrence addition of Desitin at night.",
+    "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jennifer_Lawrence_in_2016.jpg",
+    "celebrity_image_credit": "Joel Kowsky",
+    "celebrity_image_license": "Public domain",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Jennifer_Lawrence_in_2016.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dry_skin",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Vogue 2026",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/jennifer-lawrence-beauty-aging-interview",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "September 3, 2026",
+        "headline": "At the Spa With Jennifer Lawrence, Nothing Is Off the Table",
+        "image": "https://assets.vogue.com/photos/6a8f1241870cd5b39ae360a0/16:9/w_1280,c_limit/VOGUE_JL_ML_14388.jpg",
+        "summary": "Jennifer talks candidly about tretinoin, melasma, sunscreen, a water-oil-night-cream moisture sandwich, oxygen mist at the Dior Spa, and using Desitin at night when redness shows up."
+      },
+      {
+        "label": "Harper's Bazaar 2018",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/makeup/a22778066/jennifer-lawrence-beauty-routine/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "August 13, 2018",
+        "headline": "Jennifer Lawrence Takes Us Inside Her Beauty Routine",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jennifer_Lawrence_in_2016.jpg",
+        "summary": "This older interview fills in the structure around her routine: zinc sunblock during the day, exfoliating with something grainy, retinol under a thick night cream, and a Georgia Louise-led skincare approach."
+      },
+      {
+        "label": "Vogue 2018",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/georgia-louise-glopulse-facial-device-glowing-skincare",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "June 6, 2018",
+        "headline": "Jennifer Lawrence's Facialist Launches a Genius Tool to Supercharge Your Sheet Mask",
+        "image": "https://assets.vogue.com/photos/5b1802353b3c7a295b43fa33/16:9/w_1280,c_limit/02-social-sheet-mask.jpg",
+        "summary": "Vogue identifies Georgia Louise as Jennifer's facialist and frames the GloPulse as an occasional sheet-mask treatment from that same facialist world, not a required daily step."
+      },
+      {
+        "label": "Eminence",
+        "site": "Eminence Organic Skin Care",
+        "link": "https://eminenceorganics.com/us/blog/2018/06/11/jennifer-lawrences-favorite-skin-care-products",
+        "favicon": "https://eminenceorganics.com/favicon.ico",
+        "date": "June 11, 2018",
+        "headline": "Jennifer Lawrence's Favorite Skin Care Products",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jennifer_Lawrence_in_2016.jpg",
+        "summary": "An older brand source names a few Jennifer-linked Eminence favorites, including Citrus & Kale Potent C+E Serum and Rosehip Triple C+E Firming Oil."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Vitamin C Serum",
+          "product": "Eminence Citrus & Kale Potent C+E Serum",
+          "link": "https://www.amazon.com/s?k=Eminence+Citrus+%26+Kale+Potent+C%2BE+Serum&tag=theskinrout07-20",
+          "description": "<p>Smooth on after cleansing or rinsing, before oil or sunscreen. This comes from an older Eminence source naming Jennifer-linked favorites, so it is useful history rather than the newest 2026 Vogue routine.</p><p>It fits the melasma-conscious side of the routine: antioxidant support in the morning, then SPF as the non-negotiable final layer.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face Oil",
+          "product": "Eminence Rosehip Triple C+E Firming Oil",
+          "link": "https://www.amazon.com/s?k=Eminence+Rosehip+Triple+C%2BE+Firming+Oil&tag=theskinrout07-20",
+          "description": "<p>Use a few drops only if skin wants extra cushion, and keep it before sunscreen. The older Eminence source names this as one of Jennifer's favorites, while the newer Vogue piece says oil is part of the moisture sandwich she uses around tretinoin at night.</p><p>If you use it in the morning, give it a minute to settle so SPF can form an even layer over top.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Zinc SPF",
+          "product": "Eminence Sun Defense Minerals SPF 30",
+          "link": "https://www.amazon.com/s?k=Eminence+Sun+Defense+Minerals+SPF+30&tag=theskinrout07-20",
+          "description": "<p>Apply as the final morning step, and reapply when you are outside. Harper's Bazaar's older routine notes say Jennifer uses zinc sunblock, while the newer Vogue interview says she is careful about sunscreen because of melasma and even thinks about protecting her hands.</p><p>The exact zinc SPF was not named, so this links a current Eminence mineral sunscreen because she has been connected to the brand in older skincare sourcing.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Gentle Exfoliation",
+          "product": "Eminence Almond & Mineral Treatment",
+          "link": "https://www.amazon.com/s?k=Eminence+Almond+Mineral+Treatment&tag=theskinrout07-20",
+          "description": "<p>Use lightly and do not scrub hard. In the older Harper's Bazaar routine, Jennifer said she exfoliates every night and likes anything grainy, but that advice needs a softer hand if you are also using tretinoin.</p><p>Treat this as an occasional polish in a modern routine, especially on nights when you are not using your strongest active.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Night Cream Buffer",
+          "product": "Dior Prestige La Crème Texture Essentielle",
+          "link": "https://www.dior.com/en_us/beauty/products/dior-prestige-la-creme-texture-essentielle-Y0996212.html",
+          "description": "<p>Apply a thin layer before tretinoin when skin feels dry or reactive. Harper's Bazaar's older routine says Jennifer puts retinol under a thick night cream, and Vogue's newer interview describes the same general sandwich logic around tretinoin.</p><p>The exact night cream was not named, so this links a current Dior cream because Jennifer is a Dior ambassador and the newest source takes place at the Dior Spa.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Tretinoin",
+          "product": "Prescription Tretinoin",
+          "link": "https://medlineplus.gov/druginfo/meds/a682437.html",
+          "description": "<p>Use only as prescribed, usually a pea-sized amount on dry skin, and let it settle before continuing. In the 2026 Vogue interview, Jennifer names tretinoin; in the older Harper's Bazaar routine, the active was described more generally as retinol.</p><p>Because tretinoin is prescription-only, this links a medical reference rather than a shoppable product. Her older Georgia Louise era also included <a href=\"https://www.amazon.com/s?k=Georgia+Louise+Vitamin+A+Serum&tag=theskinrout07-20\" target=\"_blank\">Georgia Louise Vitamin A Serum</a>, but the newer tretinoin mention takes priority. Avoid retinoids during pregnancy, trying to conceive, or nursing unless your clinician specifically advises otherwise.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Water + Oil Sandwich",
+          "product": "Eminence Rosehip Triple C+E Firming Oil",
+          "link": "https://www.amazon.com/s?k=Eminence+Rosehip+Triple+C%2BE+Firming+Oil&tag=theskinrout07-20",
+          "description": "<p>After tretinoin has had a few minutes, add a little water-based hydration or mist, then press in a few drops of oil. Vogue says Jennifer's nighttime tretinoin routine is buffered with water, oil, and night cream rather than left bare and austere.</p><p>The exact oil was not named in the 2026 interview, so this uses the older Jennifer-linked Eminence oil as the closest sourced product match.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Redness Balm",
+          "product": "Desitin Maximum Strength Original Paste",
+          "link": "https://www.amazon.com/s?k=Desitin+Maximum+Strength+Original+Paste&tag=theskinrout07-20",
+          "description": "<p>Use only where redness needs a protective, occlusive layer. Vogue says Jennifer uses Desitin at night for redness, which is so relatable as a mom. Zinc is a staple beyond baby's butts, though. When I was in Mexico and got bad board rash from my one and only time surfing, the pharmacist recommended <a href=\"https://amzn.to/3UX1tMC\" target=\"_blank\">Pomada de la Campana by Dr. Bell</a> to heal the chapped, irritated skin. It was very soothing, and after some research, I learned it can also be used on the face. It is dirt cheap and did not give me any side effects.</p><p>Because she did not specify the exact Desitin formula, this links the classic zinc-oxide paste most people mean when they talk about Desitin.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Occasional Mask Device",
+          "product": "Georgia Louise GloPulse",
+          "link": "https://www.amazon.com/s?k=Georgia+Louise+GloPulse&tag=theskinrout07-20",
+          "description": "<p>Use as an occasional sheet-mask treatment rather than a nightly requirement. Vogue's older Georgia Louise story connects Jennifer to Louise as her facialist and covers the GloPulse device as part of that facialist ecosystem.</p><p>This is older context, so keep it in the special-treatment lane rather than treating it like a confirmed everyday Jennifer step.</p>"
+        }
+      ]
+    },
+    "draft": false
   }
 ]
