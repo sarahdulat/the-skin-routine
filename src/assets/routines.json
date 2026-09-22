@@ -1155,6 +1155,15 @@
     ],
     "sources": [
       {
+        "label": "Women's Health 2026",
+        "site": "Women's Health",
+        "link": "https://www.womenshealthmag.com/beauty/a69976456/martha-stewart-bedtime-routine-elm-biosciences-a3o-elemental-night-cream/",
+        "favicon": "https://www.womenshealthmag.com/favicon.ico",
+        "date": "January 13, 2026",
+        "headline": "Martha Stewart, 83, Shares The Step She 'Never' Skips In Her Nighttime Routine",
+        "summary": "A bedtime-specific source naming Stewart's cleansing routine, warm and cool cloths, Elm Biosciences A3O Elemental Serum, and A3O Elemental Night Cream."
+      },
+      {
         "label": "Vogue 2026",
         "site": "Vogue",
         "link": "https://www.vogue.com/article/beauty-secrets-martha-stewart",
@@ -1246,38 +1255,38 @@
       "pm": [
         {
           "time": "pm",
-          "title": "Steam Cleanse",
+          "title": "Warm Cloth",
           "product": "Warm Steamy Face Cloth",
-          "link": "https://www.allure.com/story/martha-stewart-beauty-routine-tips",
-          "description": "<p>Before bed, loosen makeup and sunscreen with a hot, steamy face cloth. Allure says Stewart uses this before washing her face very well.</p>"
+          "link": "https://www.womenshealthmag.com/beauty/a69976456/martha-stewart-bedtime-routine-elm-biosciences-a3o-elemental-night-cream/",
+          "description": "<p>Before bed, loosen makeup and sunscreen with a warm, steamy face cloth. Women's Health reports that Stewart starts her nighttime routine by steaming her face with a very hot cloth before cleansing, which lines up with Allure's earlier note that she uses a hot cloth before washing well.</p>"
         },
         {
           "time": "pm",
           "title": "Cleanse",
-          "product": "Mario Badescu A.H.A. Botanical Body Soap",
-          "link": "https://www.mariobadescu.com/products/aha-botanical-body-soap",
-          "description": "<p>Follow the steamy cloth with cleanser. Allure says Stewart washes with silicone soap or a cleanser before bed; her newer Vogue routine specifically shows Mario Badescu A.H.A. Botanical Body Soap as the soap she uses on her face.</p>"
+          "product": "Gentle Cleansing Oil",
+          "link": "https://www.womenshealthmag.com/beauty/a69976456/martha-stewart-bedtime-routine-elm-biosciences-a3o-elemental-night-cream/",
+          "description": "<p>Follow the warm cloth with a gentle cleansing oil, then wash thoroughly. Women's Health says Stewart uses a gentle cleansing oil before another rinse with very warm water; Vogue separately shows her using <a href=\"https://www.mariobadescu.com/products/aha-botanical-body-soap\" target=\"_blank\">Mario Badescu A.H.A. Botanical Body Soap</a> as her face soap.</p>"
         },
         {
           "time": "pm",
           "title": "Serum",
           "product": "Elm Biosciences A3O Elemental Serum",
           "link": "https://elmbiosciences.com/products/a3o-elemental-serum",
-          "description": "<p>Use a targeted serum step before cream. Vogue says Stewart's dermatologist creates a bespoke serum based on Visia-CR Skin Analysis, with hydrating, nourishing, and antioxidant-focused ingredients because sun protection is her main concern.</p><p>Her own Elm Biosciences A3O Elemental Serum is the closest source-backed current serum from Stewart's skincare line.</p>"
+          "description": "<p>Apply serum before night cream, including around the eye area as Stewart does. Women's Health says she uses Elm Biosciences A3O Elemental Serum nightly, and Vogue notes that her dermatologist also creates antioxidant-focused serum care around her sun-protection concerns.</p>"
         },
         {
           "time": "pm",
           "title": "Night Cream",
           "product": "Elm Biosciences A3O Elemental Night Cream",
           "link": "https://elmbiosciences.com/products/a3o-elemental-night-cream",
-          "description": "<p>Apply as the main night cream. Stewart uses the A3O Elemental Night Cream in her Vogue routine, and Allure says her bedtime routine ends with slathering on moisturizer and remembering arms, legs, and hands.</p>"
+          "description": "<p>Apply as the main night cream. Women's Health reports that Stewart says she never skips Elm Biosciences A3O Elemental Night Cream at night; Vogue also shows her using it in her glow-focused routine.</p>"
         },
         {
           "time": "pm",
-          "title": "Rich Cream",
+          "title": "Body Cream",
           "product": "Clé de Peau Beauté La Crème",
           "link": "https://www.amazon.com/dp/B0CW276NR6?tag=theskinrout07-20",
-          "description": "<p>Use a richer cream when skin feels chapped or dry. Allure says Stewart used either Crème de la Mer or Clé de Peau Beauté La Crème, and that she was not opposed to using face creams on the body.</p><p>She has also mentioned <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/creme-de-la-mer/ultra-rich-cream-moisturizer\" target=\"_blank\">Crème de la Mer</a> as another rich moisturizer option.</p>"
+          "description": "<p>Use a richer cream on dry spots or the body when needed. Allure says Stewart used either Clé de Peau Beauté La Crème or <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/creme-de-la-mer/ultra-rich-cream-moisturizer\" target=\"_blank\">Crème de la Mer</a>, and that she was not opposed to using face creams on the body.</p>"
         }
       ]
     },
@@ -7191,6 +7200,163 @@
           "product": "Georgia Louise GloPulse",
           "link": "https://www.amazon.com/s?k=Georgia+Louise+GloPulse&tag=theskinrout07-20",
           "description": "<p>Use as an occasional sheet-mask treatment rather than a nightly requirement. Vogue's older Georgia Louise story connects Jennifer to Louise as her facialist and covers the GloPulse device as part of that facialist ecosystem.</p><p>This is older context, so keep it in the special-treatment lane rather than treating it like a confirmed everyday Jennifer step.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Jennifer Lopez's Routine",
+    "id": 56,
+    "time": 4.8,
+    "cost": 9.0,
+    "point_title": "Jennifer Lopez's Routine",
+    "point_description": "A glow-first JLo Beauty routine built around mist, brightening serum, daily SPF, a nighttime retinoid treatment, rich moisturizer, and a few older J.Lo staples like eye cream and lip balm.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lopezlc.jpg?width=320",
+    "celebrity_image_credit": "Leatheryy",
+    "celebrity_image_license": "CC BY-SA 4.0",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Lopezlc.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "50s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dry_skin",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "JLo Beauty 2026",
+        "site": "JLo Beauty",
+        "link": "https://jlobeauty.com/pages/how-to-use",
+        "favicon": "https://jlobeauty.com/favicon.ico",
+        "date": "2026",
+        "headline": "Discover Jennifer's AM + PM ritual, step by step",
+        "image": "https://jlobeauty.com/cdn/shop/files/jlb-how-to-jennifer-am-1-desktop.jpg?v=1787722163&width=1500",
+        "summary": "JLo Beauty lays out Jennifer's current AM and PM ritual: mist, brightening serum, SPF by day, then gel-cream cleanser, retinal and vitamin C serum, and hydrating cream at night."
+      },
+      {
+        "label": "Vogue 2024",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/jennifer-lopez-beauty-wellness-routine",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "July 24, 2024",
+        "headline": "From Skin to Nails, How Jennifer Lopez Looks So Insanely Good at 55",
+        "image": "https://assets.vogue.com/photos/66a11767f4d1c5f3d97c3043/master/w_2560%2Cc_limit/1775780448",
+        "summary": "Vogue connects Lopez's glow to JLo Beauty, Toska Husted facials, microcurrent, light therapy, and Biologique Recherche skin-care products."
+      },
+      {
+        "label": "Vogue 2022",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/video/watch/beauty-secrets-jennifer-lopez",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "December 1, 2022",
+        "headline": "Jennifer Lopez's Guide to Glowing Skin and Lightbulb Contouring",
+        "image": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill%2Cd_placeholder_vogue.png%2Cfl_progressive%2Cg_face%2Ch_1080%2Cq_80%2Cw_1920/v1671458362/vogue_beauty-secrets-jennifer-lopez.jpg",
+        "summary": "In her Vogue Beauty Secrets video, Lopez personally walks through cleanser, serum, SPF moisturizer, lip balm, and eye cream before makeup."
+      },
+      {
+        "label": "Allure 2022",
+        "site": "Allure",
+        "link": "https://www.allure.com/story/jennifer-lopez-morning-skin-care-routine",
+        "favicon": "https://www.allure.com/favicon.ico",
+        "date": "April 7, 2022",
+        "headline": "Jennifer Lopez Shared Her Morning Skin-Care Routine, Complete With Affirmations",
+        "image": "https://media.allure.com/photos/624f191c2cd5aadc7874353e/16%3A9/w_2560%2Cc_limit/jennifer%2520lopez%2520skin%2520care%2520routine.jpg",
+        "summary": "Allure recaps Lopez's morning routine with That Hit Single cleanser, That JLo Glow Serum, That Big Screen SPF moisturizer, and That Fresh Take Eye Cream."
+      },
+      {
+        "label": "Glamour 2021",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/jennifer-lopez-morning-skin-care-routine-is-just-4-steps-long",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "date": "July 24, 2021",
+        "headline": "Jennifer Lopez's Morning Skin-Care Routine Is Just Four Steps Long",
+        "image": "https://media.glamour.com/photos/60fc6ad50dc0e3f4dc2cd64c/master/w_2560%2Cc_limit/Jennifer%2520Lopez%2520Morning%2520Routine.jpg",
+        "summary": "Glamour covers her earlier four-step morning routine and emphasizes her long-running sunscreen habit as one of the biggest reasons she credits for preserving her skin."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Hydrating Mist",
+          "product": "JLo Beauty That Glow Mist Nutrient-Rich Hydrating Mist",
+          "link": "https://jlobeauty.com/products/hydrating-facial-mist",
+          "description": "<p>Mist over clean skin before anything else. On JLo Beauty's current how-to page, Jennifer calls this the first thing she reaches for and says it preps her skin before the rest of the routine goes on.</p><p>The individual mist page is currently sold out, but it still appears in the brand's AM + PM Radiance Routine kit, so I kept the exact product instead of giving an alternative.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Brightening Serum",
+          "product": "JLo Beauty That JLo Glow Brightening Serum",
+          "link": "https://jlobeauty.com/products/brightening-serum",
+          "description": "<p>Apply one to two pumps after mist, smoothing over the face, neck, and décolletage, then let it absorb before SPF. Jennifer calls this her Glow in a Bottle on the current JLo Beauty routine page, and Vogue shows her using it as the glow step before moisturizer.</p><p>Allure also notes that she treats this as a morning and night staple, but the newest official AM routine keeps it in the daytime brightening slot.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Moisturizer",
+          "product": "JLo Beauty That Big Screen Broad Spectrum SPF 30 Moisturizer",
+          "link": "https://jlobeauty.com/products/spf-30-moisturizer",
+          "description": "<p>Apply generously as the final full-face morning layer, at least 15 minutes before sun exposure. JLo Beauty's current routine has this as the protect step, and Jennifer says SPF is non-negotiable because great skin starts with protecting it.</p><p>In Vogue and Glamour, she also credits wearing sunscreen from a young age as one of the big reasons her skin has stayed so luminous.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Eye Cream",
+          "product": "JLo Beauty That Fresh Take Eye Cream",
+          "link": "https://jlobeauty.com/products/eye-brightening-cream",
+          "description": "<p>Tap a small amount under the eyes, between the brows, and wherever the eye area wants a little brightness. In the older Vogue Beauty Secrets video, Jennifer applies her JLo Beauty eye cream after lip balm, and Allure says she also used it between her eyebrows and on her forehead.</p><p>The current JLo Beauty FAQ still lists That Fresh Take in the AM routine, so this older video step still fits the present-day product family.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Balm",
+          "product": "JLo Beauty Beso Balm Ultra-Hydrating Lip Mask",
+          "link": "https://jlobeauty.com/products/overnight-lip-mask",
+          "description": "<p>Use a thin layer on lips as the glossy comfort finish. The current JLo Beauty FAQ lists Beso Balm in the AM routine; in her older Vogue Beauty Secrets video, Jennifer used <a href=\"https://www.cremedelamer.com/product/5834/6498/lip-balms/the-lip-balm-moisturizing-lip-balm\" target=\"_blank\">La Mer The Lip Balm</a> instead and said she loved its light minty feel.</p><p>I made Beso Balm the primary product because it is the newer, brand-current option, while La Mer stays as the older personally mentioned balm.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "JLo Beauty That Hit Single Gel Cream Cleanser",
+          "link": "https://jlobeauty.com/products/gel-cream-cleanser",
+          "description": "<p>Massage a small amount onto damp skin, then rinse thoroughly. On the current JLo Beauty PM routine, Jennifer says she likes to take a minute at night and really massage this cleanser in because it is her cue to slow down.</p><p>In the older Vogue Beauty Secrets video, she also says she likes this cleanser because she wears and reapplies makeup so often, and she wanted something that cleanses beautifully without making the routine complicated.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinal + Vitamin C",
+          "product": "JLo Beauty That JLo Fusion Retinal + Vitamin C Power Serum",
+          "link": "https://jlobeauty.com/products/that-jlo-fusion%E2%84%A2-retinal-vitamin-c-power-serum",
+          "description": "<p>Apply to clean, dry skin at night and let it absorb before moisturizer. Jennifer's current JLo Beauty routine says this is the overnight reset step, pairing retinal and vitamin C after cleansing.</p><p>The brand also says to use daily SPF while using it. If you are pregnant, trying to conceive, or nursing, skip retinoid products unless your own clinician specifically clears them.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Hydrating Cream",
+          "product": "JLo Beauty That Blockbuster Hydrating Cream",
+          "link": "https://jlobeauty.com/products/hyaluronic-acid-moisturizer",
+          "description": "<p>Massage into face and neck in upward circular motions after the serum. In the current PM routine, Jennifer calls the texture spongy and says she applies it over the serum for extra hydration while she sleeps.</p><p>JLo Beauty also positions this cream as the plumping, nourishing finish in the AM + PM Radiance Routine.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "JLo Beauty That Fresh Take Eye Cream",
+          "link": "https://jlobeauty.com/products/eye-brightening-cream",
+          "description": "<p>Tap lightly around the eye area after treatment and before or after moisturizer, depending on texture preference. The current JLo Beauty FAQ lists That Fresh Take in the PM routine, while the older Vogue and Allure sources show it as an eye-brightening step in her morning routine.</p><p>Keep the amount small; this is a polish step, not a place to overload the eye area.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Lip Mask",
+          "product": "JLo Beauty Beso Balm Ultra-Hydrating Lip Mask",
+          "link": "https://jlobeauty.com/products/overnight-lip-mask",
+          "description": "<p>Use a thicker layer at night as the final lip step. JLo Beauty lists Beso Balm in the PM routine and describes it as an anytime balm-mask, so it can work as either the morning gloss step or the bedtime seal.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Occasional Sheet Mask",
+          "product": "JLo Beauty That Limitless Glow Hydrating Sheet Mask",
+          "link": "https://jlobeauty.com/products/hydrating-sheet-mask",
+          "description": "<p>Use before moisturizer when you want the full glow treatment: apply the two-piece mask, hook it around the ears, leave it on for 10 minutes, then massage in the remaining serum. JLo Beauty's current FAQ includes That Limitless Glow in the PM routine, and the product page says it is soaked in That JLo Glow Serum.</p><p>For a more treatment-heavy night, the older Facial Effect Kit also includes <a href=\"https://jlobeauty.com/products/aha-bha-exfoliating-cream\" target=\"_blank\">That Overnight Hustle AHA + BHA Overnight Serum</a>, but that serum is currently sold out and overlaps with the newer retinal treatment, so I kept the mask as the occasional extra instead.</p>"
         }
       ]
     },
