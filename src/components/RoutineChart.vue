@@ -53,7 +53,7 @@ type RoutinePoint = {
     text: string;
     href?: string;
   };
-  flag: 'fr' | 'kr' | null;
+  flag: 'fr' | 'kr' | 'de' | null;
   routine: Routine;
 };
 
@@ -215,6 +215,7 @@ export default defineComponent({
 
         if (routineName.startsWith('french pharmacy')) return 'fr';
         if (routineName.startsWith('korean skincare')) return 'kr';
+        if (routineName.startsWith('german pharmacy')) return 'de';
 
         return null;
       };
@@ -608,6 +609,28 @@ export default defineComponent({
         .attr('width', markerSize / 3)
         .attr('height', markerSize)
         .attr('fill', '#D13F3F');
+
+      const germanFlagFill = flagFill.filter((d) => d.flag === 'de');
+
+      germanFlagFill
+        .append('rect')
+        .attr('width', markerSize)
+        .attr('height', markerSize / 3)
+        .attr('fill', '#111111');
+
+      germanFlagFill
+        .append('rect')
+        .attr('y', markerSize / 3)
+        .attr('width', markerSize)
+        .attr('height', markerSize / 3)
+        .attr('fill', '#DD0000');
+
+      germanFlagFill
+        .append('rect')
+        .attr('y', (markerSize / 3) * 2)
+        .attr('width', markerSize)
+        .attr('height', markerSize / 3)
+        .attr('fill', '#FFCE00');
 
       const koreanFlagFill = flagFill.filter((d) => d.flag === 'kr');
 

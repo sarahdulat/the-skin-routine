@@ -7361,5 +7361,283 @@
       ]
     },
     "draft": false
+  },
+  {
+    "routine_name": "German Pharmacy Essentials Routine",
+    "id": 57,
+    "time": 3.0,
+    "cost": 4.9,
+    "point_title": "German Pharmacy Essentials",
+    "point_description": "An affordable German-apotheke routine with a gentle sebamed cleanse, fragrance-free Weleda moisture, a true 0.05% retinal treatment, dedicated eye care, and high daily protection.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dry_skin",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "sebamed Anti-Rötungen Sanfter Reinigungsschaum",
+          "link": "https://www.shop-apotheke.com/beauty/16842362/sebamed-anti-roetungen-sanfter-reinigungsschaum.htm",
+          "description": "<p>Massage one pump over damp skin and rinse with lukewarm water. This fragrance- and soap-free pH 5.5 foam is the kind of practical German pharmacy cleanser I would buy even without redness because it cleans without making the rest of the routine work harder.</p><p>If your skin wakes up dry rather than oily, a water rinse is enough in the morning; save the cleanser for night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturizer",
+          "product": "Weleda Sensitiv Feuchtigkeitscreme Leicht Mandel",
+          "link": "https://www.shop-apotheke.com/beauty/19179786/weleda-sensitiv-feuchtigkeitscreme-leicht-mandel.htm",
+          "description": "<p>Smooth a small amount over slightly damp skin. This is the fragrance-free side of Weleda: a short, almond-oil-based formula that feels much more sensible for everyday facial use than the brand's more aromatic classics.</p><p>It does contain alcohol, so patch test if your barrier is already raw or eczema-prone. On very dry skin, use a little more at night rather than piling on extra morning layers.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Eucerin Q10 Active Augenpflege LSF 15",
+          "link": "https://www.shop-apotheke.com/beauty/180976/eucerin-q10-active-augenpflege.htm",
+          "description": "<p>Tap a rice-grain amount around each orbital bone before face sunscreen. It is fragrance-free and gives the eye area its own UVA protection, which is especially handy if regular sunscreen tends to migrate and sting.</p><p>SPF 15 is a supplement, not the whole plan: bring your face SPF up around the eyes as tolerated and add sunglasses for real-world protection.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "EUBOS Daily Ray Protect Tagescreme LSF 50+",
+          "link": "https://www.shop-apotheke.com/beauty/20098981/eubos-daily-ray-protect-tagescreme-lsf-50.htm",
+          "description": "<p>Apply generously as the last step over face, ears, neck, and exposed chest, then reapply when you are outdoors. This untinted German-made SPF 50+ uses modern filters plus ectoin and feels like the most important anti-aging product in the routine.</p><p>It is fragranced, so anyone who already knows fragrance is a trigger should patch test or choose a fragrance-free sunscreen instead.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "sebamed Anti-Rötungen Sanfter Reinigungsschaum",
+          "link": "https://www.shop-apotheke.com/beauty/16842362/sebamed-anti-roetungen-sanfter-reinigungsschaum.htm",
+          "description": "<p>Massage over damp skin and rinse thoroughly. For water-resistant sunscreen or makeup, cleanse twice only if the first pass has not removed everything; more foam is not automatically better.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Starter Retinal",
+          "product": "medipharma cosmetics Retinal Serum 0.05%",
+          "link": "https://www.shop-apotheke.com/beauty/19629120/medipharma-cosmetics-retinal-serum.htm",
+          "description": "<p>On completely dry skin, use a pea-size amount for the whole face one or two nights a week, avoiding eyelids, lip corners, and the creases beside the nose. This is a genuine 0.05% retinal formula, so the accessible price does not make it a throwaway active.</p><p>Increase only when your skin is comfortable, and use moisturizer-only recovery nights between applications. Do not use while pregnant, trying to conceive, or breastfeeding unless your clinician specifically clears it.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "EUBOS Anti Age Hyaluron Augen Kontur CremeSerum",
+          "link": "https://www.shop-apotheke.com/beauty/7564102/eubos-anti-age-hyaluron-augen-kontur-cremeserum.htm",
+          "description": "<p>Tap a tiny amount around the eye contour, keeping it out of the eyes. Hyaluronic acid and Matrixyl make this a comfortable line-softening step without asking the delicate eye area to tolerate the face retinal.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturizer",
+          "product": "Weleda Sensitiv Feuchtigkeitscreme Leicht Mandel",
+          "link": "https://www.shop-apotheke.com/beauty/19179786/weleda-sensitiv-feuchtigkeitscreme-leicht-mandel.htm",
+          "description": "<p>Finish with a thin, even layer. On retinal nights you can use the moisturizer before and after the treatment as a sandwich if you are prone to dryness; on recovery nights, apply it directly to slightly damp skin.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "German Pharmacy Dermocosmetic Routine",
+    "id": 58,
+    "time": 3.6,
+    "cost": 7.6,
+    "point_title": "German Pharmacy Dermocosmetic",
+    "point_description": "A targeted mid-tier apotheke routine pairing Eucerin's pigment work with DERMASENCE hydration, retinol, eye care, and a fragrance-free SPF 50.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Comfort Cleanse",
+          "product": "DERMASENCE Hyalusome Reinigungsgel",
+          "link": "https://www.dermasence.de/produkte/hyalusome-reinigungsgel",
+          "description": "<p>Emulsify two or three pumps between damp hands, massage over the face, and rinse or remove with a soft wet cloth. The glycerin-rich oil-gel format is especially nice when a foaming cleanser leaves skin tight.</p><p>It is lightly fragranced and contains alcohol, so this is a comfort cleanse rather than my pick for a fragrance-allergic skin routine.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Dark-Spot Serum",
+          "product": "Eucerin Anti-Pigment Dual Serum",
+          "link": "https://www.shop-apotheke.com/beauty/14163929/eucerin-anti-pigment-dual-serum.htm",
+          "description": "<p>Apply one pump over the face before cream. Thiamidol makes this the routine's focused pigmentation step, while hyaluronic acid keeps it from feeling like a harsh spot treatment.</p><p>Be consistent and patient, but do not stack it with a shelf full of other Thiamidol products: Eucerin caps total Thiamidol-containing applications at four per day.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Moisturizer",
+          "product": "DERMASENCE Hyalusome Feuchtigkeitscreme",
+          "link": "https://www.dermasence.de/produkte/hyalusome-feuchtigkeitscreme",
+          "description": "<p>Press a thin layer over the serum. Hyaluronic acid, glycerin, panthenol, avocado oil, and shea butter give dehydrated skin both water and lipids without turning the routine into a heavy balm.</p><p>Skip this step in warm weather if the sunscreen alone gives you enough moisture. The cream is lightly fragranced.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Eucerin Hyaluron-Filler +3x Effect Augenpflege LSF 15",
+          "link": "https://www.shop-apotheke.com/beauty/1552397/eucerin-hyaluron-filler-augenpflege-mildert-falten-und-kraehenfuesse-rund-um-die-augen.htm",
+          "description": "<p>Tap lightly around the orbital bone before face SPF. This gives the eye area hyaluronic-acid moisture plus UVA protection in a formula designed and ophthalmologically tested for that zone.</p><p>Still bring your SPF 50 close to the eyes if it is comfortable, and wear sunglasses; an SPF 15 eye cream is useful backup, not complete eye-area sun protection.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "DERMASENCE Hyalusome Tagespflege LSF 50",
+          "link": "https://www.dermasence.de/produkte/hyalusome-tagespflege-mit-lsf-50",
+          "description": "<p>Apply a generous, even layer over face, ears, neck, and exposed chest. This fragrance-free SPF 50 combines modern UVA/UVB filters with panthenol, ectoin, hyaluronic acid, and Q10, so it earns its place as both protection and daytime hydration.</p><p>Reapply during sustained outdoor exposure. The pigment serum cannot outwork under-applied sunscreen.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "DERMASENCE Hyalusome Reinigungsgel",
+          "link": "https://www.dermasence.de/produkte/hyalusome-reinigungsgel",
+          "description": "<p>Massage onto damp skin until the oil-gel emulsifies, then remove thoroughly. It can take off eye makeup, but a separate first cleanse may still be more comfortable for very tenacious mascara.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinol Treatment",
+          "product": "DERMASENCE Hyalusome Retinol Serum plus",
+          "link": "https://www.dermasence.de/produkte/hyalusome-retinol-serum-plus",
+          "description": "<p>Apply a thin layer to dry skin one or two nights a week, avoiding the eyes and lips, then build up slowly. Retinol and bakuchiol make this the texture, fine-line, and uneven-tone treatment; there is no prize for rushing it.</p><p>Use moisturizer-only recovery nights, do not layer it with other retinoids, and skip it during pregnancy and breastfeeding. The formula is lightly fragranced.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "DERMASENCE Hyalusome Augenpflege",
+          "link": "https://www.dermasence.de/produkte/hyalusome-augenpflege",
+          "description": "<p>Tap a small amount around the eye contour. This fragrance-free formula uses hyaluronic acid, panthenol, allantoin, bisabolol, centella compounds, and jojoba oil, which is exactly the calm counterpoint I want beside a retinol night.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Moisturizer",
+          "product": "DERMASENCE Hyalusome Feuchtigkeitscreme",
+          "link": "https://www.dermasence.de/produkte/hyalusome-feuchtigkeitscreme",
+          "description": "<p>Finish with an even layer over face and neck. If retinol makes you flaky, apply a light layer before the serum and another on top; if your skin is calm, one final layer is enough.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "German Pharmacy Luxury Routine",
+    "id": 59,
+    "time": 4.2,
+    "cost": 12.0,
+    "point_title": "German Pharmacy Luxury",
+    "point_description": "A splurge-worthy German pharmacy edit led by BABOR's Aachen-made cleansing, peptide cream, ampoules, and SPF, with SkinCeuticals treatments where the evidence matters most.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Two-Phase Cleanse",
+          "product": "BABOR HY-ÖL Cleanser & Phyto HY-ÖL Booster Hydrating Set",
+          "link": "https://de.babor.com/produkte/cleansing/65655-hy-oel-cleanser-phyto-hy-oel-booster-hydrating-set.html",
+          "description": "<p>Work four pumps of HY-ÖL over dry skin, add two pumps of the Hydrating Booster, emulsify with cool water, and rinse. It is an iconic Babor ritual and genuinely lovely for dry skin, though the full two-phase production is optional in the morning.</p><p>The set contains fragrance and aromatic oils, so it belongs in this sensorial luxury routine, not a fragrance-free sensitive-skin edit.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C Serum",
+          "product": "SkinCeuticals C E Ferulic",
+          "link": "https://www.shop-apotheke.com/beauty/1982353/skinceuticals-c-e-ferulic-antioxidatives-anti-aging-serum-mit-vitamin-c.htm",
+          "description": "<p>Press four or five drops over dry face, neck, and chest. The 15% L-ascorbic acid, 1% vitamin E, and 0.5% ferulic acid combination is the investment treatment here: antioxidant support under sunscreen, with long-term help for tone and fine lines.</p><p>If you are new to low-pH vitamin C, start every other morning. Do not use an oxidized bottle that has turned very dark brown.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Peptide Moisturizer",
+          "product": "DOCTOR BABOR Collagen-Peptide Booster Cream",
+          "link": "https://de.babor.com/produkte/doctor-babor/lifting/65784-collagen-peptide-booster-cream.html",
+          "description": "<p>Massage a small amount over face, neck, and chest. Peptides, multimolecular hyaluronic acid, squalane, and oils make this the plush step for skin that is dry, less elastic, or simply wants a more polished finish.</p><p>It is fragranced and rich. Use less under sunscreen, or skip it on warm days when the SPF serum is moisturizing enough.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Vichy Liftactiv Pigment Specialist B3 Augenpflege LSF 50+",
+          "link": "https://www.shop-apotheke.com/beauty/19481226/vichy-liftactiv-pigment-specialist-b3-contorno-occhi-spf-50.htm",
+          "description": "<p>Apply a small amount around the orbital bone before face sunscreen. This is one of the rare dedicated eye products with SPF 50+, pairing high protection with niacinamide and Melasyl for the look of dark circles and uneven pigment.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "DOCTOR BABOR Broad Spectrum Hydration Serum SPF 50+",
+          "link": "https://de.babor.com/produkte/doctor-babor/solar-defense/64829-broad-spectrum-hydration-serum-spf-50.html",
+          "description": "<p>Apply generously as the final morning layer over face, ears, neck, and exposed chest. The fragrance-free serum uses modern UVA/UVB filters plus ectoin and a ferulic complex, with a hydrated rather than matte finish.</p><p>The 30 ml bottle is elegant but small, so do not ration it. Reapply during sustained outdoor exposure and use a body sunscreen for the neck and chest if that helps you apply enough.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Two-Phase Cleanse",
+          "product": "BABOR HY-ÖL Cleanser & Phyto HY-ÖL Booster Hydrating Set",
+          "link": "https://de.babor.com/produkte/cleansing/65655-hy-oel-cleanser-phyto-hy-oel-booster-hydrating-set.html",
+          "description": "<p>Massage HY-ÖL over dry skin to dissolve sunscreen and makeup, add the Hydrating Booster, emulsify, and rinse thoroughly. This is where the two-part cleanser earns its counter space.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Retinol Treatment",
+          "product": "SkinCeuticals Retinol 0.3",
+          "link": "https://www.shop-apotheke.com/beauty/15193393/skinceuticals-retinol-0-3.htm",
+          "description": "<p>Use a pea-size amount on completely dry skin one or two nights a week, avoiding eyelids, lip corners, and nose creases. A 0.3% retinol is not beginner fluff: start slowly, then increase only when there is no lingering redness, burning, or peeling.</p><p>Do not combine it with another retinoid or an exfoliating acid on the same night. Skip during pregnancy, while trying to conceive, and while breastfeeding unless your clinician specifically advises otherwise.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "SkinCeuticals A.G.E. Advanced Eye",
+          "link": "https://www.shop-apotheke.com/beauty/18910458/skinceuticals-a-g-e-advanced-eye.htm",
+          "description": "<p>Tap a rice-grain amount around each eye and across the brow bone, keeping it out of the eye itself. Proxylane, peptides, caffeine, and optical diffusers make this the luxury step for crepiness, puffiness, and dark-circle shadowing without putting face retinol on the eyelids.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Peptide Moisturizer",
+          "product": "DOCTOR BABOR Collagen-Peptide Booster Cream",
+          "link": "https://de.babor.com/produkte/doctor-babor/lifting/65784-collagen-peptide-booster-cream.html",
+          "description": "<p>Finish with an even layer over face, neck, and chest. On retinol nights, sandwich the treatment between two thin layers if you need a buffer; on ordinary nights, one generous final layer is plenty.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional 7-Night Ampoule Course",
+          "product": "BABOR 7 Days Perfect Skin Collection",
+          "link": "https://de.babor.com/produkte/ampoule-concentrates/65666-7-days-perfect-skin-collection.html",
+          "description": "<p>For an occasional Babor moment, use one ampoule after cleansing and before moisturizer for seven nights. The set moves through hydration, vitamin C, niacinamide, and anti-aging concentrates, so think of it as a finite treatment course rather than another forever product.</p><p>Use the ampoules on non-retinol nights if your skin is reactive, and follow each day's package directions because the formulas change across the week.</p>"
+        }
+      ]
+    },
+    "draft": false
   }
 ]
