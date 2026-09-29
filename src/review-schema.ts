@@ -19,10 +19,12 @@ function mentionedProductSchema(product: FeaturedProduct) {
 function productSchema(
   product: FeaturedProduct,
   options: SchemaOptions,
+  productId: string,
   review: Record<string, unknown>,
 ) {
   return {
     "@type": "Product",
+    "@id": productId,
     name: product.name,
     brand: {
       "@type": "Brand",
@@ -40,6 +42,7 @@ export function buildReviewBlogPostingSchema(post: Post, options: SchemaOptions)
   const primaryProduct = post.data.products[0]?.product;
   const mentionedProducts = post.data.products.slice(1).map(({ product }) => mentionedProductSchema(product));
   const siteUrl = new URL(options.canonicalUrl).origin;
+  const productId = `${options.canonicalUrl}#product`;
   const author = {
     "@type": "Person",
     name: "Sarah Dulat",
@@ -55,6 +58,9 @@ export function buildReviewBlogPostingSchema(post: Post, options: SchemaOptions)
     name: `${displayTitle} review`,
     reviewBody: options.description,
     datePublished: post.first_publication_date,
+    itemReviewed: {
+      "@id": productId,
+    },
     author,
     publisher,
   };
@@ -74,7 +80,7 @@ export function buildReviewBlogPostingSchema(post: Post, options: SchemaOptions)
     ...(options.imageUrl ? { image: [options.imageUrl] } : {}),
     author,
     publisher,
-    ...(primaryProduct ? { about: productSchema(primaryProduct, options, review) } : {}),
+    ...(primaryProduct ? { about: productSchema(primaryProduct, options, productId, review) } : {}),
     ...(mentionedProducts.length > 0 ? { mentions: mentionedProducts } : {}),
     ...(post.tags.length > 0 ? { keywords: post.tags } : {}),
     inLanguage: post.lang,

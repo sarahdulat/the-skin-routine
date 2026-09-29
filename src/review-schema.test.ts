@@ -22,6 +22,7 @@ describe("review structured data", () => {
     });
     expect(schema.about).toMatchObject({
       "@type": "Product",
+      "@id": "https://theskinroutine.com/blog/laneige-lip-sleeping-mask/#product",
       name: "Lip Sleeping Mask",
       brand: { "@type": "Brand", name: "LANEIGE" },
       url: "https://theskinroutine.com/blog/laneige-lip-sleeping-mask/",
@@ -30,6 +31,9 @@ describe("review structured data", () => {
         "@type": "Review",
         name: "LANEIGE Lip Sleeping Mask review",
         datePublished: post!.first_publication_date,
+        itemReviewed: {
+          "@id": "https://theskinroutine.com/blog/laneige-lip-sleeping-mask/#product",
+        },
         author: {
           "@type": "Person",
           name: "Sarah Dulat",
