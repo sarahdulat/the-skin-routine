@@ -24,11 +24,22 @@ describe("review structured data", () => {
       "@type": "Product",
       name: "Lip Sleeping Mask",
       brand: { "@type": "Brand", name: "LANEIGE" },
-      url: "https://us.laneige.com/products/lip-sleeping-mask",
+      url: "https://theskinroutine.com/blog/laneige-lip-sleeping-mask/",
+      sameAs: "https://us.laneige.com/products/lip-sleeping-mask",
+      review: {
+        "@type": "Review",
+        name: "LANEIGE Lip Sleeping Mask review",
+        datePublished: post!.first_publication_date,
+        author: {
+          "@type": "Person",
+          name: "Sarah Dulat",
+          url: "https://theskinroutine.com/about/",
+        },
+      },
     });
   });
 
-  it("lists alternatives as mentioned products without inventing ratings or offers", () => {
+  it("lists alternatives as general mentions without creating invalid Product items", () => {
     const post = getPostByUID("laneige-lip-sleeping-mask")!;
     const schema = buildReviewBlogPostingSchema(post, {
       canonicalUrl: "https://theskinroutine.com/blog/laneige-lip-sleeping-mask/",
@@ -38,7 +49,11 @@ describe("review structured data", () => {
     const serializedSchema = JSON.stringify(schema);
 
     expect(schema.mentions).toHaveLength(post.data.products.length - 1);
-    expect(schema.mentions?.[0]).toMatchObject({ "@type": "Product" });
+    expect(schema.mentions?.[0]).toMatchObject({ "@type": "Thing" });
+    expect(schema.about?.review).toMatchObject({
+      "@type": "Review",
+      reviewBody: post.data.seo_description,
+    });
     expect(serializedSchema).not.toContain("reviewRating");
     expect(serializedSchema).not.toContain("aggregateRating");
     expect(serializedSchema).not.toContain("offers");

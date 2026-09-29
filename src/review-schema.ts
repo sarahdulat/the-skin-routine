@@ -8,7 +8,19 @@ type SchemaOptions = {
 
 type FeaturedProduct = Post["data"]["products"][number]["product"];
 
-function productSchema(product: FeaturedProduct, imageUrl?: string | null) {
+function mentionedProductSchema(product: FeaturedProduct) {
+  return {
+    "@type": "Thing",
+    name: `${product.brand} ${product.name}`,
+    url: product.link,
+  };
+}
+
+function productSchema(
+  product: FeaturedProduct,
+  options: SchemaOptions,
+  review: Record<string, unknown>,
+) {
   return {
     "@type": "Product",
     name: product.name,
@@ -16,16 +28,36 @@ function productSchema(product: FeaturedProduct, imageUrl?: string | null) {
       "@type": "Brand",
       name: product.brand,
     },
-    url: product.link,
-    ...(imageUrl ? { image: [imageUrl] } : {}),
+    url: options.canonicalUrl,
+    sameAs: product.link,
+    ...(options.imageUrl ? { image: [options.imageUrl] } : {}),
+    review,
   };
 }
 
 export function buildReviewBlogPostingSchema(post: Post, options: SchemaOptions) {
   const displayTitle = post.data.title[0]?.text ?? post.uid;
   const primaryProduct = post.data.products[0]?.product;
-  const mentionedProducts = post.data.products.slice(1).map(({ product }) => productSchema(product));
+  const mentionedProducts = post.data.products.slice(1).map(({ product }) => mentionedProductSchema(product));
   const siteUrl = new URL(options.canonicalUrl).origin;
+  const author = {
+    "@type": "Person",
+    name: "Sarah Dulat",
+    url: `${siteUrl}/about/`,
+  };
+  const publisher = {
+    "@type": "Organization",
+    name: "The Skin Routine",
+    url: `${siteUrl}/`,
+  };
+  const review = {
+    "@type": "Review",
+    name: `${displayTitle} review`,
+    reviewBody: options.description,
+    datePublished: post.first_publication_date,
+    author,
+    publisher,
+  };
 
   return {
     "@context": "https://schema.org",
@@ -40,17 +72,9 @@ export function buildReviewBlogPostingSchema(post: Post, options: SchemaOptions)
     datePublished: post.first_publication_date,
     dateModified: post.last_publication_date,
     ...(options.imageUrl ? { image: [options.imageUrl] } : {}),
-    author: {
-      "@type": "Person",
-      name: "Sarah Dulat",
-      url: `${siteUrl}/about/`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "The Skin Routine",
-      url: `${siteUrl}/`,
-    },
-    ...(primaryProduct ? { about: productSchema(primaryProduct, options.imageUrl) } : {}),
+    author,
+    publisher,
+    ...(primaryProduct ? { about: productSchema(primaryProduct, options, review) } : {}),
     ...(mentionedProducts.length > 0 ? { mentions: mentionedProducts } : {}),
     ...(post.tags.length > 0 ? { keywords: post.tags } : {}),
     inLanguage: post.lang,
