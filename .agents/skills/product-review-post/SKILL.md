@@ -9,7 +9,7 @@ Create candid, useful product reviews in Sarah's voice and add them to The Skin 
 
 ## Establish context
 
-1. Read `src/views/AboutView.vue` and `src/content/reviews/my-skincare-routine-has-changed.md` for current voice.
+1. Read `src/views/AboutView.vue` and `src/content/reviews/nuface-mini-plus-starter-kit.md` for current voice.
 2. Inspect `src/posts.ts` and one recent review before changing content. Preserve unrelated working-tree changes.
 3. Read [references/post-format.md](references/post-format.md) before creating or editing frontmatter.
 4. Treat the user's firsthand experience as authoritative for the `My Thoughts` and `Verdict` sections. Do not dilute discomfort or irritation to match favorable public reviews.

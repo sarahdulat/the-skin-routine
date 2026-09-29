@@ -115,16 +115,16 @@ async function getRoutineUrls() {
     .filter((routine) => !routine.draft)
     .map((routine) => ({
       path: `/routine/${routineSlug(routine)}/`,
-      lastmod: today,
       changefreq: "monthly",
       priority: "0.6",
     }));
 }
 
 function toUrlEntry(entry) {
+  const lastmod = entry.lastmod ? `\n    <lastmod>${entry.lastmod}</lastmod>` : "";
+
   return `  <url>
-    <loc>${escapeXml(`${siteUrl}${entry.path}`)}</loc>
-    <lastmod>${entry.lastmod}</lastmod>
+    <loc>${escapeXml(`${siteUrl}${entry.path}`)}</loc>${lastmod}
     <changefreq>${entry.changefreq}</changefreq>
     <priority>${entry.priority}</priority>
   </url>`;
