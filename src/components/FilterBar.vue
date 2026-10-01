@@ -49,7 +49,7 @@ export default defineComponent({
       type: String,
       required: false,
       default: "",
-    }
+    },
   },
   emits: ["update:pregnancySafeOnly"],
   methods: {
@@ -95,6 +95,10 @@ export default defineComponent({
     flex-wrap: wrap;
     gap: var(--space-md);
   }
+}
+
+.dropdown-group :deep(.dropdown-container) {
+  margin: 0;
 }
 
 .active-tag {

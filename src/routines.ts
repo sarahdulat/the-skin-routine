@@ -1,5 +1,44 @@
 import type { Routine } from "./store";
 
+export const routineDirectoryCategories = [
+  { value: "celebrity", label: "Celebrity" },
+  { value: "experts-creators", label: "Experts & Creators" },
+  { value: "french-pharmacy", label: "French Pharmacy" },
+  { value: "k-beauty", label: "K-Beauty" },
+  { value: "german-pharmacy-drugstore", label: "German Pharmacy & Drugstore" },
+  { value: "anti-aging", label: "Anti-Aging" },
+  { value: "acne-prone", label: "Acne-Prone" },
+  { value: "pregnancy-safe", label: "Pregnancy Safe" },
+  { value: "sensitive", label: "Sensitive" },
+] as const;
+
+export type RoutineDirectoryCategory = typeof routineDirectoryCategories[number]["value"];
+
+export function matchesRoutineDirectoryCategory(routine: Routine, category: RoutineDirectoryCategory) {
+  const routineName = routine.routine_name.toLowerCase();
+
+  switch (category) {
+    case "celebrity":
+      return "celebrity_face_image" in routine && Boolean(routine.celebrity_face_image);
+    case "experts-creators":
+      return "profile_type" in routine && ["expert", "creator"].includes(routine.profile_type);
+    case "french-pharmacy":
+      return routineName.startsWith("french pharmacy ");
+    case "k-beauty":
+      return routineName.startsWith("korean skincare ");
+    case "german-pharmacy-drugstore":
+      return routineName.startsWith("german pharmacy ");
+    case "anti-aging":
+      return routine.skin_concern.includes("fine_lines_and_wrinkles");
+    case "acne-prone":
+      return routine.skin_concern.includes("acne_prone");
+    case "pregnancy-safe":
+      return routine.pregnancy_safe;
+    case "sensitive":
+      return routine.skin_concern.includes("sensitive");
+  }
+}
+
 type FeaturedProduct = {
   brand: string;
   name: string;

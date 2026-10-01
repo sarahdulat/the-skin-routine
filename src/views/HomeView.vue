@@ -3,7 +3,11 @@
     <div class="chart">
       <h1 v-if="!isRoutinePage" class="visually-hidden">Find Your Skincare Routine</h1>
       <FilterBar :dropdowns="[age_range, skin_concern]" v-model:pregnancy-safe-only="pregnancySafeOnly" />
-      <RoutineChart :routines="filteredRoutines" />
+      <div class="chart-stage">
+        <RoutineChart :routines="filteredRoutines" />
+        <RoutineDirectory class="routine-directory-control" :routines="publishedRoutines"
+          @select="pregnancySafeOnly = false" />
+      </div>
     </div>
     <RoutineSidebar :is-routine-page="isRoutinePage" :not-found="isInvalidRoutinePage" />
   </main>
@@ -13,6 +17,7 @@
 import { defineComponent } from "vue";
 import type { LocationQueryValue, RouteLocationNormalizedLoaded } from "vue-router";
 import RoutineChart from "../components/RoutineChart.vue";
+import RoutineDirectory from "../components/RoutineDirectory.vue";
 import RoutineSidebar from "../components/RoutineSidebar.vue";
 import routines from '../assets/routines.json'
 import FilterBar from "../components/FilterBar.vue";
@@ -51,6 +56,7 @@ export default defineComponent({
   name: 'home',
   components: {
     FilterBar,
+    RoutineDirectory,
     RoutineSidebar,
     RoutineChart
   },
@@ -158,6 +164,19 @@ main {
   overflow: hidden;
 }
 
+.chart-stage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+}
+
+.routine-directory-control {
+  position: absolute;
+  z-index: 10;
+  top: var(--space-md);
+  right: 35px;
+}
+
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
@@ -170,6 +189,10 @@ main {
     grid-template-rows: auto 28rem;
     min-height: auto;
     overflow: visible;
+  }
+
+  .routine-directory-control {
+    width: auto;
   }
 }
 </style>

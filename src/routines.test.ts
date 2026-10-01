@@ -1,6 +1,14 @@
 import { describe, expect, it } from "vitest";
 import routines from "./assets/routines.json";
-import { findRoutineBySlugOrId, findRoutineProductMentions, newestRoutine, routineSlug, withoutRoutineSelection } from "./routines";
+import {
+  findRoutineBySlugOrId,
+  findRoutineProductMentions,
+  matchesRoutineDirectoryCategory,
+  newestRoutine,
+  routineDirectoryCategories,
+  routineSlug,
+  withoutRoutineSelection,
+} from "./routines";
 
 describe("routine helpers", () => {
   it("creates readable routine slugs from routine names", () => {
@@ -47,6 +55,36 @@ describe("routine helpers", () => {
       "Skin Concern": "Dry Skin",
       PregnancySafe: "true",
     });
+  });
+
+  it("matches routine directory categories from routine metadata", () => {
+    const hailey = routines.find((routine) => routine.routine_name === "Hailey Bieber's Routine")!;
+    const french = routines.find((routine) => routine.routine_name === "French Pharmacy Routine for Your 20s")!;
+    const korean = routines.find((routine) => routine.routine_name === "Korean Skincare Routine for Your 20s")!;
+    const german = routines.find((routine) => routine.routine_name === "German Pharmacy Essentials Routine")!;
+    const pregnancySafe = routines.find((routine) => routine.routine_name === "Pregnancy-Safe Drugstore Routine")!;
+    const acneProne = routines.find((routine) => routine.routine_name === "Drugstore Acne-Prone Skin Routine")!;
+    const expert = routines.find((routine) => routine.routine_name === "Dr. Sam Ellis's Routine")!;
+
+    expect(matchesRoutineDirectoryCategory(hailey, "celebrity")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(expert, "celebrity")).toBe(false);
+    expect(matchesRoutineDirectoryCategory(expert, "experts-creators")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(french, "french-pharmacy")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(korean, "k-beauty")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(german, "german-pharmacy-drugstore")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(acneProne, "acne-prone")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(pregnancySafe, "pregnancy-safe")).toBe(true);
+    expect(matchesRoutineDirectoryCategory(pregnancySafe, "sensitive")).toBe(true);
+  });
+
+  it("places every public routine in at least one directory category", () => {
+    const uncategorizedRoutines = routines
+      .filter((routine) => !routine.draft)
+      .filter((routine) => !routineDirectoryCategories.some(({ value }) => (
+        matchesRoutineDirectoryCategory(routine, value)
+      )));
+
+    expect(uncategorizedRoutines).toEqual([]);
   });
 
   it("finds routines where a featured product is mentioned", () => {
