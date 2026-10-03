@@ -27,7 +27,7 @@ export function matchesRoutineDirectoryCategory(routine: Routine, category: Rout
     case "k-beauty":
       return routineName.startsWith("korean skincare ");
     case "german-pharmacy-drugstore":
-      return routineName.startsWith("german pharmacy ");
+      return routineName.startsWith("german pharmacy ") || routineName.startsWith("dm ");
     case "anti-aging":
       return routine.skin_concern.includes("fine_lines_and_wrinkles");
     case "acne-prone":

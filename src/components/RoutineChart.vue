@@ -53,7 +53,7 @@ type RoutinePoint = {
     text: string;
     href?: string;
   };
-  flag: 'fr' | 'kr' | 'de' | null;
+  flag: 'fr' | 'kr' | 'de' | 'dm' | null;
   routine: Routine;
 };
 
@@ -130,12 +130,21 @@ export default defineComponent({
     const pinnedPopoverKey = ref<string | null>(null);
     const showEmptyState = computed(() => props.routines.length === 0);
     let resizeObserver: ResizeObserver | null = null;
+    let restorePinnedPopoverTimeout: ReturnType<typeof setTimeout> | null = null;
+
+    const clearPinnedPopoverRestore = () => {
+      if (restorePinnedPopoverTimeout === null) return;
+
+      clearTimeout(restorePinnedPopoverTimeout);
+      restorePinnedPopoverTimeout = null;
+    };
 
     const hidePopover = () => {
       popoverVisible.value = false;
     };
 
     const dismissPopover = () => {
+      clearPinnedPopoverRestore();
       pinnedPopoverKey.value = null;
       hidePopover();
     };
@@ -200,7 +209,7 @@ export default defineComponent({
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
       const axisMax = 12;
-      const markerSize = 28;
+      const markerSize = 25;
       const markerRadius = markerSize / 2;
       const selectedStrokeWidth = 3;
       const defaultStrokeWidth = 2;
@@ -216,6 +225,7 @@ export default defineComponent({
         if (routineName.startsWith('french pharmacy')) return 'fr';
         if (routineName.startsWith('korean skincare')) return 'kr';
         if (routineName.startsWith('german pharmacy')) return 'de';
+        if (routineName.startsWith('dm ')) return 'dm';
 
         return null;
       };
@@ -268,7 +278,7 @@ export default defineComponent({
         x: margin.left + xScale(point.x),
         y: margin.top + yScale(point.y),
       });
-      const clusterGroups = groupNearbyPoints(data, pointPosition, containerWidth <= 768 ? 18 : 0);
+      const clusterGroups = groupNearbyPoints(data, pointPosition, containerWidth <= 768 ? 25 : markerSize);
       const clusters: ClusterPoint[] = clusterGroups
         .filter((points) => points.length > 1)
         .map((points) => ({
@@ -305,44 +315,6 @@ export default defineComponent({
           clusterPosition(cluster)
         );
       };
-      const showHoverRoutinePopover = (point: RoutinePoint) => {
-        if (pinnedPopoverKey.value) return;
-
-        showRoutinePopover(point);
-      };
-      const showHoverClusterPopover = (cluster: ClusterPoint) => {
-        if (pinnedPopoverKey.value) return;
-
-        showClusterPopover(cluster);
-      };
-      const hideHoverPopover = () => {
-        if (pinnedPopoverKey.value) return;
-
-        hidePopover();
-      };
-      const togglePinnedRoutinePopover = (point: RoutinePoint) => {
-        const key = routinePopoverKey(point);
-
-        if (pinnedPopoverKey.value === key) {
-          dismissPopover();
-          return;
-        }
-
-        pinnedPopoverKey.value = key;
-        selectRoutinePoint(point);
-        showRoutinePopover(point);
-      };
-      const togglePinnedClusterPopover = (cluster: ClusterPoint) => {
-        const key = clusterPopoverKey(cluster);
-
-        if (pinnedPopoverKey.value === key) {
-          dismissPopover();
-          return;
-        }
-
-        pinnedPopoverKey.value = key;
-        showClusterPopover(cluster);
-      };
       const syncPinnedPopover = () => {
         const key = pinnedPopoverKey.value;
 
@@ -366,6 +338,51 @@ export default defineComponent({
         }
 
         dismissPopover();
+      };
+      const showHoverRoutinePopover = (point: RoutinePoint) => {
+        clearPinnedPopoverRestore();
+        showRoutinePopover(point);
+      };
+      const showHoverClusterPopover = (cluster: ClusterPoint) => {
+        clearPinnedPopoverRestore();
+        showClusterPopover(cluster);
+      };
+      const hideHoverPopover = () => {
+        if (pinnedPopoverKey.value) {
+          clearPinnedPopoverRestore();
+          restorePinnedPopoverTimeout = setTimeout(() => {
+            restorePinnedPopoverTimeout = null;
+            syncPinnedPopover();
+          }, 1000);
+          return;
+        }
+
+        hidePopover();
+      };
+      const togglePinnedRoutinePopover = (point: RoutinePoint) => {
+        clearPinnedPopoverRestore();
+        const key = routinePopoverKey(point);
+
+        if (pinnedPopoverKey.value === key) {
+          dismissPopover();
+          return;
+        }
+
+        pinnedPopoverKey.value = key;
+        selectRoutinePoint(point);
+        showRoutinePopover(point);
+      };
+      const togglePinnedClusterPopover = (cluster: ClusterPoint) => {
+        clearPinnedPopoverRestore();
+        const key = clusterPopoverKey(cluster);
+
+        if (pinnedPopoverKey.value === key) {
+          dismissPopover();
+          return;
+        }
+
+        pinnedPopoverKey.value = key;
+        showClusterPopover(cluster);
       };
       const updateSelectedMarkerStyles = (routineId: number) => {
         d3.select(graph.value)
@@ -632,6 +649,16 @@ export default defineComponent({
         .attr('height', markerSize / 3)
         .attr('fill', '#FFCE00');
 
+      flagFill
+        .filter((d) => d.flag === 'dm')
+        .append('image')
+        .attr('href', '/images/dm-logo.svg')
+        .attr('x', 1)
+        .attr('y', 4.5)
+        .attr('width', markerSize - 2)
+        .attr('height', markerSize - 9)
+        .attr('preserveAspectRatio', 'xMidYMid meet');
+
       const koreanFlagFill = flagFill.filter((d) => d.flag === 'kr');
 
       koreanFlagFill
@@ -801,6 +828,8 @@ export default defineComponent({
     });
 
     onUnmounted(() => {
+      clearPinnedPopoverRestore();
+
       if (resizeObserver) {
         resizeObserver.disconnect();
       }

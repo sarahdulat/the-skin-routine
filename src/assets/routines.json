@@ -7640,5 +7640,376 @@
       ]
     },
     "draft": false
+  },
+  {
+    "routine_name": "dm Anti-Aging Routine",
+    "id": 60,
+    "time": 3.6,
+    "cost": 5.5,
+    "point_title": "dm Anti-Aging",
+    "point_description": "A smart German drugstore routine with peptides by day, beginner-friendly retinol at night, barrier support, and dedicated eye-area sun protection.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage a small amount over damp skin and rinse with lukewarm water. This is fragrance-free, alcohol-free, and deliberately simple, with panthenol and bisabolol to keep the cleansing step from competing with the routine's treatments.</p><p>If your skin wakes up dry rather than oily, a water rinse is completely reasonable.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Peptide Serum",
+          "product": "Nø Cosmetics Slow-Aging Serum",
+          "link": "https://www.dm.de/p/d/1589889/no-cosmetics-serum-slow-aging",
+          "description": "<p>Press two or three drops over the face and neck. The peptide blend, panthenol, caffeine, and spilanthol make this the low-drama daytime treatment for early lines and skin that is starting to look less rested.</p><p>Give it a minute to settle before cream, especially if you are prone to pilling.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Moisturizer",
+          "product": "Balea med Gesichtscreme Ultra Sensitive Barrierschutz",
+          "link": "https://www.dm.de/p/d/1709646/balea-med-gesichtscreme-ultra-sensitive-barrierschutz",
+          "description": "<p>Use a thin layer over face and neck. Five percent panthenol and a three-ceramide complex make this the cushion that helps skin tolerate the evening retinol without turning the morning routine into a heavy cream sandwich.</p><p>Skip it on warm days if your sunscreen already feels moisturizing enough.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Eucerin Hyaluron-Filler + Elasticity Eye Care SPF 20",
+          "link": "https://www.dm.de/p/d/2434313/eucerin-eucerin-hyaluron-filler-elasticity-anti-age-augenpflege-lsf-20",
+          "description": "<p>Tap a rice-grain amount around each orbital bone before face sunscreen. This gives the eye contour its own moisturizing SPF layer without asking a face retinol to do eye-cream duty.</p><p>This is a dm-med online-pharmacy find rather than a product stocked in ordinary dm stores. SPF 20 is backup, so still bring face sunscreen close to the eyes when comfortable and wear sunglasses outdoors.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "Balea Beauty Expert UV-Protection Fluid SPF 50",
+          "link": "https://www.dm.de/p/d/1457555/balea-fluid-beauty-expert-uv-protection-lsf-50",
+          "description": "<p>Apply generously over face, ears, neck, and exposed chest as the final morning step. The fragrance-free fluid has a hydrated finish with hyaluronic acid and vitamin E, but the real anti-aging work is the daily broad-spectrum protection.</p><p>Reapply during sustained outdoor exposure. Peptides and retinol cannot outwork under-applied sunscreen.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage over damp skin and rinse thoroughly. If you wore heavy makeup or water-resistant sunscreen, use two gentle passes only when one does not remove everything; the goal is clean skin, not a squeaky finish.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Starter Retinol",
+          "product": "Nø Cosmetics Retinol Serum",
+          "link": "https://www.dm.de/p/d/1557020/no-cosmetics-serum-retinol",
+          "description": "<p>On completely dry skin, spread a pea-size amount over the face one or two nights a week, avoiding eyelids, lip corners, and nose creases. The formula combines retinol with HPR in a squalane-rich base, so I would treat it like a real retinoid even though the packaging feels friendly.</p><p>Increase only when there is no persistent redness, burning, or peeling. Do not use while pregnant, trying to conceive, or breastfeeding, and keep exfoliating acids off the same night.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "Balea Beauty Expert Vitamin C Eye Booster",
+          "link": "https://www.dm.de/p/d/1455242/balea-augenpflege-beauty-expert-vitamin-c-eye-booster",
+          "description": "<p>Tap a tiny amount around the eye contour, keeping it out of the eyes. A vitamin C derivative, niacinamide, caffeine, and peptides give the area a brightening, de-puffing step without extending the face retinol onto the eyelids.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ceramide Moisturizer",
+          "product": "Nø Cosmetics All-In Barrier Cream",
+          "link": "https://www.dm.de/p/d/1676342/no-cosmetics-gesichtscreme-all-in-barrier",
+          "description": "<p>Finish with a thin layer over face and neck. Five ceramides, panthenol, shea butter, and jojoba oil make this the richer recovery step for retinol nights.</p><p>If you are easily irritated, apply a little before and after retinol as a sandwich. On non-retinol nights, use the cream directly after cleansing.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "dm Acne-Prone Routine",
+    "id": 61,
+    "time": 4.3,
+    "cost": 5.0,
+    "point_title": "dm Acne-Prone",
+    "point_description": "A fragrance-conscious dm routine for clogged pores and post-breakout marks, with slow-start BHA, lightweight hydration, hydrocolloid patches, and daily SPF.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dark_spots_and_sun_damage"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage a small amount over damp skin and rinse. Acne-prone skin still needs a gentle cleanser; scrubbing and stripping can make an already inflamed face much harder to manage.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Microbiome Serum",
+          "product": "Nø Cosmetics Re-Balance Serum",
+          "link": "https://www.dm.de/p/d/1557023/no-cosmetics-serum-re-balance",
+          "description": "<p>Press two or three drops over the face. Glycerin, inulin, and algae-derived ingredients make this the quiet hydration-and-barrier step, which gives the evening salicylic acid a calmer baseline to work from.</p><p>This is not the acne treatment itself; it is here so the acne treatment does not become the entire personality of the routine.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Light Moisturizer",
+          "product": "Balea med Gesichtscreme Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1565294/balea-med-gesichtscreme-ultra-sensitive",
+          "description": "<p>Smooth on a light layer where you need it. The fragrance-free cream adds panthenol and uncomplicated moisture without forcing oily areas under a rich occlusive layer.</p><p>If sunscreen alone is enough, moisturizer can be a spot step for drier areas rather than a full-face requirement.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Vichy Liftactiv Pigment Specialist B3 Eye Care SPF 50+",
+          "link": "https://www.dm.de/p/d/3094332/vichy-laboratoires-vichy-liftactiv-pigment-specialist-b3-augenpflege-lsf-50",
+          "description": "<p>Apply a small amount around the orbital bone before face SPF. The rare SPF 50+ eye format is useful when post-inflammatory pigment is one of the reasons you are serious about sun protection.</p><p>This is sold through dm-med online rather than stocked in ordinary dm stores. Keep it out of the eyes and stop if it stings.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "NIVEA SUN UV Face Mattifying Fluid SPF 50+",
+          "link": "https://www.dm.de/p/d/3121395/nivea-sun-sonnenfluid-gesicht-mattierend-lsf-50",
+          "description": "<p>Apply generously over face, ears, neck, and exposed chest. This fragrance-free fluid is designed for shine-prone facial skin, but let it set on its own instead of rubbing at it until it pills.</p><p>Daily SPF matters for every acne routine because ultraviolet exposure can make red and brown post-breakout marks linger.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Cleanse gently and rinse well. If makeup or water-resistant sunscreen is still present, repeat with the same cleanser rather than introducing a scrub.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "BHA Treatment",
+          "product": "Balea Beauty Expert 2% BHA Liquid Peeling",
+          "link": "https://www.dm.de/balea-beauty-expert-liquid-peeling-2-prozent-bha-p4058172783098.html/1000",
+          "description": "<p>On dry skin, apply a thin layer one or two nights a week at first, avoiding the eyes and broken skin. Two percent salicylic acid can get inside oily pores, which makes this the routine's actual blackhead and breakout treatment.</p><p>Do not mistake tingling for progress, and do not use it while pregnant or breastfeeding: dm explicitly advises against that use. Add nights only if your skin stays comfortable.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "Balea med Augencreme Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/3127982/balea-med-augencreme-erfrischend-ultra-sensitive",
+          "description": "<p>Tap a small amount around the eye contour. Five percent panthenol and aloe give the eye area a soothing, fragrance-free step while the BHA stays well away from it.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Light Moisturizer",
+          "product": "Balea med Gesichtscreme Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1565294/balea-med-gesichtscreme-ultra-sensitive",
+          "description": "<p>Finish with a thin layer. Moisturizer is not the enemy of acne; keeping the barrier comfortable makes it much easier to use salicylic acid consistently instead of cycling between over-treatment and emergency repair.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Optional Pimple Patches",
+          "product": "Balea Anti-Pickel Patches Hydrokolloid",
+          "link": "https://www.dm.de/p/d/3125229/balea-anti-pickel-patches-hydrokolloid",
+          "description": "<p>Place one patch on a clean, completely dry surface-level blemish and leave it overnight. Because these hydrocolloid patches also contain salicylic acid, start by using them on non-BHA nights rather than doubling up on the same spot.</p><p>They are best for protecting a picked or tempting-to-pick blemish, not for deep cysts. Skip them during pregnancy and breastfeeding.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "dm Sensitive-Skin Routine",
+    "id": 62,
+    "time": 3.6,
+    "cost": 5.4,
+    "point_title": "dm Sensitive Skin",
+    "point_description": "A fragrance-free dm routine centered on panthenol, ceramides, prebiotic hydration, and a light-touch sunscreen rather than aggressive actives.",
+    "pregnancy_safe": false,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s"
+    ],
+    "skin_concern": [
+      "sensitive",
+      "dry_skin"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Use a small amount with lukewarm water, massage briefly, and rinse without a washcloth. The fragrance-free, alcohol-free formula keeps the first step predictable, which is exactly what reactive skin needs.</p><p>If even gentle cleansing feels tight in the morning, rinse with water and save this for night.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Prebiotic Hydration",
+          "product": "Nø Cosmetics Re-Balance Serum",
+          "link": "https://www.dm.de/p/d/1557023/no-cosmetics-serum-re-balance",
+          "description": "<p>Press two or three drops over slightly damp skin. Its short, fragrance-free formula uses glycerin and inulin for light hydration and barrier support without turning sensitive skin into an active-ingredient experiment.</p><p>Patch test anyway: sensitive skin can object to perfectly sensible formulas, and no product is literally irritation-proof.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Moisturizer",
+          "product": "Balea med Gesichtscreme Ultra Sensitive Barrierschutz",
+          "link": "https://www.dm.de/p/d/1709646/balea-med-gesichtscreme-ultra-sensitive-barrierschutz",
+          "description": "<p>Smooth a thin layer over face and neck. Five percent panthenol and three ceramides make this the main barrier-support step, especially when skin is tight, flaky, or recovering from over-exfoliation.</p><p>Use less through the center of the face if you are combination-skinned.</p>"
+        },
+        {
+          "time": "am",
+          "title": "SPF Eye Cream",
+          "product": "Eucerin Hyaluron-Filler +3x Effect Eye Care SPF 15",
+          "link": "https://www.dm.de/p/d/2066477/eucerin-eucerin-hyaluron-filler-3xeffekt-augenpflege-lsf-15",
+          "description": "<p>Tap a rice-grain amount around each orbital bone. It gives the delicate area a moisturizing first layer of UV protection in a product designed for use around the eyes.</p><p>This is a dm-med online-pharmacy item rather than an ordinary-store find. SPF 15 is supplemental, so bring face SPF close to the eyes if tolerated and add sunglasses outdoors.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face SPF",
+          "product": "Nø Cosmetics Light Weight Sunscreen SPF 50+",
+          "link": "https://www.dm.de/p/d/3135081/no-cosmetics-sonnenfluid-light-weight-lsf-50",
+          "description": "<p>Apply generously as the final step over face, ears, neck, and exposed chest. This fragrance-free fluid is designed to feel light and dry down without a white cast, which helps when a heavy sunscreen is the reason you keep skipping it.</p><p>Introduce it on a quiet skin week and patch test first. Even fragrance-free sunscreen filters can sting a very reactive face.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage over damp skin and rinse thoroughly. Use a second gentle pass only when makeup or water-resistant sunscreen remains, and pat dry rather than rubbing.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Calming Serum",
+          "product": "Balea Beauty Expert Calming Serum",
+          "link": "https://www.dm.de/p/d/1679661/balea-serum-beauty-expert-calming",
+          "description": "<p>Press a thin layer over the face. Ceramides, pre- and postbiotics, vitamin B12, bisabolol, squalane, and panthenol make this the routine's one extra treatment, chosen for barrier support rather than exfoliation.</p><p>Start every other night if you are in an active flare, because adding one new product at a time makes reactions much easier to identify.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "Balea med Augencreme Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/3127982/balea-med-augencreme-erfrischend-ultra-sensitive",
+          "description": "<p>Tap a small amount around the eye contour. The fragrance-free formula leans on five percent panthenol and aloe instead of retinoids, exfoliating acids, or aromatic oils.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ceramide Moisturizer",
+          "product": "Nø Cosmetics All-In Barrier Cream",
+          "link": "https://www.dm.de/p/d/1676342/no-cosmetics-gesichtscreme-all-in-barrier",
+          "description": "<p>Finish with a thin, even layer. Five ceramides, panthenol, shea butter, and jojoba oil make this the richer night cream for dry or compromised skin.</p><p>If the texture is too occlusive, use it only on the cheeks and other dry patches; sensitive skin routines work best when the amounts are flexible.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "dm Pregnancy-Safe Routine",
+    "id": 63,
+    "time": 3.7,
+    "cost": 4.7,
+    "point_title": "dm Pregnancy-Safe",
+    "point_description": "A conservative dm routine for pregnancy dryness, blemishes, and uneven tone, using vitamin C, niacinamide, ceramides, and an untinted mineral SPF.",
+    "pregnancy_safe": true,
+    "age_range": [
+      "20s",
+      "30s",
+      "40s",
+      "50s"
+    ],
+    "skin_concern": [
+      "acne_prone",
+      "dark_spots_and_sun_damage",
+      "dry_skin",
+      "sensitive"
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage a small amount over damp skin and rinse with lukewarm water. The fragrance-free, alcohol-free formula is a useful constant when pregnancy has made skin drier or more reactive than usual.</p><p>A water-only rinse is fine on dry mornings.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C Serum",
+          "product": "Nø Cosmetics Vitamin C Serum",
+          "link": "https://www.dm.de/p/d/1676735/no-cosmetics-serum-vitamin-c",
+          "description": "<p>Press two or three drops over dry face and neck. This fragrance-free oil serum uses a stable vitamin C derivative with vitamin E and astaxanthin for antioxidant support and gradual help with uneven tone.</p><p>Keep the amount small so sunscreen can set evenly over it, and start every other morning if pregnancy has made your skin newly reactive.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Barrier Moisturizer",
+          "product": "Balea med Gesichtscreme Ultra Sensitive Barrierschutz",
+          "link": "https://www.dm.de/p/d/1709646/balea-med-gesichtscreme-ultra-sensitive-barrierschutz",
+          "description": "<p>Apply a thin layer over face and neck. Five percent panthenol plus a three-ceramide complex addresses the dryness and sensitivity that often show up when skin suddenly stops following its old rules.</p><p>Skip it under sunscreen if the combination feels too rich.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral Eye SPF",
+          "product": "boep Sensitive Face Sunscreen SPF 50",
+          "link": "https://www.dm.de/p/d/1639681/boep-sonnencreme-sensitiv-lsf-50",
+          "description": "<p>Warm a tiny amount between fingers and press it around the orbital bone, keeping it out of the eyes. dm does not currently offer a dedicated eye cream that meets this routine's strict mineral-only standard, so the face sunscreen doubles as the eye SPF.</p><p>Stop if it stings, and add sunglasses. Mineral zinc formulas can leave some cast, but this is the conservative filter choice used throughout the pregnancy routine.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Mineral Face SPF",
+          "product": "boep Sensitive Face Sunscreen SPF 50",
+          "link": "https://www.dm.de/p/d/1639681/boep-sonnencreme-sensitiv-lsf-50",
+          "description": "<p>Apply generously over face, ears, neck, and exposed chest as the last step. This fragrance-free zinc oxide sunscreen is untinted and mineral-only, making it the deliberately conservative choice for a pregnancy-safe routine.</p><p>Work in thin sections and let each one settle to reduce streaking, but do not under-apply to avoid a white cast. Daily protection is especially important when pregnancy-related melasma is a concern.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Cleanse",
+          "product": "Balea med Waschgel Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/1691474/balea-med-waschgel-ultra-sensitive",
+          "description": "<p>Massage over damp skin and rinse well. Repeat gently if mineral sunscreen remains, but avoid cleansing brushes and abrasive cloths when skin is reactive.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Niacinamide Serum",
+          "product": "Balea Niacinamide Serum",
+          "link": "https://www.dm.de/p/d/1676288/balea-serum-niacinamide",
+          "description": "<p>Use two or three drops every other night at first. Ten percent niacinamide with zinc PCA can support oil balance, post-breakout marks, and the skin barrier, but the high percentage can still feel prickly on sensitive skin.</p><p>If it is too much, mix one drop into moisturizer or skip it. Pregnancy-safe does not mean every formula suits every pregnant face.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Eye Cream",
+          "product": "Balea med Augencreme Ultra Sensitive",
+          "link": "https://www.dm.de/p/d/3127982/balea-med-augencreme-erfrischend-ultra-sensitive",
+          "description": "<p>Tap a small amount around the eye contour. Five percent panthenol and aloe make this a simple fragrance-free moisture step without retinoids or exfoliating acids.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Ceramide Moisturizer",
+          "product": "Nø Cosmetics All-In Barrier Cream",
+          "link": "https://www.dm.de/p/d/1676342/no-cosmetics-gesichtscreme-all-in-barrier",
+          "description": "<p>Finish with a thin layer over face and neck. Five ceramides, panthenol, shea butter, and jojoba oil give dry pregnancy skin a richer seal without adding a retinoid treatment.</p><p>Use less on congested areas and more on cheeks or flaky patches. Ask your obstetric clinician about any skincare ingredient if your pregnancy has specific medical considerations.</p>"
+        }
+      ]
+    },
+    "draft": false
   }
 ]
