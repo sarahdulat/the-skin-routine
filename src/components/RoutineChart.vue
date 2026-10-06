@@ -660,13 +660,17 @@ export default defineComponent({
         .attr('preserveAspectRatio', 'xMidYMid meet');
 
       const koreanFlagFill = flagFill.filter((d) => d.flag === 'kr');
+      const koreanFlagArtSize = 28;
+      const koreanFlagArt = koreanFlagFill
+        .append('g')
+        .attr('transform', `scale(${markerSize / koreanFlagArtSize})`);
 
-      koreanFlagFill
+      koreanFlagArt
         .append('path')
         .attr('d', 'M14 7 A7 7 0 0 1 14 21 A3.5 3.5 0 0 1 14 14 A3.5 3.5 0 0 0 14 7 Z')
         .attr('fill', '#CD2E3A');
 
-      koreanFlagFill
+      koreanFlagArt
         .append('path')
         .attr('d', 'M14 21 A7 7 0 0 1 14 7 A3.5 3.5 0 0 1 14 14 A3.5 3.5 0 0 0 14 21 Z')
         .attr('fill', '#0047A0');
@@ -678,7 +682,7 @@ export default defineComponent({
         { x: 20.1, y: 20.5, rotation: -34 },
       ];
 
-      const trigrams = koreanFlagFill
+      const trigrams = koreanFlagArt
         .selectAll('.korean-flag-trigram')
         .data(trigramBars)
         .enter()

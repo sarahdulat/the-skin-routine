@@ -1138,8 +1138,8 @@
   {
     "routine_name": "Martha Stewart's Routine",
     "id": 7,
-    "time": 5.5,
-    "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, and rich night care.",
+    "time": 6.7,
+    "point_description": "A disciplined glow routine built around warm towels, Mario Badescu cleansing, eye cream, sunscreen, facial mist, rich night care, and ELM lip serum.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Martha_Stewart_%2848926315347%29_%28cropped%29.jpg/330px-Martha_Stewart_%2848926315347%29_%28cropped%29.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -1154,6 +1154,16 @@
       "dark_spots_and_sun_damage"
     ],
     "sources": [
+      {
+        "label": "Harper's Bazaar 2026",
+        "site": "Harper's Bazaar",
+        "link": "https://www.harpersbazaar.com/beauty/skin-care/a73944602/martha-stewart-better-with-age/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "September 30, 2026",
+        "headline": "How Martha Stewart, 85, Gets Better With Age",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/de4f7c56-9c46-4e86-8d34-6f6df64bc2f2.jpg",
+        "summary": "Stewart confirms her current ELM Biosciences serum and night cream routine and says she uses the new Elemental Lip Serum every day."
+      },
       {
         "label": "Women's Health 2026",
         "site": "Women's Health",
@@ -1250,6 +1260,13 @@
           "product": "Mario Badescu Facial Spray with Aloe, Herbs and Rosewater",
           "link": "https://www.mariobadescu.com/products/facial-spray-with-aloe-herbs-and-rosewater",
           "description": "<p>Mist throughout the day when skin needs calming or refreshment. Vogue says Stewart uses Mario Badescu Facial Spray throughout the day to calm the skin, and Page Six reports she called the rosewater spray refreshing on a hot summer day.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Lip Serum",
+          "product": "Elm Biosciences Elemental Lip Serum",
+          "link": "https://elmbiosciences.com/products/elemental-lip-serum-clear",
+          "description": "<p>Apply generously during the day to condition the lips and add a sheer wash of shine. In her 2026 Harper's Bazaar interview, Stewart says she uses the Elemental Lip Serum every day and used it throughout product testing.</p><p>The clear formula keeps this a skincare-focused step, while ELM also offers three sheer tinted shades.</p>"
         }
       ],
       "pm": [
@@ -1287,11 +1304,18 @@
           "product": "Clé de Peau Beauté La Crème",
           "link": "https://www.amazon.com/dp/B0CW276NR6?tag=theskinrout07-20",
           "description": "<p>Use a richer cream on dry spots or the body when needed. Allure says Stewart used either Clé de Peau Beauté La Crème or <a href=\"https://www.cremedelamer.com/product/5834/12343/skincare/moisturizers/creme-de-la-mer/ultra-rich-cream-moisturizer\" target=\"_blank\">Crème de la Mer</a>, and that she was not opposed to using face creams on the body.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Lip Serum",
+          "product": "Elm Biosciences Elemental Lip Serum",
+          "link": "https://elmbiosciences.com/products/elemental-lip-serum-clear",
+          "description": "<p>Finish with a generous layer over the lips. Stewart confirms using the Elemental Lip Serum daily, and ELM recommends the clear shade as an overnight treatment for softer, more hydrated lips by morning.</p>"
         }
       ]
     },
     "draft": false,
-    "cost": 7.5
+    "cost": 9.1
   },
   {
     "routine_name": "Scarlett Johansson's Routine",
@@ -3767,9 +3791,9 @@
   {
     "routine_name": "Miranda Kerr's Routine",
     "id": 28,
-    "time": 9.5,
+    "time": 10.4,
     "point_title": "Miranda Kerr's Routine",
-    "point_description": "A KORA-heavy ritual built around double cleansing, mist, lightweight moisturizer, vitamin C, turmeric glow products, face oil, eye oil, mineral SPF, gua sha, red light, microcurrent, and an overnight mask.",
+    "point_description": "A KORA-heavy ritual built around double cleansing, mist, vitamin C, retinol-alternative moisturizer, turmeric glow products, face oil, mineral SPF, facial tools, and an overnight mask.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Miranda_Kerr_-_Abbot_Kinney_2025.jpg/960px-Miranda_Kerr_-_Abbot_Kinney_2025.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -3783,6 +3807,16 @@
       "sensitive"
     ],
     "sources": [
+      {
+        "label": "Adore Beauty 2026",
+        "site": "Adore Beauty",
+        "link": "https://www.adorebeauty.com.au/beautyiq/skincare/miranda-kerr-kora-beauty-routine/",
+        "favicon": "https://www.adorebeauty.com.au/favicon.ico",
+        "date": "August 6, 2026",
+        "headline": "Miranda Kerr on Intentional Living, Certified Organics and Why She's Feeling Better at 43 Than In Her 20s",
+        "image": "https://images.ctfassets.net/pi28xy1s107o/6KPUglTfpCy70IwmahkPnU/94975ba5a10666cdba3ea653a232efd8/BIQ_hero_image__1440x1200__-_2026-04-10T114652.577.jpg?fm=webp&h=1600&w=1920",
+        "summary": "Kerr details her current morning and evening routine, including Turmeric Glow Foaming Cleanser, Active Algae Calming Cleansing Balm, Plant Stem Cell Retinol Alternative Moisturizer, and Milky Mushroom Ultra-Hydrating Mask."
+      },
       {
         "label": "Breaking Beauty 2026",
         "site": "Breaking Beauty",
@@ -3848,9 +3882,9 @@
         {
           "time": "am",
           "title": "Cleanse",
-          "product": "KORA Organics Milky Mushroom Gentle Cleansing Oil",
-          "link": "https://us.koraorganics.com/products/milky-mushroom-gentle-cleansing-oil",
-          "description": "<p>Use as the morning cleanse, shaking first so the oil turns into its milky texture. KORA says this became Miranda's go-to cleanser for both morning and night because it removes makeup and leaves skin soft rather than tight.</p><p>Older sources mention KORA foaming or cream cleansers, but the Milky Mushroom Cleansing Oil is the more recent cleanser she specifically talks about as a current favorite.</p>"
+          "product": "KORA Organics Turmeric Glow Foaming Cleanser",
+          "link": "https://us.koraorganics.com/products/turmeric-glow-foaming-cleanser",
+          "description": "<p>Massage onto damp skin and rinse as the morning cleanse. In her August 2026 Adore Beauty interview, Miranda identifies Turmeric Glow Foaming Cleanser as the first skincare product in her current morning routine.</p><p>She has also used <a href=\"https://us.koraorganics.com/products/milky-mushroom-gentle-cleansing-oil\" target=\"_blank\">Milky Mushroom Gentle Cleansing Oil</a> as a softer morning option in earlier routines.</p>"
         },
         {
           "time": "am",
@@ -3933,10 +3967,10 @@
       "pm": [
         {
           "time": "pm",
-          "title": "Cleansing Oil",
-          "product": "KORA Organics Milky Mushroom Gentle Cleansing Oil",
-          "link": "https://us.koraorganics.com/products/milky-mushroom-gentle-cleansing-oil",
-          "description": "<p>Use as the first cleanse at night, especially for makeup and sunscreen. Marie Claire says Miranda double cleanses even without makeup, starting with KORA Milky Mushroom Cleansing Oil.</p><p>Massage on dry skin, add water so it turns milky, then rinse before the foaming cleanser.</p>"
+          "title": "Cleansing Balm",
+          "product": "KORA Organics Active Algae Calming Cleansing Balm",
+          "link": "https://us.koraorganics.com/products/active-algae-calming-cleansing-balm",
+          "description": "<p>Massage the balm over dry skin to loosen makeup and sunscreen, add water until it turns milky, then rinse. In her August 2026 Adore Beauty interview, Miranda says she now starts her nightly double cleanse with Active Algae Calming Cleansing Balm.</p><p>Earlier routines used <a href=\"https://us.koraorganics.com/products/milky-mushroom-gentle-cleansing-oil\" target=\"_blank\">Milky Mushroom Gentle Cleansing Oil</a> for this first cleanse.</p>"
         },
         {
           "time": "pm",
@@ -3955,9 +3989,9 @@
         {
           "time": "pm",
           "title": "Moisturizer",
-          "product": "KORA Organics Turmeric Glow Moisturizer",
-          "link": "https://us.koraorganics.com/products/turmeric-glow-moisturizer",
-          "description": "<p>Use after the treatment serum. Marie Claire says Miranda uses the newer moisturizer morning and night; KORA's current nighttime routine also puts moisturizer after the retinol-alternative serum.</p><p>If skin is dry, this is where the routine starts to get plush before the oil and mask steps.</p>"
+          "product": "KORA Organics Plant Stem Cell Retinol Alternative Moisturizer",
+          "link": "https://us.koraorganics.com/products/plant-stem-cell-retinol-alternative-moisturizer",
+          "description": "<p>Warm a pearl-sized amount in the palms and massage over the face, neck, and décolleté after serum. Miranda names the Plant Stem Cell Retinol Alternative Moisturizer among the products she currently returns to, and KORA places it after serum in morning and evening routines.</p><p>The formula contains bakuchiol, so this routine remains conservatively marked as not pregnancy safe. <a href=\"https://us.koraorganics.com/products/turmeric-glow-moisturizer\" target=\"_blank\">Turmeric Glow Moisturizer</a> remains another source-backed option from her earlier routine.</p>"
         },
         {
           "time": "pm",
@@ -3983,14 +4017,14 @@
         {
           "time": "pm",
           "title": "Sleeping Mask",
-          "product": "KORA Organics Noni Glow Sleeping Mask",
-          "link": "https://us.koraorganics.com/products/noni-glow-sleeping-mask",
-          "description": "<p>Use as the last step before bed. W says Miranda keeps the sleeping mask next to her bed and uses it to lock in moisturizer; KORA's quick and luxe nighttime routines both finish with Noni Glow Sleeping Mask.</p><p>Let it set for a few minutes so it forms that transparent overnight layer instead of smearing straight onto the pillow.</p>"
+          "product": "KORA Organics Milky Mushroom Ultra-Hydrating Mask",
+          "link": "https://us.koraorganics.com/products/milky-mushroom-ultra-hydrating-mask",
+          "description": "<p>Apply generously as the final step and leave it on overnight. In her August 2026 Adore Beauty interview, Miranda says she keeps the Milky Mushroom Ultra-Hydrating Mask beside her bed and notices that her skin looks plumper in the morning.</p><p>This replaces the older <a href=\"https://us.koraorganics.com/products/noni-glow-sleeping-mask\" target=\"_blank\">Noni Glow Sleeping Mask</a> in her most current routine.</p>"
         }
       ]
     },
     "draft": false,
-    "cost": 9.9
+    "cost": 10
   },
   {
     "routine_name": "Ashley Graham's Routine",
