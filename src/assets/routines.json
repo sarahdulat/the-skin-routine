@@ -526,6 +526,16 @@
     ],
     "sources": [
       {
+        "label": "Forbes 2026",
+        "site": "Forbes",
+        "link": "https://shopping.yahoo.com/beauty/skincare/articles/dua-lipa-her-skincare-routine-100000183.html",
+        "favicon": "https://www.forbes.com/favicon.ico",
+        "date": "October 9, 2026",
+        "image": "https://s.yimg.com/lo/mysterio/api/a2a32dadf0a37d44e32db5ae772e9453568df5505dcc2fcece1170d9aa918dfb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F9e9ee51c9b4bfac095d3ce166cd68496.jpg",
+        "headline": "Dua Lipa On Her Skincare Routine And Augustinus Bader Pop-Up In New York City",
+        "summary": "Dua confirms that the DUA Balancing Cream Cleanser, Supercharged Glow Complex, and Renewal Cream remain her core three-step routine, including while touring and traveling."
+      },
+      {
         "label": "Harper's Bazaar 2025",
         "site": "Harper's Bazaar",
         "link": "https://www.harpersbazaar.com/beauty/skin-care/a69264923/dua-lipa-augustinus-bader-skincare-interview/",
