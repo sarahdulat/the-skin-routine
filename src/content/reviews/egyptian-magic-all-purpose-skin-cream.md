@@ -66,7 +66,7 @@ When slugging was everywhere about five years ago, I knew I wanted it in my rout
 
 It is not as aggressively occlusive as Vaseline, but that is not necessarily a loss. A heavy seal over retinoids or exfoliating acids can intensify irritation. I save slugging for right before bed and let some time pass after my actives and moisturizer rather than immediately trapping everything underneath.
 
-Right before Egyptian Magic, I apply [Ialuset Hyaluronic Acid Cream Anti Wrinkle](https://frenchpharmacy.com/collections/ialuset/products/hyaluronic-acid-cream-anti-wrinkle). Egyptian Magic contains no water, so I want a humectant-rich layer underneath for it to seal in. Then I warm a small amount between my fingers and press it over my face.
+Right before Egyptian Magic, I apply [Ialuset Hyaluronic Acid Cream](/blog/ialuset-hyaluronic-acid-cream/). Egyptian Magic contains no water, so I want a humectant-rich layer underneath for it to seal in. Then I warm a small amount between my fingers and press it over my face.
 
 I go to bed looking greasy, but I never wake up dry—even in winter with the heat pumping. By morning it does not feel as though the routine has migrated into my hair and pillowcase. That medium-weight seal is exactly why it works for me.
 
