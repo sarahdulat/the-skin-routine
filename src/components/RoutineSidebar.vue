@@ -54,6 +54,10 @@
           <div @click="store.setRoutineTime('am')">am <span class="glyph">☀</span></div>
           <div @click="store.setRoutineTime('pm')">pm <span class="glyph">⏾</span></div>
         </label>
+        <p class="affiliate-alert">
+          <strong>Affiliate disclosure:</strong> I may earn a commission from purchases made through links in this
+          routine, at no extra cost to you.
+        </p>
       </div>
       <div ref="stepsScrollContainer" class="scroll-container">
         <div v-if="isRoutineMissing" class="routine-alert" role="status">
@@ -360,6 +364,18 @@ aside {
   margin: var(--space-xl) 0;
 }
 
+.affiliate-alert {
+  margin: var(--space-lg) 0 var(--space-lg);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid rgba(52, 58, 64, 0.35);
+  border-radius: var(--radius-sm);
+  background: rgba(200, 82, 56, 0.08);
+  color: var(--color-dark);
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--fontSize-xs);
+  line-height: var(--lineHeight-xs);
+}
+
 .routine-empty-state p {
   margin: 0;
 }
@@ -657,7 +673,7 @@ button {
   color: var(--color-dark);
   cursor: pointer;
   width: 99%;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   box-shadow: 1px 3px 0px var(--color-dark);
 }
 
