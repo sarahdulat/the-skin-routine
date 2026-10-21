@@ -3,13 +3,26 @@ const affiliateHosts = new Set([
   "sovrn.co",
   "tidd.ly",
 ]);
+const siteOrigin = "https://theskinroutine.com";
+const siteHostname = "theskinroutine.com";
 
 function parsedUrl(value: string) {
   try {
-    return new URL(value, "https://theskinroutine.com");
+    return new URL(value, siteOrigin);
   } catch {
     return null;
   }
+}
+
+export function isExternalUrl(value: string) {
+  const url = parsedUrl(value);
+  const hostname = url?.hostname.toLowerCase().replace(/^www\./, "");
+
+  return Boolean(
+    url
+    && ["http:", "https:"].includes(url.protocol)
+    && hostname !== siteHostname
+  );
 }
 
 export function isAffiliateUrl(value: string) {
@@ -29,18 +42,27 @@ export function externalLinkRel(value: string) {
     : "noopener noreferrer";
 }
 
-export function qualifyAffiliateLinksInHtml(html: string) {
-  return html.replace(/<a\b[^>]*?href=(['"])(https?:\/\/[^'"\s>]+)\1[^>]*>/gi, (anchor, _quote, href) => {
-    if (!isAffiliateUrl(href)) return anchor;
+export function qualifyExternalLinksInHtml(html: string) {
+  return html.replace(/<a\b[^>]*>/gi, (anchor) => {
+    const hrefMatch = anchor.match(/\bhref=(['"])(.*?)\1/i);
+    const href = hrefMatch?.[2];
 
-    const relMatch = anchor.match(/\brel=(['"])(.*?)\1/i);
+    if (!href || !isExternalUrl(href)) return anchor;
+
+    const targetMatch = anchor.match(/\btarget=(['"])(.*?)\1/i);
+    let qualifiedAnchor = targetMatch
+      ? anchor.replace(targetMatch[0], `target=${targetMatch[1]}_blank${targetMatch[1]}`)
+      : anchor.replace(/>$/, ' target="_blank">');
+
+    const relMatch = qualifiedAnchor.match(/\brel=(['"])(.*?)\1/i);
+    const requiredRelValues = externalLinkRel(href).split(" ");
 
     if (relMatch) {
       const values = new Set(relMatch[2].split(/\s+/).filter(Boolean));
-      values.add("sponsored");
-      return anchor.replace(relMatch[0], `rel=${relMatch[1]}${[...values].join(" ")}${relMatch[1]}`);
+      requiredRelValues.forEach((value) => values.add(value));
+      return qualifiedAnchor.replace(relMatch[0], `rel=${relMatch[1]}${[...values].join(" ")}${relMatch[1]}`);
     }
 
-    return anchor.replace(/>$/, ' rel="sponsored">');
+    return qualifiedAnchor.replace(/>$/, ` rel="${requiredRelValues.join(" ")}">`);
   });
 }

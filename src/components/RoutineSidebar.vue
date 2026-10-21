@@ -74,7 +74,7 @@
           </div>
           <div v-show="isStepExpanded(stepKey(index))" class="mt-sm" :id="`step-description-${stepKey(index)}`"
             @click="handleDescriptionClick">
-            <div v-html="qualifyAffiliateLinksInHtml(step.description)"></div>
+            <div v-html="qualifyExternalLinksInHtml(step.description)"></div>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { store, type Routine } from '../store'
-import { externalLinkRel, qualifyAffiliateLinksInHtml } from '../affiliate-links';
+import { externalLinkRel, qualifyExternalLinksInHtml } from '../affiliate-links';
 
 const props = withDefaults(defineProps<{
   isRoutinePage?: boolean;

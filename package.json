@@ -8,6 +8,7 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
     "optimize:review-images": "node scripts/optimize-images.mjs --skip-remote",
+    "qualify:external-links": "node scripts/qualify-external-links.mjs",
     "tag:amazon": "node scripts/add-amazon-affiliate-tag.mjs",
     "prebuild": "npm run optimize:review-images && npm run generate:sitemap && npm run generate:rss",
     "build": "vite build && vite build --ssr src/entry-server.ts --outDir .ssr && node scripts/prerender.mjs",

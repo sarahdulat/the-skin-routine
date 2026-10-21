@@ -24,7 +24,7 @@
             <li>Willow bark, snail secretion, and stem cells</li>
           </ul>
           <p class="small font-sans">For more detail, check out <a href="https://www.15minutebeauty.com/"
-              target="_blank">15 Minute Beauty</a>. Always read product labels and talk to your doctor if you have
+              target="_blank" rel="noopener noreferrer">15 Minute Beauty</a>. Always read product labels and talk to your doctor if you have
             questions about using products during pregnancy.</p>
         </div>
       </template>
