@@ -1330,8 +1330,8 @@
   {
     "routine_name": "Scarlett Johansson's Routine",
     "id": 8,
-    "time": 5.3,
-    "point_description": "A sensitive-skin routine built around The Outset cleanser, dark spot serum, prep serum, moisturizer, sunscreen, night cream, oil, balm, plus occasional makeup removal and dermaplaning.",
+    "time": 5.2,
+    "point_description": "Scarlett's sensitive-skin routine, adapted after The Outset's closure with products she has named, products used by her makeup artist, and clearly labeled substitutes from brands she uses.",
     "celebrity_face_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg",
     "pregnancy_safe": false,
     "age_range": [
@@ -1345,6 +1345,16 @@
       "dark_spots_and_sun_damage"
     ],
     "sources": [
+      {
+        "label": "The Daily Beast 2026",
+        "site": "The Daily Beast",
+        "link": "https://www.thedailybeast.com/scarlett-johansson-shuts-down-the-outset-beauty-brand-after-4-years/",
+        "favicon": "https://www.thedailybeast.com/favicon.ico",
+        "date": "September 29, 2026",
+        "headline": "A-Lister Shuts Down Company After Just 4 Years",
+        "image": "https://media.thedailybeast.com/resizer/v2/YRRAWRZIVVERXICMD4YWYZULVM.jpg?auth=be90d4c4fe63663dbc0b64f89628b243ce591e4bf4505350749284f499dbada4&focal=3274%2C1991&height=630&width=1200",
+        "summary": "Reports that The Outset ended direct operations in September 2026, making current alternatives necessary as remaining third-party stock sells through."
+      },
       {
         "label": "Katie Couric Media 2026",
         "site": "Katie Couric Media",
@@ -1390,6 +1400,16 @@
         "summary": "The core routine source: morning Daily Essentials Regimen, night cleanser and night cream, occasional oil, Barrier Balm, SPF, melasma, acne history, and sensitivity."
       },
       {
+        "label": "Who What Wear 2022",
+        "site": "Who What Wear",
+        "link": "https://www.whowhatwear.com/scarlett-johansson-beauty-routine-interview",
+        "favicon": "https://www.whowhatwear.com/favicon.ico",
+        "date": "March 8, 2022",
+        "headline": "Scarlett Johansson's Easy Skincare-and-Beauty Routine",
+        "image": "https://cdn.mos.cms.futurecdn.net/whowhatwear/posts/298386/scarlett-johansson-beauty-routine-interview-298386-1646765213677-main.jpg",
+        "summary": "Johansson explains her minimalist sensitive-skin routine and says she uses A+D Ointment around her nose and on her cuticles when she is dry."
+      },
+      {
         "label": "Vogue 2022",
         "site": "Vogue",
         "link": "https://www.vogue.com/article/scarlett-johansson-beauty-the-outset",
@@ -1397,6 +1417,26 @@
         "image": "https://assets.vogue.com/photos/6216897ccba99619d0c54886/16:9/w_1280,c_limit/SHOT_01_078_V2A_QC.jpg",
         "headline": "Scarlett Johansson Secured Her Superhero Status by Taking on the Hollywood Machine. Her Next Feat? A Clean Skin-Care Line",
         "summary": "A launch profile explaining The Outset's less-is-more philosophy, cleanser, prep serum, moisturizer, night cream, eye cream, lip treatment, and sensitive-skin focus."
+      },
+      {
+        "label": "Women's Health 2020",
+        "site": "Women's Health",
+        "link": "https://www.womenshealthmag.com/beauty/a30795401/scarlett-johansson-skincare-routine/",
+        "favicon": "https://www.womenshealthmag.com/favicon.ico",
+        "date": "February 9, 2020",
+        "headline": "How Scarlett Johansson Gets Her Skin Red-Carpet Ready Without Breaking the Bank",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/scarlett-johansson-attends-the-ee-british-academy-film-news-photo-1581026279.jpg",
+        "summary": "Documents makeup artist Frankie Boyd preparing Johansson's skin with The Inkey List Hyaluronic Acid Serum and Caffeine Eye Cream, and also with La Mer Moisturizing Soft Cream mixed with Renewal Oil."
+      },
+      {
+        "label": "Glamour 2014",
+        "site": "Glamour",
+        "link": "https://www.glamour.com/story/what-scarlett-johansson-really",
+        "favicon": "https://www.glamour.com/favicon.ico",
+        "date": "December 15, 2014",
+        "headline": "What Scarlett Johansson Really Wants for Christmas",
+        "image": "https://media.glamour.com/photos/5695dfd4d9dab9ff41b4ae48/master/w_1600%2Cc_limit/beauty-2014-12-scarlett-johansson-barbara-walters-main.jpg",
+        "summary": "Johansson says her morning routine starts with Cetaphil or a Clarins wash and names Clarins Beauty Flash Balm as a product she likes."
       }
     ],
     "steps": {
@@ -1404,44 +1444,44 @@
         {
           "time": "am",
           "title": "Cleanse",
-          "product": "The Outset Gentle Micellar Antioxidant Cleanser",
-          "link": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
-          "description": "<p>Start with cleanser. In the New York Times, Johansson says that in the morning she washes her face with The Outset's Gentle Micellar Antioxidant Cleanser.</p><p>Allure also says she uses The Outset's three-step Daily Essentials Regimen in the morning, and Page Six identifies this cleanser as part of her on-set Skin Survival Kit.</p>"
-        },
-        {
-          "time": "am",
-          "title": "Dark Spot Serum",
-          "product": "The Outset Total Clarity Dark Spot Serum",
-          "link": "https://theoutset.com/collections/skincare/products/total-clarity-dark-spot-serum-vitamin-c-alternative",
-          "description": "<p>Use one pump after cleansing and before the prep serum, then follow with moisturizer and SPF in the morning. Katie Couric Media's 2026 interview adds that Total Clarity Dark Spot Serum is one of The Outset's newest innovations and has been in Johansson's regular rotation.</p><p>The Outset positions it as a sensitive-skin-friendly vitamin C alternative for dark spots, uneven tone, and post-acne marks. If you are pregnant, trying to conceive, or nursing, check with your clinician before using brightening or exfoliating dark-spot treatments.</p>"
+          "product": "Cetaphil Gentle Skin Cleanser",
+          "link": "https://www.amazon.com/dp/B099N3NM61?tag=theskinrout07-20",
+          "description": "<p>Massage over damp skin and rinse. Scarlett's original morning step was The Outset Gentle Micellar Antioxidant Cleanser, which she repeatedly described as the foundation of her sensitive-skin routine.</p><p>In a 2014 Glamour interview she said she usually cleansed with Cetaphil or a Clarins wash. She did not identify the exact Cetaphil formula, so the current Gentle Skin Cleanser is the closest conservative match to her preference for mild, non-comedogenic cleansing.</p>"
         },
         {
           "time": "am",
           "title": "Prep Serum",
-          "product": "The Outset Firming Vegan Collagen Prep Serum",
-          "link": "https://theoutset.com/products/firming-vegan-collagen-prep-serum",
-          "description": "<p>Apply after the dark spot serum or directly after cleansing on simpler mornings. In the New York Times, Johansson says she follows cleanser with The Outset Firming Vegan Collagen Prep Serum.</p><p>Allure says she uses the Prep Serum in the morning, and again in the middle of the day if she showers or washes her skin. Page Six also names this as one of the trio she used while filming.</p>"
+          "product": "The Inkey List Hyaluronic Acid Serum",
+          "link": "https://www.theinkeylist.com/products/hyaluronic-acid-serum",
+          "description": "<p>Pat a pea-sized amount onto damp skin immediately after cleansing, before the dark spot treatment. Scarlett's original prep step was The Outset Firming Vegan Collagen Prep Serum.</p><p>The Inkey List Hyaluronic Acid Serum is the closest source-connected replacement: makeup artist Frankie Boyd used it to hydrate Scarlett's skin before the 2020 Golden Globes. Its lightweight, fragrance-free formula keeps the original step's plumping and hydration role.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Dark Spot Serum",
+          "product": "Clarins Bright Plus Advanced Dark Spot-Targeting Serum",
+          "link": "https://www.amazon.com/dp/B0DQYM6L37?tag=theskinrout07-20",
+          "description": "<p>Apply a small amount after the hydrating serum, then follow with moisturizer and SPF. Scarlett's original treatment was The Outset Total Clarity Dark Spot Serum, which she said was in her regular rotation for uneven tone and post-acne marks.</p><p>No source identifies a non-Outset dark spot serum she used, so this is a clearly labeled substitute from Clarins, a brand Scarlett has personally named in her routine. It uses niacinamide and a vitamin C derivative to address visible dark spots and uneven tone. Patch test first and ask your clinician about brightening treatments during pregnancy or nursing.</p>"
         },
         {
           "time": "am",
           "title": "Moisturizer",
-          "product": "The Outset Nourishing Squalane Daily Moisturizer",
-          "link": "https://theoutset.com/products/nourishing-squalane-daily-moisturizer",
-          "description": "<p>Use as the day cream step after the treatment serums. In the New York Times, Johansson says she applies The Outset Nourishing Squalane Daily Moisturizer after the prep serum.</p><p>Allure says she finishes her morning three-step regimen with day cream, and Page Six says this moisturizer was part of her on-set trio.</p>"
+          "product": "Clarins Beauty Flash Balm",
+          "link": "https://www.amazon.com/dp/B0B5VJVMVR?tag=theskinrout07-20",
+          "description": "<p>Smooth over face and neck after serums. Scarlett originally finished her three-step morning regimen with The Outset Nourishing Squalane Daily Moisturizer.</p><p>This replacement is based on a product she personally named: Scarlett told Glamour she liked Clarins Beauty Flash Balm in her morning routine. Clarins has since reformulated the balm, so the current version is not necessarily identical to the one she used in 2014 and contains fragrance; sensitive skin should patch test it first.</p>"
         },
         {
           "time": "am",
           "title": "SPF",
-          "product": "The Outset Hydrasheer 100% Mineral Sunscreen SPF 30",
-          "link": "https://www.amazon.com/dp/B0D4NFS7XP?tag=theskinrout07-20",
-          "description": "<p>Apply generously as the final daytime skin-care step. In the New York Times, Johansson says her last morning step is The Outset's sunscreen, calling it super hydrating because it gives both protection and skin-care benefits.</p><p>The Daily Beast later identifies her sunscreen as The Outset Hydrasheer 100% Mineral Sunscreen SPF 30 in a summer routine video. Allure also notes that she uses SPF daily because she has melasma.</p>"
+          "product": "Clarins UV Plus SPF 50 Anti-Pollution Face Sunscreen",
+          "link": "https://tidd.ly/4e50QaM",
+          "description": "<p>Apply generously as the final daytime skin-care step and reapply during sustained sun exposure. Scarlett's original sunscreen was The Outset Hydrasheer Mineral SPF 30, and she has said daily SPF matters because she has melasma.</p><p>No source identifies another sunscreen she used, so this is a substitute from Clarins, a brand she has personally named in her morning routine. It provides broad-spectrum SPF 50, but unlike her former all-mineral sunscreen it is a hybrid formula with fragrance; sensitive skin should patch test it first.</p>"
         },
         {
           "time": "am",
           "title": "Lip Treatment",
-          "product": "The Outset Lip Oasis Glossy Treatment",
-          "link": "https://theoutset.com/products/lip-oasis-glossy-treatment",
-          "description": "<p>Use after sunscreen or whenever lips need gloss and care. The Daily Beast says Johansson applied Lip Oasis Glossy Treatment in the Skinny Dip shade in her summer routine video.</p>"
+          "product": "A+D First Aid Multipurpose Ointment",
+          "link": "https://www.amazon.com/dp/B002OTLNVA?tag=theskinrout07-20",
+          "description": "<p>Apply a thin layer after sunscreen or whenever lips feel chapped. Scarlett's original summer-routine product was The Outset Lip Oasis Glossy Treatment in Skinny Dip.</p><p>Scarlett has personally said she uses A+D Ointment around her nose and on her cuticles when she is dry. She did not specifically describe it as her lip treatment, but A+D lists lips and facial skin among the product's uses, making it a closer source-connected replacement than an unrelated balm.</p>"
         }
       ],
       "pm": [
@@ -1455,16 +1495,9 @@
         {
           "time": "pm",
           "title": "Cleanse",
-          "product": "The Outset Gentle Micellar Antioxidant Cleanser",
-          "link": "https://theoutset.com/products/gentle-micellar-antioxidant-cleanser",
-          "description": "<p>Wash the face at night. In the New York Times, Johansson says that at night she uses The Outset cleanser before night cream.</p><p>Allure also says she washes with this cleanser before her night cream, and describes herself as a creature of habit.</p>"
-        },
-        {
-          "time": "pm",
-          "title": "Night Cream",
-          "product": "The Outset Restorative Niacinamide Night Cream",
-          "link": "https://theoutset.com/products/restorative-niacinamide-night-cream",
-          "description": "<p>Apply after cleansing as the usual night moisturizer. In the New York Times, Johansson says she uses The Outset Restorative Niacinamide Night Cream at night.</p><p>Allure also says she usually uses The Outset Night Cream at night.</p>"
+          "product": "Cetaphil Gentle Skin Cleanser",
+          "link": "https://www.amazon.com/dp/B099N3NM61?tag=theskinrout07-20",
+          "description": "<p>Massage over damp skin and rinse after makeup removal, or use it alone on simpler nights. Scarlett's original evening cleanser was The Outset Gentle Micellar Antioxidant Cleanser.</p><p>Scarlett has personally named Cetaphil as one of the brands she used to cleanse. Because that interview did not specify a formula, the current Gentle Skin Cleanser is the closest conservative match and keeps the morning and evening routine streamlined.</p>"
         },
         {
           "time": "pm",
@@ -1476,21 +1509,28 @@
         {
           "time": "pm",
           "title": "Face Oil",
-          "product": "The Outset Ultralight Moisture-Boosting Botanical Oil",
-          "link": "https://theoutset.com/collections/single-products/products/ultralight-moisture-boosting-oil",
-          "description": "<p>Use occasionally instead of, or alongside, night cream when skin wants oil. Allure says Johansson sometimes uses just The Outset Moisture-Boosting Oil at night.</p><p>In Katie Couric Media's 2026 interview, she says she layers in a little more hydration at night with the boosting oil and night cream.</p>"
+          "product": "La Mer The Renewal Oil",
+          "link": "https://www.amazon.com/dp/B01MTQKM02?tag=theskinrout07-20",
+          "description": "<p>Press a few drops into skin before moisturizer, or mix them with the cream when extra nourishment is needed. Scarlett originally used The Outset Ultralight Moisture-Boosting Botanical Oil alone or mixed with night cream when her skin felt especially dry.</p><p>This is not a generic brand substitute: Women's Health reports that makeup artist Frankie Boyd prepared Scarlett's skin with La Mer Renewal Oil mixed into the brand's Moisturizing Soft Cream.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Night Cream",
+          "product": "La Mer The Moisturizing Soft Cream",
+          "link": "https://tidd.ly/4A9lWNO",
+          "description": "<p>Apply after cleansing and hydrating treatments as the usual night moisturizer. Scarlett's original evening step was The Outset Restorative Niacinamide Night Cream.</p><p>Women's Health reports that makeup artist Frankie Boyd used La Mer Moisturizing Soft Cream on Scarlett, mixed with a few drops of Renewal Oil. The current cream can be used morning or night and is a direct, source-connected replacement rather than a brand-only inference.</p>"
         },
         {
           "time": "pm",
           "title": "Barrier Balm",
-          "product": "The Outset Botanical Barrier Rescue Balm",
-          "link": "https://theoutset.com/products/botanical-barrier-rescue-balm",
-          "description": "<p>Use on lips, cuticles, knuckles, elbows, flyaways, or anywhere dry. In the New York Times, Johansson says The Outset Botanical Barrier Rescue Balm started as a lip balm, but she used it on cuticles and flyaways, and in summer uses it as a moisturizer, lip balm, and everything balm.</p><p>Allure also says the Barrier Balm started as a lip balm and became an everywhere balm.</p>"
+          "product": "A+D First Aid Multipurpose Ointment",
+          "link": "https://www.amazon.com/dp/B002OTLNVA?tag=theskinrout07-20",
+          "description": "<p>Use a small amount on cuticles, knuckles, elbows, around the nose, or other chapped areas. Scarlett used The Outset Botanical Barrier Rescue Balm as an everything balm, including on lips, cuticles, and flyaways.</p><p>This replacement is directly connected to her routine rather than inferred: Scarlett has said she uses A+D Ointment around her nose and over her cuticles when she is dry. Its lanolin-and-petrolatum base is more occlusive than the former botanical balm, so use a thin layer and avoid it if you are sensitive to lanolin.</p>"
         }
       ]
     },
     "draft": false,
-    "cost": 8.6
+    "cost": 7.7
   },
   {
     "routine_name": "Dr. Sam Ellis's Routine",
