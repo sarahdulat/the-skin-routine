@@ -8069,10 +8069,10 @@
   {
     "routine_name": "Gigi Hadid's Routine",
     "id": 64,
-    "time": 4.0,
-    "cost": 6.9,
+    "time": 4.6,
+    "cost": 6.7,
     "point_title": "Gigi Hadid's Routine",
-    "point_description": "A dry-skin-focused mix of drugstore cleansing, rich barrier moisture, an oil-serum boost, post-shoot makeup removal, and a few carefully noted replacements for products that are no longer available.",
+    "point_description": "A dry-skin-focused mix of drugstore cleansing, rich barrier moisture, an oil-serum boost, post-shoot makeup removal, and an occasional K-beauty rice peel.",
     "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marina%20Ruy%20Barbosa%20com%20Gigi%20Hadid%20em%20Paris%20%28Gigi%20Hadid%29.jpg?width=320",
     "celebrity_image_credit": "Manuela Muniz Feijo Scarpa",
     "celebrity_image_license": "CC BY-SA 4.0",
@@ -8088,6 +8088,16 @@
       "dark_spots_and_sun_damage"
     ],
     "sources": [
+      {
+        "label": "7NEWS 2026",
+        "site": "7NEWS",
+        "link": "https://7news.com.au/7you/beauty/gigi-hadid-just-gave-this-tiktok-famous-korean-skincare-product-her-victorias-secret-seal-of-approval-c-23045539",
+        "favicon": "https://7news.com.au/favicon.ico",
+        "date": "October 20, 2026",
+        "headline": "Gigi Hadid just gave this TikTok-famous Korean skincare product her Victoria's Secret seal of approval",
+        "image": "https://images.7news.com.au/publication/C-23045539/cef51a1903ec352d42ee61f014b374199caab932-16x9-x0y0w1280h720.jpg?impolicy=sevennews_v2&imwidth=650",
+        "summary": "Backstage at the 2026 Victoria's Secret Fashion Show, Gigi named the Dr.Melaxin Peel Shot Glow White Rice Peeling Ampoule as an affordable skincare product that works for her."
+      },
       {
         "label": "Vogue 2021",
         "site": "Vogue",
@@ -8161,6 +8171,13 @@
           "product": "Cetaphil Gentle Skin Cleanser",
           "link": "https://www.cetaphil.com/us/products/product-categories/all-cleansers/cetaphil-gentle-skin-cleanser/302990110227.html",
           "description": "<p>Massage over damp skin after makeup removal, then rinse with lukewarm water. Gigi's 2021 post-shoot routine originally used Boscia Cryosea Firming Icy-Cold Cleanser, but that cleanser is no longer reliably available.</p><p>Cetaphil is the most faithful current replacement because Gigi herself named it in Vogue for exactly these makeup-heavy shoot days and said it leaves her skin feeling thoroughly clean.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Occasional Rice Peel",
+          "product": "Dr.Melaxin Peel Shot Glow White Rice Peeling Ampoule",
+          "link": "https://drmelaxin.us/products/peel-shot-glow-white-rice-ampoule",
+          "description": "<p>On one evening a week after cleansing, apply a small amount to clean, dry skin, massage gently while avoiding the eyes and lips, then rinse thoroughly before continuing with mist and moisturizer. Gigi named Dr.Melaxin's Rice Peel as an unglamorous favorite that works for her backstage at the 2026 Victoria's Secret Fashion Show; its placement here as an occasional PM step is inferred from the brand's rinse-off directions.</p><p>This is an exfoliating treatment with AHA, BHA, and PHA rather than a leave-on hydrating ampoule. Start slowly and avoid combining it with other exfoliants or retinoids on the same evening, especially if skin is dry or sensitive.</p>"
         },
         {
           "time": "pm",
