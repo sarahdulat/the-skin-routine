@@ -6788,7 +6788,7 @@
         "label": "Glamour UK 2023",
         "site": "Glamour UK",
         "link": "https://www.glamourmagazine.co.uk/article/rosie-huntington-whitely-beauty-memo-skincare-routine",
-        "favicon": "https://www.glamourmagazine.co.uk/favicon.ico",
+        "favicon": "https://www.glamourmagazine.co.uk/verso/static/glamour-global/assets/favicon.ico?v=1",
         "date": "November 15, 2023",
         "headline": "Rosie Huntington-Whiteley uses blusher on her eyelids, so now we use blusher on our eyelids",
         "image": "https://media.glamourmagazine.co.uk/photos/6551f42453ab36627469324b/16:9/w_2560,c_limit/ROSIE%20HUNTINGTON-WHITELEY%20131123%20default-GettyImages-1711586914.jpg",
@@ -6808,7 +6808,7 @@
         "label": "Harper's Bazaar 2021",
         "site": "Harper's Bazaar",
         "link": "https://www.harpersbazaar.com/beauty/skin-care/a35323862/rosie-huntington-whiteley-nighttime-skincare-routine-go-to-bed-with-me/",
-        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "favicon": "https://www.harpersbazaar.com/_assets/design-tokens/harpersbazaar/static/images/favicon.9d827eb.ico",
         "date": "January 26, 2021",
         "headline": "Rosie Huntington-Whiteley's Expert Nightly Skin Care Routine",
         "image": "https://hips.hearstapps.com/vidthumb/images/2020-harpersbazaar-gtbwm-155-rosie-huntington-whiteley-rd-v4-fb-1611613533.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop&resize=1200%3A%2A",
@@ -8239,6 +8239,168 @@
           "product": "Dan & Lion Ever Oil",
           "link": "https://danandlion.com.au/product/ever-oil/",
           "description": "<p>Press two or three drops over the hydrator as the final face step. Gigi ended her post-shoot routine with this antioxidant botanical oil, and Dan & Lion recommends light circular strokes followed by pressing the oil into the face and neck.</p><p>The brand advises avoiding Ever Oil during pregnancy or lactation, so leave this step out during that time unless your clinician specifically approves it.</p>"
+        }
+      ]
+    },
+    "draft": false
+  },
+  {
+    "routine_name": "Sienna Miller's Routine",
+    "id": 65,
+    "time": 6.2,
+    "cost": 11.3,
+    "point_title": "Sienna Miller's Routine",
+    "point_description": "A high-investment glow routine built around sensitive-skin cleansing, an oxygen mask, layered antioxidants, facial massage, LYMA laser sessions, and an older French-pharmacy retinoid favorite.",
+    "celebrity_face_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sienna%20Miller%20Berlinale%202017.jpg?width=320",
+    "celebrity_image_credit": "Martin Kraft",
+    "celebrity_image_license": "CC BY-SA 3.0",
+    "celebrity_image_source": "https://commons.wikimedia.org/wiki/File:Sienna_Miller_Berlinale_2017.jpg",
+    "pregnancy_safe": false,
+    "age_range": [
+      "40s"
+    ],
+    "skin_concern": [
+      "dry_skin",
+      "sensitive",
+      "fine_lines_and_wrinkles",
+      "dark_spots_and_sun_damage"
+    ],
+    "sources": [
+      {
+        "label": "Vogue 2026",
+        "site": "Vogue",
+        "link": "https://www.vogue.com/article/beauty-secrets-sienna-miller",
+        "favicon": "https://www.vogue.com/favicon.ico",
+        "date": "November 16, 2026",
+        "headline": "Inside Sienna Miller's 27-Step New-Mom Beauty Routine",
+        "image": "https://assets.vogue.com/photos/6afb12320f4428a779f96a44/16:9/w_1280,c_limit/vogue-beauty-secrets-sienna-miller.jpeg",
+        "summary": "Miller demonstrates her newest routine with SkinCeuticals cleansing and vitamin C, Shane Cooper mask and mist, Keren Bartov peel serum, de Mamiel oil, gua sha, Rhode hydration, LYMA laser, and layered eye care."
+      },
+      {
+        "label": "Glamour UK 2026",
+        "site": "Glamour UK",
+        "link": "https://www.glamourmagazine.co.uk/article/sienna-miller-charlotte-tilbury-interview",
+        "favicon": "https://www.glamourmagazine.co.uk/favicon.ico",
+        "date": "March 23, 2026",
+        "headline": "Sienna Miller on Beauty, Motherhood and Reclaiming Boho Chic",
+        "image": "https://media.glamourmagazine.co.uk/photos/69c14c316a7264d744d6e58b/1:1/w_2560,c_limit/SIENNA%20MILLER%20230326%20GettyImages-2151789141.jpg",
+        "summary": "Miller says she now washes her face every night, uses Keren Bartov micellar water in the morning, likes SkinCeuticals and Obagi cleansers, and has relied on Charlotte's Magic Cream since before its official launch."
+      },
+      {
+        "label": "Harper's Bazaar UK 2024",
+        "site": "Harper's Bazaar UK",
+        "link": "https://www.harpersbazaar.com/uk/beauty/make-up-nails/a61094931/sienna-miller-beauty-bag-video/",
+        "favicon": "https://www.harpersbazaar.com/favicon.ico",
+        "date": "June 14, 2024",
+        "headline": "Inside My Beauty Bag: Sienna Miller",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/hbz-imbb-sm-1-666afc289e045.png?crop=1xw:1xh;0,0.0275xh&resize=980:*",
+        "summary": "Her earlier beauty-bag interview names A313, Sarah Chapman vitamin C, Rhode and Glow Recipe hydration, the LYMA laser, MV rose mist, and Macrene Actives face cream."
+      },
+      {
+        "label": "The Guardian 2024",
+        "site": "The Guardian",
+        "link": "https://www.theguardian.com/fashion/article/2024/jun/04/i-felt-self-conscious-and-ashamed-sienna-miller-on-tabloid-intrusion-and-why-she-cant-bear-boho-chic",
+        "favicon": "https://www.theguardian.com/favicon.ico",
+        "date": "June 4, 2024",
+        "headline": "Sienna Miller on Tabloid Intrusion and Why She Can't Bear Boho Chic",
+        "image": "https://i.guim.co.uk/img/media/6771037496cd24cde7f884266f074046428516b7/0_345_2000_1200/master/2000.jpg?crop=none&dpr=1&s=none&width=480",
+        "summary": "In this older interview, Miller recommends the French pharmacy retinoid A313 as a bedtime treatment when she wants to look especially good the next day."
+      }
+    ],
+    "steps": {
+      "am": [
+        {
+          "time": "am",
+          "title": "Gentle Foaming Cleanse",
+          "product": "SkinCeuticals Soothing Cleanser",
+          "link": "https://www.dermstore.com/p/skinceuticals-soothing-cleanser-150ml/14917034/",
+          "description": "<p>Massage the foam over damp skin, rinse with lukewarm water, and pat dry. Sienna calls this sensitive-skin cleanser really nice in her new Vogue routine; she jokes that she has been known to rub her face dry, even though she knows patting is gentler.</p><p>Earlier in 2026 she said she used <a href=\"https://us.kerenbartov.com/products/hyaluronic-micellar-h2o\" target=\"_blank\" rel=\"noopener noreferrer\">Keren Bartov Hyaluronic Micellar H2O</a> in the morning. The newest demonstrated cleanser is shown first here, while the micellar water remains a lighter option from that earlier routine.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Occasional Oxygen Mask",
+          "product": "Shane Cooper Oxygenation Mask",
+          "link": "https://shanecooperskin.com/en-us/products/oxygenation-mask",
+          "description": "<p>Two or three times a week, spread two or three pumps over freshly cleansed, damp skin. Let it foam for two or three minutes, massage it in, then rinse with warm water before the rest of the routine.</p><p>Sienna says the bubbling mask makes her and her children laugh when she uses it in the bath, and she finishes the step feeling refreshed. This is a treatment-day step rather than something skin needs every morning.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Hyaluronic Mist",
+          "product": "Shane Cooper Hyaluronic Mist",
+          "link": "https://shanecooperskin.com/en-us/collections/skincare/products/hyaluronic-mist",
+          "description": "<p>Mist lightly over clean skin and press in any larger droplets. Sienna follows her mask with Shane Cooper's hyaluronic mist and says it really works; leave the skin lightly hydrated rather than dripping before the next serum.</p><p>In her older Harper's Bazaar beauty bag, she carried <a href=\"https://mvskintherapy.com/products/rose-hydrating-mist\" target=\"_blank\" rel=\"noopener noreferrer\">MV Skintherapy Rose Hydrating Mist</a>, which is another mist she has mentioned using before.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Peel and Glow Serum",
+          "product": "Keren Bartov Booster Peel & Glow Serum",
+          "link": "https://us.kerenbartov.com/products/booster-peel-glow",
+          "description": "<p>Once the mist has dried, pat three drops over face and neck, avoiding the eye area, and let it absorb for about three minutes. Sienna includes this before vitamin C in her Vogue sequence.</p><p>It is a multi-acid exfoliating serum, so sensitive skin can begin three mornings a week rather than daily. Do not stack it with another exfoliant or the nighttime A313 treatment, and stop if the routine starts to sting or feel tight.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Vitamin C Serum",
+          "product": "SkinCeuticals C E Ferulic",
+          "link": "https://www.dermstore.com/p/skinceuticals-c-e-ferulic-with-15-l-ascorbic-acid-vitamin-c-serum-30ml/11289609/",
+          "description": "<p>Press four or five drops over the face, neck, and chest after the peel serum has settled. Sienna has named C E Ferulic repeatedly, and her newest Vogue routine keeps it in the morning antioxidant slot.</p><p>She told Elle in 2026 that she thinks it is amazing. An older vitamin C she praised was <a href=\"https://www.sarahchapman.com/products/vitamin-c-power-1\" target=\"_blank\" rel=\"noopener noreferrer\">Sarah Chapman Vitamin C Power 1</a>, but the newer demonstrated SkinCeuticals serum takes priority here.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Face Oil and Gua Sha",
+          "product": "de Mamiel Phyto-P Elixir",
+          "link": "https://demamiel.com/en-us/products/phyto-p-elixir",
+          "description": "<p>Warm a few drops between the palms and press them over the face and neck. While there is still enough slip, glide the <a href=\"https://www.nordstrom.com/s/stainless-steel-gua-sha/8474235\" target=\"_blank\" rel=\"noopener noreferrer\">Mount Lai Stainless Steel Gua Sha</a> from the center of the face outward with light pressure.</p><p>Sienna pairs the elixir and tool in Vogue. Keep the strokes slow and gentle; the massage should never scrape or tug dry skin.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Milky Essence",
+          "product": "Rhode Glazing Milk",
+          "link": "https://www.rhodeskin.com/products/glazing-milk",
+          "description": "<p>Press a small amount over the face and neck. Sienna layers Glazing Milk after her oil and gua sha in the Vogue demonstration, so this routine preserves her shown order even though a milky essence would usually go before oil.</p><p>Earlier in 2026 she said she starts with either Glazing Milk or <a href=\"https://www.glowrecipe.com/products/watermelon-glow-niacinamide-hue-drops\" target=\"_blank\" rel=\"noopener noreferrer\">Glow Recipe Watermelon Glow Niacinamide Hue Drops</a>, a tip she picked up from her daughter.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Layered Eye Care",
+          "product": "Dr. Nigma Super Creme No. 1",
+          "link": "https://www.amazon.com/dp/B07X1494FM?tag=theskinrout07-20",
+          "description": "<p>Tap a rice-grain amount around the orbital bone, then leave <a href=\"https://www.rhodeskin.com/products/peptide-eye-prep-rhode-logo\" target=\"_blank\" rel=\"noopener noreferrer\">Rhode Peptide Eye Prep</a> patches on while the rest of the routine settles. Vogue frames this as Sienna's layered tired-eye routine.</p><p>She also used <a href=\"https://www.amazon.com/dp/B01CMDX3ZG?tag=theskinrout07-20\" target=\"_blank\" rel=\"noopener noreferrer sponsored\">Arnicare Bruise Gel</a> for the black eye she had during filming and called arnica cream a miracle. That was temporary bruise care, not a daily eye step.</p>"
+        },
+        {
+          "time": "am",
+          "title": "Daily Sunscreen",
+          "product": "SkinCeuticals Clear Daily Soothing UV Defense SPF 50",
+          "link": "https://www.skinceuticals.com/skincare/sunscreens/clear-daily-soothing-uv-defense-sunscreen-spf-50/S124.html",
+          "description": "<p>Apply generously over face, ears, neck, and exposed chest as the final morning step. The Vogue video does not identify Sienna's sunscreen, but daily protection is especially important after her exfoliating serum and alongside her focus on pigmentation.</p><p>This high-end sensitive-skin SPF is from SkinCeuticals, the brand used throughout her newest routine. It is a transparent brand-matched addition rather than a sunscreen she personally named.</p>"
+        }
+      ],
+      "pm": [
+        {
+          "time": "pm",
+          "title": "Nightly Cleanse",
+          "product": "SkinCeuticals Soothing Cleanser",
+          "link": "https://www.dermstore.com/p/skinceuticals-soothing-cleanser-150ml/14917034/",
+          "description": "<p>Massage over damp skin and rinse thoroughly, repeating only when makeup or water-resistant sunscreen remains. Sienna told Glamour that she now washes her face every night even when she is exhausted, and the SkinCeuticals cleanser is the newest one she has demonstrated.</p><p>She also said she keeps an <a href=\"https://www.obagi.com/products/obagi-nu-derm-foaming-gel\" target=\"_blank\" rel=\"noopener noreferrer\">Obagi Nu-Derm Foaming Gel</a> because a gel cleanser takes everything off when she is filming.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Laser Session",
+          "product": "LYMA Laser Starter Kit",
+          "link": "https://bluemercury.com/collections/lyma/products/lyma-laser-starter-kit",
+          "description": "<p>On clean skin, apply the prep mist and mask included with the current kit, then glide the laser slowly for at least 15 minutes per treatment area or hold it still for three minutes over one target area. Remove the remaining mask before continuing with normal skin care.</p><p>Sienna includes the laser in her newest Vogue routine and previously told Harper's Bazaar that she regularly uses it while watching television because she thinks it really works. Its placement here in the evening is practical rather than a time of day she specified.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Occasional Retinoid",
+          "product": "A313 Vitamin A Pommade",
+          "link": "https://amzn.to/4xx6aLp",
+          "description": "<p>On a dry, non-exfoliation night, spread a very small amount over the face and let it settle before moisturizer. In older 2024 interviews, Sienna called A313 the French-girl secret to great skin and said she puts it on before bed when she needs to look good the next day.</p><p>Start once or twice weekly because the pomade can be irritating and occlusive. Do not use it on the same day as the Keren Bartov peel serum, and avoid retinoids during pregnancy or while nursing unless your clinician specifically approves them.</p>"
+        },
+        {
+          "time": "pm",
+          "title": "Rich Moisturizer",
+          "product": "Charlotte Tilbury Charlotte's Magic Cream",
+          "link": "https://www.charlottetilbury.com/us/product/charlottes-magic-cream",
+          "description": "<p>Warm a small amount between fingertips and press it over face and neck, using a lighter layer over A313. Sienna told Glamour in 2026 that she thinks Magic Cream is amazing and has used it since before it had a name, when Charlotte Tilbury blended the cream herself.</p><p>Her older beauty bag also contained <a href=\"https://www.macreneactives.com/products/high-performance-face-cream\" target=\"_blank\" rel=\"noopener noreferrer\">Macrene Actives High Performance Face Cream</a>, but Magic Cream is the more recent moisturizer mention.</p>"
         }
       ]
     },
